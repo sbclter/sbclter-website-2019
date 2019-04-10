@@ -1,0 +1,133 @@
+# Bios links
+
+- title: "Robert (Bob) Miller"
+  role: "Lead Principal Investigator: Marine Ecology"
+  class: investigator
+  image: miller.jpg
+  biotext: "Bob Miller is an Associate Research Biologist with UCSB's Marine Science Institute, and a Project Investigator with the Santa Barbara Coastal LTER. His interest are in marine ecology, particularly kelp forests and other benthic communities. In addition to overseeing SBC MBON, Miller conducts research in image analysis and patterns of marine biodiversity."
+
+- title: "Craig Carlson"
+  role: "Co-Principal Investigator: Microbial Oceanography"
+  class: investigator
+  image: carlson.jpg
+  biotext: "Craig is a Professor of Marine Science and Chair of the Department of Ecology Evolution and Marine Biology at UCSB. He also is an Adjunct Faculty member of the Bermuda Institute of Ocean Science. Craig is a microbial ecologist and his research focuses on the role marine microbes play in the cycling of elements through oceanic dissolved organic matter (DOM) and the biogeochemical significance of DOM in the marine carbon cycle. Craig is leading SBC MBON’s effort to use genetics as a tool to better inform us about patterns of marine biodiversity on large scales."
+  
+- title: "John Hildebrand"
+  role: "Associate Investigator: Underwater Acoustics and Marine Mammal Ecology"
+  class: investigator
+  image: hildebrand.jpg
+  biotext: "John is a Professor of Applied Ocean Science and Biological Oceanography at Scripps Institution of Oceanography, UCSD, and is responsible for acoustic monitoring and subsequent assessment of marine mammal populations."
+  
+- title: "M. Débora Iglesias-Rodríguez"
+  role: "Associate Investigator: Ocean Acidification and Molecular Diversity of Eukaryotic Phytoplankton"
+  class: investigator
+  image: rodriguez.jpg
+  biotext: "Débora Iglesias-Rodríguez is a Professor with the Department of Ecology, Evolution and Marine Biology, UCSB. Her work concerns the genetic estimation of plankton diversity, as well as the ocean acidification impact index."
+  
+# remove Phaedon, temporary
+# - title: "Phaedon C. Kyriakidis"
+#   role: "Associate Investigator: Geostatistics and Spacial Statistics"
+#   class: investigator
+#   image: kyriakidis.jpg
+#   biotext: "Phaedon serves as a Professor with UCSB's Department of Geography, and is responsible for data integration, scaling, and synthesis."
+  
+- title: "Kevin Lafferty"
+  role: "Co-Principal Investigator: Marine Ecology"
+  class: investigator
+  image: lafferty.jpg
+  biotext: "Kevin works with the US Geological Survey as a Marine Ecologist.His main expertise is with parasites but he also works on the conservation of threatened species like snowy plovers, abalone, tidewater gobies, and sea otters. In addition as a liaison to USGS, Kevin does research on marine biodiversity and guides SBC MBON efforts to use new technology to observe biodiversity."  
+
+- title: "Milton Love"
+  role: "Associate Investigator: Marine Ecology"
+  class: investigator
+  image: love.jpg
+  biotext: "Milton is a Research Biologist with the Marine Science Institute, UCSB. His research involves image analysis of deep benthic organisms, as well as fish diversity and taxonomy."
+  
+- title: "B. S. Manjunath"
+  role: "Co-Principal Investigator: Image Analysis and Signal Processing"
+  class: investigator
+  image: manjunath.jpg
+  biotext: "Manjunath works with UCSB's Electrical and Computer Engineering Department as a Professor, Vice-Chair, and Undergraduate Program Director. He serves as the Director of the Center for Bio-Image Informatics, UCSB. Manjunath's work includes image and video analysis, bio-informatics, multimedia databases and data mining."
+  
+- title: "Douglas J. McCauley"
+  role: "Associate Investigator: Ecology and Conservation Biology"
+  class: investigator
+  image: mccauley.jpg
+  biotext: "Douglas serves as an Assistant Professor with the Department of Ecology, Evolution and Marine Biology, UCSB. He is responsible for estimating the diversity of large mobile animals with acoustics, imagery and telemetry."
+  
+- title: "Andrew Rassweiler"
+  role: "Co-Principal Investigator: Marine Ecology and Bioeconomic Modeling"
+  class: investigator
+  image: rassweiler.jpg
+  biotext: "Andrew works as an Assistant Research Biologist for the Marine Science Institute, UCSB, and is responsible for data integration and synthesis within SBC MBON, as well as development of models for sampling optimization."
+- title: "Dan Reed"
+  role: "Co-Principal Investigator: Marine Ecology"
+  class: investigator
+  image: reed.jpg
+  biotext: "Dan is a Research Biologist and Deputy Director of the Marine Science Institute, UCSB, and has served as the Lead Principal Investigator for the Santa Barbara Coastal LTER since 2000. Dan coordinates collaboration between SBC MBON and SBC LTER, as well as contributing to research on biodiversity of benthic communities."
+  
+- title: "David Siegel"
+  role: "Co-Principal Investigator: Remote Sensing and Bio-Optical Oceanography"
+  class: investigator
+  image: siegel.jpg
+  biotext: "Dave is the Director of the Earth Research Institute at UCSB and a Professor of Marine Science with the Department of Geography at UCSB. His interests and expertise cover a plethora of topics including but certainly not limited to ocean color remote sensing and optical oceanography, spatial marine ecology, and data information systems. Dave’s role in SBC MBON is to link remote sensing data with in-the-sea measurements of biodiversity."
+
+- title: "Andrew Richard Thompson"
+  role: "Associate Investigator: Larval Fish Ecology and Taxonomy"
+  class: investigator
+  image: thompson.jpg
+  biotext: "Andrew works as a Research Fisheries Biologist with NOAA Fisheries as part of the Southwest Fisheries Science Center. He works with identification and analysis of larval fishes collected from oceanographic plankton samples."
+
+- title: "Thomas Lamy"
+  role: "Postdoctoral Researcher: spatio-temporal dynamics of biodiversity"
+  class: postdoc
+  image: lamy.jpg
+  biotext: "Thomas is a quantitative ecologist interested in understanding the mechanisms underlying the distribution of biodiversity across different spatial and temporal scales in the Santa Barbara Channel. His previous work has focused on the interface between different organizational levels (e.g. genes, life-history traits, communities) to characterize their dynamics, and potential connections, at various temporal and spatial scales." 
+
+- title: "Brandon Doheny"
+  role: "Field Operations Manager: Marine Ecology and Spatial Modeling"
+  class: staff
+  image: doheny.jpg
+  biotext: "Brandon is a Research Specialist with the Marine Science Institute, UCSB. He is responsible for the acquisition of data within various marine environments as well as equipment engineering, spatial-temporal modeling and image analysis."
+  
+- title: "Sarah Sampson"
+  role: "Field and Lab Technician: Marine Ecology"
+  class: staff
+  image: sampson.jpg
+  biotext: "Sarah graduated from UC Santa Cruz in 2013 with a Bachelors in Environmental Studies. For SBC MBON, she coordinates field and lab logistics and conducts subtidal monitoring by surveying reefs and collecting specimens."
+
+- title: "Frankie Puerzer"
+  role: "Junior Specialist: Marine Ecology"
+  class: staff
+  image: Puerzer.jpg
+  biotext: "Frankie manages field work and lab operations for SBC MBON. Using SCUBA she collects specimens, maintains ongoing experiments, and conducts subtidal photo surveys in combination with in-lab image analysis. She also oversees undergraduate student internships."
+
+- title: "Margaret O'Brien"
+  role: "Data Specialist: Information Management"
+  class: Staff
+  image: obrien.jpg
+  biotext: "Margaret is a Specialist in Information Management at the Marine Science Institute. She is involved in ecological information management for several different projects, including SBC MBON, the LTER Network and the Environmental Data Initiative. In support of SBC MBON, Margaret collaborates with scientists to plan and design data products. Additionally, she coordinates data exchange and publication within and outside the MBON group." 
+
+- title: "Li Kui"
+  role: "Data Specialist: Data Integration and Management"
+  class: Staff
+  image: kui.jpg
+  biotext: "Li graduated from SUNY-ESF in 2015 with a PhD in riparian ecology. She manages data integration within SBC MBON, as well as collaborates with researchers on understanding how marine biodiversity changes at spatial and temporal scales." 
+
+- title: "Rhiannon Rognstad"
+  role: "Postdoctoral Researcher: Predictive Modeling"
+  class: Staff
+  image: rognstad.jpg
+  biotext: "Rhiannon is a postdoc at the UCSB Marine Science Institute. Her research interests fall under the broad question of what sets species' limits. She is interested in physical species limits in terms of geographic and local distributions, and evolutionary limits in terms of the transition from microevolution to macroevolution found in hybrid zones. For SBC MBON, Rhiannon developes predictive models to forecast marine biodiversity." 
+
+- title: "Katrina Malakhoff"
+  role: "Graduate Student"
+  class: Staff
+  image: KMalakhoff.jpg
+  biotext: "Katrina is a PhD student working with Bob Miller, focussing on kelp forest ecology.  Katrina is interested in the effects of marine reserves on the demographics and interactions between fished invertebrate species, particularly red and purple sea urchins.  In addition, Katrina assists with subtidal monitoring for MBON using SCUBA." 
+
+- title: "Erin Meyer-Gutbrod"
+  role: "Postdoctoral Researcher: Quantitative Marine Ecology"
+  class: Staff
+  image: erin.jpg
+  biotext: "Erin is a quantitative ecologist at the Marine Science Institute. She is broadly interested in assessing ecosystem response to anthropogenic impacts, with a focus on commercially valuable and at-risk species. She is currently conducting a net environmental benefit analysis of oil and gas platform decommissioning scenarios in the Southern California Bight."
