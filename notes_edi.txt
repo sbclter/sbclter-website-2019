@@ -1,0 +1,18 @@
+general video about "static" (client-side scripting)
+https://environmentaldatainitiative.org/events/training-webinars-workshops/previous-edi-events/going-static-with-lter-websites/
+https://www.youtube.com/watch?v=i4QczI3evGA
+
+
+Using the PASTA+ API
+part 1:
+https://environmentaldatainitiative.org/events/training-webinars-workshops/previous-edi-events/pasta-web-services-a-primer/
+
+part 2
+https://environmentaldatainitiative.org/events/training-webinars-workshops/previous-edi-events/using-the-pasta-search-api/
+
+
+video on creating a local data catalog (solr queries)
+
+https://environmentaldatainitiative.org/events/training-webinars-workshops/previous-edi-events/create-a-local-data-catalog-on-your-website/
+https://www.youtube.com/watch?v=LwCI9TKi-Pg&t=211s
+
