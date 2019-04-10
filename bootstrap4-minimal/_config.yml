@@ -1,0 +1,17 @@
+# Site settings
+title: SBC LTER
+email:
+author: your IM
+description:
+url:
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
+
+markdown: kramdown
+
+plugins:
+ #  - jekyll-feed
+

@@ -1,0 +1,25 @@
+installing jekyll:
+
+open terminal
+	install homebrew:
+		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	update home-brew:
+		brew update
+	install ruby
+		brew install rbenv
+		brew install ruby-build
+	install jekyll
+		sudo gem install jekyll
+
+
+initiate server (for local web development):
+
+connect to sbcbon fileshare (smb://files.msi.ucsb.edu/sbcbon)
+open terminal
+	cd to site directory:
+		cd /Volumes/sbcbon/internal/bon_website/bootstrap
+
+jekyll functions
+	"jekyll build" -- takes all files in current working directory [wd] and compiles them to "wd/_site/"
+	"jekyll serve" -- locally hosts “[wd]/_site" for viewing at "http://127.0.0.1:4000/
+	"jekyll serve -w" -- watches for changes made in working directory, recompiles site whenever changes are made, locally hosts updated site for viewing (see above). Very useful for development.

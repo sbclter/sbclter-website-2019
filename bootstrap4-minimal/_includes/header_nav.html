@@ -1,0 +1,70 @@
+<!-- NAV -->
+<nav class="navbar navbar-expand-md navbar-light py-4">
+  <div class="container">
+    <a href="{{ site.baseurl }}/" class="navbar-brand">
+      <h3 class="d-inline align-middle pl-3 text-primary">Home(logo)</h3>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+		  <!-- 
+			  
+			  about area -->
+        <li class="nav-item dropdown">
+          <a href="{{ site.baseurl }}/about/" class="nav-link dropdown-toggle" id="dropdown01" 
+		  data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">About</a>
+		  	<div class="dropdown-menu" aria-labelledby="dropdown01">		  	
+		  		<a class="dropdown-item" href="{{site.baseurl}}/about/">About</a>
+				<hr>
+		  		<a class="dropdown-item" href="{{site.baseurl}}/about/people">People</a>
+		  		<a class="dropdown-item" href="#">Collaborators (no link)</a>
+		  		<a class="dropdown-item" href="#">Another no-link</a>
+		</div>
+        </li>
+		
+	  <!-- 
+		  
+		  RESEARCH area -->
+        <li class="nav-item">
+          <a href="{{ site.baseurl }}/research/" class="nav-link">Research</a>
+        </li>
+	  <!-- 
+		  
+		  PUBLICATIONS area -->
+        <li class="nav-item">
+          <a href="{{ site.baseurl }}/publications/" class="nav-link">Publications</a>
+        </li>
+	  <!-- 
+		  
+		  DATA area -->
+        <li class="nav-item">
+          <a href="{{ site.baseurl }}/data/" class="nav-link">Data</a>
+        </li>
+		  <!-- 
+			  
+			  EDUCATION AND OUTREACH area -->
+        <li class="nav-item">
+          <a href="{{ site.baseurl }}/education/" class="nav-link">Education</a>
+        </li>
+		
+		<!-- 
+			
+			
+			dropdown template -->
+	    <li class="nav-item dropdown">
+	       <a class="nav-link dropdown-toggle" href="#" id="dropdown01" 
+			 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown-test</a>
+	       <div class="dropdown-menu" aria-labelledby="dropdown01">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	       </div>
+	     </li>
+		 
+      </ul>
+    </div>
+  </div>
+</nav>
+
