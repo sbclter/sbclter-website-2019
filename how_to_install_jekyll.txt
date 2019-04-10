@@ -40,3 +40,13 @@ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10
 # install jekyll
    gem install bundler jekyll
 
+
+
+# TO RUN JEKYLL:
+jekyll serve --incremental
+
+# possible error, on Mac Mojave: "... Invalid US-ASCII character "\xE2" on line 6"
+# run this cmd before jekyll serve:
+export LANG=en_US.UTF-8
+
+
