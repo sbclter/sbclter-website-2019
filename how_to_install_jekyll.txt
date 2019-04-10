@@ -43,6 +43,7 @@ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10
 
 
 # TO RUN JEKYLL:
+cd bootstrap4-minimal
 jekyll serve --incremental
 
 # possible error, on Mac Mojave: "... Invalid US-ASCII character "\xE2" on line 6"
