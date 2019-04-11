@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sept 1 2012, mob -->
+<!-- 
+this doc contains web page info for the research_sites.html page about the mapLayers to be mapped. 
+It can also be accessed by the build-KML script to get meta-info to add to the  
+discription of a site, and shows up in the info bubble on a google map for the site.
+
+-->
+<!-- sbcMapLayers.xml
+-->
+<!-- Note: mob copied this from the current website svn-checkout (path: lib/xml/sites). find javascript in same checkout, src/javascript. 
+ -->
+
+
+<!-- 
+probably you will want to add a node for mapLayerGroup, habitat, etc, so these do not get repeated.
+-->
+<!-- to populate a perl TT template and/or javascript called showSites.js, 
+    add the css-class names and maybe javascript variables -->
+<mapLayers>
+    <mapLayer id="landPrecip">
+        <label>Precipitation collected by SBC LTER or Santa Barbara County</label>
+        <habitat>
+            <habitatName>land</habitatName>
+            <habitatLabel>Land</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="landStreamDisch">
+        <label>Stream Discharge</label>
+        <habitat>
+            <habitatName>land</habitatName>
+            <habitatLabel>Land</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="landStreamChem">        
+        <label>Nutrients, particulate N, P, and C, TSS, conductivity</label>
+        <habitat>
+            <habitatName>land</habitatName>
+            <habitatLabel>Land</habitatLabel>
+        </habitat>
+    </mapLayer>
+<mapLayer id="beachWrack">
+    <label>Biomass and species composition of macroalgal wrack</label>
+    <habitat>
+        <habitatName>beach</habitatName>
+        <habitatLabel>Beach</habitatLabel>
+    </habitat>
+</mapLayer>
+    <mapLayer id="beachBirds">
+        <label>Abundance of birds</label>
+        <habitat>
+            <habitatName>beach</habitatName>
+            <habitatLabel>Beach</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="beachWrackConsumers">
+        <label>Abundance of invertebrate wrack consumers</label>
+        <habitat>
+            <habitatName>beach</habitatName>
+            <habitatLabel>Beach</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="reefAnnPopSurvey">
+        <label>Abundance of &gt;200 species of algae, invertebrates and fish</label>
+        <coverageNote>sites on mainlaind and Islands</coverageNote>
+        <habitat>
+            <habitatName>reef</habitatName>
+            <habitatLabel>Kelp Forest</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="reefBottomTemp">
+        <label>Water temperature on the bottom</label>
+        <coverageNote>sites on mainlaind and Islands</coverageNote>
+        <habitat>
+            <habitatName>reef</habitatName>
+            <habitatLabel>Kelp Forest</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="reefPAR">
+        <label>Irradiance at the surface and bottom</label>
+            <habitat>
+            <habitatName>reef</habitatName>
+            <habitatLabel>Kelp Forest</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="reefSCIsland">       
+        <label>Surfperch density and size, foraging habitat, prey biomass</label>
+        <coverageNote>sites at Santa Cruz Island</coverageNote>
+        <habitat>
+            <habitatName>reef</habitatName>
+            <habitatLabel>Kelp Forest</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="reefNPPgiantKelp">       
+        <label>	Giant kelp biomass, growth, loss, NPP and stoichiometry</label>
+        <habitat>
+            <habitatName>reef</habitatName>
+            <habitatLabel>Kelp Forest</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="reefIsotopes">        
+        <label>H &amp; N isotopes composition of sediments &amp; consumers</label>
+        <habitat>
+            <habitatName>reef</habitatName>
+            <habitatLabel>Kelp Forest</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="inshoreMoorings">       
+        <label>Moored current velocity, conductivity &amp; temperature</label>
+        <habitat>
+            <habitatName>inshore</habitatName>
+            <habitatLabel>Inshore Ocean</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="inshoreProfiles">        
+        <label>Nutrients, particulate N P *=&amp; C, chlorophyll-a and CTD profiles</label>
+        <habitat>
+            <habitatName>inshore</habitatName>
+            <habitatLabel>Inshore Ocean</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="inshoreLarvae">        
+        <label>Invertebrate larval settlement</label>
+        <coverageNote>sites span State of California</coverageNote>
+        <habitat>
+            <habitatName>inshore</habitatName>
+            <habitatLabel>Inshore Ocean</habitatLabel>
+        </habitat>
+    </mapLayer>
+    <mapLayer id="inshore_pH">       
+        <label>pH</label>
+        <habitat>
+            <habitatName>inshore</habitatName>
+            <habitatLabel>Inshore Ocean</habitatLabel>
+        </habitat>
+    </mapLayer>
+</mapLayers>
