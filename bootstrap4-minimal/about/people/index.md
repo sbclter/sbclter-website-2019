@@ -30,3 +30,28 @@ description: people invovled in the Santa Barbara Coastal LTER.
     </div>
 </div>
 
+
+
+markdown code block: 
+
+```
+my @attrs = [ 'surname', 
+		'givenName', 
+		'commonName', 
+		'email', 
+                'postalAddress',
+		'telephoneNumber', 
+                'employeeType',
+		'projectRole', 
+		'labeledURI',
+                'databaseID',
+		'scientificDomainStr',
+		'scientificDomainText',
+		'profileText',
+		'degreeProgram'
+		
+	      ];
+```
+
+
+
