@@ -48,10 +48,28 @@ my @attrs = [ 'surname',
 		'scientificDomainStr',
 		'scientificDomainText',
 		'profileText',
-		'degreeProgram'
-		
+		'degreeProgram',
+		'imageFile'		
 	      ];
 ```
 
 
+```
+'surname', 			# used for filter/searching
+'givenName',			
+'commonName',			
+'email',
+'postalAddress',		# a string, with line breaks as html <br/>
+'telephoneNumber',		# optional
+'employeeType',			
+'projectRole',			# used for grouping on main page (contr. vocab). 1:many
+'labeledURI',			# optional
+'databaseID',			# used to deliver profile pages, in a param
+'scientificDomainStr',		# short string, for main page
+'scientificDomainText',		# longer string, for profile page	
+'profileText',			# profile page. must be present to create a anchor tag
+'degreeProgram',		# optional, applies to students only
+'imageFile'			# optional
+              ];
+```
 
