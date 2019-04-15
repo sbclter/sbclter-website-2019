@@ -30,12 +30,7 @@ columns:
 
 {% include search_bar.html %}
 
-{% for bio in site.data.bios %}
-	<!-- {% bio.class = bio.class | downcase %} -->
-	{% capture bio.class %}I am being captured.{% endcapture %}
-{% endfor %}
-
-{% assign bio_groups = site.data.bios | group_by: "class" %}
+{% assign bio_groups = site.data.bios | group_by: "employeeType" %}
 
 {% for bios in bio_groups %}
 	<h3>{{ bios.name }}</h3>
@@ -44,4 +39,47 @@ columns:
 
 <br/>
 
+
 <script src="/assets/js/table.js"/>
+
+
+markdown code block: 
+
+```
+my @attrs = [ 'surname', 
+		'givenName', 
+		'commonName', 
+		'email', 
+                'postalAddress',
+		'telephoneNumber', 
+                'employeeType',
+		'projectRole', 
+		'labeledURI',
+                'databaseID',
+		'scientificDomainStr',
+		'scientificDomainText',
+		'profileText',
+		'degreeProgram',
+		'imageFile'		
+	      ];
+```
+
+
+```
+'surname', 			# used for filter/searching
+'givenName',			
+'commonName',			
+'email',
+'postalAddress',		# a string, with line breaks as html <br/>
+'telephoneNumber',		# optional
+'employeeType',			
+'projectRole',			# used for grouping on main page (contr. vocab). 1:many
+'labeledURI',			# optional
+'databaseID',			# used to deliver profile pages, in a param
+'scientificDomainStr',		# short string, for main page
+'scientificDomainText',		# longer string, for profile page	
+'profileText',			# profile page. must be present to create a anchor tag
+'degreeProgram',		# optional, applies to students only
+'imageFile'			# optional
+              ];
+```
