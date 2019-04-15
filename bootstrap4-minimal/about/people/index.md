@@ -2,7 +2,12 @@
 layout: article
 title: 'SBC LTER People'
 description: people invovled in the Santa Barbara Coastal LTER.
-
+columns:
+  - Title
+  - Role
+  - Class
+  - Image
+  - Bio
 ---
 
 <h1>People</h1>
@@ -23,10 +28,20 @@ description: people invovled in the Santa Barbara Coastal LTER.
 </ol>
 </p>
 
-<div class="row">
-    <div class="col-md-7">
-        <div id="people" class="internal-link"></div>
-        {% include people_list.html %}
-    </div>
-</div>
+{% include search_bar.html %}
 
+{% for bio in site.data.bios %}
+	<!-- {% bio.class = bio.class | downcase %} -->
+	{% capture bio.class %}I am being captured.{% endcapture %}
+{% endfor %}
+
+{% assign bio_groups = site.data.bios | group_by: "class" %}
+
+{% for bios in bio_groups %}
+	<h3>{{ bios.name }}</h3>
+	{% include table.html columns=page.columns data=bios.items %}
+{% endfor %}
+
+<br/>
+
+<script src="/assets/js/table.js"/>

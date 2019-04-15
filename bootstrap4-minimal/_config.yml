@@ -8,7 +8,7 @@ url:
 # Build settings
 permalink: :title/
 sass:
-  sass_dir: css
+  sass_dir: /assets/css
 
 markdown: kramdown
 

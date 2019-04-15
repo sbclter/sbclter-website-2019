@@ -1,0 +1,20 @@
+<div class="pull-left">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        {% for column in include.columns %}
+          <th>{{ column }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    {% for itemrow in include.data %}
+      <tr>
+        {% for item in itemrow %}
+          <td>{{ item[1] }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
