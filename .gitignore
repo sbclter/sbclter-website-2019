@@ -51,9 +51,7 @@ build-iPhoneSimulator/
 
 ### added by mob, 2019-04-11
 # ignore the _site files built by jekyll
-_site/*
+_site/
 .jekyll-metadata
-.sass-cache/*
-
-
-
+.sass-cache/
+._*
