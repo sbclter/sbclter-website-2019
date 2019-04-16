@@ -9,7 +9,7 @@
     </thead>
     <tbody id="myTable">
     {% for itemrow in include.data %}
-      <tr>
+      <tr class="table_title_{{bios.name}}">
         {% for item in itemrow %}
           <td>{{ item[1] }}</td>
         {% endfor %}

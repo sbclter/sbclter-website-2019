@@ -33,7 +33,7 @@ columns:
 {% assign bio_groups = site.data.bios | group_by: "employeeType" %}
 
 {% for bios in bio_groups %}
-	<h3>{{ bios.name }}</h3>
+	<h3 id="table_title_{{bios.name}}">{{ bios.name }}</h3>
 	{% include table.html columns=page.columns data=bios.items %}
 {% endfor %}
 
