@@ -135,7 +135,7 @@ givenName: Carla
 email: dantonio@lifesci.ucsb.edu
 email: cdantonio@lternet.edu
 profileText: "As an extension of the watershed monitoring portion of th e Santa Barbara Coastal LTER and in collaboration with the Schimel lab, my lab has been evaluating how plant communities and soil and plant nitrogen r espond to high intensity wildfire. We are calibrating on the ground samplin g of plant composition and cover with hyperspectral images to develop proto cols for remotely monitoring long term ecosystem recovery.   We will also b e correlating plant recovery and soil nitrogen dynamics with nitrate and se diment in stream discharge.
-surname: D'Antonio
+surname: "D'Antonio"
 telephoneNumber: 805-893-2796
 projectRole: Investigator_L1
 databaseID: cdantonio
@@ -143,6 +143,7 @@ researchInterestsText:Plant/soil interactions, plant species composition, how hu
 
 commonName: Catherine Shields
 advisor: Tague
+employeeType: Student
 givenName: Catherine
 postalAddress: Donald Bren School of Environmental Science and Management$University of Calfornia$Santa Barbara, CA 96106-5131 
 email: cshields@bren.ucsb.edu
@@ -151,11 +152,12 @@ surname: Shields
 projectRole: GS
 databaseID: cshields
 scientificDomainText:
+degreeProgram: PhD
 
 
 commonName: Christie Yorke
 advisor: Miller, Page, Brzezinski
-employeeType: Graduate Student
+employeeType: Student
 givenName: Christie
 email: christie.yorke@lifesci.ucsb.edu
 profileText:"I research the fates and uses of grazed kelp and kelp detritus within kelp forests both in northeastern New Zealand and within the Santa Barbara Coastal LTER site. To do so, I run field and lab experiments and I measure natural abundances of fatty acids, and carbon and nitrogen isotopes for work with biomarkers. I’ve directly measured small particle kelp sloughing rates to measure availability of kelp detritus to subtidal suspension feeders. I’m currently working on measuring suspension feeder utilization of kelp detritus, both through natural sloughing availability and through urchin modulated bioavailability."
@@ -164,6 +166,8 @@ telephoneNumber: 805-893-7295
 projectRole: GS
 databaseID: cyorke
 scientificDomainText:
+degreeProgram: PhD
+
 
 
 commonName: Debora Iglesias-Rodriguez
@@ -174,7 +178,7 @@ profileText:"I investigate the population structure and dynamics of phytoplankto
 surname: Iglesias-Rodriguez
 telephoneNumber: 805-893-4680
 projectRole: Investigator_L1
-databaseID: dIglesiasrodriguez
+databaseID: diglesiasrodriguez
 scientificDomainText:
 
 
