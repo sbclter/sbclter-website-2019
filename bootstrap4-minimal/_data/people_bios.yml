@@ -1,6 +1,6 @@
 commonName: David Siegel
 scientificDomainString: Co-PI, Oceanography and Modeling
-scientificDomainString: Coupling of physical, biological, and biogeochemical m arine processes on micro to ocean basin scales.  Specifically, ocean color remote sensing and optical oceanography, mesoscale and coastal bio-physical interactions, climate change and its impacts, fishery oceanography, numerical modeling and Lagrangian approaches
+scientificDomainText: Coupling of physical, biological, and biogeochemical m arine processes on micro to ocean basin scales.  Specifically, ocean color remote sensing and optical oceanography, mesoscale and coastal bio-physical interactions, climate change and its impacts, fishery oceanography, numerical modeling and Lagrangian approaches
 employeeType: Professor
 givenName: David
 email: davey@eri.ucsb.edu
@@ -14,7 +14,7 @@ homepage: http://example.com
 
 commonName: Sally Holbrook
 scientificDomainString: Co-PI, Marine Community Ecology
-scientificDomainString: Community ecology, marine vertebrate predation and competition
+scientificDomainText: Community ecology, marine vertebrate predation and competition
 employeeType: Professor
 givenName: Sally
 email: holbrook@lifesci.ucsb.edu
@@ -28,7 +28,7 @@ databaseID: holbrook
 
 commonName: Dan Reed
 scientificDomainString: Lead PI, Kelp Forest Ecology
-scientificDomainString: Reef ecology, dispersal and connectivity, primary prod uction of marine macrophytes
+scientificDomainText: Reef ecology, dispersal and connectivity, primary prod uction of marine macrophytes
 employeeType: Research Biologist
 givenName: Daniel
 email: reed@lifesci.ucsb.edu
