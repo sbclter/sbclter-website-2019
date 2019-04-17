@@ -60,6 +60,7 @@ my @attrs = [ 'surname',
 		'scientificDomainText',
 		'profileText',
 		'degreeProgram',
+		'advisor',
 		'imageFile'		
 	      ];
 ```
@@ -80,6 +81,7 @@ my @attrs = [ 'surname',
 'scientificDomainText',		# longer string, for profile page	
 'profileText',			# profile page. must be present to create a anchor tag
 'degreeProgram',		# optional, applies to students only
+'advisor',			# optional, applies to students only
 'imageFile'			# optional
               ];
 ```
