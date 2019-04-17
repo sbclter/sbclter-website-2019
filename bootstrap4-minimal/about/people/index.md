@@ -30,17 +30,13 @@ columns:
 
 {% include search_bar.html %}
 
-{% assign bio_groups = site.data.bios | group_by: "employeeType" %}
+{% assign bio_groups = site.data.people_bios | group_by: "employeeType" %}
 
 {% for bios in bio_groups %}
-	<h3 id="{{bios.name}}">{{ bios.name }}</h3>
-	{% include table.html columns=page.columns data=bios.items %}
+	{% include table.html columns=page.columns data=bios %}
 {% endfor %}
 
 <br/>
-
-
-<script src="/assets/js/table.js"/>
 
 
 markdown code block: 

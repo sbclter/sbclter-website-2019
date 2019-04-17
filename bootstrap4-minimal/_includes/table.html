@@ -1,6 +1,7 @@
 <div class="pull-left">
+  <h3 id="{{include.data.name}}">{{ include.data.name }}</h3>
   <table class="table table-bordered table-striped">
-    <thead id="table_header_{{bios.name}}">
+    <thead id="table_header_{{include.data.name}}">
       <tr>
         {% for column in include.columns %}
           <th>{{ column }}</th>
@@ -8,8 +9,8 @@
       </tr>
     </thead>
     <tbody id="myTable">
-    {% for itemrow in include.data %}
-      <tr class="table_row_{{bios.name}}">
+    {% for itemrow in include.data.items %}
+      <tr class="table_row_{{include.data.name}}">
         {% for item in itemrow %}
           <td>{{ item[1] }}</td>
         {% endfor %}
@@ -18,3 +19,5 @@
     </tbody>
   </table>
 </div>
+
+<script src="/assets/js/table.js"/>

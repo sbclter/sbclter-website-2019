@@ -12,6 +12,11 @@ sass:
 
 markdown: kramdown
 
-plugins:
- #  - jekyll-feed
+plugins_dir: _plugins
 
+
+page_gen:
+  - data: 'people_bios'
+    template: 'profile'
+    name: 'databaseID'
+    dir: 'about/people'
