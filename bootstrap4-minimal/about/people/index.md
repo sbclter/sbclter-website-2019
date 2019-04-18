@@ -38,6 +38,9 @@ columns:
 
 <br/>
 
+<script src="/assets/js/table.js"/>
+
+
 
 markdown code block: 
 
