@@ -1,1 +1,31 @@
-<h1> {{page.commonName}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header_nav.html %}
+
+<div id="main-container">
+	<div class="row">
+
+    <div id="left-container">
+			<img src="https://storage.investagrams.com/files/Account/11297/User_11297_Profile_Picture_d4d958bb-250d-4bb7-b02d-a89b33f43bae_Square.jpg?d=01_01_0001_12_00_00_AM" width="326" height="326">
+			<div id="contact-info">
+				<p> {{ page.telephoneNumber }} </p>
+				<p> {{ page.email }} </p>
+			</div>
+		</div>
+
+		<div id="right-container" class="col-9">
+			<div id="title-text" class="row pl-2">
+				<div id="title-name"> {{ page.commonName }} </div>
+				<div id="title-career"> ({{ page.employeeType }}) </div>
+			</div>
+			<p id="profile-text">{{ page.profileText }}</p>
+		</div>
+
+	</div>
+</div>
+
+{% include footer.html %}
+</body>
+</html>
