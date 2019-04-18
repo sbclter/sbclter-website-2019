@@ -9,7 +9,6 @@ function isEmptyTable(myId){
 	    }
 	    let myTable = document.getElementById(myId);
 	    let myHeader = document.getElementById("table_header_" + myId);
-	    console.log(myHeader)
 	    if (hide){
 	    	myTable.style.display = 'none';
 	    	myHeader.style.display = 'none';
@@ -24,6 +23,7 @@ $(document).ready(function(){
 	var h3IdArr = [];
 
 	var h3s = document.getElementsByTagName("H3");
+	console.log(h3s)
 
 	for(var i=0;i<h3s.length;i++)
 	{
@@ -38,6 +38,7 @@ $(document).ready(function(){
     });
 
     for(var i=0; i < h3IdArr.length; i++){
+    	console.log(h3IdArr[i])
   		isEmptyTable(h3IdArr[i]);
   	}
 
