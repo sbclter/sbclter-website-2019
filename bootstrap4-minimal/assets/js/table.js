@@ -1,6 +1,7 @@
 function isEmptyTable(myId){
 	if(myId != ""){
-	    let trs = document.getElementsByClassName("table_row_" + myId);
+		parsedId = myId.replace("table_", "")
+	    let trs = document.getElementsByClassName("table_row_" + parsedId);
 	    let hide = true
 	    for (let element of trs) {
 	      if (element.style.display !== "none"){
@@ -8,7 +9,7 @@ function isEmptyTable(myId){
 	      }
 	    }
 	    let myTable = document.getElementById(myId);
-	    let myHeader = document.getElementById("table_header_" + myId);
+	    let myHeader = document.getElementById("table_header_" + parsedId);
 	    if (hide){
 	    	myTable.style.display = 'none';
 	    	myHeader.style.display = 'none';
@@ -19,16 +20,24 @@ function isEmptyTable(myId){
 	}
 }
 
+jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+    	console.log($(this).data("href"))
+        window.location = $(this).data("href");
+    });
+});
+
 $(document).ready(function(){
 	var h3IdArr = [];
 
 	var h3s = document.getElementsByTagName("H3");
-	console.log(h3s)
 
-	for(var i=0;i<h3s.length;i++)
+	for(var i=0; i < h3s.length; i++)
 	{
 		// Will have to look for id's with table_title in future
-   		h3IdArr.push(h3s[i].id);
+		if(h3s[i].id.includes("table_")){
+	   		h3IdArr.push(h3s[i].id);
+		}
 	}
 
   $("#myInput").on("keyup", function() {

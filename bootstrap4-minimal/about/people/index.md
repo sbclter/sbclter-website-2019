@@ -37,7 +37,7 @@ dataFilter:
 {% assign bio_groups = site.data.people_bios | group_by: "employeeType" %}
 
 {% for bios in bio_groups %}
-	{% include table.html columns=page.columns data=bios dataFilter=page.dataFilter%}
+	{% include people_table.html columns=page.columns data=bios dataFilter=page.dataFilter%}
 {% endfor %}
 
 <br/>
