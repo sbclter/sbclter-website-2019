@@ -4,10 +4,14 @@ title: 'SBC LTER People'
 description: people invovled in the Santa Barbara Coastal LTER.
 columns:
   - Name
-  - Role
-  - Class
-  - Image
-  - Bio
+  - Scientific Domain
+  - Email
+  - Phone
+dataFilter:
+  - commonName
+  - scientificDomainString
+  - email
+  - telephoneNumber
 ---
 
 <h1>People</h1>
@@ -33,7 +37,7 @@ columns:
 {% assign bio_groups = site.data.people_bios | group_by: "employeeType" %}
 
 {% for bios in bio_groups %}
-	{% include table.html columns=page.columns data=bios %}
+	{% include table.html columns=page.columns data=bios dataFilter=page.dataFilter%}
 {% endfor %}
 
 <br/>
