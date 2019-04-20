@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2015-08-04T18:00:03-07:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: inshore_pH Created at: 2015-08-04T18:00:03-07:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="inshore_d">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/inshore_d.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>inshore_pH</name>
+      <open>0</open>
+      <Placemark>
+        <name>Arroyo Quemado Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: pH</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Arroyo Quemado Reef is located 0.16km from river mouth; estimated depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled site, AQM.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.11965,34.46495</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_d</styleUrl>
+        <Point>
+          <coordinates>-120.11965,34.46495,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alegria</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: pH</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Alegria (ALE) is located offshore from the community of Hollister Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.28998,34.46085</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_d</styleUrl>
+        <Point>
+          <coordinates>-120.28998,34.46085,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mohawk Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: pH</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is 10.8 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.73012,34.39323</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_d</styleUrl>
+        <Point>
+          <coordinates>-119.73012,34.39323,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Barbara Harbor/Stearns Wharf</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: pH</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Stearns Wharf (SBH) is located at the end of State Street, Santa Barbara, California, USA.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.68493,34.40934</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_d</styleUrl>
+        <Point>
+          <coordinates>-119.68493,34.40934,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

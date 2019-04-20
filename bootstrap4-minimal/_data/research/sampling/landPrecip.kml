@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2015-08-04T18:01:36-07:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: landPrecip Created at: 2015-08-04T18:01:36-07:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="land_c">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/land_c.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>landPrecip</name>
+      <open>0</open>
+      <Placemark>
+        <name>Carpinteria at Veddar's Ranch</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Carpinteria, Carpinteria at Veddar's Ranch</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.48104,34.42374</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.48104,34.42374,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Capitan at State Beach</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: El Capitan, El Capitan at El Capitan State Beach</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.024883,34.462283</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.024883,34.462283,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Capitan at  Upper Bill Wallace Trail</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: El Capitan, El Capitan at Upper Bill Wallace Trail</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.007850,34.496117</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.007850,34.496117,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gobernador at Veddar's Ranch</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Gobernador, Gobernador at Veddar's Ranch</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.47089,34.4245</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.47089,34.4245,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gaviota at Hwy 101 N rest stop</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Gaviota, Gaviota at Hwy 101 N rest stop</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.229170,34.480110</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.229170,34.480110,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gaviota at Las Cruces School</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Gaviota, Gaviota at Las Cruces School</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.22861,34.50765</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.22861,34.50765,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Hondo at East Avocado Orchard</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Arroyo Hondo, Arroyo Hondo at East Avocado Orchard</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.14064,34.47651</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.14064,34.47651,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Hondo at Upper Outlaw Trail</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Arroyo Hondo, Arroyo Hondo at Upper Outlaw Trail</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.13678,34.49059</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.13678,34.49059,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Refugio at State Park</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Gaviota, Refugio at Refugio State Park</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.076261,34.461853</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.076261,34.461853,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Refugio at Lower Aguacitos Ranch</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Refugio, Refugio at Lower Aguacitos Ranch</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.07483,34.49122</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.07483,34.49122,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Refugio at Upper Aguacitos Ranch</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Refugio, Refugio at Upper Aguacitos Ranch</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.07947,34.50856</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.07947,34.50856,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Refugio at Rancho La Scherpa</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Refugio, Refugio at Rancho La Scherpa</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.05636,34.5303</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.05636,34.5303,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Baron Ranch</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Baron Ranch/Tajiguas Landfill</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.12916667,34.48333333</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.12916667,34.48333333,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carpinteria Fire Station</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Carpinteria Fire Station</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.51666667,34.4000000</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.51666667,34.4000000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cater Water Treatment Plant</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Cater Water Treatment Plant</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.73027778,34.45416667</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.73027778,34.45416667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cold Springs Basin</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Cold Springs Debris Basin</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.61666667,34.45000000</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.61666667,34.45000000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dos Pueblos Ranch</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Dos Pueblos Ranch</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.95166667,34.44666667</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.95166667,34.44666667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Doulton Tunnel</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Doulton Tunnel</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.56388889,34.45694444</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.56388889,34.45694444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Edison Trail</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Edison Trail</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.50777778,34.44277778</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.50777778,34.44277778,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Deseo</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: El Deseo/Graham Ranch</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.69583333,34.49166667</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.69583333,34.49166667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Barbara County Road Yard</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Santa Barbara County Road Yard</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.76666667,34.45000000</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.76666667,34.45000000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KTYD</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: KTYD Radio Station, Santa Barbara, CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.691716,34.422301</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.691716,34.422301,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nojoqui Falls Park</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Nojoqui Falls Park</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.17777778,34.53388889</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.17777778,34.53388889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Marcos Pass USFS Stn</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: San Marcos Pass, US Forest Service Station</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.82388889,34.51111111</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.82388889,34.51111111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Barbara Co. FCD Eng. Bldg.</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Santa Barbara - Downtown Flood Control District Office</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.70000000,34.41666667</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.70000000,34.41666667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stanwood Fire Station</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Stanwood Fire Station</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.68333333,34.45000000</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.68333333,34.45000000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trout Club</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Trout Club</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.80000000,34.48972222</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.80000000,34.48972222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>UCSB200</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Ellison Hall Roof, UC Santa Barbara</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.84611111,34.41500000</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.84611111,34.41500000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gaviota State Park</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Gaviota State Park</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.22944,34.47245</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.22944,34.47245,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Refugio Pass</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Refugio Pass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.0922,34.53</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.0922,34.53,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tecolote Canyon</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Tecolote Canyon</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.9088,34.520823</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.9088,34.520823,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glen Annie Canyon</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Glen Annie Canyon</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.8833,34.4750</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.8833,34.4750,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Goleta Fire Station</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Goleta Fire Station</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.85361,34.443055</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.85361,34.443055,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Goleta Water District</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Goleta Water District</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7855,34.436944</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.7855,34.436944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Barbara Caltrans Office</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Santa Barbara Caltrans office</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.755,34.438611</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.755,34.438611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Botanic Garden, 321</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Santa Barbara Botanic Garden</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.70694,34.45388</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.70694,34.45388,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carpinteria US Forest Service Office</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Carpinteria US Forest Service Office</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.49138,34.40194</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.49138,34.40194,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Montecito</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Montecito</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.640555,34.429444</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-119.640555,34.429444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rancho San Julian</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Rancho San Julian</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.33777,34.531666</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.33777,34.531666,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Buellton Fire Station</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Precipitation collected by SBC LTER or Santa Barbara County</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Santa Barbara County Public Works Department Flood Control District Site at: Buellton Fire Station</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.19667,34.61333</p>
+          </div>
+        </description>
+        <styleUrl>#land_c</styleUrl>
+        <Point>
+          <coordinates>-120.19667,34.61333,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

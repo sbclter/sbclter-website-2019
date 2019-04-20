@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: beachBirds Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="beach_b">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/beach_b.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>beachBirds</name>
+      <open>0</open>
+      <Placemark>
+        <name>Arroyo Burro Beach A</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Beach</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Abundance of birds</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.74375,34.40305</p>
+          </div>
+        </description>
+        <styleUrl>#beach_b</styleUrl>
+        <Point>
+          <coordinates>-119.74375,34.40305,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Quemado Beach A</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Beach</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Abundance of birds</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.11862,34.47047</p>
+          </div>
+        </description>
+        <styleUrl>#beach_b</styleUrl>
+        <Point>
+          <coordinates>-120.11862,34.47047,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East UCSB Campus Beach A</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Beach</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Abundance of birds</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.84202,34.41077</p>
+          </div>
+        </description>
+        <styleUrl>#beach_b</styleUrl>
+        <Point>
+          <coordinates>-119.84202,34.41077,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Isla Vista West Beach A</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Beach</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Abundance of birds</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.87385,34.40928</p>
+          </div>
+        </description>
+        <styleUrl>#beach_b</styleUrl>
+        <Point>
+          <coordinates>-119.87385,34.40928,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Claus Lane Beach A</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Beach</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Abundance of birds</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.55158,34.40853</p>
+          </div>
+        </description>
+        <styleUrl>#beach_b</styleUrl>
+        <Point>
+          <coordinates>-119.55158,34.40853,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

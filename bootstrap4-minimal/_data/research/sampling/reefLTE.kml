@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2015-10-04T09:57:08-07:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: reefLTE Created at: 2015-10-04T09:57:08-07:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="reef_f">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/reef_f.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>reefLTE</name>
+      <open>0</open>
+      <Placemark>
+        <name>Arroyo Quemado Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Arroyo Quemado Reef is located on the Santa Barbara Channel
+    near the mouth of Arroyo Quemada Creek, Santa Barbara County, CA. Depth ranges from -5.4 to -10.7 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.11905,34.46774988</p>
+          </div>
+        </description>
+        <styleUrl>#reef_f</styleUrl>
+        <Point>
+          <coordinates>-120.11905,34.46774988,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carpinteria Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Carpinteria Reef is located on the Santa Barbara Channel offshore of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters.
+    </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.5416933,34.3916319</p>
+          </div>
+        </description>
+        <styleUrl>#reef_f</styleUrl>
+        <Point>
+          <coordinates>-119.5416933,34.3916319,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Isla Vista Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Isla Vista ("IV") Reef is located on the Santa Barbara Channel near the University of California Santa Barbara, CA. Depth range is from -8.2 to -8.8 meters. 
+   </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.85755,34.402783</p>
+          </div>
+        </description>
+        <styleUrl>#reef_f</styleUrl>
+        <Point>
+          <coordinates>-119.85755,34.402783,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mohawk Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Mohawk Reef is located on the Santa Barbara Channel, east of Arroyo Burro Beach, Santa Barbara, CA. Depth range from 4.5m to 6.0 m. 
+   </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.72957,34.3940708</p>
+          </div>
+        </description>
+        <styleUrl>#reef_f</styleUrl>
+        <Point>
+          <coordinates>-119.72957,34.3940708,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Naples Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Naples Reef is located on the Santa Barbara Channel near the community of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from -5.9 to -13.4 meters. 
+   </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.95154,34.4221216</p>
+          </div>
+        </description>
+        <styleUrl>#reef_f</styleUrl>
+        <Point>
+          <coordinates>-119.95154,34.4221216,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

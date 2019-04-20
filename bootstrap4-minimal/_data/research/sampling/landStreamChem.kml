@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: landStreamChem Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="land_a">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/land_a.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>landStreamChem</name>
+      <open>0</open>
+      <Placemark>
+        <name>Arroyo Burro Creek at Cliff Drive, AB00</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Arroyo Burro, Arroyo Burro at Cliff Drive</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.74021,34.40505027</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-119.74021,34.40505027,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bell Canyon Creek at Winchester Canyon Rd, BC02</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat:  -119.90563,34.43854 </p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates> -119.90563,34.43854 ,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gaviota Creek, Hwy 101 at South Rest Stopi, GV01</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Gaviota, Gaviota at Hwy 101 South Rest Stop Exit</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.22917,34.4855</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-120.22917,34.4855,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Hondo Creek at Upstream Side of 101 Bridge, HO00</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Arroyo Hondo, Arroyo Hondo at Upstream Side of 101 Bridge</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.14122,34.4752858</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-120.14122,34.4752858,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mission Creek at Montecito St, MC00</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Mission Creek, Mission at Montecito St</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.69499,34.41307303</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-119.69499,34.41307303,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mission Creek at Rocky Nook, MC06, 11119745 (USGS)</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Mission Creek, Mission at Rocky Nook. This station also sampled by the USGS.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.71244,34.44072</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-119.71244,34.44072,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Refugio Creek at Hwy 101, RG01</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Refugio Creek, Refugio at Hwy 101 Bridge</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.06932,34.46573164</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-120.06932,34.46573164,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rattlesnake Creek at Las Canoas Rd, RS02</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: Rattlesnake Creek, Rattlesnake at Las Canoas Bridge</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.69222,34.45761111</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-119.69222,34.45761111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Pedro Creek at Stow Canyon Park, SP02, 11120520 (USGS)</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Land</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N, P, and C, TSS, conductivity</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Creek or River: San Pedro Creek at Stow Canyon Park, Goleta. This station also sampled by the  USGS.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.84028,34.44861</p>
+          </div>
+        </description>
+        <styleUrl>#land_a</styleUrl>
+        <Point>
+          <coordinates>-119.84028,34.44861,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

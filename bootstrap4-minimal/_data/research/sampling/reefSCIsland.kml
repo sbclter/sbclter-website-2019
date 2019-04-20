@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: reefSCIsland Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="reef_d">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/reef_d.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>reefSCIsland</name>
+      <open>0</open>
+      <Placemark>
+        <name>BC 1</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: BC 1, between Fry's Cove and Platt's Harbor, north shore 
+    of Santa Cruz Island, Channel Islands, CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7414167,34.05076667</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7414167,34.05076667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BC 2</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: BC 2, between Fry's Cove and Platt's Harbor, north shore 
+    of Santa Cruz Island, Channel Islands, CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7418167,34.05116667</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7418167,34.05116667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BC Point</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: BC Point, between Fry's Cove and Platt's Harbor, north shore 
+    of Santa Cruz Island, Channel Islands, CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7406333,34.05035</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7406333,34.05035,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Diablo</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Diablo, east of Diablo anchorage, north shore of Santa Cruz Island, Channel Islands, CA.
+    Southeast of SBC LTER Diablo site.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.75745,34.05815</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.75745,34.05815,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fern 1</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Fern 1, east of Fry's Cove, north shore 
+    of Santa Cruz Island, Channel Islands, CA.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7496333,34.05365</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7496333,34.05365,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fern O</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Fern O, or Fern Offshore. east of Fry's Cove, north shore 
+    of Santa Cruz Island, Channel Islands, CA.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7470333,34.05291667</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7470333,34.05291667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fry's 1</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Fry's Cove Transect 1, Fry's Cove, western corner. North shore of Santa Cruz Island,
+    Channel Islands, CA.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7551,34.05695</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7551,34.05695,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fry's 2</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Fry's Cove Transect 2, west of Fry's Cove, north shore 
+    of Santa Cruz Island, Channel Islands, CA. </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7558833,34.05765</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7558833,34.05765,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fry's 3</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Fry's Cove Transect 3, west of Fry's Cove, north shore 
+    of Santa Cruz Island, Channel Islands, CA.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7563,34.05776667</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7563,34.05776667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Twin E</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Twin E: Twin Harbors East, north shore 
+    of Santa Cruz Island, Channel Islands, CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7140833,34.04345</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7140833,34.04345,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Twin W</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Surfperch density and size, foraging habitat, prey biomass</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Twin W: Twin Harbors West, north shore 
+    of Santa Cruz Island, Channel Islands, CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7151333,34.0444</p>
+          </div>
+        </description>
+        <styleUrl>#reef_d</styleUrl>
+        <Point>
+          <coordinates>-119.7151333,34.0444,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
