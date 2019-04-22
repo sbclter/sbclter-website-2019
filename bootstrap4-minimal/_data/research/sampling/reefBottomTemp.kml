@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: reefBottomTemp Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="reef_b">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/reef_b.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>reefBottomTemp</name>
+      <open>0</open>
+      <Placemark>
+        <name>Arroyo Burro Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Arroyo Burro Reef is located on the Santa Barbara Channel
+  near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to 7 meters. </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7445915,34.400275</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.7445915,34.400275,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Hondo Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Arroyo Hondo Reef is located on the Santa Barbara Channel near the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters. 
+ </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.1426165,34.471817</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-120.1426165,34.471817,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Quemado Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Arroyo Quemado Reef is located on the Santa Barbara Channel
+    near the mouth of Arroyo Quemada Creek, Santa Barbara County, CA. Depth ranges from -5.4 to -10.7 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.11905,34.46774988</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-120.11905,34.46774988,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bullito Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Bullito Reef is located on the Santa Barbara Channel between Gaviota and Pt. Conception, CA. Depth ranges from -5.5 to -7.3 meters. 
+    </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.33349,34.45850533</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-120.33349,34.45850533,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carpinteria Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Carpinteria Reef is located on the Santa Barbara Channel offshore of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters.
+    </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.5416933,34.3916319</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.5416933,34.3916319,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Goleta Bay</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Goleta Bay is located on the Santa Barbara Channel east of Goleta Pier. Depth range is -4.2 to -5 meters. check lat/lon. this was found with abur! 
+     </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.8221,34.4137165</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.8221,34.4137165,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Isla Vista Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Isla Vista ("IV") Reef is located on the Santa Barbara Channel near the University of California Santa Barbara, CA. Depth range is from -8.2 to -8.8 meters. 
+   </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.85755,34.402783</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.85755,34.402783,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mohawk Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Mohawk Reef is located on the Santa Barbara Channel, east of Arroyo Burro Beach, Santa Barbara, CA. Depth range from 4.5m to 6.0 m. 
+   </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.72957,34.3940708</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.72957,34.3940708,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Naples Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Naples Reef is located on the Santa Barbara Channel near the community of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from -5.9 to -13.4 meters. 
+   </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.95154,34.4221216</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.95154,34.4221216,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SCI Diablo  Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Diablo Reef is located the north shore of Santa Cruz Island, in the Santa Barbara Channel Islands, CA. Depth ranges from -3.5 to -15 meters.
+    </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.75763,34.05865</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.75763,34.05865,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SCI Twin Harbor West Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Water temperature on the bottom</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Twin Harbor West Reef is located on the north shore of Santa Cruz Island, in the Santa Barbara Channel Islands, CA. Depth ranges from -3.0 to -15 meters. 
+    </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.71513,34.0444335</p>
+          </div>
+        </description>
+        <styleUrl>#reef_b</styleUrl>
+        <Point>
+          <coordinates>-119.71513,34.0444335,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

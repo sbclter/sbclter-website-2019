@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: inshoreMoorings Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="inshore_a">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/inshore_a.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>inshoreMoorings</name>
+      <open>0</open>
+      <Placemark>
+        <name>Alegria - ALE</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Moored current velocity, conductivity &amp; temperature</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Offshore from the community of Hollister Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.28998,34.46085</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_a</styleUrl>
+        <Point>
+          <coordinates>-120.28998,34.46085,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Quemado Reef - ARQ</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Moored current velocity, conductivity &amp; temperature</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: 0.16km from river mouth, estimated depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled site, AQM.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.11965,34.46495</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_a</styleUrl>
+        <Point>
+          <coordinates>-120.11965,34.46495,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carpinteria Reef - CAR</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Moored current velocity, conductivity &amp; temperature</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: On Carpinteria Reef, depth est at 26ft </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.53990,34.39015</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_a</styleUrl>
+        <Point>
+          <coordinates>-119.53990,34.39015,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mohawk Reef - MKO</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Moored current velocity, conductivity &amp; temperature</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Located at Mohawk reef, at the offshore spar buoy. Depth is 10.8 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.73012,34.39323</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_a</styleUrl>
+        <Point>
+          <coordinates>-119.73012,34.39323,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Naples Reef - NAP</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Moored current velocity, conductivity &amp; temperature</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Offshore from the community of Naples. Depth: 16.5 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.95032,34.42388</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_a</styleUrl>
+        <Point>
+          <coordinates>-119.95032,34.42388,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
