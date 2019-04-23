@@ -25,6 +25,11 @@ jQuery(document).ready(function($) {
     	console.log($(this).data("href"))
         window.location = $(this).data("href");
     });
+    $(".clickable-row").hover(function() {
+	    $(this).addClass('table-hover');
+	}, function() {
+	    $(this).removeClass('table-hover');
+	});
 });
 
 $(document).ready(function(){

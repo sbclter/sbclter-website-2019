@@ -1,6 +1,7 @@
 ---
 layout: article
 title: 'SBC LTER People'
+clickable: 1
 description: people invovled in the Santa Barbara Coastal LTER.
 columns:
   - Name
@@ -37,7 +38,7 @@ dataFilter:
 {% assign bio_groups = site.data.people_bios | group_by: "employeeType" %}
 
 {% for bios in bio_groups %}
-	{% include people_table.html columns=page.columns data=bios dataFilter=page.dataFilter%}
+	{% include table.html columns=page.columns data=bios dataFilter=page.dataFilter clickable=page.clickable%}
 {% endfor %}
 
 <br/>

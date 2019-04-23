@@ -1,5 +1,4 @@
 <div class="pull-left">
-  <h3 id="table_{{include.data.name}}">{{ include.data.name }}</h3>
   <table class="table table-bordered table-striped">
     <thead id="table_header_{{include.data.name}}">
       <tr>
@@ -10,7 +9,7 @@
     </thead>
     <tbody id="myTable">
     {% for itemrow in include.data.items %}
-      <tr class="clickable-row table_row_{{include.data.name}}" data-href='{{itemrow.databaseID}}' style="cursor: pointer">
+      <tr>
         {% for filter in include.dataFilter %}
           <td>{{ itemrow[filter] }}</td>
         {% endfor %}
@@ -19,4 +18,3 @@
     </tbody>
   </table>
 </div>
-
