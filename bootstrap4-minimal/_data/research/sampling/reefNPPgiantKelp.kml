@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: reefNPPgiantKelp Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="reef_e">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/reef_e.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>reefNPPgiantKelp</name>
+      <open>0</open>
+      <Placemark>
+        <name>Arroyo Burro Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: 	Giant kelp biomass, growth, loss, NPP and stoichiometry</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Arroyo Burro Reef is located on the Santa Barbara Channel
+  near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to 7 meters. </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.7445915,34.400275</p>
+          </div>
+        </description>
+        <styleUrl>#reef_e</styleUrl>
+        <Point>
+          <coordinates>-119.7445915,34.400275,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Quemado Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: 	Giant kelp biomass, growth, loss, NPP and stoichiometry</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Arroyo Quemado Reef is located on the Santa Barbara Channel
+    near the mouth of Arroyo Quemada Creek, Santa Barbara County, CA. Depth ranges from -5.4 to -10.7 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.11905,34.46774988</p>
+          </div>
+        </description>
+        <styleUrl>#reef_e</styleUrl>
+        <Point>
+          <coordinates>-120.11905,34.46774988,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mohawk Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Kelp Forest</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: 	Giant kelp biomass, growth, loss, NPP and stoichiometry</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Mohawk Reef is located on the Santa Barbara Channel, east of Arroyo Burro Beach, Santa Barbara, CA. Depth range from 4.5m to 6.0 m. 
+   </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.72957,34.3940708</p>
+          </div>
+        </description>
+        <styleUrl>#reef_e</styleUrl>
+        <Point>
+          <coordinates>-119.72957,34.3940708,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

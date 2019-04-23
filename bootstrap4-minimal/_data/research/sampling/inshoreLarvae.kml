@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: inshoreLarvae_2.kml Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="inshore_c">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/inshore_c.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>inshoreLarvae_2.kml</name>
+      <open>0</open>
+      <Placemark>
+        <name>Anacapa Island CA</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Anacapa Island CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.36210,34.01681</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_c</styleUrl>
+        <Point>
+          <coordinates>-119.36210,34.01681,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point Cabrillo, Mendocino County CA</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Point Cabrillo, Mendocino County CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -123.82679,39.35037</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_c</styleUrl>
+        <Point>
+          <coordinates>-123.82679,39.35037,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gaviota Pier, Santa Barbara County CA</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Gaviota Pier, Santa Barbara County CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.22821,34.46978</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_c</styleUrl>
+        <Point>
+          <coordinates>-120.22821,34.46978,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ocean Beach Pier, San Diego CA</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Ocean Beach Pier, San Diego CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -117.25662,32.74914</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_c</styleUrl>
+        <Point>
+          <coordinates>-117.25662,32.74914,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ellwood Pier, Goleta CA</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Ellwood Pier, Goleta CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.92408,34.43085</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_c</styleUrl>
+        <Point>
+          <coordinates>-119.92408,34.43085,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stearns Wharf, Santa Barbara CA</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Stearns Wharf, Santa Barbara CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.68493,34.40934</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_c</styleUrl>
+        <Point>
+          <coordinates>-119.68493,34.40934,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Scripps Pier, San Diego CA</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: </p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Scripps Pier, San Diego CA</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -117.25647,32.85039</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_c</styleUrl>
+        <Point>
+          <coordinates>-117.25647,32.85039,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

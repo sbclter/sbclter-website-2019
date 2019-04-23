@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLinkControl>
+    <expires>2013-11-15T12:53:15-08:00</expires>
+  </NetworkLinkControl>
+  <Document>
+    <name>Layer name: inshoreProfiles Created at: 2013-11-15T12:53:15-08:00</name>
+    <open>true</open>
+    <Snippet maxLines="0"/>
+    <description>converted from SBC-places XML</description>
+    <Style id="inshore_b">
+      <IconStyle>
+        <Icon>
+          <href>http://sbc.lternet.edu/images/map/symbols/inshore_b.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>inshoreProfiles</name>
+      <open>0</open>
+      <Placemark>
+        <name>Arroyo Burro Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N P *=&amp; C, chlorophyll-a and CTD profiles</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Offshore from Arroyo Burro Beach</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.74438,34.40017</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_b</styleUrl>
+        <Point>
+          <coordinates>-119.74438,34.40017,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo Quemado Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N P *=&amp; C, chlorophyll-a and CTD profiles</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: on the reef near Arroyo Quemado. In the sand channel in the middle of the
+  kelp bed</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -120.12005,34.46722</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_b</styleUrl>
+        <Point>
+          <coordinates>-120.12005,34.46722,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carpinteria Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N P *=&amp; C, chlorophyll-a and CTD profiles</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: on the reef from near Carpinteria</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.53990,34.39015</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_b</styleUrl>
+        <Point>
+          <coordinates>-119.53990,34.39015,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Naples Reef</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N P *=&amp; C, chlorophyll-a and CTD profiles</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: on the reef offshore of Naples. Depth is 16.5 meters</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.95032,34.42388</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_b</styleUrl>
+        <Point>
+          <coordinates>-119.95032,34.42388,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mohawk Reef - MK</name>
+        <description>
+          <div class="map_infowindow">
+            <p style="margin:0 0 0 0; ">Habitat: Inshore Ocean</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Sampling: Nutrients, particulate N P *=&amp; C, chlorophyll-a and CTD profiles</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Site Description: Located at Mohawk reef, at the offshore spar buoy. Depth is 10.8 meters.</p>
+            <p style="margin:0 0 0 0;margin-top:5px;">Lon/Lat: -119.73012,34.39323</p>
+          </div>
+        </description>
+        <styleUrl>#inshore_b</styleUrl>
+        <Point>
+          <coordinates>-119.73012,34.39323,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
