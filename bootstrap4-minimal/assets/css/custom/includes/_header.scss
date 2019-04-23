@@ -1,7 +1,8 @@
 .navbar{
   box-shadow: 1px 1px 3px $primary;
-  opacity: 0.8;
+  opacity: 1;
   background: $white;
+  z-index: 100;
 
   .nav-item{
     font-size: 1.4rem;
