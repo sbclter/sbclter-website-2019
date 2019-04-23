@@ -8,12 +8,20 @@
       </tr>
     </thead>
     <tbody id="myTable">
-    {% for itemrow in include.data.items %}
-      <tr>
-        {% for filter in include.dataFilter %}
-          <td>{{ itemrow[filter] }}</td>
+    {% for group in include.data %}
+        {% assign has_header = 0 %}
+        {% for itemrow in group.items %}
+          <tr>
+            {% if has_header != 1 %}
+              <td style=" vertical-align: middle;
+                align: center;" rowspan="{{group.items | size | times: 2}}">{{itemrow["habitatLabel"]}}</td>
+              {% assign has_header = 1 %}
+            {% endif %}
+            {% for filter in include.dataFilter %}
+              <td>{{ itemrow[filter] }}</td>
+            {% endfor %}
+          <tr>
         {% endfor %}
-      </tr>
     {% endfor %}
     </tbody>
   </table>

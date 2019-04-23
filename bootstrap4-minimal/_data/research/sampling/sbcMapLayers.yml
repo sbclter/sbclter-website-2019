@@ -1,0 +1,20 @@
+# Temp data for testing with the research/sampling_sites page
+- id: "landPrecip"
+  label: "Precipitation collected by SBC LTER or Santa Barbara County"
+  habitatName: "land"
+  habitatLabel: "Land"
+
+- id: "landStreamDisch"
+  label: "Stream Discharge"
+  habitatName: "land"
+  habitatLabel: "Land"
+
+- id: "landStreamChem"
+  label: "Nutrients, particulate N, P, and C, TSS, conductivity"
+  habitatName: "land"
+  habitatLabel: "Land" 
+
+- id: "beachWrack"
+  label: "Biomass and species composition of macroalgal wrack"
+  habitatName: "beach"
+  habitatLabel: "Beach" 

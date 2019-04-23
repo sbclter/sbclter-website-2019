@@ -5,9 +5,8 @@ description: page description here.
 columns:
   - Habitat
   - Measurements
-  - Frequency
-  - Initiated
-  - Core Research Area
+dataFilter:
+  - label
 ---
 
 <h1>H1 header</h1>
@@ -20,9 +19,13 @@ columns:
 <li>http://sbc.lternet.edu/sites/sampling/</li>
 </ul>
 <p>TBD: is content in XML (as used by current map), or yaml (which might be easier to generate from postgres. </p>
+<p>It would be best if it the content is in yaml as this cooperate better with jekyll</p>
 
 {% include gmap.html %}
-{% include layers_table.html columns=page.columns%}
+
+
+{% assign layer_groups = site.data.research.sampling.sbcMapLayers | group_by:"habitatName" %}
+{% include layers_table.html columns=page.columns data=layer_groups dataFilter=page.dataFilter%}
 
 
 <!-- Current API is just for development, need a new key -->
