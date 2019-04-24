@@ -23,12 +23,15 @@
 		  		<a class="dropdown-item" href="#">Another no-link</a>
 		</div>
         </li>
-		
-	  <!-- 
-		  
-		  RESEARCH area -->
-        <li class="nav-item">
-          <a href="{{ site.baseurl }}/research/" class="nav-link">Research</a>
+
+        <li class="nav-item dropdown">
+          <a href="{{ site.baseurl }}/research/" class="nav-link dropdown-toggle" id="dropdown02" 
+		  data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Research</a>
+		  	<div class="dropdown-menu" aria-labelledby="dropdown02">		  	
+		  		<a class="dropdown-item" href="{{site.baseurl}}/research/">Research</a>
+				<hr>
+		  		<a class="dropdown-item" href="{{site.baseurl}}/research/sampling_sites">Sampling Sites</a>
+		</div>
         </li>
 	  <!-- 
 		  

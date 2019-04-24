@@ -5,6 +5,7 @@ description: page description here.
 columns:
   - Habitat
   - Measurements
+  - Show
 dataFilter:
   - label
 ---
@@ -27,9 +28,10 @@ dataFilter:
 {% assign layer_groups = site.data.research.sampling.sbcMapLayers | group_by:"habitatName" %}
 {% include layers_table.html columns=page.columns data=layer_groups dataFilter=page.dataFilter%}
 
-
+<br/>
 <!-- Current API is just for development, need a new key -->
-<script src="/assets/js/gmap.js"/>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
+<!-- <script src="/assets/js/gmap.js"/> -->
+<script src="/assets/js/layer_table.js">
+// <script async defer
+// src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+// </script>

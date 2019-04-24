@@ -1,9 +1,9 @@
 <div class="pull-left">
-  <table class="table table-bordered table-striped">
+  <table class="table table-bordered">
     <thead id="table_header_{{include.data.name}}">
       <tr>
         {% for column in include.columns %}
-          <th>{{ column }}</th>
+          <th style="text-align: center; font-size: 30px">{{ column }}</th>
         {% endfor %}
       </tr>
     </thead>
@@ -11,18 +11,20 @@
     {% for group in include.data %}
         {% assign has_header = 0 %}
         {% for itemrow in group.items %}
-          <tr>
+          <tr class="hover_row">
             {% if has_header != 1 %}
-              <td style=" vertical-align: middle;
-                align: center;" rowspan="{{group.items | size | times: 2}}">{{itemrow["habitatLabel"]}}</td>
+              <th style=" vertical-align: middle;
+                text-align: center;" rowspan="{{group.items | size | times: 2}}">{{itemrow["habitatLabel"]}}</th>
               {% assign has_header = 1 %}
             {% endif %}
             {% for filter in include.dataFilter %}
               <td>{{ itemrow[filter] }}</td>
             {% endfor %}
+            <td> 
+              <div class="checkbox">
+                <center><input type="checkbox" value="" id="{{itemrow.id}}"></center>
+              </div>
+            </td>
           <tr>
         {% endfor %}
     {% endfor %}
-    </tbody>
-  </table>
-</div>
