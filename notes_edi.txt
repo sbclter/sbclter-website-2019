@@ -23,7 +23,11 @@ https://github.com/EDIorg/tutorials
 
 
 To retrieve metadata for a single dataset, use a query like this:
-https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/1001/newest
+- https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/1001/newest
 
+or 
+- https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/19/newest
 
+You can test with most integers up to 100. 
+the full list of dataset IDs can be found in _data/dataCollections.xml
 
