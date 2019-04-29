@@ -9,5 +9,11 @@
 }
 
 .table-hover {
-  border: 4px solid rgba(0,0,0, 0.25);
+	border: 4px solid rgba(0,0,0, 0.25);
+}
+
+.cell {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	overflow-wrap: break-word;
 }
