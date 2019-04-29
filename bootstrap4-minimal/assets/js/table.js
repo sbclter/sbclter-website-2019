@@ -10,7 +10,7 @@ function isEmptyTable(myId){
 	      }
 	    }
 
-	    let myTable = document.getElementById(myId);
+	    let myTable = document.getElementById(myId).parentNode;
 	    let myHeader = document.getElementById("table_header_" + parsedId);
 	    if (hide){
 	    	myTable.style.display = 'none';

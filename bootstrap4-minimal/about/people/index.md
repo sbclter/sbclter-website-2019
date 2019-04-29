@@ -15,6 +15,7 @@ dataFilter:
   - telephoneNumber
 page_css:
   - "/assets/css/custom/includes/table.css"
+  - "/assets/css/custom/includes/search_bar.css"
 ---
 
 <div>
