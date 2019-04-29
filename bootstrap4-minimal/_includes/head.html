@@ -1,10 +1,18 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Santa Barbara Coastal LTER</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Santa Barbara Coastal LTER</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- General CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!-- Layout-Specific CSS -->
+	<link rel="stylesheet" href="/assets/css/custom/layouts/{{ page.layout }}.css">
+
+	<!-- Page-Specific / Include-Specific CSS -->
+	{% for css in page.page_css %}
+		<link rel="stylesheet" href="{{ css }}">
+	{% endfor %}
 </head>
-
