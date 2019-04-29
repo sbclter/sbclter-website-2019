@@ -7,6 +7,9 @@ columns:
   - Measurements
 dataFilter:
   - label
+page_css:
+  - "/assets/css/custom/layouts/gmap.css"
+  - "/assets/css/custom/includes/layers_table.css"
 ---
 
 <h1>H1 header</h1>

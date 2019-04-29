@@ -13,6 +13,8 @@ dataFilter:
   - scientificDomainString
   - email
   - telephoneNumber
+page_css:
+  - "/assets/css/custom/includes/table.css"
 ---
 
 <div>
