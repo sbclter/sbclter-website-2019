@@ -8,8 +8,8 @@ mail email
 postaladdress postalAdress
 registeredaddress profileText
 sn surname
-status NA
+status [NA]
 telephonenumber telephoneNumber
 title projectRole
 labeleduri homepage
-
+[NA] advisor
