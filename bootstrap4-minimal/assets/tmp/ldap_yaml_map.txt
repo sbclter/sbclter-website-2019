@@ -1,0 +1,15 @@
+cn commonName
+description scientificDomainString
+destinationindicator scientificDomainText
+employeenumber databaseID
+employeetype employeeType
+givenname givenName
+mail email
+postaladdress postalAdress
+registeredaddress profileText
+sn surname
+status NA
+telephonenumber telephoneNumber
+title projectRole
+labeleduri homepage
+
