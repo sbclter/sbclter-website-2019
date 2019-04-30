@@ -13,27 +13,27 @@
   
   
   
-  -->
+-->
 
 
 
 
   <!-- reef biology 
   
-  -->
-  <collection id="reef_community_structure">
-    <collectionName>SBC LTER: Ongoing time-series of kelp forest community
-      structure</collectionName>
+-->
+<collection id="reef_community_structure">
+  <collectionName>SBC LTER: Ongoing time-series of kelp forest community
+    structure</collectionName>
     <abstract> Long-term data on the abundance of ~250 species of algae, invertebrates and fish,
       collected each summer on permanent 80 meter square transects (40 x 2m) at 9 mainland and 2
       Santa Cruz Island reef sites. Data collection began in the summer of 2000 and continues
       annually to provide information on community structure, population dynamics and species change
       at local reefs. </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.18</docid>
-        <shortTitle>Abundance and size of giant kelp</shortTitle>
-      </package>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.18</docid>
+          <shortTitle>Abundance and size of giant kelp</shortTitle>
+        </package>
       <!--
         <package>
         <docid>knb-lter-sbc.16</docid>
@@ -76,35 +76,35 @@
         <controllerLabel>Invertebrate and Algal Density</controllerLabel>
       </controller>
     </queryAppControllers>
--->
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>reefAnnPopSurvey</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-  <collection id="lte_kelp_removal">
-    <collectionName>SBC LTER: Ongoing long-term kelp removal experiment</collectionName>
-    <abstract>Size and abundance data of algae, invertebrates and fish collected twice per season in
-      permanent transects (40 x 2 meter) at 4 permanent sites as part of the SBC LTER long-term kelp
-      removal experiment. The experiment tests the consequences of consistent annual giant kelp loss
-      arising from winter storms. The following manipulations are being currently maintained:
-      Control- M. pyrifera surface canopy is left intact; Annual removal- M. pyrifera is removed
-      once each winter and allowed to re-colonize over the course of the year, and Continuous
-      removal- M. pyrifera is removed on each sampling date. The experiment began in 2008, and the
-      continuous-removal treatment began in April, 2010. </abstract>
+  -->
+  <habitats>
+    <habitat>reef</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>community_structure</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <mapLayers>
+    <mapLayer>reefAnnPopSurvey</mapLayer>
+  </mapLayers>
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
+<collection id="lte_kelp_removal">
+  <collectionName>SBC LTER: Ongoing long-term kelp removal experiment</collectionName>
+  <abstract>Size and abundance data of algae, invertebrates and fish collected twice per season in
+    permanent transects (40 x 2 meter) at 4 permanent sites as part of the SBC LTER long-term kelp
+    removal experiment. The experiment tests the consequences of consistent annual giant kelp loss
+    arising from winter storms. The following manipulations are being currently maintained:
+    Control- M. pyrifera surface canopy is left intact; Annual removal- M. pyrifera is removed
+    once each winter and allowed to re-colonize over the course of the year, and Continuous
+    removal- M. pyrifera is removed on each sampling date. The experiment began in 2008, and the
+    continuous-removal treatment began in April, 2010. </abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.29</docid>
@@ -179,32 +179,32 @@
   <collection id="kelp_npp">
     <collectionName>SBC LTER: Ongoing time-series of net primary production of giant
       kelp</collectionName>
-    <abstract>Ongoing time series of net primary production (NPP), growth, standing crop and loss
-      rates for Macrocystis pyrifera appropriate for examining seasonal and
-      inter-annual patterns. Sampling is monthly at 3 reef sites, and began in 2002. 
-      Data sets of algorithm input are included (blade content, lifespan, loss and DOC exudation).</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.112</docid>
-        <shortTitle>Giant kelp NPP time-series data</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.24</docid>
-        <shortTitle>Giant kelp (M. pyrifera) carbon and nitrogen content</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.108</docid>
-        <shortTitle>M. pyrifera blade loss dynamics</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.115</docid>
-        <shortTitle>M. pyrifera blade lifespan</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.114</docid>
-        <shortTitle>M. pyrifera DOC exudation</shortTitle>
-      </package>
-    </dataPackages>
+      <abstract>Ongoing time series of net primary production (NPP), growth, standing crop and loss
+        rates for Macrocystis pyrifera appropriate for examining seasonal and
+        inter-annual patterns. Sampling is monthly at 3 reef sites, and began in 2002. 
+        Data sets of algorithm input are included (blade content, lifespan, loss and DOC exudation).</abstract>
+        <dataPackages>
+          <package>
+            <docid>knb-lter-sbc.112</docid>
+            <shortTitle>Giant kelp NPP time-series data</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.24</docid>
+            <shortTitle>Giant kelp (M. pyrifera) carbon and nitrogen content</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.108</docid>
+            <shortTitle>M. pyrifera blade loss dynamics</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.115</docid>
+            <shortTitle>M. pyrifera blade lifespan</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.114</docid>
+            <shortTitle>M. pyrifera DOC exudation</shortTitle>
+          </package>
+        </dataPackages>
     <!-- 
     <queryAppControllers>
       <controller>
@@ -212,7 +212,7 @@
         <controllerLabel>Giant Kelp NPP</controllerLabel>
       </controller>
     </queryAppControllers>
-    -->
+  -->
     <!--
     <queryAppControllers>
       <controller>
@@ -220,34 +220,34 @@
         <controllerLabel>Kelp C and N content</controllerLabel>
       </controller>
     </queryAppControllers>
-    -->
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <!--  <measurementType>biomass</measurementType>   -->
-      <!-- remove -->
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>primary production</lterCoreResearchArea>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>reefNPPgiantKelp</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+  -->
+  <habitats>
+    <habitat>reef</habitat>
+  </habitats>
+  <measurementTypes>
+    <!--  <measurementType>biomass</measurementType>   -->
+    <!-- remove -->
+    <measurementType>ecosystem_processes</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>primary production</lterCoreResearchArea>
+    <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <mapLayers>
+    <mapLayer>reefNPPgiantKelp</mapLayer>
+  </mapLayers>
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
 
-  <collection id="kelp_biomass_ts_landsat">
-    <collectionName>SBC LTER: Time series of Landsat-derived kelp canopy biomass</collectionName>
-    <abstract>Time series of kelp canopy wet biomass in central and southern California
-      derived from the relationship between satellite (Landsat 5, 7, 8) reflectance and empirical
-      measurements.</abstract>
+<collection id="kelp_biomass_ts_landsat">
+  <collectionName>SBC LTER: Time series of Landsat-derived kelp canopy biomass</collectionName>
+  <abstract>Time series of kelp canopy wet biomass in central and southern California
+    derived from the relationship between satellite (Landsat 5, 7, 8) reflectance and empirical
+    measurements.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.74</docid>
@@ -272,150 +272,150 @@
   <collection id="reef_lobsters">
     <collectionName>SBC LTER: Ongoing time-series of lobster abundance and fishing
       pressure</collectionName>
-    <abstract>Data on abundance, size and fishing pressure of California spiny lobster (Panulirus
-      interruptus). Two SBC LTER study sites are in or near Marine Protected Areas (MPA). Sampling
-      began in 2012.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.77</docid>
-        <shortTitle>Lobster abundance, size and fishing pressure</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-      <lterCoreResearchArea>human dimensions</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>reefLobsters</mapLayer>
-    </mapLayers>
-    <represents>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+      <abstract>Data on abundance, size and fishing pressure of California spiny lobster (Panulirus
+        interruptus). Two SBC LTER study sites are in or near Marine Protected Areas (MPA). Sampling
+        began in 2012.</abstract>
+        <dataPackages>
+          <package>
+            <docid>knb-lter-sbc.77</docid>
+            <shortTitle>Lobster abundance, size and fishing pressure</shortTitle>
+          </package>
+        </dataPackages>
+        <habitats>
+          <habitat>reef</habitat>
+        </habitats>
+        <measurementTypes>
+          <measurementType>community_structure</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+          <lterCoreResearchArea>human dimensions</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <mapLayers>
+          <mapLayer>reefLobsters</mapLayer>
+        </mapLayers>
+        <represents>
+          <inventoryType>time_series</inventoryType>
+        </represents>
+      </collection>
 
-  <collection id="larval_settlement">
-    <collectionName>SBC LTER: Ongoing time-series of larval settlement in
-      California</collectionName>
-    <abstract>Weekly to biweekly data on invertebrate settlement on artificial substrates at six
-      sites in California</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.52</docid>
-        <shortTitle>Larval Settlement</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>inshoreLarvae</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-
-
-
-  <collection id="sci_community_structure">
-    <collectionName>SBC LTER: Ongoing time-series of Santa Cruz Island reef community
-      structure</collectionName>
-    <abstract> Time-series data on the community structure at Santa Cruz Island, including abundance
-      of selected fish and their food (algae) resources, benthic cover, density of kelp and
-      occurance of Pycnopodia helianthoides. Earliest surveys began in 1982 and continues annually. </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.39</docid>
-        <shortTitle>Abundance and age structure of Surfperch and Garibaldi</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.38</docid>
-        <shortTitle>Percent cover of algae, invertebrates and bottom substrate</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.47</docid>
-        <shortTitle>Biomass of macroalgae</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.48</docid>
-        <shortTitle>Abundance and size of giant kelp</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.46</docid>
-        <shortTitle>Abundance of Pycnopodia helianthoides</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>reefSCIsland</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+      <collection id="larval_settlement">
+        <collectionName>SBC LTER: Ongoing time-series of larval settlement in
+          California</collectionName>
+          <abstract>Weekly to biweekly data on invertebrate settlement on artificial substrates at six
+            sites in California</abstract>
+            <dataPackages>
+              <package>
+                <docid>knb-lter-sbc.52</docid>
+                <shortTitle>Larval Settlement</shortTitle>
+              </package>
+            </dataPackages>
+            <habitats>
+              <habitat>reef</habitat>
+            </habitats>
+            <measurementTypes>
+              <measurementType>community_structure</measurementType>
+            </measurementTypes>
+            <lterCoreResearchAreas>
+              <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+            </lterCoreResearchAreas>
+            <mapLayers>
+              <mapLayer>inshoreLarvae</mapLayer>
+            </mapLayers>
+            <represents>
+              <type>monitoring</type>
+              <inventoryType>time_series</inventoryType>
+            </represents>
+          </collection>
 
 
-  <collection id="reef_par">
-    <collectionName>SBC LTER: Ongoing time-series of daily irradiance</collectionName>
-    <abstract>Daily photon irradiance at the surface and reef bottom at the kelp removal experiment
-      sites.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.36</docid>
-        <shortTitle>Daily Irradiance, surface and seafloor</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>optics</measurementType>
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>reefPAR</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-  <collection id="bottom_temperature">
-    <collectionName>SBC LTER: Ongoing time-series of reef sea floor temperature</collectionName>
-    <abstract>High frequency water temperature data has been collected from benthic sites at 9
-      coastal reefs at ~7m depth beginning in 2002.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.13</docid>
-        <shortTitle>Bottom temperature</shortTitle>
-      </package>
-    </dataPackages>
+
+          <collection id="sci_community_structure">
+            <collectionName>SBC LTER: Ongoing time-series of Santa Cruz Island reef community
+              structure</collectionName>
+              <abstract> Time-series data on the community structure at Santa Cruz Island, including abundance
+                of selected fish and their food (algae) resources, benthic cover, density of kelp and
+                occurance of Pycnopodia helianthoides. Earliest surveys began in 1982 and continues annually. </abstract>
+                <dataPackages>
+                  <package>
+                    <docid>knb-lter-sbc.39</docid>
+                    <shortTitle>Abundance and age structure of Surfperch and Garibaldi</shortTitle>
+                  </package>
+                  <package>
+                    <docid>knb-lter-sbc.38</docid>
+                    <shortTitle>Percent cover of algae, invertebrates and bottom substrate</shortTitle>
+                  </package>
+                  <package>
+                    <docid>knb-lter-sbc.47</docid>
+                    <shortTitle>Biomass of macroalgae</shortTitle>
+                  </package>
+                  <package>
+                    <docid>knb-lter-sbc.48</docid>
+                    <shortTitle>Abundance and size of giant kelp</shortTitle>
+                  </package>
+                  <package>
+                    <docid>knb-lter-sbc.46</docid>
+                    <shortTitle>Abundance of Pycnopodia helianthoides</shortTitle>
+                  </package>
+                </dataPackages>
+                <habitats>
+                  <habitat>reef</habitat>
+                </habitats>
+                <measurementTypes>
+                  <measurementType>community_structure</measurementType>
+                </measurementTypes>
+                <lterCoreResearchAreas>
+                  <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+                </lterCoreResearchAreas>
+                <mapLayers>
+                  <mapLayer>reefSCIsland</mapLayer>
+                </mapLayers>
+                <represents>
+                  <type>monitoring</type>
+                  <inventoryType>time_series</inventoryType>
+                </represents>
+              </collection>
+
+
+              <collection id="reef_par">
+                <collectionName>SBC LTER: Ongoing time-series of daily irradiance</collectionName>
+                <abstract>Daily photon irradiance at the surface and reef bottom at the kelp removal experiment
+                  sites.</abstract>
+                  <dataPackages>
+                    <package>
+                      <docid>knb-lter-sbc.36</docid>
+                      <shortTitle>Daily Irradiance, surface and seafloor</shortTitle>
+                    </package>
+                  </dataPackages>
+                  <habitats>
+                    <habitat>reef</habitat>
+                  </habitats>
+                  <measurementTypes>
+                    <measurementType>optics</measurementType>
+                    <measurementType>physical_oceanography</measurementType>
+                  </measurementTypes>
+                  <lterCoreResearchAreas>
+                    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+                  </lterCoreResearchAreas>
+                  <mapLayers>
+                    <mapLayer>reefPAR</mapLayer>
+                  </mapLayers>
+                  <represents>
+                    <type>signature</type>
+                    <type>monitoring</type>
+                    <inventoryType>time_series</inventoryType>
+                  </represents>
+                </collection>
+                <collection id="bottom_temperature">
+                  <collectionName>SBC LTER: Ongoing time-series of reef sea floor temperature</collectionName>
+                  <abstract>High frequency water temperature data has been collected from benthic sites at 9
+                    coastal reefs at ~7m depth beginning in 2002.</abstract>
+                    <dataPackages>
+                      <package>
+                        <docid>knb-lter-sbc.13</docid>
+                        <shortTitle>Bottom temperature</shortTitle>
+                      </package>
+                    </dataPackages>
     <!-- 
     <queryAppControllers>
       <controller>
@@ -423,31 +423,31 @@
         <controllerLabel>Bottom Temperature</controllerLabel>
       </controller>
     </queryAppControllers>
--->
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical</measurementType>
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>reefBottomTemp</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-  <collection id="historical_kelp">
-    <collectionName>Historical kelp database (ISP Alginates)</collectionName>
-    <abstract>Long term data on the abundance of giant kelp (Macrocystis pyrifera) in 109 local beds
-      in California and Mexico as estimated from routine aerial surveys (1958-2005) conducted by ISP
-      Alginates (formerly Kelco Co.)</abstract>
+  -->
+  <habitats>
+    <habitat>reef</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>physical</measurementType>
+    <measurementType>physical_oceanography</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <mapLayers>
+    <mapLayer>reefBottomTemp</mapLayer>
+  </mapLayers>
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
+<collection id="historical_kelp">
+  <collectionName>Historical kelp database (ISP Alginates)</collectionName>
+  <abstract>Long term data on the abundance of giant kelp (Macrocystis pyrifera) in 109 local beds
+    in California and Mexico as estimated from routine aerial surveys (1958-2005) conducted by ISP
+    Alginates (formerly Kelco Co.)</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.14</docid>
@@ -482,19 +482,19 @@
 
   <!-- nearshore oceanography 
   
-  -->
-  <collection id="nearshore_profiles">
-    <collectionName>SBC LTER: Ongoing time-series of CTD and water chemistry
-      profiles</collectionName>
+-->
+<collection id="nearshore_profiles">
+  <collectionName>SBC LTER: Ongoing time-series of CTD and water chemistry
+    profiles</collectionName>
     <abstract>Profiles of seawater constituents collected by CTD and water sampling at our nearshore
       reef stations have been ongoing since November 2000. Rosette bottle profiles include
       associated CTD parameters.</abstract>
-    <dataPackages>
-      <package>
-        <shortTitle>Nearshore CTD and Rosette Bottle Profiles</shortTitle>
-        <docid>knb-lter-sbc.10</docid>
-      </package>
-    </dataPackages>
+      <dataPackages>
+        <package>
+          <shortTitle>Nearshore CTD and Rosette Bottle Profiles</shortTitle>
+          <docid>knb-lter-sbc.10</docid>
+        </package>
+      </dataPackages>
     <!-- 
     <queryAppControllers>
       <controller>
@@ -506,34 +506,34 @@
         <controllerLabel>Nearshore CTD profiles</controllerLabel>
       </controller>
     </queryAppControllers>
--->
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical</measurementType>
-      <measurementType>biogeochemistry</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>inshoreProfiles</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-  <collection id="moorings_ongoing">
-    <collectionName>SBC LTER: Ongoing time-series of moored instruments</collectionName>
-    <abstract>Currents and hydrography data have been collected by at several reef sites since 2001
-      to observe patterns of transport and processing. Sites are located on the outer edge of kelp
-      forests in 10-16m of water. Instruments include: bottom-mounted acoustic doppler current
-      profiler (ADCP), CTD mounted in mid-water and thermistors mounted at bottom, midwater and near
-      the surface. Data were aggregated into 1m bins and interpolated onto a 20 min grid.</abstract>
+  -->
+  <habitats>
+    <habitat>reef</habitat>
+    <habitat>nearshore</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>physical</measurementType>
+    <measurementType>biogeochemistry</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <mapLayers>
+    <mapLayer>inshoreProfiles</mapLayer>
+  </mapLayers>
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
+<collection id="moorings_ongoing">
+  <collectionName>SBC LTER: Ongoing time-series of moored instruments</collectionName>
+  <abstract>Currents and hydrography data have been collected by at several reef sites since 2001
+    to observe patterns of transport and processing. Sites are located on the outer edge of kelp
+    forests in 10-16m of water. Instruments include: bottom-mounted acoustic doppler current
+    profiler (ADCP), CTD mounted in mid-water and thermistors mounted at bottom, midwater and near
+    the surface. Data were aggregated into 1m bins and interpolated onto a 20 min grid.</abstract>
     <dataPackages>
       <package>
         <shortTitle>Alegria (ALE): 2001-ongoing</shortTitle>
@@ -542,21 +542,21 @@
       <package>
         <shortTitle>Arroyo Quemado (ARQ): 2004-ongoing (also see AQM, with inactive
           sites)</shortTitle>
-        <docid>knb-lter-sbc.2005</docid>
-      </package>
-      <package>
-        <shortTitle>Naples (NAP): 2001-ongoing</shortTitle>
-        <docid>knb-lter-sbc.2002</docid>
-      </package>
-      <package>
-        <shortTitle>Mohawk (MKO): 2005-ongoing</shortTitle>
-        <docid>knb-lter-sbc.2007</docid>
-      </package>
-      <package>
-        <shortTitle>Carpinteria (CAR): 2001-ongoing</shortTitle>
-        <docid>knb-lter-sbc.2004</docid>
-      </package>
-    </dataPackages>
+          <docid>knb-lter-sbc.2005</docid>
+        </package>
+        <package>
+          <shortTitle>Naples (NAP): 2001-ongoing</shortTitle>
+          <docid>knb-lter-sbc.2002</docid>
+        </package>
+        <package>
+          <shortTitle>Mohawk (MKO): 2005-ongoing</shortTitle>
+          <docid>knb-lter-sbc.2007</docid>
+        </package>
+        <package>
+          <shortTitle>Carpinteria (CAR): 2001-ongoing</shortTitle>
+          <docid>knb-lter-sbc.2004</docid>
+        </package>
+      </dataPackages>
     <!--
    <queryAppControllers>
       <controller>
@@ -564,78 +564,78 @@
         <controllerLabel>All SBC Moorings</controllerLabel>
       </controller>
     </queryAppControllers>
--->
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical</measurementType>
-      <!-- <measurementType>biogeochemistry</measurementType>  -->
-      <!-- remove -->
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>inshoreMoorings</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-  <collection id="ph_timeseries">
-    <collectionName>SBC LTER: Ongoing time-series of pH from SeaFET, with
-      calibration</collectionName>
+  -->
+  <habitats>
+    <habitat>reef</habitat>
+    <habitat>nearshore</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>physical</measurementType>
+    <!-- <measurementType>biogeochemistry</measurementType>  -->
+    <!-- remove -->
+    <measurementType>physical_oceanography</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <mapLayers>
+    <mapLayer>inshoreMoorings</mapLayer>
+  </mapLayers>
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
+<collection id="ph_timeseries">
+  <collectionName>SBC LTER: Ongoing time-series of pH from SeaFET, with
+    calibration</collectionName>
     <abstract>SeaFET instruments have been deployed at four SBC reefs starting in 2011. Time-series
       are of of pH, plus and CO2 system parameters derived from the "CO2calc" algorithms. Reported
       time interval matches that reported for other moored instruments. Benchmark water samples are
       also available at moored stations, plus from other subtidal and intertidal stations. </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.6001</docid>
-        <shortTitle>Alegria Reef: 2011-ongoing</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.6002</docid>
-        <shortTitle>Arroyo Quemado Reef: 2012-ongoing</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.6003</docid>
-        <shortTitle>Mohawk Reef: 2012-ongoing</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.6004</docid>
-        <shortTitle>Santa Barbara Harbor/Stearns Wharf: 2012-ongoing</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.75</docid>
-        <shortTitle>Benchmark water samples pH for field calibration, with CO2 system
-          parameters</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>biogeochemistry</measurementType>
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>inshore_pH</mapLayer>
-    </mapLayers>
-    <represents>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.6001</docid>
+          <shortTitle>Alegria Reef: 2011-ongoing</shortTitle>
+        </package>
+        <package>
+          <docid>knb-lter-sbc.6002</docid>
+          <shortTitle>Arroyo Quemado Reef: 2012-ongoing</shortTitle>
+        </package>
+        <package>
+          <docid>knb-lter-sbc.6003</docid>
+          <shortTitle>Mohawk Reef: 2012-ongoing</shortTitle>
+        </package>
+        <package>
+          <docid>knb-lter-sbc.6004</docid>
+          <shortTitle>Santa Barbara Harbor/Stearns Wharf: 2012-ongoing</shortTitle>
+        </package>
+        <package>
+          <docid>knb-lter-sbc.75</docid>
+          <shortTitle>Benchmark water samples pH for field calibration, with CO2 system
+            parameters</shortTitle>
+          </package>
+        </dataPackages>
+        <habitats>
+          <habitat>reef</habitat>
+          <habitat>nearshore</habitat>
+        </habitats>
+        <measurementTypes>
+          <measurementType>biogeochemistry</measurementType>
+          <measurementType>physical_oceanography</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+          <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <mapLayers>
+          <mapLayer>inshore_pH</mapLayer>
+        </mapLayers>
+        <represents>
+          <inventoryType>time_series</inventoryType>
+        </represents>
+      </collection>
   <!-- original, in case you want to roll back to having 2 collections for this
     <collectionName>Ongoing time-series of pH from water samples</collectionName>
     <abstract>SBC LTER: Ongoing time-series of pH and CO2 system parameters at selected SBC sites derived from the
@@ -670,50 +670,50 @@
       sites. Instruments deployed intermittently include: bottom-mounted acoustic doppler current
       profiler (ADCP), CTD mounted in mid-water and thermistors mounted at bottom, mid-water and
       near the surface. Data were aggregated into 1m bins and interpolated onto a 20 min grid. </abstract>
-    <dataPackages>
-      <package>
-        <shortTitle>Arroyo Quemado (AQM): 2001-2004 (may be manually added to active site
-          ARQ)</shortTitle>
-        <docid>knb-lter-sbc.2001</docid>
-      </package>
-      <package>
-        <shortTitle>Arroyo Burro: intermittent since 2004</shortTitle>
-        <docid>knb-lter-sbc.2003</docid>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical</measurementType>
-      <!-- <measurementType>biogeochemistry</measurementType>  -->
-      <!-- remove -->
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+      <dataPackages>
+        <package>
+          <shortTitle>Arroyo Quemado (AQM): 2001-2004 (may be manually added to active site
+            ARQ)</shortTitle>
+            <docid>knb-lter-sbc.2001</docid>
+          </package>
+          <package>
+            <shortTitle>Arroyo Burro: intermittent since 2004</shortTitle>
+            <docid>knb-lter-sbc.2003</docid>
+          </package>
+        </dataPackages>
+        <habitats>
+          <habitat>reef</habitat>
+          <habitat>nearshore</habitat>
+        </habitats>
+        <measurementTypes>
+          <measurementType>physical</measurementType>
+          <!-- <measurementType>biogeochemistry</measurementType>  -->
+          <!-- remove -->
+          <measurementType>physical_oceanography</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <represents>
+          <type>signature</type>
+          <type>monitoring</type>
+          <inventoryType>short_term</inventoryType>
+        </represents>
+      </collection>
 
 
-  <collection id="reference_sbh_long_term_sfc_temperature">
-    <collectionName>Santa Barbara Harbor: Long term surface temperature (reference)</collectionName>
-    <abstract>Surface seawater temperature collected daily at Santa Barbara Harbor, Santa Barbara,
-      CA, from 1955 to 2004, and is currently supported by the Scripps Insitution of Oceanography
-      Manual Shore Stations program. The dataset will recommence after calibration issues have been
-      resolved.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.32</docid>
-        <shortTitle>Surface temperature, Santa Barbara Harbor</shortTitle>
-      </package>
-    </dataPackages>
+      <collection id="reference_sbh_long_term_sfc_temperature">
+        <collectionName>Santa Barbara Harbor: Long term surface temperature (reference)</collectionName>
+        <abstract>Surface seawater temperature collected daily at Santa Barbara Harbor, Santa Barbara,
+          CA, from 1955 to 2004, and is currently supported by the Scripps Insitution of Oceanography
+          Manual Shore Stations program. The dataset will recommence after calibration issues have been
+          resolved.</abstract>
+          <dataPackages>
+            <package>
+              <docid>knb-lter-sbc.32</docid>
+              <shortTitle>Surface temperature, Santa Barbara Harbor</shortTitle>
+            </package>
+          </dataPackages>
     <!-- 
     <queryAppControllers>
       <controller>
@@ -721,32 +721,32 @@
         <controllerLabel>SB Harbor Long-term water temperature record</controllerLabel>
       </controller>
     </queryAppControllers>
--->
-    <habitats>
-      <habitat>nearshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical</measurementType>
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>exogenous</inventoryType>
-      <!--    <type>reference</type> -->
-    </represents>
-  </collection>
+  -->
+  <habitats>
+    <habitat>nearshore</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>physical</measurementType>
+    <measurementType>physical_oceanography</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <represents>
+    <type>signature</type>
+    <inventoryType>exogenous</inventoryType>
+    <!--    <type>reference</type> -->
+  </represents>
+</collection>
 
   <!-- belong to both reef and nearshore 
   
-  -->
+-->
 
-  <collection id="sea_otter_sightings">
-    <collectionName>SBC LTER: Sightings of sea otters (ongoing since 2007)</collectionName>
-    <abstract>Location, number and behavior of sea otters (Enhydra lutris) in the Santa Barbara
-      Channel area, observed during other SBC sampling events. </abstract>
+<collection id="sea_otter_sightings">
+  <collectionName>SBC LTER: Sightings of sea otters (ongoing since 2007)</collectionName>
+  <abstract>Location, number and behavior of sea otters (Enhydra lutris) in the Santa Barbara
+    Channel area, observed during other SBC sampling events. </abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.61</docid>
@@ -772,37 +772,37 @@
     <abstract>Daily and monthly averages of modeled significant wave height (Hs) and peak wave
       period (Tp) in the Santa Barbara Coastal area from the Coastal Data Information Program (CDIP,
       http://cdip.ucsd.edu)</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.35</docid>
-        <shortTitle>Mean CDIP Hs and Tp</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>exogenous</inventoryType>
-    </represents>
-  </collection>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.35</docid>
+          <shortTitle>Mean CDIP Hs and Tp</shortTitle>
+        </package>
+      </dataPackages>
+      <habitats>
+        <habitat>reef</habitat>
+        <habitat>nearshore</habitat>
+      </habitats>
+      <measurementTypes>
+        <measurementType>physical_oceanography</measurementType>
+      </measurementTypes>
+      <lterCoreResearchAreas>
+        <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+        <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+      </lterCoreResearchAreas>
+      <represents>
+        <type>signature</type>
+        <inventoryType>exogenous</inventoryType>
+      </represents>
+    </collection>
 
   <!-- beach biology 
   
-  -->
+-->
 
-  <collection id="beach_wrack_biomass_timeseries">
-    <collectionName>SBC LTER: Ongoing time-series of macroalgal wrack</collectionName>
-    <abstract>Composition, cover and biomass of macroalgal wrack in the intertidal zone of selected
-      sandy beaches</abstract>
+<collection id="beach_wrack_biomass_timeseries">
+  <collectionName>SBC LTER: Ongoing time-series of macroalgal wrack</collectionName>
+  <abstract>Composition, cover and biomass of macroalgal wrack in the intertidal zone of selected
+    sandy beaches</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.40</docid>
@@ -831,71 +831,71 @@
     <collectionName>SBC LTER: Ongoing time-series of beach birds and stranded kelp</collectionName>
     <abstract>Abundance and species richness of birds, abundance of stranded kelp plants and
       holdfasts, humans and dogs during monthly surveys</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.51</docid>
-        <shortTitle>Beach birds and stranded kelp</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>beach</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>beachBirds</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-  <collection id="beach_wrack_macroinverts_timeseries">
-    <collectionName>SBC LTER: Ongoing time-series of beach macroinvertebrates</collectionName>
-    <abstract>Composition, count and biomass of macroinvertebrates in the intertidal zone of
-      selected sandy beaches</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.91</docid>
-        <shortTitle>Time series of macroinvertebrates counts and biomass at selected
-          beaches</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>beach</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>beachWrackConsumers</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.51</docid>
+          <shortTitle>Beach birds and stranded kelp</shortTitle>
+        </package>
+      </dataPackages>
+      <habitats>
+        <habitat>beach</habitat>
+      </habitats>
+      <measurementTypes>
+        <measurementType>community_structure</measurementType>
+      </measurementTypes>
+      <lterCoreResearchAreas>
+        <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+        <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+        <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+      </lterCoreResearchAreas>
+      <mapLayers>
+        <mapLayer>beachBirds</mapLayer>
+      </mapLayers>
+      <represents>
+        <type>signature</type>
+        <inventoryType>time_series</inventoryType>
+      </represents>
+    </collection>
+    <collection id="beach_wrack_macroinverts_timeseries">
+      <collectionName>SBC LTER: Ongoing time-series of beach macroinvertebrates</collectionName>
+      <abstract>Composition, count and biomass of macroinvertebrates in the intertidal zone of
+        selected sandy beaches</abstract>
+        <dataPackages>
+          <package>
+            <docid>knb-lter-sbc.91</docid>
+            <shortTitle>Time series of macroinvertebrates counts and biomass at selected
+              beaches</shortTitle>
+            </package>
+          </dataPackages>
+          <habitats>
+            <habitat>beach</habitat>
+          </habitats>
+          <measurementTypes>
+            <measurementType>community_structure</measurementType>
+          </measurementTypes>
+          <lterCoreResearchAreas>
+            <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+            <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+          </lterCoreResearchAreas>
+          <mapLayers>
+            <mapLayer>beachWrackConsumers</mapLayer>
+          </mapLayers>
+          <represents>
+            <type>monitoring</type>
+            <inventoryType>time_series</inventoryType>
+          </represents>
+        </collection>
 
 
 
   <!-- watershed physical (hydro) 
   
-  -->
-  <collection id="reference_precipitation">
-    <collectionName>Daily precipitation at UCSB200 (reference)</collectionName>
-    <abstract>Precipitation data collected daily from 1951 - 2008,by the Santa Barbara County Public
-      Works Deptartment and updated annually. High frequency data from this station (UCSB200)
-      starting in 2000 is also available.</abstract>
+-->
+<collection id="reference_precipitation">
+  <collectionName>Daily precipitation at UCSB200 (reference)</collectionName>
+  <abstract>Precipitation data collected daily from 1951 - 2008,by the Santa Barbara County Public
+    Works Deptartment and updated annually. High frequency data from this station (UCSB200)
+    starting in 2000 is also available.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.33</docid>
@@ -909,28 +909,28 @@
         <controllerLabel>SBC long term daily precipitation</controllerLabel>
       </controller>
     </queryAppControllers>
--->
-    <habitats>
-      <habitat>watershed</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>meteorology</measurementType>
-      <measurementType>hydrology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <!--      <type>reference</type> -->
-      <type>signature</type>
-      <inventoryType>exogenous</inventoryType>
-    </represents>
-  </collection>
+  -->
+  <habitats>
+    <habitat>watershed</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>meteorology</measurementType>
+    <measurementType>hydrology</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <represents>
+    <!--      <type>reference</type> -->
+    <type>signature</type>
+    <inventoryType>exogenous</inventoryType>
+  </represents>
+</collection>
 
-  <collection id="precipitation_sbclter">
-    <collectionName>SBC LTER: Ongoing time-series of high-frequency precipitation</collectionName>
-    <abstract>Since 2002, SBC has collected high-frequency precipitation data at 15-25 stations
-      (site coverage varies by year). These sites have ongoing data collections.</abstract>
+<collection id="precipitation_sbclter">
+  <collectionName>SBC LTER: Ongoing time-series of high-frequency precipitation</collectionName>
+  <abstract>Since 2002, SBC has collected high-frequency precipitation data at 15-25 stations
+    (site coverage varies by year). These sites have ongoing data collections.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.4001</docid>
@@ -988,232 +988,232 @@
         <controllerLabel>SBC LTER High-frequency Precipitation</controllerLabel>
       </controller>
     </queryAppControllers>
-    -->
-    <habitats>
-      <habitat>watershed</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>meteorology</measurementType>
-      <measurementType>hydrology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>landPrecip</mapLayer>
-    </mapLayers>
-    
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+  -->
+  <habitats>
+    <habitat>watershed</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>meteorology</measurementType>
+    <measurementType>hydrology</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <mapLayers>
+    <mapLayer>landPrecip</mapLayer>
+  </mapLayers>
+  
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
   <!-- 
     
     county precip at high frequecy
-    -->
+  -->
   <collection id="precipitation_sb_county">
     <collectionName>Santa Barbara County: Precipitation from Santa Barbara County FCD
       stations</collectionName>
-    <abstract>In 2001, SBC began archiving data high frequency precipitation data from the Santa
-      Barbara County Flood Control District (FCD). Legacy data from these (and other) sites is also
-      available. The SB Co. FCD station number is in parentheses.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.5001</docid>
-        <shortTitle>Baron Ranch (262)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5002</docid>
-        <shortTitle>Carpinteria Fire Station (208)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5003</docid>
-        <shortTitle>Cater Water Treatment Plant (229)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5004</docid>
-        <shortTitle>Cold Springs Basin (210)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5005</docid>
-        <shortTitle>Dos Pueblos Ranch (226)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5006</docid>
-        <shortTitle>Doulton Tunnel (231)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5007</docid>
-        <shortTitle>Edison Trail (252)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5008</docid>
-        <shortTitle>El Deseo (255)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5009</docid>
-        <shortTitle>Santa Barbara County Road Yard (211)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5010</docid>
-        <shortTitle>KTYD (227)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5011</docid>
-        <shortTitle>Nojoqui Falls Park (236)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5012</docid>
-        <shortTitle>San Marcos Pass USFS Stn (212)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5013</docid>
-        <shortTitle>Santa Barbara Co. FCD Eng. Bldg. (234)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5014</docid>
-        <shortTitle>Stanwood Fire Station (228)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5015</docid>
-        <shortTitle>Trout Club (242)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5016</docid>
-        <shortTitle> UCSB200 (200)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5017</docid>
-        <shortTitle> Gaviota State Park (301)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5018</docid>
-        <shortTitle> Refugio Pass (429)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5019</docid>
-        <shortTitle> Tecolote Canyon (280)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5020</docid>
-        <shortTitle> Glen Annie Canyon (309)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5021</docid>
-        <shortTitle> Goleta Fire Station (440)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5022</docid>
-        <shortTitle> Goleta Water District Office (334)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5023</docid>
-        <shortTitle> Santa Barbara Caltrans Office (335)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5024</docid>
-        <shortTitle> Botanic Garden (321)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5025</docid>
-        <shortTitle> Carpinteria Fire Station (383)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5026</docid>
-        <shortTitle> Montecito (325)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5027</docid>
-        <shortTitle> Rancho San Julian (389)</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.5028</docid>
-        <shortTitle> Buellton (233)</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>watershed</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>meteorology</measurementType>
-      <measurementType>hydrology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>landPrecip</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+      <abstract>In 2001, SBC began archiving data high frequency precipitation data from the Santa
+        Barbara County Flood Control District (FCD). Legacy data from these (and other) sites is also
+        available. The SB Co. FCD station number is in parentheses.</abstract>
+        <dataPackages>
+          <package>
+            <docid>knb-lter-sbc.5001</docid>
+            <shortTitle>Baron Ranch (262)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5002</docid>
+            <shortTitle>Carpinteria Fire Station (208)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5003</docid>
+            <shortTitle>Cater Water Treatment Plant (229)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5004</docid>
+            <shortTitle>Cold Springs Basin (210)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5005</docid>
+            <shortTitle>Dos Pueblos Ranch (226)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5006</docid>
+            <shortTitle>Doulton Tunnel (231)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5007</docid>
+            <shortTitle>Edison Trail (252)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5008</docid>
+            <shortTitle>El Deseo (255)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5009</docid>
+            <shortTitle>Santa Barbara County Road Yard (211)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5010</docid>
+            <shortTitle>KTYD (227)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5011</docid>
+            <shortTitle>Nojoqui Falls Park (236)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5012</docid>
+            <shortTitle>San Marcos Pass USFS Stn (212)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5013</docid>
+            <shortTitle>Santa Barbara Co. FCD Eng. Bldg. (234)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5014</docid>
+            <shortTitle>Stanwood Fire Station (228)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5015</docid>
+            <shortTitle>Trout Club (242)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5016</docid>
+            <shortTitle> UCSB200 (200)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5017</docid>
+            <shortTitle> Gaviota State Park (301)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5018</docid>
+            <shortTitle> Refugio Pass (429)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5019</docid>
+            <shortTitle> Tecolote Canyon (280)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5020</docid>
+            <shortTitle> Glen Annie Canyon (309)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5021</docid>
+            <shortTitle> Goleta Fire Station (440)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5022</docid>
+            <shortTitle> Goleta Water District Office (334)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5023</docid>
+            <shortTitle> Santa Barbara Caltrans Office (335)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5024</docid>
+            <shortTitle> Botanic Garden (321)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5025</docid>
+            <shortTitle> Carpinteria Fire Station (383)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5026</docid>
+            <shortTitle> Montecito (325)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5027</docid>
+            <shortTitle> Rancho San Julian (389)</shortTitle>
+          </package>
+          <package>
+            <docid>knb-lter-sbc.5028</docid>
+            <shortTitle> Buellton (233)</shortTitle>
+          </package>
+        </dataPackages>
+        <habitats>
+          <habitat>watershed</habitat>
+        </habitats>
+        <measurementTypes>
+          <measurementType>meteorology</measurementType>
+          <measurementType>hydrology</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <mapLayers>
+          <mapLayer>landPrecip</mapLayer>
+        </mapLayers>
+        <represents>
+          <type>monitoring</type>
+          <inventoryType>time_series</inventoryType>
+        </represents>
+      </collection>
   <!--
     
     
- -->
+  -->
   <collection id="precipitation_sbCounty_legacy_daily">
     <collectionName>Daily precipitation (legacy)</collectionName>
     <abstract>SBC has access to climate data from external sources such as the Santa Barbara County
       Flood Control District.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.3</docid>
-        <shortTitle>Daily Precipitation (County Public Works Dept.)</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>watershed</habitat>
-      <!--      <habitat>beach</habitat> -->
-    </habitats>
-    <measurementTypes>
-      <measurementType>meteorology</measurementType>
-      <measurementType>hydrology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-  </collection>
-  <collection id="climate_NCDC">
-    <collectionName>NCDC climate catalogs</collectionName>
-    <abstract>The National Climate Data Center (NCDC) provides a long record of several parameters
-      Their catalog for sites in the Santa Barbara area is available through the links in this data
-      package</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.1</docid>
-        <shortTitle>NCDC Climate Data</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>watershed</habitat>
-      <!--      <habitat>beach</habitat> -->
-    </habitats>
-    <measurementTypes>
-      <measurementType>meteorology</measurementType>
-      <measurementType>hydrology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>monitoring</type>
-      <inventoryType>exogenous</inventoryType>
-    </represents>
-  </collection>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.3</docid>
+          <shortTitle>Daily Precipitation (County Public Works Dept.)</shortTitle>
+        </package>
+      </dataPackages>
+      <habitats>
+        <habitat>watershed</habitat>
+        <!--      <habitat>beach</habitat> -->
+      </habitats>
+      <measurementTypes>
+        <measurementType>meteorology</measurementType>
+        <measurementType>hydrology</measurementType>
+      </measurementTypes>
+      <lterCoreResearchAreas>
+        <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+      </lterCoreResearchAreas>
+    </collection>
+    <collection id="climate_NCDC">
+      <collectionName>NCDC climate catalogs</collectionName>
+      <abstract>The National Climate Data Center (NCDC) provides a long record of several parameters
+        Their catalog for sites in the Santa Barbara area is available through the links in this data
+        package</abstract>
+        <dataPackages>
+          <package>
+            <docid>knb-lter-sbc.1</docid>
+            <shortTitle>NCDC Climate Data</shortTitle>
+          </package>
+        </dataPackages>
+        <habitats>
+          <habitat>watershed</habitat>
+          <!--      <habitat>beach</habitat> -->
+        </habitats>
+        <measurementTypes>
+          <measurementType>meteorology</measurementType>
+          <measurementType>hydrology</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <represents>
+          <type>monitoring</type>
+          <inventoryType>exogenous</inventoryType>
+        </represents>
+      </collection>
   <!--  and the stream discharge here
 
 
 -->
-  <collection id="sbc_stream_discharge_ongoing">
-    <collectionName>SBC LTER: Ongoing time-series of stream discharge</collectionName>
-    <abstract>SBC has high-frequency discharge data these sites. Collection at Bell Canyon began in
-      2004 and at San Pedro in 2008. For all SBC sites, collection began with water-year 2002. At
-      two sites (indicated) data collection is by USGS sites. These sites have ongoing data
-      collections.</abstract>
+<collection id="sbc_stream_discharge_ongoing">
+  <collectionName>SBC LTER: Ongoing time-series of stream discharge</collectionName>
+  <abstract>SBC has high-frequency discharge data these sites. Collection at Bell Canyon began in
+    2004 and at San Pedro in 2008. For all SBC sites, collection began with water-year 2002. At
+    two sites (indicated) data collection is by USGS sites. These sites have ongoing data
+    collections.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.3001</docid>
@@ -1259,30 +1259,30 @@
         <controllerLabel>Query All Stream Discharge Data</controllerLabel>
       </controller>
     </queryAppControllers>
-    -->
-    <habitats>
-      <habitat>watershed</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>hydrology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <mapLayers>
-      <mapLayer>landStreamDisch</mapLayer>
-    </mapLayers>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
-  <collection id="sbc_stream_discharge_historical">
-    <collectionName>SBC LTER: Stream discharge at SBC sites (historical sites)</collectionName>
-    <abstract>Between 2002 and 2010, SBC collected high-frequency discharge data at several
-      stations. Site coverage varies by year. These sites have historical data
-      collections.</abstract>
+  -->
+  <habitats>
+    <habitat>watershed</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>hydrology</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <mapLayers>
+    <mapLayer>landStreamDisch</mapLayer>
+  </mapLayers>
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
+<collection id="sbc_stream_discharge_historical">
+  <collectionName>SBC LTER: Stream discharge at SBC sites (historical sites)</collectionName>
+  <abstract>Between 2002 and 2010, SBC collected high-frequency discharge data at several
+    stations. Site coverage varies by year. These sites have historical data
+    collections.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.3002</docid>
@@ -1328,22 +1328,22 @@
         <controllerLabel>Query All Stream Discharge Data</controllerLabel>
       </controller>
     </queryAppControllers>
-    -->
-    <habitats>
-      <habitat>watershed</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>hydrology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <type>monitoring</type>
-      <inventoryType>time_series</inventoryType>
-    </represents>
-  </collection>
+  -->
+  <habitats>
+    <habitat>watershed</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>hydrology</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <represents>
+    <type>signature</type>
+    <type>monitoring</type>
+    <inventoryType>time_series</inventoryType>
+  </represents>
+</collection>
   <!-- 
   <collection id="usgs_stream_discharge">
     <collectionName>USGS: Stream discharge</collectionName>
@@ -1371,11 +1371,11 @@
     </represents>
   </collection>
 -->
-  <collection id="stream_chemistry">
-    <collectionName>SBC LTER: Ongoing time-series of stream chemistry</collectionName>
-    <abstract>Analytes sampled in the SBC streams include major dissolved nutrients, particulates,
-      cations, anions, and occasionally stable isotopes. A number of watersheds with different land
-      uses are sampled. Sampling frequency depends on flow conditions.</abstract>
+<collection id="stream_chemistry">
+  <collectionName>SBC LTER: Ongoing time-series of stream chemistry</collectionName>
+  <abstract>Analytes sampled in the SBC streams include major dissolved nutrients, particulates,
+    cations, anions, and occasionally stable isotopes. A number of watersheds with different land
+    uses are sampled. Sampling frequency depends on flow conditions.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.6</docid>
@@ -1407,50 +1407,50 @@
   <!-- short term experiments
   
   
-  -->
-  <!-- reef -->
-  <collection id="smith_nearshore_porewater">
-    <collectionName>SBC LTER: Porewater concentrations and flushing</collectionName>
-    <abstract>Data for concentration of ammonium, nitrate and urea in porewaters 
-      and overlying nearshore waters to examine efflux and availability to kelp. 
-      Temperature data are used to model efflux from sediments. 
-      Samples sites included Arroyo Burro, Mission Creek, Refugio and Mohawk. 
-    </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.116</docid>
-        <shortTitle>Sediment temperature profiles</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.117</docid>
-        <shortTitle>Urea and ammonium in porewater and overlying water</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>nearshore</habitat>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>biogeochemistry</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  
-  
-  
-  
-  <collection id="foodweb_isotopes">
-    <collectionName>Carbon, Nitogen and Hydrogen isotopes</collectionName>
-    <abstract>Stable isotope ratio analysis to evaulate relative contribution of primary producers
-      to reef food webs, and at locations adjacent to sources of freshwater runoff,
-      terrestrially-derived material. 
-      Samples of algae, terrestrial and oceanic POM, and infauna were collected
-      from SBCLTER research reefs and adjacent areas.</abstract>
+-->
+<!-- reef -->
+<collection id="smith_nearshore_porewater">
+  <collectionName>SBC LTER: Porewater concentrations and flushing</collectionName>
+  <abstract>Data for concentration of ammonium, nitrate and urea in porewaters 
+    and overlying nearshore waters to examine efflux and availability to kelp. 
+    Temperature data are used to model efflux from sediments. 
+    Samples sites included Arroyo Burro, Mission Creek, Refugio and Mohawk. 
+  </abstract>
+  <dataPackages>
+    <package>
+      <docid>knb-lter-sbc.116</docid>
+      <shortTitle>Sediment temperature profiles</shortTitle>
+    </package>
+    <package>
+      <docid>knb-lter-sbc.117</docid>
+      <shortTitle>Urea and ammonium in porewater and overlying water</shortTitle>
+    </package>
+  </dataPackages>
+  <habitats>
+    <habitat>nearshore</habitat>
+    <habitat>reef</habitat>
+  </habitats>
+  <measurementTypes>
+    <measurementType>biogeochemistry</measurementType>
+  </measurementTypes>
+  <lterCoreResearchAreas>
+    <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+  </lterCoreResearchAreas>
+  <represents>
+    <inventoryType>short_term</inventoryType>
+  </represents>
+</collection>
+
+
+
+
+<collection id="foodweb_isotopes">
+  <collectionName>Carbon, Nitogen and Hydrogen isotopes</collectionName>
+  <abstract>Stable isotope ratio analysis to evaulate relative contribution of primary producers
+    to reef food webs, and at locations adjacent to sources of freshwater runoff,
+    terrestrially-derived material. 
+    Samples of algae, terrestrial and oceanic POM, and infauna were collected
+    from SBCLTER research reefs and adjacent areas.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.92</docid>
@@ -1479,10 +1479,10 @@
     </represents>
   </collection>
 
-<collection id="kelp_metapops">
+  <collection id="kelp_metapops">
     <collectionName>Kelp metapopulations</collectionName>
     <abstract>Metapopulation theory suggests that connectivity among habitat patches may act to "rescue" extinct local populations.This theory is tested with M. pyrifera, as it occurs in discrete patches that undergo frequent local extinctions and recolonizations on time scales of a few years.  
-      </abstract>
+    </abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.101</docid>
@@ -1519,11 +1519,11 @@
     <!-- <represents>
       <type>signature</type>
        <inventoryType>time_series</inventoryType> 
-    </represents> -->
-  </collection>
+     </represents> -->
+   </collection>
 
 
-  <collection id="taxon_specific_invert_biomass_relationship">
+   <collection id="taxon_specific_invert_biomass_relationship">
     <collectionName>Taxon-specific biomass relationships for kelp forest invertebrates</collectionName>
     <abstract>Taxon-specific relationships which can be used to estimate biomass density for kelp forest invertebrates using non-distructive field measurements. </abstract>
     <dataPackages>
@@ -1553,110 +1553,110 @@
   <collection id="taxon_specific_pe">
     <collectionName>Biomass relationships and photosynthetic parameters for
       macroalgae</collectionName>
-    <abstract>Taxon-specific relationships used to estimate biomass density from field measurements,
-      and laboratory-derived values for photosynthetic parameters.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.57</docid>
-        <shortTitle>PE and biomass parameters</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>primary production</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="kelp_frond_turnover">
-    <collectionName>Kelp blade characteristics to support turnover dynamics of Macrocystis
-      pyrifera</collectionName>
-    <abstract>Age-specific traits of giant kelp blades, including size, photosynthesic performance,
-      biomass density, and N and Chl-a content </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.85</docid>
-        <shortTitle>Kelp blade characteristics</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>primary production</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="isotopes">
-    <collectionName>SBC LTER: Stable Isotopes in reef food webs</collectionName>
-    <abstract>Stable isotopes of carbon and nitrogen in reef consumers and potential food sources
-      (phytoplankton, kelp and kelp-derived detritus, and terrestrial POM) were collected from 2002
-      to 2005.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.12</docid>
-        <shortTitle>Stable isotopes in reef food webs</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>watershed</habitat>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-      <habitat>offshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+      <abstract>Taxon-specific relationships used to estimate biomass density from field measurements,
+        and laboratory-derived values for photosynthetic parameters.</abstract>
+        <dataPackages>
+          <package>
+            <docid>knb-lter-sbc.57</docid>
+            <shortTitle>PE and biomass parameters</shortTitle>
+          </package>
+        </dataPackages>
+        <habitats>
+          <habitat>reef</habitat>
+        </habitats>
+        <measurementTypes>
+          <measurementType>ecosystem_processes</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>primary production</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <represents>
+          <type>signature</type>
+          <inventoryType>short_term</inventoryType>
+        </represents>
+      </collection>
+      <collection id="kelp_frond_turnover">
+        <collectionName>Kelp blade characteristics to support turnover dynamics of Macrocystis
+          pyrifera</collectionName>
+          <abstract>Age-specific traits of giant kelp blades, including size, photosynthesic performance,
+            biomass density, and N and Chl-a content </abstract>
+            <dataPackages>
+              <package>
+                <docid>knb-lter-sbc.85</docid>
+                <shortTitle>Kelp blade characteristics</shortTitle>
+              </package>
+            </dataPackages>
+            <habitats>
+              <habitat>reef</habitat>
+            </habitats>
+            <measurementTypes>
+              <measurementType>ecosystem_processes</measurementType>
+            </measurementTypes>
+            <lterCoreResearchAreas>
+              <lterCoreResearchArea>primary production</lterCoreResearchArea>
+            </lterCoreResearchAreas>
+            <represents>
+              <type>signature</type>
+              <inventoryType>short_term</inventoryType>
+            </represents>
+          </collection>
+          <collection id="isotopes">
+            <collectionName>SBC LTER: Stable Isotopes in reef food webs</collectionName>
+            <abstract>Stable isotopes of carbon and nitrogen in reef consumers and potential food sources
+              (phytoplankton, kelp and kelp-derived detritus, and terrestrial POM) were collected from 2002
+              to 2005.</abstract>
+              <dataPackages>
+                <package>
+                  <docid>knb-lter-sbc.12</docid>
+                  <shortTitle>Stable isotopes in reef food webs</shortTitle>
+                </package>
+              </dataPackages>
+              <habitats>
+                <habitat>watershed</habitat>
+                <habitat>reef</habitat>
+                <habitat>nearshore</habitat>
+                <habitat>offshore</habitat>
+              </habitats>
+              <measurementTypes>
+                <measurementType>ecosystem_processes</measurementType>
+              </measurementTypes>
+              <lterCoreResearchAreas>
+                <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+                <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+                <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+              </lterCoreResearchAreas>
+              <represents>
+                <type>signature</type>
+                <inventoryType>short_term</inventoryType>
+              </represents>
+            </collection>
 
 
 
 
-  <collection id="byrnes_kelp_forest_foodweb">
-    <collectionName>Kelp forest food web</collectionName>
-    <abstract>Feeding relationships for kelp forest species observed in the annual
-      surveys</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.56</docid>
-        <shortTitle>Kelp forest food web</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+            <collection id="byrnes_kelp_forest_foodweb">
+              <collectionName>Kelp forest food web</collectionName>
+              <abstract>Feeding relationships for kelp forest species observed in the annual
+                surveys</abstract>
+                <dataPackages>
+                  <package>
+                    <docid>knb-lter-sbc.56</docid>
+                    <shortTitle>Kelp forest food web</shortTitle>
+                  </package>
+                </dataPackages>
+                <habitats>
+                  <habitat>reef</habitat>
+                </habitats>
+                <measurementTypes>
+                  <measurementType>community_structure</measurementType>
+                </measurementTypes>
+                <lterCoreResearchAreas>
+                  <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+                </lterCoreResearchAreas>
+                <represents>
+                  <inventoryType>short_term</inventoryType>
+                </represents>
+              </collection>
   <!-- 
   <collection id="byrnes_richness_urching_grazing">
     <collectionName>Urchin-exclusion experiment</collectionName>
@@ -1682,12 +1682,12 @@
       <inventoryType>short_term</inventoryType>
     </represents>
   </collection>
-  -->
-  <collection id="foster_urchin_diet">
-    <collectionName>Diet effects in the purple sea urchin, 2011</collectionName>
-    <abstract>Data from an experiment to evaluate the effects of algal diet on consumption, growth
-      and gonad weight of an important kelp forest grazer, the purple sea urchin, Strongylocentrotus
-      pupuratus, during Fall and Winter 2010-2011.</abstract>
+-->
+<collection id="foster_urchin_diet">
+  <collectionName>Diet effects in the purple sea urchin, 2011</collectionName>
+  <abstract>Data from an experiment to evaluate the effects of algal diet on consumption, growth
+    and gonad weight of an important kelp forest grazer, the purple sea urchin, Strongylocentrotus
+    pupuratus, during Fall and Winter 2010-2011.</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.83</docid>
@@ -1713,111 +1713,111 @@
     <collectionName>Microsatellite markers for giant kelp</collectionName>
     <abstract>Characterization of microsatellite loci of the giant kelp, Macrocystis
       pyrifera</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.53</docid>
-        <shortTitle>Kelp microsatellite markers</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>genomics</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="miller_understory_phyto_chamber_pprod_2007">
-    <collectionName>SBC LTER: Primary production in cleared and control plots
-      2007-2008</collectionName>
-    <abstract>Understory and phytoplankton production in the kelp removal experiment, Mohawk Reef
-      2007-2008</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.55</docid>
-        <shortTitle>Benthic and phytoplankton production, cleared and control plots</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>primary production</lterCoreResearchArea>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="miller_foliose_assemblages_2007">
-    <collectionName>SBC LTER: Structure and productivity of turf/foliose
-      assemblages</collectionName>
-    <abstract>Community structure and productivity of subtidal turf and foliose algal assemblages at
-      Naples Reef, 2006</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.37</docid>
-        <shortTitle>Turf and foliose algal assemblages</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>primary production</lterCoreResearchArea>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.53</docid>
+          <shortTitle>Kelp microsatellite markers</shortTitle>
+        </package>
+      </dataPackages>
+      <habitats>
+        <habitat>reef</habitat>
+      </habitats>
+      <measurementTypes>
+        <measurementType>genomics</measurementType>
+      </measurementTypes>
+      <lterCoreResearchAreas>
+        <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+      </lterCoreResearchAreas>
+      <represents>
+        <inventoryType>short_term</inventoryType>
+      </represents>
+    </collection>
+    <collection id="miller_understory_phyto_chamber_pprod_2007">
+      <collectionName>SBC LTER: Primary production in cleared and control plots
+        2007-2008</collectionName>
+        <abstract>Understory and phytoplankton production in the kelp removal experiment, Mohawk Reef
+          2007-2008</abstract>
+          <dataPackages>
+            <package>
+              <docid>knb-lter-sbc.55</docid>
+              <shortTitle>Benthic and phytoplankton production, cleared and control plots</shortTitle>
+            </package>
+          </dataPackages>
+          <habitats>
+            <habitat>reef</habitat>
+          </habitats>
+          <measurementTypes>
+            <measurementType>ecosystem_processes</measurementType>
+          </measurementTypes>
+          <lterCoreResearchAreas>
+            <lterCoreResearchArea>primary production</lterCoreResearchArea>
+            <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+          </lterCoreResearchAreas>
+          <represents>
+            <type>signature</type>
+            <inventoryType>short_term</inventoryType>
+          </represents>
+        </collection>
+        <collection id="miller_foliose_assemblages_2007">
+          <collectionName>SBC LTER: Structure and productivity of turf/foliose
+            assemblages</collectionName>
+            <abstract>Community structure and productivity of subtidal turf and foliose algal assemblages at
+              Naples Reef, 2006</abstract>
+              <dataPackages>
+                <package>
+                  <docid>knb-lter-sbc.37</docid>
+                  <shortTitle>Turf and foliose algal assemblages</shortTitle>
+                </package>
+              </dataPackages>
+              <habitats>
+                <habitat>reef</habitat>
+              </habitats>
+              <measurementTypes>
+                <measurementType>ecosystem_processes</measurementType>
+                <measurementType>community_structure</measurementType>
+              </measurementTypes>
+              <lterCoreResearchAreas>
+                <lterCoreResearchArea>primary production</lterCoreResearchArea>
+                <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+              </lterCoreResearchAreas>
+              <represents>
+                <type>signature</type>
+                <inventoryType>short_term</inventoryType>
+              </represents>
+            </collection>
 
-<collection id="okamoto_phd_2014">
-    <collectionName>Dan Okamoto: Population ecology of reef fish and prey resources</collectionName>
-    <abstract>Field and laboratory research, plus statistical models to describe patterns in population dynamics with applications to management.</abstract>
-    <dataPackages>
-	 <package>
-        <docid>knb-lter-sbc.97</docid>
-        <shortTitle>Santa Cruz Island: Black surfperch and prey, density effects (1993-2009)</shortTitle>
-      </package>
- 	  <package>
-        <docid>knb-lter-sbc.86</docid>
-        <shortTitle>Effect of egg concentration on Stongylocentrotus purpuratus (purple sea urchin) fertilization (2014)</shortTitle>
-      </package>
- 	  <package>
-        <docid>knb-lter-sbc.60</docid>
-        <shortTitle>Santa Cruz Island: Abundance of black surfperch and prey (1994-2008)</shortTitle>
-      </package>
+            <collection id="okamoto_phd_2014">
+              <collectionName>Dan Okamoto: Population ecology of reef fish and prey resources</collectionName>
+              <abstract>Field and laboratory research, plus statistical models to describe patterns in population dynamics with applications to management.</abstract>
+              <dataPackages>
+                <package>
+                  <docid>knb-lter-sbc.97</docid>
+                  <shortTitle>Santa Cruz Island: Black surfperch and prey, density effects (1993-2009)</shortTitle>
+                </package>
+                <package>
+                  <docid>knb-lter-sbc.86</docid>
+                  <shortTitle>Effect of egg concentration on Stongylocentrotus purpuratus (purple sea urchin) fertilization (2014)</shortTitle>
+                </package>
+                <package>
+                  <docid>knb-lter-sbc.60</docid>
+                  <shortTitle>Santa Cruz Island: Abundance of black surfperch and prey (1994-2008)</shortTitle>
+                </package>
 
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+              </dataPackages>
+              <habitats>
+                <habitat>reef</habitat>
+              </habitats>
+              <measurementTypes>
+                <measurementType>ecosystem_processes</measurementType>
+                <measurementType>community_structure</measurementType>
+              </measurementTypes>
+              <lterCoreResearchAreas>
+                <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+              </lterCoreResearchAreas>
+              <represents>
+                <inventoryType>short_term</inventoryType>
+              </represents>
+            </collection>
 
  <!-- 
 <collection id="sci_surfperch_survival_okamoto_2015">
@@ -1872,67 +1872,67 @@
   </collection>
 -->
 
-  <collection id="johansson_genetic_markers_1">
-    <collectionName>Geospatial structure of microsatellite markers of giant kelp,
-      2009</collectionName>
+<collection id="johansson_genetic_markers_1">
+  <collectionName>Geospatial structure of microsatellite markers of giant kelp,
+    2009</collectionName>
     <abstract>Microsatellite markers for giant kelp (Macrocystis pyrifera) and associated R code.
       Data are from individual kelp plants, Carpinteria Reef, Mohawk Reef and Goleta Bay, September
       2009.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.73</docid>
-        <shortTitle>Geospatial microsatellite markers, giant kelp</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>genomics</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="marks_sargassum_horneri">
-    <collectionName>Sargassum horneri in the eastern Pacific coastal areas</collectionName>
-    <abstract>Sargassum horneri is native to the western Pacific and first collected near Los Angeles in 2003. 
-      It has since spread to the Channel Islands, and other southern California areas. These datasets are related to its occurrence and managment in southern California. 
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.73</docid>
+          <shortTitle>Geospatial microsatellite markers, giant kelp</shortTitle>
+        </package>
+      </dataPackages>
+      <habitats>
+        <habitat>reef</habitat>
+      </habitats>
+      <measurementTypes>
+        <measurementType>genomics</measurementType>
+      </measurementTypes>
+      <lterCoreResearchAreas>
+        <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+      </lterCoreResearchAreas>
+      <represents>
+        <inventoryType>short_term</inventoryType>
+      </represents>
+    </collection>
+    <collection id="marks_sargassum_horneri">
+      <collectionName>Sargassum horneri in the eastern Pacific coastal areas</collectionName>
+      <abstract>Sargassum horneri is native to the western Pacific and first collected near Los Angeles in 2003. 
+        It has since spread to the Channel Islands, and other southern California areas. These datasets are related to its occurrence and managment in southern California. 
       </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.90</docid>
-        <shortTitle>Sargassum horneri sightings, California and Baja California, since 2003.</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.100</docid>
-        <shortTitle>Sargassum horneri management</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-    </lterCoreResearchAreas>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.90</docid>
+          <shortTitle>Sargassum horneri sightings, California and Baja California, since 2003.</shortTitle>
+        </package>
+        <package>
+          <docid>knb-lter-sbc.100</docid>
+          <shortTitle>Sargassum horneri management</shortTitle>
+        </package>
+      </dataPackages>
+      <habitats>
+        <habitat>reef</habitat>
+      </habitats>
+      <measurementTypes>
+        <measurementType>ecosystem_processes</measurementType>
+        <measurementType>community_structure</measurementType>
+      </measurementTypes>
+      <lterCoreResearchAreas>
+        <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+        <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+      </lterCoreResearchAreas>
     <!-- <represents>
       <type>signature</type>
        <inventoryType>time_series</inventoryType> 
-    </represents> -->
-  </collection>
+     </represents> -->
+   </collection>
 
-<collection id="nitrogen_uptake_dynamics">
+   <collection id="nitrogen_uptake_dynamics">
     <collectionName>Nitrogen update in SBC LTER kelp forest, 2016-2017</collectionName>
     <abstract>Laboratory and in situ rates of uptake of nitrate, ammonium and urea by M. pyrifera and phytoplankton. Field studies were conducted at Mohawk and Carpinteria Reefs.  
-      </abstract>
+    </abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.109</docid>
@@ -1952,13 +1952,13 @@
     <!-- <represents>
       <type>signature</type>
        <inventoryType>time_series</inventoryType> 
-    </represents> -->
-  </collection>
-  
-  <collection id="watersipora">
+     </represents> -->
+   </collection>
+   
+   <collection id="watersipora">
     <collectionName>Watersipora subatra sampling at oil/gas platforms</collectionName>
     <abstract>Watersipora subatra is a non-native encrusting bryozoan, which as an early successional species, is particularly efficient at colonizing artificial structures. This study examines community composition and settlement at oil/gas platforms in the Santa Barbara Channel. 
-      </abstract>
+    </abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.111</docid>
@@ -1979,88 +1979,88 @@
     <!-- <represents>
       <type>signature</type>
        <inventoryType>time_series</inventoryType> 
-    </represents> -->
-  </collection>
-  
-  <!-- ocean -->
-  <collection id="cruise_profiles">
+     </represents> -->
+   </collection>
+   
+   <!-- ocean -->
+   <collection id="cruise_profiles">
     <!-- a stylesheet grabs content to create the cruise page display. see collection2cruiseInfo.xsl 
     uses first 6 chars of <shortTitle> to get cruise name. SO DONT CHANGE THAT!
-    -->
-    <collectionName>SBC LTER: Seasonal Channel-wide Cruises (2001-2006) - CTD/Rosette
-      Profiles</collectionName>
+  -->
+  <collectionName>SBC LTER: Seasonal Channel-wide Cruises (2001-2006) - CTD/Rosette
+    Profiles</collectionName>
     <abstract>CTD and rosette profile data were collected at &gt;25 stations on 16 channel-wide
       cruises to survey hydrographic and biological parameters (e.g., nutrients, particulate carbon
       and nitrogen, and primary production). Cruises were conducted seasonally (2-3 times per year)
       on the R/V Pt Sur between 2001 and 2006. &lt;br /&gt; &lt;br /&gt; This collection is also
       complemented by Towed CTD Transects and shipboard meteorological and current data (see other
       collections for "Offshore Ocean"). </abstract>
-    <dataPackages>
-      <package>
-        <shortTitle>LTER01 profiles</shortTitle>
-        <docid>knb-lter-sbc.1001</docid>
-      </package>
-      <package>
-        <shortTitle>LTER02 profiles</shortTitle>
-        <docid>knb-lter-sbc.1002</docid>
-      </package>
-      <package>
-        <shortTitle>LTER03 profiles</shortTitle>
-        <docid>knb-lter-sbc.1003</docid>
-      </package>
-      <package>
-        <shortTitle>LTER04 profiles</shortTitle>
-        <docid>knb-lter-sbc.1004</docid>
-      </package>
-      <package>
-        <shortTitle>LTER05 profiles</shortTitle>
-        <docid>knb-lter-sbc.1005</docid>
-      </package>
-      <package>
-        <shortTitle>LTER06 profiles</shortTitle>
-        <docid>knb-lter-sbc.1006</docid>
-      </package>
-      <package>
-        <shortTitle>LTER07 profiles</shortTitle>
-        <docid>knb-lter-sbc.1007</docid>
-      </package>
-      <package>
-        <shortTitle>LTER08 profiles</shortTitle>
-        <docid>knb-lter-sbc.1008</docid>
-      </package>
-      <package>
-        <shortTitle>LTER09 profiles</shortTitle>
-        <docid>knb-lter-sbc.1009</docid>
-      </package>
-      <package>
-        <shortTitle>LTER10 profiles</shortTitle>
-        <docid>knb-lter-sbc.1010</docid>
-      </package>
-      <package>
-        <shortTitle>LTER11 profiles</shortTitle>
-        <docid>knb-lter-sbc.1011</docid>
-      </package>
-      <package>
-        <shortTitle>LTER12 profiles</shortTitle>
-        <docid>knb-lter-sbc.1012</docid>
-      </package>
-      <package>
-        <shortTitle>LTER13 profiles</shortTitle>
-        <docid>knb-lter-sbc.1013</docid>
-      </package>
-      <package>
-        <shortTitle>LTER14 profiles</shortTitle>
-        <docid>knb-lter-sbc.1014</docid>
-      </package>
-      <package>
-        <shortTitle>LTER15 profiles</shortTitle>
-        <docid>knb-lter-sbc.1015</docid>
-      </package>
-      <package>
-        <shortTitle>LTER16 profiles</shortTitle>
-        <docid>knb-lter-sbc.1016</docid>
-      </package>
-    </dataPackages>
+      <dataPackages>
+        <package>
+          <shortTitle>LTER01 profiles</shortTitle>
+          <docid>knb-lter-sbc.1001</docid>
+        </package>
+        <package>
+          <shortTitle>LTER02 profiles</shortTitle>
+          <docid>knb-lter-sbc.1002</docid>
+        </package>
+        <package>
+          <shortTitle>LTER03 profiles</shortTitle>
+          <docid>knb-lter-sbc.1003</docid>
+        </package>
+        <package>
+          <shortTitle>LTER04 profiles</shortTitle>
+          <docid>knb-lter-sbc.1004</docid>
+        </package>
+        <package>
+          <shortTitle>LTER05 profiles</shortTitle>
+          <docid>knb-lter-sbc.1005</docid>
+        </package>
+        <package>
+          <shortTitle>LTER06 profiles</shortTitle>
+          <docid>knb-lter-sbc.1006</docid>
+        </package>
+        <package>
+          <shortTitle>LTER07 profiles</shortTitle>
+          <docid>knb-lter-sbc.1007</docid>
+        </package>
+        <package>
+          <shortTitle>LTER08 profiles</shortTitle>
+          <docid>knb-lter-sbc.1008</docid>
+        </package>
+        <package>
+          <shortTitle>LTER09 profiles</shortTitle>
+          <docid>knb-lter-sbc.1009</docid>
+        </package>
+        <package>
+          <shortTitle>LTER10 profiles</shortTitle>
+          <docid>knb-lter-sbc.1010</docid>
+        </package>
+        <package>
+          <shortTitle>LTER11 profiles</shortTitle>
+          <docid>knb-lter-sbc.1011</docid>
+        </package>
+        <package>
+          <shortTitle>LTER12 profiles</shortTitle>
+          <docid>knb-lter-sbc.1012</docid>
+        </package>
+        <package>
+          <shortTitle>LTER13 profiles</shortTitle>
+          <docid>knb-lter-sbc.1013</docid>
+        </package>
+        <package>
+          <shortTitle>LTER14 profiles</shortTitle>
+          <docid>knb-lter-sbc.1014</docid>
+        </package>
+        <package>
+          <shortTitle>LTER15 profiles</shortTitle>
+          <docid>knb-lter-sbc.1015</docid>
+        </package>
+        <package>
+          <shortTitle>LTER16 profiles</shortTitle>
+          <docid>knb-lter-sbc.1016</docid>
+        </package>
+      </dataPackages>
     <!-- 
       
       <queryAppControllers>
@@ -2075,322 +2075,322 @@
       this element should be copied from the EML version, which is text type
       or you could make the template not pass the content through the html filter, so it can contain markup.
       as in: &lt;a href=""&gt;: Data&lt;/a&gt; -->
-    <additionalInfo>
-      <additionalInfoLabel>Summary and timing of all cruises aboard the R/V Pt. Sur, 2001-2006,
-        including links to data </additionalInfoLabel>
-      <additionalInfoUrl>http://sbc.lternet.edu/data/cruises2001_2006.html</additionalInfoUrl>
-    </additionalInfo>
-    <habitats>
-      <habitat>offshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>biogeochemistry</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>primary production</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="cruise_towed">
+      <additionalInfo>
+        <additionalInfoLabel>Summary and timing of all cruises aboard the R/V Pt. Sur, 2001-2006,
+          including links to data </additionalInfoLabel>
+          <additionalInfoUrl>http://sbc.lternet.edu/data/cruises2001_2006.html</additionalInfoUrl>
+        </additionalInfo>
+        <habitats>
+          <habitat>offshore</habitat>
+        </habitats>
+        <measurementTypes>
+          <measurementType>biogeochemistry</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+          <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+          <lterCoreResearchArea>primary production</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <represents>
+          <type>signature</type>
+          <inventoryType>short_term</inventoryType>
+        </represents>
+      </collection>
+      <collection id="cruise_towed">
     <!-- a stylesheet grabs content to create the cruise page display. see collection2cruiseInfo.xsl 
       uses first 6 chars of <shortTitle> to get cruise name. SO DONT CHANGE THAT!
     -->
     <collectionName>SBC LTER: Seasonal Channel-wide Cruises (2001-2006) - Towed CTD
       Transects</collectionName>
-    <abstract> An undulating CTD package was towed along cross-channel and along-shore transects on
-      16 channel-wide cruises to survey hydrographic and biological parameters. Cruises were
-      conducted seasonally (2-3 times per year) on the R/V Pt Sur between 2001 and 2006. &lt;br
-      /&gt; &lt;br /&gt; This collection is also complemented by CTD/rosette bottle profiles and
-      shipboard meteorological and current data (see other collections for "Offshore Ocean"). </abstract>
-    <dataPackages>
-      <package>
-        <shortTitle>LTER01 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1201</docid>
-      </package>
-      <package>
-        <shortTitle>LTER02 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1202</docid>
-      </package>
-      <package>
-        <shortTitle>LTER03 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1203</docid>
-      </package>
-      <package>
-        <shortTitle>LTER04 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1204</docid>
-      </package>
-      <package>
-        <shortTitle>LTER05 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1205</docid>
-      </package>
-      <package>
-        <shortTitle>LTER06 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1206</docid>
-      </package>
-      <package>
-        <shortTitle>LTER07 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1207</docid>
-      </package>
-      <package>
-        <shortTitle>LTER08 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1208</docid>
-      </package>
-      <package>
-        <shortTitle>LTER09 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1209</docid>
-      </package>
-      <package>
-        <shortTitle>LTER10 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1210</docid>
-      </package>
-      <package>
-        <shortTitle>LTER11 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1211</docid>
-      </package>
-      <package>
-        <shortTitle>LTER12 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1212</docid>
-      </package>
-      <package>
-        <shortTitle>LTER13 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1213</docid>
-      </package>
-      <package>
-        <shortTitle>LTER14 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1214</docid>
-      </package>
-      <package>
-        <shortTitle>LTER15 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1215</docid>
-      </package>
-      <package>
-        <shortTitle>LTER16 towed CTD</shortTitle>
-        <docid>knb-lter-sbc.1216</docid>
-      </package>
-    </dataPackages>
-    <additionalInfo>
-      <additionalInfoLabel>Summary and timing of all cruises aboard the R/V Pt. Sur, 2001-2006,
-        including links to data </additionalInfoLabel>
-      <additionalInfoUrl>http://sbc.lternet.edu/data/cruises2001_2006.html</additionalInfoUrl>
-    </additionalInfo>
-    <habitats>
-      <habitat>offshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical</measurementType>
-      <measurementType>physical_oceanography</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="cruise_underway">
+      <abstract> An undulating CTD package was towed along cross-channel and along-shore transects on
+        16 channel-wide cruises to survey hydrographic and biological parameters. Cruises were
+        conducted seasonally (2-3 times per year) on the R/V Pt Sur between 2001 and 2006. &lt;br
+        /&gt; &lt;br /&gt; This collection is also complemented by CTD/rosette bottle profiles and
+        shipboard meteorological and current data (see other collections for "Offshore Ocean"). </abstract>
+        <dataPackages>
+          <package>
+            <shortTitle>LTER01 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1201</docid>
+          </package>
+          <package>
+            <shortTitle>LTER02 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1202</docid>
+          </package>
+          <package>
+            <shortTitle>LTER03 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1203</docid>
+          </package>
+          <package>
+            <shortTitle>LTER04 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1204</docid>
+          </package>
+          <package>
+            <shortTitle>LTER05 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1205</docid>
+          </package>
+          <package>
+            <shortTitle>LTER06 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1206</docid>
+          </package>
+          <package>
+            <shortTitle>LTER07 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1207</docid>
+          </package>
+          <package>
+            <shortTitle>LTER08 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1208</docid>
+          </package>
+          <package>
+            <shortTitle>LTER09 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1209</docid>
+          </package>
+          <package>
+            <shortTitle>LTER10 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1210</docid>
+          </package>
+          <package>
+            <shortTitle>LTER11 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1211</docid>
+          </package>
+          <package>
+            <shortTitle>LTER12 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1212</docid>
+          </package>
+          <package>
+            <shortTitle>LTER13 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1213</docid>
+          </package>
+          <package>
+            <shortTitle>LTER14 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1214</docid>
+          </package>
+          <package>
+            <shortTitle>LTER15 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1215</docid>
+          </package>
+          <package>
+            <shortTitle>LTER16 towed CTD</shortTitle>
+            <docid>knb-lter-sbc.1216</docid>
+          </package>
+        </dataPackages>
+        <additionalInfo>
+          <additionalInfoLabel>Summary and timing of all cruises aboard the R/V Pt. Sur, 2001-2006,
+            including links to data </additionalInfoLabel>
+            <additionalInfoUrl>http://sbc.lternet.edu/data/cruises2001_2006.html</additionalInfoUrl>
+          </additionalInfo>
+          <habitats>
+            <habitat>offshore</habitat>
+          </habitats>
+          <measurementTypes>
+            <measurementType>physical</measurementType>
+            <measurementType>physical_oceanography</measurementType>
+          </measurementTypes>
+          <lterCoreResearchAreas>
+            <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+          </lterCoreResearchAreas>
+          <represents>
+            <type>signature</type>
+            <inventoryType>short_term</inventoryType>
+          </represents>
+        </collection>
+        <collection id="cruise_underway">
     <!-- a stylesheet grabs content to create the cruise page display. see collection2cruiseInfo.xsl 
       uses first 6 chars of <shortTitle> to get cruise name. SO DONT CHANGE THAT!
     -->
     <collectionName>SBC LTER: Seasonal Channel-wide Cruises (2001-2006) - R/V Pt. Sur ADCP,
       meteorology and sea surface data (UDAS)</collectionName>
-    <abstract>Basic meterology, navigation and ADCP (current profiles) were continuously collected
-      by the ship (R/V Pt Sur) on 16 channel-wide cruises to survey hydrographic and biological
-      parameters. Cruises were conducted seasonally (2-3 times per year) between 2001 and 2006.
-      &lt;br /&gt; &lt;br /&gt; This collection is also complemented by CTD/rosette bottle profiles
-      and towed CTD transects (see other collections for "Offshore Ocean"). </abstract>
-    <dataPackages>
-      <package>
-        <shortTitle>LTER01-underway</shortTitle>
-        <docid>knb-lter-sbc.1101</docid>
-      </package>
-      <package>
-        <shortTitle>LTER02-underway</shortTitle>
-        <docid>knb-lter-sbc.1102</docid>
-      </package>
-      <package>
-        <shortTitle>LTER03-underway</shortTitle>
-        <docid>knb-lter-sbc.1103</docid>
-      </package>
-      <package>
-        <shortTitle>LTER04-underway</shortTitle>
-        <docid>knb-lter-sbc.1104</docid>
-      </package>
-      <package>
-        <shortTitle>LTER05-underway</shortTitle>
-        <docid>knb-lter-sbc.1105</docid>
-      </package>
-      <package>
-        <shortTitle>LTER06-underway</shortTitle>
-        <docid>knb-lter-sbc.1106</docid>
-      </package>
-      <package>
-        <shortTitle>LTER07-underway</shortTitle>
-        <docid>knb-lter-sbc.1107</docid>
-      </package>
-      <package>
-        <shortTitle>LTER08-underway</shortTitle>
-        <docid>knb-lter-sbc.1108</docid>
-      </package>
-      <package>
-        <shortTitle>LTER09-underway</shortTitle>
-        <docid>knb-lter-sbc.1109</docid>
-      </package>
-      <package>
-        <shortTitle>LTER10-underway</shortTitle>
-        <docid>knb-lter-sbc.1110</docid>
-      </package>
-      <package>
-        <shortTitle>LTER11-underway</shortTitle>
-        <docid>knb-lter-sbc.1111</docid>
-      </package>
-      <package>
-        <shortTitle>LTER12-underway</shortTitle>
-        <docid>knb-lter-sbc.1112</docid>
-      </package>
-      <package>
-        <shortTitle>LTER13-underway</shortTitle>
-        <docid>knb-lter-sbc.1113</docid>
-      </package>
-      <package>
-        <shortTitle>LTER14-underway</shortTitle>
-        <docid>knb-lter-sbc.1114</docid>
-      </package>
-      <package>
-        <shortTitle>LTER15-underway</shortTitle>
-        <docid>knb-lter-sbc.1115</docid>
-      </package>
-      <package>
-        <shortTitle>LTER16-underway</shortTitle>
-        <docid>knb-lter-sbc.1116</docid>
-      </package>
-    </dataPackages>
-    <additionalInfo>
-      <additionalInfoLabel>Summary and timing of all cruises aboard the R/V Pt. Sur, 2001-2006,
-        including links to data </additionalInfoLabel>
-      <additionalInfoUrl>http://sbc.lternet.edu/data/cruises2001_2006.html</additionalInfoUrl>
-    </additionalInfo>
-    <habitats>
-      <habitat>offshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>physical</measurementType>
-      <measurementType>physical_oceanography</measurementType>
-      <measurementType>meteorology</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+      <abstract>Basic meterology, navigation and ADCP (current profiles) were continuously collected
+        by the ship (R/V Pt Sur) on 16 channel-wide cruises to survey hydrographic and biological
+        parameters. Cruises were conducted seasonally (2-3 times per year) between 2001 and 2006.
+        &lt;br /&gt; &lt;br /&gt; This collection is also complemented by CTD/rosette bottle profiles
+        and towed CTD transects (see other collections for "Offshore Ocean"). </abstract>
+        <dataPackages>
+          <package>
+            <shortTitle>LTER01-underway</shortTitle>
+            <docid>knb-lter-sbc.1101</docid>
+          </package>
+          <package>
+            <shortTitle>LTER02-underway</shortTitle>
+            <docid>knb-lter-sbc.1102</docid>
+          </package>
+          <package>
+            <shortTitle>LTER03-underway</shortTitle>
+            <docid>knb-lter-sbc.1103</docid>
+          </package>
+          <package>
+            <shortTitle>LTER04-underway</shortTitle>
+            <docid>knb-lter-sbc.1104</docid>
+          </package>
+          <package>
+            <shortTitle>LTER05-underway</shortTitle>
+            <docid>knb-lter-sbc.1105</docid>
+          </package>
+          <package>
+            <shortTitle>LTER06-underway</shortTitle>
+            <docid>knb-lter-sbc.1106</docid>
+          </package>
+          <package>
+            <shortTitle>LTER07-underway</shortTitle>
+            <docid>knb-lter-sbc.1107</docid>
+          </package>
+          <package>
+            <shortTitle>LTER08-underway</shortTitle>
+            <docid>knb-lter-sbc.1108</docid>
+          </package>
+          <package>
+            <shortTitle>LTER09-underway</shortTitle>
+            <docid>knb-lter-sbc.1109</docid>
+          </package>
+          <package>
+            <shortTitle>LTER10-underway</shortTitle>
+            <docid>knb-lter-sbc.1110</docid>
+          </package>
+          <package>
+            <shortTitle>LTER11-underway</shortTitle>
+            <docid>knb-lter-sbc.1111</docid>
+          </package>
+          <package>
+            <shortTitle>LTER12-underway</shortTitle>
+            <docid>knb-lter-sbc.1112</docid>
+          </package>
+          <package>
+            <shortTitle>LTER13-underway</shortTitle>
+            <docid>knb-lter-sbc.1113</docid>
+          </package>
+          <package>
+            <shortTitle>LTER14-underway</shortTitle>
+            <docid>knb-lter-sbc.1114</docid>
+          </package>
+          <package>
+            <shortTitle>LTER15-underway</shortTitle>
+            <docid>knb-lter-sbc.1115</docid>
+          </package>
+          <package>
+            <shortTitle>LTER16-underway</shortTitle>
+            <docid>knb-lter-sbc.1116</docid>
+          </package>
+        </dataPackages>
+        <additionalInfo>
+          <additionalInfoLabel>Summary and timing of all cruises aboard the R/V Pt. Sur, 2001-2006,
+            including links to data </additionalInfoLabel>
+            <additionalInfoUrl>http://sbc.lternet.edu/data/cruises2001_2006.html</additionalInfoUrl>
+          </additionalInfo>
+          <habitats>
+            <habitat>offshore</habitat>
+          </habitats>
+          <measurementTypes>
+            <measurementType>physical</measurementType>
+            <measurementType>physical_oceanography</measurementType>
+            <measurementType>meteorology</measurementType>
+          </measurementTypes>
+          <lterCoreResearchAreas>
+            <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+          </lterCoreResearchAreas>
+          <represents>
+            <type>signature</type>
+            <inventoryType>short_term</inventoryType>
+          </represents>
+        </collection>
 
-  <collection id="ffrietas_glider">
-    <collectionName>SBC LTER: Cross-shelf phytoplankton and particulates with glider surveys</collectionName>
-    <abstract>Autonomous glider deployments (2012 - 2013): sections of temperature, salinity, colored DOM, 
-      particulate backscatter and Chlorophyll fluorescence.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.96</docid>
-        <shortTitle>Bio-optical glider cross-shelf sections</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-      <habitat>offshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-      <measurementType>biogeochemistry</measurementType>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  
-
-
-
-
-  <collection id="campaign_css_doc">
-    <collectionName>SBC LTER: Cross-shelf study, 2008-2009</collectionName>
-    <abstract>Oceanagraphic profiles on a cross-shelf transect were collect to to resolve
-      development of the temporal and spatial gradients in organic and inorganic constituents and
-      related microbial activity and community structure.</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.45</docid>
-        <shortTitle>Cross-shelf Study, CTD/Rosette Profiles</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-      <habitat>offshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>community_structure</measurementType>
-      <measurementType>biogeochemistry</measurementType>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+        <collection id="ffrietas_glider">
+          <collectionName>SBC LTER: Cross-shelf phytoplankton and particulates with glider surveys</collectionName>
+          <abstract>Autonomous glider deployments (2012 - 2013): sections of temperature, salinity, colored DOM, 
+            particulate backscatter and Chlorophyll fluorescence.</abstract>
+            <dataPackages>
+              <package>
+                <docid>knb-lter-sbc.96</docid>
+                <shortTitle>Bio-optical glider cross-shelf sections</shortTitle>
+              </package>
+            </dataPackages>
+            <habitats>
+              <habitat>reef</habitat>
+              <habitat>nearshore</habitat>
+              <habitat>offshore</habitat>
+            </habitats>
+            <measurementTypes>
+              <measurementType>community_structure</measurementType>
+              <measurementType>biogeochemistry</measurementType>
+              <measurementType>ecosystem_processes</measurementType>
+            </measurementTypes>
+            <lterCoreResearchAreas>
+              <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+              <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+              <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+            </lterCoreResearchAreas>
+            <represents>
+              <inventoryType>short_term</inventoryType>
+            </represents>
+          </collection>
+          
 
 
 
- <collection id="kapsenberg_phd_2015">
-    <collectionName>Coastal ocean pH variability in the context of global change biology</collectionName>
-    <abstract>Studies of the variablilty of pH under different
-     coastal regimes, to examine abiotic and biotic processes contributing
-     to ocean acidification. Data using SeaFET instrumentation (Kapsenberg curriculum)</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.88</docid>
-        <shortTitle>Middle school curriculum to study complexity of ocean acidification</shortTitle>
-      </package>
 
-      <package>
-        <docid>knb-lter-sbc.93</docid>
-        <shortTitle>Moored SeaFET pH, SeaBird CTD and oxygen, Santa Barbara Channel Islands</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>reef</habitat>
-      <habitat>nearshore</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>biogeochemistry</measurementType>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+          <collection id="campaign_css_doc">
+            <collectionName>SBC LTER: Cross-shelf study, 2008-2009</collectionName>
+            <abstract>Oceanagraphic profiles on a cross-shelf transect were collect to to resolve
+              development of the temporal and spatial gradients in organic and inorganic constituents and
+              related microbial activity and community structure.</abstract>
+              <dataPackages>
+                <package>
+                  <docid>knb-lter-sbc.45</docid>
+                  <shortTitle>Cross-shelf Study, CTD/Rosette Profiles</shortTitle>
+                </package>
+              </dataPackages>
+              <habitats>
+                <habitat>reef</habitat>
+                <habitat>nearshore</habitat>
+                <habitat>offshore</habitat>
+              </habitats>
+              <measurementTypes>
+                <measurementType>community_structure</measurementType>
+                <measurementType>biogeochemistry</measurementType>
+                <measurementType>ecosystem_processes</measurementType>
+              </measurementTypes>
+              <lterCoreResearchAreas>
+                <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+                <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+                <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+              </lterCoreResearchAreas>
+              <represents>
+                <inventoryType>short_term</inventoryType>
+              </represents>
+            </collection>
+
+
+
+            <collection id="kapsenberg_phd_2015">
+              <collectionName>Coastal ocean pH variability in the context of global change biology</collectionName>
+              <abstract>Studies of the variablilty of pH under different
+               coastal regimes, to examine abiotic and biotic processes contributing
+               to ocean acidification. Data using SeaFET instrumentation (Kapsenberg curriculum)</abstract>
+               <dataPackages>
+                <package>
+                  <docid>knb-lter-sbc.88</docid>
+                  <shortTitle>Middle school curriculum to study complexity of ocean acidification</shortTitle>
+                </package>
+
+                <package>
+                  <docid>knb-lter-sbc.93</docid>
+                  <shortTitle>Moored SeaFET pH, SeaBird CTD and oxygen, Santa Barbara Channel Islands</shortTitle>
+                </package>
+              </dataPackages>
+              <habitats>
+                <habitat>reef</habitat>
+                <habitat>nearshore</habitat>
+              </habitats>
+              <measurementTypes>
+                <measurementType>biogeochemistry</measurementType>
+                <measurementType>ecosystem_processes</measurementType>
+              </measurementTypes>
+              <lterCoreResearchAreas>
+                <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+                <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+              </lterCoreResearchAreas>
+              <represents>
+                <inventoryType>short_term</inventoryType>
+              </represents>
+            </collection>
 
 <!--
   <collection id="kapsenberg_ci_ph_ctd">
@@ -2449,12 +2449,12 @@
   </collection>
 -->
 
-  <!-- beach -->
-  <collection id="beach_wrack_consumer_zonation_2012">
-    <collectionName>SBC LTER: Beach wrack consumer zonation 2011-2012</collectionName>
-    <abstract>Zonation and distribution of intertidal wrack consumer beds over time, 
-      at Isla
-      Vista Beach</abstract>
+<!-- beach -->
+<collection id="beach_wrack_consumer_zonation_2012">
+  <collectionName>SBC LTER: Beach wrack consumer zonation 2011-2012</collectionName>
+  <abstract>Zonation and distribution of intertidal wrack consumer beds over time, 
+    at Isla
+    Vista Beach</abstract>
     <dataPackages>
       <package>
         <docid>knb-lter-sbc.113</docid>
@@ -2483,141 +2483,141 @@
     <collectionName>SBC LTER: Macroalgal wrack, IV 2005-2006</collectionName>
     <abstract>Composition, cover and biomass of macroalgal wrack in the intertidal zone at Isla
       Vista Beach</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.22</docid>
-        <shortTitle>Cover and biomass at Isla Vista</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>beach</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>monitoring</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <collection id="beach_porewater_wrack_2003">
-    <collectionName>SBC LTER: Beach porewater and wrack, 2003</collectionName>
-    <abstract>Beach wrack along transects, and dissolved nutrients and salinity of porewaters in all
-      intertidal zones at selected sandy beaches during 2003</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.23</docid>
-        <shortTitle>Beach Porewater, 2003</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>beach</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>biogeochemistry</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>monitoring</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+      <dataPackages>
+        <package>
+          <docid>knb-lter-sbc.22</docid>
+          <shortTitle>Cover and biomass at Isla Vista</shortTitle>
+        </package>
+      </dataPackages>
+      <habitats>
+        <habitat>beach</habitat>
+      </habitats>
+      <measurementTypes>
+        <measurementType>ecosystem_processes</measurementType>
+      </measurementTypes>
+      <lterCoreResearchAreas>
+        <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+        <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+      </lterCoreResearchAreas>
+      <represents>
+        <type>monitoring</type>
+        <inventoryType>short_term</inventoryType>
+      </represents>
+    </collection>
+    <collection id="beach_porewater_wrack_2003">
+      <collectionName>SBC LTER: Beach porewater and wrack, 2003</collectionName>
+      <abstract>Beach wrack along transects, and dissolved nutrients and salinity of porewaters in all
+        intertidal zones at selected sandy beaches during 2003</abstract>
+        <dataPackages>
+          <package>
+            <docid>knb-lter-sbc.23</docid>
+            <shortTitle>Beach Porewater, 2003</shortTitle>
+          </package>
+        </dataPackages>
+        <habitats>
+          <habitat>beach</habitat>
+        </habitats>
+        <measurementTypes>
+          <measurementType>biogeochemistry</measurementType>
+        </measurementTypes>
+        <lterCoreResearchAreas>
+          <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+        </lterCoreResearchAreas>
+        <represents>
+          <type>monitoring</type>
+          <inventoryType>short_term</inventoryType>
+        </represents>
+      </collection>
 
-  <collection id="goodridge_beach_porewater_radon">
-    <collectionName>Pore water constituents and residence times, 2013</collectionName>
-    <abstract>Constituents of beach pore water and parameters for calculating residence times using
-      Radon-222</abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.87</docid>
-        <shortTitle>Beach pore water constituents 2013</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>beach</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>biogeochemistry</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <type>signature</type>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
-  <!-- watershed -->
-  <collection id="klose_ventura_river">
-    <collectionName>Nutrient concentrations and algae cover in the Ventura River catchment,
-      2008</collectionName>
-    <abstract>Macroalgal cover and nutrients during spring and summer 2008 at stream and estuarine
-      sites (undeveloped, agricultural and urban) in the Ventura River catchment. </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.66</docid>
-        <shortTitle>Nutrients and algae cover, Ventura River catchment</shortTitle>
-      </package>
-    </dataPackages>
-    <habitats>
-      <habitat>watershed</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>biogeochemistry</measurementType>
-      <measurementType>community_structure</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>organic matter</lterCoreResearchArea>
-      <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+      <collection id="goodridge_beach_porewater_radon">
+        <collectionName>Pore water constituents and residence times, 2013</collectionName>
+        <abstract>Constituents of beach pore water and parameters for calculating residence times using
+          Radon-222</abstract>
+          <dataPackages>
+            <package>
+              <docid>knb-lter-sbc.87</docid>
+              <shortTitle>Beach pore water constituents 2013</shortTitle>
+            </package>
+          </dataPackages>
+          <habitats>
+            <habitat>beach</habitat>
+          </habitats>
+          <measurementTypes>
+            <measurementType>biogeochemistry</measurementType>
+          </measurementTypes>
+          <lterCoreResearchAreas>
+            <lterCoreResearchArea>inorganic matter</lterCoreResearchArea>
+          </lterCoreResearchAreas>
+          <represents>
+            <type>signature</type>
+            <inventoryType>short_term</inventoryType>
+          </represents>
+        </collection>
+        <!-- watershed -->
+        <collection id="klose_ventura_river">
+          <collectionName>Nutrient concentrations and algae cover in the Ventura River catchment,
+            2008</collectionName>
+            <abstract>Macroalgal cover and nutrients during spring and summer 2008 at stream and estuarine
+              sites (undeveloped, agricultural and urban) in the Ventura River catchment. </abstract>
+              <dataPackages>
+                <package>
+                  <docid>knb-lter-sbc.66</docid>
+                  <shortTitle>Nutrients and algae cover, Ventura River catchment</shortTitle>
+                </package>
+              </dataPackages>
+              <habitats>
+                <habitat>watershed</habitat>
+              </habitats>
+              <measurementTypes>
+                <measurementType>biogeochemistry</measurementType>
+                <measurementType>community_structure</measurementType>
+              </measurementTypes>
+              <lterCoreResearchAreas>
+                <lterCoreResearchArea>organic matter</lterCoreResearchArea>
+                <lterCoreResearchArea>population dynamics</lterCoreResearchArea>
+              </lterCoreResearchAreas>
+              <represents>
+                <inventoryType>short_term</inventoryType>
+              </represents>
+            </collection>
 
-  <collection id="fire_perimeters">
-    <collectionName>Fire Perimeters, Santa Barbara area 2004 - 2009</collectionName>
-    <abstract>Four fires burned in areas facing the Santa Barbara Channel between 2004 and 2009.
-      These datasets contain perimeters (greatest extent, as a KML polygon) assembled by the
-      Geospatial Multi-Agency Coordination Group (GeoMAC). </abstract>
-    <dataPackages>
-      <package>
-        <docid>knb-lter-sbc.68</docid>
-        <shortTitle>Gaviota Fire Perimeter, June 9, 2004</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.69</docid>
-        <shortTitle>Gap Fire Perimeter, July 9, 2008</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.70</docid>
-        <shortTitle>Tea Fire Perimeter, November 15, 2008</shortTitle>
-      </package>
-      <package>
-        <docid>knb-lter-sbc.71</docid>
-        <shortTitle>Jesuita Fire Perimeter, May 10, 2009</shortTitle>
-      </package>
-    </dataPackages>
+            <collection id="fire_perimeters">
+              <collectionName>Fire Perimeters, Santa Barbara area 2004 - 2009</collectionName>
+              <abstract>Four fires burned in areas facing the Santa Barbara Channel between 2004 and 2009.
+                These datasets contain perimeters (greatest extent, as a KML polygon) assembled by the
+                Geospatial Multi-Agency Coordination Group (GeoMAC). </abstract>
+                <dataPackages>
+                  <package>
+                    <docid>knb-lter-sbc.68</docid>
+                    <shortTitle>Gaviota Fire Perimeter, June 9, 2004</shortTitle>
+                  </package>
+                  <package>
+                    <docid>knb-lter-sbc.69</docid>
+                    <shortTitle>Gap Fire Perimeter, July 9, 2008</shortTitle>
+                  </package>
+                  <package>
+                    <docid>knb-lter-sbc.70</docid>
+                    <shortTitle>Tea Fire Perimeter, November 15, 2008</shortTitle>
+                  </package>
+                  <package>
+                    <docid>knb-lter-sbc.71</docid>
+                    <shortTitle>Jesuita Fire Perimeter, May 10, 2009</shortTitle>
+                  </package>
+                </dataPackages>
 
-    <habitats>
-      <habitat>watershed</habitat>
-    </habitats>
-    <measurementTypes>
-      <measurementType>ecosystem_processes</measurementType>
-    </measurementTypes>
-    <lterCoreResearchAreas>
-      <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
-    </lterCoreResearchAreas>
-    <represents>
-      <inventoryType>short_term</inventoryType>
-    </represents>
-  </collection>
+                <habitats>
+                  <habitat>watershed</habitat>
+                </habitats>
+                <measurementTypes>
+                  <measurementType>ecosystem_processes</measurementType>
+                </measurementTypes>
+                <lterCoreResearchAreas>
+                  <lterCoreResearchArea>disturbance patterns</lterCoreResearchArea>
+                </lterCoreResearchAreas>
+                <represents>
+                  <inventoryType>short_term</inventoryType>
+                </represents>
+              </collection>
 
 
-</collections>
+            </collections>
