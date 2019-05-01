@@ -17,9 +17,9 @@ probably most complex part of the website.
 -->
 
 <div id="filter-container">
-
+	{% include data/data_filter.html data=site.data.dataFilters %}
 </div>
 
 <div id="display-container">
-	{% include data_table.html data=site.data.dataCollections %}
+	{% include data/data_table.html data=site.data.dataCollections %}
 </div>

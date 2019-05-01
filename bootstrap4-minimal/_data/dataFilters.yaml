@@ -1,0 +1,28 @@
+- name: Habitats
+  id: habitats
+  filters:
+  - Watershed
+  - Beach
+  - Reef/Kelp Forest
+  - Inshore Ocean
+  - Offshore Ocean
+- name: Measurement Types
+  id: measurementTypes
+  filters:
+  - Meteorology
+  - Hydrology
+  - Biogeochemistry
+  - Physical Oceanography
+  - Ecosystem Processes
+  - Community Structure
+  - Remote Sensing
+  - Genomics
+- name: ITER Core Research Areas
+  id: lterCoreResearchAreas
+  filters:
+  - Primary Production
+  - Population Studies
+  - Organic Matter
+  - Inorganic Matter
+  - Disturbance Patterns
+  - Human Dimensions

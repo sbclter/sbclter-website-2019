@@ -1,5 +1,5 @@
 <div class="pull-left" class="mt-4">
-  <p class="table-title"> <strong> Applied Filter: </strong> </p>
+  <p class="table-title"> <strong> Data Result: </strong> </p>
   <table class="table table-bordered">
 	<thead>
 		<tr class="row title-row">
@@ -8,9 +8,12 @@
 			<th class="cell col-4 text-center"> <strong> Metadata and Data </strong> </th>
 		</tr>
 	</thead>
-	<tbody id="myTable">
+	<tbody>
 	{% for itemrow in include.data %}
-		<tr class="row">
+		<tr class="row data-record"
+		    data-type-habitats='{{ itemrow.habitats }}'
+		    data-type-measurementTypes='{{ itemrow.measurementTypes }}'
+		    data-type-lterCoreResearchAreas='{{ itemrow.lterCoreResearchAreas }}'>
 			<td class="cell col-3"> {{ itemrow.collectionName }} </td>
 			<td class="cell col-5"> {{ itemrow.abstract }} </td>
 			<td class="cell col-4">

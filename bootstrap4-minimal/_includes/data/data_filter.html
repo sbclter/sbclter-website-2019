@@ -1,0 +1,39 @@
+{% assign group_count = include.data | size %}
+{% assign group_width = 12 | divided_by: group_count %}
+
+<div class="pull-left" class="mt-4">
+	<p class="table-title"> <strong> Filters: </strong> </p>
+	<table class="table table-bordered">
+		<thead>
+			<tr class="row title-row">
+
+			{% for radioGroup in include.data %}
+				<th class="col-{{ group_width }}"> {{ radioGroup.name }} </th>
+			{% endfor %}
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="row">
+
+			{% for radioGroup in include.data %}
+				<td class="cell col-{{ group_width }}">
+
+				{% for radioName in radioGroup.filters %}
+					<label class="radio">
+						<input type="radio"
+						       name="{{ radioGroup.name }}"
+						       value="{{ radioName }}"
+						       data-filter-{{ radioGroup.id }}="{{ radioName }}">
+						{{ radioName }}
+					</label>
+					<br/>
+				{% endfor %}
+
+				</td>
+			{% endfor %}
+
+			</tr>
+		</tbody>
+	</table>
+</div>
