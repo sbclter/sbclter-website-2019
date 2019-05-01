@@ -85,3 +85,4 @@ $('.btn_off').click(function() {
  		toggle_layer(false, boxes[i].id);
  	}
 })
+
