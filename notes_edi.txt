@@ -20,3 +20,14 @@ https://github.com/EDIorg/tutorials
 - https://environmentaldatainitiative.org/events/training-webinars-workshops/previous-edi-events/create-a-local-data-catalog-on-your-website/
 - https://www.youtube.com/watch?v=LwCI9TKi-Pg&t=211s
 
+
+
+To retrieve metadata for a single dataset, use a query like this:
+- https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/1001/newest
+
+or 
+- https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/19/newest
+
+You can test with most integers up to 100. 
+the full list of dataset IDs can be found in _data/dataCollections.xml
+

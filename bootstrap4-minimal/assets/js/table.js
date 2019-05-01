@@ -32,7 +32,7 @@ function isEmptyTable(myId){
 // Simple function for adding custom styling when hovering a table row
 jQuery(document).ready(function($) {
     $(".clickable-row").click(function() {
-        window.open($(this).data("href"), '_blank');
+        window.location = $(this).data("href");
     });
     $(".clickable-row").hover(function() {
 	    $(this).addClass('table-hover');
