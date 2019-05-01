@@ -34,7 +34,6 @@ page_css:
 <br/>
 <!-- Current API is just for development, need a new key -->
 <script src="/assets/js/gmap.js"/></script>
-<script src="/assets/js/layer_table.js"></script>
 
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAsXhfi9ZNaT-4kUQSkq3etSJe1k8k_Pk&callback=initMap">

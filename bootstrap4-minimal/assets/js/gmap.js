@@ -31,7 +31,6 @@ function initMap() {
 
 }
 
-
 // Display the layer with the given id on the map
 function show_layer(id){
 	layers[id].setMap(map);
@@ -42,12 +41,47 @@ function hide_layer(id){
 	layers[id].setMap(null);
 }
 
-// Tracks changes to any of the boxes on the page
 // This will toggle the boxes layer on the map
-$('.layer_box').change(function() {
-	if(this.checked){  // Show
-		show_layer(this.id);
+// given state true=on false=off and id to hide
+function toggle_layer(on, id){
+	if(on){  // Show
+		show_layer(id);
 	}else{  // Hide
-		hide_layer(this.id);
+		hide_layer(id);
 	}
+}
+
+// Tracks changes to any of the boxes on the page
+$('.layer_box').change(function() {
+	toggle_layer(this.checked, this.id);
+})
+
+// Toggles on all checkboxes of specific id to on
+$('.btn_on').click(function() {
+	check_class = "chkbox_" + this.id;
+	$("." + check_class).prop('checked', true);
+
+	// For bootstrap to show toggle
+ 	$("." + check_class).parent().attr('class', "toggle btn btn-info");
+
+ 	// Show data on map
+ 	boxes = document.getElementsByClassName(check_class);
+ 	for(var i = 0; i < boxes.length; i++){  // Show all layers
+ 		toggle_layer(true, boxes[i].id);
+ 	}
+})
+
+// Toggles off all checkboxes of specific id to on
+$('.btn_off').click(function() {
+	check_class = "chkbox_" + this.id;
+	$("." + check_class).prop('checked', false);
+
+	// For bootstrap to show toggle
+ 	$("." + check_class).parent().attr('class', "toggle btn btn-outline-secondary off");
+
+ 	// Show data on map
+ 	boxes = document.getElementsByClassName(check_class);
+ 	for(var i = 0; i < boxes.length; i++){  // Show all layers
+ 		toggle_layer(false, boxes[i].id);
+ 	}
 })
