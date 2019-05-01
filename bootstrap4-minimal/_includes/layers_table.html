@@ -1,9 +1,12 @@
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+
 <div class="pull-left">
   <table class="table table-bordered">
     <thead id="table_header_{{include.data.name}}">
       <tr>
         {% for column in include.columns %}
-          <th style="text-align: center; font-size: 30px">{{ column }}</th>
+          <th style="font-size: 30px">{{ column }}</th>
         {% endfor %}
       </tr>
     </thead>
@@ -13,18 +16,20 @@
         {% for itemrow in group.items %}
           <tr class="hover_row">
             {% if has_header != 1 %}
-              <th style=" vertical-align: middle;
-                text-align: center;" rowspan="{{group.items | size | times: 2}}">{{itemrow["habitatLabel"]}}</th>
+              <th style=" vertical-align: middle;" rowspan="{{group.items | size | times: 2}}">{{itemrow["habitatLabel"]}}
+                <button type="button" id="{{itemrow.habitatName}}" class="btn btn-sm btn_on">On</button>
+                <button type="button" id="{{itemrow.habitatName}}" class="btn btn-info btn-sm btn_off">Off</button>
+              </th>
               {% assign has_header = 1 %}
             {% endif %}
             {% for filter in include.dataFilter %}
               <td>{{ itemrow[filter] }}</td>
             {% endfor %}
             <td> 
-              <div class="checkbox">
-                <center><input type="checkbox" value="" id="{{itemrow.id}}"/></center>
-              </div>
+                <input type="checkbox" data-toggle="toggle" data-onstyle="info" data-offstyle="outline-secondary" class="layer_box chkbox_{{itemrow.habitatName}}" id="{{itemrow.id}}"/>
             </td>
           <tr>
         {% endfor %}
     {% endfor %}
+
+

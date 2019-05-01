@@ -13,17 +13,13 @@ page_css:
   - "/assets/css/custom/includes/layers_table.css"
 ---
 
-<h1>H1 header</h1>
-
-<p>page will be a map of sampling sites - using google (javascript). map info can come from _content dir.  </p>
+<h1>Time Series Sampling Sites</h1>
 
 
 <p>The page we are replacing:
 <ul>
 <li>http://sbc.lternet.edu/sites/sampling/</li>
 </ul>
-<p>TBD: is content in XML (as used by current map), or yaml (which might be easier to generate from postgres. </p>
-<p>It would be best if it the content is in yaml as this cooperate better with jekyll</p>
 
 {% include gmap.html %}
 
@@ -33,8 +29,8 @@ page_css:
 
 <br/>
 <!-- Current API is just for development, need a new key -->
-<!-- <script src="/assets/js/gmap.js"/> -->
-<script src="/assets/js/layer_table.js">
-// <script async defer
-// src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+<script src="/assets/js/gmap.js"/></script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAsXhfi9ZNaT-4kUQSkq3etSJe1k8k_Pk&callback=initMap">
 // </script>
