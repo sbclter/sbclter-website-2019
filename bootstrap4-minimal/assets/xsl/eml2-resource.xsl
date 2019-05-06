@@ -30,9 +30,7 @@
   * suitable for rendering with modern web browsers.
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <!--<xsl:import href="eml-party-2.0.0.xsl"/>
-  <xsl:import href="eml-distribution-2.0.0.xsl"/>
-  <xsl:import href="eml-coverage-2.0.0.xsl"/>-->
+
   <xsl:output method="html" encoding="iso-8859-1"
     doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
     doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"

@@ -125,8 +125,8 @@ but all calls to resource templates would be affected.
   <xsl:for-each select="distribution">
       <!--<tr>
         <td>
-         the template 'distribution' in eml-distribution.2.0.0.xsl. seems to be for
-				data tables. use the resourcedistribution template instead (eml-resource.2.0.0.xsl)  -->
+         the template 'distribution' in eml2-distribution.xsl. seems to be for
+				data tables. use the resourcedistribution template instead (eml2-resource.xsl)  -->
             <xsl:call-template name="resourcedistribution">
               <xsl:with-param name="resfirstColStyle" select="$protocolfirstColStyle"/>
               <xsl:with-param name="ressubHeaderStyle" select="$protocolsubHeaderStyle"/> 
