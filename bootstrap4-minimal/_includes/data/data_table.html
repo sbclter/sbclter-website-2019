@@ -11,9 +11,19 @@
 	<tbody>
 	{% for itemrow in include.data %}
 		<tr class="row data-record"
-		    data-type-habitats='{{ itemrow.habitats }}'
-		    data-type-measurementTypes='{{ itemrow.measurementTypes }}'
-		    data-type-lterCoreResearchAreas='{{ itemrow.lterCoreResearchAreas }}'>
+		    data-type-habitats='
+		    {% for habitat in itemrow.habitats.habitat %}
+		    	{{ habitat }}
+		    {% endfor %}'
+		    data-type-measurementTypes='
+		    {% for measurement in itemrow.measurementTypes.measurementType %}
+		    	{{ measurement }}
+		    {% endfor %}'
+		    data-type-lterCoreResearchAreas='
+		    {% for area in itemrow.lterCoreResearchAreas.lterCoreResearchArea %}
+		    	{{ area }}
+		    {% endfor %}'
+		    >
 			<td class="cell col-3"> {{ itemrow.collectionName }} </td>
 			<td class="cell col-5"> {{ itemrow.abstract }} </td>
 			<td class="cell col-4">

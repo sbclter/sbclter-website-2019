@@ -24,6 +24,9 @@
 						<input type="radio"
 						       name="{{ radioGroup.name }}"
 						       value="{{ radioName }}"
+						       {% if radioName contains 'All'%}
+						       		checked="checked"
+						       {% endif %}
 						       data-filter-{{ radioGroup.id }}="{{ radioName }}">
 						{{ radioName }}
 					</label>

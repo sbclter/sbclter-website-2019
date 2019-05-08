@@ -23,3 +23,5 @@ probably most complex part of the website.
 <div id="display-container">
 	{% include data/data_table.html data=site.data.dataCollections %}
 </div>
+
+<script src="/assets/js/catalog.js"/></script>
