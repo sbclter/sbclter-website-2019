@@ -6,6 +6,7 @@
   - Reef/Kelp Forest
   - Inshore Ocean
   - Offshore Ocean
+  - All Habitats
 - name: Measurement Types
   id: measurementTypes
   filters:
@@ -17,7 +18,8 @@
   - Community Structure
   - Remote Sensing
   - Genomics
-- name: ITER Core Research Areas
+  - All Measurement Types
+- name: LTER Core Research Areas
   id: lterCoreResearchAreas
   filters:
   - Primary Production
@@ -26,3 +28,4 @@
   - Inorganic Matter
   - Disturbance Patterns
   - Human Dimensions
+  - All Research Areas
