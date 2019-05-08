@@ -16,7 +16,7 @@
         {% for itemrow in group.items %}
           <tr class="hover_row">
             {% if has_header != 1 %}
-              <th style=" vertical-align: middle;" rowspan="{{group.items | size | times: 2}}">{{itemrow["habitatLabel"]}}
+              <th style=" vertical-align: middle;" rowspan="{{group.items | size}}">{{itemrow["habitatLabel"]}}
                 <button type="button" id="{{itemrow.habitatName}}" class="btn btn-sm btn_on">On</button>
                 <button type="button" id="{{itemrow.habitatName}}" class="btn btn-info btn-sm btn_off">Off</button>
               </th>
@@ -28,7 +28,7 @@
             <td> 
                 <input type="checkbox" data-toggle="toggle" data-onstyle="info" data-offstyle="outline-secondary" class="layer_box chkbox_{{itemrow.habitatName}}" id="{{itemrow.id}}"/>
             </td>
-          <tr>
+          </tr>
         {% endfor %}
     {% endfor %}
 

@@ -18,3 +18,23 @@
   label: "Biomass and species composition of macroalgal wrack"
   habitatName: "beach"
   habitatLabel: "Beach" 
+
+- id: "beachBirds"
+  label: "Abundance of birds"
+  habitatName: "beach"
+  habitatLabel: "Beach"
+
+- id: "beachWrackConsumers"
+  label: "Abundance of invertebrate wrack consumers"
+  habitatName: "beach"
+  habitatLabel: "Beach"
+
+- id: "reefAnnPopSurvey"
+  label: "Abundance of &gt;200 species of algae, invertebrates and fish"
+  habitatName: "reef"
+  habitatLabel: "Kelp Forest"
+
+- id: "reefBottomTemp"
+  label: "Water temperature on the bottom"
+  habitatName: "reef"
+  habitatLabel: "Kelp Forest"

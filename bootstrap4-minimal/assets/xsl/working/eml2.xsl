@@ -30,34 +30,34 @@
   * suitable for rendering with modern web browsers.
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:import href="eml-access-2.0.0.xsl"/>
-  <xsl:import href="eml-additionalmetadata-2.0.0.xsl"/>
-  <xsl:import href="eml-attribute-2.0.0.xsl"/>
-  <xsl:import href="eml-attribute-enumeratedDomain-2.0.0.xsl"/>
-  <xsl:import href="eml-constraint-2.0.0.xsl"/>
-  <xsl:import href="eml-coverage-2.0.0.xsl"/>
-  <xsl:import href="eml-dataset-2.0.0.xsl"/>
-  <xsl:import href="eml-datatable-2.0.0.xsl"/>
-  <xsl:import href="eml-distribution-2.0.0.xsl"/>
-  <xsl:import href="eml-entity-2.0.0.xsl"/>
-  <xsl:import href="eml-identifier-2.0.0.xsl"/>
-  <xsl:import href="eml-literature-2.0.0.xsl"/>
-  <xsl:import href="eml-method-2.0.0.xsl"/>
-  <xsl:import href="eml-otherentity-2.0.0.xsl"/>
-  <xsl:import href="eml-party-2.0.0.xsl"/>
-  <xsl:import href="eml-physical-2.0.0.xsl"/>
-  <xsl:import href="eml-project-2.0.0.xsl"/>
-  <xsl:import href="eml-protocol-2.0.0.xsl"/>
-  <xsl:import href="eml-resource-2.0.0.xsl"/>
-  <xsl:import href="eml-settings-2.0.0.xsl"/>
-  <xsl:import href="eml-software-2.0.0.xsl"/>
-  <xsl:import href="eml-spatialraster-2.0.0.xsl"/>
-  <xsl:import href="eml-spatialvector-2.0.0.xsl"/>
-  <xsl:import href="eml-storedprocedure-2.0.0.xsl"/>
-  <xsl:import href="eml-text-2.0.0.xsl"/>
-  <xsl:import href="eml-view-2.0.0.xsl"/>
-  <xsl:import href="eml-howtoCite-2.0.0.xsl"/>
-  <xsl:import href="eml-geoCov_draw_map-2.0.0.xsl"/>
+  <xsl:import href="eml2-access.xsl"/>
+  <xsl:import href="eml2-additionalmetadata.xsl"/>
+  <xsl:import href="eml2-attribute.xsl"/>
+  <xsl:import href="eml2-attribute-enumeratedDomain.xsl"/>
+  <xsl:import href="eml2-constraint.xsl"/>
+  <xsl:import href="eml2-coverage.xsl"/>
+  <xsl:import href="eml2-dataset.xsl"/>
+  <xsl:import href="eml2-datatable.xsl"/>
+  <xsl:import href="eml2-distribution.xsl"/>
+  <xsl:import href="eml2-entity.xsl"/>
+  <xsl:import href="eml2-identifier.xsl"/>
+  <xsl:import href="eml2-literature.xsl"/>
+  <xsl:import href="eml2-method.xsl"/>
+  <xsl:import href="eml2-otherentity.xsl"/>
+  <xsl:import href="eml2-party.xsl"/>
+  <xsl:import href="eml2-physical.xsl"/>
+  <xsl:import href="eml2-project.xsl"/>
+  <xsl:import href="eml2-protocol.xsl"/>
+  <xsl:import href="eml2-resource.xsl"/>
+  <xsl:import href="eml2-settings.xsl"/>
+  <xsl:import href="eml2-software.xsl"/>
+  <xsl:import href="eml2-spatialraster.xsl"/>
+  <xsl:import href="eml2-spatialvector.xsl"/>
+  <xsl:import href="eml2-storedprocedure.xsl"/>
+  <xsl:import href="eml2-text.xsl"/>
+  <xsl:import href="eml2-view.xsl"/>
+  <xsl:import href="eml2-howtoCite.xsl"/>
+  <xsl:import href="eml2-geoCov_draw_map.xsl"/>
   
   <!-- These import paths will be replaced by config settings
   -->
