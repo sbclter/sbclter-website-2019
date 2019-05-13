@@ -1,18 +1,18 @@
 ---
 ---
-.row {
+table .row {
 	margin: 0;
 }
 
-.title-row {
+table .title-row {
 	background-color: #b3e5fc;
 }
 
-.table-hover {
+table .table-hover {
 	border: 4px solid rgba(0,0,0, 0.25);
 }
 
-.cell {
+table .cell {
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
 	overflow-wrap: break-word;
