@@ -20,7 +20,7 @@
 			{% for package in itemrow.dataPackages.package %}
 				{% assign docid = package.docid | replace: ".", "/" %}
 				{% assign url = page.package_url | replace: "$docid", docid %}
-				<a class="package-link" href="{{ url }}"> {{ package.shortTitle }} </a>
+				<a class="package-link" href="#" onclick='showDetail("{{ url }}")'> {{ package.shortTitle }} </a>
 				<br/>
 			{% endfor %}
 			</td>

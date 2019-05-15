@@ -22,3 +22,44 @@
 	color: #666600;
 	text-decoration: underline;
 }
+
+.modal {
+
+	.modal-dialog {
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		margin-top: 3% !important;
+		margin-bottom: 3% !important;
+		max-width: none;
+	}
+}
+
+#detail-modal-template {
+
+	.nav-item {
+		// width: 20%;
+	}
+
+	.nav-link {
+		background-color: #b3e5fc;
+		height: 100%;
+		text-align: center;
+	}
+
+	.tab-pane {
+		border-left: 1px solid #b3e5fc;
+		border-right: 1px solid #b3e5fc;
+		border-bottom: 1px solid #b3e5fc;
+		padding: 35px;
+	}
+
+	.active {
+		background-color: white;
+	}
+
+	#content-class-summary {
+		th, td {
+			// border-top: none;
+		}
+	}
+}
