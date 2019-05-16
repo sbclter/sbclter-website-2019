@@ -1,3 +1,126 @@
+function showDetail(url) {
+	var xml = loadXMLDoc(url);
+	var dataString = xml2json(xml, "	");
+	var data = JSON.parse(dataString);
+	// var data = sample_data;
+	console.log(data);
+
+	var template = $('#detail-modal-template').clone();
+	template.removeAttr('hidden');
+	var id = makeSummary(template, data);
+
+	$('#detail-modal-title').text(`Data Set (${id})`);
+	$('#detail-modal .modal-body').html(template);
+	$('#detail-modal').modal();
+}
+
+function makeSummary(template, data) {
+	var element = template.find('#content-class-summary');
+	var id;
+
+	// fill id field
+	try {
+		id = extractData(data['eml:eml']['@packageId']);
+		element.find('#field-id').text(id);
+	} catch(err) { console.error(err); }
+
+	// fill alternate id field
+	try {
+		var text = extractData(data['eml:eml']['dataset']['alternateIdentifier'], '<br>', ['#text']);
+		element.find('#field-id-alt').html(text);
+	} catch(err) { console.error(err); }
+
+	// fill abstract paragraph field
+	try {
+		var text = extractData(data['eml:eml']['dataset']['abstract']['para'], '<br><br>');
+		element.find('#field-abstract').html(text);
+	} catch(err) { console.error(err); }
+
+	// fill shortname field
+	try {
+		var text = extractData(data['eml:eml']['dataset']['shortName']);
+		element.find('#field-shortname').html(text);
+	} catch(err) { console.error(err); }
+
+	// fill publication date field
+	try {
+		var text = extractData(data['eml:eml']['dataset']['pubDate']);
+		element.find('#field-pubdate').html(text);
+	} catch(err) { console.error(err); }
+
+	// fill language field
+	try {
+		var text = extractData(data['eml:eml']['dataset']['language']);
+		element.find('#field-language').html(text);
+	} catch(err) { console.error(err); }
+
+	// fill time period field
+	try {
+		var text = extractData(data['eml:eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
+		element.find('#field-daterange').html(text);
+	} catch(err) { console.error(err); }
+
+
+
+
+
+
+	// fill usage rights field
+	try {
+		var text = '<li>';
+		text += extractData(data['eml:eml']['dataset']['intellectualRights']['para'], '</li>\n<li>');
+		text += '</li>';
+		element.find('#field-usage-rights').html(text);
+	} catch(err) { console.error(err); }
+
+	return id;
+}
+
+function extractData(data, delim, keys) {
+	if (data === undefined) return '';
+
+	var str = '';
+	if (Array.isArray(data))
+		for (var i = 0; i < data.length; i++) {
+			if (i >= data.length - 1) delim = '';
+			str += extractDataObject(data[i], keys, ', ') + delim;
+		}
+
+	else if (typeof data == "object")
+		str += extractDataObject(data, keys, delim);
+
+	else
+		str = data;
+
+	return str;
+}
+
+function extractDataObject(data, keys, delim) {
+	if (data === undefined) return '';
+	if (keys === undefined) return data;
+
+	var str = '';
+	for (var i = 0; i < keys.length; i++) {
+		var val = data;
+
+		// replace path '/' with actual dom
+		var keyPath = keys[i];
+		if (keyPath !== undefined) {
+			var keyList = keyPath.split('/');
+			for (var j = 0; j < keyList.length; j++) {
+				if (val[keyList[j]] === undefined)
+					break;
+				val = val[keyList[j]];
+			}
+		}
+
+		if (i >= keys.length - 1) delim = '';
+		str += val + delim;
+	}
+
+	return str;
+}
+
 function loadXMLDoc(filename) {
 	var xhttp;
 	if (window.ActiveXObject)
@@ -9,75 +132,3 @@ function loadXMLDoc(filename) {
 	xhttp.send("");
 	return xhttp.responseXML;
 }
-
-function showDetail(url) {
-	var xml = loadXMLDoc(url);
-	var dataString = xml2json(xml, "	");
-	var data = JSON.parse(dataString);
-
-	var template = $('#detail-modal-template').clone();
-	template.removeAttr('hidden');
-	makeSummary(template, data);
-
-	$('#detail-modal .modal-body').html(template);
-	$('#detail-modal').modal();
-}
-
-function makeSummary(template, data) {
-	var element = template.find('#content-class-summary');
-	
-	// fill id field
-	try {
-		element.find('#field-id').text(data['eml:eml']['@packageId']);
-	}
-	catch(err) { console.err("ID not found."); }
-
-	// fill alternate id field
-	try {
-		var altIDs = data['eml:eml']['dataset']['alternateIdentifier'];
-		var altIDText = '';
-		altIDs.forEach(function(item) {
-			if (item['#text'] !== undefined)
-				altIDText += item['#text'] + '<br><br>';
-			else
-				altIDText += item + '<br><br>';
-		});
-		element.find('#field-id-alt').html(altIDText);
-	}
-	catch(err) { console.err("Alternate ID not found."); }
-
-	// fill abstract paragraph field
-	try {
-		var abstracts = data['eml:eml']['dataset']['abstract']['para'];
-		var abstractText = '';
-		abstracts.forEach(function(item) {
-			abstractText += item + '<br><br>';
-		});
-		element.find('#field-abstract').html(abstractText);
-	}
-	catch(err) { console.err("Abstract not found."); }
-}
-
-// function displayResult() {
-// 	// xml = loadXMLDoc("/assets/test2/cdcatalog.xml");
-// 	// xsl = loadXMLDoc("/assets/test2/cdcatalog_client.xsl");
-// 	xml = loadXMLDoc("http://sbc.lternet.edu/data/eml/files/knb-lter-sbc.13");
-// 	xsl = loadXMLDoc("/assets/xsl/eml2-HTMLtemplates.xsl");
-// 	console.log(xml);
-// 	console.log(xsl);
-
-// 	// code for IE
-// 	if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
-// 		ex = xml.transformNode(xsl);
-// 		document.getElementById("external-display-container").innerHTML = ex;
-// 	}
-// 	// code for Chrome, Firefox, Opera, etc.
-// 	else if (document.implementation && document.implementation.createDocument) {
-// 		xsltProcessor = new XSLTProcessor();
-// 		xsltProcessor.importStylesheet(xsl);
-// 		resultDocument = xsltProcessor.transformToFragment(xml, document);
-// 		console.log(resultDocument);
-// 		document.getElementById("external-display-container").appendChild(resultDocument);
-// 	}
-// }
-// displayResult();
