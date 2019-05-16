@@ -7,21 +7,21 @@ function showDetail(url) {
 
 	var template = $('#detail-modal-template').clone();
 	template.removeAttr('hidden');
-	var id = makeSummary(template, data);
+	template.removeAttr('id');
+	var title = makeSummary(template, data);
 
-	$('#detail-modal-title').text(`Data Set (${id})`);
+	$('#detail-modal-title').text(title);
 	$('#detail-modal .modal-body').html(template);
 	$('#detail-modal').modal();
 }
 
 function makeSummary(template, data) {
 	var element = template.find('#content-class-summary');
-	var id;
 
 	// fill id field
 	try {
-		id = extractData(data['eml:eml']['@packageId']);
-		element.find('#field-id').text(id);
+		var text = extractData(data['eml:eml']['@packageId']);
+		element.find('#field-id').text(text);
 	} catch(err) { console.error(err); }
 
 	// fill alternate id field
@@ -32,7 +32,7 @@ function makeSummary(template, data) {
 
 	// fill abstract paragraph field
 	try {
-		var text = extractData(data['eml:eml']['dataset']['abstract']['para'], '<br><br>');
+		var text = extractData(data['eml:eml']['dataset']['abstract']['para'], '<br><br>', ['#text']);
 		element.find('#field-abstract').html(text);
 	} catch(err) { console.error(err); }
 
@@ -60,20 +60,47 @@ function makeSummary(template, data) {
 		element.find('#field-daterange').html(text);
 	} catch(err) { console.error(err); }
 
+	// fill citation field
+	try {
+		var text = '';
+		var creators = data['eml:eml']['dataset']['creator'];
+		for (var i = 0; i < creators.length; i++)
+			if (creators[i]['individualName'] !== undefined)
+				text += creators[i]['individualName']['surName'] + ', ' + creators[i]['individualName']['givenName'][0][0] + '. ';
 
+		text += data['eml:eml']['dataset']['pubDate'].split('-')[0] + '. ';
+		text += data['eml:eml']['dataset']['title'] + '. ';
+		text += data['eml:eml']['dataset']['publisher']['organizationName'] + '. ';
+		text += data['eml:eml']['dataset']['publisher']['organizationName'] + '. ';
+		text += data['eml:eml']['dataset']['alternateIdentifier'][1]['#text'] + '.';
 
+		element.find('#field-citation').html(text);
+	} catch(err) { console.error(err); }
 
-
+	// fill keywords field
+	try {
+		var keywordList = data['eml:eml']['dataset']['keywordSet'];
+		for (var i = 0; i < keywordList.length; i++) {
+			var keywordItem = keywordList[i];
+			var row = '<tr class="row">' +
+	            `<th class="cell col-4"> ${ extractData(keywordItem['keywordThesaurus']) } </th>` +
+	            `<td class="cell col-8"> ${ extractData(keywordItem['keyword'], ', ', ['#text']) } </td>` +
+	        '</tr>';
+			element.find('#field-keywords').append(row);
+		}
+	} catch(err) { console.error(err); }
 
 	// fill usage rights field
 	try {
-		var text = '<li>';
-		text += extractData(data['eml:eml']['dataset']['intellectualRights']['para'], '</li>\n<li>');
-		text += '</li>';
+		var rights = extractData(data['eml:eml']['dataset']['intellectualRights']['para'], '</li>\n<li>');
+		if (rights === '[object Object]')
+			rights = extractData(data['eml:eml']['dataset']['intellectualRights']['para']['itemizedlist']['listitem'], '</li>\n<li>', ['para']);
+
+		var text = '<li>' + rights + '</li>';
 		element.find('#field-usage-rights').html(text);
 	} catch(err) { console.error(err); }
 
-	return id;
+	return data['eml:eml']['dataset']['title'];
 }
 
 function extractData(data, delim, keys) {

@@ -34,7 +34,16 @@
 	}
 }
 
-#detail-modal-template {
+.modal-header {
+	background-color: #003366;
+	color: white;
+
+	.close {
+		color: white;
+	}
+}
+
+.detail-modal {
 
 	.nav-item {
 		// width: 20%;
