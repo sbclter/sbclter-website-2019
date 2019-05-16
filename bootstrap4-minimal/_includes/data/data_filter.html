@@ -19,16 +19,14 @@
 			{% for radioGroup in include.data %}
 				<td class="cell col-{{ group_width }}">
 
-				{% for radioName in radioGroup.filters %}
+				{% for button in radioGroup.filters %}
 					<label class="radio">
-						<input type="radio"
+						<input type="checkbox"
 						       name="{{ radioGroup.name }}"
-						       value="{{ radioName }}"
-						       {% if radioName contains 'All'%}
-						       		checked="checked"
-						       {% endif %}
-						       data-filter-{{ radioGroup.id }}="{{ radioName }}">
-						{{ radioName }}
+						       value="{{ button.id }}"
+						       title="{{button.description}}"
+						       data-filter-{{ radioGroup.id }}="{{ button.habitat_id }}">
+						{{ button.label }}
 					</label>
 					<br/>
 				{% endfor %}
@@ -39,4 +37,10 @@
 			</tr>
 		</tbody>
 	</table>
+	<input type="button"
+		   id="clear_button"
+		   value="Clear selected">
+   	<input type="button"
+		   id="show_button"
+   		   value="Show all">
 </div>

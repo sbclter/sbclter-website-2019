@@ -20,7 +20,7 @@ probably most complex part of the website.
 <div id="filter-container">
 	{% include data/data_filter.html data=site.data.dataFilters %}
 </div>
-{% include search_bar.html placeholder=page.placeholder %}
+<!-- {% include search_bar.html placeholder=page.placeholder %} -->
 <div id="display-container">
 	{% include data/data_table.html data=site.data.dataCollections %}
 </div>
