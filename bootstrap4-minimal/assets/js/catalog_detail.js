@@ -1,18 +1,29 @@
 function showDetail(url) {
-	var xml = loadXMLDoc(url);
-	var dataString = xml2json(xml, "	");
-	var data = JSON.parse(dataString);
-	// var data = sample_data;
-	console.log(data);
-
 	var template = $('#detail-modal-template').clone();
 	template.removeAttr('hidden');
 	template.removeAttr('id');
-	var title = makeSummary(template, data);
 
-	$('#detail-modal-title').text(title);
-	$('#detail-modal .modal-body').html(template);
+	var loader = $('#loading-modal-template').clone();
+	loader.removeAttr('hidden');
+	loader.removeAttr('id');
+
 	$('#detail-modal').modal();
+	$('#detail-modal-title').text("Loading...");
+	$('#detail-modal .modal-body').html(loader);
+
+	loadXMLDoc(url, function(xml) {
+		try {
+			var dataString = xml2json(xml, "	");
+			var data = JSON.parse(dataString);
+
+			var title = makeSummary(template, data);
+			$('#detail-modal-title').text(title);
+			$('#detail-modal .modal-body').html(template);
+		}
+		catch (err) {
+			$('#detail-modal .modal-body').html("Sorry, an error has occured! <br> " + err);
+		}
+	});
 }
 
 function makeSummary(template, data) {
@@ -148,14 +159,20 @@ function extractDataObject(data, keys, delim) {
 	return str;
 }
 
-function loadXMLDoc(filename) {
+function loadXMLDoc(filename, onReady) {
 	var xhttp;
 	if (window.ActiveXObject)
 		xhttp = new ActiveXObject("Msxml2.XMLHTTP");
 	else
 		xhttp = new XMLHttpRequest();
-	xhttp.open("GET", filename, false);
+	xhttp.open("GET", filename, true);
 	try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11
+
+	xhttp.onload = function (e) {
+		if (xhttp.readyState === 4 && xhttp.status === 200)
+			onReady(xhttp.responseXML);
+	};
+
 	xhttp.send("");
 	return xhttp.responseXML;
 }
