@@ -1,14 +1,19 @@
 {% assign group_count = include.data | size %}
-{% assign group_width = 12 | divided_by: group_count %}
+{% assign group_width = 6%}
+{% assign area_group_width = 3 %}
 
-<div class="pull-left" class="mt-4">
-	<p class="table-title"> <strong> Filters: </strong> </p>
+
+<div class="pull-left row" >
+	<div class="col-lg-{{group_width}} col-md-{{group_width}} col-sm-{{group_width}} col-xs-{{group_width}}">
+	<p class="table-title"> <strong> Filter By Habitat and Measurement Type: </strong> </p>
 	<table class="table table-bordered">
 		<thead>
 			<tr class="row title-row">
 
 			{% for radioGroup in include.data %}
-				<th class="col-{{ group_width }}"> {{ radioGroup.name }} </th>
+				{% if radioGroup.group != "Areas" %}
+					<th class="col"> {{ radioGroup.name }} </th>
+				{% endif %}
 			{% endfor %}
 
 			</tr>
@@ -17,30 +22,80 @@
 			<tr class="row">
 
 			{% for radioGroup in include.data %}
-				<td class="cell col-{{ group_width }}">
-
-				{% for button in radioGroup.filters %}
-					<label class="radio">
-						<input type="checkbox"
-						       name="{{ radioGroup.name }}"
-						       value="{{ button.id }}"
-						       title="{{button.description}}"
-						       data-filter-{{ radioGroup.id }}="{{ button.habitat_id }}">
-						{{ button.label }}
-					</label>
-					<br/>
-				{% endfor %}
-
-				</td>
+				{% if radioGroup.group != "Areas"%}
+					<td class="cell col">
+						{% for button in radioGroup.filters %}
+							<label class="radio">
+								<input type="checkbox"
+									   group="{{radioGroup.group}}"
+								       name="{{ radioGroup.name }}"
+								       value="{{ button.id }}"
+								       title="{{ button.description }}"
+								       data-filter-{{ radioGroup.id }}="{{ button.habitat_id }}">
+								{{ button.label }}
+							</label>
+							<br/>
+						{% endfor %}
+					</td>
+				{% endif %}
 			{% endfor %}
 
 			</tr>
 		</tbody>
 	</table>
-	<input type="button"
-		   id="clear_button"
-		   value="Clear all">
-   	<input type="button"
-		   id="show_button"
-   		   value="Show all">
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 d-flex flex-row justify-content-center align-items-center">
+	<strong><h3>- OR -</h3></strong>
+	</div>
+
+   	<!------------------------------------------------- 
+   		Create separate table for the research areas 
+   		----------------------------------------------->
+   	<div class="col-lg-{{area_group_width}} col-md-{{area_group_width}} col-sm-{{area_group_width}} col-xs-{{area_group_width}}"> 
+   	<p class="table-title"> <strong> Filter By Research Area: </strong> </p>
+	<table class="table table-bordered" style="">
+		<thead>
+			<tr class="row title-row">
+
+			{% for radioGroup in include.data %}
+				{% if radioGroup.group == "Areas" %}
+					<th class="col"> {{ radioGroup.name }} </th>
+				{% endif %}
+			{% endfor %}
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="row">
+			{% for radioGroup in include.data %}
+				{% if radioGroup.group == "Areas"%}
+					<td class="cell col">
+						{% for button in radioGroup.filters %}
+							<label class="radio">
+								<input type="checkbox"
+									   group="{{radioGroup.group}}"
+								       name="{{ radioGroup.name }}"
+								       value="{{ button.id }}"
+								       title="{{ button.description }}"
+								       data-filter-{{ radioGroup.id }}="{{ button.habitat_id }}">
+								{{ button.label }}
+							</label>
+							<br/>
+						{% endfor %}
+					</td>
+				{% endif %}
+			{% endfor %}
+
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+</div>
+<!-- Buttons -->
+
+<div class="btn-group" role="group">
+  <button type="button" id="show_button" class="btn">Show all</button>
+  <button type="button" id="clear_button" class="btn">Reset</button>
 </div>

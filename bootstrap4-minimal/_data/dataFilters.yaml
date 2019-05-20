@@ -1,5 +1,6 @@
 - name: Habitats
   id: habitats
+  group: "Hab-Meas"
   filters:
     - label: "Watershed"
       id: watershed
@@ -18,6 +19,7 @@
       description: "Deep mid-channel water column"
 - name: Measurement Types
   id: measurementTypes
+  group: "Hab-Meas"
   filters:
     - label: "Meteorology"
       id: meteorology
@@ -45,11 +47,23 @@
       description: "study of genes and their interaction with the environment"
 - name: LTER Core Research Areas
   id: lterCoreResearchAreas
+  group: "Areas"
   filters:
-    - Primary Production
-    - Population Studies
-    - Organic Matter
-    - Inorganic Matter
-    - Disturbance Patterns
-    - Human Dimensions
-    - All Research Areas
+     - label: "Primary Production"
+       id: primary production
+       description: "Patterns and control of primary production"
+     - label: "Population Studies"
+       id: population dynamics
+       description: "Spatial and temporal distribution of selected populations"
+     - label: "Organic Matter"
+       id: organic matter
+       description: "Patterns and control of organic matter cycling and accumulation"
+     - label: "Inorganic Matter"
+       id: inorganic matter
+       description: "Patterns and transport of inorganic material and nutrients such as N and P"
+     - label: "Disturbance Patterns"
+       id: disturbance patterns
+       description: "Patterns and frequency of events that shape ecosystems"
+     - label: "Human Dimensions"
+       id: human dimensions
+       description: "Social and historical processes"

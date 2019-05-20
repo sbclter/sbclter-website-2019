@@ -7,7 +7,7 @@ $(document).ready(function(){
 	// Hide all habitats
 	$("tr.data-record").hide();
 
-	$("input[type='button']").click(function(){  // Handle button presses
+	$("button[type='button']").click(function(){  // Handle button presses
 		if($(this).prop("id") == "clear_button"){
 			clear();
 		}else{
@@ -15,7 +15,14 @@ $(document).ready(function(){
 		}
 	});
 
-	$("input[type='checkbox']").change(function(){  // Checkbox was changed
+	$("input[type='checkbox'][group='Hab-Meas']").change(function(){  // Checkbox was changed
+		
+		// We're filtering by habitat and measure so disable the research areas boxes
+		$.each($("input[group='Areas']"), function(){
+			$(this).prop("checked", false);
+			$(this).prop("disabled", true);
+		})
+
 		if(filter_type == ""){
 			// Filter_type was not set -- remember which is primary category
 			filter_type = $(this).attr("name");
@@ -25,18 +32,25 @@ $(document).ready(function(){
 		$("tr.data-record").hide();
 
 		if(filter_type == "Habitats"){  // Run filter on habitats and then measurements
-			filter_checkboxes("Habitats", "data-type-habitats",
+			filter_hab_meas_checkboxes("Habitats", "data-type-habitats",
 		 	"Measurement Types", "data-type-measurementTypes");
-		 	filter_checkboxes("Measurement Types", "data-type-measurementTypes",
+		 	filter_hab_meas_checkboxes("Measurement Types", "data-type-measurementTypes",
 		 	"Habitats", "data-type-habitats");
 		}else{  // Run filter on measurements and then habitats
-			filter_checkboxes("Measurement Types", "data-type-measurementTypes",
+			filter_hab_meas_checkboxes("Measurement Types", "data-type-measurementTypes",
 		 	"Habitats", "data-type-habitats");
-		 	filter_checkboxes("Habitats", "data-type-habitats",
+		 	filter_hab_meas_checkboxes("Habitats", "data-type-habitats",
 		 	"Measurement Types", "data-type-measurementTypes");
 		}
+	});
+	$("input[type='checkbox'][group='Areas']").change(function(){  // Checkbox was changed
+		// We're filtering by area so disable the habitat/measurement buttons
+		$.each($("input[group='Hab-Meas']"), function(){
+			$(this).prop("checked", false);
+			$(this).prop("disabled", true);
+		})
 
-
+		filter_areas_checkboxes("LTER Core Research Areas", "data-type-ltercoreresearchareas");
 	});
 });
 
@@ -44,7 +58,7 @@ $(document).ready(function(){
 // data_type_attr is the attribute name of primary checkbox type
 // other_name is name for secondary type to filter by (i.e.) checkbox type not checked first)
 // other_data_type_attr is attribute name for secondary checkbox type
-function filter_checkboxes(name, data_type_attr, other_name, other_data_type_attr){
+function filter_hab_meas_checkboxes(name, data_type_attr, other_name, other_data_type_attr){
 	// Store the types of measurements that overlap with the selected habitats
 	let possible_categories = []
 
@@ -88,6 +102,24 @@ function filter_checkboxes(name, data_type_attr, other_name, other_data_type_att
 	is_first_search = false;
 }
 
+// Function to show hide table row elements based on which elements of the
+// Research areas table are checked
+function filter_areas_checkboxes(name, data_type_attr){
+	// Measurements were selected first, simply look at checked habitats and filter
+	$.each($("input[name='" + name + "']"), function(){
+		if($(this).is(':checked')){			
+			// Checked, show all its corresponding table rows
+			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
+				$(this).show();
+			});
+		}else{
+			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
+				$(this).hide();
+			});
+		}
+	});
+}
+
 // Show all data sets
 function show_all(){
 	$.each($("tr.data-record"), function(){
@@ -95,6 +127,7 @@ function show_all(){
 	});
 	$.each($("input[type=checkbox]"), function(){
 		$(this).prop("checked", true);
+		$(this).prop("disabled", false);
 	});
 }
 
@@ -109,15 +142,4 @@ function clear(){
 	});
 	filter_type = "";
 	is_first_search = true;
-}
-
-
-// Hides elements based on the search bar
-function filter_by_search(){
-
-	// Hides values based on search query
-    var value = $("#search-bar").val().toLowerCase();
-    $("tbody > tr.data-record").filter(function() {  // Look for keyword in table row
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
 }
