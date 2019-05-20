@@ -105,6 +105,7 @@ function clear(){
 	});
 	$.each($("input[type=checkbox]"), function(){
 		$(this).prop("checked", false);
+		$(this).prop("disabled", false);
 	});
 	filter_type = "";
 	is_first_search = true;
