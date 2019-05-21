@@ -69,9 +69,28 @@
 		background-color: white;
 	}
 
-	#content-class-summary {
-		th, td {
-			// border-top: none;
+	#content-class-people {
+		th {
+			text-transform: capitalize;
+		}
+
+		#field-owners, #field-contacts {
+			table {
+				border-left: 1px solid #b3e5fc;
+				border-right: 1px solid #b3e5fc;
+				border-top: 1px solid #b3e5fc;
+				border-bottom: 1px solid #b3e5fc;
+				width: 50%;
+			}
+
+			tr {
+				padding-right: 2%;
+				padding-left: 2%;
+			}
+
+			th, td {
+				border-top: none;
+			}
 		}
 	}
 }
