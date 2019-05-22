@@ -1,0 +1,102 @@
+<div id="detail-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="detail-modal-title"></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+
+  </div>
+</div>
+
+<div id="loading-modal-template" class="loader" hidden></div>
+<div id="detail-modal-template" class="detail-modal" hidden>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" style="width: 18%"> <a class="nav-link active"  id="tab-class-summary" data-toggle="tab" href="#content-class-summary"> Summary and Data Links </a></li>
+    <li class="nav-item" style="width: 18%"> <a class="nav-link"         id="tab-class-people" data-toggle="tab" href="#content-class-people"> People and Organizations </a></li>
+    <li class="nav-item" style="width: 28%"> <a class="nav-link"         id="tab-class-coverage" data-toggle="tab" href="#content-class-coverage"> Temporal, Geographic and Taxonomic Coverage </a></li>
+    <li class="nav-item" style="width: 18%"> <a class="nav-link"         id="tab-class-methods" data-toggle="tab" href="#content-class-methods"> Methods and Protocols </a></li>
+    <li class="nav-item" style="width: 18%"> <a class="nav-link"         id="tab-class-files" data-toggle="tab" href="#content-class-files"> Files </a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane show active" id="content-class-summary">
+      
+      <h4> General Information </h4>
+      <table class="table">
+        <tbody>
+          <tr class="row">
+            <th class="cell col-2"> Identifier </th>
+            <td class="cell col-10" id="field-id"> </td>
+          </tr>
+          <tr class="row">
+            <th class="cell col-2"> Alternate Identifier </th>
+            <td class="cell col-10" id="field-id-alt"> </td>
+          </tr>
+          <tr class="row">
+            <th class="cell col-2"> Abstract </th>
+            <td class="cell col-10" id="field-abstract"> </td>
+          </tr>
+          <tr class="row">
+            <th class="cell col-2"> Short Name </th>
+            <td class="cell col-10" id="field-shortname"> </td>
+          </tr>
+          <tr class="row">
+            <th class="cell col-2"> Publication Date </th>
+            <td class="cell col-10" id="field-pubdate"> </td>
+          </tr>
+          <tr class="row">
+            <th class="cell col-2"> Language </th>
+            <td class="cell col-10" id="field-language"> </td>
+          </tr>
+          <tr class="row">
+            <th class="cell col-2"> Time Period </th>
+            <td class="cell col-10" id="field-daterange"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+
+      <h4> Data Set Citation </h4>
+      <div id="field-citation"> </div>
+      <br><br>
+
+      <h4> Key Words and Terms </h4>
+      <table class="table">
+        <tbody id="field-keywords">
+        </tbody>
+      </table>
+      <br>
+
+      <h4> Data Set Usage Rights </h4>
+      <ul id="field-usage-rights"> </ul>
+    </div>
+
+
+    <div class="tab-pane" id="content-class-people">
+
+      <h4> Publishers </h4>
+      <table class="table">
+        <tbody id="field-publishers">
+        </tbody>
+      </table>
+      <br>
+
+      <h4> Owners </h4><hr>
+      <div id="field-owners" class="row"></div>
+      <br>
+
+      <h4> Contacts </h4>
+      <div id="field-contacts" class="row"></div>
+      <br>
+
+    </div>
+    <div class="tab-pane" id="content-class-coverage"> 3 </div>
+    <div class="tab-pane" id="content-class-methods"> 4 </div>
+    <div class="tab-pane" id="content-class-files"> 5 </div>
+  </div>
+</div>

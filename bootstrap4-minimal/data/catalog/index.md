@@ -16,6 +16,10 @@ individidual dataset display pulls XML from pasta, uses local XSL to transform t
 probably most complex part of the website.
 -->
 
+<div id="detail-container">
+	{% include data/data_detail.html data=site.data.dataFilters %}
+</div>
+
 <div id="filter-container">
 	{% include data/data_filter.html data=site.data.dataFilters %}
 </div>
@@ -23,3 +27,6 @@ probably most complex part of the website.
 <div id="display-container">
 	{% include data/data_table.html data=site.data.dataCollections %}
 </div>
+
+<script src="/assets/js/ext/xml2json.js"></script>
+<script src="/assets/js/catalog_detail.js"></script>

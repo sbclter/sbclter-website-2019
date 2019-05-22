@@ -21,4 +21,98 @@
 .package-link {
 	color: #666600;
 	text-decoration: underline;
+	width: inherit;
+	white-space: normal;
+	text-align: left;
+}
+
+.modal {
+
+	.modal-dialog {
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		margin-top: 3% !important;
+		margin-bottom: 3% !important;
+		max-width: none;
+	}
+}
+
+.modal-header {
+	background-color: #003366;
+	color: white;
+
+	.close {
+		color: white;
+	}
+}
+
+.detail-modal {
+
+	.nav-item {
+		// width: 20%;
+	}
+
+	.nav-link {
+		background-color: #b3e5fc;
+		height: 100%;
+		text-align: center;
+	}
+
+	.tab-pane {
+		border-left: 1px solid #b3e5fc;
+		border-right: 1px solid #b3e5fc;
+		border-bottom: 1px solid #b3e5fc;
+		padding: 35px;
+	}
+
+	.active {
+		background-color: white;
+	}
+
+	#content-class-people {
+		th {
+			text-transform: capitalize;
+		}
+
+		#field-owners, #field-contacts {
+			table {
+				border-left: 1px solid #b3e5fc;
+				border-right: 1px solid #b3e5fc;
+				border-top: 1px solid #b3e5fc;
+				border-bottom: 1px solid #b3e5fc;
+				width: 50%;
+			}
+
+			tr {
+				padding-right: 2%;
+				padding-left: 2%;
+			}
+
+			th, td {
+				border-top: none;
+			}
+		}
+	}
+}
+
+.loader {
+	border: 10px solid #b3e5fc;
+	border-radius: 50%;
+	border-top: 10px solid #003366;
+	width: 100px;
+	height: 100px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+	margin: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
