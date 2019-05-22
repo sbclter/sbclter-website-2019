@@ -271,7 +271,7 @@ function makePeopleTables(data) {
 
 	for (var i = 0; i < data.length; i++) {
 		var item = data[i];
-		contents += '<table class="table"><tbody>';
+		contents += '<table class="table floatbox"><tbody>';
 
 		// fill information for each item
 		for(var key in item) {

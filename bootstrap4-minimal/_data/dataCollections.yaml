@@ -102,8 +102,8 @@
   abstract: "Time series of kelp canopy wet biomass in central and southern California\n    derived from the relationship between satellite (Landsat 5, 7, 8) reflectance and empirical\n    measurements."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.74"
-      shortTitle: "Kelp canopy biomass from Landsat (California, ongoing since 1984)"
+      - docid: "knb-lter-sbc.74"
+        shortTitle: "Kelp canopy biomass from Landsat (California, ongoing since 1984)"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -117,8 +117,8 @@
   abstract: "Data on abundance, size and fishing pressure of California spiny lobster (Panulirus\n        interruptus). Two SBC LTER study sites are in or near Marine Protected Areas (MPA). Sampling\n        began in 2012."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.77"
-      shortTitle: "Lobster abundance, size and fishing pressure"
+      - docid: "knb-lter-sbc.77"
+        shortTitle: "Lobster abundance, size and fishing pressure"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -136,8 +136,8 @@
   abstract: "Weekly to biweekly data on invertebrate settlement on artificial substrates at six\n            sites in California"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.52"
-      shortTitle: "Larval Settlement"
+      - docid: "knb-lter-sbc.52"
+        shortTitle: "Larval Settlement"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -180,8 +180,8 @@
   abstract: "Daily photon irradiance at the surface and reef bottom at the kelp removal experiment\n                  sites."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.36"
-      shortTitle: "Daily Irradiance, surface and seafloor"
+      - docid: "knb-lter-sbc.36"
+        shortTitle: "Daily Irradiance, surface and seafloor"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -202,8 +202,8 @@
   abstract: "High frequency water temperature data has been collected from benthic sites at 9\n                    coastal reefs at ~7m depth beginning in 2002."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.13"
-      shortTitle: "Bottom temperature"
+      - docid: "knb-lter-sbc.13"
+        shortTitle: "Bottom temperature"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -224,8 +224,8 @@
   abstract: "Long term data on the abundance of giant kelp (Macrocystis pyrifera) in 109 local beds\n    in California and Mexico as estimated from routine aerial surveys (1958-2005) conducted by ISP\n    Alginates (formerly Kelco Co.)"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.14"
-      shortTitle: "Historical kelp database"
+      - docid: "knb-lter-sbc.14"
+        shortTitle: "Historical kelp database"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -351,8 +351,8 @@
   abstract: "Surface seawater temperature collected daily at Santa Barbara Harbor, Santa Barbara,\n          CA, from 1955 to 2004, and is currently supported by the Scripps Insitution of Oceanography\n          Manual Shore Stations program. The dataset will recommence after calibration issues have been\n          resolved."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.32"
-      shortTitle: "Surface temperature, Santa Barbara Harbor"
+      - docid: "knb-lter-sbc.32"
+        shortTitle: "Surface temperature, Santa Barbara Harbor"
   habitats: 
     habitat: nearshore
   measurementTypes: 
@@ -369,8 +369,8 @@
   abstract: "Location, number and behavior of sea otters (Enhydra lutris) in the Santa Barbara\n    Channel area, observed during other SBC sampling events."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.61"
-      shortTitle: "Sea otter sightings, Santa Barbara Channel area"
+      - docid: "knb-lter-sbc.61"
+        shortTitle: "Sea otter sightings, Santa Barbara Channel area"
   habitats: 
     habitat: 
       - reef
@@ -386,8 +386,8 @@
   abstract: "Daily and monthly averages of modeled significant wave height (Hs) and peak wave\n      period (Tp) in the Santa Barbara Coastal area from the Coastal Data Information Program (CDIP,\n      http://cdip.ucsd.edu)"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.35"
-      shortTitle: "Mean CDIP Hs and Tp"
+      - docid: "knb-lter-sbc.35"
+        shortTitle: "Mean CDIP Hs and Tp"
   habitats: 
     habitat: 
       - reef
@@ -406,8 +406,8 @@
   abstract: "Composition, cover and biomass of macroalgal wrack in the intertidal zone of selected\n    sandy beaches"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.40"
-      shortTitle: "Time series of wrack cover and biomass at selected beaches"
+      - docid: "knb-lter-sbc.40"
+        shortTitle: "Time series of wrack cover and biomass at selected beaches"
   habitats: 
     habitat: beach
   measurementTypes: 
@@ -426,8 +426,8 @@
   abstract: "Abundance and species richness of birds, abundance of stranded kelp plants and\n      holdfasts, humans and dogs during monthly surveys"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.51"
-      shortTitle: "Beach birds and stranded kelp"
+      - docid: "knb-lter-sbc.51"
+        shortTitle: "Beach birds and stranded kelp"
   habitats: 
     habitat: beach
   measurementTypes: 
@@ -447,8 +447,8 @@
   abstract: "Composition, count and biomass of macroinvertebrates in the intertidal zone of\n        selected sandy beaches"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.91"
-      shortTitle: "Time series of macroinvertebrates counts and biomass at selected\n              beaches"
+      - docid: "knb-lter-sbc.91"
+        shortTitle: "Time series of macroinvertebrates counts and biomass at selected\n              beaches"
   habitats: 
     habitat: beach
   measurementTypes: 
@@ -467,8 +467,8 @@
   abstract: "Precipitation data collected daily from 1951 - 2008,by the Santa Barbara County Public\n    Works Deptartment and updated annually. High frequency data from this station (UCSB200)\n    starting in 2000 is also available."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.33"
-      shortTitle: "Precipitation at UC Santa Barbara"
+      - docid: "knb-lter-sbc.33"
+        shortTitle: "Precipitation at UC Santa Barbara"
   habitats: 
     habitat: watershed
   measurementTypes: 
@@ -603,8 +603,8 @@
   abstract: "SBC has access to climate data from external sources such as the Santa Barbara County\n      Flood Control District."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.3"
-      shortTitle: "Daily Precipitation (County Public Works Dept.)"
+      - docid: "knb-lter-sbc.3"
+        shortTitle: "Daily Precipitation (County Public Works Dept.)"
   habitats: 
     habitat: watershed
   measurementTypes: 
@@ -618,8 +618,8 @@
   abstract: "The National Climate Data Center (NCDC) provides a long record of several parameters\n        Their catalog for sites in the Santa Barbara area is available through the links in this data\n        package"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.1"
-      shortTitle: "NCDC Climate Data"
+      - docid: "knb-lter-sbc.1"
+        shortTitle: "NCDC Climate Data"
   habitats: 
     habitat: watershed
   measurementTypes: 
@@ -706,8 +706,8 @@
   abstract: "Analytes sampled in the SBC streams include major dissolved nutrients, particulates,\n    cations, anions, and occasionally stable isotopes. A number of watersheds with different land\n    uses are sampled. Sampling frequency depends on flow conditions."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.6"
-      shortTitle: "Stream chemistry"
+      - docid: "knb-lter-sbc.6"
+        shortTitle: "Stream chemistry"
   habitats: 
     habitat: watershed
   measurementTypes: 
@@ -788,8 +788,8 @@
   abstract: "Taxon-specific relationships which can be used to estimate biomass density for kelp forest invertebrates using non-distructive field measurements."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.99"
-      shortTitle: "Invertebrate biomass relationships"
+      - docid: "knb-lter-sbc.99"
+        shortTitle: "Invertebrate biomass relationships"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -804,8 +804,8 @@
   abstract: "Taxon-specific relationships used to estimate biomass density from field measurements,\n        and laboratory-derived values for photosynthetic parameters."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.57"
-      shortTitle: "PE and biomass parameters"
+      - docid: "knb-lter-sbc.57"
+        shortTitle: "PE and biomass parameters"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -820,8 +820,8 @@
   abstract: "Age-specific traits of giant kelp blades, including size, photosynthesic performance,\n            biomass density, and N and Chl-a content"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.85"
-      shortTitle: "Kelp blade characteristics"
+      - docid: "knb-lter-sbc.85"
+        shortTitle: "Kelp blade characteristics"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -836,8 +836,8 @@
   abstract: "Stable isotopes of carbon and nitrogen in reef consumers and potential food sources\n              (phytoplankton, kelp and kelp-derived detritus, and terrestrial POM) were collected from 2002\n              to 2005."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.12"
-      shortTitle: "Stable isotopes in reef food webs"
+      - docid: "knb-lter-sbc.12"
+        shortTitle: "Stable isotopes in reef food webs"
   habitats: 
     habitat: 
       - watershed
@@ -859,8 +859,8 @@
   abstract: "Feeding relationships for kelp forest species observed in the annual\n                surveys"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.56"
-      shortTitle: "Kelp forest food web"
+      - docid: "knb-lter-sbc.56"
+        shortTitle: "Kelp forest food web"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -874,8 +874,8 @@
   abstract: "Data from an experiment to evaluate the effects of algal diet on consumption, growth\n    and gonad weight of an important kelp forest grazer, the purple sea urchin, Strongylocentrotus\n    pupuratus, during Fall and Winter 2010-2011."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.83"
-      shortTitle: "Diet Effects in the Purple Sea Urchin, 2011"
+      - docid: "knb-lter-sbc.83"
+        shortTitle: "Diet Effects in the Purple Sea Urchin, 2011"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -889,8 +889,8 @@
   abstract: "Characterization of microsatellite loci of the giant kelp, Macrocystis\n      pyrifera"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.53"
-      shortTitle: "Kelp microsatellite markers"
+      - docid: "knb-lter-sbc.53"
+        shortTitle: "Kelp microsatellite markers"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -904,8 +904,8 @@
   abstract: "Understory and phytoplankton production in the kelp removal experiment, Mohawk Reef\n          2007-2008"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.55"
-      shortTitle: "Benthic and phytoplankton production, cleared and control plots"
+      - docid: "knb-lter-sbc.55"
+        shortTitle: "Benthic and phytoplankton production, cleared and control plots"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -922,8 +922,8 @@
   abstract: "Community structure and productivity of subtidal turf and foliose algal assemblages at\n              Naples Reef, 2006"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.37"
-      shortTitle: "Turf and foliose algal assemblages"
+      - docid: "knb-lter-sbc.37"
+        shortTitle: "Turf and foliose algal assemblages"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -963,8 +963,8 @@
   abstract: "Microsatellite markers for giant kelp (Macrocystis pyrifera) and associated R code.\n      Data are from individual kelp plants, Carpinteria Reef, Mohawk Reef and Goleta Bay, September\n      2009."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.73"
-      shortTitle: "Geospatial microsatellite markers, giant kelp"
+      - docid: "knb-lter-sbc.73"
+        shortTitle: "Geospatial microsatellite markers, giant kelp"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -997,8 +997,8 @@
   abstract: "Laboratory and in situ rates of uptake of nitrate, ammonium and urea by M. pyrifera and phytoplankton. Field studies were conducted at Mohawk and Carpinteria Reefs."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.109"
-      shortTitle: "Nitrogen uptake by M. pyrifera and phytoplankton"
+      - docid: "knb-lter-sbc.109"
+        shortTitle: "Nitrogen uptake by M. pyrifera and phytoplankton"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -1012,8 +1012,8 @@
   abstract: "Watersipora subatra is a non-native encrusting bryozoan, which as an early successional species, is particularly efficient at colonizing artificial structures. This study examines community composition and settlement at oil/gas platforms in the Santa Barbara Channel."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.111"
-      shortTitle: "Watersipora subatra recruitment, 2013-2015"
+      - docid: "knb-lter-sbc.111"
+        shortTitle: "Watersipora subatra recruitment, 2013-2015"
   habitats: 
     habitat: reef
   measurementTypes: 
@@ -1184,8 +1184,8 @@
   abstract: "Autonomous glider deployments (2012 - 2013): sections of temperature, salinity, colored DOM, \n            particulate backscatter and Chlorophyll fluorescence."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.96"
-      shortTitle: "Bio-optical glider cross-shelf sections"
+      - docid: "knb-lter-sbc.96"
+        shortTitle: "Bio-optical glider cross-shelf sections"
   habitats: 
     habitat: 
       - reef
@@ -1208,8 +1208,8 @@
   abstract: "Oceanagraphic profiles on a cross-shelf transect were collect to to resolve\n              development of the temporal and spatial gradients in organic and inorganic constituents and\n              related microbial activity and community structure."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.45"
-      shortTitle: "Cross-shelf Study, CTD/Rosette Profiles"
+      - docid: "knb-lter-sbc.45"
+        shortTitle: "Cross-shelf Study, CTD/Rosette Profiles"
   habitats: 
     habitat: 
       - reef
@@ -1255,8 +1255,8 @@
   abstract: "Zonation and distribution of intertidal wrack consumer beds over time, \n    at Isla\n    Vista Beach"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.113"
-      shortTitle: "Wrack consumer zonation at Isla Vista, 2011-2012"
+      - docid: "knb-lter-sbc.113"
+        shortTitle: "Wrack consumer zonation at Isla Vista, 2011-2012"
   habitats: 
     habitat: beach
   measurementTypes: 
@@ -1272,8 +1272,8 @@
   abstract: "Composition, cover and biomass of macroalgal wrack in the intertidal zone at Isla\n      Vista Beach"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.22"
-      shortTitle: "Cover and biomass at Isla Vista"
+      - docid: "knb-lter-sbc.22"
+        shortTitle: "Cover and biomass at Isla Vista"
   habitats: 
     habitat: beach
   measurementTypes: 
@@ -1290,8 +1290,8 @@
   abstract: "Beach wrack along transects, and dissolved nutrients and salinity of porewaters in all\n        intertidal zones at selected sandy beaches during 2003"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.23"
-      shortTitle: "Beach Porewater, 2003"
+      - docid: "knb-lter-sbc.23"
+        shortTitle: "Beach Porewater, 2003"
   habitats: 
     habitat: beach
   measurementTypes: 
@@ -1306,8 +1306,8 @@
   abstract: "Constituents of beach pore water and parameters for calculating residence times using\n          Radon-222"
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.87"
-      shortTitle: "Beach pore water constituents 2013"
+      - docid: "knb-lter-sbc.87"
+        shortTitle: "Beach pore water constituents 2013"
   habitats: 
     habitat: beach
   measurementTypes: 
@@ -1322,8 +1322,8 @@
   abstract: "Macroalgal cover and nutrients during spring and summer 2008 at stream and estuarine\n              sites (undeveloped, agricultural and urban) in the Ventura River catchment."
   dataPackages: 
     package: 
-      docid: "knb-lter-sbc.66"
-      shortTitle: "Nutrients and algae cover, Ventura River catchment"
+      - docid: "knb-lter-sbc.66"
+        shortTitle: "Nutrients and algae cover, Ventura River catchment"
   habitats: 
     habitat: watershed
   measurementTypes: 

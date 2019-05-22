@@ -69,6 +69,21 @@
 		background-color: white;
 	}
 
+	.floatbox {
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 4px;
+	}
+
+	.section-title {
+		background-color: #b3e5fc;
+		padding: 10px;
+		border-radius: 4px;
+	}
+
+	.table th, .table td {
+		border-top: unset;
+	}
+
 	#content-class-people {
 		th {
 			text-transform: capitalize;
@@ -76,11 +91,12 @@
 
 		#field-owners, #field-contacts {
 			table {
-				border-left: 1px solid #b3e5fc;
-				border-right: 1px solid #b3e5fc;
-				border-top: 1px solid #b3e5fc;
-				border-bottom: 1px solid #b3e5fc;
-				width: 50%;
+				// border-left: 1px solid #b3e5fc;
+				// border-right: 1px solid #b3e5fc;
+				// border-top: 1px solid #b3e5fc;
+				// border-bottom: 1px solid #b3e5fc;
+				width: 46%;
+				margin-right: 2%;
 			}
 
 			tr {
