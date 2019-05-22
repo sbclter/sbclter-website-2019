@@ -3,6 +3,7 @@ layout: article
 title: 'SBC LTER People'
 clickable: 1
 description: people invovled in the Santa Barbara Coastal LTER.
+placeholder: "Search LTER People ..."
 columns:
   - Name
   - Scientific Domain
@@ -19,7 +20,7 @@ page_css:
 ---
 
 <div>
-	{% include search_bar.html %}
+	{% include search_bar.html placeholder=page.placeholder %}
 
 	{% assign bio_groups = site.data.people_bios | group_by: "employeeType" %}
 

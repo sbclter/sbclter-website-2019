@@ -1,31 +1,69 @@
 - name: Habitats
   id: habitats
+  group: "Hab-Meas"
   filters:
-  - Watershed
-  - Beach
-  - Reef/Kelp Forest
-  - Inshore Ocean
-  - Offshore Ocean
-  - All Habitats
+    - label: "Watershed"
+      id: watershed
+      description: "Coastal watersheds, streams and riparian areas"
+    - label: "Beach"
+      id: beach
+      description: "Sandy beaches from the bluff to the surf zone"
+    - label: "Reef/Kelp Forest"
+      id: reef
+      description: "Submerged, nearshore rocky reefs and kelp forests"
+    - label: "Inshore Ocean"
+      id: nearshore
+      description: "Shallow coastal water column"
+    - label: "Offshore Ocean"
+      id: offshore
+      description: "Deep mid-channel water column"
 - name: Measurement Types
   id: measurementTypes
+  group: "Hab-Meas"
   filters:
-  - Meteorology
-  - Hydrology
-  - Biogeochemistry
-  - Physical Oceanography
-  - Ecosystem Processes
-  - Community Structure
-  - Remote Sensing
-  - Genomics
-  - All Measurement Types
+    - label: "Meteorology"
+      id: meteorology
+      description: "climate data"
+    - label: "Hydrology"
+      id: hydrology
+      description: "e.g, stream discharge, precipitation"
+    - label: "Biogeochemistry"
+      id: biogeochemistry
+      description: "e.g., nutrients, particulates (pigments, POC, PON), CTD profiles"
+    - label: "Physical Oceanography"
+      id: physical_oceanography
+      description: "ocean swell, currents, temperature, conductivity, optics"
+    - label: "Ecosystem Processes"
+      id: ecosystem_processes
+      description: "primary production, biomass, stoichiometry, trophic structure"
+    - label: "Community Structure"
+      id: community_structure
+      description: "abundance and diversity of kelp forest biota"
+    - label: "Remote Sensing"
+      id: remote_sensing
+      description: "data collection via  aerial sensor technology"
+    - label: "Genomics"
+      id: genomics
+      description: "study of genes and their interaction with the environment"
 - name: LTER Core Research Areas
   id: lterCoreResearchAreas
+  group: "Areas"
   filters:
-  - Primary Production
-  - Population Studies
-  - Organic Matter
-  - Inorganic Matter
-  - Disturbance Patterns
-  - Human Dimensions
-  - All Research Areas
+     - label: "Primary Production"
+       id: primary production
+       description: "Patterns and control of primary production"
+     - label: "Population Studies"
+       id: population dynamics
+       description: "Spatial and temporal distribution of selected populations"
+     - label: "Organic Matter"
+       id: organic matter
+       description: "Patterns and control of organic matter cycling and accumulation"
+     - label: "Inorganic Matter"
+       id: inorganic matter
+       description: "Patterns and transport of inorganic material and nutrients such as N and P"
+     - label: "Disturbance Patterns"
+       id: disturbance patterns
+       description: "Patterns and frequency of events that shape ecosystems"
+     - label: "Human Dimensions"
+       id: human dimensions
+       description: "Social and historical processes"

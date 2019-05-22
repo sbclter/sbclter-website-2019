@@ -1,63 +1,145 @@
-// Filtering values selected (one from each category)
-var habitat = "";
-var measurement_type = "";
-var research_area = "";
+// Grey out columns by habitat or measurement type
+var filter_type = "";
+var is_first_search = true;
 
-
+// Responsible for any changes to radio button or search
 $(document).ready(function(){
-	$("input[type='radio']").change(function(){
-		// A change was made to one of the radio buttons, get updated values ...
-		habitat = $("input[name='Habitats']:checked").val();
-		measurement_type = $("input[name='Measurement Types']:checked").val();
-		research_area = $("input[name='LTER Core Research Areas']:checked").val();
+	// Hide all habitats
+	$("tr.data-record").hide();
 
-		// Show all habitats
-		$("tr.data-record").show();
+	$("button[type='button']").click(function(){  // Handle button presses
+		if($(this).prop("id") == "clear_button"){
+			clear();
+		}else{
+			show_all();
+		}
+	});
 
-		// Use the updated values to filter the tables
-		// Show only the entries matching our selected filter terms for habitat
-		if(habitat != undefined && habitat != "All Habitats"){
-			console.log(habitat);
-			$("tr.data-record").not("[data-type-habitats~='" + 
-				parse_habitat(habitat) + "']").hide();
+	$("input[type='checkbox'][group='Hab-Meas']").change(function(){  // Checkbox was changed
+		
+		// We're filtering by habitat and measure so disable the research areas boxes
+		$.each($("input[group='Areas']"), function(){
+			$(this).prop("checked", false);
+			$(this).prop("disabled", true);
+		})
+
+		if(filter_type == ""){
+			// Filter_type was not set -- remember which is primary category
+			filter_type = $(this).attr("name");
 		}
-		if(measurement_type != undefined && measurement_type != "All Measurement Types"){
-			console.log(measurement_type);
-			$("tr.data-record").not("[data-type-measurementtypes~='" + 
-				parse_measurement(measurement_type) + "']").hide();
+
+		// Hide all habitats
+		$("tr.data-record").hide();
+
+		if(filter_type == "Habitats"){  // Run filter on habitats and then measurements
+			filter_hab_meas_checkboxes("Habitats", "data-type-habitats",
+		 	"Measurement Types", "data-type-measurementTypes");
+		 	filter_hab_meas_checkboxes("Measurement Types", "data-type-measurementTypes",
+		 	"Habitats", "data-type-habitats");
+		}else{  // Run filter on measurements and then habitats
+			filter_hab_meas_checkboxes("Measurement Types", "data-type-measurementTypes",
+		 	"Habitats", "data-type-habitats");
+		 	filter_hab_meas_checkboxes("Habitats", "data-type-habitats",
+		 	"Measurement Types", "data-type-measurementTypes");
 		}
-		if(research_area != undefined && research_area != "All Research Areas"){
-			console.log(research_area);
-			$("tr.data-record").not("[data-type-ltercoreresearchareas~='" + 
-				parse_research(research_area) + "']").hide();
-		}
+	});
+	$("input[type='checkbox'][group='Areas']").change(function(){  // Checkbox was changed
+		// We're filtering by area so disable the habitat/measurement buttons
+		$.each($("input[group='Hab-Meas']"), function(){
+			$(this).prop("checked", false);
+			$(this).prop("disabled", true);
+		})
+
+		filter_areas_checkboxes("LTER Core Research Areas", "data-type-ltercoreresearchareas");
 	});
 });
 
-// Map from the filter names to the database habitat names
-function parse_habitat(habitat){
-	habitat = habitat.toLowerCase();
+// name is the primary checkbox (i.e. one that was selected first)
+// data_type_attr is the attribute name of primary checkbox type
+// other_name is name for secondary type to filter by (i.e.) checkbox type not checked first)
+// other_data_type_attr is attribute name for secondary checkbox type
+function filter_hab_meas_checkboxes(name, data_type_attr, other_name, other_data_type_attr){
+	// Store the types of measurements that overlap with the selected habitats
+	let possible_categories = []
 
-	// These names are slightly different between database and actual filter title
-	if(habitat == "reef/kelp forest"){
-		return "reef";
-	}else if(habitat == "inshore ocean"){
-		return "nearshore";
-	}else if(habitat == "offshore ocean"){
-		return "offshore";
-	}else{  // No special term -- just lowercase
-		return habitat; 
+	// Measurements were selected first, simply look at checked habitats and filter
+	$.each($("input[name='" + name + "']"), function(){
+		if($(this).is(':checked')){			
+			// Checked, show all its corresponding table rows
+			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
+				$(this).show();
+				if(filter_type == name){  // Only if primary filter
+					// Parse and filter the measurement attributes
+					possible_categories += $(this).attr(other_data_type_attr).split("-").filter(function(item) {
+						return item != "" && !possible_categories.includes(item);
+					});
+				}
+			});
+		}else{
+			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
+				$(this).hide();
+			});
+		}
+	});
+
+	if(filter_type == name){  // Only if primary filter
+		// Grey out boxes in measurements that have no overlap with selected habitats
+		$.each($("input[name='" + other_name + "']"), function(){
+			if(!possible_categories.includes($(this).val())){
+				// No selected habitat sets exist with this measurement type
+				$(this).prop("checked", false);
+				$(this).prop("disabled", true); // Disable this checkbox
+			}else{
+				if($(this).prop("disabled") || is_first_search){
+					// It was disabled, enable it and check it
+					$(this).prop("disabled", false);  // Enable the checkbox
+					$(this).prop("checked", true);
+				}
+
+			}
+		});
 	}
+	is_first_search = false;
 }
 
-// Map from filter's name to the proper database measurement name
-// Make it lowercase and replace the space with an underscore
-function parse_measurement(measurement){
-	return measurement.toLowerCase().replace(" ", "_");
+// Function to show hide table row elements based on which elements of the
+// Research areas table are checked
+function filter_areas_checkboxes(name, data_type_attr){
+	// Measurements were selected first, simply look at checked habitats and filter
+	$.each($("input[name='" + name + "']"), function(){
+		if($(this).is(':checked')){			
+			// Checked, show all its corresponding table rows
+			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
+				$(this).show();
+			});
+		}else{
+			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
+				$(this).hide();
+			});
+		}
+	});
 }
 
-// Map from filter's name to the proper database research area name
-// Just needs to be lowercase
-function parse_research(area){
-	return area.toLowerCase();
+// Show all data sets
+function show_all(){
+	$.each($("tr.data-record"), function(){
+		$(this).show();
+	});
+	$.each($("input[type=checkbox]"), function(){
+		$(this).prop("checked", true);
+		$(this).prop("disabled", false);
+	});
+}
+
+// Clear all checkbox selections
+function clear(){
+	$.each($("tr.data-record"), function(){
+		$(this).hide();
+	});
+	$.each($("input[type=checkbox]"), function(){
+		$(this).prop("checked", false);
+		$(this).prop("disabled", false);
+	});
+	filter_type = "";
+	is_first_search = true;
 }

@@ -22,7 +22,7 @@ function initMap() {
 	// Create all url's for the data layers
 	for(var i=0; i < boxes.length; i++){
 		layer_url = site_url + "kml/sampling/layers/" + boxes[i].id + ".kml";
-
+		console.log("layer_url:" + layer_url);
 		layers[boxes[i].id] = new google.maps.KmlLayer(layer_url, {
 			preserveViewport: false,
 			map: null
