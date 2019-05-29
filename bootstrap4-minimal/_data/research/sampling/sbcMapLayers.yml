@@ -38,3 +38,43 @@
   label: "Water temperature on the bottom"
   habitatName: "reef"
   habitatLabel: "Kelp Forest"
+
+- id: "reefPAR"
+  label: "Irradiance at the surface and bottom"
+  habitatName: "reef"
+  habitatLabel: "Kelp Forest"
+
+- id: "reefSCIsland"
+  label: "Surfperch density and size, foraging habitat, prey biomass"
+  habitatName: "reef"
+  habitatLabel: "Kelp Forest"
+
+- id: "reefNPPgiantKelp"
+  label: "Giant kelp biomass, growth, loss, NPP and stoichiometry"
+  habitatName: "reef"
+  habitatLabel: "Kelp Forest"
+
+- id: "reefIsotopes"
+  label: "H &amp; N isotopes composition of sediments &amp; consumers"
+  habitatName: "reef"
+  habitatLabel: "Kelp Forest"
+
+- id: "inshoreMoorings"
+  label: "Moored current velocity, conductivity &amp; temperature"
+  habitatName: "inshore"
+  habitatLabel: "Inshore Ocean"
+
+- id: "inshoreProfiles"
+  label: "Nutrients, particulate N P *=&amp; C, chlorophyll-a and CTD profiles"
+  habitatName: "inshore"
+  habitatLabel: "Inshore Ocean"
+
+- id: "inshoreLarvae"
+  label: "Invertebrate larval settlement"
+  habitatName: "inshore"
+  habitatLabel: "Inshore Ocean"
+
+- id: "inshore_pH"
+  label: "pH"
+  habitatName: "inshore"
+  habitatLabel: "Inshore Ocean"
