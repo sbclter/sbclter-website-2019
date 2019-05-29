@@ -32,3 +32,5 @@ probably most complex part of the website.
 <script src="/assets/js/ext/xml2json.js"></script>
 <script src="/assets/js/catalog_detail.js"></script>
 <script src="/assets/js/catalog.js"/></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAsXhfi9ZNaT-4kUQSkq3etSJe1k8k_Pk&callback=initMap"></script>

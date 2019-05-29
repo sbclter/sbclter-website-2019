@@ -12,7 +12,7 @@ layout: profile
 		<div class="row">
 
 	    <div id="left-container">
-				<img src="/assets/img/profile/{{ page.givenName | slice:0 | downcase }}{{page.surname | downcase }}.jpg" width="326" height="326">
+				<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
 				<div id="contact-info">
 
 					{% if page.homepage %}
