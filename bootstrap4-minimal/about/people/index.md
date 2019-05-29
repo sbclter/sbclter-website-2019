@@ -19,7 +19,7 @@ page_css:
   - "/assets/css/custom/includes/search_bar.css"
 ---
 
-<div>
+<div id="people-content" style="display: none;">
 	{% include search_bar.html placeholder=page.placeholder %}
 
 	{% assign bio_groups = site.data.people_bios | group_by: "employeeType" %}

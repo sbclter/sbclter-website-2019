@@ -39,9 +39,12 @@ jQuery(document).ready(function($) {
 	}, function() {
 	    $(this).removeClass('table-hover');
 	});
+	// $("#article-content").hide();
 	$.each($("table"), function(){
 		sortTable($(this), 'asc');
 	})
+	$("#people-content").show();
+
 });
 
 // Search the tables on the page for the input to the search bar
