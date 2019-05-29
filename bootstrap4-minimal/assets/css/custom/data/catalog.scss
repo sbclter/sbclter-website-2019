@@ -80,9 +80,9 @@
 		border-radius: 4px;
 	}
 
-	.table th, .table td {
-		border-top: unset;
-	}
+	// .table th, .table td {
+	// 	border-top: unset;
+	// }
 
 	#content-class-people {
 		th {
@@ -107,6 +107,17 @@
 			th, td {
 				border-top: none;
 			}
+		}
+	}
+
+	#content-class-coverage {
+
+		#map {
+		 height: 360px;
+		 width: 100%;
+		 overflow: hidden;
+		 float: left;
+		 border: thin solid #333;
 		}
 	}
 }

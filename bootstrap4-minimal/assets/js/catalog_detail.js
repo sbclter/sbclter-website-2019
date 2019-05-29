@@ -1,3 +1,7 @@
+var map;
+var markers = [];
+
+// Create popup window for xml links
 function showDetail(url) {
 	var template = $('#detail-modal-template').clone();
 	template.removeAttr('hidden');
@@ -16,9 +20,12 @@ function showDetail(url) {
 			var dataString = xml2json(xml, "	");
 			var data = JSON.parse(dataString);
 			var title = data['eml:eml']['dataset']['title'];
+			console.log(data);
 
 			makeSummary(template, data);
 			makePeople(template, data);
+			makeCoverage(template, data);
+
 			$('#detail-modal-title').text(title);
 			$('#detail-modal .modal-body').html(template);
 		}
@@ -28,6 +35,21 @@ function showDetail(url) {
 	});
 }
 
+// Make coverage's page
+function makeCoverage(template, data) {
+	var element = template.find('#content-class-coverage');
+	var dateText = extractData(data['eml:eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
+	$('#field-temporal').text(dateText);
+
+	// Move map from template to actual popup window
+	var mapElement = template.find('#field-map');
+	$("#map").detach().appendTo(mapElement);
+
+	// Plot markers to map
+	plotMarkers(element, data);
+}
+
+// Make people's page
 function makePeople(template, data) {
 	var element = template.find('#content-class-people');
 
@@ -152,6 +174,7 @@ function makeSummary(template, data) {
 
 // ----------------------- Helper Functions! -------------------------
 
+// Extract object, array, or text from JSON data
 function extractData(data, delim, keys) {
 	if (data === undefined) return '';
 
@@ -171,6 +194,7 @@ function extractData(data, delim, keys) {
 	return str;
 }
 
+// Extract object from JSON data
 function extractDataObject(data, delim, keys) {
 	if (data === undefined) return '';
 	if (keys === undefined) return data;
@@ -197,6 +221,7 @@ function extractDataObject(data, delim, keys) {
 	return str;
 }
 
+// Load XML document
 function loadXMLDoc(filename, onReady) {
 	var xhttp;
 	if (window.ActiveXObject)
@@ -215,12 +240,13 @@ function loadXMLDoc(filename, onReady) {
 	return xhttp.responseXML;
 }
 
+// Convert camelCaseWord to a sentence (source: https://stackoverflow.com/a/7225450/8443192)
 function camelToWords(text) {
-	// https://stackoverflow.com/a/7225450/8443192
 	var result = text.replace( /([A-Z])/g, " $1" );
 	return result.charAt(0).toUpperCase() + result.slice(1);
 }
 
+// Parse address to text
 function parseAddress(json) {
 	var deliveryPoint = json['deliveryPoint'];
 	if (typeof deliveryPoint === 'string')
@@ -234,6 +260,7 @@ function parseAddress(json) {
 		   json['country'];
 }
 
+// Parse and format name
 function parseName(json, format) {
 	/*
 	 * format:
@@ -260,11 +287,13 @@ function parseName(json, format) {
 	return format;
 }
 
+// Turns text to HTML link
 function activateLink(url, title) {
 	if (title === undefined) title = url;
 	return `<a href='${ url }'>${ title }</a>`;
 }
 
+// Make HTML tables from list of people information
 function makePeopleTables(data) {
 	if (!Array.isArray(data)) data = [data];
 	var contents = '';
@@ -301,4 +330,64 @@ function makePeopleTables(data) {
 	}
 
 	return contents;
+}
+
+
+// Plot markers for coverage tab
+function plotMarkers(element, data) {
+	var points = data['eml:eml']['dataset']['coverage']['geographicCoverage'];
+	var prevWindow = null;
+
+	for (var i = 0; i < points.length; i++) {
+		var title = points[i]['geographicDescription'];
+		var lat = points[i]['boundingCoordinates']['northBoundingCoordinate'];
+		var lng = points[i]['boundingCoordinates']['eastBoundingCoordinate'];
+
+		const infowindow = new google.maps.InfoWindow({
+			content: title
+		});
+
+		const marker = new google.maps.Marker({
+			position: {lat: parseFloat(lat), lng: parseFloat(lng)},
+			map: map,
+			title: title
+		});
+
+		marker.addListener('click', function() {
+			if (prevWindow != null)
+				prevWindow.close();
+
+			infowindow.open(map, marker);
+			prevWindow = infowindow;
+		});
+
+		markers.push(marker);
+
+		var row = '<tr class="row">';
+		row += `<td class="cell col-10"> ${ title } </td>`;
+		row += `<td class="cell col-2"> ${ lat + ", " + lng } </td>`;
+		row += '</tr>';
+		element.find('#field-geographic').append(row);
+	}
+}
+
+// Setup callback functions after document is ready
+$(document).ready(function(){
+
+	// On popup window closed, move map back to template and clear all markers 
+	$('#detail-modal').on('hidden.bs.modal', function () {
+		for (var i = 0; i < markers.length; i++)
+			markers[i].setMap(null);
+
+		$('#map').detach().appendTo('#map-template');
+	});
+});
+
+// Gets called by Google Maps API to set up map (one map for all popup windows)
+function initMap() {
+	map = new google.maps.Map(document.getElementById("map"), {
+		center:new google.maps.LatLng(34.3, - 120.000),
+		zoom: 9,
+		mapTypeId: google.maps.MapTypeId.TERRAIN
+	});
 }
