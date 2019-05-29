@@ -12,7 +12,7 @@ layout: profile
 		<div class="row">
 
 	    <div id="left-container">
-				<img src="https://storage.investagrams.com/files/Account/11297/User_11297_Profile_Picture_d4d958bb-250d-4bb7-b02d-a89b33f43bae_Square.jpg?d=01_01_0001_12_00_00_AM" width="326" height="326">
+				<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
 				<div id="contact-info">
 
 					{% if page.homepage %}
