@@ -28,9 +28,7 @@
 			<td class="cell col-5"> {{ itemrow.abstract }} </td>
 			<td class="cell col-4">
 			{% for package in itemrow.dataPackages.package %}
-				{% assign docid = package.docid | replace: ".", "/" %}
-				{% assign url = page.package_url | replace: "$docid", docid %}
-				<button type="button" class="btn btn-link package-link" onclick='showDetail("{{ url }}")'> {{ package.shortTitle }} </button>
+				<a class="package-link" href="/data?package={{ package.docid }}"> {{ package.shortTitle }} </a>
 				<br/>
 			{% endfor %}
 			</td>
