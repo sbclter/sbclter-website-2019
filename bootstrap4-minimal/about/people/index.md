@@ -22,7 +22,7 @@ page_css:
 <div id="people-content" style="display: none;">
 	{% include search_bar.html placeholder=page.placeholder %}
 
-	{% assign bio_groups = site.data.people_bios | group_by: "employeeType" %}
+	{% assign bio_groups = site.data.people_bios | group_by: "projectRole" %}
 
 	{% for bios in bio_groups %}
 		{% include table.html columns=page.columns data=bios dataFilter=page.dataFilter clickable=page.clickable%}
