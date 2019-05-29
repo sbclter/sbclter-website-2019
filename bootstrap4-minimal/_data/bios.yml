@@ -86,19 +86,19 @@
 
 - commonName: "Brandon Doheny"
   projectRole: "Field Operations Manager: Marine Ecology and Spatial Modeling"
-  employeeType: staff
+  employeeType: Staff
   imageFile: doheny.jpg
   profileText: "Brandon is a Research Specialist with the Marine Science Institute, UCSB. He is responsible for the acquisition of data within various marine environments as well as equipment engineering, spatial-temporal modeling and imageFile analysis."
   
 - commonName: "Sarah Sampson"
   projectRole: "Field and Lab Technician: Marine Ecology"
-  employeeType: staff
+  employeeType: Staff
   imageFile: sampson.jpg
   profileText: "Sarah graduated from UC Santa Cruz in 2013 with a Bachelors in Environmental Studies. For SBC MBON, she coordinates field and lab logistics and conducts subtidal monitoring by surveying reefs and collecting specimens."
 
 - commonName: "Frankie Puerzer"
   projectRole: "Junior Specialist: Marine Ecology"
-  employeeType: staff
+  employeeType: Staff
   imageFile: Puerzer.jpg
   profileText: "Frankie manages field work and lab operations for SBC MBON. Using SCUBA she collects specimens, maintains ongoing experiments, and conducts subtidal photo surveys in combination with in-lab imageFile analysis. She also oversees undergraduate student internships."
 

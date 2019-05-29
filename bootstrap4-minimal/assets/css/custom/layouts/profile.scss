@@ -1,0 +1,55 @@
+---
+---
+
+#profile-picture {
+	border: 1px solid #002f61;
+}
+
+.contact-icon {
+	padding: 0;
+	flex: 0 0 0%;
+	margin-left: 20px;
+}
+
+.contact-text {
+	padding-right: 0px;
+}
+
+.profile-section {
+	margin-top: 30px;
+	margin-left: 5px;
+}
+
+#main-container {
+	margin: 2%;
+}
+
+#left-container {
+	min-width: 326px;
+	margin-right: 1%;
+	margin-top: 2%;
+	margin-left: 3%;
+	width: 20%;
+}
+
+#right-container {
+	text-align: left;
+	margin-top: 1%;
+	margin-left: 3%;
+	width: 65%;
+}
+
+#contact-info {
+	padding-top: 30px;
+	max-width: 326px; // fixed image width
+	font-size: 18px;
+}
+
+#title-text {
+	font-size: 40px;
+}
+
+#title-career {
+	color: #7f7f7f;
+	padding-left: 10px;
+}

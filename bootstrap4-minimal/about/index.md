@@ -6,8 +6,8 @@ description: origin, people, overall research objectives, news of the Santa Barb
 
 # About SBC LTER
 
-- <a href="{{site.url}}/about/supporters" target="_blank">Lorem ipsum dolor sit amet.</a>
-- <a href="{{site.url}}/about/supporters" target="_blank">Lorem ipsum dolor sit amet.</a>
+- this is a markdown list, with an html tag in it.  <a href="{{site.url}}/about/supporters" target="_blank">Lorem ipsum dolor sit amet.</a>
+- another one. <a href="{{site.url}}/about/supporters" target="_blank">Lorem ipsum dolor sit amet.</a>
 - item 3
 
 
@@ -17,7 +17,7 @@ description: origin, people, overall research objectives, news of the Santa Barb
 			blockquote section, so text will come out bigger than the rest. maybe. but missing some other styling</p></blockquote>
 </div>
 
-		This is a standard markdown paragraph with placeholder text. ew. it uses literal layout.
+		This is an indented markdown paragraph with placeholder text. ew. it uses literal layout. remember, indents are a mechanism for code blocks. 
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
 		minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -25,8 +25,19 @@ description: origin, people, overall research objectives, news of the Santa Barb
 		laborum.
 
 
+this is a standard markdown para.
+Linefeed before the word "Linefeed" (which is encased in normal quotes). I expect it to wrap into a normal para, unlike the indented.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+laborum. 
+
+
+
+
 <div class="">
-	<p>an html paragraph, if you start a html para, you have to use a html list. and some links (when I use md properly)</p>
+	<p>this is an html paragraph in a div, if you start a html para, you have to use a html list. you would need an html div to add styling (presuming md paras are default) </p>
 </div>
 
 - <a href="{{site.url}}/about/supporters" target="_blank">md lists work outside of divs.</a> 
@@ -35,7 +46,7 @@ description: origin, people, overall research objectives, news of the Santa Barb
 - <a href="{{site.url}}/about/supporters" target="_blank">Lorem ipsum dolor sit amet.</a> 
 			 
 			
-		<hr>
+		<hr />
 	<div class="container-fluid">
 	<div class="">
 		<div class="col-md-6">

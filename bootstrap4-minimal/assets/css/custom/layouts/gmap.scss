@@ -1,0 +1,20 @@
+---
+---
+
+#map {
+ height: 360px;
+ width: 100%;
+ overflow: hidden;
+ float: left;
+ border: thin solid #333;
+}
+
+#capture {
+ height: 360px;
+ width: 20%;
+ overflow: hidden;
+ float: left;
+ background-color: #ECECFB;
+ border: thin solid #333;
+ border-left: none;
+}

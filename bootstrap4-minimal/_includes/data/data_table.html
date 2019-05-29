@@ -1,0 +1,41 @@
+<div class="pull-left" class="mt-4">
+  <p class="table-title"> <strong> Data Result: </strong> </p>
+  <table class="table table-bordered">
+	<thead>
+		<tr class="row title-row">
+			<th class="cell col-3 text-center"> <strong> Collection </strong> </th>
+			<th class="cell col-5 text-center"> <strong> Description </strong> </th>
+			<th class="cell col-4 text-center"> <strong> Metadata and Data </strong> </th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for itemrow in include.data %}
+		<tr class="row data-record"
+		    data-type-habitats='
+		    {%- for habitat in itemrow.habitats.habitat -%}
+		    	{{ habitat }}-
+		    {%- endfor -%}'
+		    data-type-measurementTypes='
+		    {%- for measurement in itemrow.measurementTypes.measurementType -%}
+		    	{{ measurement }}-
+		    {%- endfor -%}'
+		    data-type-lterCoreResearchAreas='
+		    {%- for area in itemrow.lterCoreResearchAreas.lterCoreResearchArea -%}
+		    	{{ area }}-
+		    {%- endfor -%}'
+		    >
+			<td class="cell col-3"> {{ itemrow.collectionName }} </td>
+			<td class="cell col-5"> {{ itemrow.abstract }} </td>
+			<td class="cell col-4">
+			{% for package in itemrow.dataPackages.package %}
+				{% assign docid = package.docid | replace: ".", "/" %}
+				{% assign url = page.package_url | replace: "$docid", docid %}
+				<button type="button" class="btn btn-link package-link" onclick='showDetail("{{ url }}")'> {{ package.shortTitle }} </button>
+				<br/>
+			{% endfor %}
+			</td>
+		</tr>
+	{% endfor %}
+	</tbody>
+  </table>
+</div>

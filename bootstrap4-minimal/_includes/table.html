@@ -1,0 +1,31 @@
+<div class="pull-left" class="mt-4">
+  <h3 id="table_{{include.data.name}}" class="table-title pl-1"> <strong> {{ include.data.name }} </strong> </h3>
+  <table class="table" name="table_{{include.data.name}}">
+    <thead id="table_header_{{include.data.name}}">
+      <tr class="row title-row">
+      {% for column in include.columns %}
+        <th class="cell col-3"> <strong> {{ column }} </strong> </th>
+      {% endfor %}
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    {% for itemrow in include.data.items %}
+      {% if include.clickable == 1%}
+        <tr class="row clickable-row table_row_{{include.data.name}}" data-href='{{itemrow.databaseID}}' style="cursor: pointer">
+          {% for filter in include.dataFilter %}
+            <td class="cell col-3">{{ itemrow[filter] }}</td>
+          {% endfor %}
+        </tr>
+      {% else %}
+        <tr class="row table_row_{{include.data.name}}">
+          {% for filter in include.dataFilter %}
+            <td class="cell col-3">{{ itemrow[filter] }}</td>
+          {% endfor %}
+        </tr>
+      {% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+

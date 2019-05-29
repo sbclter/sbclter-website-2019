@@ -1,0 +1,89 @@
+---
+layout: profile
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+	{% include header_nav.html %}
+
+	<div id="main-container">
+		<div class="row">
+
+	    <div id="left-container">
+				<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
+				<div id="contact-info">
+
+					{% if page.homepage %}
+						<div class="row">
+							<img class="contact-icon col-2" src="/assets/img/profile/website_icon.png" width="24" height="24">
+							<a class="contact-text col-10" href="{{ page.homepage }}" target="_blank"> {{ page.homepage }} </a>
+							<br/>
+						</div>
+						<br/>
+					{% endif %}
+
+					{% if page.email %}
+						<div class="row">
+							<img class="contact-icon col-2" src="/assets/img/profile/email_icon.png" width="24" height="24">
+							<a class="contact-text col-10" href="mailto:{{ page.email }}" target="_blank"> {{ page.email }} </a>
+							<br/>
+						</div>
+						<br/>
+					{% endif %}
+
+					{% if page.telephoneNumber %}
+						<div class="row">
+							<img class="contact-icon col-2" src="/assets/img/profile/phone_icon.png" width="24" height="24">
+							<div class="contact-text col-10"> {{ page.telephoneNumber }} </div>
+						</div>
+						<br/>
+					{% endif %}
+
+					{% if page.postalAddress %}
+						<div class="row">
+							<img class="contact-icon col-2" src="/assets/img/profile/address_icon.png" width="24" height="24">
+							<div class="contact-text col-10">
+								{% assign addr_lines = page.postalAddress | split: "$" %}
+								{% for addr in addr_lines %}
+									<i> {{ addr | italic }} </i><br/>
+								{% endfor %}
+							</div>
+						</div>
+						<br/>
+					{% endif %}
+
+				</div>
+			</div>
+			<div id="right-container">
+				<div id="title-text">
+					{% if page.employeeType %}
+						<div id="title-name" class="float-left"> {{ page.commonName | append: "&nbsp;" }} </div>
+						<div id="title-career">({{ page.employeeType }}) </div>
+					{% else %}
+						<div id="title-name"> {{ page.commonName | append: "&nbsp;" }} </div>
+					{% endif %}
+				</div>
+
+				{% if page.profileText %}
+					<div class="profile-section">
+						<strong>Biography: </strong>
+						{{ page.profileText }}
+					</div>
+				{% endif %}
+
+				{% if page.scientificDomainText %}
+					<div class="profile-section">
+						<strong>Research Interests: </strong>
+						{{ page.scientificDomainText }}
+					</div>
+				{% endif %}
+			</div>
+
+		</div>
+	</div>
+
+	{% include footer.html %}
+</body>
+</html>

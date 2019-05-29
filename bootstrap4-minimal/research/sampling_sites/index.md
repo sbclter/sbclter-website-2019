@@ -1,13 +1,19 @@
 ---
 layout: article
-title: 'Page tltle here'
+title: 'Page title here'
 description: page description here.
-
+columns:
+  - Habitat
+  - Measurements
+  - Show
+dataFilter:
+  - label
+page_css:
+  - "/assets/css/custom/layouts/gmap.css"
+  - "/assets/css/custom/includes/layers_table.css"
 ---
 
-<h1>H1 header</h1>
-
-<p>page will be a map of sampling sites - using google (javascript). map info can come from _content dir.  </p>
+<h1>Time Series Sampling Sites</h1>
 
 
 <p>The page we are replacing:
@@ -15,7 +21,16 @@ description: page description here.
 <li>http://sbc.lternet.edu/sites/sampling/</li>
 </ul>
 
+{% include gmap.html %}
 
 
-	
-<p>TBD: is content in XML (as used by current map), or yaml (which might be easier to generate from postgres. </p>
+{% assign layer_groups = site.data.research.sampling.sbcMapLayers | group_by:"habitatName" %}
+{% include layers_table.html columns=page.columns data=layer_groups dataFilter=page.dataFilter%}
+
+<br/>
+<!-- Current API is just for development, need a new key -->
+<script src="/assets/js/gmap.js"/></script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAsXhfi9ZNaT-4kUQSkq3etSJe1k8k_Pk&callback=initMap">
+// </script>

@@ -1,0 +1,21 @@
+---
+---
+@charset "utf-8";
+
+// bootstrap
+@import 'bootstrap/bootstrap';
+@import 'custom/includes/header';
+@import 'custom/includes/banner';
+/*@import 'custom/includes/layers_table';*/
+/*@import 'custom/layouts/table';*/
+/*@import 'custom/layouts/gmap';*/
+
+/*@import 'custom/includes/table';*/
+/*@import 'custom/layouts/article';*/
+/*@import 'custom/layouts/profile';*/
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+}
