@@ -2,7 +2,10 @@
 // Loads the kml layers
 
 var map;
-var site_url = 'http://sbc.lternet.edu/';
+// var site_url = 'http://sbc.lternet.edu/';
+// var site_url = { site.url };
+   var site_url = 'http://sbclter.msi.ucsb.edu/';
+
 var layers = {};  // Holds all layer objects that map to URL's
 
 function initMap() {
@@ -21,7 +24,8 @@ function initMap() {
 
 	// Create all url's for the data layers
 	for(var i=0; i < boxes.length; i++){
-		layer_url = site_url + "kml/sampling/layers/" + boxes[i].id + ".kml";
+		// layer_url = site_url + "kml/sampling/layers/" + boxes[i].id + ".kml";
+		layer_url = site_url + "assets/kml/" + boxes[i].id + ".kml";
 		console.log("layer_url:" + layer_url);
 		layers[boxes[i].id] = new google.maps.KmlLayer(layer_url, {
 			preserveViewport: false,
