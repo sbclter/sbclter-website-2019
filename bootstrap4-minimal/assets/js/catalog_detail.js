@@ -1,19 +1,27 @@
 var map;
 var markers = [];
 
+var url = new URL(location);
+var package = url.searchParams.get('package');
+
+if (package == null)
+	document.location = "/data/catalog";
+
+var packageUrl = `https://pasta.lternet.edu/package/metadata/eml/${ package.replace(/\./g, "/") }/newest`;
+showDetail(packageUrl);
+
 // Create popup window for xml links
 function showDetail(url) {
-	var template = $('#detail-modal-template').clone();
+	var template = $('#detail-template').clone();
 	template.removeAttr('hidden');
 	template.removeAttr('id');
 
-	var loader = $('#loading-modal-template').clone();
+	var loader = $('#loading-template').clone();
 	loader.removeAttr('hidden');
 	loader.removeAttr('id');
 
-	$('#detail-modal').modal();
-	$('#detail-modal-title').text("Loading...");
-	$('#detail-modal .modal-body').html(loader);
+	$('#detail #detail-title').text("Loading...");
+	$('#detail #detail-body').html(loader);
 
 	loadXMLDoc(url, function(xml) {
 		try {
@@ -26,12 +34,16 @@ function showDetail(url) {
 			makePeople(template, data);
 			makeCoverage(template, data);
 
-			$('#detail-modal-title').text(title);
-			$('#detail-modal .modal-body').html(template);
+			$('#detail #detail-title').text(title);
+			$('#detail #detail-body').html(template);
 		}
 		catch (err) {
-			$('#detail-modal .modal-body').html("Sorry, an error has occured! <br> " + err);
+			$('#detail #detail-title').text("Error");
+			$('#detail #detail-body').html("Sorry, an error has occured! <br> " + err);
 		}
+	}, function(err) {
+		$('#detail #detail-title').text("Error");
+		$('#detail #detail-body').html(err);
 	});
 }
 
@@ -222,7 +234,7 @@ function extractDataObject(data, delim, keys) {
 }
 
 // Load XML document
-function loadXMLDoc(filename, onReady) {
+function loadXMLDoc(filename, onReady, onError) {
 	var xhttp;
 	if (window.ActiveXObject)
 		xhttp = new ActiveXObject("Msxml2.XMLHTTP");
@@ -234,6 +246,8 @@ function loadXMLDoc(filename, onReady) {
 	xhttp.onload = function (e) {
 		if (xhttp.readyState === 4 && xhttp.status === 200)
 			onReady(xhttp.responseXML);
+		else
+			onError(`File ${ filename } not found.`);
 	};
 
 	xhttp.send("");
@@ -332,7 +346,6 @@ function makePeopleTables(data) {
 	return contents;
 }
 
-
 // Plot markers for coverage tab
 function plotMarkers(element, data) {
 	var points = data['eml:eml']['dataset']['coverage']['geographicCoverage'];
@@ -370,18 +383,6 @@ function plotMarkers(element, data) {
 		element.find('#field-geographic').append(row);
 	}
 }
-
-// Setup callback functions after document is ready
-$(document).ready(function(){
-
-	// On popup window closed, move map back to template and clear all markers 
-	$('#detail-modal').on('hidden.bs.modal', function () {
-		for (var i = 0; i < markers.length; i++)
-			markers[i].setMap(null);
-
-		$('#map').detach().appendTo('#map-template');
-	});
-});
 
 // Gets called by Google Maps API to set up map (one map for all popup windows)
 function initMap() {

@@ -2,15 +2,16 @@
 layout: article
 title: 'Page tltle here'
 description: page description here.
-
+page_css:
+  - /assets/css/custom/data/index.css
 ---
 
-<h1>Data</h1>
+<div id="detail-container">
+	{% include data/data_detail.html %}
+</div>
 
-<p>Data index page typically has 
-link to data catalog, 
-links to other data resources for the area
-link to Stearns Wharf real time display
-</p>
-	
-<p>	describe content of this page here.</p>
+<script src="/assets/js/ext/xml2json.js"></script>
+<script src="/assets/js/catalog_detail.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAsXhfi9ZNaT-4kUQSkq3etSJe1k8k_Pk&callback=initMap"></script>
+
