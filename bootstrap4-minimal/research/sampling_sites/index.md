@@ -24,7 +24,7 @@ page_css:
 {% include gmap.html %}
 
 
-{% assign layer_groups = site.data.research.sampling.sbcMapLayers | group_by:"habitatName" %}
+{% assign layer_groups = site.data.sbcMapLayers | group_by:"habitatName" %}
 {% include layers_table.html columns=page.columns data=layer_groups dataFilter=page.dataFilter%}
 
 <br/>
