@@ -20,7 +20,7 @@ function showDetail(url) {
 	loader.removeAttr('hidden');
 	loader.removeAttr('id');
 
-	$('#detail #detail-title').text("Loading...");
+	$('#detail #detail-title').text("Grabbing Data...");
 	$('#detail #detail-body').html(loader);
 
 	loadXMLDoc(url, function(xml) {
@@ -36,6 +36,11 @@ function showDetail(url) {
 
 			$('#detail #detail-title').text(title);
 			$('#detail #detail-body').html(template);
+
+			// customize tables
+			$('#detail #detail-body table').each(function(index) {
+				$(this).find('tr:first td, tr:first th').addClass('no-border-top');
+			});
 		}
 		catch (err) {
 			$('#detail #detail-title').text("Error");
@@ -241,7 +246,9 @@ function loadXMLDoc(filename, onReady, onError) {
 	else
 		xhttp = new XMLHttpRequest();
 	xhttp.open("GET", filename, true);
-	try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11
+
+	if (false || !!document.documentMode)
+		try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11
 
 	xhttp.onload = function (e) {
 		if (xhttp.readyState === 4 && xhttp.status === 200)

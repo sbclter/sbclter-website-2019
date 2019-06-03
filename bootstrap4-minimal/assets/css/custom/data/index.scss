@@ -1,6 +1,10 @@
 ---
 ---
 
+body {
+	background-image: radial-gradient(circle, #ffffff, #00b8e6);
+}
+
 .row {
 	margin: 0;
 }
@@ -19,48 +23,55 @@
 	padding-bottom: auto;
 }
 
+.no-border-top {
+	border-top: none !important;
+}
+
 #detail-title {
 	text-align: center;
 }
 
 #detail {
+	margin-left: 3%;
+	margin-right: 3%;
+	padding: 2%;
+	background-color: #ffffff;
+}
 
-	.nav-item {
-		// width: 20%;
-	}
+.nav .nav-item .active {
+	border: none !important;
+	border-bottom: 2px solid !important;
+	border-color: #003366 !important;
+	color: black;
+}
+
+#detail {
 
 	.nav-link {
-		background-color: #b3e5fc;
 		height: 100%;
 		text-align: center;
-		border-radius: 0;
+		border: 1px solid transparent;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
 	}
 
-	.tab-pane {
-		border-left: 1px solid #b3e5fc;
-		border-right: 1px solid #b3e5fc;
-		border-bottom: 1px solid #b3e5fc;
-		padding: 35px;
-	}
-
-	.active {
-		background-color: white;
+	.tab-content {
+		padding: 20px;
 	}
 
 	.floatbox {
 		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
-		border-radius: 4px;
+		border-radius: 2px;
 	}
 
 	.section-title {
 		background-color: #b3e5fc;
 		padding: 10px;
-		border-radius: 4px;
+		border-radius: 2px;
+		font-weight: bold;
+		color: black;
+		margin-bottom: 10px;
 	}
-
-	// .table th, .table td {
-	// 	border-top: unset;
-	// }
 
 	#content-class-people {
 		th {
@@ -69,10 +80,6 @@
 
 		#field-owners, #field-contacts {
 			table {
-				// border-left: 1px solid #b3e5fc;
-				// border-right: 1px solid #b3e5fc;
-				// border-top: 1px solid #b3e5fc;
-				// border-bottom: 1px solid #b3e5fc;
 				width: 46%;
 				margin-right: 2%;
 			}
