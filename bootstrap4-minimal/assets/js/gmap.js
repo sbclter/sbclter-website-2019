@@ -4,7 +4,7 @@
 var map;
 // var site_url = 'http://sbc.lternet.edu/';
 // var site_url = { site.url };
-   var site_url = 'http://sbclter.msi.ucsb.edu/';
+var site_url = 'http://sbclter.msi.ucsb.edu/';
 
 var layers = {};  // Holds all layer objects that map to URL's
 

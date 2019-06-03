@@ -15,7 +15,7 @@ layout: profile
 				<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
 				<div id="contact-info">
 
-					{% if page.homepage %}
+					{% if page.homepage != "" and page.homepage != nil %}
 						<div class="row">
 							<img class="contact-icon col-2" src="/assets/img/profile/website_icon.png" width="24" height="24">
 							<a class="contact-text col-10" href="{{ page.homepage }}" target="_blank"> {{ page.homepage }} </a>
@@ -24,7 +24,7 @@ layout: profile
 						<br/>
 					{% endif %}
 
-					{% if page.email %}
+					{% if page.email != "" and page.email != nil %}
 						<div class="row">
 							<img class="contact-icon col-2" src="/assets/img/profile/email_icon.png" width="24" height="24">
 							<a class="contact-text col-10" href="mailto:{{ page.email }}" target="_blank"> {{ page.email }} </a>
@@ -33,7 +33,7 @@ layout: profile
 						<br/>
 					{% endif %}
 
-					{% if page.telephoneNumber %}
+					{% if page.telephoneNumber != "" and page.telephoneNumber != nil %}
 						<div class="row">
 							<img class="contact-icon col-2" src="/assets/img/profile/phone_icon.png" width="24" height="24">
 							<div class="contact-text col-10"> {{ page.telephoneNumber }} </div>
@@ -41,7 +41,7 @@ layout: profile
 						<br/>
 					{% endif %}
 
-					{% if page.postalAddress %}
+					{% if page.postalAddress != "" and page.postalAddress != nil %}
 						<div class="row">
 							<img class="contact-icon col-2" src="/assets/img/profile/address_icon.png" width="24" height="24">
 							<div class="contact-text col-10">
@@ -58,7 +58,7 @@ layout: profile
 			</div>
 			<div id="right-container">
 				<div id="title-text">
-					{% if page.employeeType %}
+					{% if page.employeeType != "" and page.employeeType != nil %}
 						<div id="title-name" class="float-left"> {{ page.commonName | append: "&nbsp;" }} </div>
 						<div id="title-career">({{ page.employeeType }}) </div>
 					{% else %}
@@ -66,14 +66,14 @@ layout: profile
 					{% endif %}
 				</div>
 
-				{% if page.profileText %}
+				{% if page.profileText != "" and page.profileText != nil %}
 					<div class="profile-section">
 						<strong>Biography: </strong>
 						{{ page.profileText }}
 					</div>
 				{% endif %}
 
-				{% if page.scientificDomainText %}
+				{% if page.scientificDomainText != "" and page.scientificDomainText != nil %}
 					<div class="profile-section">
 						<strong>Research Interests: </strong>
 						{{ page.scientificDomainText }}
