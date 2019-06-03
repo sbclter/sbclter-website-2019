@@ -1,8 +1,19 @@
 {% assign group_count = include.data | size %}
 {% assign group_width = 6%}
 {% assign area_group_width = 3 %}
+{% assign placeholder_search = "Search for datasets ..." %}
 
 
+
+<div class="row pull-left" >
+	<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6">
+		<div style="display: inline-block;">
+		  <label for="search-bar" style="display:inline-block;">Search for data:</label>
+		  <input style="display:inline-block;" id="search-bar" class="form-control" type="text" placeholder="Search for data ..." >
+		</div>
+	</div>
+</div>
+<div class="row"></div>
 <div class="pull-left row" >
 	<div class="col-lg-{{group_width}} col-md-{{group_width}} col-sm-{{group_width}} col-xs-{{group_width}}">
 	<p class="table-title"> <strong> Filter By Habitat and Measurement Type: </strong> </p>
