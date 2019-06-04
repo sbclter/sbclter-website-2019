@@ -36,6 +36,7 @@ body {
 	margin-right: 3%;
 	padding: 2%;
 	background-color: #ffffff;
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav .nav-item .active {
@@ -96,7 +97,6 @@ body {
 	}
 
 	#content-class-coverage {
-
 		#map {
 		 height: 360px;
 		 width: 100%;
@@ -104,6 +104,23 @@ body {
 		 float: left;
 		 border: thin solid #333;
 		}
+
+		#field-taxonomic {
+			text-align: center;
+
+			.tax-cell {
+				display: table-cell;
+			}
+
+			.colored {
+				background: #b3e5fc;
+			}
+
+			.row {
+				display: table-row;
+			}
+		}
+
 	}
 }
 
