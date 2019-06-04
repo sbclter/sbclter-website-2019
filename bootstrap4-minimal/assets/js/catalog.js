@@ -4,6 +4,10 @@ var is_first_search = true;
 
 // Responsible for any changes to radio button or search
 $(document).ready(function(){
+
+	// Search bar function
+	do_search();
+
 	// Hide all habitats
 	$("tr.data-record").hide();
 
@@ -142,4 +146,16 @@ function clear(){
 	});
 	filter_type = "";
 	is_first_search = true;
+}
+
+
+function do_search(){
+	$("#search-bar-button").click(function(){
+		val = $('#search-bar').val();
+		dataset_search_url = window.location.origin + "/data/catalog/search/?sort=score&q=" + 
+									val + "&coreArea=any&creator=&s=1900&e=2019&id=&taxon=&geo="
+
+		window.location.replace(dataset_search_url);
+
+	})
 }
