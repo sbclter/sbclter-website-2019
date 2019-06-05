@@ -20,7 +20,7 @@ function showDetail(url) {
 	loader.removeAttr('hidden');
 	loader.removeAttr('id');
 
-	$('#detail #detail-title').text("Loading...");
+	$('#detail #detail-title').text("Grabbing Data...");
 	$('#detail #detail-body').html(loader);
 
 	loadXMLDoc(url, function(xml) {
@@ -36,6 +36,11 @@ function showDetail(url) {
 
 			$('#detail #detail-title').text(title);
 			$('#detail #detail-body').html(template);
+
+			// customize tables: take out first border top of every table
+			$('#detail #detail-body table').each(function(index) {
+				$(this).find('tr:first td, tr:first th').addClass('no-border-top');
+			});
 		}
 		catch (err) {
 			$('#detail #detail-title').text("Error");
@@ -50,15 +55,34 @@ function showDetail(url) {
 // Make coverage's page
 function makeCoverage(template, data) {
 	var element = template.find('#content-class-coverage');
-	var dateText = extractData(data['eml:eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
-	$('#field-temporal').text(dateText);
+
+	// Fill temporal converage data
+	try {
+		var dateText = extractData(data['eml:eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
+		element.find('#field-temporal').text(dateText);
+	} catch(err) { console.error(err); }
 
 	// Move map from template to actual popup window
-	var mapElement = template.find('#field-map');
-	$("#map").detach().appendTo(mapElement);
+	try {
+		var mapElement = template.find('#field-map');
+		$("#map").detach().appendTo(mapElement);
+		plotMarkers(element, data);
+	} catch(err) { console.error(err); }
 
-	// Plot markers to map
-	plotMarkers(element, data);
+	// Fill taxonomic range data
+	try {
+		$(`<tr id="tax-head" class="row">\
+			 <th class="cell tax-cell"> Kingdom </th>\
+			 <th class="cell tax-cell"> Phylum </th>\
+			 <th class="cell tax-cell"> Class </th>\
+			 <th class="cell tax-cell"> Order </th>\
+			 <th class="cell tax-cell"> Family </th>\
+			 <th class="cell tax-cell"> Genus </th>\
+			 <th class="cell tax-cell"> Species </th>\
+		   </tr>`).appendTo(element.find('#field-taxonomic'));
+		fillTaxonomicRow(data['eml:eml']['dataset']['coverage']['taxonomicCoverage']['taxonomicClassification'], element.find('#field-taxonomic #tax-head'), 0);
+	} catch(err) { console.error(err); }
+
 }
 
 // Make people's page
@@ -241,7 +265,9 @@ function loadXMLDoc(filename, onReady, onError) {
 	else
 		xhttp = new XMLHttpRequest();
 	xhttp.open("GET", filename, true);
-	try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11
+
+	if (false || !!document.documentMode)
+		try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11
 
 	xhttp.onload = function (e) {
 		if (xhttp.readyState === 4 && xhttp.status === 200)
@@ -391,4 +417,29 @@ function initMap() {
 		zoom: 9,
 		mapTypeId: google.maps.MapTypeId.TERRAIN
 	});
+}
+
+// Fill taxonomic rows for coverage
+function fillTaxonomicRow(data, prevRow, index) {
+	if (data === undefined)
+		return;
+
+	if (!Array.isArray(data))
+		data = [data];
+
+	for (var i = 0; i < data.length; i++) {
+		var dataItem = data[i];
+
+		var text = dataItem['taxonRankValue'];
+		if (dataItem['commonName']) text += ` (${ dataItem['commonName'] })`;
+
+		var cols = "";
+		for (var j = 0; j < 7; j++) {
+			if (j == index)	cols += `<td class="cell tax-cell colored">${ text }</td>`;
+			else			cols += '<td class="cell tax-cell"></td>';
+		}
+
+		$(`<tr class="row">${ cols }</tr>`).insertAfter(prevRow);
+		fillTaxonomicRow(dataItem['taxonomicClassification'], prevRow.next(), index + 1);
+	}
 }

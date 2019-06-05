@@ -1,0 +1,20 @@
+<div class="partner-wrapper">
+	<ul>
+		{% for collaborator in site.data.collaborators %}
+		
+		<li>
+			<a href="{{collaborator.link}}" target="new">
+				{{collaborator.name}}
+					{% if collaborator.acronym %}
+					({{collaborator.acronym}})
+					{% endif %}	
+				
+			</a>
+					{% if collaborator.description %}
+						<p>{{collaborator.description}} </p>
+					{% endif %}				
+			
+		</li>
+		{% endfor %}
+	</ul>
+</div>

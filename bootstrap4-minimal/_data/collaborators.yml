@@ -1,0 +1,43 @@
+# partner links
+
+- name: "Channel Islands National Marine Sanctuary"
+  acronym: "CINMS"
+  description: "TO DO Description"
+  link: "http://channelislands.noaa.gov/"
+  
+- name: "Channel Islands National Park"
+  acronym:
+  description: "TO DO Description"
+  link: "http://www.nps.gov/chis/index.htm"
+
+- name: "Southern California Coastal Ocean Observing System"
+  acronym: "SCCOOS"
+  description: "TO DO Description"
+  link: "http://www.sccoos.org/"
+
+- name: "Plumes and Blooms Project"
+  acronym: "PnB"
+  description: 'A NASA-funded study at UCSB investigating marine plankton blooms associated with runoff since 1996. The goal of this project is to develop new satellite ocean color algorithms for 
+  coastal waters influenced by terrigenous materials (sediments, dissolved organic materials, etc.). In situ optical quantities and in-water constituents are collected on a 7-station 
+  transect across the Santa Barbara Channel and then related to simultaneous ocean color imagery.'
+  link: "http://www.oceancolor.ucsb.edu/plumes_and_blooms/"
+
+- name: "Santa Barbara Channel Marine Biodiversity Network"
+  acronym: "SBC MBON"
+  description: "TO DO Description"
+  link: "http://sbc.marinebon.org/"
+
+
+- name: "San Onofre Nuclear Generating Station Mitigation Monitoring Program"
+  acronym: UCSB SONGS
+  description: "TO DO Description"
+  link: "http://marinemitigation.msi.ucsb.edu/"
+
+
+- name: "Partnership for Interdisiplinary Studies of Coastal Oceans"
+  acronym: "PISCO"
+  description: 'PISCO is a large-scale marine science research program established in 1999 that focuses on understanding the nearshore ecosystems of the U.S. West Coast. Composed of collaborating scientists from 
+  four universities:  Oregon State University, Stanford University’s Hopkins Marine Station and two University of California campuses, Santa Cruz Santa Barbara. '
+  link: "http://www.piscoweb.org/"
+
+

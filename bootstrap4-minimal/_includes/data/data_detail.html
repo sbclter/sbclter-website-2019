@@ -7,17 +7,18 @@
 <div id="loading-template" class="loader" hidden></div>
 
 <div id="detail-template" hidden>
-  <ul class="nav nav-tabs" role="tablist">
+  <ul class="nav nav-tabs nav-fill" role="tablist">
     <li class="nav-item" style="width: 18%"> <a class="nav-link active"  id="tab-class-summary" data-toggle="tab" href="#content-class-summary"> Summary and Data Links </a></li>
     <li class="nav-item" style="width: 18%"> <a class="nav-link"         id="tab-class-people" data-toggle="tab" href="#content-class-people"> People and Organizations </a></li>
     <li class="nav-item" style="width: 28%"> <a class="nav-link"         id="tab-class-coverage" data-toggle="tab" href="#content-class-coverage"> Temporal, Geographic and Taxonomic Coverage </a></li>
     <li class="nav-item" style="width: 18%"> <a class="nav-link"         id="tab-class-methods" data-toggle="tab" href="#content-class-methods"> Methods and Protocols </a></li>
     <li class="nav-item" style="width: 18%"> <a class="nav-link"         id="tab-class-files" data-toggle="tab" href="#content-class-files"> Files </a></li>
   </ul>
+  <br>
   <div class="tab-content">
     <div class="tab-pane show active" id="content-class-summary">
       
-      <h4 class="section-title"> General Information </h4>
+      <div class="section-title"> General Information </div>
       <table class="table">
         <tbody>
           <tr class="row">
@@ -52,35 +53,35 @@
       </table>
       <br>
 
-      <h4 class="section-title"> Data Set Citation </h4>
-      <div id="field-citation"> </div>
+      <div class="section-title"> Data Set Citation </div>
+      <div id="field-citation" class="pl-2"> </div>
       <br><br>
 
-      <h4 class="section-title"> Key Words and Terms </h4>
+      <div class="section-title"> Key Words and Terms </div>
       <table class="table">
         <tbody id="field-keywords">
         </tbody>
       </table>
       <br>
 
-      <h4 class="section-title"> Data Set Usage Rights </h4>
+      <div class="section-title"> Data Set Usage Rights </div>
       <ul id="field-usage-rights"> </ul>
     </div>
 
     <div class="tab-pane" id="content-class-people">
 
-      <h4 class="section-title"> Publishers </h4>
+      <div class="section-title"> Publishers </div>
       <table class="table">
         <tbody id="field-publishers">
         </tbody>
       </table>
       <br>
 
-      <h4 class="section-title"> Owners </h4>
+      <div class="section-title"> Owners </div>
       <div id="field-owners" class="row"></div>
       <br>
 
-      <h4 class="section-title"> Contacts </h4>
+      <div class="section-title"> Contacts </div>
       <div id="field-contacts" class="row"></div>
       <br>
     </div>
@@ -91,22 +92,30 @@
       <div id="field-map"></div>
       <br>
 
-      <h4>Temporal, Geographic and/or Taxonomic information that applies to all data in this dataset:</h4>
+      <div>Temporal, Geographic and/or Taxonomic information that applies to all data in this dataset:</div>
       <br>
 
       <!-- Temporal Coverage -->
-      <h4 class="section-title">Temporal Coverage</h4>
-      <div id="field-temporal"></div>
+      <div class="section-title">Temporal Coverage</div>
+      <div id="field-temporal" class="pl-2"></div>
       <br>
 
       <!-- Table for Coverage Content -->
-      <h4 class="section-title">Geographic Coverage</h4>
+      <div class="section-title">Geographic Coverage</div>
       <table class="table">
         <tbody id="field-geographic">
           <tr class="row">
             <th class="cell col-10"> Sampling Sites </th>
             <th class="cell col-2"> Site Coordinates(Lat, Lng) </th>
           </tr>
+        </tbody>
+      </table>
+      <br>
+
+      <!-- Taxonomic Coverage -->
+      <div class="section-title">Taxonomic Range</div>
+      <table class="table">
+        <tbody id="field-taxonomic">
         </tbody>
       </table>
       <br>
