@@ -15,7 +15,7 @@ markdown: kramdown
 plugins_dir: _plugins
 
 # this key must be added manually before you build. DO NOT STORE KEY IN GIT 
-google_maps_api_key: DO_NOT_STORE_KEY_IN_GIT
+google_maps_api_key: AIzaSyCHM3kdm0FsaOBwxZaNmpeGUZSN1gvZTiM
 
 page_gen:
   - data: 'people_bios'

@@ -32,5 +32,5 @@ page_css:
 <script src="/assets/js/gmap.js"/></script>
 
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=INSERT_KEY_HERE&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap">
 // </script>

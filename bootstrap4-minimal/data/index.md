@@ -13,5 +13,5 @@ page_css:
 <script src="/assets/js/ext/xml2json.js"></script>
 <script src="/assets/js/catalog_detail.js"></script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=INSERT_KEY_HERE&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap"></script>
 

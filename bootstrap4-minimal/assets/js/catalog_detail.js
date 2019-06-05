@@ -375,38 +375,90 @@ function makePeopleTables(data) {
 // Plot markers for coverage tab
 function plotMarkers(element, data) {
 	var points = data['eml:eml']['dataset']['coverage']['geographicCoverage'];
-	var prevWindow = null;
+	var infowindow = new google.maps.InfoWindow();
+	var bounds = new google.maps.LatLngBounds();
+	var map_data = [];
+	const lat_n = 1;
+	const lat_s = 2;
+	const lng_e = 3;
+	const lng_w = 4;
+
 
 	for (var i = 0; i < points.length; i++) {
+		var data_entry = [];
 		var title = points[i]['geographicDescription'];
+		data_entry.push(title);
+
 		var lat = points[i]['boundingCoordinates']['northBoundingCoordinate'];
+		data_entry.push(parseFloat(lat));
+
+		var lat_s1 = points[i]['boundingCoordinates']['southBoundingCoordinate'];
+		data_entry.push(parseFloat(lat_s1));
+
 		var lng = points[i]['boundingCoordinates']['eastBoundingCoordinate'];
+		data_entry.push(parseFloat(lng));
 
-		const infowindow = new google.maps.InfoWindow({
-			content: title
-		});
+		var lng_w1 = points[i]['boundingCoordinates']['westBoundingCoordinate'];
+		data_entry.push(parseFloat(lng_w1));
 
-		const marker = new google.maps.Marker({
-			position: {lat: parseFloat(lat), lng: parseFloat(lng)},
-			map: map,
-			title: title
-		});
+		map_data.push(data_entry);
+		
+		// bounds.extend(myLatLng);
+		// map.fitBounds(bounds);
 
-		marker.addListener('click', function() {
-			if (prevWindow != null)
-				prevWindow.close();
+	}
 
-			infowindow.open(map, marker);
-			prevWindow = infowindow;
-		});
+	for (var i = 0; i < map_data.length; i++) {
+		// Just a point so draw a marker
+		const m_data = map_data[i];
+		if(m_data[lat_n] == m_data[lat_s] && m_data[lng_e] == m_data[lng_w]){
+			const marker = new google.maps.Marker({
+				position: {lat: m_data[lat_n], lng: m_data[lng_e]},
+				map: map,
+				title: m_data[0]
+			});
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.setContent(this.title);  // Title
+				infowindow.open(map, marker);
+			});
 
-		markers.push(marker);
+			//markers.push(marker);
 
-		var row = '<tr class="row">';
-		row += `<td class="cell col-10"> ${ title } </td>`;
-		row += `<td class="cell col-2"> ${ lat + ", " + lng } </td>`;
-		row += '</tr>';
-		element.find('#field-geographic').append(row);
+			var row = '<tr class="row">';
+			row += `<td class="cell col-10"> ${ m_data[0] } </td>`;
+			row += `<td class="cell col-2"> ${ m_data[lat_n] + ", " + m_data[lng_e] } </td>`;
+			row += '</tr>';
+			element.find('#field-geographic').append(row);
+		}else{
+			var rectangle = new google.maps.Rectangle({
+				strokeColor: '#FF0000',
+				strokeOpacity: 0.8,
+				strokeWeight: 2,
+				fillColor: '#FF0000',
+				fillOpacity: 0.35,
+				map: map,
+				title: m_data[0],
+				bounds: {
+					north: m_data[lat_n],
+					south: m_data[lat_s],
+					east: m_data[lng_e],
+					west: m_data[lng_w]
+				}
+			});
+			google.maps.event.addListener(rectangle, 'click', function() {
+				infowindow.setContent(this.title);  // Title
+				infowindow.setPosition({lat: m_data[lat_n], lng: m_data[lng_e]});
+				infowindow.open(map);
+			});
+
+			//markers.push(marker);
+
+			var row = '<tr class="row">';
+			row += `<td class="cell col-10"> ${ m_data[0] } </td>`;
+			row += `<td class="cell col-2"> ${ m_data[lat_n] + ", " + m_data[lng_e] } </td>`;
+			row += '</tr>';
+			element.find('#field-geographic').append(row);
+		}
 	}
 }
 
