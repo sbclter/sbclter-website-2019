@@ -81,6 +81,7 @@ function makeCoverage(template, data) {
 			 <th class="cell tax-cell"> Species </th>\
 		   </tr>`).appendTo(element.find('#field-taxonomic'));
 		fillTaxonomicRow(data['eml:eml']['dataset']['coverage']['taxonomicCoverage']['taxonomicClassification'], element.find('#field-taxonomic #tax-head'), 0);
+		element.find('#section-taxonomic').removeAttr('hidden');
 	} catch(err) { console.error(err); }
 
 }
