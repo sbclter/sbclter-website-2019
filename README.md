@@ -15,7 +15,7 @@
   - Jekyll skips folders that begin with and an underscore (`_data/`, `_includes`, ...).
   - `bootstrap4-minimal/`
 
-    |Name      |Descriptions                                                   |
+    |Folders   |Descriptions                                                   |
     |----------|---------------------------------------------------------------|
     |_data/    |Storing static data in yaml files (can be accessed from pages).|
     |_includes/|HTML templates for a part or a tool of a page.                 |
@@ -23,7 +23,7 @@
     |_site/    |Folder used by Jekyll to serve the website.                    |
     |_plugins/ |Stores external plugin files / 3rd party libraries.            |
     
-    |Name         |Descriptions                           |
+    |Folders      |Descriptions                           |
     |-------------|---------------------------------------|
     |about/       |Page templates for about/ route.       |
     |data/        |Page templates for data/ route.        |
@@ -31,7 +31,7 @@
     |education/   |Page templates for education/ route.   |
     |research/    |Page templates for research/ route.    |
     
-    |Name     |Descriptions                                                            |
+    |Folders  |Descriptions                                                            |
     |---------|------------------------------------------------------------------------|
     |assets/  |Storing all CSS, JavaScript, Image files that can be accessed publicly. |
 
