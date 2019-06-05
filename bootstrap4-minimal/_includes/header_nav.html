@@ -8,52 +8,84 @@
 			</div>
 		</a>
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon"/>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<!-- about area -->
+				<!-- 
+					
+					ABOUT area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/about/" class="nav-link dropdown-toggle" id="dropdown01"
-					data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">About</a>
+					<a href="{{ site.baseurl }}/about/" class="nav-link dropdown-toggle"
+						id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">About</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="{{site.baseurl}}/about/">About</a>
-						<hr>
+						<hr/>
 						<a class="dropdown-item" href="{{site.baseurl}}/about/people">People</a>
-						<a class="dropdown-item" href="#">Collaborators (no link)</a>
-						<a class="dropdown-item" href="#">Another no-link</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/about/collaborators">Collaborators</a>
+						<a class="dropdown-item" href="#">Placeholder (link tbd)</a>
 					</div>
 				</li>
-
+				<!-- 
+					
+					RESEARCH area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/research/" class="nav-link dropdown-toggle" id="dropdown02"
-					data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Research</a>
+					<a href="{{ site.baseurl }}/research" class="nav-link dropdown-toggle"
+						id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Research</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown02">
-						<a class="dropdown-item" href="{{site.baseurl}}/research/">Research</a>
-						<hr>
+						<a class="dropdown-item" href="{{site.baseurl}}/research/theme1">Theme 1</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/research/theme2">Theme 2</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/research/theme3">Theme 3</a>
+						<hr/>
 						<a class="dropdown-item" href="{{site.baseurl}}/research/sampling_sites">Sampling Sites</a>
 					</div>
 				</li>
 
-				<!-- PUBLICATIONS area -->
-				<li class="nav-item">
-					<a href="{{ site.baseurl }}/publications/" class="nav-link">Publications</a>
-				</li>
-
-				<!-- DATA area -->
+				<!-- 
+					
+					PUBLICATIONS area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/data/" class="nav-link dropdown-toggle" id="data-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data</a>
-					<div class="dropdown-menu" aria-labelledby="data-dropdown">
-						<a class="dropdown-item" href="{{site.baseurl}}/data/">Data</a>
-						<hr>
-						<a class="dropdown-item" href="{{site.baseurl}}/data/catalog">Data Catalog</a>
-						<a class="dropdown-item" href="{{site.baseurl}}/data/catalog/search">Data Search</a>
+					<a href="{{ site.baseurl }}/publications" class="nav-link dropdown-toggle"
+						id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Publications</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown03">
+						<a href="" class="dropdown-item">Annual reports (no link)</a>
 					</div>
 				</li>
-
-				<!-- EDUCATION AND OUTREACH area -->
-				<li class="nav-item">
-					<a href="{{ site.baseurl }}/education/" class="nav-link">Education</a>
+				<!-- 
+					
+					DATA area -->
+				<li class="nav-item dropdown">
+					<a href="{{ site.baseurl }}/data/" class="nav-link dropdown-toggle"
+						id="data-dropdown04" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Data</a>
+					<div class="dropdown-menu" aria-labelledby="data-dropdown04">
+						<a class="dropdown-item" href="{{site.baseurl}}/data">Data</a>
+						<hr/>
+						<a class="dropdown-item" href="{{site.baseurl}}/data/catalog">Data Catalog</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/data/catalog/search">Data Search</a>
+						<hr/>
+						<a class="dropdown-item" href="{{site.baseurl}}/data/IMS">Data and Information Management</a>
+						<a class="dropdown-item" href="">Place holder (no link)</a>
+					</div>
+				</li>
+				<!-- 
+					
+					EDUCATION AND OUTREACH area -->
+				<li class="nav-item dropdown">
+					<a href="{{ site.baseurl }}/education/" class="nav-link dropdown-toggle"
+						id="data-dropdown05" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Education</a>
+					<div class="dropdown-menu" aria-labelledby="data-dropdown05">
+						<a class="dropdown-item" href="{{site.baseurl}}/education/graduate">Graduate
+							Students</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/education/undergraduate"
+							>Undergraduates</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/education/k12">K-12 and
+							General Public</a>
+					</div>
 				</li>
 
 				<!-- dropdown template -->
@@ -71,4 +103,3 @@
 		</div>
 	</div>
 </nav>
-
