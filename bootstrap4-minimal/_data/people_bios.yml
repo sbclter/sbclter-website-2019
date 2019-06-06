@@ -183,7 +183,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Investigator
-  - databaseID: hmoeller_xxxx
+  - databaseID: hmoeller
     commonName: Holly Moeller
     givenName: Holly
     surName: Moeller
@@ -217,7 +217,7 @@
     homepage: http://www.lifesci.ucsb.edu/eemb/faculty/macintyre/
     telephoneNumber: 805-893-3951
     projectRole: Investigator
-  - databaseID: lwilbanks_xxxx
+  - databaseID: lwilbanks
     commonName: Lizzy Wilbanks
     givenName: Lizzy
     surName: Wilbanks
@@ -446,7 +446,7 @@
     homepage: http://www.geog.ucsb.edu/~bodo/
     telephoneNumber: ''
     projectRole: Project Affiliated Investigator
-  - databaseID: wwright_xxxx
+  - databaseID: wwright
     commonName: Bill Wright
     givenName: William
     surName: Wright
@@ -1183,7 +1183,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: ehardison_xxxx
+  - databaseID: ehardison
     commonName: Emily Hardison
     givenName: Emily
     surName: Hardison
@@ -1199,7 +1199,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: bdifiore_xxxx
+  - databaseID: bdifiore
     commonName: Bart DiFiore
     givenName: Bart
     surName: DiFiore
@@ -1231,7 +1231,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: jchamorro_xxxx
+  - databaseID: jchamorro
     commonName: Jannine Chamorro
     givenName: Jannine
     surName: Chamorro
@@ -1327,7 +1327,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: xclare_xxxx
+  - databaseID: xclare
     commonName: Xochitl Clare
     givenName: Xochitl
     surName: Clare
@@ -1343,7 +1343,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: tcedeno_xxxx
+  - databaseID: tcedeno
     commonName: Tiffany Cedeno
     givenName: Tiffany
     surName: Cedeno
@@ -1407,7 +1407,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: zwelch_xxxx
+  - databaseID: zwelch
     commonName: Zoe Welch
     givenName: Zoe
     surName: Welch
@@ -1423,7 +1423,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: dvanderzee_xxxx
+  - databaseID: dvanderzee
     commonName: David Vanderzee
     givenName: David
     surName: Vanderzee
@@ -1469,7 +1469,7 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: kkraskura_xxxx
+  - databaseID: kkraskura
     commonName: Krista Kraskura
     givenName: Krista
     surName: Kraskura
@@ -1611,7 +1611,7 @@
     homepage: http://sbc.lternet.edu/cgi-bin/ldapweb2009.cgi?stage=showindividual&lter_id=dsal
     telephoneNumber: 805-893-5822
     projectRole: Staff
-  - databaseID: ssampson_xxxx
+  - databaseID: ssampson
     commonName: Sarah Sampson
     givenName: Sarah
     surName: Sampson
@@ -1737,7 +1737,7 @@
     homepage: ''
     telephoneNumber: 805-893-7061
     projectRole: Staff
-  - databaseID: jmadden_xxxx
+  - databaseID: jmadden
     commonName: Jess Madden
     givenName: Jessica
     surName: Madden
