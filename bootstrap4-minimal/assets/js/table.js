@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
 	$.each($("table"), function(){
 		sortTable($(this), 'asc');
 	})
-	$("#people-content").show();
+	$("#table-content").show();
 
 });
 
@@ -63,17 +63,19 @@ $(document).ready(function(){
 		}
 	}
 
-  $("#search-bar").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("tbody > tr").filter(function() {  // Look for keyword in table row
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
+	$("#search-bar").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$("tbody > tr").filter(function() {  // Look for keyword in table row
+		  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		});
 
-    for(var i=0; i < h3IdArr.length; i++){
-  		isEmptyTable(h3IdArr[i]);  // Hide empty tables
-  	}
+		for(var i=0; i < h3IdArr.length; i++){
+			isEmptyTable(h3IdArr[i]);  // Hide empty tables
+		}
+	});
 
-  });
+
+	$('table').DataTable({searching: false, paging: false, info: false});
 });
 
 
