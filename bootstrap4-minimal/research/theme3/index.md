@@ -13,7 +13,7 @@ description: TO DO Theme1 description here.
 	<div class="row">
 	<!-- how to set cols: pages can vary the col widths; for full-width total should = 12. 
 	     col-md scales up (med to large desktops), and automatically stacks on phones and tablets (within the row). -->
-        <div class="col-md-4">
+        <div class="col-4">
            <p>SBC IV has 3 themes. Describe theme 3 here. </p>
            <ul>
                 <li>Dispersion, dilution of fw runoff</li>
@@ -23,7 +23,7 @@ description: TO DO Theme1 description here.
             </ul>
         </div>
 
-       <div class="col-md-8">
+       <div class="col-8">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
             do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
@@ -36,11 +36,11 @@ description: TO DO Theme1 description here.
     <!-- possibly could add a clear here instead of row. see getbootstrap.com/docs/ examples grid -->
     
     <div class="row"> 
-        <div class="col-md-4">
+        <div class="col-4">
            <img class="img-thumbnail img-responsive img-center" src="/assets/img/Nature_Marine_Biologist_Image.jpg"  alt="Generic placeholder image" />
         </div>
 
-        <div class="col-md-8">
+        <div class="col-8">
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus 
             qui blanditiis praesentium voluptatum deleniti atque corrupti 
             quos dolores et quas molestias excepturi sint occaecati 
@@ -61,14 +61,16 @@ description: TO DO Theme1 description here.
     </div> <!-- close row -->   
         
         <div  class="row">
-            <div class='col-md-12'>
+            <div class='col-12'>
              <hr/>
             </div>
         </div>
         
+        
         <div class="container">
             <img class="featurette-image img-responsive center-block" src="/assets/img/Nature_Marine_Biologist_Image.jpg" alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />
-            <p>Section has a float-right image. size is fixed. only use these if you have enough text to wrap</p>
+            <p>Section has a float-right image. size is fixed. only use these if you have enough text to wrap. 
+            may have to set image size. class="container" includes margins.</p>
             <p><b>Lorem ipsum dolor sit</b> amet, consectetur adipiscing elit, sed do eiusmod tempor 
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
