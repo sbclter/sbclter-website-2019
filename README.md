@@ -1,8 +1,11 @@
 # SBC LTER website, 2019
 
 ### Installation Instructions
-  - For MacOS, please check out file [how_to_install_jekyll.txt](/how_to_install_jekyll.txt).
-  - For general installation, please visit [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/).
+  1. For MacOS, please check out file [how_to_install_jekyll.txt](/how_to_install_jekyll.txt).
+  2. For general installation, please visit [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/).
+  3. `git clone <repo_name>`
+  4. `cp _config_dummy.yml _config.yml`
+  5. Add Google Maps API key to `_config.yml`
 
 ### Running Instructions
   1. `cd bootstrap4-minimal/`
