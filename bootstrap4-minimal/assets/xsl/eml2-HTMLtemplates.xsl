@@ -47,24 +47,352 @@
     transformers do not. Would it be most polite to settle on one encoding?  or is character-set mapping 
     expected of all transformers or applications?
   -->
-  <xsl:output method="html" encoding="utf-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="yes"/>
+  <xsl:output method="html" encoding="utf-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="yes"/>
   <!-- global variables to store id node set in case to be referenced-->
-  <xsl:variable name="ids" select="//*[@id!='']"/>
+  <xsl:variable name="ids" select="//*[@id != '']"/>
+  
+  
+  
+  
+  
+  
+  
+  <!-- 
+    
+    
+    
+    
+    
+    
+    
+    
+    will paste in the settings file here -->
+  
+  
+  
+  
+  <!--
+    /**
+    *   The filename of the default css stylesheet to be used
+    *   (filename only - not the whole path, and no ".css" extension.  The
+    *   example below would look for a file named "default.css" in the same
+    *   directory as the stylesheets
+    */
+-->
+  
+  <xsl:param name="qformat">default</xsl:param>
+  <!-- 
+  mob added 2015-03-27
+  we no longer use metacat to serve up EML. using local storage instead.
+  TO DO: please depreate anything with "metacat" in it in these settings, and in the site_config.tmpl
+  -->
+  <xsl:param name="httpserver">[% site.httpserver %]</xsl:param>
+  <!-- 
+    mob added 2010-03-24 (previously empty) 
+  the contextURL variable is used in stylesheets to build urls. It had been used for all URLs, but
+  SBC is using it to retrive only XML (see xmlURI var below) -->
+  
+  <!-- mob TO DO: hunt down this param and kill it. start with eml-dataset, line 432, 2015-03-27
+  <xsl:param name="contextURL">[% site.url.metacatserver %]</xsl:param> -->
+  <xsl:param name="contextURL">[% site.httpserver %]</xsl:param>
+  <!-- 
+    mob edited 2010-03-24 (previously empty) 
+    the default stylesheets used "cgi-prefix" to point to the register-dataset.cgi. I am not sure where it 
+    was set, since it was empty here. It is now set here (although this may not have been necessary) 
+    because SBC uses this for the "tripleURI" below, to build URLs to the application handling the 
+    xslt parameters, which is now a perl cgi. -->
+  <xsl:param name="cgi-prefix">[% site.url.cgi_bin %]</xsl:param>
+  
+  <!-- the calling app passed its name in  -->
+  
+  <!-- maybe a dupe 
+  <xsl:param name="referrer" ></xsl:param> -->
+  
+  
+  <!--
+    /**
+    *   The module which need to be display in eml2 document. The default
+    *   value is dataset
+    */
+-->
+  <xsl:param name="displaymodule">dataset</xsl:param>
+  
+  
+  <!--
+    /**
+    *   To show the links for the Entities in the dataset display module.
+    */
+-->
+  <xsl:param name="withEntityLinks">1</xsl:param>
+  
+  
+  <!--
+    /**
+    *   To show the link for Additional Metadata in the dataset display module.
+    */
+-->
+  <xsl:param name="withAdditionalMetadataLink">1</xsl:param>
+  
+  
+  <!--
+    /**
+    *   To show the link for the Original XML in the dataset display module.
+    */
+-->
+  <xsl:param name="withOriginalXMLLink">1</xsl:param>
+  
+  
+  <!--
+    /**
+    *   To show the Attributes table in the entity display.
+    */
+-->
+  <xsl:param name="withAttributes">1</xsl:param>
+  
+  
+  <!--
+   /**
+    *   the path of the directory where the XSL and CSS files reside - starts
+    *   with context name, eg: /myContextRoot/styleDirectory.
+    *   (As found in "http://hostname:port/myContextRoot/styleDirectory").
+    *   Needs leading slash but not trailing slash
+    *
+    *   EXAMPLE:
+    *       <xsl:param name="stylePath">/brooke/style</xsl:param>
+    */
+-->
+  
+  <!-- TO DO: confirm SBC is not using this, then remove, please! -->
+  <xsl:param name="stylePath">{$contextURL}/style/skins</xsl:param>
+  
+  
+  <!--
+   /*
+    *   the path of the directory where the common javascript and css files
+    *   reside - i.e the files that are not skin-specific. Starts
+    *   with context name, eg: /myContextRoot/styleCommonDirectory.
+    *   (As found in "http://hostname:port/myContextRoot/styleCommonDirectory").
+    *
+    *   EXAMPLE
+    *       <xsl:param name="styleCommonPath">/brooke/style/common</xsl:param>
+    */
+-->
+  
+  <!-- TO DO: confirm SBC is not using this, then remove, please! -->
+  <xsl:param name="styleCommonPath">{$contextURL}/style/common</xsl:param>
+  
+  
+  <!--the docid of xml which is processed-->
+  <!-- maybe a dupe
+  <xsl:param name="docid"/> -->
+  <!-- type of entity, data table or spacial raster or others-->
+  <xsl:param name="entitytype"></xsl:param>
+  <!-- the index of entity in same entity type -->
+  <xsl:param name="entityindex"/>
+  <!-- the index of physical part in entity part-->
+  <xsl:param name="physicalindex"/>
+  <!-- the index of distribution in physical part  -->
+  <xsl:param name="distributionindex"/>
+  <!-- the levle of distribution -->
+  <xsl:param name="distributionlevel"/>
+  <!-- the index of attribute in attribute list-->
+  <xsl:param name="attributeindex"/>
+  <!-- the index of additional metadata-->
+  <xsl:param name="additionalmetadataindex"/>
+  <!-- attribute set to get rid of cell spacing-->
+  <xsl:attribute-set name="cellspacing">
+    <xsl:attribute name="cellpadding">0</xsl:attribute>
+    <xsl:attribute name="cellspacing">0</xsl:attribute>
+  </xsl:attribute-set>
+  
+  
+  <!--
+    /**
+    *   The base URI to be used for the href link to each document in a
+    *   "subject-relationaship-object" triple
+    *
+    *   EXAMPLE:
+    *       <xsl:param name="tripleURI">
+    *         <![CDATA[/brooke/catalog/metacat?action=read&qformat=knb&docid=]]>
+    *       </xsl:param>
+    *
+    *   (Note in the above case the "qformat=knb" parameter in the url; a system
+    *   could pass this parameter to the XSLT engine to override the local
+    *   <xsl:param name="qformat"> tags defined earlier in this document.)
+    */
+-->
+  <!-- 
+    <xsl:param name="tripleURI"><xsl:value-of select="$contextURL" /><![CDATA[/metacat?action=read&qformat=]]><xsl:value-of select="$qformat" /><![CDATA[&docid=]]></xsl:param>
+ -->
+  <!-- URL for xmlformat
+    <xsl:param name="xmlURI"><xsl:value-of select="$contextURL" /><![CDATA[/metacat?action=read&qformat=xml&docid=]]></xsl:param>
+    -->
+  
+  <!-- 
+  
+  
+  mob edited when SBC began using a cgi script to transform XML instead of metacat. 
+  the "tripleURI" should point to the program which provides the XSLT stylesheets with their parameters.
+  This is now SBC's cgi dir, with the script name added. So use the "cgi-prefix" param above instead.
+  These strings should be parameterized somewhere!  -->
+  <!-- URL for the app which suppies the xslt with their parameters 
+  <xsl:param name="tripleURI"><xsl:value-of select="$cgi-prefix" /><![CDATA[/showDataset.cgi?docid=]]></xsl:param> -->
+  
+  <xsl:param name="tripleURI"><xsl:value-of select="$cgi-prefix" /><![CDATA[/]]><xsl:value-of select="$referrer" /><![CDATA[?docid=]]></xsl:param>
+  
+  
+  <xsl:param name="tripleURI_showDataset"><xsl:value-of select="$cgi-prefix" /><![CDATA[/showDataset.cgi?docid=]]></xsl:param> 
+  
+  
+  
+  <!-- URL for xmlformat -->
+  <!-- as of march 2015, no longer used. -->
+  <!--  <xsl:param name="xmlURI"><xsl:value-of select="$contextURL" /><![CDATA[/knb/metacat?action=read&qformat=xml&docid=]]></xsl:param>
+  -->
+  <xsl:param name="xmlURI"><xsl:value-of select="$httpserver" /><![CDATA[/data/eml/files/]]></xsl:param>
+  
+  
+  <!-- URL for the app which suppies the xslt with their parameters  -->
+  <xsl:param name="useridDirectoryApp1_URI"><xsl:value-of select="$cgi-prefix" /><![CDATA[/ldapweb2012.cgi?stage=showindividual&lter_id=]]></xsl:param>
+  <xsl:param name="useridDirectory1">sbclter-directory</xsl:param>
+  <xsl:param name="useridDirectoryLabel1">SBC LTER</xsl:param>
+  
+  <!--
+    /**
+    *   Most of the html pages are currently laid out as a 2-column table, with
+    *   highlights for more-major rows containing subsection titles etc.
+    *   The following parameters are used within the
+    *           <td width="whateverWidth" class="whateverClass">
+    *   tags to define the column widths and (css) styles.
+    *
+    *   The values of the "xxxColWidth" parameters can be percentages (need to
+    *   include % sign) or pixels (number only). Note that if a width is defined
+    *   in the CSS stylesheet (see next paragraph), it will override this local
+    *   width setting in browsers newer than NN4
+    *
+    *   The values of the "xxxColStyle" parameters refer to style definitions
+    *   listed in the *.css stylesheet that is defined in this xsl document,
+    *   above (in the <xsl:param name="qformat"> tag).
+    *
+    *   (Note that if the "qformat" is changed from the default by passing a
+    *   value in the url (see notes for <xsl:param name="qformat"> tag, above),
+    *   then the params below must match style names in the "new" CSS stylesheet
+    */
+-->
+  
+  <!--    the style for major rows containing subsection titles etc. -->
+  <xsl:param name="subHeaderStyle" select="'tablehead'"/>
+  
+  <!--    the style for major rows containing links, such as additional metadata, 
+        original xml file etc. -->
+  <xsl:param name="linkedHeaderStyle" select="'linkedHeaderStyle'"/>
+  
+  <!--    the width for the first column (but see note above) -->
+  <xsl:param name="firstColWidth" select="'15%'"/>
+  
+  <!-- the style for the first column -->
+  <xsl:param name="firstColStyle" select="'rowodd'"/>
+  
+  <!--    the width for the second column (but see note above) -->
+  <xsl:param name="secondColWidth" select="'85%'"/>
+  
+  <!-- the style for the second column -->
+  <xsl:param name="secondColStyle" select="'roweven'"/>
+  
+  <!-- the style for the attribute table -->
+  <xsl:param name="tableattributeStyle" select="'tableattribute'"/>
+  
+  <!-- the style for the border -->
+  <xsl:param name="borderStyle" select="'bordered'"/>
+  
+  <!-- the style for the even col in attributes table -->
+  <xsl:param name="colevenStyle" select="'coleven'"/>
+  
+  <!-- the style for the inner even col in attributes table -->
+  <xsl:param name="innercolevenStyle" select="'innercoleven'"/>
+  
+  <!-- the style for the odd col in attributes table -->
+  <xsl:param name="coloddStyle" select="'colodd'"/>
+  
+  <!-- the style for the inner odd col in attributes table -->
+  <xsl:param name="innercoloddStyle" select="'innercolodd'"/>
+  
+  
+  <!-- the default alignment style for the wrapper around the main tables -->
+  <!--
+  <xsl:param name="mainTableAligmentStyle" select="'mainTableAligmentStyle'"/>
+  -->
+  <xsl:param name="mainTableAligmentStyle" select="'content'"/>
+  
+  <!-- the default style for the main container table -->
+  <xsl:param name="mainContainerTableStyle" select="'group group_border'"/>
+  
+  <!-- the default style for all other tables -->
+  <xsl:param name="tabledefaultStyle" select="'subGroup subGroup_border onehundred_percent'"/>
+  
+  <!-- the style for table party -->
+  <xsl:param name="tablepartyStyle" select="'tableparty'"/>
+  
+  <!-- Some html pages use a nested table in the second column.
+     Some of these nested tables set their first column to
+     the following width: -->
+  <xsl:param name="secondColIndent" select="'10%'"/>
+  
+  <!-- the first column width of attribute table-->
+  <xsl:param name="attributefirstColWidth" select="'15%'"/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- end of pasted settings file 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  -->
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
   <!-- 
     
     mob 2010-03-23
     calling program passes in value for requested docid  -->
-  <xsl:param name="docid" select=" '' "/>
+  <xsl:param name="docid" select="''"/>
   <!-- calling app passes in it's own name -->
-  <xsl:param name="referrer" select=" '' "/>
+  <xsl:param name="referrer" select="''"/>
   <xsl:template match="/">
     <xsl:param name="docid" select="$docid"/>
     <xsl:param name="referrer" select="$referrer"/>
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="[% site.url.root %]/w3_recommended.css"/>
+        <!-- to be inserted at install -->
+        <!--    <link rel="stylesheet" type="text/css" href="[% site.url.root %]/w3_recommended.css"/>
         <link rel="stylesheet" type="text/css" href="[% site.url.root %]/css/navigation.css"/>
-        <link rel="stylesheet" type="text/css" href="[% site.url.root %]/css/sbclter.css"/>
+        <link rel="stylesheet" type="text/css" href="[% site.url.root %]/css/sbclter.css"/> -->
         <!-- 2016-10-08, 
           in which mob tests latex rendering -->
         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"/>
@@ -73,11 +401,15 @@
       </head>
       <xsl:element name="body">
         <!-- coverage pages have a map -->
-        <xsl:if test="$displaymodule='coverageall'">
+        <xsl:if test="$displaymodule = 'coverageall'">
           <xsl:attribute name="onload">initialize_map()</xsl:attribute>
         </xsl:if>
         <!-- begin the header area -->
-        <xsl:call-template name="pageheader"/>
+
+        <!-- removed manually, 2019-05-08
+        
+        <xsl:call-template name="pageheader"/> -->
+
         <!-- end the header area -->
         <!-- begin the content area -->
         <!--
@@ -87,28 +419,30 @@
          -->
         <xsl:element name="div">
           <xsl:attribute name="id">{$mainTableAligmentStyle}</xsl:attribute>
-          <xsl:if test="$referrer='showDraftDataset.cgi' ">
+          <xsl:if test="$referrer = 'showDraftDataset.cgi'">
             <xsl:attribute name="style">border: 4px orange solid</xsl:attribute>
             <div style="color: orange; font-weight: bold ">
               <xsl:text> DRAFT</xsl:text>
             </div>
           </xsl:if>
-          <xsl:apply-templates select="*[local-name()='eml']"/>
+          <xsl:apply-templates select="*[local-name() = 'eml']"/>
         </xsl:element>
         <!-- closes the div element around the page. -->
         <!-- mob 2010-03-24 mob added to catch error msgs. -->
         <div>
           <xsl:apply-templates select="error"/>
         </div>
+
+        <!-- commented out manually, mob 2019-05-08 -->
         <!-- end the content area -->
         <!-- begin the right sidebar area -->
-        <xsl:call-template name="page_rightsidebar"/>
+        <!--       <xsl:call-template name="page_rightsidebar"/> -->
         <!-- end the right sidebar area -->
         <!-- begin the left sidebar area -->
-        <xsl:call-template name="page_leftsidebar"/>
+        <!--      <xsl:call-template name="page_leftsidebar"/>  -->
         <!-- end the left sidebar area -->
         <!-- begin the footer area -->
-        <xsl:call-template name="pagefooter"/>
+        <!--       <xsl:call-template name="pagefooter"/>  -->
         <!-- end the footer area -->
       </xsl:element>
     </html>
@@ -118,10 +452,13 @@
   <xsl:template match="error">
     <xsl:value-of select="."/>
   </xsl:template>
-  <xsl:template match="*[local-name()='eml']">
+  
+  
+  <xsl:template match="*[local-name() = 'eml']">
     <!-- hang onto first title to pass to child pages -->
     <xsl:param name="resourcetitle">
-      <xsl:value-of select="*/title"/>
+      <xsl:text>FOO FOO FOO</xsl:text>
+     <!--  <xsl:value-of select="*/title"/> -->
     </xsl:param>
     <xsl:param name="packageID">
       <xsl:value-of select="@packageId"/>
@@ -144,9 +481,9 @@
     </xsl:for-each>
     <!-- Additional metadata-->
     <xsl:choose>
-      <xsl:when test="$displaymodule='additionalmetadata'">
+      <xsl:when test="$displaymodule = 'additionalmetadata'">
         <xsl:for-each select="additionalMetadata">
-          <xsl:if test="$additionalmetadataindex=position()">
+          <xsl:if test="$additionalmetadataindex = position()">
             <div class="{$tabledefaultStyle}">
               <xsl:call-template name="additionalmetadata"/>
             </div>
@@ -154,8 +491,8 @@
         </xsl:for-each>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:if test="$displaymodule='dataset'">
-          <xsl:if test="$withAdditionalMetadataLink='1'">
+        <xsl:if test="$displaymodule = 'dataset'">
+          <xsl:if test="$withAdditionalMetadataLink = '1'">
             <xsl:for-each select="additionalMetadata">
               <div class="{$tabledefaultStyle}">
                 <xsl:call-template name="additionalmetadataURL">
@@ -168,8 +505,8 @@
       </xsl:otherwise>
     </xsl:choose>
     <!-- xml format-->
-    <xsl:if test="$displaymodule='dataset'">
-      <xsl:if test="$withOriginalXMLLink='1'">
+    <xsl:if test="$displaymodule = 'dataset'">
+      <xsl:if test="$withOriginalXMLLink = '1'">
         <xsl:call-template name="xml"/>
       </xsl:if>
     </xsl:if>
@@ -178,37 +515,37 @@
                        dataset part
        ********************************************************-->
   <xsl:template name="emldataset">
-    <xsl:param name="resourcetitle" select="$resourcetitle"/>
+  <!--   <xsl:param name="resourcetitle" select="$resourcetitle"/> -->
     <xsl:param name="entitytype" select="$entitytype"/>
     <xsl:param name="entityindex" select="$entityindex"/>
     <xsl:param name="packageID"/>
     <!-- when you put the select here, it broke. understand why, please.  -->
     <!-- <div class="{$mainContainerTableStyle}"> -->
-    <xsl:if test="$displaymodule='dataset'">
+    <xsl:if test="$displaymodule = 'dataset'">
       <xsl:call-template name="datasetpart">
         <xsl:with-param name="packageID" select="$packageID"/>
       </xsl:call-template>
     </xsl:if>
-    <xsl:if test="$displaymodule='entity'">
+    <xsl:if test="$displaymodule = 'entity'">
       <xsl:call-template name="entitypart"/>
     </xsl:if>
     <!-- mob added 2010-03-26 -->
-    <xsl:if test="$displaymodule='responsibleparties'">
+    <xsl:if test="$displaymodule = 'responsibleparties'">
       <xsl:call-template name="responsiblepartiespart">
         <xsl:with-param name="docid" select="$docid"/>
-        <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
-        <xsl:with-param name="packageID" select="$packageID"/>
+ <!--        <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
+        <xsl:with-param name="packageID" select="$packageID"/> --> 
       </xsl:call-template>
     </xsl:if>
     <!-- mob added 2010-03-26. this one only used by attribute-level coverage  -->
-    <xsl:if test="$displaymodule='coverage' ">
+    <xsl:if test="$displaymodule = 'coverage'">
       <xsl:call-template name="coveragepart">
         <xsl:with-param name="docid" select="$docid"/>
         <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
       </xsl:call-template>
     </xsl:if>
     <!-- mob added 2010-03-26  -->
-    <xsl:if test="$displaymodule='coverageall' ">
+    <xsl:if test="$displaymodule = 'coverageall'">
       <xsl:call-template name="ifcoverage">
         <xsl:with-param name="docid" select="$docid"/>
         <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
@@ -216,32 +553,32 @@
       </xsl:call-template>
     </xsl:if>
     <!-- mob added 2010-03-26  -->
-    <xsl:if test="$displaymodule='methodsall' ">
+    <xsl:if test="$displaymodule = 'methodsall'">
       <xsl:call-template name="ifmethods">
         <xsl:with-param name="docid" select="$docid"/>
         <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
         <xsl:with-param name="packageID" select="$packageID"/>
       </xsl:call-template>
     </xsl:if>
-    <xsl:if test="$displaymodule='attribute'">
+    <xsl:if test="$displaymodule = 'attribute'">
       <xsl:call-template name="attributepart"/>
     </xsl:if>
-    <xsl:if test="$displaymodule='attributedomain'">
+    <xsl:if test="$displaymodule = 'attributedomain'">
       <xsl:call-template name="datasetattributedomain"/>
     </xsl:if>
-    <xsl:if test="$displaymodule='attributecoverage'">
+    <xsl:if test="$displaymodule = 'attributecoverage'">
       <xsl:call-template name="datasetattributecoverage">
         <xsl:with-param name="entitytype" select="$entitytype"/>
         <xsl:with-param name="entityindex" select="$entityindex"/>
       </xsl:call-template>
     </xsl:if>
-    <xsl:if test="$displaymodule='attributemethod'">
+    <xsl:if test="$displaymodule = 'attributemethod'">
       <xsl:call-template name="datasetattributemethod"/>
     </xsl:if>
-    <xsl:if test="$displaymodule='inlinedata'">
+    <xsl:if test="$displaymodule = 'inlinedata'">
       <xsl:call-template name="emlinlinedata"/>
     </xsl:if>
-    <xsl:if test="$displaymodule='attributedetail'">
+    <xsl:if test="$displaymodule = 'attributedetail'">
       <xsl:call-template name="entityparam"/>
     </xsl:if>
     <!--   </div> -->
@@ -256,9 +593,9 @@
   <!--************ Entity diplay *****************-->
   <xsl:template name="entitypart">
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <xsl:call-template name="entitypartcommon"/>
         </xsl:for-each>
@@ -286,42 +623,42 @@
   <!--************ Responsible Parties display *****************-->
   <xsl:template name="responsiblepartiespart">
     <xsl:param name="docid" select="$docid"/>
-    <xsl:param name="resourcetitle" select="$resourcetitle"/>
-    <xsl:param name="packageID" select="$packageID"/>
+ <!--    <xsl:param name="resourcetitle" select="$resourcetitle"/>
+    <xsl:param name="packageID" select="$packageID"/> --> 
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <xsl:call-template name="responsibleparties">
             <xsl:with-param name="docid" select="$docid"/>
-            <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
-            <xsl:with-param name="packageID" select="$packageID"/>
+   <!--          <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
+            <xsl:with-param name="packageID" select="$packageID"/> --> 
           </xsl:call-template>
         </xsl:for-each>
       </xsl:when>
       <xsl:otherwise>
         <xsl:call-template name="responsibleparties">
           <xsl:with-param name="docid" select="$docid"/>
-          <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
-          <xsl:with-param name="packageID" select="$packageID"/>
+  <!--         <xsl:with-param name="resourcetitle" select="$resourcetitle"/>
+          <xsl:with-param name="packageID" select="$packageID"/> --> 
         </xsl:call-template>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
   <xsl:template name="responsibleparties">
     <xsl:param name="docid" select="$docid"/>
-    <xsl:param name="resourcetitle" select="$resourcetitle"/>
-    <xsl:param name="packageID" select="$packageID"/>
+  <!--   <xsl:param name="resourcetitle" select="$resourcetitle"/>
+    <xsl:param name="packageID" select="$packageID"/> --> 
     <xsl:call-template name="datasettitle">
-      <xsl:with-param name="packageID" select="$packageID"/>
+   <!--      <xsl:with-param name="packageID" select="$packageID"/>  --> 
     </xsl:call-template>
     <table class="onehundred_percent">
       <tr>
         <td>
           <xsl:call-template name="datasetmenu">
             <xsl:with-param name="currentmodule">responsibleparties</xsl:with-param>
-            <xsl:with-param name="packageID" select="$packageID"/>
+ <!--            <xsl:with-param name="packageID" select="$packageID"/> --> 
           </xsl:call-template>
         </td>
       </tr>
@@ -342,7 +679,7 @@
                         <xsl:with-param name="partysecondColStyle" select="$secondColStyle"/>
                       </xsl:call-template>
                     </td>
-                    <xsl:for-each select="following-sibling::publisher[position()=1]">
+                    <xsl:for-each select="following-sibling::publisher[position() = 1]">
                       <td class="fortyfive_percent">
                         <xsl:call-template name="party">
                           <xsl:with-param name="partyfirstColStyle" select="$firstColStyle"/>
@@ -365,7 +702,7 @@
                         <xsl:with-param name="partysecondColStyle" select="$secondColStyle"/>
                       </xsl:call-template>
                     </td>
-                    <xsl:for-each select="following-sibling::creator[position()=1]">
+                    <xsl:for-each select="following-sibling::creator[position() = 1]">
                       <td class="fortyfive_percent">
                         <xsl:call-template name="party">
                           <xsl:with-param name="partyfirstColStyle" select="$firstColStyle"/>
@@ -389,7 +726,7 @@
                         <xsl:with-param name="partysecondColStyle" select="$secondColStyle"/>
                       </xsl:call-template>
                     </td>
-                    <xsl:for-each select="following-sibling::contact[position()=1]">
+                    <xsl:for-each select="following-sibling::contact[position() = 1]">
                       <td class="fortyfive_percent">
                         <xsl:call-template name="party">
                           <xsl:with-param name="partyfirstColStyle" select="$firstColStyle"/>
@@ -413,7 +750,7 @@
                         <xsl:with-param name="partysecondColStyle" select="$secondColStyle"/>
                       </xsl:call-template>
                     </td>
-                    <xsl:for-each select="following-sibling::associatedParty[position()=1]">
+                    <xsl:for-each select="following-sibling::associatedParty[position() = 1]">
                       <td class="fortyfive_percent">
                         <xsl:call-template name="party">
                           <xsl:with-param name="partyfirstColStyle" select="$firstColStyle"/>
@@ -437,7 +774,7 @@
                         <xsl:with-param name="partysecondColStyle" select="$secondColStyle"/>
                       </xsl:call-template>
                     </td>
-                    <xsl:for-each select="following-sibling::metadataProvider[position()=1]">
+                    <xsl:for-each select="following-sibling::metadataProvider[position() = 1]">
                       <td class="fortyfive_percent">
                         <xsl:call-template name="party">
                           <xsl:with-param name="partyfirstColStyle" select="$firstColStyle"/>
@@ -457,11 +794,11 @@
   </xsl:template>
   <xsl:template name="coveragepart">
     <xsl:param name="docid" select="$docid"/>
-    <xsl:param name="resourcetitle" select="$resourcetitle"/>
+  <!--   <xsl:param name="resourcetitle" select="$resourcetitle"/> --> 
     <h3>Data Set Coverage</h3>
-    <h4><xsl:value-of select="$resourcetitle"/>
-       (<a><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/></xsl:attribute>return to dataset summary</a>)
-    </h4>
+  <!--   <h4><xsl:value-of select="$resourcetitle"/>  (<a><xsl:attribute name="href"><xsl:value-of
+            select="$tripleURI"/><xsl:value-of select="$docid"/></xsl:attribute>return to dataset
+        summary</a>) </h4> --> 
     <!-- add in the coverage info -->
     <table class="subGroup onehundred_percent">
       <tr>
@@ -513,10 +850,10 @@
   -->
   <xsl:template name="coverageall">
     <xsl:param name="docid" select="$docid"/>
-    <xsl:param name="resourcetitle" select="$resourcetitle"/>
-    <xsl:param name="packageID" select="$packageID"/>
+ <!--    <xsl:param name="resourcetitle" select="$resourcetitle"/>
+    <xsl:param name="packageID" select="$packageID"/>  -->
     <xsl:call-template name="datasettitle">
-      <xsl:with-param name="packageID" select="$packageID"/>
+ <!--      <xsl:with-param name="packageID" select="$packageID"/> --> 
     </xsl:call-template>
     <table>
       <tr>
@@ -631,10 +968,10 @@
                       <th>
                         <!-- create a label for that attribute's coverage info. use the orientation and attr label if it has one -->
                         <xsl:choose>
-                          <xsl:when test="ancestor::dataTable/*//attributeOrientation ='column' ">
+                          <xsl:when test="ancestor::dataTable/*//attributeOrientation = 'column'">
                             <xsl:text>Temporal, Geographic and/or Taxonomic information that applies to the data table column: </xsl:text>
                           </xsl:when>
-                          <xsl:when test="ancestor::dataTable/*//attributeOrientation ='row' ">
+                          <xsl:when test="ancestor::dataTable/*//attributeOrientation = 'row'">
                             <xsl:text>Temporal, Geographic and/or Taxonomic information that applies to the data table row: </xsl:text>
                           </xsl:when>
                         </xsl:choose>
@@ -708,7 +1045,8 @@
       <xsl:otherwise>
         <xsl:call-template name="nodemissing">
           <xsl:with-param name="resourcetitle"/>
-          <xsl:with-param name="nodemissing_message">No methods information available</xsl:with-param>
+          <xsl:with-param name="nodemissing_message">No methods information
+            available</xsl:with-param>
           <xsl:with-param name="currentmodule" select="$displaymodule"/>
         </xsl:call-template>
       </xsl:otherwise>
@@ -727,13 +1065,16 @@
       <xsl:otherwise>
         <xsl:call-template name="nodemissing">
           <xsl:with-param name="resourcetitle"/>
-          <xsl:with-param name="nodemissing_message">No coverage information available</xsl:with-param>
+          <xsl:with-param name="nodemissing_message">No coverage information
+            available</xsl:with-param>
           <xsl:with-param name="currentmodule" select="$displaymodule"/>
         </xsl:call-template>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
   <xsl:template name="nodemissing">
+    <xsl:text>TO DO, or reinstate</xsl:text>
+    <!-- 
     <xsl:param name="docid" select="$docid"/>
     <xsl:param name="resourcetitle" select="$resourcetitle"/>
     <xsl:param name="nodemissing_message"/>
@@ -755,14 +1096,17 @@
         </td>
       </tr>
     </table>
+    -->
+    
   </xsl:template>
   <xsl:template name="methodsall">
     <xsl:param name="docid" select="$docid"/>
-    <xsl:param name="resourcetitle" select="$resourcetitle"/>
-    <xsl:param name="packageID" select="$packageID"/>
+ <!--    <xsl:param name="resourcetitle" select="$resourcetitle"/>
+    <xsl:param name="packageID" select="$packageID"/> 
     <xsl:call-template name="datasettitle">
       <xsl:with-param name="packageID" select="$packageID"/>
-    </xsl:call-template>
+    </xsl:call-template>--> 
+    
     <table class="onehundred_percent">
       <tr>
         <td>
@@ -798,12 +1142,13 @@
           <tr> -->
           <!--  TO DO: this needs to work for all entity types. choose label based on element name  -->
           <xsl:for-each select="dataTable">
-            <xsl:if test="(./methods) or (*//attribute/methods) or (./method) or (*//attribute/method) ">
+            <xsl:if
+              test="(./methods) or (*//attribute/methods) or (./method) or (*//attribute/method)">
               <h4>
                 <xsl:text>These methods, instrumentation and/or protocols apply  to Data Table: </xsl:text>
                 <xsl:value-of select="entityName"/>
               </h4>
-              <xsl:if test="(./method) or (./methods) ">
+              <xsl:if test="(./method) or (./methods)">
                 <!-- first find an entity-level methods tree -->
                 <!--  this becomes METHODS in eml 2.1 -->
                 <xsl:for-each select="method | methods">
@@ -813,7 +1158,7 @@
                   </xsl:call-template>
                 </xsl:for-each>
               </xsl:if>
-              <xsl:if test="(*//attribute/methods)  or (*//attribute/method)">
+              <xsl:if test="(*//attribute/methods) or (*//attribute/method)">
                 <!-- an attribute descendant has a method tree -->
                 <xsl:for-each select="*//attribute/method | *//attribute/methods">
                   <!-- mob fixed 2011-12-23 - missing 'or'  -->
@@ -822,10 +1167,10 @@
                       <th>
                         <!-- create a label for that attribute's coverage info. use the orientation and attr label if it has one -->
                         <xsl:choose>
-                          <xsl:when test="ancestor::dataTable/*//attributeOrientation ='column' ">
+                          <xsl:when test="ancestor::dataTable/*//attributeOrientation = 'column'">
                             <xsl:text>These methods, instrumentation and/or protocols apply  to the data table column: </xsl:text>
                           </xsl:when>
-                          <xsl:when test="ancestor::dataTable/*//attributeOrientation ='row' ">
+                          <xsl:when test="ancestor::dataTable/*//attributeOrientation = 'row'">
                             <xsl:text>These methods, instrumentation and/or protocols apply  to the data table row: </xsl:text>
                           </xsl:when>
                         </xsl:choose>
@@ -878,9 +1223,9 @@
     <tr>
       <td>
         <!-- find the subtree to process -->
-        <xsl:if test="$entitytype='dataTable'">
+        <xsl:if test="$entitytype = 'dataTable'">
           <xsl:for-each select="dataTable">
-            <xsl:if test="position()=$entityindex">
+            <xsl:if test="position() = $entityindex">
               <xsl:for-each select="attributeList">
                 <xsl:call-template name="attributelist">
                   <xsl:with-param name="docid" select="$docid"/>
@@ -904,14 +1249,14 @@
     <xsl:param name="attributeindex" select="$attributeindex"/>
     <xsl:variable name="attribute_label">
       <xsl:choose>
-        <xsl:when test="*/attributeList/attribute[number($attributeindex)]/attributeLabel ">
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeLabel "/>
+        <xsl:when test="*/attributeList/attribute[number($attributeindex)]/attributeLabel">
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeLabel"/>
           <xsl:text> (</xsl:text>
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName "/>
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName"/>
           <xsl:text>)</xsl:text>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName "/>
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -940,7 +1285,10 @@
               </div>
               <div class="dataset-entity-part-backtos">
                 <xsl:element name="a">
-                  <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"/></xsl:attribute>
+                  <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                      select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of
+                      select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"
+                    /></xsl:attribute>
                   <xsl:attribute name="class">datasetmenu</xsl:attribute>
                   <xsl:text>Back to Data Table Description</xsl:text>
                 </xsl:element>
@@ -970,14 +1318,14 @@
     <xsl:param name="attributeindex" select="$attributeindex"/>
     <xsl:variable name="attribute_label">
       <xsl:choose>
-        <xsl:when test="*/attributeList/attribute[number($attributeindex)]/attributeLabel ">
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeLabel "/>
+        <xsl:when test="*/attributeList/attribute[number($attributeindex)]/attributeLabel">
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeLabel"/>
           <xsl:text> (</xsl:text>
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName "/>
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName"/>
           <xsl:text>)</xsl:text>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName "/>
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -1006,7 +1354,10 @@
               </div>
               <div class="dataset-entity-part-backtos">
                 <xsl:element name="a">
-                  <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"/></xsl:attribute>
+                  <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                      select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of
+                      select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"
+                    /></xsl:attribute>
                   <xsl:attribute name="class">datasetmenu</xsl:attribute>
                   <xsl:text>Back to Data Table Description</xsl:text>
                 </xsl:element>
@@ -1035,14 +1386,14 @@
     <xsl:param name="attributeindex" select="$attributeindex"/>
     <xsl:variable name="attribute_label">
       <xsl:choose>
-        <xsl:when test="*/attributeList/attribute[number($attributeindex)]/attributeLabel ">
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeLabel "/>
+        <xsl:when test="*/attributeList/attribute[number($attributeindex)]/attributeLabel">
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeLabel"/>
           <xsl:text> (</xsl:text>
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName "/>
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName"/>
           <xsl:text>)</xsl:text>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName "/>
+          <xsl:value-of select="*/attributeList/attribute[number($attributeindex)]/attributeName"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -1071,7 +1422,10 @@
               </div>
               <div class="dataset-entity-part-backtos">
                 <xsl:element name="a">
-                  <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"/></xsl:attribute>
+                  <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                      select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of
+                      select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"
+                    /></xsl:attribute>
                   <xsl:attribute name="class">datasetmenu</xsl:attribute>
                   <xsl:text>Back to Data Table Description</xsl:text>
                 </xsl:element>
@@ -1095,14 +1449,15 @@
   happens here. In march 2014, mob tested a few things without success, but did not dig into refactoring. -->
   <xsl:template name="entityparam">
     <xsl:choose>
-      <xsl:when test="$entitytype=''">
+      <xsl:when test="$entitytype = ''">
         <xsl:variable name="dataTableCount" select="0"/>
         <xsl:variable name="spatialRasterCount" select="0"/>
         <xsl:variable name="spatialVectorCount" select="0"/>
         <xsl:variable name="storedProcedureCount" select="0"/>
         <xsl:variable name="viewCount" select="0"/>
         <xsl:variable name="otherEntityCount" select="0"/>
-        <xsl:for-each select="dataTable|spatialRaster|spatialVector|storedProcedure|view|otherEntity">
+        <xsl:for-each
+          select="dataTable | spatialRaster | spatialVector | storedProcedure | view | otherEntity">
           <xsl:if test="'dataTable' = name()">
             <xsl:variable name="currentNode" select="."/>
             <xsl:variable name="dataTableCount">
@@ -1114,7 +1469,7 @@
             </xsl:variable>
             <xsl:if test="position() = $entityindex">
               <xsl:choose>
-                <xsl:when test="$displaymodule='attributedetail'">
+                <xsl:when test="$displaymodule = 'attributedetail'">
                   <xsl:for-each select="attributeList">
                     <xsl:call-template name="singleattribute">
                       <xsl:with-param name="attributeindex" select="$attributeindex"/>
@@ -1146,7 +1501,7 @@
             </xsl:variable>
             <xsl:if test="position() = $entityindex">
               <xsl:choose>
-                <xsl:when test="$displaymodule='attributedetail'">
+                <xsl:when test="$displaymodule = 'attributedetail'">
                   <xsl:for-each select="attributeList">
                     <xsl:call-template name="singleattribute">
                       <xsl:with-param name="attributeindex" select="$attributeindex"/>
@@ -1178,7 +1533,7 @@
             </xsl:variable>
             <xsl:if test="position() = $entityindex">
               <xsl:choose>
-                <xsl:when test="$displaymodule='attributedetail'">
+                <xsl:when test="$displaymodule = 'attributedetail'">
                   <xsl:for-each select="attributeList">
                     <xsl:call-template name="singleattribute">
                       <xsl:with-param name="attributeindex" select="$attributeindex"/>
@@ -1210,7 +1565,7 @@
             </xsl:variable>
             <xsl:if test="position() = $entityindex">
               <xsl:choose>
-                <xsl:when test="$displaymodule='attributedetail'">
+                <xsl:when test="$displaymodule = 'attributedetail'">
                   <xsl:for-each select="attributeList">
                     <xsl:call-template name="singleattribute">
                       <xsl:with-param name="attributeindex" select="$attributeindex"/>
@@ -1242,7 +1597,7 @@
             </xsl:variable>
             <xsl:if test="position() = $entityindex">
               <xsl:choose>
-                <xsl:when test="$displaymodule='attributedetail'">
+                <xsl:when test="$displaymodule = 'attributedetail'">
                   <xsl:for-each select="attributeList">
                     <xsl:call-template name="singleattribute">
                       <xsl:with-param name="attributeindex" select="$attributeindex"/>
@@ -1274,7 +1629,7 @@
             </xsl:variable>
             <xsl:if test="position() = $entityindex">
               <xsl:choose>
-                <xsl:when test="$displaymodule='attributedetail'">
+                <xsl:when test="$displaymodule = 'attributedetail'">
                   <xsl:for-each select="attributeList">
                     <xsl:call-template name="singleattribute">
                       <xsl:with-param name="attributeindex" select="$attributeindex"/>
@@ -1299,7 +1654,7 @@
       </xsl:when>
       <xsl:otherwise>
         <xsl:choose>
-          <xsl:when test="$displaymodule='attributedetail'">
+          <xsl:when test="$displaymodule = 'attributedetail'">
             <xsl:for-each select="attributeList">
               <xsl:call-template name="singleattribute">
                 <xsl:with-param name="attributeindex" select="$attributeindex"/>
@@ -1322,16 +1677,16 @@
   <xsl:template name="chooseentity" match="dataset">
     <xsl:param name="entityindex"/>
     <xsl:param name="entitytype"/>
-    <xsl:if test="$entitytype='dataTable'">
+    <xsl:if test="$entitytype = 'dataTable'">
       <xsl:for-each select="dataTable">
-        <xsl:if test="position()=$entityindex">
+        <xsl:if test="position() = $entityindex">
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="$displaymodule='entity'">
+                  <xsl:when test="$displaymodule = 'entity'">
                     <xsl:call-template name="dataTable">
                       <xsl:with-param name="datatablefirstColStyle" select="$firstColStyle"/>
                       <xsl:with-param name="datatablesubHeaderStyle" select="$subHeaderStyle"/>
@@ -1348,7 +1703,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="$displaymodule='entity'">
+                <xsl:when test="$displaymodule = 'entity'">
                   <xsl:call-template name="dataTable">
                     <xsl:with-param name="datatablefirstColStyle" select="$firstColStyle"/>
                     <xsl:with-param name="datatablesubHeaderStyle" select="$subHeaderStyle"/>
@@ -1366,16 +1721,16 @@
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="$entitytype='spatialRaster'">
+    <xsl:if test="$entitytype = 'spatialRaster'">
       <xsl:for-each select="spatialRaster">
-        <xsl:if test="position()=$entityindex">
+        <xsl:if test="position() = $entityindex">
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="$displaymodule='entity'">
+                  <xsl:when test="$displaymodule = 'entity'">
                     <xsl:call-template name="spatialRaster">
                       <xsl:with-param name="spatialrasterfirstColStyle" select="$firstColStyle"/>
                       <xsl:with-param name="spatialrastersubHeaderStyle" select="$subHeaderStyle"/>
@@ -1392,7 +1747,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="$displaymodule='entity'">
+                <xsl:when test="$displaymodule = 'entity'">
                   <xsl:call-template name="spatialRaster">
                     <xsl:with-param name="spatialrasterfirstColStyle" select="$firstColStyle"/>
                     <xsl:with-param name="spatialrastersubHeaderStyle" select="$subHeaderStyle"/>
@@ -1410,16 +1765,16 @@
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="$entitytype='spatialVector'">
+    <xsl:if test="$entitytype = 'spatialVector'">
       <xsl:for-each select="spatialVector">
-        <xsl:if test="position()=$entityindex">
+        <xsl:if test="position() = $entityindex">
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="$displaymodule='entity'">
+                  <xsl:when test="$displaymodule = 'entity'">
                     <xsl:call-template name="spatialVector">
                       <xsl:with-param name="spatialvectorfirstColStyle" select="$firstColStyle"/>
                       <xsl:with-param name="spatialvectorsubHeaderStyle" select="$subHeaderStyle"/>
@@ -1436,7 +1791,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="$displaymodule='entity'">
+                <xsl:when test="$displaymodule = 'entity'">
                   <xsl:call-template name="spatialVector">
                     <xsl:with-param name="spatialvectorfirstColStyle" select="$firstColStyle"/>
                     <xsl:with-param name="spatialvectorsubHeaderStyle" select="$subHeaderStyle"/>
@@ -1454,16 +1809,16 @@
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="$entitytype='storedProcedure'">
+    <xsl:if test="$entitytype = 'storedProcedure'">
       <xsl:for-each select="storedProcedure">
-        <xsl:if test="position()=$entityindex">
+        <xsl:if test="position() = $entityindex">
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="$displaymodule='entity'">
+                  <xsl:when test="$displaymodule = 'entity'">
                     <xsl:call-template name="storedProcedure">
                       <xsl:with-param name="storedprocedurefirstColStyle" select="$firstColStyle"/>
                       <xsl:with-param name="storedproceduresubHeaderStyle" select="$subHeaderStyle"/>
@@ -1480,7 +1835,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="$displaymodule='entity'">
+                <xsl:when test="$displaymodule = 'entity'">
                   <xsl:call-template name="storedProcedure">
                     <xsl:with-param name="storedprocedurefirstColStyle" select="$firstColStyle"/>
                     <xsl:with-param name="storedproceduresubHeaderStyle" select="$subHeaderStyle"/>
@@ -1498,16 +1853,16 @@
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="$entitytype='view'">
+    <xsl:if test="$entitytype = 'view'">
       <xsl:for-each select="view">
-        <xsl:if test="position()=$entityindex">
+        <xsl:if test="position() = $entityindex">
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="$displaymodule='entity'">
+                  <xsl:when test="$displaymodule = 'entity'">
                     <xsl:call-template name="view">
                       <xsl:with-param name="viewfirstColStyle" select="$firstColStyle"/>
                       <xsl:with-param name="viewsubHeaderStyle" select="$subHeaderStyle"/>
@@ -1524,7 +1879,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="$displaymodule='entity'">
+                <xsl:when test="$displaymodule = 'entity'">
                   <xsl:call-template name="view">
                     <xsl:with-param name="viewfirstColStyle" select="$firstColStyle"/>
                     <xsl:with-param name="viewsubHeaderStyle" select="$subHeaderStyle"/>
@@ -1542,16 +1897,16 @@
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="$entitytype='otherEntity'">
+    <xsl:if test="$entitytype = 'otherEntity'">
       <xsl:for-each select="otherEntity">
-        <xsl:if test="position()=$entityindex">
+        <xsl:if test="position() = $entityindex">
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="$displaymodule='entity'">
+                  <xsl:when test="$displaymodule = 'entity'">
                     <xsl:call-template name="otherEntity">
                       <xsl:with-param name="otherentityfirstColStyle" select="$firstColStyle"/>
                       <xsl:with-param name="otherentitysubHeaderStyle" select="$subHeaderStyle"/>
@@ -1568,7 +1923,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="$displaymodule='entity'">
+                <xsl:when test="$displaymodule = 'entity'">
                   <xsl:call-template name="otherEntity">
                     <xsl:with-param name="otherentityfirstColStyle" select="$firstColStyle"/>
                     <xsl:with-param name="otherentitysubHeaderStyle" select="$subHeaderStyle"/>
@@ -1590,9 +1945,9 @@
   <xsl:template name="chooseattributelist">
     <xsl:for-each select="attributeList">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="chooseattribute"/>
           </xsl:for-each>
@@ -1605,22 +1960,22 @@
   </xsl:template>
   <xsl:template name="chooseattribute">
     <xsl:for-each select="attribute">
-      <xsl:if test="position()=$attributeindex">
-        <xsl:if test="$displaymodule='attributedomain'">
+      <xsl:if test="position() = $attributeindex">
+        <xsl:if test="$displaymodule = 'attributedomain'">
           <xsl:for-each select="measurementScale/*/*">
             <xsl:call-template name="nonNumericDomain">
               <xsl:with-param name="nondomainfirstColStyle" select="$firstColStyle"/>
             </xsl:call-template>
           </xsl:for-each>
         </xsl:if>
-        <xsl:if test="$displaymodule='attributecoverage'">
+        <xsl:if test="$displaymodule = 'attributecoverage'">
           <xsl:for-each select="coverage">
             <xsl:call-template name="coverage">
               <xsl:with-param name="coveragefirstColStyle" select="$firstColStyle"/>
             </xsl:call-template>
           </xsl:for-each>
         </xsl:if>
-        <xsl:if test="$displaymodule='attributemethod'">
+        <xsl:if test="$displaymodule = 'attributemethod'">
           <xsl:for-each select="method | methods">
             <!-- mob kludge for eml2.1 -->
             <xsl:call-template name="method">
@@ -1641,13 +1996,13 @@
     </tr>
     <tr>
       <td>
-        <xsl:if test="$distributionlevel='toplevel'">
+        <xsl:if test="$distributionlevel = 'toplevel'">
           <xsl:for-each select="distribution">
-            <xsl:if test="position()=$distributionindex">
+            <xsl:if test="position() = $distributionindex">
               <xsl:choose>
-                <xsl:when test="references!=''">
+                <xsl:when test="references != ''">
                   <xsl:variable name="ref_id1" select="references"/>
-                  <xsl:variable name="references1" select="$ids[@id=$ref_id1]"/>
+                  <xsl:variable name="references1" select="$ids[@id = $ref_id1]"/>
                   <xsl:for-each select="$references1">
                     <xsl:for-each select="inline">
                       <pre>
@@ -1669,14 +2024,14 @@
             </xsl:if>
           </xsl:for-each>
         </xsl:if>
-        <xsl:if test="$distributionlevel='entitylevel'">
-          <xsl:if test="$entitytype='dataTable'">
+        <xsl:if test="$distributionlevel = 'entitylevel'">
+          <xsl:if test="$entitytype = 'dataTable'">
             <xsl:for-each select="dataTable">
-              <xsl:if test="position()=$entityindex">
+              <xsl:if test="position() = $entityindex">
                 <xsl:choose>
-                  <xsl:when test="references!=''">
+                  <xsl:when test="references != ''">
                     <xsl:variable name="ref_id2" select="references"/>
-                    <xsl:variable name="references2" select="$ids[@id=$ref_id2]"/>
+                    <xsl:variable name="references2" select="$ids[@id = $ref_id2]"/>
                     <xsl:for-each select="$references2">
                       <xsl:call-template name="choosephysical"/>
                     </xsl:for-each>
@@ -1688,13 +2043,13 @@
               </xsl:if>
             </xsl:for-each>
           </xsl:if>
-          <xsl:if test="$entitytype='spatialRaster'">
+          <xsl:if test="$entitytype = 'spatialRaster'">
             <xsl:for-each select="spatialRaster">
-              <xsl:if test="position()=$entityindex">
+              <xsl:if test="position() = $entityindex">
                 <xsl:choose>
-                  <xsl:when test="references!=''">
+                  <xsl:when test="references != ''">
                     <xsl:variable name="ref_id2" select="references"/>
-                    <xsl:variable name="references2" select="$ids[@id=$ref_id2]"/>
+                    <xsl:variable name="references2" select="$ids[@id = $ref_id2]"/>
                     <xsl:for-each select="$references2">
                       <xsl:call-template name="choosephysical"/>
                     </xsl:for-each>
@@ -1706,13 +2061,13 @@
               </xsl:if>
             </xsl:for-each>
           </xsl:if>
-          <xsl:if test="$entitytype='spatialVector'">
+          <xsl:if test="$entitytype = 'spatialVector'">
             <xsl:for-each select="spatialVector">
-              <xsl:if test="position()=$entityindex">
+              <xsl:if test="position() = $entityindex">
                 <xsl:choose>
-                  <xsl:when test="references!=''">
+                  <xsl:when test="references != ''">
                     <xsl:variable name="ref_id2" select="references"/>
-                    <xsl:variable name="references2" select="$ids[@id=$ref_id2]"/>
+                    <xsl:variable name="references2" select="$ids[@id = $ref_id2]"/>
                     <xsl:for-each select="$references2">
                       <xsl:call-template name="choosephysical"/>
                     </xsl:for-each>
@@ -1724,13 +2079,13 @@
               </xsl:if>
             </xsl:for-each>
           </xsl:if>
-          <xsl:if test="$entitytype='storedProcedure'">
+          <xsl:if test="$entitytype = 'storedProcedure'">
             <xsl:for-each select="storedProcedure">
-              <xsl:if test="position()=$entityindex">
+              <xsl:if test="position() = $entityindex">
                 <xsl:choose>
-                  <xsl:when test="references!=''">
+                  <xsl:when test="references != ''">
                     <xsl:variable name="ref_id2" select="references"/>
-                    <xsl:variable name="references2" select="$ids[@id=$ref_id2]"/>
+                    <xsl:variable name="references2" select="$ids[@id = $ref_id2]"/>
                     <xsl:for-each select="$references2">
                       <xsl:call-template name="choosephysical"/>
                     </xsl:for-each>
@@ -1742,13 +2097,13 @@
               </xsl:if>
             </xsl:for-each>
           </xsl:if>
-          <xsl:if test="$entitytype='view'">
+          <xsl:if test="$entitytype = 'view'">
             <xsl:for-each select="view">
-              <xsl:if test="position()=$entityindex">
+              <xsl:if test="position() = $entityindex">
                 <xsl:choose>
-                  <xsl:when test="references!=''">
+                  <xsl:when test="references != ''">
                     <xsl:variable name="ref_id2" select="references"/>
-                    <xsl:variable name="references2" select="$ids[@id=$ref_id2]"/>
+                    <xsl:variable name="references2" select="$ids[@id = $ref_id2]"/>
                     <xsl:for-each select="$references2">
                       <xsl:call-template name="choosephysical"/>
                     </xsl:for-each>
@@ -1760,13 +2115,13 @@
               </xsl:if>
             </xsl:for-each>
           </xsl:if>
-          <xsl:if test="$entitytype='otherEntity'">
+          <xsl:if test="$entitytype = 'otherEntity'">
             <xsl:for-each select="otherEntity">
-              <xsl:if test="position()=$entityindex">
+              <xsl:if test="position() = $entityindex">
                 <xsl:choose>
-                  <xsl:when test="references!=''">
+                  <xsl:when test="references != ''">
                     <xsl:variable name="ref_id2" select="references"/>
-                    <xsl:variable name="references2" select="$ids[@id=$ref_id2]"/>
+                    <xsl:variable name="references2" select="$ids[@id = $ref_id2]"/>
                     <xsl:for-each select="$references2">
                       <xsl:call-template name="choosephysical"/>
                     </xsl:for-each>
@@ -1784,11 +2139,11 @@
   </xsl:template>
   <xsl:template name="choosephysical">
     <xsl:for-each select="physical">
-      <xsl:if test="position()=$physicalindex">
+      <xsl:if test="position() = $physicalindex">
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:call-template name="choosedistribution"/>
             </xsl:for-each>
@@ -1802,11 +2157,11 @@
   </xsl:template>
   <xsl:template name="choosedistribution">
     <xsl:for-each select="distribution">
-      <xsl:if test="$distributionindex=position()">
+      <xsl:if test="$distributionindex = position()">
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:for-each select="inline">
                 <pre>
@@ -1833,7 +2188,7 @@
        ********************************************************-->
   <xsl:template name="emlcitation">
     <xsl:choose>
-      <xsl:when test="$displaymodule='inlinedata'">
+      <xsl:when test="$displaymodule = 'inlinedata'">
         <xsl:call-template name="emlinlinedata"/>
       </xsl:when>
       <xsl:otherwise>
@@ -1864,7 +2219,7 @@
        ********************************************************-->
   <xsl:template name="emlsoftware">
     <xsl:choose>
-      <xsl:when test="$displaymodule='inlinedata'">
+      <xsl:when test="$displaymodule = 'inlinedata'">
         <xsl:call-template name="emlinlinedata"/>
       </xsl:when>
       <xsl:otherwise>
@@ -1895,7 +2250,7 @@
        ********************************************************-->
   <xsl:template name="emlprotocol">
     <xsl:choose>
-      <xsl:when test="$displaymodule='inlinedata'">
+      <xsl:when test="$displaymodule = 'inlinedata'">
         <xsl:call-template name="emlinlinedata"/>
       </xsl:when>
       <xsl:otherwise>
@@ -1929,9 +2284,10 @@
     <table class="{$tabledefaultStyle}">
       <tr>
         <td>
-          <a><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=additionalmetadata&amp;additionalmetadataindex=<xsl:value-of select="$index"/></xsl:attribute>
-             Additional Metadata
-           </a>
+          <a><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                select="$docid"
+                />&amp;displaymodule=additionalmetadata&amp;additionalmetadataindex=<xsl:value-of
+                select="$index"/></xsl:attribute> Additional Metadata </a>
         </td>
       </tr>
     </table>
@@ -1939,10 +2295,11 @@
   <!--********************************************************
              download xml part
        ********************************************************-->
-  <xsl:template name="xml"><xsl:param name="index"/><br/><a><xsl:attribute name="href"><xsl:value-of select="$xmlURI"/><xsl:value-of select="$docid"/></xsl:attribute>
-          Download the original XML file (in Ecological Metadata Language)
-        </a>
-		Viewable in <a href="http://www.oxygenxml.com" title="Oxygen XML Editor"><img src="http://www.oxygenxml.com/img/resources/oxygen190x62.png" width="95" height="31" alt="Oxygen XML Editor" border="0"/></a></xsl:template>
+  <xsl:template name="xml"><xsl:param name="index"/><br/><a><xsl:attribute name="href"><xsl:value-of
+          select="$xmlURI"/><xsl:value-of select="$docid"/></xsl:attribute> Download the original
+      XML file (in Ecological Metadata Language) </a> Viewable in <a href="http://www.oxygenxml.com"
+      title="Oxygen XML Editor"><img src="http://www.oxygenxml.com/img/resources/oxygen190x62.png"
+        width="95" height="31" alt="Oxygen XML Editor" border="0"/></a></xsl:template>
   <!--
        ********************************************************
              adding ACCESS templates 
@@ -1953,9 +2310,9 @@
     <xsl:param name="accesssubHeaderStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="accessCommon">
               <xsl:with-param name="accessfirstColStyle" select="$accessfirstColStyle"/>
@@ -1979,7 +2336,7 @@
       <xsl:with-param name="accessfirstColStyle" select="$accessfirstColStyle"/>
       <xsl:with-param name="accesssubHeaderStyle" select="$accesssubHeaderStyle"/>
     </xsl:call-template>
-    <xsl:if test="normalize-space(./@order)='allowFirst' and (allow)">
+    <xsl:if test="normalize-space(./@order) = 'allowFirst' and (allow)">
       <xsl:call-template name="allow_deny">
         <xsl:with-param name="permission" select="'allow'"/>
         <xsl:with-param name="accessfirstColStyle" select="$accessfirstColStyle"/>
@@ -1991,7 +2348,7 @@
         <xsl:with-param name="accessfirstColStyle" select="$accessfirstColStyle"/>
       </xsl:call-template>
     </xsl:if>
-    <xsl:if test="normalize-space(acl/@order)='denyFirst' and (allow)">
+    <xsl:if test="normalize-space(acl/@order) = 'denyFirst' and (allow)">
       <xsl:call-template name="allow_deny">
         <xsl:with-param name="permission" select="'allow'"/>
         <xsl:with-param name="accessfirstColStyle" select="$accessfirstColStyle"/>
@@ -2002,12 +2359,10 @@
     <xsl:param name="permission"/>
     <xsl:param name="accessfirstColStyle"/>
     <xsl:choose>
-      <xsl:when test="$permission='allow'">
+      <xsl:when test="$permission = 'allow'">
         <xsl:for-each select="allow">
           <tr>
-            <td class="{$accessfirstColStyle}">
-               Allow:
-              </td>
+            <td class="{$accessfirstColStyle}"> Allow: </td>
             <td class="{$accessfirstColStyle}">
               <xsl:for-each select="./permission">
                 <xsl:text>[</xsl:text>
@@ -2027,9 +2382,7 @@
       <xsl:otherwise>
         <xsl:for-each select="deny">
           <tr>
-            <td class="{$accessfirstColStyle}">
-               Deny:
-              </td>
+            <td class="{$accessfirstColStyle}"> Deny: </td>
             <td class="{$accessfirstColStyle}">
               <xsl:for-each select="./permission">
                 <xsl:text>[</xsl:text>
@@ -2081,10 +2434,20 @@
       <xsl:apply-templates mode="ascii-art"/>
     </pre>
   </xsl:template>
-  <xsl:template match="*" mode="ascii-art"><xsl:call-template name="ascii-art-hierarchy"/><xsl:text/>___element '<xsl:value-of select="local-name()"/>'<xsl:text/><xsl:if test="namespace-uri()"> in ns '<xsl:value-of select="namespace-uri()"/>' ('<xsl:value-of select="name()"/>')</xsl:if><xsl:text/><xsl:apply-templates select="@*" mode="ascii-art"/><xsl:if test="$show_ns"><xsl:for-each select="namespace::*"><xsl:call-template name="ascii-art-hierarchy"/><xsl:text/>  \___namespace '<xsl:value-of select="name()"/>' = '<xsl:value-of select="."/>'
-<xsl:text/></xsl:for-each></xsl:if><xsl:apply-templates mode="ascii-art"/></xsl:template>
-  <xsl:template match="@*" mode="ascii-art"><xsl:call-template name="ascii-art-hierarchy"/><xsl:text/>  \___attribute '<xsl:value-of select="local-name()"/>'<xsl:text/><xsl:if test="namespace-uri()"> in ns '<xsl:value-of select="namespace-uri()"/>' ('<xsl:value-of select="name()"/>')</xsl:if><xsl:text/> = '<xsl:text/><xsl:call-template name="escape-ws"><xsl:with-param name="text" select="."/></xsl:call-template><xsl:text/>'
-<xsl:text/></xsl:template>
+  <xsl:template match="*" mode="ascii-art"><xsl:call-template name="ascii-art-hierarchy"
+    /><xsl:text/>___element '<xsl:value-of select="local-name()"/>'<xsl:text/><xsl:if
+      test="namespace-uri()"> in ns '<xsl:value-of select="namespace-uri()"/>' ('<xsl:value-of
+        select="name()"/>')</xsl:if><xsl:text/><xsl:apply-templates select="@*" mode="ascii-art"
+      /><xsl:if test="$show_ns"><xsl:for-each select="namespace::*"><xsl:call-template
+          name="ascii-art-hierarchy"/><xsl:text/> \___namespace '<xsl:value-of select="name()"/>' =
+          '<xsl:value-of select="."/>' <xsl:text/></xsl:for-each></xsl:if><xsl:apply-templates
+      mode="ascii-art"/></xsl:template>
+  <xsl:template match="@*" mode="ascii-art"><xsl:call-template name="ascii-art-hierarchy"
+    /><xsl:text/> \___attribute '<xsl:value-of select="local-name()"/>'<xsl:text/><xsl:if
+      test="namespace-uri()"> in ns '<xsl:value-of select="namespace-uri()"/>' ('<xsl:value-of
+        select="name()"/>')</xsl:if><xsl:text/> = '<xsl:text/><xsl:call-template name="escape-ws"
+        ><xsl:with-param name="text" select="."/></xsl:call-template><xsl:text/>'
+    <xsl:text/></xsl:template>
   <xsl:template match="text()" mode="ascii-art">
     <xsl:call-template name="ascii-art-hierarchy"/>
     <xsl:text>___text '</xsl:text>
@@ -2094,16 +2457,17 @@
     <xsl:text>'
 </xsl:text>
   </xsl:template>
-  <xsl:template match="comment()" mode="ascii-art"><xsl:call-template name="ascii-art-hierarchy"/><xsl:text/>___comment '<xsl:value-of select="."/>'
-<xsl:text/></xsl:template>
-  <xsl:template match="processing-instruction()" mode="ascii-art"><xsl:call-template name="ascii-art-hierarchy"/><xsl:text/>___processing instruction target='<xsl:value-of select="name()"/>' instruction='<xsl:value-of select="."/>'
-<xsl:text/></xsl:template>
+  <xsl:template match="comment()" mode="ascii-art"><xsl:call-template name="ascii-art-hierarchy"
+    /><xsl:text/>___comment '<xsl:value-of select="."/>' <xsl:text/></xsl:template>
+  <xsl:template match="processing-instruction()" mode="ascii-art"><xsl:call-template
+      name="ascii-art-hierarchy"/><xsl:text/>___processing instruction target='<xsl:value-of
+      select="name()"/>' instruction='<xsl:value-of select="."/>' <xsl:text/></xsl:template>
   <xsl:template name="ascii-art-hierarchy">
     <xsl:for-each select="ancestor::*">
       <xsl:choose>
-        <xsl:when test="local-name()!='additionalMetadata'">
+        <xsl:when test="local-name() != 'additionalMetadata'">
           <xsl:choose>
-            <xsl:when test="following-sibling::node()">  |   </xsl:when>
+            <xsl:when test="following-sibling::node()"> | </xsl:when>
             <xsl:otherwise>
               <xsl:text/>
             </xsl:otherwise>
@@ -2112,7 +2476,7 @@
       </xsl:choose>
     </xsl:for-each>
     <xsl:choose>
-      <xsl:when test="parent::node() and ../child::node()">  |</xsl:when>
+      <xsl:when test="parent::node() and ../child::node()"> |</xsl:when>
       <xsl:otherwise>
         <xsl:text/>
       </xsl:otherwise>
@@ -2171,9 +2535,9 @@
     <xsl:param name="entityindex"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="attributecommon">
               <xsl:with-param name="docid" select="$docid"/>
@@ -2203,9 +2567,9 @@
       <th> </th>
       <xsl:for-each select="attribute">
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <th>
                 <xsl:value-of select="attributeLabel"/>
@@ -2235,14 +2599,15 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:choose>
-                <xsl:when test="attributeName!=''">
+                <xsl:when test="attributeName != ''">
                   <td colspan="1" align="center" class="{$stripes}">
-                    <xsl:for-each select="attributeName"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                    <xsl:for-each select="attributeName"><xsl:value-of select="."/>
+                       <br/></xsl:for-each>
                   </td>
                 </xsl:when>
                 <xsl:otherwise>
@@ -2253,9 +2618,10 @@
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="attributeName!=''">
+              <xsl:when test="attributeName != ''">
                 <td colspan="1" align="center" class="{$stripes}">
-                  <xsl:for-each select="attributeName"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                  <xsl:for-each select="attributeName"><xsl:value-of select="."/>
+                     <br/></xsl:for-each>
                 </td>
               </xsl:when>
               <xsl:otherwise>
@@ -2281,9 +2647,9 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <td colspan="1" align="center" class="{$stripes}">
                 <xsl:value-of select="attributeDefinition"/>
@@ -2313,14 +2679,15 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:choose>
-                <xsl:when test="storageType!=''">
+                <xsl:when test="storageType != ''">
                   <td colspan="1" align="center" class="{$stripes}">
-                    <xsl:for-each select="storageType"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                    <xsl:for-each select="storageType"><xsl:value-of select="."/>
+                       <br/></xsl:for-each>
                   </td>
                 </xsl:when>
                 <xsl:otherwise>
@@ -2331,9 +2698,10 @@
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="storageType!=''">
+              <xsl:when test="storageType != ''">
                 <td colspan="1" align="center" class="{$stripes}">
-                  <xsl:for-each select="storageType"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                  <xsl:for-each select="storageType"><xsl:value-of select="."/>
+                     <br/></xsl:for-each>
                 </td>
               </xsl:when>
               <xsl:otherwise>
@@ -2359,9 +2727,9 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <td colspan="1" align="center" class="{$stripes}">
                 <xsl:for-each select="measurementScale">
@@ -2408,9 +2776,9 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <td colspan="1" align="center" class="{$stripes}">
                 <xsl:for-each select="measurementScale">
@@ -2466,12 +2834,12 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:choose>
-                <xsl:when test="missingValueCode!=''">
+                <xsl:when test="missingValueCode != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <table>
                       <xsl:for-each select="missingValueCode">
@@ -2503,7 +2871,7 @@
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="missingValueCode!=''">
+              <xsl:when test="missingValueCode != ''">
                 <td colspan="1" align="center" class="{$stripes}">
                   <table>
                     <xsl:for-each select="missingValueCode">
@@ -2550,12 +2918,12 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:choose>
-                <xsl:when test="accuracy!=''">
+                <xsl:when test="accuracy != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <xsl:for-each select="accuracy">
                       <xsl:value-of select="attributeAccuracyReport"/>
@@ -2570,7 +2938,7 @@
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="accuracy!=''">
+              <xsl:when test="accuracy != ''">
                 <td colspan="1" align="center" class="{$stripes}">
                   <xsl:for-each select="accuracy">
                     <xsl:value-of select="attributeAccuracyReport"/>
@@ -2610,12 +2978,12 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:choose>
-                <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment!=''">
+                <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <xsl:for-each select="accuracy">
                       <table>
@@ -2649,7 +3017,7 @@
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment!=''">
+              <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment != ''">
                 <td colspan="1" align="center" class="{$stripes}">
                   <xsl:for-each select="accuracy">
                     <table>
@@ -2699,12 +3067,12 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:choose>
-                <xsl:when test="coverage!=''">
+                <xsl:when test="coverage != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <xsl:for-each select="coverage">
                       <xsl:call-template name="attributecoverage">
@@ -2724,7 +3092,7 @@
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="coverage!=''">
+              <xsl:when test="coverage != ''">
                 <td colspan="1" align="center" class="{$stripes}">
                   <xsl:for-each select="coverage">
                     <xsl:call-template name="attributecoverage">
@@ -2760,12 +3128,12 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-          <xsl:when test="references!=''">
+          <xsl:when test="references != ''">
             <xsl:variable name="ref_id" select="references"/>
-            <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+            <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
             <xsl:for-each select="$references">
               <xsl:choose>
-                <xsl:when test="method!='' or methods!=''">
+                <xsl:when test="method != '' or methods != ''">
                   <!-- another mob kludge for eml 2.1 -->
                   <td colspan="1" align="center" class="{$stripes}">
                     <xsl:for-each select="method | methods">
@@ -2791,7 +3159,7 @@
              Also works: when test="method | methods", but used test-for-content for consistency.
             -->
             <xsl:choose>
-              <xsl:when test="method!='' or methods!='' ">
+              <xsl:when test="method != '' or methods != ''">
                 <!-- another mob kludge for eml 2.1 -->
                 <td colspan="1" align="center" class="{$stripes}">
                   <xsl:for-each select="method | methods">
@@ -2820,9 +3188,9 @@
     <xsl:param name="attributeindex"/>
     <table class="{$tableattributeStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="singleattributecommon">
               <xsl:with-param name="docid" select="$docid"/>
@@ -2854,9 +3222,9 @@
       <xsl:for-each select="attribute">
         <xsl:if test="position() = $attributeindex">
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <th>
                   <xsl:value-of select="attributeName"/>
@@ -2888,14 +3256,15 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="attributeLabel!=''">
+                  <xsl:when test="attributeLabel != ''">
                     <td colspan="1" align="center" class="{$stripes}">
-                      <xsl:for-each select="attributeLabel"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                      <xsl:for-each select="attributeLabel"><xsl:value-of select="."/>
+                         <br/></xsl:for-each>
                     </td>
                   </xsl:when>
                   <xsl:otherwise>
@@ -2906,9 +3275,10 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="attributeLabel!=''">
+                <xsl:when test="attributeLabel != ''">
                   <td colspan="1" align="center" class="{$stripes}">
-                    <xsl:for-each select="attributeLabel"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                    <xsl:for-each select="attributeLabel"><xsl:value-of select="."/>
+                       <br/></xsl:for-each>
                   </td>
                 </xsl:when>
                 <xsl:otherwise>
@@ -2936,9 +3306,9 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <td colspan="1" align="center" class="{$stripes}">
                   <xsl:value-of select="attributeDefinition"/>
@@ -2970,14 +3340,15 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="storageType!=''">
+                  <xsl:when test="storageType != ''">
                     <td colspan="1" align="center" class="{$stripes}">
-                      <xsl:for-each select="storageType"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                      <xsl:for-each select="storageType"><xsl:value-of select="."/>
+                         <br/></xsl:for-each>
                     </td>
                   </xsl:when>
                   <xsl:otherwise>
@@ -2988,9 +3359,10 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="storageType!=''">
+                <xsl:when test="storageType != ''">
                   <td colspan="1" align="center" class="{$stripes}">
-                    <xsl:for-each select="storageType"><xsl:value-of select="."/>  <br/></xsl:for-each>
+                    <xsl:for-each select="storageType"><xsl:value-of select="."/>
+                       <br/></xsl:for-each>
                   </td>
                 </xsl:when>
                 <xsl:otherwise>
@@ -3018,9 +3390,9 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <td colspan="1" align="center" class="{$stripes}">
                   <xsl:for-each select="measurementScale">
@@ -3066,9 +3438,9 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <td colspan="1" align="center" class="{$stripes}">
                   <xsl:for-each select="measurementScale">
@@ -3126,12 +3498,12 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="missingValueCode!=''">
+                  <xsl:when test="missingValueCode != ''">
                     <td colspan="1" align="center" class="{$stripes}">
                       <table>
                         <xsl:for-each select="missingValueCode">
@@ -3163,7 +3535,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="missingValueCode!=''">
+                <xsl:when test="missingValueCode != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <table>
                       <xsl:for-each select="missingValueCode">
@@ -3212,12 +3584,12 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="accuracy!=''">
+                  <xsl:when test="accuracy != ''">
                     <td colspan="1" align="center" class="{$stripes}">
                       <xsl:for-each select="accuracy">
                         <xsl:value-of select="attributeAccuracyReport"/>
@@ -3232,7 +3604,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="accuracy!=''">
+                <xsl:when test="accuracy != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <xsl:for-each select="accuracy">
                       <xsl:value-of select="attributeAccuracyReport"/>
@@ -3274,12 +3646,12 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment!=''">
+                  <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment != ''">
                     <td colspan="1" align="center" class="{$stripes}">
                       <xsl:for-each select="accuracy">
                         <table>
@@ -3313,7 +3685,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment!=''">
+                <xsl:when test="accuracy/quantitativeAttributeAccuracyAssessment != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <xsl:for-each select="accuracy">
                       <table>
@@ -3365,12 +3737,12 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
-                  <xsl:when test="coverage!=''">
+                  <xsl:when test="coverage != ''">
                     <td colspan="1" align="center" class="{$stripes}">
                       <xsl:for-each select="coverage">
                         <xsl:call-template name="attributecoverage">
@@ -3390,7 +3762,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:choose>
-                <xsl:when test="coverage!=''">
+                <xsl:when test="coverage != ''">
                   <td colspan="1" align="center" class="{$stripes}">
                     <xsl:for-each select="coverage">
                       <xsl:call-template name="attributecoverage">
@@ -3428,9 +3800,9 @@
             </xsl:choose>
           </xsl:variable>
           <xsl:choose>
-            <xsl:when test="references!=''">
+            <xsl:when test="references != ''">
               <xsl:variable name="ref_id" select="references"/>
-              <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+              <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
               <xsl:for-each select="$references">
                 <xsl:choose>
                   <xsl:when test="method!='' | methods!='' ">
@@ -3526,9 +3898,9 @@
     <xsl:param name="attributeindex"/>
     <xsl:for-each select="nonNumericDomain">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="attributenonnumericdomaincommon">
               <xsl:with-param name="docid" select="$docid"/>
@@ -3560,7 +3932,7 @@
     <!-- if numericdomain only has one test domain,
         it will be displayed inline otherwith will be show a link-->
     <xsl:choose>
-      <xsl:when test="count(textDomain)=1 and not(enumeratedDomain)">
+      <xsl:when test="count(textDomain) = 1 and not(enumeratedDomain)">
         <tr>
           <td class="{$stripes}">
             <b>Definition</b>
@@ -3601,7 +3973,10 @@
         <tr>
           <td colspan="2" align="center" class="{$stripes}">
             <a>
-              <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=attributedomain&amp;entitytype=<xsl:value-of select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"/>&amp;attributeindex=<xsl:value-of select="$attributeindex"/></xsl:attribute>
+              <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                  select="$docid"/>&amp;displaymodule=attributedomain&amp;entitytype=<xsl:value-of
+                  select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"
+                  />&amp;attributeindex=<xsl:value-of select="$attributeindex"/></xsl:attribute>
               <b>Allowed values and definitions</b>
             </a>
           </td>
@@ -3650,9 +4025,9 @@
   <xsl:template name="numericDomain">
     <xsl:param name="stripes"/>
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <tr>
             <td class="{$stripes}">
@@ -3735,9 +4110,9 @@
   <xsl:template name="timedomain">
     <xsl:param name="stripes"/>
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <xsl:for-each select="bounds">
             <tr>
@@ -3787,7 +4162,10 @@
     <xsl:param name="entityindex"/>
     <xsl:param name="attributeindex"/>
     <a>
-      <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=attributecoverage&amp;entitytype=<xsl:value-of select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"/>&amp;attributeindex=<xsl:value-of select="$attributeindex"/></xsl:attribute>
+      <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"
+          />&amp;displaymodule=attributecoverage&amp;entitytype=<xsl:value-of select="$entitytype"
+          />&amp;entityindex=<xsl:value-of select="$entityindex"/>&amp;attributeindex=<xsl:value-of
+          select="$attributeindex"/></xsl:attribute>
       <b>Coverage Info</b>
     </a>
   </xsl:template>
@@ -3797,7 +4175,10 @@
     <xsl:param name="entityindex"/>
     <xsl:param name="attributeindex"/>
     <a>
-      <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=attributemethod&amp;entitytype=<xsl:value-of select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"/>&amp;attributeindex=<xsl:value-of select="$attributeindex"/></xsl:attribute>
+      <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"
+          />&amp;displaymodule=attributemethod&amp;entitytype=<xsl:value-of select="$entitytype"
+          />&amp;entityindex=<xsl:value-of select="$entityindex"/>&amp;attributeindex=<xsl:value-of
+          select="$attributeindex"/></xsl:attribute>
       <b>Method Info</b>
     </a>
   </xsl:template>
@@ -3810,9 +4191,9 @@
     <xsl:param name="nondomainfirstColStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="nonNumericDomainCommon">
               <xsl:with-param name="nondomainfirstColStyle" select="$nondomainfirstColStyle"/>
@@ -3846,8 +4227,7 @@
       <td class="{$nondomainfirstColStyle}">
         <b>Text Domain</b>
       </td>
-      <td class="{$secondColStyle}"> 
-            </td>
+      <td class="{$secondColStyle}">  </td>
     </tr>
     <tr>
       <td class="{$nondomainfirstColStyle}">Definition</td>
@@ -3879,8 +4259,7 @@
         <td class="{$nondomainfirstColStyle}">
           <b>Enumerated Domain</b>
         </td>
-        <td class="{$secondColStyle}"> 
-            </td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="codeDefinition">
         <tr>
@@ -3888,25 +4267,19 @@
           <td>
             <table class="{$tabledefaultStyle}">
               <tr>
-                <td class="{$nondomainfirstColStyle}">
-                               Code
-                              </td>
+                <td class="{$nondomainfirstColStyle}"> Code </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="code"/>
                 </td>
               </tr>
               <tr>
-                <td class="{$nondomainfirstColStyle}">
-                               Definition
-                              </td>
+                <td class="{$nondomainfirstColStyle}"> Definition </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="definition"/>
                 </td>
               </tr>
               <tr>
-                <td class="{$nondomainfirstColStyle}">
-                               Source
-                              </td>
+                <td class="{$nondomainfirstColStyle}"> Source </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="source"/>
                 </td>
@@ -3921,8 +4294,7 @@
         <td class="{$nondomainfirstColStyle}">
           <b>Enumerated Domain(External Set)</b>
         </td>
-        <td> 
-           </td>
+        <td>  </td>
       </tr>
       <tr>
         <td class="{$nondomainfirstColStyle}">Set Name:</td>
@@ -3978,8 +4350,8 @@
     <xsl:if test="entityCodeList">
       <tr>
         <td class="{$nondomainfirstColStyle}" colspan="2">
-          <b>The allowed values and their definitions can be found in another data entity in this package. 
-        Please follow link to description, then download:</b>
+          <b>The allowed values and their definitions can be found in another data entity in this
+            package. Please follow link to description, then download:</b>
         </td>
         <!--   <td class="{$secondColStyle}">&#160;
         </td> -->
@@ -3998,7 +4370,7 @@
             <!-- one more note: tested with dataTable only
           -->
             <xsl:variable name="entity_ref" select="entityCodeList/entityReference"/>
-            <xsl:for-each select="//dataTable[@id=$entity_ref]">
+            <xsl:for-each select="//dataTable[@id = $entity_ref]">
               <xsl:variable name="entity_position">
                 <xsl:number/>
               </xsl:variable>
@@ -4008,7 +4380,7 @@
                 <xsl:with-param name="index" select="$entity_position"/>
               </xsl:call-template>
             </xsl:for-each>
-            <xsl:for-each select="//spatialRaster[@id=$entity_ref]">
+            <xsl:for-each select="//spatialRaster[@id = $entity_ref]">
               <xsl:variable name="entity_position">
                 <xsl:number/>
               </xsl:variable>
@@ -4018,7 +4390,7 @@
                 <xsl:with-param name="index" select="$entity_position"/>
               </xsl:call-template>
             </xsl:for-each>
-            <xsl:for-each select="//spatialVector[@id=$entity_ref]">
+            <xsl:for-each select="//spatialVector[@id = $entity_ref]">
               <xsl:variable name="entity_position">
                 <xsl:number/>
               </xsl:variable>
@@ -4028,7 +4400,7 @@
                 <xsl:with-param name="index" select="$entity_position"/>
               </xsl:call-template>
             </xsl:for-each>
-            <xsl:for-each select="//storedProcedure[@id=$entity_ref]">
+            <xsl:for-each select="//storedProcedure[@id = $entity_ref]">
               <xsl:variable name="entity_position">
                 <xsl:number/>
               </xsl:variable>
@@ -4038,7 +4410,7 @@
                 <xsl:with-param name="index" select="$entity_position"/>
               </xsl:call-template>
             </xsl:for-each>
-            <xsl:for-each select="//view[@id=$entity_ref]">
+            <xsl:for-each select="//view[@id = $entity_ref]">
               <xsl:variable name="entity_position">
                 <xsl:number/>
               </xsl:variable>
@@ -4048,7 +4420,7 @@
                 <xsl:with-param name="index" select="$entity_position"/>
               </xsl:call-template>
             </xsl:for-each>
-            <xsl:for-each select="//otherEntity[@id=$entity_ref]">
+            <xsl:for-each select="//otherEntity[@id = $entity_ref]">
               <xsl:variable name="entity_position">
                 <xsl:number/>
               </xsl:variable>
@@ -4066,11 +4438,11 @@
         <td class="{$secondColStyle}">
           <xsl:variable name="attribute_val_ref" select="entityCodeList/valueAttributeReference"/>
           <xsl:choose>
-            <xsl:when test="//*/attributeLabel[../@id=$attribute_val_ref]">
-              <xsl:value-of select="//*/attributeLabel[../@id=$attribute_val_ref]"/>
+            <xsl:when test="//*/attributeLabel[../@id = $attribute_val_ref]">
+              <xsl:value-of select="//*/attributeLabel[../@id = $attribute_val_ref]"/>
             </xsl:when>
             <xsl:otherwise>
-              <xsl:value-of select="//*/attributeName[../@id=$attribute_val_ref]"/>
+              <xsl:value-of select="//*/attributeName[../@id = $attribute_val_ref]"/>
             </xsl:otherwise>
           </xsl:choose>
         </td>
@@ -4078,13 +4450,14 @@
       <tr>
         <td class="{$nondomainfirstColStyle}">Code definition can be found in</td>
         <td class="{$secondColStyle}">
-          <xsl:variable name="attribute_def_ref" select="entityCodeList/definitionAttributeReference"/>
+          <xsl:variable name="attribute_def_ref"
+            select="entityCodeList/definitionAttributeReference"/>
           <xsl:choose>
-            <xsl:when test="//*/attributeLabel[../@id=$attribute_def_ref]">
-              <xsl:value-of select="//*/attributeLabel[../@id=$attribute_def_ref]"/>
+            <xsl:when test="//*/attributeLabel[../@id = $attribute_def_ref]">
+              <xsl:value-of select="//*/attributeLabel[../@id = $attribute_def_ref]"/>
             </xsl:when>
             <xsl:otherwise>
-              <xsl:value-of select="//*/attributeName[../@id=$attribute_def_ref]"/>
+              <xsl:value-of select="//*/attributeName[../@id = $attribute_def_ref]"/>
             </xsl:otherwise>
           </xsl:choose>
         </td>
@@ -4100,9 +4473,9 @@
     <xsl:param name="constraintfirstColStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="constraintCommon">
               <xsl:with-param name="constraintfirstColStyle" select="$constraintfirstColStyle"/>
@@ -4153,8 +4526,7 @@
   <xsl:template name="primaryKey">
     <xsl:param name="constraintfirstColStyle"/>
     <tr>
-      <td class="{$constraintfirstColStyle}">
-          Primary Key:</td>
+      <td class="{$constraintfirstColStyle}"> Primary Key:</td>
       <td>
         <table class="{$tabledefaultStyle}">
           <xsl:call-template name="constraintBaseGroup">
@@ -4177,8 +4549,7 @@
   <xsl:template name="uniqueKey">
     <xsl:param name="constraintfirstColStyle"/>
     <tr>
-      <td class="{$constraintfirstColStyle}">
-          Unique Key:</td>
+      <td class="{$constraintfirstColStyle}"> Unique Key:</td>
       <td>
         <table class="{$tabledefaultStyle}">
           <xsl:call-template name="constraintBaseGroup">
@@ -4201,8 +4572,7 @@
   <xsl:template name="checkConstraint">
     <xsl:param name="constraintfirstColStyle"/>
     <tr>
-      <td class="{$constraintfirstColStyle}">
-          Checking Constraint: </td>
+      <td class="{$constraintfirstColStyle}"> Checking Constraint: </td>
       <td>
         <table class="{$tabledefaultStyle}">
           <xsl:call-template name="constraintBaseGroup">
@@ -4225,8 +4595,7 @@
   <xsl:template name="foreignKey">
     <xsl:param name="constraintfirstColStyle"/>
     <tr>
-      <td class="{$constraintfirstColStyle}">
-          Foreign Key:</td>
+      <td class="{$constraintfirstColStyle}"> Foreign Key:</td>
       <td>
         <table class="{$tabledefaultStyle}">
           <xsl:call-template name="constraintBaseGroup">
@@ -4250,7 +4619,7 @@
               <xsl:value-of select="entityReference"/>
             </td>
           </tr>
-          <xsl:if test="relationshipType and normalize-space(relationshipType)!=''">
+          <xsl:if test="relationshipType and normalize-space(relationshipType) != ''">
             <tr>
               <td class="{$constraintfirstColStyle}">
                 <xsl:text>Relationship:</xsl:text>
@@ -4260,7 +4629,7 @@
               </td>
             </tr>
           </xsl:if>
-          <xsl:if test="cardinality and normalize-space(cardinality)!=''">
+          <xsl:if test="cardinality and normalize-space(cardinality) != ''">
             <tr>
               <td class="{$constraintfirstColStyle}">
                 <xsl:text>Cardinality:</xsl:text>
@@ -4294,8 +4663,7 @@
   <xsl:template name="joinCondition">
     <xsl:param name="constraintfirstColStyle"/>
     <tr>
-      <td class="{$constraintfirstColStyle}">
-          Join Condition:</td>
+      <td class="{$constraintfirstColStyle}"> Join Condition:</td>
       <td>
         <table class="{$tabledefaultStyle}">
           <xsl:call-template name="foreignKey">
@@ -4318,8 +4686,7 @@
   <xsl:template name="notNullConstraint">
     <xsl:param name="constraintfirstColStyle"/>
     <tr>
-      <td class="{$constraintfirstColStyle}">
-          Not Null Constraint:</td>
+      <td class="{$constraintfirstColStyle}"> Not Null Constraint:</td>
       <td>
         <table class="{$tabledefaultStyle}">
           <xsl:call-template name="constraintBaseGroup">
@@ -4349,7 +4716,7 @@
         <xsl:value-of select="constraintName"/>
       </td>
     </tr>
-    <xsl:if test="constraintDescription and normalize-space(constraintDescription)!=''">
+    <xsl:if test="constraintDescription and normalize-space(constraintDescription) != ''">
       <tr>
         <td class="{$constraintfirstColStyle}">
           <xsl:text>Description:</xsl:text>
@@ -4367,9 +4734,9 @@
          -->
   <xsl:template name="coverage">
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <!--	  <table class="{$tabledefaultStyle}">  -->
           <xsl:for-each select="geographicCoverage">
@@ -4409,9 +4776,9 @@
   </xsl:template>
   <xsl:template name="geographicCoverage">
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <!-- <xsl:for-each select="geographicCoverage"> -->
           <!-- letting the foreach select the current node instead of geographicCoverage lets this work for
@@ -4447,9 +4814,9 @@
       <th colspan="2">
         <!-- label for geoCov group chosen based on lat-lon boolean -->
         <xsl:choose>
-          <xsl:when test="$lat-lon-identical = 'true' ">
+          <xsl:when test="$lat-lon-identical = 'true'">
             <xsl:text>Sampling Site: </xsl:text>
-            <xsl:if test="(contains(@system, 'sbclter' ) ) and (not(contains(@id, 'boilerplate' ) ) ) ">
+            <xsl:if test="(contains(@system, 'sbclter')) and (not(contains(@id, 'boilerplate')))">
               <xsl:value-of select="@id"/>
             </xsl:if>
           </xsl:when>
@@ -4495,13 +4862,13 @@
       <tr>
         <td class="{$firstColStyle}">
           <xsl:choose>
-            <xsl:when test="$lat-lon-identical= 'true' ">Site Coordinates:</xsl:when>
+            <xsl:when test="$lat-lon-identical = 'true'">Site Coordinates:</xsl:when>
             <xsl:otherwise>Bounding Coordinates:</xsl:otherwise>
           </xsl:choose>
         </td>
         <td>
           <xsl:choose>
-            <xsl:when test="$lat-lon-identical = 'true' ">
+            <xsl:when test="$lat-lon-identical = 'true'">
               <xsl:call-template name="boundingCoordinatesSingleLatLon"/>
             </xsl:when>
             <xsl:otherwise>
@@ -4574,7 +4941,7 @@
       </xsl:choose>
     </xsl:variable>
     <xsl:choose>
-      <xsl:when test="$min-max-identical = 'true' ">
+      <xsl:when test="$min-max-identical = 'true'">
         <td class="{$firstColStyle}">Altitude (<xsl:value-of select="altitudeUnits"/>):</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="altitudeMinimum"/>
@@ -4618,15 +4985,18 @@
       </td>
     </tr>
   </xsl:template>
-  <xsl:template match="gRing"><xsl:text>(GRing)  </xsl:text><xsl:text>Latitude: </xsl:text><xsl:value-of select="gRingLatitude"/>,
-    <xsl:text>Longitude: </xsl:text><xsl:value-of select="gRingLongitude"/><br/></xsl:template>
-  <xsl:template match="gRingPoint"><xsl:text>Latitude: </xsl:text><xsl:value-of select="gRingLatitude"/>,
-    <xsl:text>Longitude: </xsl:text><xsl:value-of select="gRingLongitude"/><br/></xsl:template>
+  <xsl:template match="gRing"
+      ><xsl:text>(GRing)  </xsl:text><xsl:text>Latitude: </xsl:text><xsl:value-of
+      select="gRingLatitude"/>, <xsl:text>Longitude: </xsl:text><xsl:value-of
+      select="gRingLongitude"/><br/></xsl:template>
+  <xsl:template match="gRingPoint"><xsl:text>Latitude: </xsl:text><xsl:value-of
+      select="gRingLatitude"/>, <xsl:text>Longitude: </xsl:text><xsl:value-of
+      select="gRingLongitude"/><br/></xsl:template>
   <xsl:template name="temporalCoverage">
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <table class="{$tabledefaultStyle}">
             <xsl:call-template name="temporalCovCommon"/>
@@ -4651,9 +5021,7 @@
   </xsl:template>
   <xsl:template match="singleDateTime">
     <tr>
-      <td class="{$firstColStyle}">
-            Date:
-         </td>
+      <td class="{$firstColStyle}"> Date: </td>
       <td>
         <xsl:call-template name="singleDateType"/>
       </td>
@@ -4661,17 +5029,13 @@
   </xsl:template>
   <xsl:template match="rangeOfDates">
     <tr>
-      <td class="{$firstColStyle}">
-            Begin:
-         </td>
+      <td class="{$firstColStyle}"> Begin: </td>
       <td>
         <xsl:apply-templates select="beginDate"/>
       </td>
     </tr>
     <tr>
-      <td class="{$firstColStyle}">
-            End:
-          </td>
+      <td class="{$firstColStyle}"> End: </td>
       <td>
         <xsl:apply-templates select="endDate"/>
       </td>
@@ -4689,7 +5053,7 @@
         <tr>
           <td colspan="2" class="{$secondColStyle}">
             <xsl:value-of select="calendarDate"/>
-            <xsl:if test="./time and normalize-space(./time)!=''">
+            <xsl:if test="./time and normalize-space(./time) != ''">
               <xsl:text>  at  </xsl:text>
               <xsl:apply-templates select="time"/>
             </xsl:if>
@@ -4703,41 +5067,36 @@
   </xsl:template>
   <xsl:template match="alternativeTimeScale">
     <tr>
-      <td class="{$firstColStyle}">
-            Timescale:</td>
+      <td class="{$firstColStyle}"> Timescale:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="timeScaleName"/>
       </td>
     </tr>
     <tr>
-      <td class="{$firstColStyle}">
-            Time estimate:</td>
+      <td class="{$firstColStyle}"> Time estimate:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="timeScaleAgeEstimate"/>
       </td>
     </tr>
-    <xsl:if test="timeScaleAgeUncertainty and normalize-space(timeScaleAgeUncertainty)!=''">
+    <xsl:if test="timeScaleAgeUncertainty and normalize-space(timeScaleAgeUncertainty) != ''">
       <tr>
-        <td class="{$firstColStyle}">
-            Time uncertainty:</td>
+        <td class="{$firstColStyle}"> Time uncertainty:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="timeScaleAgeUncertainty"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="timeScaleAgeExplanation and normalize-space(timeScaleAgeExplanation)!=''">
+    <xsl:if test="timeScaleAgeExplanation and normalize-space(timeScaleAgeExplanation) != ''">
       <tr>
-        <td class="{$firstColStyle}">
-            Time explanation:</td>
+        <td class="{$firstColStyle}"> Time explanation:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="timeScaleAgeExplanation"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="timeScaleCitation and normalize-space(timeScaleCitation)!=''">
+    <xsl:if test="timeScaleCitation and normalize-space(timeScaleCitation) != ''">
       <tr>
-        <td class="{$firstColStyle}">
-            Citation:</td>
+        <td class="{$firstColStyle}"> Citation:</td>
         <td class="{$secondColStyle}">
           <xsl:apply-templates select="timeScaleCitation"/>
         </td>
@@ -4750,9 +5109,9 @@
   </xsl:template>
   <xsl:template name="taxonomicCoverage">
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <table class="{$tabledefaultStyle}">
             <xsl:call-template name="taxonomicCovCommon"/>
@@ -4802,7 +5161,8 @@
         </td>
       </tr>
     </xsl:for-each>
-    <xsl:if test="classificationSystemModifications and normalize-space(classificationSystemModifications)!=''">
+    <xsl:if
+      test="classificationSystemModifications and normalize-space(classificationSystemModifications) != ''">
       <tr>
         <td class="{$firstColStyle}">Modification:</td>
         <td class="{$secondColStyle}">
@@ -4959,9 +5319,9 @@
     <div itemscope="" itemtype="http://schema.org/Dataset">
       <!--  debug:  <xsl:value-of select="$packageID"/> line 43 dataset.xsl -->
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="datasetheader"/>
             <xsl:call-template name="datasetmixed"/>
@@ -5037,9 +5397,11 @@
         <td width="1%" class="empty"> </td>
         <td width="20%" class="datasetmixed">
           <xsl:choose>
-            <xsl:when test="$currentmodule='datasetmixed' "><xsl:attribute name="class">highlight</xsl:attribute> Summary and Data Links </xsl:when>
+            <xsl:when test="$currentmodule = 'datasetmixed'"><xsl:attribute name="class"
+                >highlight</xsl:attribute> Summary and Data Links </xsl:when>
             <xsl:otherwise>
-              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/></xsl:attribute>Summary and Data Links </a>
+              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"
+                    /><xsl:value-of select="$docid"/></xsl:attribute>Summary and Data Links </a>
             </xsl:otherwise>
           </xsl:choose>
           <!--  
@@ -5054,26 +5416,37 @@
         </td>
         <td width="20%" class="responsibleparties">
           <xsl:choose>
-            <xsl:when test="$currentmodule='responsibleparties' "><xsl:attribute name="class">highlight</xsl:attribute> People and Organizations </xsl:when>
+            <xsl:when test="$currentmodule = 'responsibleparties'"><xsl:attribute name="class"
+                >highlight</xsl:attribute> People and Organizations </xsl:when>
             <xsl:otherwise>
-              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/><xsl:text>&amp;displaymodule=responsibleparties</xsl:text></xsl:attribute>People and Organizations </a>
+              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"
+                    /><xsl:value-of select="$docid"
+                  /><xsl:text>&amp;displaymodule=responsibleparties</xsl:text></xsl:attribute>People
+                and Organizations </a>
             </xsl:otherwise>
           </xsl:choose>
         </td>
         <td width="38%" class="coverageall">
           <xsl:choose>
-            <xsl:when test="$currentmodule='coverageall'  "><xsl:attribute name="class">highlight</xsl:attribute> Temporal, Geographic and
-              Taxonomic Coverage </xsl:when>
+            <xsl:when test="$currentmodule = 'coverageall'"><xsl:attribute name="class"
+                >highlight</xsl:attribute> Temporal, Geographic and Taxonomic Coverage </xsl:when>
             <xsl:otherwise>
-              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/><xsl:text>&amp;displaymodule=coverageall</xsl:text></xsl:attribute>Temporal, Geographic and Taxonomic Coverage </a>
+              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"
+                    /><xsl:value-of select="$docid"
+                  /><xsl:text>&amp;displaymodule=coverageall</xsl:text></xsl:attribute>Temporal,
+                Geographic and Taxonomic Coverage </a>
             </xsl:otherwise>
           </xsl:choose>
         </td>
         <td width="20%" class="methodsall">
           <xsl:choose>
-            <xsl:when test="$currentmodule='methodsall'  "><xsl:attribute name="class">highlight</xsl:attribute> Methods and Protocols </xsl:when>
+            <xsl:when test="$currentmodule = 'methodsall'"><xsl:attribute name="class"
+                >highlight</xsl:attribute> Methods and Protocols </xsl:when>
             <xsl:otherwise>
-              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/><xsl:text>&amp;displaymodule=methodsall</xsl:text></xsl:attribute>Methods and Protocols </a>
+              <a class="datasetmenu"><xsl:attribute name="href"><xsl:value-of select="$tripleURI"
+                    /><xsl:value-of select="$docid"
+                  /><xsl:text>&amp;displaymodule=methodsall</xsl:text></xsl:attribute>Methods and
+                Protocols </a>
             </xsl:otherwise>
           </xsl:choose>
         </td>
@@ -5243,7 +5616,8 @@ begin the right column of the top section for the data table's descriptions  -->
           <!-- create a second easy access table listing the data entities -->
           <!-- the second part of this td is a short list of people. so include the creator node in the test
           so people can show even if there is no entity yet (probably only in a draft) -->
-          <xsl:if test="dataTable|spatialRaster|spatialVector|storedProcedure|view|otherEntity or creator">
+          <xsl:if
+            test="dataTable | spatialRaster | spatialVector | storedProcedure | view | otherEntity or creator">
             <!-- mob added, March 2014, count up the entities so you can vary how you display them 
              usual ordering is data-links first, then people
              -->
@@ -5254,7 +5628,8 @@ begin the right column of the top section for the data table's descriptions  -->
             <xsl:variable name="max_entities_limit2">6</xsl:variable>
             <!-- 
               variable to hold number of entities the dataset has, of any type -->
-            <xsl:variable name="entity_count" select="count(dataTable|spatialRaster|spatialVector|storedProcedure|view|otherEntity)"/>
+            <xsl:variable name="entity_count"
+              select="count(dataTable | spatialRaster | spatialVector | storedProcedure | view | otherEntity)"/>
             <!-- 
               set some booleans using these values  -->
             <xsl:variable name="show_entity_description">
@@ -5270,7 +5645,8 @@ begin the right column of the top section for the data table's descriptions  -->
               </xsl:choose>
             </xsl:variable>
             <!--   TEST: show_entity_description = <xsl:value-of select="$show_entity_description"/> -->
-            <xsl:if test="dataTable|spatialRaster|spatialVector|storedProcedure|view|otherEntity">
+            <xsl:if
+              test="dataTable | spatialRaster | spatialVector | storedProcedure | view | otherEntity">
               <table class="{$tabledefaultStyle}">
                 <xsl:call-template name="datasetentity">
                   <xsl:with-param name="show_entity_description" select="$show_entity_description"/>
@@ -5302,7 +5678,7 @@ begin the right column of the top section for the data table's descriptions  -->
       
       dataset citation  -->
     <h3>Data Set Citation</h3>
-    <xsl:if test="$displaymodule='dataset'">
+    <xsl:if test="$displaymodule = 'dataset'">
       <xsl:call-template name="howtoCite">
         <xsl:with-param name="citetabledefaultStyle" select="$tabledefaultStyle"/>
         <xsl:with-param name="citefirstColStyle" select="$firstColStyle"/>
@@ -5403,7 +5779,10 @@ begin the right column of the top section for the data table's descriptions  -->
     </tr>
     <tr>
       <td colspan="2">
-        <a><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/><xsl:text>&amp;displaymodule=responsibleparties</xsl:text></xsl:attribute>View complete information for all parties </a>
+        <a><xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+              select="$docid"
+            /><xsl:text>&amp;displaymodule=responsibleparties</xsl:text></xsl:attribute>View
+          complete information for all parties </a>
       </td>
     </tr>
     <!-- 
@@ -5466,7 +5845,9 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:otherwise>
           </xsl:choose>
           <xsl:text> </xsl:text>
-          <xsl:if test="electronicMailAddress">[  <a><xsl:attribute name="href"><xsl:text>mailto:</xsl:text><xsl:value-of select="electronicMailAddress"/></xsl:attribute>email</a> ] </xsl:if>
+          <xsl:if test="electronicMailAddress">[  <a><xsl:attribute name="href"
+                  ><xsl:text>mailto:</xsl:text><xsl:value-of select="electronicMailAddress"
+                /></xsl:attribute>email</a> ] </xsl:if>
         </td>
       </tr>
     </xsl:for-each>
@@ -5692,7 +6073,7 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:value-of select="changeDate"/>
       </td>
     </tr>
-    <xsl:if test="comment and normalize-space(comment)!=''">
+    <xsl:if test="comment and normalize-space(comment) != ''">
       <tr>
         <td class="{$firstColStyle}"> comment:</td>
         <td class="{$secondColStyle}">
@@ -5792,7 +6173,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <tr>
       <td>
         <xsl:element name="div">
-          <xsl:if test="$add_entity_scrollbar='true'">
+          <xsl:if test="$add_entity_scrollbar = 'true'">
             <xsl:attribute name="class">scroll-if-too-long</xsl:attribute>
           </xsl:if>
           <table>
@@ -5883,9 +6264,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="index"/>
     <xsl:param name="show_entity_description"/>
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <tr>
             <td class="{$firstColStyle}">
@@ -5898,7 +6279,9 @@ begin the right column of the top section for the data table's descriptions  -->
             </td>
             <td class="{secondColStyle}">
               <a>
-                <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
+                <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                    select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of
+                    select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
                 <xsl:value-of select="./entityName"/>
               </a>
               <br/>
@@ -5945,7 +6328,9 @@ begin the right column of the top section for the data table's descriptions  -->
           </td>
           <td class="{secondColStyle}">
             <a>
-              <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
+              <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                  select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of
+                  select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
               <xsl:value-of select="./entityName"/>
             </a>
             <br/>
@@ -5961,7 +6346,8 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template match="text()" mode="resource"/>
   <xsl:template name="datasetentity_old">
     <xsl:param name="show_entity_description"/>
-    <xsl:if test="dataTable or spatialRaster or spatialVector or storedProcedures or view or otherEntity">
+    <xsl:if
+      test="dataTable or spatialRaster or spatialVector or storedProcedures or view or otherEntity">
       <xsl:choose>
         <xsl:when test="dataTable">
           <tr>
@@ -6036,9 +6422,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="type"/>
     <xsl:param name="index"/>
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <tr>
             <td class="{$firstColStyle}">
@@ -6051,7 +6437,9 @@ begin the right column of the top section for the data table's descriptions  -->
             </td>
             <td class="{secondColStyle}">
               <a>
-                <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
+                <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                    select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of
+                    select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
                 <xsl:value-of select="./entityName"/>
               </a>
               <br/>
@@ -6096,7 +6484,9 @@ begin the right column of the top section for the data table's descriptions  -->
           </td>
           <td class="{secondColStyle}">
             <a>
-              <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
+              <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                  select="$docid"/>&amp;displaymodule=entity&amp;entitytype=<xsl:value-of
+                  select="$type"/>&amp;entityindex=<xsl:value-of select="$index"/></xsl:attribute>
               <xsl:value-of select="./entityName"/>
             </a>
             <br/>
@@ -6118,7 +6508,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="entityindex"/>
     <!-- mob added this -->
     <xsl:param name="numberOfColumns">
-      <xsl:if test="$withAttributes='1'">
+      <xsl:if test="$withAttributes = '1'">
         <xsl:value-of select="count(attributeList/attribute/attributeName)"/>
       </xsl:if>
     </xsl:param>
@@ -6146,9 +6536,9 @@ begin the right column of the top section for the data table's descriptions  -->
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:choose>
-              <xsl:when test="references!=''">
+              <xsl:when test="references != ''">
                 <xsl:variable name="ref_id" select="references"/>
-                <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+                <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
                 <xsl:for-each select="$references">
                   <xsl:call-template name="datatablecommon">
                     <xsl:with-param name="datatablefirstColStyle" select="$datatablefirstColStyle"/>
@@ -6176,9 +6566,7 @@ begin the right column of the top section for the data table's descriptions  -->
             <!-- moved this out of datatablecommon, to break up linear arrangment  -->
             <xsl:if test="physical">
               <tr>
-                <th colspan="2">
-        Table Structure:
-      </th>
+                <th colspan="2"> Table Structure: </th>
               </tr>
               <!-- distrubution is still under datatablecommon 
         <xsl:for-each select="physical">
@@ -6212,7 +6600,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </tr>
       <tr>
         <td>
-          <xsl:if test="$withAttributes='1'">
+          <xsl:if test="$withAttributes = '1'">
             <xsl:for-each select="attributeList">
               <xsl:call-template name="datatableattributeList">
                 <xsl:with-param name="datatablefirstColStyle" select="$datatablefirstColStyle"/>
@@ -6334,9 +6722,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="constraint">
       <tr>
-        <td class="{$datatablesubHeaderStyle}" colspan="2">
-        Constraint:
-       </td>
+        <td class="{$datatablesubHeaderStyle}" colspan="2"> Constraint: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="constraint">
@@ -6380,8 +6766,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="datatablecaseSensitive">
     <xsl:param name="datatablefirstColStyle"/>
     <tr>
-      <td class="{$datatablefirstColStyle}">
-       Case Sensitive?</td>
+      <td class="{$datatablefirstColStyle}"> Case Sensitive?</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="."/>
       </td>
@@ -6390,8 +6775,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="datatablenumberOfRecords">
     <xsl:param name="datatablefirstColStyle"/>
     <tr>
-      <td class="{$datatablefirstColStyle}">
-            Number of Records:</td>
+      <td class="{$datatablefirstColStyle}"> Number of Records:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="."/>
       </td>
@@ -6401,8 +6785,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="numberOfColumns"/>
     <xsl:param name="datatablefirstColStyle"/>
     <tr>
-      <td class="{$datatablefirstColStyle}">
-            Number of Columns:</td>
+      <td class="{$datatablefirstColStyle}"> Number of Columns:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="$numberOfColumns"/>
       </td>
@@ -6479,9 +6862,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="cgi-prefix"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:apply-templates select="online">
               <xsl:with-param name="dissubHeaderStyle" select="$dissubHeaderStyle"/>
@@ -6577,7 +6960,7 @@ begin the right column of the top section for the data table's descriptions  -->
             <xsl:choose>
               <!-- 
                       if the content of url is to external data table -->
-              <xsl:when test="starts-with($URL,'http')">
+              <xsl:when test="starts-with($URL, 'http')">
                 <xsl:variable name="URL1" select="$URL"/>
                 <xsl:call-template name="data_use_agreement_form">
                   <xsl:with-param name="entity_name" select="$entity_name"/>
@@ -6589,7 +6972,7 @@ begin the right column of the top section for the data table's descriptions  -->
               </xsl:when>
               <!-- 
                       if URL uses ecogrid protocol, strip off table name, then create metacat query  -->
-              <xsl:when test="starts-with($URL,'ecogrid')">
+              <xsl:when test="starts-with($URL, 'ecogrid')">
                 <xsl:variable name="URLsubstr" select="substring-after($URL, 'ecogrid://')"/>
                 <xsl:variable name="docID" select="substring-after($URLsubstr, '/')"/>
                 <xsl:variable name="URL1">
@@ -6635,7 +7018,7 @@ begin the right column of the top section for the data table's descriptions  -->
           <td class="{$secondColStyle}">
             <a>
               <xsl:choose>
-                <xsl:when test="starts-with($URL,'ecogrid')">
+                <xsl:when test="starts-with($URL, 'ecogrid')">
                   <xsl:variable name="URL1" select="substring-after($URL, 'ecogrid://')"/>
                   <xsl:variable name="docID" select="substring-after($URL1, '/')"/>
                   <xsl:attribute name="href">
@@ -6656,14 +7039,14 @@ begin the right column of the top section for the data table's descriptions  -->
         </xsl:otherwise>
       </xsl:choose>
     </tr>
-    <xsl:if test="ancestor::otherEntity[physical/dataFormat/externallyDefinedFormat/formatName='KML']">
+    <xsl:if
+      test="ancestor::otherEntity[physical/dataFormat/externallyDefinedFormat/formatName = 'KML']">
       <tr>
         <td>View KML content with Google Maps:</td>
         <td>
-          <xsl:element name="a"><xsl:attribute name="href"><xsl:text>http://maps.google.com/?q=</xsl:text><xsl:value-of select="$URL"/></xsl:attribute>
-            
-            CLICK HERE FOR MAP (leaves sbc.lternet.edu)
-          </xsl:element>
+          <xsl:element name="a"><xsl:attribute name="href"
+                ><xsl:text>http://maps.google.com/?q=</xsl:text><xsl:value-of select="$URL"
+              /></xsl:attribute> CLICK HERE FOR MAP (leaves sbc.lternet.edu) </xsl:element>
         </td>
       </tr>
     </xsl:if>
@@ -6671,9 +7054,9 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template match="connection">
     <xsl:param name="disfirstColStyle"/>
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <xsl:call-template name="connectionCommon">
             <xsl:with-param name="disfirstColStyle" select="$disfirstColStyle"/>
@@ -6723,9 +7106,9 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template match="connectionDefinition">
     <xsl:param name="disfirstColStyle"/>
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <xsl:call-template name="connectionDefinitionCommon">
             <xsl:with-param name="disfirstColStyle" select="$disfirstColStyle"/>
@@ -6787,9 +7170,7 @@ begin the right column of the top section for the data table's descriptions  -->
                 <xsl:when test="defaultValue">
                   <xsl:value-of select="defaultValue"/>
                 </xsl:when>
-                <xsl:otherwise>
-                     
-                  </xsl:otherwise>
+                <xsl:otherwise>   </xsl:otherwise>
               </xsl:choose>
             </td>
             <td class="{$secondColStyle}">
@@ -6808,7 +7189,7 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:text>Data are Offline:</xsl:text>
       </td>
     </tr>
-    <xsl:if test="(mediumName) and normalize-space(mediumName)!=''">
+    <xsl:if test="(mediumName) and normalize-space(mediumName) != ''">
       <tr>
         <td class="{$disfirstColStyle}">
           <xsl:text>Medium:</xsl:text>
@@ -6818,14 +7199,14 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="(mediumDensity) and normalize-space(mediumDensity)!=''">
+    <xsl:if test="(mediumDensity) and normalize-space(mediumDensity) != ''">
       <tr>
         <td class="{$disfirstColStyle}">
           <xsl:text>Medium Density:</xsl:text>
         </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="mediumDensity"/>
-          <xsl:if test="(mediumDensityUnits) and normalize-space(mediumDensityUnits)!=''">
+          <xsl:if test="(mediumDensityUnits) and normalize-space(mediumDensityUnits) != ''">
             <xsl:text> (</xsl:text>
             <xsl:value-of select="mediumDensityUnits"/>
             <xsl:text>)</xsl:text>
@@ -6833,7 +7214,7 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="(mediumVol) and normalize-space(mediumVol)!=''">
+    <xsl:if test="(mediumVol) and normalize-space(mediumVol) != ''">
       <tr>
         <td class="{$disfirstColStyle}">
           <xsl:text>Volume:</xsl:text>
@@ -6843,7 +7224,7 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="(mediumFormat) and normalize-space(mediumFormat)!=''">
+    <xsl:if test="(mediumFormat) and normalize-space(mediumFormat) != ''">
       <tr>
         <td class="{$disfirstColStyle}">
           <xsl:text>Format:</xsl:text>
@@ -6853,7 +7234,7 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="(mediumNote) and normalize-space(mediumNote)!=''">
+    <xsl:if test="(mediumNote) and normalize-space(mediumNote) != ''">
       <tr>
         <td class="{$disfirstColStyle}">
           <xsl:text>Notes:</xsl:text>
@@ -6879,8 +7260,8 @@ begin the right column of the top section for the data table's descriptions  -->
         <br /> -->
         <!-- as a form button. -->
         <form method="GET" class="entity-link">
-          <xsl:attribute name="action">
-            mailto:<xsl:value-of select="//dataset/contact[1]/electronicMailAddress"/></xsl:attribute>
+          <xsl:attribute name="action"> mailto:<xsl:value-of
+              select="//dataset/contact[1]/electronicMailAddress"/></xsl:attribute>
           <input type="hidden">
             <xsl:attribute name="value">
               <xsl:value-of select="../../../entityName"/>
@@ -6895,7 +7276,8 @@ begin the right column of the top section for the data table's descriptions  -->
             <xsl:attribute name="name" >body</xsl:attribute>        
           </input> -->
           <input type="submit" class="view-data-button">
-            <xsl:attribute name="value">Request via email to <xsl:value-of select="//dataset/contact[1]/electronicMailAddress"/></xsl:attribute>
+            <xsl:attribute name="value">Request via email to <xsl:value-of
+                select="//dataset/contact[1]/electronicMailAddress"/></xsl:attribute>
           </input>
         </form>
       </td>
@@ -6921,15 +7303,23 @@ begin the right column of the top section for the data table's descriptions  -->
       </td>
       <td class="{$secondColStyle}">
         <!-- for top top distribution-->
-        <xsl:if test="$level='toplevel'">
+        <xsl:if test="$level = 'toplevel'">
           <a>
-            <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=inlinedata&amp;distributionlevel=<xsl:value-of select="$level"/>&amp;distributionindex=<xsl:value-of select="$distributionindex"/></xsl:attribute>
+            <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                select="$docid"/>&amp;displaymodule=inlinedata&amp;distributionlevel=<xsl:value-of
+                select="$level"/>&amp;distributionindex=<xsl:value-of select="$distributionindex"
+              /></xsl:attribute>
             <b>Inline Data</b>
           </a>
         </xsl:if>
-        <xsl:if test="$level='entitylevel'">
+        <xsl:if test="$level = 'entitylevel'">
           <a>
-            <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of select="$docid"/>&amp;displaymodule=inlinedata&amp;distributionlevel=<xsl:value-of select="$level"/>&amp;entitytype=<xsl:value-of select="$entitytype"/>&amp;entityindex=<xsl:value-of select="$entityindex"/>&amp;physicalindex=<xsl:value-of select="$physicalindex"/>&amp;distributionindex=<xsl:value-of select="$distributionindex"/></xsl:attribute>
+            <xsl:attribute name="href"><xsl:value-of select="$tripleURI"/><xsl:value-of
+                select="$docid"/>&amp;displaymodule=inlinedata&amp;distributionlevel=<xsl:value-of
+                select="$level"/>&amp;entitytype=<xsl:value-of select="$entitytype"
+                />&amp;entityindex=<xsl:value-of select="$entityindex"
+                />&amp;physicalindex=<xsl:value-of select="$physicalindex"
+                />&amp;distributionindex=<xsl:value-of select="$distributionindex"/></xsl:attribute>
             <b>Inline Data</b>
           </a>
         </xsl:if>
@@ -6946,7 +7336,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <form method="POST" class="entity-link">
       <xsl:attribute name="action">[% site.url.cgi_bin %]/data-use-agreement.cgi</xsl:attribute>
       <xsl:attribute name="name">
-        <xsl:value-of select="translate($entity_name,'()-.' ,'')"/>
+        <xsl:value-of select="translate($entity_name, '()-.', '')"/>
       </xsl:attribute>
       <input type="hidden" name="qformat"/>
       <input type="hidden" name="sessionid"/>
@@ -6973,7 +7363,8 @@ begin the right column of the top section for the data table's descriptions  -->
       </input>
       <input type="submit" name="data" class="view-data-button">
         <!-- char &#10; is a new line  -->
-        <xsl:attribute name="value">DOWNLOAD DATA: <xsl:text/><xsl:value-of select="$entity_name"/><!-- open for testing.
+        <xsl:attribute name="value">DOWNLOAD DATA: <xsl:text/><xsl:value-of select="$entity_name"
+          /><!-- open for testing.
               <xsl:value-of select="$object_name"/>
                <xsl:value-of select="$package_id"/> --></xsl:attribute>
       </input>
@@ -6988,8 +7379,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="entityName">
     <xsl:param name="entityfirstColStyle"/>
     <tr>
-      <td class="{$entityfirstColStyle}">
-    Name:</td>
+      <td class="{$entityfirstColStyle}"> Name:</td>
       <td class="{$secondColStyle}">
         <b>
           <xsl:value-of select="."/>
@@ -7000,8 +7390,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="entityalternateIdentifier">
     <xsl:param name="entityfirstColStyle"/>
     <tr>
-      <td class="{$entityfirstColStyle}">
-            Identifier:</td>
+      <td class="{$entityfirstColStyle}"> Identifier:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="."/>
       </td>
@@ -7010,8 +7399,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="entityDescription">
     <xsl:param name="entityfirstColStyle"/>
     <tr>
-      <td class="{$entityfirstColStyle}">
-      Description:</td>
+      <td class="{$entityfirstColStyle}"> Description:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="."/>
       </td>
@@ -7020,8 +7408,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="entityadditionalInfo">
     <xsl:param name="entityfirstColStyle"/>
     <tr>
-      <td class="{$entityfirstColStyle}">
-      Additional Info:</td>
+      <td class="{$entityfirstColStyle}"> Additional Info:</td>
       <td>
         <xsl:call-template name="text"/>
       </td>
@@ -7042,7 +7429,7 @@ begin the right column of the top section for the data table's descriptions  -->
         <td class="{$IDfirstColStyle}">Identifier:</td>
         <td class="{$IDsecondColStyle}">
           <xsl:value-of select="$packageID"/>
-          <xsl:if test="normalize-space(../@system)!=''">
+          <xsl:if test="normalize-space(../@system) != ''">
             <xsl:text> (in the </xsl:text>
             <em class="italic">
               <xsl:value-of select="$system"/>
@@ -7063,9 +7450,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="citationsubHeaderStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="citationCommon">
               <xsl:with-param name="citationfirstColStyle" select="$citationfirstColStyle"/>
@@ -7172,7 +7559,7 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:with-param name="citationsubHeaderStyle" select="$citationsubHeaderStyle"/>
       </xsl:call-template>
     </xsl:for-each>
-    <xsl:if test="access and normalize-space(access)!=''">
+    <xsl:if test="access and normalize-space(access) != ''">
       <tr>
         <td colspan="2">
           <xsl:for-each select="access">
@@ -7194,41 +7581,35 @@ begin the right column of the top section for the data table's descriptions  -->
       </td>
     </tr>
     <tr>
-      <td class="{$citationfirstColStyle}">
-            Journal:</td>
+      <td class="{$citationfirstColStyle}"> Journal:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="journal"/>
       </td>
     </tr>
     <tr>
-      <td class="{$citationfirstColStyle}">
-            Volume:</td>
+      <td class="{$citationfirstColStyle}"> Volume:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="volume"/>
       </td>
     </tr>
-    <xsl:if test="issue and normalize-space(issue)!=''">
+    <xsl:if test="issue and normalize-space(issue) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Issue:</td>
+        <td class="{$citationfirstColStyle}"> Issue:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="issue"/>
         </td>
       </tr>
     </xsl:if>
     <tr>
-      <td class="{$citationfirstColStyle}">
-            Page Range:</td>
+      <td class="{$citationfirstColStyle}"> Page Range:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="pageRange"/>
       </td>
     </tr>
-    <xsl:if test="publisher and normalize-space(publisher)!=''">
+    <xsl:if test="publisher and normalize-space(publisher) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publisher:</td>
-        <td class="{$secondColStyle}">
-             </td>
+        <td class="{$citationfirstColStyle}"> Publisher:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="publisher">
         <tr>
@@ -7241,19 +7622,17 @@ begin the right column of the top section for the data table's descriptions  -->
         </tr>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="publicationPlace and normalize-space(publicationPlace)!=''">
+    <xsl:if test="publicationPlace and normalize-space(publicationPlace) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publication Place:</td>
+        <td class="{$citationfirstColStyle}"> Publication Place:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="publicationPlace"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="ISSN and normalize-space(ISSN)!=''">
+    <xsl:if test="ISSN and normalize-space(ISSN) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            ISSN:</td>
+        <td class="{$citationfirstColStyle}"> ISSN:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="ISSN"/>
         </td>
@@ -7264,7 +7643,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="citationfirstColStyle"/>
     <xsl:param name="citationsubHeaderStyle"/>
     <xsl:param name="notshow"/>
-    <xsl:if test="$notshow =''">
+    <xsl:if test="$notshow = ''">
       <tr>
         <td colspan="2" class="{$citationsubHeaderStyle}">
           <xsl:text>BOOK:</xsl:text>
@@ -7272,8 +7651,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </tr>
     </xsl:if>
     <tr>
-      <td class="{$citationfirstColStyle}">
-            Publisher:</td>
+      <td class="{$citationfirstColStyle}"> Publisher:</td>
       <td>
         <xsl:for-each select="publisher">
           <xsl:call-template name="party">
@@ -7282,73 +7660,65 @@ begin the right column of the top section for the data table's descriptions  -->
         </xsl:for-each>
       </td>
     </tr>
-    <xsl:if test="publicationPlace and normalize-space(publicationPlace)!=''">
+    <xsl:if test="publicationPlace and normalize-space(publicationPlace) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publication Place:</td>
+        <td class="{$citationfirstColStyle}"> Publication Place:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="publicationPlace"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="edition and normalize-space(edition)!=''">
+    <xsl:if test="edition and normalize-space(edition) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Edition:</td>
+        <td class="{$citationfirstColStyle}"> Edition:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="edition"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="volume and normalize-space(volume)!=''">
+    <xsl:if test="volume and normalize-space(volume) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Volume:</td>
+        <td class="{$citationfirstColStyle}"> Volume:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="volume"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="numberOfVolumes and normalize-space(numberOfVolumes)!=''">
+    <xsl:if test="numberOfVolumes and normalize-space(numberOfVolumes) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Number of Volumes:</td>
+        <td class="{$citationfirstColStyle}"> Number of Volumes:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="numberOfVolumes"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="totalPages and normalize-space(totalPages)!=''">
+    <xsl:if test="totalPages and normalize-space(totalPages) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Pages:</td>
+        <td class="{$citationfirstColStyle}"> Total Pages:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalPages"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="totalFigures and normalize-space(totalFigures)!=''">
+    <xsl:if test="totalFigures and normalize-space(totalFigures) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Figures:</td>
+        <td class="{$citationfirstColStyle}"> Total Figures:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalFigures"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="totalTables and normalize-space(totalTables)!=''">
+    <xsl:if test="totalTables and normalize-space(totalTables) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Tables:</td>
+        <td class="{$citationfirstColStyle}"> Total Tables:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalTables"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="ISBN and normalize-space(ISBN)!=''">
+    <xsl:if test="ISBN and normalize-space(ISBN) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            ISBN:</td>
+        <td class="{$citationfirstColStyle}"> ISBN:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="ISBN"/>
         </td>
@@ -7363,20 +7733,17 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:text>CHAPTER:</xsl:text>
       </td>
     </tr>
-    <xsl:if test="chapterNumber and normalize-space(chapterNumber)!=''">
+    <xsl:if test="chapterNumber and normalize-space(chapterNumber) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Chapter Number:</td>
+        <td class="{$citationfirstColStyle}"> Chapter Number:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="chapterNumber"/>
         </td>
       </tr>
     </xsl:if>
     <tr>
-      <td class="{$citationfirstColStyle}">
-        Book Editor:</td>
-      <td class="{$secondColStyle}">
-         </td>
+      <td class="{$citationfirstColStyle}"> Book Editor:</td>
+      <td class="{$secondColStyle}">  </td>
     </tr>
     <xsl:for-each select="editor">
       <tr>
@@ -7388,16 +7755,14 @@ begin the right column of the top section for the data table's descriptions  -->
       </tr>
     </xsl:for-each>
     <tr>
-      <td class="{$citationfirstColStyle}">
-        Book Title:</td>
+      <td class="{$citationfirstColStyle}"> Book Title:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="bookTitle"/>
       </td>
     </tr>
-    <xsl:if test="pageRange and normalize-space(pageRange)!=''">
+    <xsl:if test="pageRange and normalize-space(pageRange) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Page Range:</td>
+        <td class="{$citationfirstColStyle}"> Page Range:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="pageRange"/>
         </td>
@@ -7426,12 +7791,8 @@ begin the right column of the top section for the data table's descriptions  -->
       </td>
     </tr>
     <tr>
-      <td class="{$citationfirstColStyle}">
-            Institution:
-            </td>
-      <td class="{$secondColStyle}">
-               
-            </td>
+      <td class="{$citationfirstColStyle}"> Institution: </td>
+      <td class="{$secondColStyle}">   </td>
     </tr>
     <xsl:for-each select="institution">
       <tr>
@@ -7442,10 +7803,9 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:for-each>
-    <xsl:if test="totalPages and normalize-space(totalPages)!=''">
+    <xsl:if test="totalPages and normalize-space(totalPages) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Pages:</td>
+        <td class="{$citationfirstColStyle}"> Total Pages:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalPages"/>
         </td>
@@ -7460,21 +7820,18 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:text>REPORT:</xsl:text>
       </td>
     </tr>
-    <xsl:if test="reportNumber and normalize-space(reportNumber)!=''">
+    <xsl:if test="reportNumber and normalize-space(reportNumber) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Report Number:</td>
+        <td class="{$citationfirstColStyle}"> Report Number:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="reportNumber"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="publisher and normalize-space(publisher)!=''">
+    <xsl:if test="publisher and normalize-space(publisher) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publisher:</td>
-        <td class="{$secondColStyle}">
-             </td>
+        <td class="{$citationfirstColStyle}"> Publisher:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="publisher">
         <tr>
@@ -7486,19 +7843,17 @@ begin the right column of the top section for the data table's descriptions  -->
         </tr>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="publicationPlace and normalize-space(publicationPlace)!=''">
+    <xsl:if test="publicationPlace and normalize-space(publicationPlace) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publication Place:</td>
+        <td class="{$citationfirstColStyle}"> Publication Place:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="publicationPlace"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="totalPages and normalize-space(totalPages)!=''">
+    <xsl:if test="totalPages and normalize-space(totalPages) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Pages:</td>
+        <td class="{$citationfirstColStyle}"> Total Pages:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalPages"/>
         </td>
@@ -7514,17 +7869,14 @@ begin the right column of the top section for the data table's descriptions  -->
       </td>
     </tr>
     <tr>
-      <td class="{$citationfirstColStyle}">
-        Degree:</td>
+      <td class="{$citationfirstColStyle}"> Degree:</td>
       <td class="{$secondColStyle}">
         <xsl:value-of select="degree"/>
       </td>
     </tr>
     <tr>
-      <td class="{$citationfirstColStyle}">
-        Degree Institution:</td>
-      <td class="{$secondColStyle}">
-         </td>
+      <td class="{$citationfirstColStyle}"> Degree Institution:</td>
+      <td class="{$secondColStyle}">  </td>
     </tr>
     <xsl:for-each select="institution">
       <tr>
@@ -7536,10 +7888,9 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:for-each>
-    <xsl:if test="totalPages and normalize-space(totalPages)!=''">
+    <xsl:if test="totalPages and normalize-space(totalPages) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-         Total Pages:</td>
+        <td class="{$citationfirstColStyle}"> Total Pages:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalPages"/>
         </td>
@@ -7554,30 +7905,26 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:text>CONFERENCE PROCEEDINGS:</xsl:text>
       </td>
     </tr>
-    <xsl:if test="conferenceName and normalize-space(conferenceName)!=''">
+    <xsl:if test="conferenceName and normalize-space(conferenceName) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-         Conference Name:</td>
+        <td class="{$citationfirstColStyle}"> Conference Name:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="conferenceName"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="conferenceDate and normalize-space(conferenceDate)!=''">
+    <xsl:if test="conferenceDate and normalize-space(conferenceDate) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-         Date:</td>
+        <td class="{$citationfirstColStyle}"> Date:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="conferenceDate"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="conferenceLocation and normalize-space(conferenceLocation)!=''">
+    <xsl:if test="conferenceLocation and normalize-space(conferenceLocation) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-         Location:</td>
-        <td class="{$secondColStyle}">
-          </td>
+        <td class="{$citationfirstColStyle}"> Location:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <tr>
         <td colspan="2">
@@ -7603,12 +7950,10 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:text>PERSONAL COMMUNICATION:</xsl:text>
       </td>
     </tr>
-    <xsl:if test="publisher and normalize-space(publisher)!=''">
+    <xsl:if test="publisher and normalize-space(publisher) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publisher:</td>
-        <td class="{$secondColStyle}">
-             </td>
+        <td class="{$citationfirstColStyle}"> Publisher:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="publisher">
         <tr>
@@ -7620,30 +7965,26 @@ begin the right column of the top section for the data table's descriptions  -->
         </tr>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="publicationPlace and normalize-space(publicationPlace)!=''">
+    <xsl:if test="publicationPlace and normalize-space(publicationPlace) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publication Place:</td>
+        <td class="{$citationfirstColStyle}"> Publication Place:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="publicationPlace"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="communicationType and normalize-space(communicationType)!=''">
+    <xsl:if test="communicationType and normalize-space(communicationType) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Communication Type:</td>
+        <td class="{$citationfirstColStyle}"> Communication Type:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="communicationType"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="recipient and normalize-space(recipient)!=''">
+    <xsl:if test="recipient and normalize-space(recipient) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Recipient:</td>
-        <td class="{$secondColStyle}">
-             </td>
+        <td class="{$citationfirstColStyle}"> Recipient:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="recipient">
         <tr>
@@ -7664,12 +8005,10 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:text>MAP:</xsl:text>
       </td>
     </tr>
-    <xsl:if test="publisher and normalize-space(publisher)!=''">
+    <xsl:if test="publisher and normalize-space(publisher) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publisher:</td>
-        <td class="{$secondColStyle}">
-             </td>
+        <td class="{$citationfirstColStyle}"> Publisher:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="publisher">
         <tr>
@@ -7681,24 +8020,22 @@ begin the right column of the top section for the data table's descriptions  -->
         </tr>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="edition and normalize-space(edition)!=''">
+    <xsl:if test="edition and normalize-space(edition) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Edition:</td>
+        <td class="{$citationfirstColStyle}"> Edition:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="edition"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="geographicCoverage and normalize-space(geographicCoverage)!=''">
+    <xsl:if test="geographicCoverage and normalize-space(geographicCoverage) != ''">
       <xsl:for-each select="geographicCoverage">
         <xsl:call-template name="geographicCoverage"/>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="scale and normalize-space(scale)!=''">
+    <xsl:if test="scale and normalize-space(scale) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Scale:</td>
+        <td class="{$citationfirstColStyle}"> Scale:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="scale"/>
         </td>
@@ -7714,11 +8051,8 @@ begin the right column of the top section for the data table's descriptions  -->
       </td>
     </tr>
     <tr>
-      <td class="{$citationfirstColStyle}">
-            Publisher:</td>
-      <td class="{$secondColStyle}">
-             
-      </td>
+      <td class="{$citationfirstColStyle}"> Publisher:</td>
+      <td class="{$secondColStyle}">   </td>
     </tr>
     <xsl:for-each select="publisher">
       <tr>
@@ -7729,118 +8063,105 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:for-each>
-    <xsl:if test="publicationPlace and normalize-space(publicationPlace)!=''">
+    <xsl:if test="publicationPlace and normalize-space(publicationPlace) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publication Place:</td>
+        <td class="{$citationfirstColStyle}"> Publication Place:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="publicationPlace"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="referenceType and normalize-space(referenceType)!=''">
+    <xsl:if test="referenceType and normalize-space(referenceType) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Reference Type:</td>
+        <td class="{$citationfirstColStyle}"> Reference Type:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="referenceType"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="volume and normalize-space(volume)!=''">
+    <xsl:if test="volume and normalize-space(volume) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Volume:</td>
+        <td class="{$citationfirstColStyle}"> Volume:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="volume"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="numberOfVolumes and normalize-space(numberOfVolumes)!=''">
+    <xsl:if test="numberOfVolumes and normalize-space(numberOfVolumes) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Number of Volumes:</td>
+        <td class="{$citationfirstColStyle}"> Number of Volumes:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="numberOfVolumes"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="totalPages and normalize-space(totalPages)!=''">
+    <xsl:if test="totalPages and normalize-space(totalPages) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Pages:</td>
+        <td class="{$citationfirstColStyle}"> Total Pages:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalPages"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="totalFigures and normalize-space(totalFigures)!=''">
+    <xsl:if test="totalFigures and normalize-space(totalFigures) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Figures:</td>
+        <td class="{$citationfirstColStyle}"> Total Figures:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalFigures"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="totalTables and normalize-space(totalTables)!=''">
+    <xsl:if test="totalTables and normalize-space(totalTables) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Total Tables:</td>
+        <td class="{$citationfirstColStyle}"> Total Tables:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="totalTables"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="edition and normalize-space(edition)!=''">
+    <xsl:if test="edition and normalize-space(edition) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Edition:</td>
+        <td class="{$citationfirstColStyle}"> Edition:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="edition"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="originalPublication and normalize-space(originalPublication)!=''">
+    <xsl:if test="originalPublication and normalize-space(originalPublication) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Supplemental Info for Original Publication:</td>
+        <td class="{$citationfirstColStyle}"> Supplemental Info for Original Publication:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="originalPublication"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="reprintEdition and normalize-space(reprintEdition)!=''">
+    <xsl:if test="reprintEdition and normalize-space(reprintEdition) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Reprint Edition:</td>
+        <td class="{$citationfirstColStyle}"> Reprint Edition:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="reprintEdition"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="reviewedItem and normalize-space(reviewedItem)!=''">
+    <xsl:if test="reviewedItem and normalize-space(reviewedItem) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Review Item:</td>
+        <td class="{$citationfirstColStyle}"> Review Item:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="reviewedItem"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="ISBN and normalize-space(ISBN)!=''">
+    <xsl:if test="ISBN and normalize-space(ISBN) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            ISBN:</td>
+        <td class="{$citationfirstColStyle}"> ISBN:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="ISBN"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="ISSN and normalize-space(ISSN)!=''">
+    <xsl:if test="ISSN and normalize-space(ISSN) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            ISSN:</td>
+        <td class="{$citationfirstColStyle}"> ISSN:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="ISSN"/>
         </td>
@@ -7856,11 +8177,8 @@ begin the right column of the top section for the data table's descriptions  -->
       </td>
     </tr>
     <tr>
-      <td class="{$citationfirstColStyle}">
-            Publisher:</td>
-      <td class="{$secondColStyle}">
-             
-      </td>
+      <td class="{$citationfirstColStyle}"> Publisher:</td>
+      <td class="{$secondColStyle}">   </td>
     </tr>
     <xsl:for-each select="publisher">
       <tr>
@@ -7871,29 +8189,24 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:for-each>
-    <xsl:if test="publicationPlace and normalize-space(publicationPlace)!=''">
+    <xsl:if test="publicationPlace and normalize-space(publicationPlace) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Publication Place:</td>
-        <td class="{$secondColStyle}">
-             </td>
+        <td class="{$citationfirstColStyle}"> Publication Place:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="publicationPlace">
         <tr>
-          <td class="{$citationfirstColStyle}">
-                     </td>
+          <td class="{$citationfirstColStyle}">  </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
         </tr>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="performer and normalize-space(performer)!=''">
+    <xsl:if test="performer and normalize-space(performer) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            Performer:</td>
-        <td class="{$secondColStyle}">
-             </td>
+        <td class="{$citationfirstColStyle}"> Performer:</td>
+        <td class="{$secondColStyle}">  </td>
       </tr>
       <xsl:for-each select="performer">
         <tr>
@@ -7905,10 +8218,9 @@ begin the right column of the top section for the data table's descriptions  -->
         </tr>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="ISBN and normalize-space(ISBN)!=''">
+    <xsl:if test="ISBN and normalize-space(ISBN) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-            ISBN:</td>
+        <td class="{$citationfirstColStyle}"> ISBN:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="ISBN"/>
         </td>
@@ -7923,29 +8235,25 @@ begin the right column of the top section for the data table's descriptions  -->
         <xsl:text>Presentation:</xsl:text>
       </td>
     </tr>
-    <xsl:if test="conferenceName and normalize-space(conferenceName)!=''">
+    <xsl:if test="conferenceName and normalize-space(conferenceName) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-         Conference Name:</td>
+        <td class="{$citationfirstColStyle}"> Conference Name:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="conferenceName"/>
         </td>
       </tr>
     </xsl:if>
-    <xsl:if test="conferenceDate and normalize-space(conferenceDate)!=''">
+    <xsl:if test="conferenceDate and normalize-space(conferenceDate) != ''">
       <tr>
-        <td class="{$citationfirstColStyle}">
-         Date:</td>
+        <td class="{$citationfirstColStyle}"> Date:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="conferenceDate"/>
         </td>
       </tr>
     </xsl:if>
     <tr>
-      <td class="{$citationfirstColStyle}">
-         Location:</td>
-      <td class="{$secondColStyle}">
-          </td>
+      <td class="{$citationfirstColStyle}"> Location:</td>
+      <td class="{$secondColStyle}">  </td>
     </tr>
     <tr>
       <td colspan="2">
@@ -7969,9 +8277,9 @@ begin the right column of the top section for the data table's descriptions  -->
 	 use this class to unbox the table  -->
     <table class="subGroup onehundred_percent">
       <tr>
-        <th colspan="2"><!-- changed table title. usually protocol refs, sometimes procedural steps --><!-- Step by Step Procedures  -->
-        Protocols and/or Procedures
-      </th>
+        <th colspan="2"
+          ><!-- changed table title. usually protocol refs, sometimes procedural steps --><!-- Step by Step Procedures  -->
+          Protocols and/or Procedures </th>
       </tr>
       <xsl:for-each select="methodStep">
         <!-- methodStep (defined below) calls step (defined in protocol.xsl).  -->
@@ -7994,9 +8302,7 @@ begin the right column of the top section for the data table's descriptions  -->
 			use this class to unbox the table  -->
           <table class="subGroup onehundred_percent">
             <tr>
-              <th colspan="2">
-					Sampling Area and Study Extent
-				  </th>
+              <th colspan="2"> Sampling Area and Study Extent </th>
             </tr>
             <tr>
               <td>
@@ -8014,18 +8320,14 @@ begin the right column of the top section for the data table's descriptions  -->
       <xsl:if test="qualityControl">
         <table class="{$tabledefaultStyle}">
           <tr>
-            <th colspan="2">
-					  Quality Control
-					</th>
+            <th colspan="2"> Quality Control </th>
           </tr>
           <xsl:for-each select="qualityControl">
             <tr>
               <td class="{$methodfirstColStyle}">
                 <b>Quality Control Step<xsl:text/><xsl:value-of select="position()"/>:</b>
               </td>
-              <td width="${secondColWidth}" class="{$secondColStyle}">
-				    
-				 </td>
+              <td width="${secondColWidth}" class="{$secondColStyle}">   </td>
             </tr>
             <xsl:call-template name="qualityControl">
               <xsl:with-param name="methodfirstColStyle" select="$methodfirstColStyle"/>
@@ -8058,9 +8360,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:for-each select="samplingDescription">
       <table class="{$tabledefaultStyle}">
         <tr>
-          <td class="{$methodfirstColStyle}">
-         Sampling Description:
-         </td>
+          <td class="{$methodfirstColStyle}"> Sampling Description: </td>
           <td width="${secondColWidth}">
             <xsl:call-template name="text">
               <xsl:with-param name="textfirstColStyle" select="$methodfirstColStyle"/>
@@ -8081,9 +8381,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="citation">
       <tr>
-        <td class="{$methodfirstColStyle}">
-         Sampling Citation:
-         </td>
+        <td class="{$methodfirstColStyle}"> Sampling Citation: </td>
         <td width="${secondColWidth}">
           <xsl:call-template name="citation">
             <xsl:with-param name="citationfirstColStyle" select="$methodfirstColStyle"/>
@@ -8100,9 +8398,7 @@ begin the right column of the top section for the data table's descriptions  -->
       <!-- this table call puts each coverage node in a box -->
       <table class="{$tabledefaultStyle}">
         <tr>
-          <td class="{$methodfirstColStyle}">
-         Sampling Extent:
-         </td>
+          <td class="{$methodfirstColStyle}"> Sampling Extent: </td>
           <td width="${secondColWidth}">
             <xsl:call-template name="coverage"/>
           </td>
@@ -8111,9 +8407,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="description">
       <tr>
-        <td class="{$methodfirstColStyle}">
-         Sampling Area And Frequency:
-         </td>
+        <td class="{$methodfirstColStyle}"> Sampling Area And Frequency: </td>
         <td width="${secondColWidth}">
           <xsl:call-template name="text">
             <xsl:with-param name="textfirstColStyle" select="$methodfirstColStyle"/>
@@ -8126,9 +8420,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="methodfirstColStyle"/>
     <xsl:for-each select="referenceEntityId">
       <tr>
-        <td class="{$methodfirstColStyle}">
-         Sampling Unit Reference:
-         </td>
+        <td class="{$methodfirstColStyle}"> Sampling Unit Reference: </td>
         <td width="${secondColWidth}" class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8136,9 +8428,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="coverage">
       <tr>
-        <td class="{$methodfirstColStyle}">
-         Sampling Unit Location:
-         </td>
+        <td class="{$methodfirstColStyle}"> Sampling Unit Location: </td>
         <td width="${secondColWidth}">
           <xsl:call-template name="coverage"/>
         </td>
@@ -8185,9 +8475,9 @@ begin the right column of the top section for the data table's descriptions  -->
     </table>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="otherEntityCommon">
               <xsl:with-param name="otherentityfirstColStyle" select="$otherentityfirstColStyle"/>
@@ -8220,9 +8510,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="entityType">
       <tr>
-        <td class="{$otherentityfirstColStyle}">
-            Entity Type:
-            </td>
+        <td class="{$otherentityfirstColStyle}"> Entity Type: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8249,9 +8537,7 @@ begin the right column of the top section for the data table's descriptions  -->
         <td class="{$otherentitysubHeaderStyle}" colspan="2"/>
       </tr>
       <tr>
-        <td class="{$otherentitysubHeaderStyle}" colspan="2">
-        Physical Structure Description:
-      </td>
+        <td class="{$otherentitysubHeaderStyle}" colspan="2"> Physical Structure Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="physical">
@@ -8266,9 +8552,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="coverage">
       <tr>
-        <td class="{$otherentitysubHeaderStyle}" colspan="2">
-        Coverage Description:
-      </td>
+        <td class="{$otherentitysubHeaderStyle}" colspan="2"> Coverage Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="coverage">
@@ -8280,9 +8564,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="method">
       <tr>
-        <td class="{$otherentitysubHeaderStyle}" colspan="2">
-        Method Description:
-      </td>
+        <td class="{$otherentitysubHeaderStyle}" colspan="2"> Method Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="method">
@@ -8297,9 +8579,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="constraint">
       <tr>
-        <td class="{$otherentitysubHeaderStyle}" colspan="2">
-        Constraint:
-      </td>
+        <td class="{$otherentitysubHeaderStyle}" colspan="2"> Constraint: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="constraint">
@@ -8311,7 +8591,7 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:for-each>
-    <xsl:if test="$withAttributes='1'">
+    <xsl:if test="$withAttributes = '1'">
       <xsl:for-each select="attributeList">
         <xsl:call-template name="otherEntityAttributeList">
           <xsl:with-param name="otherentityfirstColStyle" select="$otherentityfirstColStyle"/>
@@ -8391,9 +8671,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="partyfirstColStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:apply-templates mode="party">
               <xsl:with-param name="partyfirstColStyle" select="$partyfirstColStyle"/>
@@ -8410,10 +8690,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template match="individualName" mode="party">
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$partyfirstColStyle}">
-            Individual:</td>
+        <td class="{$partyfirstColStyle}"> Individual:</td>
         <td class="{$secondColStyle}">
           <b>
             <xsl:value-of select="./salutation"/>
@@ -8428,10 +8707,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template match="organizationName" mode="party">
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$partyfirstColStyle}">
-        Organization:</td>
+        <td class="{$partyfirstColStyle}"> Organization:</td>
         <td class="{$secondColStyle}">
           <b>
             <xsl:value-of select="."/>
@@ -8442,10 +8720,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template match="positionName" mode="party">
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$partyfirstColStyle}">
-        Position:</td>
+        <td class="{$partyfirstColStyle}"> Position:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8454,7 +8731,7 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template match="address" mode="party">
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <xsl:call-template name="addressCommon">
         <xsl:with-param name="partyfirstColStyle" select="$partyfirstColStyle"/>
       </xsl:call-template>
@@ -8464,9 +8741,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="partyfirstColStyle"/>
     <table class="{$tablepartyStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="addressCommon">
               <xsl:with-param name="partyfirstColStyle" select="$partyfirstColStyle"/>
@@ -8483,10 +8760,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template name="addressCommon">
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$partyfirstColStyle}">
-        Address:</td>
+        <td class="{$partyfirstColStyle}"> Address:</td>
         <td>
           <table class="{$tablepartyStyle}">
             <xsl:for-each select="deliveryPoint">
@@ -8500,17 +8776,18 @@ begin the right column of the top section for the data table's descriptions  -->
             <!-- TO DO: fix template to only include comma after deliveryPoint (above) if a city exists. or since these are all in table rows, you don't need the commas at all. -->
             <tr>
               <td class="{$secondColStyle}">
-                <xsl:if test="normalize-space(city)!=''">
+                <xsl:if test="normalize-space(city) != ''">
                   <xsl:value-of select="city"/>
                   <xsl:text>, </xsl:text>
                 </xsl:if>
-                <xsl:if test="normalize-space(administrativeArea)!='' or normalize-space(postalCode)!=''">
+                <xsl:if
+                  test="normalize-space(administrativeArea) != '' or normalize-space(postalCode) != ''">
                   <xsl:value-of select="administrativeArea"/>
                   <xsl:text/>
                   <xsl:value-of select="postalCode"/>
                   <xsl:text/>
                 </xsl:if>
-                <xsl:if test="normalize-space(country)!=''">
+                <xsl:if test="normalize-space(country) != ''">
                   <xsl:value-of select="country"/>
                 </xsl:if>
               </td>
@@ -8523,15 +8800,13 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template match="phone" mode="party">
     <xsl:param name="partyfirstColStyle"/>
     <tr>
-      <td class="{$partyfirstColStyle}">
-             Phone:
-          </td>
+      <td class="{$partyfirstColStyle}"> Phone: </td>
       <td>
         <table class="{$tablepartyStyle}">
           <tr>
             <td class="{$secondColStyle}">
               <xsl:value-of select="."/>
-              <xsl:if test="normalize-space(./@phonetype)!=''">
+              <xsl:if test="normalize-space(./@phonetype) != ''">
                 <xsl:text> (</xsl:text>
                 <xsl:value-of select="./@phonetype"/>
                 <xsl:text>)</xsl:text>
@@ -8544,11 +8819,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template match="electronicMailAddress" mode="party">
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$partyfirstColStyle}">
-            Email Address:
-          </td>
+        <td class="{$partyfirstColStyle}"> Email Address: </td>
         <td>
           <table class="{$tablepartyStyle}">
             <tr>
@@ -8567,11 +8840,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template match="onlineUrl" mode="party">
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$partyfirstColStyle}">
-            Web Address:
-          </td>
+        <td class="{$partyfirstColStyle}"> Web Address: </td>
         <td>
           <table class="{$tablepartyStyle}">
             <tr>
@@ -8596,11 +8867,10 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="useridDirectoryLabel1" select="$useridDirectoryLabel1"/>
     <xsl:param name="partyfirstColStyle"/>
     <xsl:choose>
-      <xsl:when test=" @directory=$useridDirectory1 ">
-        <xsl:if test="normalize-space(.)!=''">
+      <xsl:when test="@directory = $useridDirectory1">
+        <xsl:if test="normalize-space(.) != ''">
           <tr>
-            <td class="{$partyfirstColStyle}">
-              Profile:</td>
+            <td class="{$partyfirstColStyle}"> Profile:</td>
             <td class="{$secondColStyle}">
               <xsl:element name="a">
                 <xsl:attribute name="href">
@@ -8615,7 +8885,7 @@ begin the right column of the top section for the data table's descriptions  -->
           </tr>
         </xsl:if>
       </xsl:when>
-      <xsl:when test=" @directory='LTERnetwork-directory' ">
+      <xsl:when test="@directory = 'LTERnetwork-directory'">
         <!-- finish when lter dir available by ID.
             <xsl:if test="normalize-space(.)!=''">
               <tr><td class="{$partyfirstColStyle}" >
@@ -8625,10 +8895,9 @@ begin the right column of the top section for the data table's descriptions  -->
             -->
       </xsl:when>
       <xsl:otherwise>
-        <xsl:if test="normalize-space(.)!=''">
+        <xsl:if test="normalize-space(.) != ''">
           <tr>
-            <td class="{$partyfirstColStyle}">
-                Id:</td>
+            <td class="{$partyfirstColStyle}"> Id:</td>
             <td class="{$secondColStyle}">
               <xsl:value-of select="."/>
             </td>
@@ -8640,10 +8909,9 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template match="role" mode="party">
     <!-- mob added 2014, web3 -->
     <xsl:param name="partyfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$partyfirstColStyle}">
-        Role:</td>
+        <td class="{$partyfirstColStyle}"> Role:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8667,9 +8935,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="notshowdistribution"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="physicalcommon">
               <xsl:with-param name="physicalfirstColStyle" select="$physicalfirstColStyle"/>
@@ -8722,7 +8990,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:call-template name="physicalbinaryRasterFormat">
       <xsl:with-param name="physicalfirstColStyle" select="$physicalfirstColStyle"/>
     </xsl:call-template>
-    <xsl:if test="$notshowdistribution=''">
+    <xsl:if test="$notshowdistribution = ''">
       <xsl:for-each select="distribution">
         <xsl:call-template name="distribution">
           <xsl:with-param name="disfirstColStyle" select="$physicalfirstColStyle"/>
@@ -8741,8 +9009,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="objectName">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Object Name:</td>
+        <td class="{$physicalfirstColStyle}"> Object Name:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8753,8 +9020,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="size">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Size:</td>
+        <td class="{$physicalfirstColStyle}"> Size:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
           <xsl:text/>
@@ -8767,13 +9033,12 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="authentication">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Authentication:</td>
+        <td class="{$physicalfirstColStyle}"> Authentication:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
           <xsl:text/>
-          <xsl:if test="./@method">
-            Caculated By<xsl:text/><xsl:value-of select="./@method"/></xsl:if>
+          <xsl:if test="./@method"> Caculated By<xsl:text/><xsl:value-of select="./@method"
+            /></xsl:if>
         </td>
       </tr>
     </xsl:for-each>
@@ -8782,8 +9047,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="compressionMethod">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Compression Method:</td>
+        <td class="{$physicalfirstColStyle}"> Compression Method:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8794,8 +9058,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="encodingMethod">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Encoding Method:</td>
+        <td class="{$physicalfirstColStyle}"> Encoding Method:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8806,8 +9069,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="characterEncoding">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Character Encoding:</td>
+        <td class="{$physicalfirstColStyle}"> Character Encoding:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -8818,8 +9080,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="dataFormat/textFormat">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Text Format:</td>
+        <td class="{$physicalfirstColStyle}"> Text Format:</td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:apply-templates>
@@ -9015,8 +9276,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="dataFormat/externallyDefinedFormat">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Externally Defined Format:</td>
+        <td class="{$physicalfirstColStyle}"> Externally Defined Format:</td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:apply-templates>
@@ -9029,7 +9289,7 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template match="formatName">
     <xsl:param name="physicalfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
         <td class="{$firstColStyle}">Format Name:</td>
         <td class="{$secondColStyle}">
@@ -9063,8 +9323,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="physicalfirstColStyle"/>
     <xsl:for-each select="dataFormat/binaryRasterFormat">
       <tr>
-        <td class="{$physicalfirstColStyle}">
-        Binary Raster Format:</td>
+        <td class="{$physicalfirstColStyle}"> Binary Raster Format:</td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:apply-templates>
@@ -9169,9 +9428,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="projectfirstColStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="projectcommon">
               <xsl:with-param name="projectfirstColStyle" select="$projectfirstColStyle"/>
@@ -9214,9 +9473,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="projectfirstColStyle"/>
     <xsl:for-each select="title">
       <tr>
-        <td class="{$projectfirstColStyle}">
-             Title:
-             </td>
+        <td class="{$projectfirstColStyle}"> Title: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="../title"/>
         </td>
@@ -9226,9 +9483,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="projectpersonnel">
     <xsl:param name="projectfirstColStyle"/>
     <tr>
-      <td class="{$projectfirstColStyle}">
-          Personnel:
-          </td>
+      <td class="{$projectfirstColStyle}"> Personnel: </td>
       <td>
         <table>
           <xsl:for-each select="personnel">
@@ -9241,9 +9496,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </tr>
             <xsl:for-each select="role">
               <tr>
-                <td class="{$projectfirstColStyle}">
-                                 Role:
-                               </td>
+                <td class="{$projectfirstColStyle}"> Role: </td>
                 <td>
                   <table class="{$tablepartyStyle}">
                     <tr>
@@ -9264,9 +9517,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="projectfirstColStyle"/>
     <xsl:for-each select="abstract">
       <tr>
-        <td class="{$projectfirstColStyle}">
-          Abstract:
-          </td>
+        <td class="{$projectfirstColStyle}"> Abstract: </td>
         <td>
           <xsl:call-template name="text">
             <xsl:with-param name="textfirstColStyle" select="$projectfirstColStyle"/>
@@ -9279,9 +9530,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="projectfirstColStyle"/>
     <xsl:for-each select="funding">
       <tr>
-        <td class="{$projectfirstColStyle}">
-          Funding:
-          </td>
+        <td class="{$projectfirstColStyle}"> Funding: </td>
         <td>
           <xsl:call-template name="text">
             <xsl:with-param name="textfirstColStyle" select="$projectfirstColStyle"/>
@@ -9307,18 +9556,17 @@ begin the right column of the top section for the data table's descriptions  -->
                   </td>
                   <td class="{$secondColStyle}">
                     <xsl:choose>
-                      <xsl:when test="./@citableClassificationSystem"><xsl:value-of select="."/> <xsl:value-of select="./@name_or_id"/></xsl:when>
-                      <xsl:otherwise><xsl:value-of select="."/> <xsl:value-of select="./@name_or_id"/> (No Citable Classification System)
-                                </xsl:otherwise>
+                      <xsl:when test="./@citableClassificationSystem"><xsl:value-of select="."
+                          /> <xsl:value-of select="./@name_or_id"/></xsl:when>
+                      <xsl:otherwise><xsl:value-of select="."/> <xsl:value-of select="./@name_or_id"
+                        /> (No Citable Classification System) </xsl:otherwise>
                     </xsl:choose>
                   </td>
                 </tr>
               </xsl:for-each>
               <xsl:for-each select="citation">
                 <tr>
-                  <td class="{$projectfirstColStyle}">
-                              Citation:
-                            </td>
+                  <td class="{$projectfirstColStyle}"> Citation: </td>
                   <td>
                     <xsl:call-template name="citation">
                       <xsl:with-param name="citationfirstColStyle" select="projectfirstColStyle"/>
@@ -9332,9 +9580,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </tr>
       <xsl:for-each select="citation">
         <tr>
-          <td class="{$projectfirstColStyle}">
-          Study Area Citation:
-          </td>
+          <td class="{$projectfirstColStyle}"> Study Area Citation: </td>
           <td>
             <xsl:call-template name="citation">
               <xsl:with-param name="citationfirstColStyle" select="projectfirstColStyle"/>
@@ -9344,9 +9590,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="coverage">
         <tr>
-          <td class="{$projectfirstColStyle}">
-          Study Area Coverage:
-          </td>
+          <td class="{$projectfirstColStyle}"> Study Area Coverage: </td>
           <td>
             <xsl:call-template name="coverage"/>
           </td>
@@ -9359,9 +9603,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:for-each select="designDescription">
       <xsl:for-each select="description">
         <tr>
-          <td class="{$projectfirstColStyle}">
-          Design Description:
-          </td>
+          <td class="{$projectfirstColStyle}"> Design Description: </td>
           <td>
             <xsl:call-template name="text"/>
           </td>
@@ -9369,9 +9611,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="citation">
         <tr>
-          <td class="{$projectfirstColStyle}">
-          Design Citation:
-          </td>
+          <td class="{$projectfirstColStyle}"> Design Citation: </td>
           <td>
             <xsl:call-template name="citation"/>
           </td>
@@ -9383,9 +9623,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="projectfirstColStyle"/>
     <xsl:for-each select="relatedProject">
       <tr>
-        <td class="{$projectfirstColStyle}">
-          Related Project:
-          </td>
+        <td class="{$projectfirstColStyle}"> Related Project: </td>
         <td>
           <xsl:call-template name="project">
             <xsl:with-param name="projectfirstColStyle" select="$projectfirstColStyle"/>
@@ -9404,9 +9642,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="protocolsubHeaderStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="protocolcommon">
               <xsl:with-param name="protocolfirstColStyle" select="$protocolfirstColStyle"/>
@@ -9433,9 +9671,8 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:call-template>
     <xsl:for-each select="proceduralStep">
       <tr>
-        <td colspan="2" class="{$protocolsubHeaderStyle}">
-              Step<xsl:text/><xsl:value-of select="position()"/>:
-              </td>
+        <td colspan="2" class="{$protocolsubHeaderStyle}"> Step<xsl:text/><xsl:value-of
+            select="position()"/>: </td>
       </tr>
       <xsl:call-template name="step">
         <xsl:with-param name="protocolfirstColStyle" select="$protocolfirstColStyle"/>
@@ -9491,9 +9728,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <table class="{$tabledefaultStyle}">
       <xsl:for-each select="description">
         <tr>
-          <td class="{$protocolfirstColStyle}">
-          Description:
-          </td>
+          <td class="{$protocolfirstColStyle}"> Description: </td>
           <td>
             <xsl:call-template name="text">
               <xsl:with-param name="textfirstColStyle" select="$protocolfirstColStyle"/>
@@ -9503,12 +9738,8 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="citation">
         <tr>
-          <td class="{$protocolfirstColStyle}">
-          Citation:
-          </td>
-          <td class="{$secondColStyle}">
-            
-          </td>
+          <td class="{$protocolfirstColStyle}"> Citation: </td>
+          <td class="{$secondColStyle}">   </td>
         </tr>
         <tr>
           <td colspan="2">
@@ -9521,9 +9752,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="protocol">
         <tr>
-          <td class="{$protocolfirstColStyle}">
-          Protocol:
-          </td>
+          <td class="{$protocolfirstColStyle}"> Protocol: </td>
           <td class="{$secondColStyle}">
             <!-- mob nested this table in col2, instead of new row. -->
             <xsl:call-template name="protocol">
@@ -9535,9 +9764,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="instrumentation">
         <tr>
-          <td class="{$protocolfirstColStyle}">
-          Instrument(s):
-          </td>
+          <td class="{$protocolfirstColStyle}"> Instrument(s): </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -9555,11 +9782,9 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="subStep">
         <tr>
-          <td class="{$protocolfirstColStyle}">
-          Substep<xsl:text/><xsl:value-of select="position()"/></td>
-          <td class="{$secondColStyle}">
-            
-          </td>
+          <td class="{$protocolfirstColStyle}"> Substep<xsl:text/><xsl:value-of select="position()"
+            /></td>
+          <td class="{$secondColStyle}">   </td>
           <td>
             <!-- correct? was outside of table -->
             <xsl:call-template name="step">
@@ -9722,12 +9947,12 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="resourcealternateIdentifier">
     <xsl:param name="resfirstColStyle"/>
     <xsl:param name="ressecondColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
         <td class="{$resfirstColStyle}">Alternate Identifier:</td>
         <td class="{$ressecondColStyle}">
           <xsl:choose>
-            <xsl:when test="contains(@system,'doi')">DOI: </xsl:when>
+            <xsl:when test="contains(@system, 'doi')">DOI: </xsl:when>
           </xsl:choose>
           <xsl:value-of select="."/>
         </td>
@@ -9737,7 +9962,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="resourceshortName">
     <xsl:param name="resfirstColStyle"/>
     <xsl:param name="ressecondColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
         <td class="{$resfirstColStyle}">Short Name:</td>
         <td class="{$ressecondColStyle}">
@@ -9749,7 +9974,7 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="resourcetitle">
     <xsl:param name="resfirstColStyle"/>
     <xsl:param name="ressecondColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
         <td class="{$resfirstColStyle}">Title:</td>
         <td class="{$ressecondColStyle}">
@@ -9792,10 +10017,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template name="resourcepubDate">
     <xsl:param name="resfirstColStyle"/>
-    <xsl:if test="normalize-space(../pubDate)!=''">
+    <xsl:if test="normalize-space(../pubDate) != ''">
       <tr>
-        <td class="{$resfirstColStyle}">
-        Publication Date:</td>
+        <td class="{$resfirstColStyle}"> Publication Date:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="../pubDate"/>
         </td>
@@ -9804,10 +10028,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template name="resourcelanguage">
     <xsl:param name="resfirstColStyle"/>
-    <xsl:if test="normalize-space(.)!=''">
+    <xsl:if test="normalize-space(.) != ''">
       <tr>
-        <td class="{$resfirstColStyle}">
-        Language:</td>
+        <td class="{$resfirstColStyle}"> Language:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -9816,10 +10039,9 @@ begin the right column of the top section for the data table's descriptions  -->
   </xsl:template>
   <xsl:template name="resourceseries">
     <xsl:param name="resfirstColStyle"/>
-    <xsl:if test="normalize-space(../series)!=''">
+    <xsl:if test="normalize-space(../series) != ''">
       <tr>
-        <td class="{$resfirstColStyle}">
-        Series:</td>
+        <td class="{$resfirstColStyle}"> Series:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="../series"/>
         </td>
@@ -9849,7 +10071,7 @@ begin the right column of the top section for the data table's descriptions  -->
           <xsl:text>: </xsl:text>
         </xsl:if>
 -->
-      <xsl:if test="normalize-space(keyword)!=''">
+      <xsl:if test="normalize-space(keyword) != ''">
         <ul>
           <xsl:for-each select="keyword">
             <li>
@@ -9864,7 +10086,7 @@ begin the right column of the top section for the data table's descriptions  -->
         </ul>
       </xsl:if>
     </xsl:for-each>
-    <xsl:if test="normalize-space(keyword)!=''">
+    <xsl:if test="normalize-space(keyword) != ''">
       <ul>
         <xsl:for-each select="keyword">
           <li>
@@ -9879,7 +10101,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:if>
   </xsl:template>
   <xsl:template name="resourcekeywordsAsPara">
-    <xsl:if test="normalize-space(keyword)!=''">
+    <xsl:if test="normalize-space(keyword) != ''">
       <xsl:for-each select="keyword">
         <xsl:value-of select="."/>
         <xsl:if test="position() != last()">
@@ -9953,9 +10175,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="softwaresubHeaderStyle"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="softwarecommon">
               <xsl:with-param name="softwarefirstColStyle" select="$softwarefirstColStyle"/>
@@ -9991,12 +10213,8 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:call-template>
     <xsl:for-each select="dependency">
       <tr>
-        <td class="{$softwarefirstColStyle}">
-                Dependency
-                </td>
-        <td class="{$secondColStyle}">
-                  
-                </td>
+        <td class="{$softwarefirstColStyle}"> Dependency </td>
+        <td class="{$secondColStyle}">   </td>
       </tr>
       <xsl:call-template name="dependency">
         <xsl:with-param name="softwarefirstColStyle" select="$softwarefirstColStyle"/>
@@ -10029,15 +10247,11 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="softwaresubHeaderStyle"/>
     <xsl:for-each select="implementation">
       <tr>
-        <td colspan="2" class="{$softwaresubHeaderStyle}">
-             Implementation Info:
-            </td>
+        <td colspan="2" class="{$softwaresubHeaderStyle}"> Implementation Info: </td>
       </tr>
       <xsl:for-each select="distribution">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-             Distribution:
-            </td>
+          <td class="{$softwarefirstColStyle}"> Distribution: </td>
           <td>
             <xsl:call-template name="distribution">
               <xsl:with-param name="disfirstColStyle" select="$softwarefirstColStyle"/>
@@ -10048,9 +10262,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="size">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-             Size:
-            </td>
+          <td class="{$softwarefirstColStyle}"> Size: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10058,18 +10270,14 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="language">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Language:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Language: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="LanguageValue"/>
           </td>
         </tr>
         <xsl:if test="LanguageCodeStandard">
           <tr>
-            <td class="{$softwarefirstColStyle}">
-                Language Code Standard:
-                </td>
+            <td class="{$softwarefirstColStyle}"> Language Code Standard: </td>
             <td class="{$secondColStyle}">
               <xsl:value-of select="LanguageValue"/>
             </td>
@@ -10078,9 +10286,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="operatingSystem">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Operating System:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Operating System: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10088,9 +10294,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="machineProcessor">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Operating System:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Operating System: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10098,9 +10302,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="virtualMachine">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Virtual Machine:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Virtual Machine: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10108,9 +10310,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="diskUsage">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Disk Usage:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Disk Usage: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10118,9 +10318,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="runtimeMemoryUsage">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Run Time Memory Usage:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Run Time Memory Usage: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10128,9 +10326,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="programmingLanguage">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Programming Language:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Programming Language: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10138,9 +10334,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="checksum">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Check Sum:
-                </td>
+          <td class="{$softwarefirstColStyle}"> Check Sum: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -10148,12 +10342,8 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="dependency">
         <tr>
-          <td class="{$softwarefirstColStyle}">
-                Dependency:
-                </td>
-          <td class="{$secondColStyle}">
-                  
-                </td>
+          <td class="{$softwarefirstColStyle}"> Dependency: </td>
+          <td class="{$secondColStyle}">   </td>
         </tr>
         <xsl:call-template name="dependency">
           <xsl:with-param name="softwarefirstColStyle" select="$softwarefirstColStyle"/>
@@ -10188,8 +10378,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="softwarefirstColStyle"/>
     <xsl:for-each select="version">
       <tr>
-        <td class="{$firstColStyle}">
-        Version Number:</td>
+        <td class="{$firstColStyle}"> Version Number:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10200,8 +10389,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="softwarefirstColStyle"/>
     <xsl:for-each select="licenseURL">
       <tr>
-        <td class="{$firstColStyle}">
-            License URL:</td>
+        <td class="{$firstColStyle}"> License URL:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10212,8 +10400,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="softwarefirstColStyle"/>
     <xsl:for-each select="license">
       <tr>
-        <td class="{$firstColStyle}">
-            License:</td>
+        <td class="{$firstColStyle}"> License:</td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10265,13 +10452,14 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="entityindex"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="spatialRastercommon">
               <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
-              <xsl:with-param name="spatialrastersubHeaderStyle" select="$spatialrastersubHeaderStyle"/>
+              <xsl:with-param name="spatialrastersubHeaderStyle"
+                select="$spatialrastersubHeaderStyle"/>
               <xsl:with-param name="docid" select="$docid"/>
               <xsl:with-param name="entityindex" select="$entityindex"/>
             </xsl:call-template>
@@ -10316,9 +10504,8 @@ begin the right column of the top section for the data table's descriptions  -->
     <!-- call physical moduel without show distribution(we want see it later)-->
     <xsl:if test="physical">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Physical Structure Description:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Physical Structure Description:
+        </td>
       </tr>
       <xsl:for-each select="physical">
         <tr>
@@ -10333,9 +10520,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:if>
     <xsl:if test="coverage">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Coverage Description:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Coverage Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="coverage">
@@ -10347,9 +10532,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="method">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Method Description:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Method Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="method">
@@ -10364,9 +10547,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="constraint">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Constraint:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Constraint: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="constraint">
@@ -10380,9 +10561,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="spatialReference">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Spatial Reference:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Spatial Reference: </td>
       </tr>
       <xsl:call-template name="spatialReference">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -10390,9 +10569,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="georeferenceInfo">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Grid Postion:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Grid Postion: </td>
       </tr>
       <xsl:call-template name="georeferenceInfo">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -10400,9 +10577,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="horizontalAccuracy">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Horizontal Accuracy:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Horizontal Accuracy: </td>
       </tr>
       <xsl:call-template name="dataQuality">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -10410,9 +10585,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="verticalAccuracy">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Vertical Accuracy:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Vertical Accuracy: </td>
       </tr>
       <xsl:call-template name="dataQuality">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -10420,9 +10593,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="cellSizeXDirection">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Cell Size(X):
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Cell Size(X): </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10430,9 +10601,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="cellSizeYDirection">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Cell Size(Y):
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Cell Size(Y): </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10440,9 +10609,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="numberOfBands">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Number of Bands:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Number of Bands: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10450,9 +10617,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="rasterOrigin">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Origin:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Origin: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10460,9 +10625,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="columns">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Max Raster Objects(X):
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Max Raster Objects(X): </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10470,9 +10633,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="rows">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Max Raster Objects(Y):
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Max Raster Objects(Y): </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10480,9 +10641,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="verticals">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Max Raster Objects(Z):
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Max Raster Objects(Z): </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10490,9 +10649,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="cellGeometry">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Cell Geometry:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Cell Geometry: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10500,9 +10657,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="toneGradation">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Number of Colors:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Number of Colors: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10510,9 +10665,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="scaleFactor">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Scale Factor:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Scale Factor: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10520,9 +10673,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="offset">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Offset:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Offset: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10530,15 +10681,13 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="imageDescription">
       <tr>
-        <td class="{$spatialrastersubHeaderStyle}" colspan="2">
-        Image Info:
-      </td>
+        <td class="{$spatialrastersubHeaderStyle}" colspan="2"> Image Info: </td>
       </tr>
       <xsl:call-template name="imageDescription">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
       </xsl:call-template>
     </xsl:for-each>
-    <xsl:if test="$withAttributes='1'">
+    <xsl:if test="$withAttributes = '1'">
       <xsl:for-each select="attributeList">
         <xsl:call-template name="spatialRasterAttributeList">
           <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -10562,9 +10711,9 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="spatialReference">
     <xsl:param name="spatialrasterfirstColStyle"/>
     <xsl:choose>
-      <xsl:when test="references!=''">
+      <xsl:when test="references != ''">
         <xsl:variable name="ref_id" select="references"/>
-        <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+        <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
         <xsl:for-each select="$references">
           <xsl:call-template name="spatialReferenceCommon">
             <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -10582,9 +10731,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="spatialrasterfirstColStyle"/>
     <xsl:for-each select="horizCoordSysName">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Name of Coordinate System:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Name of Coordinate System: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -10592,9 +10739,8 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="horizCoordSysDef/geogCoordSys">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Definition of <xsl:text/><xsl:value-of select="../@name"/><xsl:text/> (Geographic Coordinate System):
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Definition of <xsl:text/><xsl:value-of
+            select="../@name"/><xsl:text/> (Geographic Coordinate System): </td>
         <td>
           <xsl:call-template name="geogCoordSysType">
             <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -10605,27 +10751,24 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:for-each select="horizCoordSysDef/projCoordSys">
       <xsl:for-each select="geogCoordSys">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-            Definition of<xsl:text/><xsl:value-of select="../../@name"/><xsl:text/>(Geographic Coordinate System):
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Definition of<xsl:text/><xsl:value-of
+              select="../../@name"/><xsl:text/>(Geographic Coordinate System): </td>
           <td>
             <xsl:call-template name="geogCoordSysType">
-              <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
+              <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"
+              />
             </xsl:call-template>
           </td>
         </tr>
       </xsl:for-each>
       <xsl:for-each select="projection">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-            Projection in Geo Coord. System:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Projection in Geo Coord. System: </td>
           <td>
             <table class="{$tabledefaultStyle}">
               <xsl:for-each select="parameter">
                 <tr>
-                  <td class="{$spatialrasterfirstColStyle}"><xsl:value-of select="./@name"/>:
-                         </td>
+                  <td class="{$spatialrasterfirstColStyle}"><xsl:value-of select="./@name"/>: </td>
                   <td>
                     <table class="{$tabledefaultStyle}">
                       <tr>
@@ -10642,9 +10785,7 @@ begin the right column of the top section for the data table's descriptions  -->
               </xsl:for-each>
               <xsl:for-each select="unit">
                 <tr>
-                  <td class="{$spatialrasterfirstColStyle}">
-                          Unit:
-                        </td>
+                  <td class="{$spatialrasterfirstColStyle}"> Unit: </td>
                   <td class="{$secondColStyle}">
                     <xsl:value-of select="./@name"/>
                   </td>
@@ -10657,16 +10798,12 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="vertCoordSys/altitudeSysDef">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Altitude System Definition:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Altitude System Definition: </td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:for-each select="altitudeDatumName">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Datum:
-                         </td>
+                <td class="{$spatialrasterfirstColStyle}"> Datum: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10674,9 +10811,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="altitudeResolution">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Resolution:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Resolution: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10684,9 +10819,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="altitudeDistanceUnits">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Distance Unit:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Distance Unit: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10694,9 +10827,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="altitudeEncodingMethod">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Encoding Method:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Encoding Method: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10708,16 +10839,12 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="vertCoordSys/depthSysDef">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Depth System Definition:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Depth System Definition: </td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:for-each select="depthDatumName">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Datum:
-                         </td>
+                <td class="{$spatialrasterfirstColStyle}"> Datum: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10725,9 +10852,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="depthResolution">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Resolution:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Resolution: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10735,9 +10860,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="depthDistanceUnits">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Distance Unit:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Distance Unit: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10745,9 +10868,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="depthEncodingMethod">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Encoding Method:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Encoding Method: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10763,9 +10884,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <table class="{$tabledefaultStyle}">
       <xsl:for-each select="datum">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             Datum:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Datum: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="./@name"/>
           </td>
@@ -10773,31 +10892,23 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="spheroid">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             Spheroid:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Spheroid: </td>
           <td>
             <table class="{$tabledefaultStyle}">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                       Name:
-                       </td>
+                <td class="{$spatialrasterfirstColStyle}"> Name: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="./@name"/>
                 </td>
               </tr>
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                       Semi Axis Major:
-                       </td>
+                <td class="{$spatialrasterfirstColStyle}"> Semi Axis Major: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="./@semiAxisMajor"/>
                 </td>
               </tr>
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                       Denom Flat Ratio:
-                       </td>
+                <td class="{$spatialrasterfirstColStyle}"> Denom Flat Ratio: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="./@denomFlatRatio"/>
                 </td>
@@ -10808,23 +10919,17 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="primeMeridian">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             Prime Meridian:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Prime Meridian: </td>
           <td>
             <table class="{$tabledefaultStyle}">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                       Name:
-                       </td>
+                <td class="{$spatialrasterfirstColStyle}"> Name: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="./@name"/>
                 </td>
               </tr>
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                       Longitude:
-                       </td>
+                <td class="{$spatialrasterfirstColStyle}"> Longitude: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="./@longitude"/>
                 </td>
@@ -10835,9 +10940,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="unit">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             Unit:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Unit: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="./@name"/>
           </td>
@@ -10849,16 +10952,12 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="spatialrasterfirstColStyle"/>
     <xsl:for-each select="cornerPoint">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Corner Point:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Corner Point: </td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:for-each select="corner">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Corner:
-                         </td>
+                <td class="{$spatialrasterfirstColStyle}"> Corner: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10866,9 +10965,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="xCoordinate">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          xCoordinate:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> xCoordinate: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10876,9 +10973,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="yCoordinate">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          yCoordinate:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> yCoordinate: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10886,9 +10981,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="pointInPixel">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Point in Pixel:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Point in Pixel: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10900,16 +10993,12 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="controlPoint">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Control Point:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Control Point: </td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:for-each select="column">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Column Location:
-                         </td>
+                <td class="{$spatialrasterfirstColStyle}"> Column Location: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10917,9 +11006,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="row">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Row Location:
-                         </td>
+                <td class="{$spatialrasterfirstColStyle}"> Row Location: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10927,9 +11014,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="xCoordinate">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          xCoordinate:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> xCoordinate: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10937,9 +11022,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="yCoordinate">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          yCoordinate:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> yCoordinate: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10947,9 +11030,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="pointInPixel">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Point in Pixel:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Point in Pixel: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10961,16 +11042,12 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="bilinearFit">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-            Bilinear Fit:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Bilinear Fit: </td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:for-each select="xIntercept">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          X Intercept:
-                         </td>
+                <td class="{$spatialrasterfirstColStyle}"> X Intercept: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10978,9 +11055,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="xSlope">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          X Slope:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> X Slope: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10988,9 +11063,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="yIntercept">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Y Intercept:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Y Intercept: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -10998,9 +11071,7 @@ begin the right column of the top section for the data table's descriptions  -->
             </xsl:for-each>
             <xsl:for-each select="ySlope">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                          Y Slope:
-                        </td>
+                <td class="{$spatialrasterfirstColStyle}"> Y Slope: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="."/>
                 </td>
@@ -11015,9 +11086,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="spatialrasterfirstColStyle"/>
     <xsl:for-each select="accuracyReport">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Report:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Report: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11025,24 +11094,18 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="quantitativeAccuracyReport">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Quantitative Report:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Quantitative Report: </td>
         <td>
           <table class="{$tabledefaultStyle}">
             <xsl:for-each select="quantitativeAccuracyReport">
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                         Accuracy Value:
-                      </td>
+                <td class="{$spatialrasterfirstColStyle}"> Accuracy Value: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="quantitativeAccuracyValue"/>
                 </td>
               </tr>
               <tr>
-                <td class="{$spatialrasterfirstColStyle}">
-                         Method:
-                      </td>
+                <td class="{$spatialrasterfirstColStyle}"> Method: </td>
                 <td class="{$secondColStyle}">
                   <xsl:value-of select="quantitativeAccuracyMethod"/>
                 </td>
@@ -11057,9 +11120,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="spatialrasterfirstColStyle"/>
     <xsl:for-each select="illuminationElevationAngle">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Illumination Elevation:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Illumination Elevation: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11067,9 +11128,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="illuminationAzimuthAngle">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Illumination Azimuth:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Illumination Azimuth: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11077,9 +11136,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="imageOrientationAngle">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Image Orientation:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Image Orientation: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11087,9 +11144,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="imagingCondition">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Code Affectting Quality of Image:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Code Affectting Quality of Image: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11097,9 +11152,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="imageQualityCode">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Quality:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Quality: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11107,9 +11160,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="cloudCoverPercentage">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Cloud Coverage:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Cloud Coverage: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11117,9 +11168,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="preProcessingTypeCode">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             PreProcessing:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> PreProcessing: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11127,9 +11176,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="compressionGenerationQuality">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Compression Quality:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Compression Quality: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11137,9 +11184,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="triangulationIndicator">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Triangulation Indicator:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Triangulation Indicator: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11147,9 +11192,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="radionmetricDataAvailability">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Availability of Radionmetric Data:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Availability of Radionmetric Data: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11157,9 +11200,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="cameraCalibrationInformationAvailability">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Availability of Camera Calibration Correction:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Availability of Camera Calibration Correction: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11167,9 +11208,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="filmDistortionInformationAvailability">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Availability of Calibration Reseau:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Availability of Calibration Reseau: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11177,9 +11216,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="lensDistortionInformationAvailability">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Availability of Lens Aberration Correction:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Availability of Lens Aberration Correction: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11187,9 +11224,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="bandDescription">
       <tr>
-        <td class="{$spatialrasterfirstColStyle}">
-             Availability of Lens Aberration Correction:
-            </td>
+        <td class="{$spatialrasterfirstColStyle}"> Availability of Lens Aberration Correction: </td>
         <td>
           <xsl:call-template name="bandDescription">
             <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialrasterfirstColStyle"/>
@@ -11203,9 +11238,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <table class="{$tabledefaultStyle}">
       <xsl:for-each select="sequenceIdentifier">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-            Sequence Identifier:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Sequence Identifier: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -11213,9 +11246,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="highWavelength">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             High Wave Length:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> High Wave Length: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -11223,9 +11254,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="lowWaveLength">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             High Wave Length:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> High Wave Length: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -11233,9 +11262,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="waveLengthUnits">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             Wave Length Units:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Wave Length Units: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -11243,9 +11270,7 @@ begin the right column of the top section for the data table's descriptions  -->
       </xsl:for-each>
       <xsl:for-each select="peakResponse">
         <tr>
-          <td class="{$spatialrasterfirstColStyle}">
-             Peak Response:
-            </td>
+          <td class="{$spatialrasterfirstColStyle}"> Peak Response: </td>
           <td class="{$secondColStyle}">
             <xsl:value-of select="."/>
           </td>
@@ -11311,13 +11336,14 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="entityindex"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="spatialVectorcommon">
               <xsl:with-param name="spatialvectorfirstColStyle" select="$spatialvectorfirstColStyle"/>
-              <xsl:with-param name="spatialvectorsubHeaderStyle" select="$spatialvectorsubHeaderStyle"/>
+              <xsl:with-param name="spatialvectorsubHeaderStyle"
+                select="$spatialvectorsubHeaderStyle"/>
               <xsl:with-param name="docid" select="$docid"/>
               <xsl:with-param name="entityindex" select="$entityindex"/>
             </xsl:call-template>
@@ -11362,9 +11388,8 @@ begin the right column of the top section for the data table's descriptions  -->
     <!-- call physical moduel without show distribution(we want see it later)-->
     <xsl:if test="physical">
       <tr>
-        <td class="{$spatialvectorsubHeaderStyle}" colspan="2">
-        Physical Structure Description:
-      </td>
+        <td class="{$spatialvectorsubHeaderStyle}" colspan="2"> Physical Structure Description:
+        </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="physical">
@@ -11379,9 +11404,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="coverage">
       <tr>
-        <td class="{$spatialvectorsubHeaderStyle}" colspan="2">
-        Coverage Description:
-      </td>
+        <td class="{$spatialvectorsubHeaderStyle}" colspan="2"> Coverage Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="coverage">
@@ -11393,9 +11416,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="method">
       <tr>
-        <td class="{$spatialvectorsubHeaderStyle}" colspan="2">
-        Method Description:
-      </td>
+        <td class="{$spatialvectorsubHeaderStyle}" colspan="2"> Method Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="method">
@@ -11410,9 +11431,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="constraint">
       <tr>
-        <td class="{$spatialvectorsubHeaderStyle}" colspan="2">
-        Constraint:
-      </td>
+        <td class="{$spatialvectorsubHeaderStyle}" colspan="2"> Constraint: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="constraint">
@@ -11426,9 +11445,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="geometry">
       <tr>
-        <td class="{$spatialvectorfirstColStyle}">
-            Geometry:
-            </td>
+        <td class="{$spatialvectorfirstColStyle}"> Geometry: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11436,9 +11453,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="geometricObjectCount">
       <tr>
-        <td class="{$spatialvectorfirstColStyle}">
-            Number of Geometric Objects:
-            </td>
+        <td class="{$spatialvectorfirstColStyle}"> Number of Geometric Objects: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11446,9 +11461,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="topologyLevel">
       <tr>
-        <td class="{$spatialvectorfirstColStyle}">
-           Topolgy Level:
-            </td>
+        <td class="{$spatialvectorfirstColStyle}"> Topolgy Level: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11456,9 +11469,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="spatialReference">
       <tr>
-        <td class="{$spatialvectorsubHeaderStyle}" colspan="2">
-        Spatial Reference:
-      </td>
+        <td class="{$spatialvectorsubHeaderStyle}" colspan="2"> Spatial Reference: </td>
       </tr>
       <xsl:call-template name="spatialReference">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialvectorfirstColStyle"/>
@@ -11466,9 +11477,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="horizontalAccuracy">
       <tr>
-        <td class="{$spatialvectorsubHeaderStyle}" colspan="2">
-        Horizontal Accuracy:
-      </td>
+        <td class="{$spatialvectorsubHeaderStyle}" colspan="2"> Horizontal Accuracy: </td>
       </tr>
       <xsl:call-template name="dataQuality">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialvectorfirstColStyle"/>
@@ -11476,15 +11485,13 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="verticalAccuracy">
       <tr>
-        <td class="{$spatialvectorsubHeaderStyle}" colspan="2">
-        Vertical Accuracy:
-      </td>
+        <td class="{$spatialvectorsubHeaderStyle}" colspan="2"> Vertical Accuracy: </td>
       </tr>
       <xsl:call-template name="dataQuality">
         <xsl:with-param name="spatialrasterfirstColStyle" select="$spatialvectorfirstColStyle"/>
       </xsl:call-template>
     </xsl:for-each>
-    <xsl:if test="$withAttributes='1'">
+    <xsl:if test="$withAttributes = '1'">
       <xsl:for-each select="attributeList">
         <xsl:call-template name="spatialVectorAttributeList">
           <xsl:with-param name="spatialvectorfirstColStyle" select="$spatialvectorfirstColStyle"/>
@@ -11559,7 +11566,8 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="text">
     <xsl:param name="textfirstColStyle"/>
     <xsl:param name="textsecondColStyle"/>
-    <xsl:if test="(section and normalize-space(section)!='') or (para and normalize-space(para)!='')">
+    <xsl:if
+      test="(section and normalize-space(section) != '') or (para and normalize-space(para) != '')">
       <xsl:apply-templates mode="text">
         <xsl:with-param name="textfirstColStyle" select="$textfirstColStyle"/>
         <xsl:with-param name="textsecondColStyle" select="$textsecondColStyle"/>
@@ -11569,7 +11577,8 @@ begin the right column of the top section for the data table's descriptions  -->
   <xsl:template name="abstracttext">
     <xsl:param name="textfirstColStyle"/>
     <xsl:param name="textsecondColStyle"/>
-    <xsl:if test="(section and normalize-space(section)!='') or (para and normalize-space(para)!='')">
+    <xsl:if
+      test="(section and normalize-space(section) != '') or (para and normalize-space(para) != '')">
       <!-- was <xsl:apply-templates mode="text"> (mgb 7Jun2011) use mode="lowlevel" to make abstract use p for para -->
       <div class="abstract-text">
         <xsl:apply-templates mode="text">
@@ -11580,33 +11589,33 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:if>
   </xsl:template>
   <xsl:template match="section" mode="text">
-    <xsl:if test="normalize-space(.)!=''">
-      <xsl:if test="title and normalize-space(title)!=''">
+    <xsl:if test="normalize-space(.) != ''">
+      <xsl:if test="title and normalize-space(title) != ''">
         <!-- <h4 class="bold"><xsl:value-of select="title"/></h4> -->
         <h4>
           <xsl:value-of select="title"/>
         </h4>
       </xsl:if>
-      <xsl:if test="para and normalize-space(para)!=''">
+      <xsl:if test="para and normalize-space(para) != ''">
         <xsl:apply-templates select="para" mode="text"/>
       </xsl:if>
-      <xsl:if test="section and normalize-space(section)!=''">
+      <xsl:if test="section and normalize-space(section) != ''">
         <xsl:apply-templates select="section" mode="text"/>
       </xsl:if>
     </xsl:if>
   </xsl:template>
   <xsl:template match="section" mode="lowlevel">
     <div>
-      <xsl:if test="title and normalize-space(title)!=''">
+      <xsl:if test="title and normalize-space(title) != ''">
         <!-- <h4 class="bold"><xsl:value-of select="title"/></h4>  -->
         <h5>
           <xsl:value-of select="title"/>
         </h5>
       </xsl:if>
-      <xsl:if test="para and normalize-space(para)!=''">
+      <xsl:if test="para and normalize-space(para) != ''">
         <xsl:apply-templates select="para" mode="lowlevel"/>
       </xsl:if>
-      <xsl:if test="section and normalize-space(section)!=''">
+      <xsl:if test="section and normalize-space(section) != ''">
         <xsl:apply-templates select="section" mode="lowlevel"/>
       </xsl:if>
     </div>
@@ -11690,9 +11699,9 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="entityindex"/>
     <table class="{$tabledefaultStyle}">
       <xsl:choose>
-        <xsl:when test="references!=''">
+        <xsl:when test="references != ''">
           <xsl:variable name="ref_id" select="references"/>
-          <xsl:variable name="references" select="$ids[@id=$ref_id]"/>
+          <xsl:variable name="references" select="$ids[@id = $ref_id]"/>
           <xsl:for-each select="$references">
             <xsl:call-template name="viewCommon">
               <xsl:with-param name="viewfirstColStyle" select="$viewfirstColStyle"/>
@@ -11725,9 +11734,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:for-each select="queryStatement">
       <tr>
-        <td class="{$viewfirstColStyle}">
-            Query Statement:
-            </td>
+        <td class="{$viewfirstColStyle}"> Query Statement: </td>
         <td class="{$secondColStyle}">
           <xsl:value-of select="."/>
         </td>
@@ -11751,9 +11758,7 @@ begin the right column of the top section for the data table's descriptions  -->
     <!-- call physical moduel without show distribution(we want see it later)-->
     <xsl:if test="physical">
       <tr>
-        <td class="{$viewsubHeaderStyle}" colspan="2">
-        Physical Structure Description:
-      </td>
+        <td class="{$viewsubHeaderStyle}" colspan="2"> Physical Structure Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="physical">
@@ -11768,9 +11773,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="coverage">
       <tr>
-        <td class="{$viewsubHeaderStyle}" colspan="2">
-        Coverage Description:
-      </td>
+        <td class="{$viewsubHeaderStyle}" colspan="2"> Coverage Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="coverage">
@@ -11782,9 +11785,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="method">
       <tr>
-        <td class="{$viewsubHeaderStyle}" colspan="2">
-        Method Description:
-      </td>
+        <td class="{$viewsubHeaderStyle}" colspan="2"> Method Description: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="method">
@@ -11799,9 +11800,7 @@ begin the right column of the top section for the data table's descriptions  -->
     </xsl:for-each>
     <xsl:if test="constraint">
       <tr>
-        <td class="{$viewsubHeaderStyle}" colspan="2">
-        Constraint:
-      </td>
+        <td class="{$viewsubHeaderStyle}" colspan="2"> Constraint: </td>
       </tr>
     </xsl:if>
     <xsl:for-each select="constraint">
@@ -11813,7 +11812,7 @@ begin the right column of the top section for the data table's descriptions  -->
         </td>
       </tr>
     </xsl:for-each>
-    <xsl:if test="$withAttributes='1'">
+    <xsl:if test="$withAttributes = '1'">
       <xsl:for-each select="attributeList">
         <xsl:call-template name="viewAttributeList">
           <xsl:with-param name="viewfirstColStyle" select="$viewfirstColStyle"/>
@@ -11823,7 +11822,7 @@ begin the right column of the top section for the data table's descriptions  -->
         </xsl:call-template>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="$withAttributes='1'">
+    <xsl:if test="$withAttributes = '1'">
       <!-- Here to display distribution info-->
       <xsl:for-each select="physical">
         <xsl:call-template name="viewShowDistribution">
@@ -11914,20 +11913,63 @@ begin the right column of the top section for the data table's descriptions  -->
     <table class="{$citetabledefaultStyle}" id="howToCite">
       <tr>
         <td class="{$citefirstColStyle}">How to cite this data set:</td>
-        <td class="{$citesecondColStyle}"><!-- count the creators, set a var --><xsl:variable name="creator_count" select="count(creator/individualName)"/><xsl:for-each select="creator/individualName"><!-- if this is the last author in a list, and not the first then prefix an "and" --><xsl:if test="position()=last() and not(position()=1)"> and </xsl:if><xsl:if test="not(position()=last()) and not(position()=1)"><xsl:text>, </xsl:text></xsl:if><xsl:if test="position()=1"><!-- for first author, put surname before initial(s) --><xsl:value-of select="surName"/><xsl:if test="givenName"><xsl:text>, </xsl:text><xsl:for-each select="givenName"><xsl:value-of select="substring(., 1, 1)"/><xsl:text>. </xsl:text><!-- first initial followed by period --></xsl:for-each></xsl:if></xsl:if><xsl:if test="not(position()=1)"><!-- for any except first author, put initial(s) before surname --><xsl:if test="givenName"><xsl:for-each select="givenName"><!-- the dot in the substring arg below is the givenName value --><xsl:value-of select="substring(., 1, 1)"/><!-- first initial --></xsl:for-each><xsl:text>. </xsl:text><xsl:value-of select="surName"/></xsl:if></xsl:if></xsl:for-each><!-- 
+        <td class="{$citesecondColStyle}"><!-- count the creators, set a var --><xsl:variable
+            name="creator_count" select="count(creator/individualName)"/><xsl:for-each
+            select="creator/individualName"
+              ><!-- if this is the last author in a list, and not the first then prefix an "and" --><xsl:if
+              test="position() = last() and not(position() = 1)"> and </xsl:if><xsl:if
+              test="not(position() = last()) and not(position() = 1)"
+              ><xsl:text>, </xsl:text></xsl:if><xsl:if test="position() = 1"
+                ><!-- for first author, put surname before initial(s) --><xsl:value-of
+                select="surName"/><xsl:if test="givenName"><xsl:text>, </xsl:text><xsl:for-each
+                  select="givenName"><xsl:value-of select="substring(., 1, 1)"
+                  /><xsl:text>. </xsl:text><!-- first initial followed by period --></xsl:for-each></xsl:if></xsl:if><xsl:if
+              test="not(position() = 1)"
+                ><!-- for any except first author, put initial(s) before surname --><xsl:if
+                test="givenName"><xsl:for-each select="givenName"
+                    ><!-- the dot in the substring arg below is the givenName value --><xsl:value-of
+                    select="substring(., 1, 1)"
+                  /><!-- first initial --></xsl:for-each><xsl:text>. </xsl:text><xsl:value-of
+                  select="surName"
+              /></xsl:if></xsl:if></xsl:for-each><!-- 
             
-            GET LOGIC FROM YOUR PUBS DISPLAY!!!   --><xsl:choose><xsl:when test="creator_count='1'"><xsl:choose><xsl:when test="creator/individualName/givenName"><!-- do nothing. the period following the initial will suffice.--></xsl:when><xsl:otherwise><!-- there is one creator, and no given name. eew. ugly, but oh well. add a period. --><xsl:text>. </xsl:text></xsl:otherwise></xsl:choose></xsl:when><xsl:otherwise><!-- more than one creator. --><xsl:text>. </xsl:text></xsl:otherwise></xsl:choose><xsl:value-of select="substring($pubDate,1,4)"/>. <xsl:value-of select="$datasetTitle"/><xsl:text>. </xsl:text><xsl:choose><xsl:when test="string-length($publisherOrganizationName)=0"><xsl:value-of select="$organizationName"/><xsl:text>.</xsl:text></xsl:when><xsl:otherwise><xsl:value-of select="$publisherOrganizationName"/><xsl:text>. </xsl:text></xsl:otherwise></xsl:choose><!-- 
+            GET LOGIC FROM YOUR PUBS DISPLAY!!!   --><xsl:choose><xsl:when
+              test="creator_count = '1'"><xsl:choose><xsl:when
+                  test="creator/individualName/givenName"
+                  ><!-- do nothing. the period following the initial will suffice.--></xsl:when><xsl:otherwise><!-- there is one creator, and no given name. eew. ugly, but oh well. add a period. --><xsl:text>. </xsl:text></xsl:otherwise></xsl:choose></xsl:when><xsl:otherwise><!-- more than one creator. --><xsl:text>. </xsl:text></xsl:otherwise></xsl:choose><xsl:value-of
+            select="substring($pubDate, 1, 4)"/>. <xsl:value-of select="$datasetTitle"
+              /><xsl:text>. </xsl:text><xsl:choose><xsl:when
+              test="string-length($publisherOrganizationName) = 0"><xsl:value-of
+                select="$organizationName"
+                /><xsl:text>.</xsl:text></xsl:when><xsl:otherwise><xsl:value-of
+                select="$publisherOrganizationName"
+            /><xsl:text>. </xsl:text></xsl:otherwise></xsl:choose><!-- 
             
             
             
-            add 1 or more DOIs, if available, or some other default.. --><xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'"/><xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/><!-- count up the number of DOIs --><xsl:variable name="doi_count"><xsl:value-of select="count(alternateIdentifier[               contains(translate(@system, $uppercase, $lowercase), 'doi') or                contains(translate(@system, $uppercase, $lowercase), 'digital object identifier')               ])"/><!-- if you have other patterns that identify a doi, add them to this list with 'or' --></xsl:variable><!-- 
+            add 1 or more DOIs, if available, or some other default.. --><xsl:variable
+            name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'"/><xsl:variable name="uppercase"
+            select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/><!-- count up the number of DOIs --><xsl:variable
+            name="doi_count"><xsl:value-of
+              select="count(alternateIdentifier[contains(translate(@system, $uppercase, $lowercase), 'doi') or contains(translate(@system, $uppercase, $lowercase), 'digital object identifier')])"
+            /><!-- if you have other patterns that identify a doi, add them to this list with 'or' --></xsl:variable><!-- 
             
             save for future testing.
           <xsl:text> DOI COUNT:</xsl:text>
           <xsl:value-of select="$doi_count"/>
           --><!-- 
             
-            depending on the number of DOIs found, call a display template with params. --><xsl:choose><xsl:when test="$doi_count=0"><xsl:call-template name="display_default_id"><xsl:with-param name="contextURL" select="$contextURL"/><xsl:with-param name="packageID" select="$packageID"/></xsl:call-template><xsl:call-template name="request_doi"><xsl:with-param name="packageID" select="$packageID"/><xsl:with-param name="datasetTitle" select="$datasetTitle"/></xsl:call-template></xsl:when><xsl:otherwise><!-- at least one DOI found. --><xsl:call-template name="display_dois"><xsl:with-param name="doi_count" select="$doi_count"/><xsl:with-param name="lowercase" select="$lowercase"/><xsl:with-param name="uppercase" select="$uppercase"/></xsl:call-template></xsl:otherwise></xsl:choose></td>
+            depending on the number of DOIs found, call a display template with params. --><xsl:choose><xsl:when
+              test="$doi_count = 0"><xsl:call-template name="display_default_id"><xsl:with-param
+                  name="contextURL" select="$contextURL"/><xsl:with-param name="packageID"
+                  select="$packageID"/></xsl:call-template><xsl:call-template name="request_doi"
+                  ><xsl:with-param name="packageID" select="$packageID"/><xsl:with-param
+                  name="datasetTitle" select="$datasetTitle"
+                /></xsl:call-template></xsl:when><xsl:otherwise><!-- at least one DOI found. --><xsl:call-template
+                name="display_dois"><xsl:with-param name="doi_count" select="$doi_count"
+                  /><xsl:with-param name="lowercase" select="$lowercase"/><xsl:with-param
+                  name="uppercase" select="$uppercase"
+            /></xsl:call-template></xsl:otherwise></xsl:choose></td>
       </tr>
     </table>
   </xsl:template>
@@ -11935,12 +11977,13 @@ begin the right column of the top section for the data table's descriptions  -->
     <xsl:param name="doi_count"/>
     <xsl:param name="uppercase"/>
     <xsl:param name="lowercase"/>
-    <xsl:for-each select="alternateIdentifier[       contains(translate(@system, $uppercase, $lowercase), 'doi') or        contains(translate(@system, $uppercase, $lowercase), 'digital object identifier')       ]">
+    <xsl:for-each
+      select="alternateIdentifier[contains(translate(@system, $uppercase, $lowercase), 'doi') or contains(translate(@system, $uppercase, $lowercase), 'digital object identifier')]">
       <xsl:text>doi:</xsl:text>
       <xsl:value-of select="."/>
       <!-- 
        separate with a comma if not the last doi in a list. -->
-      <xsl:if test="not(position()=last())">
+      <xsl:if test="not(position() = last())">
         <xsl:text>, </xsl:text>
       </xsl:if>
     </xsl:for-each>

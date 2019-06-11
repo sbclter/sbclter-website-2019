@@ -1,8 +1,18 @@
 ---
 ---
+/*  padding vs margins
+ * padding clears area inside border; does not collapse. (use with a border or background box)
+ * margins collapse, overlap (use with interior elements) */
 
 #article-content {
 	padding-top: 25px;
 	padding-left: 50px;
 	padding-right: 50px;
 }
+
+ 
+#main-container {
+	padding: 2%;
+}
+
+

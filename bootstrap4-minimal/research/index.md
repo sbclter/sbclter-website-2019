@@ -10,16 +10,16 @@ description: page description here.
 
 <h1>{{ page.title }}</h1>
 
-<p>index page for the "Research" dir. There will be several simple html pages here. 
+<p>index page for the "Research" dir - an overview with links to several simple html pages here. 
 each page has its own dir. </p>
 
-	
-<ul>
-<li>table laoyout? or something fluid (see bon columns, although this is a bit old) </li>
+	<p>fluid lat (columns are built in) </p>
 
+
+<ul>
 <li>Theme 1. Biotic and abiotic drivers of kelp forest structure and function
 <p>The specific mechanisms responsible for these indirect effects
-will be experimentally investigated in THEMES 1A and 1B </p>
+will be experimentally investigated in TO DO 1A and 1B </p>
 
 </li>
 <li>Theme 2. Material exchanges at the land-ocean margin
