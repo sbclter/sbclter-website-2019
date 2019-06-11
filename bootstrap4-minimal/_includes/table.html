@@ -1,25 +1,36 @@
 <div class="pull-left" class="mt-4">
-  <h3 id="table_{{include.data.name}}" class="table-title pl-1"> <strong> {{ include.data.name }} </strong> </h3>
+  <h3 id="table_{{include.data.name}}" class="table-title pl-1">
+    <strong>
+    {% if include.category_labels[include.data.name] %}
+      {{ include.category_labels[include.data.name] }}
+    {% else %}
+      {{ include.data.name }}
+    {% endif %}
+    </strong>
+  </h3>
   <table class="table" name="table_{{include.data.name}}">
     <thead id="table_header_{{include.data.name}}">
       <tr class="row title-row">
       {% for column in include.columns %}
-        <th class="cell col-3"> <strong> {{ column }} </strong> </th>
+        <th class="cell col-{{ include.columns_size[forloop.index0] }} row" style="justify-content: space-between;">
+          <strong> {{ column }} </strong>
+          <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+        </th>
       {% endfor %}
       </tr>
     </thead>
     <tbody id="myTable">
     {% for itemrow in include.data.items %}
-      {% if include.clickable == 1%}
-        <tr class="row clickable-row table_row_{{include.data.name}}" data-href='{{itemrow.databaseID}}' style="cursor: pointer">
+      {% if include.urlkey %}
+        <tr class="row clickable-row table_row_{{include.data.name}}" data-href='{{ itemrow[include.urlkey] }}' style="cursor: pointer">
           {% for filter in include.dataFilter %}
-            <td class="cell col-3">{{ itemrow[filter] }}</td>
+            <td class="cell col-{{ include.columns_size[forloop.index0] }}"> {{ itemrow[filter] }} </td>
           {% endfor %}
         </tr>
       {% else %}
         <tr class="row table_row_{{include.data.name}}">
           {% for filter in include.dataFilter %}
-            <td class="cell col-3">{{ itemrow[filter] }}</td>
+            <td class="cell col-{{ include.columns_size[forloop.index0] }}">{{ itemrow[filter] }}</td>
           {% endfor %}
         </tr>
       {% endif %}

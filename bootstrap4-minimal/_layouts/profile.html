@@ -12,8 +12,11 @@ layout: profile
 		<div class="row">
 
 	    <div id="left-container">
-				<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
-				<div id="contact-info">
+		<!--		<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
+-->
+	    	<img id="profile-picture" src="/assets/img/profile/{{ page.databaseID }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
+
+ 			<div id="contact-info">
 
 					{% if page.homepage != "" and page.homepage != nil %}
 						<div class="row">

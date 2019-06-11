@@ -14,8 +14,12 @@ markdown: kramdown
 
 plugins_dir: _plugins
 
-# this key must be added manually before you build. DO NOT STORE KEY IN GIT 
-google_maps_api_key: DO_NOT_STORE_KEY_IN_GIT
+
+# To use:
+# 1. copy this file to "_config.yml"
+# 2. add your API key.  
+# the config.yml file is ignored by git
+google_maps_api_key: INSERT_YOUR_API_KEY
 
 page_gen:
   - data: 'people_bios'

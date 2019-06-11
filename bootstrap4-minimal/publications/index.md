@@ -1,13 +1,67 @@
 ---
 layout: article
-title: 'Page tltle here'
-description: page description here.
+title: Publications
+description: publications invovled in the Santa Barbara Coastal LTER.
 
+clickable: 1
+placeholder: "Search LTER Publications ..."
+columns:
+  - SBC ID
+  - Year
+  - Authors
+  - Citation
+columns_size:
+  - 1
+  - 1
+  - 2
+  - 8
+dataFilter:
+  - sbc_id
+  - year
+  - author
+  - citation
+page_css:
+  - "/assets/css/custom/includes/table.css"
+  - "/assets/css/custom/includes/search_bar.css"
+category_labels:
+  Inproceedings: In Proceedings
+  Article:       Articles
+  phdthesis:     PhD Thesis
+  Mastersthesis: Masters Thesis
+  Incollection:  In Collection
+  Book:          Books
 ---
 
 <h1>SBC LTER Publications</h1>
 
-<p>index page for the "Publications" dir.  dir. Currently, the catalog (bibliography of ppaers) is a child of this dir
-called 'catalog' - possibly will change that name. </p>
-	
-<p>TBD: decide what other pubs go here: annual reports, field guide, proposals.</p>
+
+<div id="table-content" >
+	{% include search_bar.html placeholder=page.placeholder %}
+
+	{% assign pub_groups = site.data.Website_citation_export | group_by: "category" %}
+
+	{% for pubs in pub_groups %}
+		{% include table.html columns = page.columns
+							  columns_size = page.columns_size
+							  data = pubs
+							  dataFilter = page.dataFilter
+							  category_labels = page.category_labels %}
+	{% endfor %}
+</div>
+
+
+<script>
+	$(document).ready(function() {
+		$('tbody').each(function() {
+			$(this).find('.row').each(function() {
+				var doi = $(this).children().last().text().split("DOI: ")[1];
+				if (doi) {
+					$(this).addClass('clickable-row');
+					$(this).attr('data-href', `http://dx.doi.org/${ doi }`);
+					$(this).css('background-color: ');
+				}
+			});
+		});
+	});
+</script>
+<script src="/assets/js/table.js"></script>
