@@ -68,6 +68,7 @@ function makeCoverage(template, data) {
 		var mapElement = template.find('#field-map');
 		$("#map").detach().appendTo(mapElement);
 		plotMarkers(element, data);
+		map.fitBounds(bounds, 0);
 	} catch(err) { console.error(err); }
 
 	// Fill taxonomic range data
@@ -385,6 +386,12 @@ function plotMarkers(element, data) {
 	const lng_e = 3;
 	const lng_w = 4;
 
+	if(!Array.isArray(points)){  
+		var points_arr = [];
+		points_arr.push(points);
+		points = points_arr;
+	}
+
 	for (var i = 0; i < points.length; i++) {
 		var data_entry = [];
 		var title = points[i]['geographicDescription'];
@@ -401,11 +408,10 @@ function plotMarkers(element, data) {
 
 		var lng_w1 = points[i]['boundingCoordinates']['westBoundingCoordinate'];
 		data_entry.push(parseFloat(lng_w1));
-
+		// console.log(lat_n1 + " " + lat_s1 + " " + lng_e1 + " " + lng_w1);
 		map_data.push(data_entry);
 		
 		bounds.extend({lat: parseFloat(lat_n1), lng: parseFloat(lng_e1)});
-		console.log(bounds);
 	}
 
 	for (var i = 0; i < map_data.length; i++) {
@@ -460,12 +466,14 @@ function plotMarkers(element, data) {
 			element.find('#field-geographic').append(row);
 		}
 	}
-	map.setCenter(bounds.getCenter());
-	map.fitBounds(bounds);
+	if(bounds.length > 0){
+		map.setCenter(bounds.getCenter());
+		map.fitBounds(bounds);
+	}
+
 	zoomChangeBoundsListener = 
     google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
             this.setZoom(4);
-            console.log(map.getBounds());
 	});
 }
 
