@@ -14,4 +14,7 @@ page_css:
 <script src="/assets/js/catalog_detail.js"></script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap"></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> a91a38a58fcae90c6a44ae53ca0060cfb2dca38a
