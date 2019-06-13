@@ -1,5 +1,6 @@
 var map;
 var markers = [];
+var bounds;
 
 var url = new URL(location);
 var package = url.searchParams.get('package');
@@ -384,29 +385,27 @@ function plotMarkers(element, data) {
 	const lng_e = 3;
 	const lng_w = 4;
 
-
 	for (var i = 0; i < points.length; i++) {
 		var data_entry = [];
 		var title = points[i]['geographicDescription'];
 		data_entry.push(title);
 
-		var lat = points[i]['boundingCoordinates']['northBoundingCoordinate'];
-		data_entry.push(parseFloat(lat));
+		var lat_n1 = points[i]['boundingCoordinates']['northBoundingCoordinate'];
+		data_entry.push(parseFloat(lat_n1));
 
 		var lat_s1 = points[i]['boundingCoordinates']['southBoundingCoordinate'];
 		data_entry.push(parseFloat(lat_s1));
 
-		var lng = points[i]['boundingCoordinates']['eastBoundingCoordinate'];
-		data_entry.push(parseFloat(lng));
+		var lng_e1 = points[i]['boundingCoordinates']['eastBoundingCoordinate'];
+		data_entry.push(parseFloat(lng_e1));
 
 		var lng_w1 = points[i]['boundingCoordinates']['westBoundingCoordinate'];
 		data_entry.push(parseFloat(lng_w1));
 
 		map_data.push(data_entry);
 		
-		// bounds.extend(myLatLng);
-		// map.fitBounds(bounds);
-
+		bounds.extend({lat: parseFloat(lat_n1), lng: parseFloat(lng_e1)});
+		console.log(bounds);
 	}
 
 	for (var i = 0; i < map_data.length; i++) {
@@ -461,6 +460,13 @@ function plotMarkers(element, data) {
 			element.find('#field-geographic').append(row);
 		}
 	}
+	map.setCenter(bounds.getCenter());
+	map.fitBounds(bounds);
+	zoomChangeBoundsListener = 
+    google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
+            this.setZoom(4);
+            console.log(map.getBounds());
+	});
 }
 
 // Gets called by Google Maps API to set up map (one map for all popup windows)
