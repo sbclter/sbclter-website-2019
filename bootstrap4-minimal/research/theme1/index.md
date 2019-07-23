@@ -1,11 +1,12 @@
 ---
 layout: article
-title: 'Biotic and abiotic drivers of kelp forest structure and function'
+title: 'Environmental drivers of kelp persistence and community structure'
 description: TO DO Theme1 description here.
 
 ---
 
 <h1>SBC LTER Research</h1>
+
 
 <h2>Theme 1: {{ page.title }} </h2>
 	
@@ -13,9 +14,9 @@ description: TO DO Theme1 description here.
 
 
 <ul>
-<li>Kelp Persistence and Community Structure</li>
-<li>is there an A, B, C structure ?</li>
-<li>maybe #C</li>
+<li>THEME 1a. Community and ecosystem consequences of climate variability, disturbance and pathways of recovery</li>
+<li>THEME 1b. Ecological consequences of fishing</li>
+<li>THEME 1c. Sources and utilization of recycled nitrogen</li>
 <li>how about a couple of photos. </li>
 <li>what not done yet? </li>
 </ul>

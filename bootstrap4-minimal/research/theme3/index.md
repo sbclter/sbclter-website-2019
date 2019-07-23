@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 'Movement and fluxes of inorganic and organic matter in the coastal ocean'
+title: 'Spatial dynamics and connectivity of kelp forests and adjacent ecosystems'
 description: TO DO Theme1 description here.
 
 ---
@@ -16,11 +16,10 @@ description: TO DO Theme1 description here.
         <div class="col-4">
            <p>SBC IV has 3 themes. Describe theme 3 here. </p>
            <ul>
-                <li>Dispersion, dilution of fw runoff</li>
-                <li>upwelling</li>
-                <li>glider stuff</li>
-                <li>how about a couple of photos. </li>
-            </ul>
+<li>THEME 3a. Demographic connectivity and metapopulation dynamics of giant kelp</li>
+<li>THEME 3b. Trophic connectivity between kelp forests and beaches </li>
+<li>THEME 3c. Trophic connectivity between the coastal ocean and kelp forests</li>
+</ul>
         </div>
 
        <div class="col-8">

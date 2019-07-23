@@ -1,6 +1,6 @@
 ---
 layout: article
-title: ' Material exchanges at the land-ocean margin'
+title: ' Dynamic biophysical coupling in kelp forest ecosystems'
 description: TO DO Theme1 description here.
 
 ---
@@ -13,10 +13,9 @@ description: TO DO Theme1 description here.
 
 
 <ul>
-<li>kelp wrack stuff?</li>
-<li>is there an A, B, C structure ?</li>
-<li>maybe #C</li>
-<li>how about a couple of photos. </li>
+<li>THEME 2a. Effects of kelp on physical and chemical fluxes </li>
+<li>THEME 2b. Effects of kelp on the processing and fate of dissolved organic matter</li>
+<li>THEME 2c. Ecological and evolutionary consequences of kelp-induced changes in seawater chemistry</li>
 </ul>
 
 </p>
