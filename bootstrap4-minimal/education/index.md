@@ -74,7 +74,7 @@ description: page description here.
             several other mentorship programs sponsored by the University of California. REU 
             students work closely with SBC researchers on a wide range of topics and most choose 
             to pursue an advanced degree following their undergraduate education.</p>
-         <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/conceptual_framework_sbcIV.jpg"  alt="Generic placeholder image" />
+         <img class="img-thumbnail img-responsive img-center" src="/assets/img/SEEDS07Beachactivity.jpg"  alt="Students at a beach transect" />
 
             <p class="text-center"><a href="{{page.url}}/undergrad">link to undergrad page.</a></p>
 
