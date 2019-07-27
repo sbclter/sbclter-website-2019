@@ -1,35 +1,30 @@
 ---
 layout: article
 title: Publications
-description: publications invovled in the Santa Barbara Coastal LTER.
+description: publications from the Santa Barbara Coastal LTER.
 
 clickable: 1
 placeholder: "Search LTER Publications ..."
 columns:
-  - SBC ID
   - Year
-  - Authors
   - Citation
 columns_size:
   - 1
-  - 1
-  - 2
-  - 8
+  - 11
 dataFilter:
-  - sbc_id
   - year
-  - author
   - citation
 page_css:
   - "/assets/css/custom/includes/table.css"
   - "/assets/css/custom/includes/search_bar.css"
 category_labels:
-  Inproceedings: In Proceedings
   Article:       Articles
   phdthesis:     PhD Thesis
   Mastersthesis: Masters Thesis
-  Incollection:  In Collection
+  Incollection:  Book Chapters
   Book:          Books
+  Inproceedings: Conference Proceedings
+
 ---
 
 <h1>SBC LTER Publications</h1>
@@ -38,7 +33,7 @@ category_labels:
 <div id="table-content" >
 	{% include search_bar.html placeholder=page.placeholder %}
 
-	{% assign pub_groups = site.data.Website_citation_export | group_by: "category" %}
+	{% assign pub_groups = site.data.Website_citation_export | group_by: "category" | sort: "category" %}
 
 	{% for pubs in pub_groups %}
 		{% include table.html columns = page.columns
