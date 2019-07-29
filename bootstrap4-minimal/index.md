@@ -9,13 +9,15 @@ description: page description here.
 <div class="container-fluid">
 
 <!-- how to set cols: pages can vary the col widths; for full-width total should = 12. 
+    if you don't specify width, cols will be split evenly over the viewport
 	     col-md scales up (med to large desktops), and automatically stacks on phones and tablets (within the row). -->
 
-    <div class="row">
-        <div class="col">
-        <h1>{{ page.title }} </h1>
-        
-            <p>The Santa Barbara Coastal LTER (SBC LTER)
+    <div class="row mt-4">
+        <div class="col-md">
+        <h1>Santa Barbara Coastal </h1>
+            <h2>Long-Term Ecological Research</h2>
+
+            <p class="mt-4">The Santa Barbara Coastal LTER (SBC LTER)
     is an interdisciplinary research program established in April 2000 with 
     the goal of advancing a predictive understanding of how oceanic and terrestrial 
     processes alter material flows to influence 
@@ -31,7 +33,7 @@ description: page description here.
 
   </div>
 
-<div class="col">
+<div class="col-md">
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -46,9 +48,8 @@ description: page description here.
     <div class="carousel-item active">
       <img class="d-block w-100" src="/assets/img/0096_1000px.jpg" alt="slide 0">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Giant kelp Forest (Macrocystis pyrifera)</h5>
-        <p> At the land-ocean margin in temperate regions of both the northern and southern hemispheres, 
-        kelp forests are one of the most productive ecosystems on earth</p>
+        <h5>Giant kelp and TO DO FISH (Macrocystis pyrifera, )</h5>
+        <p> optional text</p>
       </div>
      </div>
      <div class="carousel-item">
