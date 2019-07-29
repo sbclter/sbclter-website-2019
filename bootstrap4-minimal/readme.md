@@ -54,8 +54,9 @@ The row size is 12 units. And row put inner divs horizontally.
 So you can do something like this, and the 3 divs will be on the same row (unless you set min-width to some pixel value.)
 ``` 
 <div class="row">
-    <div class="col-6"></div>
-    <div class="col-1"></div>
-    <div class="col-5"></div>
+    <div class="col-md-6"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5"></div>
 </div> 
 ```
+
