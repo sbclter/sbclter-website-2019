@@ -48,36 +48,36 @@ description: page description here.
     <div class="carousel-item active">
       <img class="d-block w-100" src="/assets/img/0096_1000px.jpg" alt="slide 0">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Giant kelp and TO DO FISH (Macrocystis pyrifera, )</h5>
-        <p> optional text</p>
+        <h5>Giant Kelp and Halfmoon Perch</h5>
+        <p class="font-italic">(Macrocystis pyrifera, Medialuna californiensis)</p>
       </div>
      </div>
      <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/0573_1000px.jpg" alt="slide 1">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Caption here</h5>
-        <p>Optional text here</p>
+        <h5>Garibaldi, Coralline algae and Blacksmith Perch</h5>
+        <p class="font-italic">(Hypsypops rubicundus, Calliarthron sp., Chromis punctipinnis)</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/1088_1000px.jpg" alt="slide 2">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Caption here</h5>
-        <p>Optional text here</p>
+        <h5>oops, replace with something we have</h5>
+        <p class="font-italic">Optional text here</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/1495_1000px.jpg" alt="slide 3">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Caption here</h5>
-        <p>Optional text here</p>
+        <h5>Giant Kelp</h5>
+        <p class="font-italic">(Macrocystis pyrifera)</p>
       </div>
     </div>
    <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/1304_1000px.jpg" alt="slide 4">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Caption here</h5>
-        <p>Optional text here</p>
+        <h5>Kelp wrack and Marbled Godwits (TO DO CONFIRM)</h5>
+        <p class="font-italic">(Macrocystis pyrifera, Limosa fedoa)</p>
       </div>
     </div>
   </div>
