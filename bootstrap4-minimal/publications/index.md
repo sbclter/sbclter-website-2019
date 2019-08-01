@@ -19,21 +19,22 @@ page_css:
   - "/assets/css/custom/includes/search_bar.css"
 category_labels:
   Article:       Articles
-  phdthesis:     PhD Thesis
-  Mastersthesis: Masters Thesis
+  phdthesis:     PhD Dissertations
+  Mastersthesis: Masters Theses
   Incollection:  Book Chapters
   Book:          Books
   Inproceedings: Conference Proceedings
+  Techreport:    Technical Reports
 
 ---
 
 <h1>SBC LTER Publications</h1>
 
 
-<div id="table-content" >
+<div id="table-content" class="small" >
 	{% include search_bar.html placeholder=page.placeholder %}
 
-	{% assign pub_groups = site.data.Website_citation_export | group_by: "category" | sort: "category" %}
+	{% assign pub_groups = site.data.Website_citation_export | group_by: "category" | sort: "name" %}
 
 	{% for pubs in pub_groups %}
 		{% include table.html columns = page.columns
