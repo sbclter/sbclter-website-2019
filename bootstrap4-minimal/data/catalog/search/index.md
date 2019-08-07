@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 'Page tltle here'
+title: 'Data Package Search'
 description: page description here.
 page_css:
   - /assets/css/custom/data/catalog.css
@@ -8,7 +8,7 @@ placeholder: "Search datasets ..."
 ---
 
 
-<h1>Data Search</h1>
+<h1>{{ page.title }}</h1>
 
 <div id="search-container">
 	{% include data/PASTA_search.html %}

@@ -28,7 +28,7 @@
 			<td class="cell col-5"> {{ itemrow.abstract }} </td>
 			<td class="cell col-4">
 			{% for package in itemrow.dataPackages.package %}
-				<a class="package-link" href="/data?package={{ package.docid }}"> {{ package.shortTitle }} </a>
+				<a class="package-link" href="/data/catalog/package/?package={{ package.docid }}"> {{ package.shortTitle }} </a>
 				<br/>
 			{% endfor %}
 			</td>
