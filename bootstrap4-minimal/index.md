@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'Santa Barbara Coastal LTER'
-description: page description here.
+description: Home page description here.
 ---
 
 <div id="main-container">
@@ -17,19 +17,23 @@ description: page description here.
         <h1>Santa Barbara Coastal </h1>
             <h2>Long-Term Ecological Research</h2>
 
-            <p class="mt-4">The Santa Barbara Coastal LTER (SBC LTER)
-    is an interdisciplinary research program established in April 2000 with 
+     <p class="mt-4">The Santa Barbara Coastal LTER (SBC LTER)
+    is an interdisciplinary research program established in 2000 with 
     the goal of advancing a predictive understanding of how oceanic and terrestrial 
     processes alter material flows to influence 
-    the ecology of coastal kelp forest ecosystems. It focuses on the semi-arid coast and nearshore waters 
-    of southern California where the movement and exchange of materials in the ocean and on 
-    land are highly seasonal and episodic. SBC’s principal study domain is a 10,000 square kilometer area of 
+    the ecology of coastal kelp forest ecosystems. It focuses on the nearshore waters 
+    of southern California where ocean currents and climate are highly variable with season and longer-term cycles including the
+    El Niño-Southern Oscillation and the Pacific Decadal Oscillation. 
+    SBC’s principal study domain is a 10,000 square kilometer area of 
     the northern portion of the Southern California Bight that includes the Santa Barbara Channel
     plus the steep coastal watersheds and small estuaries and sandy beaches that border the Channel.</p> 
 
         <p>SBC LTER is housed at the University of California, Santa Barbara (UCSB) 
     and is part of the National Science Foundation's (NSF) Long Term Ecological Research (LTER) Network, a
     program was established by the NSF in 1980 to support research on long-term ecological phenomena.</p>
+
+
+   <p> <a href="{{ site.url }}/about">more about SBC LTER and the LTER Network</a> </p>
 
   </div>
 
