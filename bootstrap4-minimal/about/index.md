@@ -11,7 +11,7 @@ description: origin, people, overall research objectives, news of the Santa Barb
  
  <div class="row mt-4">
     <div class="col-md">
-    <p>Each LTER site involves dozens of researchers, andat  SBC this includes includes microbial, 
+    <p>Each LTER site involves dozens of researchers. At SBC this includes includes microbial, 
     population, and  community ecologists, oceanographers, physiologists, biogeochemists, social scientists,
      economists and educators. The shared knowledge of place offers unusual common ground for
      exploring disciplinary intersections.</p>
@@ -22,9 +22,9 @@ description: origin, people, overall research objectives, news of the Santa Barb
         <li>CO PIs:      
            <ul>
            <li><a href="#">Dan Reed (Former Lead PI)</a></li>
-           <li><a href="#">person 2</a></li>
-           <li><a href="#">person 3</a></li>
-           <li><a href="#">person 4</a></li>
+           <li><a href="#">Gretchen Hofmann</a></li>
+           <li><a href="#">David Siegel</a></li>
+           <li><a href="#">Adrian Stier</a></li>
            </ul>
         </li>
         <li>Education Coordinator: <a href="#">Scott Simon</a> </li>
@@ -44,7 +44,7 @@ two choices: (a) keep it up to date manually now and code it later
         <li>Lead PI: <a href="#">Bob Miller</a> </li>
    </ul>
 -->
-   <img class="img-thumbnail img-responsive img-center" src="assets/img/research/LTER-network-evolution.png"  alt="LTER Sites History" />
+   <img class="img-thumbnail img-responsive img-center" src="/assets/img/LTER-network-evolution.png"  alt="LTER Sites History" />
 
 </div> <!-- close the col -->
 
@@ -77,7 +77,7 @@ collaborative team science</li>
 
 
 <p>Find out more about the <a href="https://lternet.edu">LTER Network</a></p>
-   <img class="img-thumbnail img-responsive img-center" src="assets/img/research/LTER-sites-2017-final-no-insets.png"  alt="LTER Sites Map" />
+   <img class="img-thumbnail img-responsive img-center" src="/assets/img/LTER-sites-2017-just-the-map-144.jpg"  alt="LTER Sites Map" />
 
 
 </div>
