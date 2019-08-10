@@ -4,29 +4,40 @@
 
 <form id="dataSearchForm" name="dataSearchForm">
    <div class="row">
-      <div class="col-md-3">
-      <input type="hidden" id="sort" name="sort" value="score">
-      <input class="search-input" name="q" placeholder="Enter search term" type="text">
-      <input type="submit" value="Search">
+      <div class="col-md-4">
+      <input type="hidden" id="sort" name="sort" value="score"/>
+      <input class="search-input" name="q" placeholder="Enter search term" type="text"/>
+      <input type="submit" value="Search"/>
       <p class="small">With no search terms, all SBC LTER datasets are listed.</p>
    </div>
-      <div class="col-md-9">
+      <div class="col-md-4">
          <p class="small">To search anywhere in the dataset, enter a term. Use quotes for an exact phrase ("kelp forest"), and a minus sign to exclude
             terms (cruise -nitrate), as for other search engines. </p>
-            <p class="small">To filter or refine
-         the search based on specific metadata content, use the <strong>Advanced</strong> search features.
-         Datasets from the SBC LTER will be summarized below with links to complete metadata and data download
-         (in the <a href="https://portal.edirepository.org">EDI</a> repository). </p>
+      </div>
+      <!-- Identifier (DOI or local-ID) (not a filter, so put near the top) -->
+      <div class="col-md-4">
+         <div class="input-block">
+            <i class="fas fa-bullseye"></i><label class="group-label" for="identifier">Identifier</label>
+            <input class="search-input" name="id" id="identifier" placeholder="DOI or ID" type="text" title="Find a dataset if you have its DOI or ID">
+         </div>
       </div>
    </div>
+   
+   
+  
+   
    
    <div class="">
 <!--    <div style="margin-top: 10px"> -->
       <input aria-expanded="false" aria-controls="advancedInputs" class="collapse-toggle" name="expanded" type="checkbox"
-         value="true" id="advancedToggle" role="button">
+         value="true" id="advancedToggle" role="button"/>
       <!-- <label class="lbl-toggle" tabindex="0" for="advancedToggle">
          Advanced
       </label> -->
+      <p class="small">To filter or refine
+         the search based on specific metadata content, use the <strong>Advanced</strong> search features.
+         Datasets from the SBC LTER will be summarized below with links to complete metadata and data download
+         (in the <a href="https://portal.edirepository.org">EDI</a> repository). </p>
       <p class="h4">
          Advanced
       </p>
@@ -38,28 +49,31 @@
       
       <div class="row">
          <!-- Creator -->
-         <div class="col-md-2">
+         <div class="col-md-3">
       <div class="input-block">
          <i class="fas fa-user"></i><label class="group-label" for="creator">Creator</label>
-         <input class="search-input" name="creator" id="creator" placeholder="Name" type="text" title="The name of the creator or originator of a dataset">
+         <input class="search-input" name="creator" id="creator" placeholder="Name" type="text" title="The name of the creator or originator of a dataset"/>
       </div>
          </div>
       
       <!-- Dates -->
-         <div class="col-md-2">
+         <div class="col-md-3">
       <div class="input-block">
-         <i class="fas fa-calendar-alt"></i><span class="group-label">Year</span><br>
+         <i class="fas fa-calendar-alt"></i><span class="group-label">Year</span>
+         <br/>
          <div class="yeardiv">
-            <label for="min_year">Start</label><br>
-            <input class="yearbox" id="min_year" name="s" value="1900" type="number">
+            <label for="min_year">Start</label>
+            <br/>
+            <input class="yearbox" id="min_year" name="s" value="1955" type="number"/>
          </div>
          <div class="yeardiv">
-            <label for="max_year">End</label><br>
-            <input class="yearbox" id="max_year" name="e" value="2018" type="number">
+            <label for="max_year">End</label>
+            <br/>
+            <input class="yearbox" id="max_year" name="e" value="2019" type="number"/>
          </div>
          <div class="yeardiv">
             <input id="data_year" name="datayear" value="y" type="checkbox" title="Only show results with data collected within the year range">
-            <label class="form-check-label" for="data_year"> Data coverage </label><br>
+            <label class="form-check-label" for="data_year"> Data coverage </label><br/>
             <input id="publish_year" name="pubyear" value="y" type="checkbox" title="Only show results that were published within the year range">
             <label class="form-check-label" for="publish_year"> Publish year </label>
          </div>
@@ -67,14 +81,14 @@
          </div>
       
       <!-- Location -->
-         <div class="col-md-2">
+         <div class="col-md-3">
       <div class="input-block">
          <i class="fas fa-globe"></i><label class="group-label" for="geo">Location</label>
-         <input class="search-input" name="geo" id="geo" placeholder="Geographic region" type="text" title="The geographic region or site, as described by the submitter">
+         <input class="search-input" name="geo" id="geo" placeholder="Site Name" type="text" title="The geographic area or site described">
       </div>
          </div>
       
-      <!-- Taxon -->
+      <!-- Taxon 
          <div class="col-md-2">
       <div class="input-block">
          <i class="fas fa-sitemap"></i><label class="group-label" for="taxon">Taxon</label>
@@ -82,19 +96,11 @@
             title="Taxonomic name provided by the data submitter">
       </div>
          </div>
+      -->
   
-       
-      <!-- Identifier (DOI or local-ID) -->
-         <div class="col-md-2">
-      <div class="input-block">
-         <i class="fas fa-bullseye"></i><label class="group-label" for="identifier">Identifier</label>
-         <input class="search-input" name="id" id="identifier" placeholder="DOI or ID" type="text" title="Find a dataset if you have its DOI or ID">
-      </div>
-         </div>
-      
       
       <!-- CRA -->
-         <div class="col-md-2">
+         <div class="col-md-3">
       <div class="input-block">
          <i class="fas fa-leaf"></i>
          <label class="group-label" for="coreArea">LTER Core Area</label>
