@@ -14,99 +14,62 @@ description: page description here.
 
 <div id="main-container">
 
-<h2>LI KUI TO DO</h2>
+<h2>Mission Statement</h2>
 
-<pre>
-From the website guidelines:
-
-A brief description of the scope and type of data collected at a site. This description should work
-together with a data catalog, if one exists, helping visitors to determine whether to invest in exploring
-the catalog. The core LTER research themes may provide a useful organizing principle, but sites should
-use whatever organization best fits their research.
-
-Core LTER Research themes:
-○ primary production
-○ organic matter
-○ disturbance
-○ inorganic nutrients
-○ Populations
+<p>
+The primary objectives of the SBC IM system are to 1) preserve high-quality and well-documented data collections that are both secure and easily accessible, 2) serve the SBC and broader community with data products and tools, and 3) participate in relevant committees and activities at both the site and LTER Network level. The primary goals are achieved by the details described here:</p>
 
 
-● Information about where and how to best access a site’s data and metadata.
-● Data access and documentation policy and practices for the LTER site
-● Link to the LTER Network’s Data Access Policy
-● Contact information for the site’s information manager or link to the contact page of the site.
-● Network resources, including the LTER Data Portal [9] and the Environmental Data Initiative [10].
-● In addition, some sites may want to offer links to data training opportunities for students and faculty
+<p>● Assure preservation of high-quality data and metadata products through the cross-platform data curation and documentation and provides security through regular maintenance and backup procedures.</p>
 
-</pre>
+<p>● Maintain and adhere to a Data Access Policy in compliance with LTER standards to assure that data and accompanying metadata are freely and publicly available electronically within two years of collection.</p>
+
+<p>● Assure regular contributions of research data into the long-term data repository through strong integration of the IM Team with site science including 1) participation in the experiment designs and instrument deployment processes, 2) annual review of Information Management, and 3) regular interactions and trainings conducted with co-PIs and community members.</p>
+
+<p>● Develop and maintain the SBC LTER web pages and associated user interfaces that provide access to data and metadata, research publications, themes, site and personnel information, education and outreach programs, and other site information.</p>
+
+<p>● Provide support in the LTER information manager network community in the development of standards and best practices and participation in community projects and systems that promote the discovery, use, and integration of LTER data, both within the network and throughout the broader research community.
+</p>
 
 </div>
 
 
-<hr/>
+<div id="main-container">
 
-<p>Below are some layouts which can be used as templates </p>
+<h3>1. Who we are</h3>
+<p>SBC personnel involved in information management include <a href="/about/people/lkui/">Li Kui</a> (SBC's information manager), and scientific staff in research groups: <a href="/about/people/jdugan/">Jenny Dugan</a>  (science coordinator), <a href="/about/people/ssampson/">Sarah Sampson</a> (Reef group), <a href="/about/people/cnelson1/">Clint Nelson</a> and <a href="/about/people/dsalazar/">David Salazar</a> (Ocean group).</p>
+ 
+<p>We also leverage or work closely with the following groups for system support, standards development, informatics, software development, and/or data processing:</p>
+<p>- Marine Science Institute (<a href="http://msi.ucsb.edu">MSI.ucsb.edu</a>) and the UC Santa Barbara campus network infrastructure</p>
+<p>- Moorea Coral Reef LTER (<a href="http://mcr.lternet.edu">MCR.lternet.edu</a>)</p>
+<p>- National Center for Ecological Analysis and Synthesis (<a href="http://nceas.ucsb.edu">NCEAS.ucsb.edu</a>)</p>
+
+</div>
 
 <div id="main-container">
-	<div class="row">
-	       <div class="col-md-4">
-           <p>Sample col with a list </p>
-            <ul>
-                <li>list 1</li>
-                <li>list 2</li>
-                <li>list 3</li>
-                <li>list 4</li>
-            </ul>
-        </div>
 
-       <div class="col-md-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-anim id est laborum.
-          </p>
-        </div>
-   </div>
-    
-    <!-- possibly could add a clear here instead of row. see getbootstrap.com/docs/ examples grid -->
-    
-    <div class="row"> 
-        <div class="col-md-4">
-           <p>this is row 2 </p>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
-            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
-            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id 
-            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-            id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor 
-            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-            saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque 
-            earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
-            alias consequatur aut perferendis doloribus asperiores repellat.
-          </p>
-        </div>
+<h3>2. Data and metadata access</h3>
+<p>SBC LTER data were categorized into collections of five habitats, eight measurement types, and six core research areas. You can look into each of the collections and find the data package that you are interested in. If your target datasets are outside of our collection categories, please use the search function and provide the keywords for indexing. The metadata for each data package can be viewed in the Environmental Data Initiative (EDI) metadata tab. The detail instruction of data search and it’s associated metadata can be seen here:<a href="/data/management/SBCLTER_DataDownloadProtocol_WithWebsite_20191001.pdf">Data Download Protocol</a>   </p>
+</div>
 
-       <div class="col-md-8">
-       <p>block has an image. </p>
-       
-    <img class="featurette-image img-responsive center-block" src="/assets/img/avatar.png"  alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />       
-     </div>
-     
-        <hr />
-        
-        <div>
-        <img class="featurette-image img-responsive center-block" src="/assets/img/avatar.png" alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />
-        <p>Example of a section with a float-right image. size is fixed.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-anim id est laborum.</p>
-        </div>
-        
-     
-    </div>
+<div id="main-container">
+
+<h3>3. IM System</h3>
+<p>A copy of SBC's Information Management plan and overview is available by request to: <a href="mailto:sbclter@msi.ucsb.edu" target="_blank"> sbclter@msi.ucsb.edu </a> </p>
+
+<h5>3.1. File server</h5>
+<p>Data are available to SBC members as quickly as possible. All of SBC's data and metadata are managed in a hierarchical directory system on a central data server. The directory structure is published internally and write-access is controlled. </p>
+
+<p>General file server backup procedures are maintained and implemented through MSI IT office. In general, file servers are backed up nightly. For these systems a full backup is done once each month, and an "incremental" backup is done every day.
+</p>
+
+<h5>3.2. Data publication</h5>
+<p>SBC's system for data sharing and publication is compatible with the Network-adopted specification, Ecological Metadata Language (EML), and data are published in the Environmental Data Initiative repository (a repository funded by NSF and recommended for the LTER sites).  </p>
+
+</div>
+
+
+
+
+
+
