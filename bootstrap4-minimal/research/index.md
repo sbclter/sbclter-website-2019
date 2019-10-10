@@ -24,84 +24,55 @@ change and human use</p>
 	     col-md scales up (med to large desktops), and automatically stacks on phones and tablets (within the row). -->
 
     <div class="row">
-        <div class="col-md-6">
-        <blockquote>
-            <h2>How do natural and human drivers influence giant kelp dynamics and alter the 
-            long-term structure and function of kelp forest ecosystems?</h2>
-            <p class="lead">Giant kelp is a relatively short-lived foundation species in a setting of long-term climate 
-            change and human use. Our three research themes are linked in a conceptual framework by the causes and ecological consequences 
-            of the kelp dynamics.</p>
-            <p> Kelp forests are connected to each other and to the 
-             coastal ocean and intertidal beaches via material exchange. Predicting the causes and 
-             consequences of kelp forest responses to environmental change requires integrated studies of a 
-             wide range of physical, chemical and biological processes in the 
-             water column within and outside of the kelp forest, on the seafloor and on adjacent beaches. 
-             Thus, integration 
-             across all three themes is a natural and necessary requirement for advancing a predictive 
-             understanding of how kelp forests respond to environmental change now and into the future.</p>
-            <p>Our research advances a predictive understanding of how disturbance, 
-             climate variation and human actions (e.g., fishing and coastal development) 
-             alter the structure and function of kelp forest ecosystems to identify the 
-             mechanisms that underlie these processes.</p>
-          </blockquote>  
+        <div class="col-md-5">
+                   
+            <p>SBC LTER was established in April 2000 with the goal of advancing a predictive 
+            understanding of how oceanic and terrestrial processes alter material flows to 
+            influence the ecology of coastal ecosystems. Diverse and productive marine forests 
+            of the giant kelp, Macrocystis pyrifera, serve as the focal ecosystem for our research. </p>
         </div>
-        <div class="col-md-6">
-           <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/conceptual_framework_sbcIV.jpg"  alt="Generic placeholder image" />
+        <div class="col-md-7">
+           <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/map_forest_composite.png"  alt="Generic placeholder image" />
           <br /><br /> <!-- get some css to do this -->
-              <h3 class="text-center"><a href="{{page.url}}/sampling_sites">Sampling Sites Map</a></h3>
+           <p>(a) Map of the SBC LTER study domain, (b) Satellite image showing the close proximity of giant kelp forests to the land-sea interface, (c) Submarine view of a giant kelp forest.
+            </p>
         </div>
-    </div> <!-- close row holding blockquote -->
+    </div>
 
 
- <div  class="row">
-            <div class='col-md-12'>
-             <hr/>
-            </div>
+
+
+      <div class="row">
+    <p class="lead">The major overarching themes of the SBC LTER’s four 6-year funding cycles:</p>
+</div>
+      <div class="row">
+	       <div class="col-md-3">
+           <p>2000-2006 )(SBC I)</p>
+           <p>Identify and quantify inputs to giant kelp forest communities from the ocean and 
+           land, and documenting patterns and sources of spatial and temporal variation in key 
+           elements of kelp forest structure and function.</p>      
         </div>
-
-	<div class="row">
-        <div class="col-md-4">
-            <h3>Theme 1. Environmental drivers of kelp persistence and community structure</h3>
-        <p>Research examines the consequences of changes in kelp persistence on the </p>
-            <ul>
-                <li>structure and function of the kelp forest community,</li>
-                <li>drivers of kelp forest recovery following disturbance</li>
-                <li>ecological consequences of fishing </li>
-                <li>sources and utilization of different forms of nitrogen that 
-                enable kelp to persist during conditions of low nitrate availability</li>
-            </ul>
-            <p class="text-center"><a href="{{page.url}}/theme1">link to theme 1 page.</a></p>
-
-        </div>   
-        <div class="col-md-4">
-            <h3>Theme 2. Biophysical coupling in kelp forest </h3>
-                        <!-- <p>Research goals are to 
-                         </p> -->
-                <ul>
-                    <li>Quantify the biophysical effects of kelp on water residence time and chemistry, and
-                    how these effects interact with microbial communities to influence the 
-                          processing and fate of dissolved organic matter</li>
-                    <li>Describe the consequences of kelp-induced changes in seawater conditions on physiology, 
-                          behavior and eco-evolutionary dynamics of kelp forest inhabitants</li>
-</ul>
-            <p class="text-center"><a href="{{page.url}}/theme2">link to theme 2 page.</a></p>
-
+        <div class="col-md-3">
+           <p>2006-2012 (SBC II)</p>
+           <p>Determine how environmental drivers acting over different spatial and temporal 
+           scales interact to influence the community structure and ecological functions of 
+           giant kelp forests. </p>    
         </div>
-        <div class="col-md-4">
- <h3>
-Theme 3. Spatial dynamics and connectivity </h3>
-         
-<ul>
-<li>Explore how demographic connectivity among local kelp populations varies with 
-            environmental drivers and affects the stability of the larger kelp metapopulationas </li>
-<li>Understand the degree to which synchronous fluctuations in organic matter delivered to and from kelp 
-            forests affect the dynamics of the consumer populations that feed on this material. </li>
-</ul>
- <p class="text-center"><a href="{{page.url}}/theme3">link to theme 3 page.</a></p>
+        <div class="col-md-3">
+           <p>2012-2018 (SBC III)</p>
+           <p>Understand how the structure and function of kelp forests and their material 
+           exchange with adjacent terrestrial and marine ecosystems are altered by disturbance 
+           and climate. </p>
         </div>
-
-          
-   </div>
+        <div class="col-md-3">
+           <p>2018-2024 (SBC IV)</p>
+           <p>Understand how natural and human drivers influence giant kelp dynamics to alter 
+           the long-term structure and function of kelp forest ecosystems </p>    
+        </div>
+       
+   </div>      
+            
+            
    
     
     <!-- close row -->   
