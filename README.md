@@ -7,8 +7,8 @@
 ### Running Instructions
   1. `cd bootstrap4-minimal/`
   1. Find the google-API key and create a valid config file.
-    1. Site Admins have access to the API key
-    1. see readme alongside _config_dummy
+     1. Site Admins have access to the API key
+     1. see readme alongside `_config_dummy.yml` (API KEY MUST NOT BE CHECKED INTO GIT)
   1. `jekyll serve --incremental`
   1. Open http://localhost:4000 on a browser.
   1. If you get an error "Invalid US-ASCII character "\xE2" on line 6", run `export LANG=en_US.UTF-8` and try again.
