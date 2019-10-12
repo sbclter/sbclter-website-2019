@@ -13,8 +13,11 @@ description: page description here.
          <blockquote>
             <p class="lead">SBC programs  range from K-12 education to 
             teacher professional development, undergraduate and graduate student training, and 
-            stakeholder engagement. SBC students, postdoctoral scientists, and investigators are actively 
-            engaged in all facets of our education and outreach efforts. Collaborations include</p>
+            stakeholder engagement and public events such as Earth Day. 
+            SBC students, postdoctoral scientists, and investigators are actively 
+            engaged in all facets of our education and outreach efforts. </p>
+            
+            <p>Collaborations include</p>
             <ul>
                 <li>American Association of University Women</li>
                 <li>Ocean Education Trust, NautilusLive!</li>
@@ -26,7 +29,7 @@ description: page description here.
           </blockquote>  
         </div>
         <div class="col-md-6">
-           <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/conceptual_framework_sbcIV.jpg"  alt="Generic placeholder image" />
+           <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/EarthDay2018.jpg"  alt="Earth Day, 2018" />
           <br /><br /> <!-- get some css to do this -->           
         </div>
     </div> <!-- close row holding blockquote -->
@@ -55,7 +58,7 @@ description: page description here.
         improve student understanding of key environmental concepts, including ocean circulation, 
         weather, and potential influences on biodiversity.  </p>
             
-         <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/conceptual_framework_sbcIV.jpg"  alt="Generic placeholder image" />
+         <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/kids_tank_480.jpg"  alt="Undergraduate docents lead tours of The REEF" />
 
               
               
@@ -74,7 +77,7 @@ description: page description here.
             several other mentorship programs sponsored by the University of California. REU 
             students work closely with SBC researchers on a wide range of topics and most choose 
             to pursue an advanced degree following their undergraduate education.</p>
-         <img class="img-thumbnail img-responsive img-center" src="/assets/img/SEEDS07Beachactivity.jpg"  alt="Students at a beach transect" />
+         <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/SEEDS07Beachactivity.jpg"  alt="Students at a beach transect" />
 
             <p class="text-center"><a href="{{page.url}}/undergrad">link to undergrad page.</a></p>
 
@@ -90,9 +93,9 @@ description: page description here.
             to Network science is achieved by a student-organized California LTER Graduate Student Symposium 
             held annually with CCE and MCR. This well-attended symposium has been popular with our graduate 
             students as an informal venue to share their work and ideas with students from other LTER sites. </p>
-                <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/conceptual_framework_sbcIV.jpg"  alt="Generic placeholder image" />
+                <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/CalifLTERGradSympFeb4_1000px.jpg"  alt="Generic placeholder image" />
 
-          <p class="text-center"><a href="{{page.url}}/grad">link to theme 3 page.</a></p>
+          <p class="text-center"><a href="{{page.url}}/grad">link to grad student page.</a></p>
         </div>
 
           
