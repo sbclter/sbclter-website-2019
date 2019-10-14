@@ -89,13 +89,13 @@ description: page description here.
                research that examines the response of coastal ecosystems to natural and human-induced 
                 alterations, enabling valuable cross-training on diverse aspects of science and its 
                 communcation.
-             Annually, SBC investigators teach a 10-week course focused on major research themes of. Exposure 
+             Annually, SBC investigators teach a 10-week course focused on major research themes. Exposure 
             to Network science is achieved by a student-organized California LTER Graduate Student Symposium 
             held annually with CCE and MCR. This well-attended symposium has been popular with our graduate 
             students as an informal venue to share their work and ideas with students from other LTER sites. </p>
                 <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/CalifLTERGradSympFeb4_1000px.jpg"  alt="Generic placeholder image" />
 
-          <p class="text-center"><a href="{{page.url}}/grad">link to grad student page.</a></p>
+        <p class="text-center"><a href="{{page.url}}/grad">link to grad student page.</a></p>
         </div>
 
           
