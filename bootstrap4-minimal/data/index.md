@@ -1,7 +1,7 @@
 ---
 layout: article
-title: 'Data Overview'
-description: page description here.
+title: 'Overview'
+description: Overview of data resources of and related to SBC LTER.
 
 ---
 
@@ -10,13 +10,20 @@ description: page description here.
 <div id="main-container">
 <div class="row">
 <!-- fun stuff -->
-<div class="col-md-6">
+<div class="col-md-7">
 
 <h2 class="">SBC LTER Data</h2>
 <ul>          
    <li class="">
-       <a href="">SBC LTER Data Catalog</a>
+       <a href="{{page.url}}/catalog/search">SBC LTER Data Catalog</a> 100s of publicly available datasets covering all SBC LTER research activities.
    </li>
+   <!-- possibly, quick search here -->
+   <li class="">
+       <a href="{{page.url}}/management">Data Management Activities</a>
+   </li>
+
+   
+<!-- these will be page-links when the main link above points to browse collections -->   
  <!--   <li class="">
 	   <a href="">Search All SBC Data Holdings</a>
    </li>
@@ -24,27 +31,26 @@ description: page description here.
    	<a href="">SBC Signature Data</a>
    </li> -->
 </ul>
-<p>SBC LTER collects data on _ TO DOA brief description of the scope and type of data collected at a site.____
+<!-- <p>SBC LTER collects data on _ TO DOA brief description of the scope and type of data collected at a site.____
 </p>
-<pre>
-● Contact information for the site’s information manager or link to the contact page of the site.
-</pre>
+Contact information for the site’s information manager or link to the contact page of the site.
+ -->
 
 <hr/>
        
-<h2>Collaborative Research Projects</h2>
+<h2>Data from Collaborative Research Projects</h2>
 <ul>
   <li class="">
-      <a href="http://www.icess.ucsb.edu/iog/realtime/index.php">High Frequency Radar (CODAR)</a>
+      <a href="http://www.icess.ucsb.edu/iog/realtime/index.php">Current data measured with High Frequency Radar (CODAR)</a> 
   </li>
   <li class="">
-     <a href="http://sbc.lternet.edu/data/stearns_wharf/index.html">Real-Time Oceanographic Data from Stearns Wharf</a>
+     <a href="{{page.url}}//stearns_wharf/">Real-Time Oceanographic Data from Stearns Wharf</a> 
   </li>
  <li class="">
-    <a href="http://sbc.marinebon.org">Santa Barbara Channel Marine Biodiversity Observation Network</a>
+    <a href="http://sbc.marinebon.org">Santa Barbara Channel Marine Biodiversity Observation Network</a> 
   </li>       
   <li class="">
-    <a href="http://www.oceancolor.ucsb.edu/plumes_and_blooms/">Plumes and Blooms Project (Santa Barbara Channel)</a>
+    <a href="http://www.oceancolor.ucsb.edu/plumes_and_blooms/">Plumes and Blooms Project (Santa Barbara Channel)</a> 
   </li>
 </ul>
 
@@ -57,13 +63,12 @@ description: page description here.
   </li>
   <li class="">
     <a href="http://www.bco-dmo.org/project/2227">SBC LTER Project entry at Biological and Chemical Oceanographic Data Management Office (BCO-DMO)</a>
-  </li>
+  </li>   
 </ul>
+
 <h3>Southern CA Regional Associations and Agencies</h3>
 <ul>
-  <li class="">
-     <a href="http://digital.library.ucsb.edu/collections/show/23">Ronald H. McPeak, Photographs of Underwater and Coastal California</a>
-  </li>   
+ 
   <li class="">
     <a href="http://sccoos.org" >Southern California Coastal Ocean Observing System (SCCOOS)</a>
   </li>
@@ -71,11 +76,15 @@ description: page description here.
     <a href="http://www.ndbc.noaa.gov" >NOAA's National Data Buoy Center</a>
   </li>
   <li class="">
-    <a href="http://cdip.ucsd.edu">Coastal Data Information Program (CDIP)</a>
+    <a href="http://cdip.ucsd.edu">Wave measurement, swell
+    modeling and forecasting from the Coastal Data Information Program (CDIP)</a> 
   </li>
-  <li class="">
+  <!-- <li class="">
     <a href="http://marinelife.noaa.gov">Channel Islands Encyclopedia of the Sanctuary</a>
-  </li>  
+  </li>  -->
+  <li class="">
+     <a href="http://digital.library.ucsb.edu/collections/show/23">Ronald H. McPeak, Photographs of Underwater and Coastal California</a>
+  </li>
   </ul>
 <h3>US Geologic Survey</h3>
 <ul>
@@ -90,7 +99,7 @@ description: page description here.
    </div> <!-- close col with all these links. -->
 
 <!-- boring stuff -->
-<div class="col-md-6">
+<div class="col-md-5">
 <!-- policies -->
 <h2>Data Usage Policies</h2>
 <h3>Santa Barbara Coastal LTER Policy</h3>
@@ -147,5 +156,16 @@ and the licensing agreements specifying the conditions for data use. See the ful
 </div>
 </div>
 
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+   crossorigin="anonymous">
+<link href="/assets/css/custom/data/search.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom/data/auto-complete.scss" rel="stylesheet" type="text/css">
+<script src="/assets/js/pasta/cors.js"></script>
+<script src="/assets/js/pasta/pagination.js"></script>
+<script src="/assets/js/pasta/auto-complete.min.js"></script>
+<script src="/assets/js/pasta/ucsv-1.2.0.min.js"></script>
+<script src="/assets/js/pasta/pasta_lookup.js"></script>
+<script src="/assets/js/pasta/pasta.js"></script>
 
 
