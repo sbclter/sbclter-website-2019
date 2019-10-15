@@ -24,13 +24,13 @@
 
 - name: "Santa Barbara Channel Marine Biodiversity Network"
   acronym: "SBC MBON"
-  description: "TO DO Description"
+  description: "The Santa Barbara Channel Marine Biodiversity Observation Network (SBC MBON) provides a complete picture of marine biodiversity in the region. We are developing a widely applicable research model that integrates new information with existing data to improve current research and monitoring programs."
   link: "http://sbc.marinebon.org/"
 
 
 - name: "San Onofre Nuclear Generating Station Mitigation Monitoring Program"
   acronym: UCSB SONGS
-  description: "TO DO Description"
+  description: "UCSB scientists working under the direction of the Executive Director of the California Coastal Commission (CCC) design and implement monitoring programs to determine the effectiveness of San Onofre Nuclear Generating Station (SONGS) mitigation projects as a condition of their coastal development permit."
   link: "http://marinemitigation.msi.ucsb.edu/"
 
 
