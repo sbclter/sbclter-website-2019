@@ -27,6 +27,14 @@ community remains largely unknown. Our current research is aimed at quantifying:
         behavior and eco-evolutionary dynamics of kelp forest inhabitants</li>
 </ul>
 
+<hr/>
+<p>Giant kelp is a large source of C-rich dissolved organic matter and field work coupled with 
+molecular studies are being used to understand the important role of microbes in the remineralization 
+and trophic transfer of this material (below).</p>
+<img class="img-thumbnail img-responsive img-center" src="/assets/img/research/kelp_doc_bag_sfc.jpg"  alt="Generic placeholder image" />
+
+
+      
  </div>
         
         
@@ -35,16 +43,13 @@ community remains largely unknown. Our current research is aimed at quantifying:
 <p>SBC researchers are investigating how kelp forest size and architecture modulate seawater 
 flow and chemistry (e.g. pH, DO, pCO2, nutrients)
 during different seasons of the year and climatic states. </p>
-            
-<img class="img-thumbnail img-responsive img-center" src="/assets/img/research/kelp_doc_bag_sfc.jpg"  alt="Generic placeholder image" />
-<p>Giant kelp is a large source of C-rich dissolved organic matter and field work coupled with 
-molecular studies are being used to understand the important role of microbes in the remineralization 
-and trophic transfer of this material.
-</p>
-            
+        
+            <hr/>
+                
+ <p>Field and laboratory experiments are investigating how giant kelp modifies seawater pH and dissolved 
+oxygen to affect the calcification, reproduction, metabolism and behavior of kelp forest consumers.</p>     
 <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/s_purpuratus.jpg"  alt="Generic placeholder image" />
-<p>Field and laboratory experiments are investigating how giant kelp modifies seawater pH and dissolved 
-oxygen to affect the calcification, reproduction, metabolism and behavior of kelp forest consumers.</p>
+
 </div>  
          
            

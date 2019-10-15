@@ -24,30 +24,72 @@ change and human use</p>
 	     col-md scales up (med to large desktops), and automatically stacks on phones and tablets (within the row). -->
 
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6">
                    
             <p>SBC LTER was established in April 2000 with the goal of advancing a predictive 
             understanding of how oceanic and terrestrial processes alter material flows to 
             influence the ecology of coastal ecosystems. Diverse and productive marine forests 
             of the giant kelp, Macrocystis pyrifera, serve as the focal ecosystem for our research. </p>
+            
+             <div class="row">
+    <p class="lead">The overarching themes of the SBC LTER’s four 6-year funding cycles:</p>
+    
+     <div class="row">
+	       <div class="col-md">
+           <h3>2000-2006 (SBC I)</h3>
+           <p>Identify and quantify inputs to giant kelp forest communities from the ocean and 
+           land, and documenting patterns and sources of spatial and temporal variation in key 
+           elements of kelp forest structure and function.</p>      
         </div>
-        <div class="col-md-7">
+        <div class="col-md">
+           <h3>2006-2012 (SBC II)</h3>
+           <p>Determine how environmental drivers acting over different spatial and temporal 
+           scales interact to influence the community structure and ecological functions of 
+           giant kelp forests. </p>    
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md">
+           <h3>2012-2018 (SBC III)</h3>
+           <p>Understand how the structure and function of kelp forests and their material 
+           exchange with adjacent terrestrial and marine ecosystems are altered by disturbance 
+           and climate. </p>
+        </div>
+        <div class="col-md">
+           <h3>2018-2024 (<a href="{{site.baseurl}}/research/current">SBC IV</a>)</h3>
+           <p>Understand how natural and human drivers influence giant kelp dynamics to alter 
+           the long-term structure and function of kelp forest ecosystems </p>    
+        </div>
+       
+   </div>  
+    
+    
+</div>
+            
+            
+        </div>
+        <div class="col-md-6">
            <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/map_forest_composite.png"  alt="Generic placeholder image" />
           <br /><br /> <!-- get some css to do this -->
+          <!-- 
+<p>NOTE TO SARAH: these photos are a little dated. if we had the originals instead of this composite, we could make them fill the space better.
+Bob should approve layout first though, of this whole section - before we spend lots of effort..</p>
+--> 
            <p>(a) Map of the SBC LTER study domain, (b) Satellite image showing the close proximity of giant kelp forests to the land-sea interface, (c) Submarine view of a giant kelp forest.
             </p>
+           
         </div>
     </div>
 
+    
 
-
-
+<!-- 
       <div class="row">
     <p class="lead">The major overarching themes of the SBC LTER’s four 6-year funding cycles:</p>
 </div>
       <div class="row">
 	       <div class="col-md-3">
-           <p>2000-2006 )(SBC I)</p>
+           <p>2000-2006 (SBC I)</p>
            <p>Identify and quantify inputs to giant kelp forest communities from the ocean and 
            land, and documenting patterns and sources of spatial and temporal variation in key 
            elements of kelp forest structure and function.</p>      
@@ -72,17 +114,17 @@ change and human use</p>
        
    </div>      
             
-            
+            -->
    
     
-    <!-- close row -->   
-        
+    <!-- close row, only needed if there is text below. -->
+    <!-- 
         <div  class="row">
             <div class='col-md-12'>
              <hr/>
             </div>
         </div>
-   
+   --> 
 </div>
 
 

@@ -45,10 +45,10 @@ extinction depends on the dispersal of spores from neighboring extant population
 allows local kelp populations to function as a metapopulation that promotes regional persistence  </p>
       
         <hr/>
-       <p>TO DO: Jenny to insert image of beach amphipods eating kelp. Below, beach food webs 
+       <p>Beach food webs 
 are fueled by large amounts of macroalgae exported from nearby kelp forests
         </p>
-        <img class="img-thumbnail img-responsive img-center" src="/assets/img/avatar.png"  alt="Generic placeholder image" />
+        <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/beach_hoppers.jpg"  alt="Beach hoppers, Megalorchestia" />
        
             
   

@@ -35,18 +35,26 @@ forest community, </li>
             <li>sources and utilization of different forms of nitrogen that 
             enable kelp to persist during conditions of low nitrate availability.</li>
            </ul> 
+           
+           <hr/><hr/>
+            <p>NOTE TO SARAH - This diagram came from the proposal and is too small for this spot, plus has extra whitespace. can you find the original?</p>
+            <p>SBC researchers are investigating the importance ammonium and urea in fueling giant kelp growth and the sources and mechanisms that influence the supply of these recycled forms of nitrogen, including competition with phytoplankton</p>
+
+                     <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/recycled_N_diagram.jpg"  alt="Generic placeholder image" />
+
         </div>  
         
         <div class="col-md-6">
-            <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/16840_garbaldi.jpg"  alt="Generic placeholder image" />
+            <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/16840_garbaldi.jpg"  alt="Garibaldi in the kelp forest" />
             <p>The giant kelp Macrocystis pyrifera is a highly productive and dynamic foundation species that influences the abundance and dynamics of a diverse array of reef plants and animals </p>
-            
-            <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/lobster_fishing.png"  alt="Generic placeholder image" />
+
+            <hr/>
             <p>Experiments and co-sampling with fisherman performed inside and outside of marine protected areas are being used to investigate the ecosystem consequences of fishing </p>
+              <p>NOTE TO SARAH - This diagram came from the proposal and is too small for this spot. can you find the original?</p>
+
+                       <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/lobster_fishing.png"  alt="Generic placeholder image" />
             
-            <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/recycled_N_diagram.jpg"  alt="Generic placeholder image" />
-            <p>SBC researchers are investigating the importance ammonium and urea in fueling giant kelp growth and the sources and mechanisms that influence the supply of these recycled forms of nitrogen, including competition with phytoplankton</p>
-        </div>  
+         </div>  
          
            
         </div>
