@@ -50,7 +50,6 @@ forest community, </li>
 
             <hr/>
             <p>Experiments and co-sampling with fisherman performed inside and outside of marine protected areas are being used to investigate the ecosystem consequences of fishing </p>
-              <p>NOTE TO SARAH - This diagram came from the proposal and is too small for this spot. can you find the original?</p>
 
                        <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/lobster_fishing.png"  alt="Generic placeholder image" />
             
