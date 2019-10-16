@@ -16,11 +16,6 @@ page_css:
 <h1>Time Series Sampling Sites</h1>
 
 
-<p>The page we are replacing:
-<ul>
-<li>http://sbc.lternet.edu/sites/sampling/</li>
-</ul>
-
 {% include gmap.html %}
 
 
