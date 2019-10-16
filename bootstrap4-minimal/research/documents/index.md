@@ -4,7 +4,17 @@ title: 'SBC LTER Documents'
 description: Proposals, annual reports.
 
 ---
+<!-- IMPORTANT NOTE:
+How to add a new document
+1. Add the document to the external area (someone in the admin group)
+  1. Follow the existing naming pattern 
+  2. Use project year and calendar year so that they order properly
+  3. No spaces in filenames, use underscores instead (spaces in filenames make URL construction more difficult, because they need to be encoded)
+add links to documents using an existing document as a template.
 
+
+
+--> 
 <h1>{{ page.title }} </h1>
 
 
@@ -31,7 +41,7 @@ description: Proposals, annual reports.
 
 </div>
 
-</hr/>
+<hr/>
     
 <div class="row">
     <div class="col-md-4">
