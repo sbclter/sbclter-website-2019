@@ -20,17 +20,17 @@ description: origin, people, overall research objectives, news of the Santa Barb
 
      <h3>Contact information</h3>
         <ul>
-        <li>Lead PI: <a href="{{ site.url }}/about/people/rmiller/">Bob Miller</a> </li>
+        <li>Lead PI: <a href="{{ site.baseurl }}/about/people/rmiller/">Bob Miller</a> </li>
         <li>CO PIs:      
            <ul>
-           <li><a href="{{ site.url }}/about/people/dreed/">Dan Reed (Former Lead PI)</a></li>
-           <li><a href="{{ site.url }}/about/people/ghofmann/">Gretchen Hofmann</a></li>
-           <li><a href="{{ site.url }}/about/people/dsiegel/">David Siegel</a></li>
-           <li><a href="{{ site.url }}/about/people/astier/">Adrian Stier</a></li>
+           <li><a href="{{ site.baseurl }}/about/people/dreed/">Dan Reed (Former Lead PI)</a></li>
+           <li><a href="{{ site.baseurl }}/about/people/ghofmann/">Gretchen Hofmann</a></li>
+           <li><a href="{{ site.baseurl }}/about/people/dsiegel/">David Siegel</a></li>
+           <li><a href="{{ site.baseurl }}/about/people/astier/">Adrian Stier</a></li>
            </ul>
         </li>
-        <li>Education Coordinator: <a href="{{ site.url }}/about/people/ssimon/">Scott Simon</a> </li>
-        <li>Data Manager: <a href="{{ site.url }}/about/people/lkui/">Li Kui</a> </li>
+        <li>Education Coordinator: <a href="{{ site.baseurl }}/about/people/ssimon/">Scott Simon</a> </li>
+        <li>Data Manager: <a href="{{ site.baseurl }}/about/people/lkui/">Li Kui</a> </li>
      </ul>
 
    <img class="img-thumbnail img-responsive img-center" src="/assets/img/kelp_forest.jpg"  alt="Kelp Forest" />

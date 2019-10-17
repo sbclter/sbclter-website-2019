@@ -17,23 +17,21 @@ description: Home page description here.
         <h1>Santa Barbara Coastal </h1>
             <h2>Long-Term Ecological Research</h2>
 
-     <p class="mt-4">The Santa Barbara Coastal LTER (SBC LTER)
-    is an interdisciplinary research program established in 2000 with 
-    the goal of advancing a predictive understanding of how oceanic and terrestrial 
-    processes alter material flows to influence 
-    the ecology of coastal kelp forest ecosystems. It focuses on the nearshore waters 
-    of southern California where ocean currents and climate are highly variable with season and longer-term cycles including the
-    El Niño-Southern Oscillation and the Pacific Decadal Oscillation. 
-    SBC’s principal study domain is a 10,000 square kilometer area of 
-    the northern portion of the Southern California Bight that includes the Santa Barbara Channel
-    plus the steep coastal watersheds, small estuaries and sandy beaches that border the Channel.</p> 
+     <p class="mt-4">The Santa Barbara Coastal Term Ecological Research (SBC LTER) site is an interdisciplinary 
+     program established in 2000 to understand the ecology of coastal kelp forest ecosystems. Our research is 
+     focused on the nearshore waters of southern California, where ocean currents and climate are highly 
+     variable with season and longer-term cycles, including the El Niño-Southern Oscillation and the Pacific 
+     Decadal Oscillation. SBC’s principal study domain is a 10,000 square kilometer area of the northern 
+     portion of the Southern California Bight that includes the Santa Barbara Channel and the steep coastal 
+     watersheds, small estuaries and sandy beaches that border the Channel.
+</p> 
 
-        <p>SBC LTER is housed at the University of California, Santa Barbara (UCSB) 
-    and is part of the National Science Foundation's (NSF) Long Term Ecological Research (LTER) Network, a
-    program was established by the NSF in 1980 to support research on long-term ecological phenomena.</p>
+        <p>SBC LTER is based at the University of California, Santa Barbara (UCSB) Marine Science Institute, 
+        and is part of the National Science Foundation's (NSF) Long Term Ecological Research (LTER) Network, 
+        a program established by the NSF in 1980 to support research on long-term ecological phenomena.</p>
 
 
-   <p> <a href="{{ site.url }}/about">more about SBC LTER and the LTER Network</a> </p>
+   <p> <a href="{{ site.baseurl }}/about">More about SBC LTER and the LTER Network</a> </p>
 
   </div>
 
@@ -66,7 +64,7 @@ description: Home page description here.
     <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/rocky_reef_scdi_1000.jpg" alt="slide 2">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Epibenthos on a rocky reef</h5>
+        <h5>Epibenthic anemones and tunicates on a rocky reef</h5>
         <p class="font-italic">TO DO Sp names</p>
       </div>
     </div>
