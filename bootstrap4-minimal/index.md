@@ -26,7 +26,7 @@ description: Home page description here.
     El Niño-Southern Oscillation and the Pacific Decadal Oscillation. 
     SBC’s principal study domain is a 10,000 square kilometer area of 
     the northern portion of the Southern California Bight that includes the Santa Barbara Channel
-    plus the steep coastal watersheds and small estuaries and sandy beaches that border the Channel.</p> 
+    plus the steep coastal watersheds, small estuaries and sandy beaches that border the Channel.</p> 
 
         <p>SBC LTER is housed at the University of California, Santa Barbara (UCSB) 
     and is part of the National Science Foundation's (NSF) Long Term Ecological Research (LTER) Network, a
@@ -64,10 +64,10 @@ description: Home page description here.
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/img/1088_1000px.jpg" alt="slide 2">
+      <img class="d-block w-100" src="/assets/img/rocky_reef_scdi_1000.jpg" alt="slide 2">
       <div class="carousel-caption d-none d-md-block">
-        <h5>oops, replace with something we have</h5>
-        <p class="font-italic">Optional text here</p>
+        <h5>Epibenthos on a rocky reef</h5>
+        <p class="font-italic">TO DO Sp names</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -80,7 +80,7 @@ description: Home page description here.
    <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/1304_1000px.jpg" alt="slide 4">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Kelp wrack and Marbled Godwits (TO DO CONFIRM)</h5>
+        <h5>Kelp wrack and Marbled Godwits</h5>
         <p class="font-italic">(Macrocystis pyrifera, Limosa fedoa)</p>
       </div>
     </div>
