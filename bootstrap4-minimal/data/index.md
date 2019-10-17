@@ -10,7 +10,7 @@ description: Overview of data resources of and related to SBC LTER.
 <div id="main-container">
 <div class="row">
 <!-- fun stuff -->
-<div class="col-md-7">
+<div class="col-md-9">
 
 <h2 class="">SBC LTER Data</h2>
 <ul>          
@@ -99,9 +99,20 @@ Contact information for the site’s information manager or link to the contact 
    </div> <!-- close col with all these links. -->
 
 <!-- boring stuff -->
-<div class="col-md-5">
+<div class="col-md-3">
 <!-- policies -->
 <h2>Data Usage Policies</h2>
+
+
+<p class="small">small box here, Data Use Policy
+As a member of Long Term Ecological Research Network, the Santa Barbara Coastal Ecosystems (SBC) LTER is committed to providing access for researchers, students, educators and resource managers to its various data sets. SBC adheres to the LTER Network Data Policy (2005). Access to SBC data varies by data category and user affiliation, and requires the potential users to accept the SBC Data Use Agreement. Users will be asked to review our data access policy and agreement before downloading any data. SBC internal and personal information will not be disclosed to other parties nor used for promotional activities.
+</p>
+
+<p> TO DO: move below text to its own page (new folder), data/policies/index.md
+update links in this box, dates, etc
+</p>
+
+<!-- 
 <h3>Santa Barbara Coastal LTER Policy</h3>
 <p class="small">
 SBC LTER data packages are released under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative 
@@ -140,6 +151,7 @@ resulting from misinterpretation, use or misuse of the data package or its compo
 and the licensing agreements specifying the conditions for data use. See the full text
 <a href="https://lternet.edu/data-access-policy/">LTER Network Data Access Policy</a>
 </p>
+-->
 
 <hr/>
   <h2 class="page-h2">LTER Network Data Resources</h2>
@@ -155,6 +167,8 @@ and the licensing agreements specifying the conditions for data use. See the ful
 </div>
 </div>
 </div>
+
+
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
