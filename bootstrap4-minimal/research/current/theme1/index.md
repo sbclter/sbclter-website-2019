@@ -19,7 +19,7 @@ description: TO DO Theme1 description here.
     <div class="row">
 	<div class="col-md-6">
 <p>Our previous findings highlight the capacity of giant kelp to persist in the face of severe 
-nutrient and thermal stress associated with increased climate variability (Figs. 2 and 3). Yet, 
+nutrient and thermal stress associated with increased climate variability. Yet, 
 giant kelp forests do not persist indefinitely and are regularly disturbed by large waves that 
 disproportionately remove kelp, and fishing which targets higher trophic levels. Changes in climate 
 are expected to alter the frequency and severity of wave disturbance and fishing effort, which 
@@ -37,7 +37,6 @@ forest community, </li>
            </ul> 
            
            <hr/><hr/>
-            <p>NOTE TO SARAH - This diagram came from the proposal and is too small for this spot, plus has extra whitespace. can you find the original?</p>
             <p>SBC researchers are investigating the importance ammonium and urea in fueling giant kelp growth and the sources and mechanisms that influence the supply of these recycled forms of nitrogen, including competition with phytoplankton</p>
 
                      <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/recycled_N_diagram.jpg"  alt="Generic placeholder image" />
