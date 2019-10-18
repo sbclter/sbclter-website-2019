@@ -9,7 +9,16 @@ layout: profile
 	{% include header_nav.html %}
 
 	<div id="main-container">
-		<div class="row">
+		<div>
+
+		<div id="title-text">
+			{% if page.employeeType != "" and page.employeeType != nil %}
+				<div id="title-name" class="float-left"> {{ page.commonName | append: "&nbsp;" }} </div>
+				<div id="title-career">({{ page.employeeType }}) </div>
+			{% else %}
+				<div id="title-name"> {{ page.commonName | append: "&nbsp;" }} </div>
+			{% endif %}
+		</div>
 
 	    <div id="left-container">
 		<!--		<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
@@ -60,15 +69,6 @@ layout: profile
 				</div>
 			</div>
 			<div id="right-container">
-				<div id="title-text">
-					{% if page.employeeType != "" and page.employeeType != nil %}
-						<div id="title-name" class="float-left"> {{ page.commonName | append: "&nbsp;" }} </div>
-						<div id="title-career">({{ page.employeeType }}) </div>
-					{% else %}
-						<div id="title-name"> {{ page.commonName | append: "&nbsp;" }} </div>
-					{% endif %}
-				</div>
-
 				{% if page.profileText != "" and page.profileText != nil %}
 					<div class="profile-section">
 						<strong>Biography: </strong>
