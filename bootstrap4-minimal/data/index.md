@@ -15,11 +15,11 @@ description: Overview of data resources of and related to SBC LTER.
 <h2 class="">SBC LTER Data</h2>
 <ul>          
    <li class="">
-       <a href="{{page.url}}/catalog/search">SBC LTER Data Catalog</a> 100s of publicly available datasets covering all SBC LTER research activities.
+       <a href="{{page.url}}catalog/search">SBC LTER Data Catalog</a> 100s of publicly available datasets covering all SBC LTER research activities.
    </li>
    <!-- possibly, quick search here -->
    <li class="">
-       <a href="{{page.url}}/management">Data Management Activities</a>
+       <a href="{{page.url}}management">Data and Information Management</a>
    </li>
 
    
@@ -41,10 +41,10 @@ Contact information for the site’s information manager or link to the contact 
 <h2>Data from Collaborative Research Projects</h2>
 <ul>
   <li class="">
-      <a href="http://www.icess.ucsb.edu/iog/realtime/index.php">Current data measured with High Frequency Radar (CODAR)</a> 
+      <a href="http://www.icess.ucsb.edu/">Current data measured with High Frequency Radar (CODAR)</a> 
   </li>
   <li class="">
-     <a href="{{page.url}}//stearns_wharf/">Real-Time Oceanographic Data from Stearns Wharf</a> 
+     <a href="{{page.url}}visuals/stearns-wharf">Real-Time Oceanographic Data from Stearns Wharf</a> 
   </li>
  <li class="">
     <a href="http://sbc.marinebon.org">Santa Barbara Channel Marine Biodiversity Observation Network</a> 
@@ -65,7 +65,7 @@ Contact information for the site’s information manager or link to the contact 
     <a href="http://www.bco-dmo.org/project/2227">SBC LTER Project entry at Biological and Chemical Oceanographic Data Management Office (BCO-DMO)</a>
   </li>   
 </ul>
-
+<hr/>
 <h3>Southern CA Regional Associations and Agencies</h3>
 <ul>
  
@@ -86,6 +86,8 @@ Contact information for the site’s information manager or link to the contact 
      <a href="http://digital.library.ucsb.edu/collections/show/23">Ronald H. McPeak, Photographs of Underwater and Coastal California</a>
   </li>
   </ul>
+  
+  <hr/>
 <h3>US Geologic Survey</h3>
 <ul>
   <li class="">
@@ -95,66 +97,10 @@ Contact information for the site’s information manager or link to the contact 
     <a href="http://ca.water.usgs.gov/webcams">Available webcams (Mission Creek and San Pedro Creek are in SBC area)</a>
   </li>    
 </ul>
-        
-   </div> <!-- close col with all these links. -->
-
-<!-- boring stuff -->
-<div class="col-md-3">
-<!-- policies -->
-<h2>Data Usage Policies</h2>
 
 
-<p class="small">small box here, Data Use Policy
-As a member of Long Term Ecological Research Network, the Santa Barbara Coastal Ecosystems (SBC) LTER is committed to providing access for researchers, students, educators and resource managers to its various data sets. SBC adheres to the LTER Network Data Policy (2005). Access to SBC data varies by data category and user affiliation, and requires the potential users to accept the SBC Data Use Agreement. Users will be asked to review our data access policy and agreement before downloading any data. SBC internal and personal information will not be disclosed to other parties nor used for promotional activities.
-</p>
-
-<p> TO DO: move below text to its own page (new folder), data/policies/index.md
-update links in this box, dates, etc
-</p>
-
-<!-- 
-<h3>Santa Barbara Coastal LTER Policy</h3>
-<p class="small">
-SBC LTER data packages are released under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative 
-Commons license Attribution 4.0 
-International(CC BY 4.0)</a>. 
-This license states that users may distribute, adapt, reuse, remix, and build upon this work, as long as they give appropriate credit, provide a link to the license, and indicate if changes were made. If redistributed, a Data User may not apply additional restrictions or technological measures that prevent access.
-This license is displayed with every dataset at download. 
-</p>
-<p class="small">
-Data users have an ethical obligation to cite the data source appropriately in any publication or 
-product that results from its use, and notify the data contact or creator. 
-</p>
-<p class="small">
-Communication, collaboration, or co-authorship (as appropriate) with the creators of this data package 
-is encouraged to prevent duplicate research or publication. Users are urged to contact the data creators 
-with questions about methodology or results. User should realize that
-<ul><li class="small">data may be actively used 
-by others for ongoing research and that coordination may be necessary to prevent duplication or 
-inappropriate use.</li>
-<li class="small"> misinterpretation may occur if data are used 
-outside of the context of the original study. </li>
-<li class="small">data are updated periodically and it is the responsibility of the user to check for new versions of the data.
-</li>
-</ul>
-</p>
-<p class="small">
-While substantial efforts are made to ensure the accuracy of data and associated documentation, 
-complete accuracy of data sets cannot be guaranteed. This data package (with its components) is
-made available “as is” and with no warranty of accuracy or fitness for use. The creators of this 
-data package and the repository where these data were obtained shall not be liable for any damages 
-resulting from misinterpretation, use or misuse of the data package or its components.
-</p>
-<hr/>
-<h3>LTER Network Policy</h3>
-<p>The LTER data policy focuses on the release of LTER data products 
-and the licensing agreements specifying the conditions for data use. See the full text
-<a href="https://lternet.edu/data-access-policy/">LTER Network Data Access Policy</a>
-</p>
--->
-
-<hr/>
-  <h2 class="page-h2">LTER Network Data Resources</h2>
+  <hr/>
+ <h3>LTER Network Data Resources</h3>
   <ul>
     <li class="">
       <a href="https://portal.lternet.edu" target="offline">All-Site Data Catalog</a>, managed by the
@@ -163,12 +109,37 @@ and the licensing agreements specifying the conditions for data use. See the ful
     <li class="">
       <a href="http://ecotrends.info" target="offline">LTER EcoTrends Project</a>
     </li>
-  </ul>       
-</div>
-</div>
-</div>
+</ul>
+  </div> <!-- close col with all these links. -->
+<!-- boring stuff -->
+<div class="col-md-3">
+<!-- policies -->
+<h4>Data Usage Policies</h4>
 
+<p class="small">
+As a member of Long Term Ecological Research Network, the Santa Barbara Coastal Ecosystems (SBC) LTER 
+is committed to providing access for researchers, students, educators and resource managers to its 
+various datasets. SBC adheres to the <a href="https://lternet.edu/data-access-policy/" >LTER Network Data Access Policy (2017)</a>.
+Access to SBC data varies by data category and user affiliation, and requires the potential users to 
+accept the <a href="{{page.url}}policies">SBC Data Use Agreement</a>. 
+Users will be asked to review our data access policy and agreement before downloading any data. 
+SBC internal and personal information will not be disclosed to other parties nor used for promotional activities.
+</p>
 
+<hr/> 
+
+<h4>Internal Data Access</h4>
+
+ <p class="small"> Internal data access requires SBC login. For help, contact
+   <a href="mailto:sbclter@msi.ucsb.edu" target="_blank"> sbclter@msi.ucsb.edu </a> 
+   or see <a href="{{page.url}}internal_access">Instructions for accessing Internal Data</a>.
+ </p>   
+
+ <p class=""><a href="https://sbc.lternet.edu/internal">Login to Internal Data</a></p> 
+
+</div>
+</div>
+</div>
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
