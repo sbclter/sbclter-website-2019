@@ -65,7 +65,7 @@ description: Home page description here.
       <img class="d-block w-100" src="/assets/img/rocky_reef_scdi_1000.jpg" alt="slide 2">
       <div class="carousel-caption d-none d-md-block">
         <h5>Epibenthic anemones and tunicates on a rocky reef</h5>
-        <p class="font-italic">(Corynactis californica, TO DO Sp name)</p>
+        <p class="font-italic">(Corynactis californica, Ascidiacea)</p>
       </div>
     </div>
     <div class="carousel-item">
