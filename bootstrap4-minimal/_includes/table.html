@@ -14,7 +14,9 @@
       {% for column in include.columns %}
         <th class="cell col-{{ include.columns_size[forloop.index0] }} row" style="justify-content: space-between;">
           <strong> {{ column }} </strong>
-          <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          {% if forloop.index0 == 0 %}
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          {% endif %}
         </th>
       {% endfor %}
       </tr>
@@ -24,7 +26,7 @@
       {% if include.urlkey %}
         <tr class="row clickable-row table_row_{{include.data.name}}" data-href='{{ itemrow[include.urlkey] }}' style="cursor: pointer">
           {% for filter in include.dataFilter %}
-            <td class="cell col-{{ include.columns_size[forloop.index0] }}"> {{ itemrow[filter] }} </td>
+            <td class="cell col-{{ include.columns_size[forloop.index0] }}" data-order="{{ itemrow['surName'] }}"> {{ itemrow[filter] }} </td>
           {% endfor %}
         </tr>
       {% else %}
