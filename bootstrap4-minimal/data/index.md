@@ -131,12 +131,12 @@ SBC internal and personal information will not be disclosed to other parties nor
 <h4>Internal Data Access</h4>
 
  <p class="small"> Internal data access requires SBC login. For help, contact
-   <a href="mailto:sbclter@msi.ucsb.edu" target="_blank"> sbclter@msi.ucsb.edu </a> 
-   or see <a href="{{page.url}}internal_access">Instructions for accessing Internal Data</a>.
+   <a href="mailto:sbclter@msi.ucsb.edu" target="_blank">sbclter@msi.ucsb.edu</a> 
+  <!--  or see <a href="{{page.url}}/internal_access">Instructions for accessing Internal Data</a>. -->
  </p>   
-
+<!-- 
  <p class=""><a href="https://sbc.lternet.edu/internal">Login to Internal Data</a></p> 
-
+-->
 </div>
 </div>
 </div>
