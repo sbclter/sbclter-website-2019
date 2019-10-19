@@ -111,6 +111,8 @@ Contact information for the site’s information manager or link to the contact 
     </li>
 </ul>
   </div> <!-- close col with all these links. -->
+
+
 <!-- boring stuff -->
 <div class="col-md-3">
 <!-- policies -->
@@ -130,13 +132,33 @@ SBC internal and personal information will not be disclosed to other parties nor
 
 <h4>Internal Data Access</h4>
 
+<<<<<<< HEAD
  <p class="small"> Internal data access requires SBC login. For help, contact
    <a href="mailto:sbclter@msi.ucsb.edu" target="_blank">sbclter@msi.ucsb.edu</a> 
   <!--  or see <a href="{{page.url}}/internal_access">Instructions for accessing Internal Data</a>. -->
+=======
+ <p class="small"> Internal data access requires SBC login. For help, see <a href="{{page.url}}internal_access">Instructions for accessing Internal Data</a>. To request internal login, contact <a href="mailto:sbclter@msi.ucsb.edu" target="_blank"> sbclter@msi.ucsb.edu </a> 
+   or <a href="mailto:lkui@ucsb.edu">Information Manager</a>.
+>>>>>>> a2903ace9253824aa89fce51f0c8b1704472d46a
  </p>   
 <!-- 
  <p class=""><a href="https://sbc.lternet.edu/internal">Login to Internal Data</a></p> 
+<<<<<<< HEAD
 -->
+=======
+<hr/> 
+
+<h4>Email lists</h4>
+
+ <p class="small"> SBC has three email lists: </p>
+ <ul>
+ <li class="small"> <a href="mailto:sbclter-investigators@lists.msi.ucsb.edu" target="_blank"> Investigators</a>  </li>
+ <li class="small"> <a href="mailto:sbclter-grad@lists.msi.ucsb.edu" target="_blank"> Grad students</a>  </li>
+ <li class="small"> <a href="mailto:sbclter-all@lists.msi.ucsb.edu" target="_blank"> All participants</a> </li>
+</ul>
+<p class="small">To modify subscription to the email lists, please follow instructions <a href="http://lists.msi.ucsb.edu/mailman/listinfo/sbclter-all">here</a> </p>
+
+>>>>>>> a2903ace9253824aa89fce51f0c8b1704472d46a
 </div>
 </div>
 </div>
