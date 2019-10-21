@@ -65,13 +65,14 @@ description: Home page description here.
       <img class="d-block w-100" src="/assets/img/rocky_reef_scdi_1000.jpg" alt="slide 2">
       <div class="carousel-caption d-none d-md-block">
         <h5>Epibenthic anemones and tunicates on a rocky reef</h5>
-        <p class="font-italic">(Corynactis californica, Ascidiacea)</p>
+        <p class="font-italic">(Corynactis californica, unknown white Ascidian)</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/1495_1000px.jpg" alt="slide 3">
       <div class="carousel-caption d-none d-md-block">
         <h5>Giant Kelp</h5>
+> 
         <p class="font-italic">(Macrocystis pyrifera)</p>
       </div>
     </div>
