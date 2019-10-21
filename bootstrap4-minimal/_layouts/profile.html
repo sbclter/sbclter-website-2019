@@ -27,15 +27,6 @@ layout: profile
 
  			<div id="contact-info">
 
-					{% if page.homepage != "" and page.homepage != nil %}
-						<div class="row">
-							<img class="contact-icon col-2" src="/assets/img/profile/website_icon.png" width="24" height="24">
-							<a class="contact-text col-10" href="{{ page.homepage }}" target="_blank"> {{ page.homepage }} </a>
-							<br/>
-						</div>
-						<br/>
-					{% endif %}
-
 					{% if page.email != "" and page.email != nil %}
 						<div class="row">
 							<img class="contact-icon col-2" src="/assets/img/profile/email_icon.png" width="24" height="24">
@@ -82,6 +73,14 @@ layout: profile
 						{{ page.scientificDomainText }}
 					</div>
 				{% endif %}
+				
+				{% if page.homepage != "" and page.homepage != nil %}
+				<div class="profile-section">
+					<strong>Personal Website: </strong>
+					<a href="{{ page.homepage }}" target="_blank"> {{ page.homepage }} </a>
+				</div>
+				{% endif %}
+				
 			</div>
 
 		</div>
