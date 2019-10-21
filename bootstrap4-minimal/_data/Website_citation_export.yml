@@ -2897,13 +2897,13 @@
     category: Article
     citation: |
       Strader, M. E., Wong, J. M., Kozal, L. C., Leach, T. S., Hofmann, G. E. (2019). Parental environments alter DNA methylation in offspring of the purple sea urchin, Strongylocentrotus purpuratus. Journal of Experimental Marine Biology and Ecology. 517:54--64. DOI: 10.1016/j.jembe.2019.03.002
-    author: Wong, Juliet; Kozal, Logan; Hofmann, Gretchen; Leach, Terench
+    author: Kozal, Logan; Hofmann, Gretchen; Leach, Terench
   - sbc_id: 1342
     year: '2019'
     category: Article
     citation: |
       Wong, J. M., Kozal, L. C., Leach, T. S., Hoshijima, U., Hofmann, G. E. (2019). Transgenerational effects in an ecological context: Conditioning of adult sea urchins to upwelling conditions alters maternal provisioning and progeny phenotype. Journal of Experimental Marine Biology and Ecology. 517:65--77. DOI: 10.1016/j.jembe.2019.04.006
-    author: Wong, Juliet; Kozal, Logan; Leach, Terench; Hofmann, Gretchen
+    author: Kozal, Logan; Leach, Terench; Hofmann, Gretchen
   - sbc_id: 1343
     year: '2019'
     category: Article
@@ -2926,5 +2926,11 @@
     year: '2019'
     category: phdthesis
     citation: |
-      Yorke, C. Kelp as a trophic resource to reef food webs. (2019). Interdepartmental Graduate Program in Marine Science, University of California, Santa Barbara, University of California, Santa Barbara.
+      Yorke, C. Kelp as a trophic resource to reef food webs. (2019). Interdepartmental Graduate Program in Marine Science, University of California, Santa Barbara.
     author: Yorke, Christie
+  - sbc_id: 1347
+    year: '2019'
+    category: phdthesis
+    citation: |
+      Wong, J. Investigating the Response of Sea Urchin Early Developmental Stages to Multiple Stressors Related to Climate Change. (2019). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
+    author: ''
