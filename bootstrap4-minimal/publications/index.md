@@ -14,16 +14,17 @@ columns_size:
 dataFilter:
   - year
   - citation
+table_font_size: 12
 page_css:
   - "/assets/css/custom/includes/table.css"
   - "/assets/css/custom/includes/search_bar.css"
 category_labels:
   Article:       Articles
-  phdthesis:     PhD Dissertations
-  Mastersthesis: Masters Theses
-  Incollection:  Book Chapters
   Book:          Books
+  Incollection:  Book Chapters
   Inproceedings: Conference Proceedings
+  Mastersthesis: Masters Theses
+  phdthesis:     PhD Dissertations
   Techreport:    Technical Reports
 
 ---
@@ -34,6 +35,8 @@ category_labels:
 <div id="table-content" class="small" >
 	{% include search_bar.html placeholder=page.placeholder %}
 
+	{% include bookmark_list.html category_labels=page.category_labels %}
+
 	{% assign pub_groups = site.data.Website_citation_export | group_by: "category" | sort: "name" %}
 
 	{% for pubs in pub_groups %}
@@ -41,11 +44,13 @@ category_labels:
 							  columns_size = page.columns_size
 							  data = pubs
 							  dataFilter = page.dataFilter
-							  category_labels = page.category_labels %}
+							  category_labels = page.category_labels
+							  table_font_size = page.table_font_size %}
 	{% endfor %}
 </div>
 
 
+<script src="/assets/js/table.js"></script>
 <script>
 	$(document).ready(function() {
 		$('tbody').each(function() {
@@ -58,6 +63,6 @@ category_labels:
 				}
 			});
 		});
+	    $('.table').DataTable({ retrieve: true }).order([[ 0, "desc"], [1, "asc"]]).draw();
 	});
 </script>
-<script src="/assets/js/table.js"></script>

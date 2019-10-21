@@ -8,7 +8,7 @@
     {% endif %}
     </strong>
   </h3>
-  <table class="table" name="table_{{include.data.name}}">
+  <table class="table" name="table_{{include.data.name}}" style="font-size: {{include.table_font_size}}px;">
     <thead id="table_header_{{include.data.name}}">
       <tr class="row title-row">
       {% for column in include.columns %}

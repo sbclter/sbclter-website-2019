@@ -1,0 +1,5 @@
+<div id="bookmark-list">
+{% for label in include.category_labels %}
+	<a href="#table_{{ label[0] }}" style="margin-right: 20px;">#{{ label[1] }}</a>
+{% endfor %}
+</div>
