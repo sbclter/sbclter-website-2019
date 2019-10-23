@@ -1,5 +1,7 @@
-<div id="bookmark-list">
+<h4 id="bookmark-list" style="text-align: center; margin-top: -2rem; padding: 20px; box-shadow: 2px 2px 5px grey; background-color: #ffffff;">
 {% for label in include.category_labels %}
-	<a href="#table_{{ label[0] }}" style="margin-right: 20px;">#{{ label[1] }}</a>
+	<u style="margin-right: 10px;">
+		<a href="#table_{{ label[0] }}">{{ label[1] }}</a>
+	</u>
 {% endfor %}
-</div>
+</h4>

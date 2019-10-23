@@ -6,11 +6,12 @@
     {% else %}
       {{ include.data.name }}
     {% endif %}
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;"/></a>
     </strong>
   </h3>
   <table class="table" name="table_{{include.data.name}}" style="font-size: {{include.table_font_size}}px;">
     <thead id="table_header_{{include.data.name}}">
-      <tr class="row title-row">
+      <tr class="row title-row" style="word-wrap: break-word;">
       {% for column in include.columns %}
         <th class="cell col-{{ include.columns_size[forloop.index0] }} row" style="justify-content: space-between;">
           <strong> {{ column }} </strong>
