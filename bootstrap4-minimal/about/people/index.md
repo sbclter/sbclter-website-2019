@@ -27,7 +27,7 @@ category_labels:
   Project Co-Investigator: Project Co-Investigators
   Investigator: Investigators
   Project Affiliated Investigator: Affiliated Investigators
-  Project Coordinator: Project Coordinators
+  Project Coordinator: Project Coordination
   Information Manager: Information Management
   Education Manager: Education and Outreach
   Post Doctoral Associate: Postdoctoral Associates

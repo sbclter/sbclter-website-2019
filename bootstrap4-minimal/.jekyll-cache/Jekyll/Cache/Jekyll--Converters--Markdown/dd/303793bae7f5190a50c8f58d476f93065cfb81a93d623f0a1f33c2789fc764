@@ -1,0 +1,1819 @@
+I"ó<div id="table-content" style="display: none;">
+	<input id="search-bar" class="form-control mb-5" type="text" placeholder="Search LTER People ..." />
+
+
+	
+
+	
+		<div class="mt-4">
+  <h3 id="table_Project Lead Investigator" class="table-title pl-1">
+    <strong>
+    
+      Project Lead Investigator
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Project Lead Investigator" style="font-size: px;">
+    <thead id="table_header_Project Lead Investigator">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Project Lead Investigator" data-href="rmiller" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Miller"> Bob Miller </td>
+          
+            <td class="cell col-4" data-order="Miller"> Benthic Ecology </td>
+          
+            <td class="cell col-4" data-order="Miller"> miller@msi.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Miller"> 805-893-6174 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Project Co-Investigator" class="table-title pl-1">
+    <strong>
+    
+      Project Co-Investigators
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Project Co-Investigator" style="font-size: px;">
+    <thead id="table_header_Project Co-Investigator">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Project Co-Investigator" data-href="ghofmann" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Hofmann"> Gretchen Hofmann </td>
+          
+            <td class="cell col-4" data-order="Hofmann"> Eco-physiology </td>
+          
+            <td class="cell col-4" data-order="Hofmann"> hofmann@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Hofmann"> 805-893-6175 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Co-Investigator" data-href="astier" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Stier"> Adrian Stier </td>
+          
+            <td class="cell col-4" data-order="Stier"> Ecosystem biodiversity and resilience </td>
+          
+            <td class="cell col-4" data-order="Stier"> adrian.stier@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Stier"> 805-893-5467  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Co-Investigator" data-href="dreed" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Reed"> Dan Reed </td>
+          
+            <td class="cell col-4" data-order="Reed"> Kelp Forest Ecology </td>
+          
+            <td class="cell col-4" data-order="Reed"> dan.reed@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Reed"> 805-893-8363 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Co-Investigator" data-href="dsiegel" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Siegel"> Dave Siegel </td>
+          
+            <td class="cell col-4" data-order="Siegel"> Oceanography and Modeling </td>
+          
+            <td class="cell col-4" data-order="Siegel"> davey@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Siegel"> 805-893-4547 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Investigator" class="table-title pl-1">
+    <strong>
+    
+      Investigators
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Investigator" style="font-size: px;">
+    <thead id="table_header_Investigator">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="jmelack" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Melack"> John Melack </td>
+          
+            <td class="cell col-4" data-order="Melack"> Hydrology and Biogeochemistry </td>
+          
+            <td class="cell col-4" data-order="Melack"> john.melack@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Melack"> 805-893-3879 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="eeliason" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Eliason"> Erika Eliason </td>
+          
+            <td class="cell col-4" data-order="Eliason"> Fish ecology and evolution </td>
+          
+            <td class="cell col-4" data-order="Eliason"> erika.eliason@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Eliason"> 805-893-2966  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="hlenihan1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Lenihan"> Hunter Lenihan </td>
+          
+            <td class="cell col-4" data-order="Lenihan"> Applied Marine Ecology </td>
+          
+            <td class="cell col-4" data-order="Lenihan"> lenihan@bren.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Lenihan"> 805-893-8629 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="ccarlson1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Carlson"> Craig Carlson </td>
+          
+            <td class="cell col-4" data-order="Carlson"> Marine Microbial Ecology </td>
+          
+            <td class="cell col-4" data-order="Carlson"> craig.carlson@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Carlson"> 805-893-2541 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="jdugan" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Dugan"> Jenny Dugan </td>
+          
+            <td class="cell col-4" data-order="Dugan"> Coastal marine ecology </td>
+          
+            <td class="cell col-4" data-order="Dugan"> j_dugan@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Dugan"> 805-893-2675 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="mcastorani" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Castorani"> Max Castorani </td>
+          
+            <td class="cell col-4" data-order="Castorani"> Marine Ecology </td>
+          
+            <td class="cell col-4" data-order="Castorani"> castorani@virginia.edu </td>
+          
+            <td class="cell col-2" data-order="Castorani">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="mbrzezinski" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Brzezinski"> Mark Brzezinski </td>
+          
+            <td class="cell col-4" data-order="Brzezinski"> Biological Oceanography </td>
+          
+            <td class="cell col-4" data-order="Brzezinski"> mark.brzezinski@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Brzezinski"> 805-893-8605 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="dburkepile" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Burkepile"> Deron Burkepile </td>
+          
+            <td class="cell col-4" data-order="Burkepile"> Community Ecology </td>
+          
+            <td class="cell col-4" data-order="Burkepile"> deron.burkepile@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Burkepile">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="tbell1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Bell"> Tom Bell </td>
+          
+            <td class="cell col-4" data-order="Bell"> Kelp forest carbon cycling </td>
+          
+            <td class="cell col-4" data-order="Bell"> tbell@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Bell">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="lwashburn" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Washburn"> Libe Washburn </td>
+          
+            <td class="cell col-4" data-order="Washburn"> Physical Oceanography </td>
+          
+            <td class="cell col-4" data-order="Washburn"> washburn@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Washburn"> 805-893-7367 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="hpage" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Page"> Mark Page </td>
+          
+            <td class="cell col-4" data-order="Page"> Marine Community Ecology </td>
+          
+            <td class="cell col-4" data-order="Page"> page@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Page"> 805-893-7568 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="cohlmann" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Ohlmann"> Carter Ohlmann </td>
+          
+            <td class="cell col-4" data-order="Ohlmann"> Physical and Optical Oceanography </td>
+          
+            <td class="cell col-4" data-order="Ohlmann"> carter@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Ohlmann">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="nnidzieko" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Nidzieko"> Nick Nidzieko </td>
+          
+            <td class="cell col-4" data-order="Nidzieko"> Coastal physical oceanography </td>
+          
+            <td class="cell col-4" data-order="Nidzieko"> nidzieko@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Nidzieko">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="diglesias-rodriguez" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Iglesias-Rodriguez"> Debora Iglesias-Rodriguez </td>
+          
+            <td class="cell col-4" data-order="Iglesias-Rodriguez"> Phytoplankton Ecology </td>
+          
+            <td class="cell col-4" data-order="Iglesias-Rodriguez"> iglesias@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Iglesias-Rodriguez">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="hmoeller_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Moeller"> Holly Moeller </td>
+          
+            <td class="cell col-4" data-order="Moeller">  Community structure and function </td>
+          
+            <td class="cell col-4" data-order="Moeller"> holly.moeller@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Moeller"> 805-893-3216  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="kcavanaugh" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Cavanaugh"> Kyle Cavanaugh </td>
+          
+            <td class="cell col-4" data-order="Cavanaugh">  Remote Sensing </td>
+          
+            <td class="cell col-4" data-order="Cavanaugh"> kcavanaugh@geog.ucla.edu </td>
+          
+            <td class="cell col-2" data-order="Cavanaugh">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="smacintyre" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="MacIntyre"> Sally MacIntyre </td>
+          
+            <td class="cell col-4" data-order="MacIntyre"> Limnology and Oceanography </td>
+          
+            <td class="cell col-4" data-order="MacIntyre"> sally@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="MacIntyre"> 805-893-3951 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="lwilbanks_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Wilbanks"> Lizzy Wilbanks </td>
+          
+            <td class="cell col-4" data-order="Wilbanks"> Microbial metabolism and biogeochemistry </td>
+          
+            <td class="cell col-4" data-order="Wilbanks"> elizabeth.wilbanks@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Wilbanks"> 805-893-2601 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="asantoro" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Santoro"> Alyson Santoro </td>
+          
+            <td class="cell col-4" data-order="Santoro">  Microbial nitrogen cycling </td>
+          
+            <td class="cell col-4" data-order="Santoro"> alyson.santoro@lifesci.ucsb.edu  </td>
+          
+            <td class="cell col-2" data-order="Santoro"> 805-893-5318 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Investigator" data-href="arassweiler" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Rassweiler"> Andy Rassweiler </td>
+          
+            <td class="cell col-4" data-order="Rassweiler"> Kelp Forest Community Ecology </td>
+          
+            <td class="cell col-4" data-order="Rassweiler"> rassweiler@bio.fsu.edu </td>
+          
+            <td class="cell col-2" data-order="Rassweiler"> 805-893-7823 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Project Affiliated Investigator" class="table-title pl-1">
+    <strong>
+    
+      Affiliated Investigators
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Project Affiliated Investigator" style="font-size: px;">
+    <thead id="table_header_Project Affiliated Investigator">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="jbyrnes" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Byrnes"> Jarret Byrnes </td>
+          
+            <td class="cell col-4" data-order="Byrnes"> Kelp Forest Ecology </td>
+          
+            <td class="cell col-4" data-order="Byrnes"> Jarrett.Byrnes@umb.edu </td>
+          
+            <td class="cell col-2" data-order="Byrnes">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="asimms" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Simms"> Alex Simms </td>
+          
+            <td class="cell col-4" data-order="Simms"> Coastal Geology </td>
+          
+            <td class="cell col-4" data-order="Simms"> asimms@geol.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Simms">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="jmcwilliams" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="McWilliams"> Jim McWilliams </td>
+          
+            <td class="cell col-4" data-order="McWilliams"> Nearshore Circulation Modeling </td>
+          
+            <td class="cell col-4" data-order="McWilliams"> jcm@atmos.ucla.edu </td>
+          
+            <td class="cell col-2" data-order="McWilliams">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="rsimons" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Simons"> Rachel Simons </td>
+          
+            <td class="cell col-4" data-order="Simons"> Hydrodynamics and Transport </td>
+          
+            <td class="cell col-4" data-order="Simons"> simons@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Simons">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="sschroeter" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Schroeter"> Steven Schroeter </td>
+          
+            <td class="cell col-4" data-order="Schroeter"> Kelp Forest, Intertidal and Wetland Ecology </td>
+          
+            <td class="cell col-4" data-order="Schroeter"> schroete@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Schroeter">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="sgaines" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Gaines"> Steve Gaines </td>
+          
+            <td class="cell col-4" data-order="Gaines"> Marine Science, Sustainable Fisheries </td>
+          
+            <td class="cell col-4" data-order="Gaines"> gaines@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Gaines"> 805-893-3764 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="rzimmerman1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Zimmerman"> Dick Zimmerman </td>
+          
+            <td class="cell col-4" data-order="Zimmerman"> Algal Physiology and Ecology </td>
+          
+            <td class="cell col-4" data-order="Zimmerman"> rzimmerm@odu.edu </td>
+          
+            <td class="cell col-2" data-order="Zimmerman"> 757-683-5991 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="kdavis" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Davis"> Kristen Davis </td>
+          
+            <td class="cell col-4" data-order="Davis"> Ocean processes and nearshore ecosystems </td>
+          
+            <td class="cell col-4" data-order="Davis"> davis@uci.edu </td>
+          
+            <td class="cell col-2" data-order="Davis"> 949-824-4498  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="rschmitt" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Schmitt"> Russ Schmitt </td>
+          
+            <td class="cell col-4" data-order="Schmitt"> Marine Community Ecology </td>
+          
+            <td class="cell col-4" data-order="Schmitt"> russ.schmitt@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Schmitt"> 805-893-2051 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="scooper" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Cooper"> Scott Cooper </td>
+          
+            <td class="cell col-4" data-order="Cooper"> Stream Ecology </td>
+          
+            <td class="cell col-4" data-order="Cooper"> scooper@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Cooper"> 805-893-4508 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="falberto" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Alberto"> Filipe Alberto </td>
+          
+            <td class="cell col-4" data-order="Alberto"> Kelp Genetics </td>
+          
+            <td class="cell col-4" data-order="Alberto"> albertof@uwm.edu </td>
+          
+            <td class="cell col-2" data-order="Alberto">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="tlamy" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Lamy"> Thomas Lamy </td>
+          
+            <td class="cell col-4" data-order="Lamy">  </td>
+          
+            <td class="cell col-4" data-order="Lamy"> tlamy@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Lamy">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="ebeighley" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Beighley"> Ed Beighley </td>
+          
+            <td class="cell col-4" data-order="Beighley"> Hydrology </td>
+          
+            <td class="cell col-4" data-order="Beighley"> r.beighley@northeastern.edu </td>
+          
+            <td class="cell col-2" data-order="Beighley"> 617-373-3368 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="sholbrook" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Holbrook"> Sally Holbrook </td>
+          
+            <td class="cell col-4" data-order="Holbrook"> Marine Community Ecology </td>
+          
+            <td class="cell col-4" data-order="Holbrook"> sally.holbrook@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Holbrook"> 805-893-3956 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="bgaylord" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Gaylord"> Brian Gaylord </td>
+          
+            <td class="cell col-4" data-order="Gaylord">  Hydrodynamics and Biomechanics </td>
+          
+            <td class="cell col-4" data-order="Gaylord"> bpgaylord@ucdavis.edu </td>
+          
+            <td class="cell col-2" data-order="Gaylord"> 707-875-1940 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="jschimel" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Schimel"> Josh Schimel </td>
+          
+            <td class="cell col-4" data-order="Schimel"> Ecosystem Ecology </td>
+          
+            <td class="cell col-4" data-order="Schimel"> schimel@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Schimel"> 805-893-7688 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="lromero" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Romero"> Leonel Romero </td>
+          
+            <td class="cell col-4" data-order="Romero"> Coastal Circulation and Mixing </td>
+          
+            <td class="cell col-4" data-order="Romero"> leromero@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Romero">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="cnelson" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Nelson"> Craig Nelson </td>
+          
+            <td class="cell col-4" data-order="Nelson"> microbial community </td>
+          
+            <td class="cell col-4" data-order="Nelson"> craig.nelson@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Nelson">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="droberts" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Roberts"> Dar Roberts </td>
+          
+            <td class="cell col-4" data-order="Roberts"> Terrestrial Biophysical Processes </td>
+          
+            <td class="cell col-4" data-order="Roberts"> dar@geog.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Roberts"> 805-893-2276 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="cbenitez-nelson" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Benitez-Nelson"> Claudia Benitez-Nelson </td>
+          
+            <td class="cell col-4" data-order="Benitez-Nelson"> Marine Biogeochemistry </td>
+          
+            <td class="cell col-4" data-order="Benitez-Nelson"> cbnelson@geol.sc.edu  </td>
+          
+            <td class="cell col-2" data-order="Benitez-Nelson"> 803-777-0018 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="cdantonio" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="D'Antonio"> Carla D'Antonio </td>
+          
+            <td class="cell col-4" data-order="D'Antonio"> Plant Communities, Wildfire </td>
+          
+            <td class="cell col-4" data-order="D'Antonio"> dantonio@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="D'Antonio"> 805-893-2796 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Project Affiliated Investigator" data-href="aguerrini" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Guerrini"> Anita Guerrini </td>
+          
+            <td class="cell col-4" data-order="Guerrini"> Environmental Restoration/History </td>
+          
+            <td class="cell col-4" data-order="Guerrini"> anita.guerrini@oregonstate.edu </td>
+          
+            <td class="cell col-2" data-order="Guerrini"> 541-737-1308 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Project Coordinator" class="table-title pl-1">
+    <strong>
+    
+      Project Coordination
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Project Coordinator" style="font-size: px;">
+    <thead id="table_header_Project Coordinator">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Project Coordinator" data-href="jdugan" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Dugan"> Jenny Dugan </td>
+          
+            <td class="cell col-4" data-order="Dugan"> Coastal marine ecology </td>
+          
+            <td class="cell col-4" data-order="Dugan"> j_dugan@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Dugan"> 805-893-2675 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Information Manager" class="table-title pl-1">
+    <strong>
+    
+      Information Management
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Information Manager" style="font-size: px;">
+    <thead id="table_header_Information Manager">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Information Manager" data-href="mobrien" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="O'Brien"> Margaret O'Brien </td>
+          
+            <td class="cell col-4" data-order="O'Brien"> Information Manager </td>
+          
+            <td class="cell col-4" data-order="O'Brien"> margaret.obrien@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="O'Brien"> 805-893-2071 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Information Manager" data-href="lkui" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Kui"> Li Kui </td>
+          
+            <td class="cell col-4" data-order="Kui"> Data management and analysis </td>
+          
+            <td class="cell col-4" data-order="Kui"> lkui@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Kui">  </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Education Manager" class="table-title pl-1">
+    <strong>
+    
+      Education and Outreach
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Education Manager" style="font-size: px;">
+    <thead id="table_header_Education Manager">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Education Manager" data-href="cblanchette" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Blanchette"> Carol Blanchette </td>
+          
+            <td class="cell col-4" data-order="Blanchette"> Marine Biodiversity </td>
+          
+            <td class="cell col-4" data-order="Blanchette"> blanchet@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Blanchette">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Education Manager" data-href="ssimon" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Simon"> Scott Simon </td>
+          
+            <td class="cell col-4" data-order="Simon"> Outreach Coordinator </td>
+          
+            <td class="cell col-4" data-order="Simon"> scott.simon@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Simon"> 805-893-8765 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Post Doctoral Associate" class="table-title pl-1">
+    <strong>
+    
+      Postdoctoral Associates
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Post Doctoral Associate" style="font-size: px;">
+    <thead id="table_header_Post Doctoral Associate">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Post Doctoral Associate" data-href="raguilera" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Aguilera"> Rosana Aguilera </td>
+          
+            <td class="cell col-4" data-order="Aguilera"> Hydrologic Modeling </td>
+          
+            <td class="cell col-4" data-order="Aguilera"> raguilera@bren.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Aguilera">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Post Doctoral Associate" data-href="acortes" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Cortes"> Alicia Cortes </td>
+          
+            <td class="cell col-4" data-order="Cortes"> Physical oceanographic processes </td>
+          
+            <td class="cell col-4" data-order="Cortes"> alicia.cortes@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Cortes">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Post Doctoral Associate" data-href="ajames" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="James"> Anna James </td>
+          
+            <td class="cell col-4" data-order="James"> Bacterioplankton, carbon cycling </td>
+          
+            <td class="cell col-4" data-order="James"> anna.james.k@gmail.com </td>
+          
+            <td class="cell col-2" data-order="James">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Post Doctoral Associate" data-href="cyorke" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Yorke"> Christie Yorke </td>
+          
+            <td class="cell col-4" data-order="Yorke">  </td>
+          
+            <td class="cell col-4" data-order="Yorke"> christie.yorke@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Yorke">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Post Doctoral Associate" data-href="msiple" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Siple"> Margaret Siple </td>
+          
+            <td class="cell col-4" data-order="Siple">  </td>
+          
+            <td class="cell col-4" data-order="Siple"> siplem@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Siple">  </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Graduate Student" class="table-title pl-1">
+    <strong>
+    
+      Graduate Students
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Graduate Student" style="font-size: px;">
+    <thead id="table_header_Graduate Student">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="scsik" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Csik"> Samantha Csik </td>
+          
+            <td class="cell col-4" data-order="Csik">  </td>
+          
+            <td class="cell col-4" data-order="Csik"> scsik@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Csik">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="abui" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Bui"> An Bui </td>
+          
+            <td class="cell col-4" data-order="Bui">  </td>
+          
+            <td class="cell col-4" data-order="Bui"> an.bui@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Bui">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="kmichaud" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Michaud"> Kristen Michaud </td>
+          
+            <td class="cell col-4" data-order="Michaud">  </td>
+          
+            <td class="cell col-4" data-order="Michaud"> kmmichaud@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Michaud">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="csugano" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Sugano"> Cailan Sugano </td>
+          
+            <td class="cell col-4" data-order="Sugano"> Ocean Acidification </td>
+          
+            <td class="cell col-4" data-order="Sugano"> cailan.sugano@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Sugano">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="sbogan" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Bogan"> Sam Bogan </td>
+          
+            <td class="cell col-4" data-order="Bogan">  </td>
+          
+            <td class="cell col-4" data-order="Bogan"> snbogan@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Bogan">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="sesaian" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Esaian"> Sevan Esaian </td>
+          
+            <td class="cell col-4" data-order="Esaian">  </td>
+          
+            <td class="cell col-4" data-order="Esaian"> sevanesaian@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Esaian">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="aritger" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Ritger"> Amelia Ritger </td>
+          
+            <td class="cell col-4" data-order="Ritger">  </td>
+          
+            <td class="cell col-4" data-order="Ritger"> aritger@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Ritger">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="kemery1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Emery"> Kyle Emery </td>
+          
+            <td class="cell col-4" data-order="Emery">  </td>
+          
+            <td class="cell col-4" data-order="Emery"> emery@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Emery">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="neegholm" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Eegholm"> Nathalie Eegholm </td>
+          
+            <td class="cell col-4" data-order="Eegholm">  </td>
+          
+            <td class="cell col-4" data-order="Eegholm"> nathalie.eegholm@geog.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Eegholm">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="kcavanaugh1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Cavanaugh"> Kate Cavanaugh </td>
+          
+            <td class="cell col-4" data-order="Cavanaugh">  </td>
+          
+            <td class="cell col-4" data-order="Cavanaugh"> kccavanaugh@g.ucla.edu </td>
+          
+            <td class="cell col-2" data-order="Cavanaugh">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="tcedeno_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Cedeno"> Tiffany Cedeno </td>
+          
+            <td class="cell col-4" data-order="Cedeno">  </td>
+          
+            <td class="cell col-4" data-order="Cedeno"> tcedeno@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Cedeno">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="xclare_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Clare"> Xochitl Clare </td>
+          
+            <td class="cell col-4" data-order="Clare">  </td>
+          
+            <td class="cell col-4" data-order="Clare"> xochitl.clare@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Clare">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="tleach" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Leach"> Terench Leach </td>
+          
+            <td class="cell col-4" data-order="Leach">  </td>
+          
+            <td class="cell col-4" data-order="Leach"> tleach@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Leach">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="lkozal" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Kozal"> Logan Kozal </td>
+          
+            <td class="cell col-4" data-order="Kozal">  </td>
+          
+            <td class="cell col-4" data-order="Kozal"> logan.kozal@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Kozal">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="jsainz" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Sainz"> Jade Sainz </td>
+          
+            <td class="cell col-4" data-order="Sainz">  </td>
+          
+            <td class="cell col-4" data-order="Sainz"> jadesainz@umail.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Sainz">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="hlowman1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Lowman"> Heili Lowman </td>
+          
+            <td class="cell col-4" data-order="Lowman"> Biogeochemistry </td>
+          
+            <td class="cell col-4" data-order="Lowman"> heili.lowman@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Lowman">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="dvanderzee_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Vanderzee"> David Vanderzee </td>
+          
+            <td class="cell col-4" data-order="Vanderzee">  </td>
+          
+            <td class="cell col-4" data-order="Vanderzee"> david.vanderzee@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Vanderzee">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="jpeters" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Peters"> Joey Peters </td>
+          
+            <td class="cell col-4" data-order="Peters">  </td>
+          
+            <td class="cell col-4" data-order="Peters"> jpeters@umail.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Peters">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="kmalakhoff" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Malakhoff"> Katrina Malakhoff </td>
+          
+            <td class="cell col-4" data-order="Malakhoff">  </td>
+          
+            <td class="cell col-4" data-order="Malakhoff"> katrina.malakhoff@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Malakhoff">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="jmadden" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Madden"> Jess Madden </td>
+          
+            <td class="cell col-4" data-order="Madden"> Kelp forests and sandy beaches </td>
+          
+            <td class="cell col-4" data-order="Madden"> jessicamadden@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Madden">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="amcdonald" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="McDonald"> Adriane McDonald </td>
+          
+            <td class="cell col-4" data-order="McDonald">  </td>
+          
+            <td class="cell col-4" data-order="McDonald"> adrianemcdonald@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="McDonald">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="dcatlett" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Catlett"> Dylan Catlett </td>
+          
+            <td class="cell col-4" data-order="Catlett"> microbial community </td>
+          
+            <td class="cell col-4" data-order="Catlett"> dylan.catlett@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Catlett">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="zwelch" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Welch"> Zoe Welch </td>
+          
+            <td class="cell col-4" data-order="Welch">  </td>
+          
+            <td class="cell col-4" data-order="Welch"> zoe.welch@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Welch">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="sma" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Ma"> Stephanie Ma </td>
+          
+            <td class="cell col-4" data-order="Ma">  </td>
+          
+            <td class="cell col-4" data-order="Ma"> stephanie.ma@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Ma">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="kkraskura_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Kraskura"> Krista Kraskura </td>
+          
+            <td class="cell col-4" data-order="Kraskura">  </td>
+          
+            <td class="cell col-4" data-order="Kraskura"> krista.kraskura@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Kraskura">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="ehardison_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Hardison"> Emily Hardison </td>
+          
+            <td class="cell col-4" data-order="Hardison">  </td>
+          
+            <td class="cell col-4" data-order="Hardison"> emily.hardison@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Hardison">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="bdifiore_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="DiFiore"> Bart DiFiore </td>
+          
+            <td class="cell col-4" data-order="DiFiore">  </td>
+          
+            <td class="cell col-4" data-order="DiFiore"> bart.difiore@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="DiFiore">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="ddauhajre" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Dauhajre"> Daniel Dauhajre </td>
+          
+            <td class="cell col-4" data-order="Dauhajre">  </td>
+          
+            <td class="cell col-4" data-order="Dauhajre"> ddauhajre@atmos.ucla.edu </td>
+          
+            <td class="cell col-2" data-order="Dauhajre">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="jchamorro_xxxx" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Chamorro"> Jannine Chamorro </td>
+          
+            <td class="cell col-4" data-order="Chamorro">  </td>
+          
+            <td class="cell col-4" data-order="Chamorro"> jannine.chamorro@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Chamorro">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Graduate Student" data-href="nschooler" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Schooler"> Nick Schooler </td>
+          
+            <td class="cell col-4" data-order="Schooler">  </td>
+          
+            <td class="cell col-4" data-order="Schooler"> schooler@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Schooler"> 805-893-4123 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+		<div class="mt-4">
+  <h3 id="table_Staff" class="table-title pl-1">
+    <strong>
+    
+      Staff
+    
+    <a href="#top"><img src="/assets/img/scroll_up.png" style="height: 100%; width: 25px;" /></a>
+    </strong>
+  </h3>
+  <table class="table" name="table_Staff" style="font-size: px;">
+    <thead id="table_header_Staff">
+      <tr class="row title-row" style="word-wrap: break-word;">
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Name </strong>
+          
+            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Scientific Domain </strong>
+          
+        </th>
+      
+        <th class="cell col-4 row" style="justify-content: space-between;">
+          <strong> Email </strong>
+          
+        </th>
+      
+        <th class="cell col-2 row" style="justify-content: space-between;">
+          <strong> Phone </strong>
+          
+        </th>
+      
+      </tr>
+    </thead>
+    <tbody id="myTable">
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="ssampson" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Sampson"> Sarah Sampson </td>
+          
+            <td class="cell col-4" data-order="Sampson">  Reef Sampling and data management </td>
+          
+            <td class="cell col-4" data-order="Sampson"> srsampson@ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Sampson">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="dsalazar" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Salazar"> David Salazar </td>
+          
+            <td class="cell col-4" data-order="Salazar"> Oceanographic Sampling and Management </td>
+          
+            <td class="cell col-4" data-order="Salazar"> salazar@msi.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Salazar"> 805-893-5822 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="ewallner" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Halewood"> Elisa Walner Halewood </td>
+          
+            <td class="cell col-4" data-order="Halewood"> Oceanography and Microbiology Sampling and Analysis </td>
+          
+            <td class="cell col-4" data-order="Halewood"> elisa.wallner@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Halewood"> 805-893-8087 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="shalewood" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Halewood"> Stuart Halewood </td>
+          
+            <td class="cell col-4" data-order="Halewood">  Oceanographic Sampling and Data Analysis </td>
+          
+            <td class="cell col-4" data-order="Halewood"> halewood@eri.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Halewood"> 805-893-7295 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="cgotschalk" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Gotschalk"> Chris Gotschalk </td>
+          
+            <td class="cell col-4" data-order="Gotschalk">  Oceanographic Data Analysis </td>
+          
+            <td class="cell col-4" data-order="Gotschalk"> gots@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Gotschalk">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="jjones2" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Jones"> Janice Jones </td>
+          
+            <td class="cell col-4" data-order="Jones"> Oceanographic Sampling and Data Analysis </td>
+          
+            <td class="cell col-4" data-order="Jones"> ja_jones@lifesci.ucsb.edu  </td>
+          
+            <td class="cell col-2" data-order="Jones"> 805-893-7061 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="kopalk" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Opalk"> Keri Opalk </td>
+          
+            <td class="cell col-4" data-order="Opalk"> Phytoplankton and Carbon Cycling Sampling and Analysis </td>
+          
+            <td class="cell col-4" data-order="Opalk"> keri.opalk@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Opalk">  </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="cnelson1" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Nelson"> Clint Nelson </td>
+          
+            <td class="cell col-4" data-order="Nelson"> Reef Sampling and field coordinator </td>
+          
+            <td class="cell col-4" data-order="Nelson"> clint.nelson@lifesci.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Nelson"> 805-893-7295 </td>
+          
+        </tr>
+      
+    
+      
+        <tr class="row clickable-row table_row_Staff" data-href="sharrer" style="cursor: pointer">
+          
+            <td class="cell col-2" data-order="Harrer"> Shannon Harrer </td>
+          
+            <td class="cell col-4" data-order="Harrer"> Reef Sampling and Data Analysis </td>
+          
+            <td class="cell col-4" data-order="Harrer"> harrer@msi.ucsb.edu </td>
+          
+            <td class="cell col-2" data-order="Harrer"> 805-893-7295 </td>
+          
+        </tr>
+      
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+	
+</div>
+
+<p><br /></p>
+
+<script src="/assets/js/table.js">
+
+</script>
+:ET
