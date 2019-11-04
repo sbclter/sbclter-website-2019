@@ -376,6 +376,9 @@ function makePeopleTables(data) {
 // Plot markers for coverage tab
 function plotMarkers(element, data) {
 	var points = data['eml:eml']['dataset']['coverage']['geographicCoverage'];
+	if (!Array.isArray(points))
+		points = [points];
+
 	var infowindow = new google.maps.InfoWindow();
 	var bounds = new google.maps.LatLngBounds();
 	var map_data = [];
@@ -383,7 +386,6 @@ function plotMarkers(element, data) {
 	const lat_s = 2;
 	const lng_e = 3;
 	const lng_w = 4;
-
 
 	for (var i = 0; i < points.length; i++) {
 		var data_entry = [];
