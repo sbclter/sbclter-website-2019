@@ -1,6 +1,20 @@
 // Grey out columns by habitat or measurement type
-var filter_type = "";
+var primary_filter = "";
 var is_first_search = true;
+var FILTER = {
+	HABITAT: {
+		name: "Habitats",
+		attr: "data-type-habitats"
+	},
+	MEASUREMENT: {
+		name: "Measurement Types",
+		attr: "data-type-measurementTypes"
+	},
+	AREA: {
+		name: "LTER Core Research Areas",
+		attr: "data-type-ltercoreresearchareas"
+	}
+};
 
 // Responsible for any changes to radio button or search
 $(document).ready(function(){
@@ -11,7 +25,8 @@ $(document).ready(function(){
 	// Hide all habitats
 	$("tr.data-record").hide();
 
-	$("button[type='button']").click(function(){  // Handle button presses
+	// Handle all/clear button presses
+	$("button[type='button']").click(function() {
 		if($(this).prop("id") == "clear_button"){
 			clear();
 		}else{
@@ -19,109 +34,111 @@ $(document).ready(function(){
 		}
 	});
 
-	$("input[type='checkbox'][group='Hab-Meas']").change(function(){  // Checkbox was changed
+	// Handle habitat and measurement filter changes
+	$("input[type='checkbox'][group='Hab-Meas']").change(function() {
 		
 		// We're filtering by habitat and measure so disable the research areas boxes
-		$.each($("input[group='Areas']"), function(){
+		$("input[group='Areas']").each(function() {
 			$(this).prop("checked", false);
 			$(this).prop("disabled", true);
-		})
+		});
 
-		if(filter_type == ""){
-			// Filter_type was not set -- remember which is primary category
-			filter_type = $(this).attr("name");
+		// Initialize primary filter (can change after clicking reset button)
+		if (primary_filter == "") {
+			primary_filter = $(this).attr("name");
 		}
 
-		// Hide all habitats
-		$("tr.data-record").hide();
-
-		if(filter_type == "Habitats"){  // Run filter on habitats and then measurements
-			filter_hab_meas_checkboxes("Habitats", "data-type-habitats",
-		 	"Measurement Types", "data-type-measurementTypes");
-		 	filter_hab_meas_checkboxes("Measurement Types", "data-type-measurementTypes",
-		 	"Habitats", "data-type-habitats");
-		}else{  // Run filter on measurements and then habitats
-			filter_hab_meas_checkboxes("Measurement Types", "data-type-measurementTypes",
-		 	"Habitats", "data-type-habitats");
-		 	filter_hab_meas_checkboxes("Habitats", "data-type-habitats",
-		 	"Measurement Types", "data-type-measurementTypes");
+		// Select filters based on primary filter
+		if(primary_filter == FILTER.HABITAT.name) {
+			select_related_filters(FILTER.HABITAT, FILTER.MEASUREMENT);
 		}
+		else {
+			select_related_filters(FILTER.MEASUREMENT, FILTER.HABITAT);
+		}
+
+		// Apply filter on collections data
+		apply_filters();
 	});
-	$("input[type='checkbox'][group='Areas']").change(function(){  // Checkbox was changed
+
+	// Handle area filter changes
+	$("input[type='checkbox'][group='Areas']").change(function() {
+
 		// We're filtering by area so disable the habitat/measurement buttons
 		$.each($("input[group='Hab-Meas']"), function(){
 			$(this).prop("checked", false);
 			$(this).prop("disabled", true);
 		})
 
-		filter_areas_checkboxes("LTER Core Research Areas", "data-type-ltercoreresearchareas");
+		// Apply filter on collections data
+		apply_filters();
 	});
 });
 
-// name is the primary checkbox (i.e. one that was selected first)
-// data_type_attr is the attribute name of primary checkbox type
-// other_name is name for secondary type to filter by (i.e.) checkbox type not checked first)
-// other_data_type_attr is attribute name for secondary checkbox type
-function filter_hab_meas_checkboxes(name, data_type_attr, other_name, other_data_type_attr){
-	// Store the types of measurements that overlap with the selected habitats
-	let possible_categories = []
+// Apply filter (habitat, measurement, area) on collections data
+function apply_filters() {
+	// Hide all collections data
+	$("tr.data-record").hide();
 
-	// Measurements were selected first, simply look at checked habitats and filter
-	$.each($("input[name='" + name + "']"), function(){
-		if($(this).is(':checked')){			
-			// Checked, show all its corresponding table rows
-			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
-				$(this).show();
-				if(filter_type == name){  // Only if primary filter
-					// Parse and filter the measurement attributes
-					possible_categories += $(this).attr(other_data_type_attr).split("-").filter(function(item) {
-						return item != "" && !possible_categories.includes(item);
-					});
-				}
-			});
-		}else{
-			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
-				$(this).hide();
-			});
-		}
+	let h_filters = new Set();
+	let m_filters = new Set();
+	let a_filters = new Set();
+
+	// Save selected filters into corresponding set
+	$(`input[name='${FILTER.HABITAT.name}']`).each(function() {
+		if($(this).is(':checked'))
+			h_filters.add($(this).val());
+	});
+	$(`input[name='${FILTER.MEASUREMENT.name}']`).each(function() {
+		if($(this).is(':checked'))
+			m_filters.add($(this).val());
+	});
+	$(`input[name='${FILTER.AREA.name}']`).each(function() {
+		if($(this).is(':checked'))
+			a_filters.add($(this).val());
 	});
 
-	if(filter_type == name){  // Only if primary filter
-		// Grey out boxes in measurements that have no overlap with selected habitats
-		$.each($("input[name='" + other_name + "']"), function(){
-			if(!possible_categories.includes($(this).val())){
-				// No selected habitat sets exist with this measurement type
-				$(this).prop("checked", false);
-				$(this).prop("disabled", true); // Disable this checkbox
-			}else{
-				if($(this).prop("disabled") || is_first_search){
-					// It was disabled, enable it and check it
-					$(this).prop("disabled", false);  // Enable the checkbox
-					$(this).prop("checked", true);
-				}
+	// Apply filter on collections data
+	$.each($("tr.data-record"), function() {
+		let h_tag = $(this).attr(FILTER.HABITAT.attr).split("-")[0];
+		let m_tag = $(this).attr(FILTER.MEASUREMENT.attr).split("-")[0];
+		let a_tag = $(this).attr(FILTER.AREA.attr).split("-")[0];
 
-			}
-		});
-	}
-	is_first_search = false;
+		// Actual filtering logic
+		if ((h_filters.has(h_tag) && m_filters.has(m_tag)) || a_filters.has(a_tag))
+			$(this).show();
+	});
 }
 
-// Function to show hide table row elements based on which elements of the
-// Research areas table are checked
-function filter_areas_checkboxes(name, data_type_attr){
-	// Measurements were selected first, simply look at checked habitats and filter
-	$.each($("input[name='" + name + "']"), function(){
-		if($(this).is(':checked')){			
-			// Checked, show all its corresponding table rows
-			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
-				$(this).show();
+// Select related filters based on primary filter
+function select_related_filters(primary_filter, other_filter){
+	// Store the types of measurements that overlap with the selected habitats
+	let related_filters = []
+
+	// Collect related filters for each selected primary filter
+	$(`input[name='${ primary_filter.name }']:checked`).each(function(){
+		$(`tr.data-record[${ primary_filter.attr }*='${ $(this).val() }']`).each(function() {
+			// Parse and filter the measurement attributes
+			related_filters += $(this).attr(other_filter.attr).split("-").filter(function(item) {
+				return item != "" && !related_filters.includes(item);
 			});
+		});
+	});
+
+	$.each($("input[name='" + other_filter.name + "']"), function(){
+		if(!related_filters.includes($(this).val())){
+			// No selected habitat sets exist with this measurement type
+			$(this).prop("checked", false);
+			$(this).prop("disabled", true); // Disable this checkbox
 		}else{
-			$.each($("tr.data-record[" + data_type_attr + "*='" + $(this).val() + "']"), function(){
-				$(this).hide();
-			});
+			if($(this).prop("disabled") || is_first_search){
+				// It was disabled, enable it and check it
+				$(this).prop("disabled", false);  // Enable the checkbox
+				$(this).prop("checked", true);
+			}
+
 		}
 	});
+	is_first_search = false;
 }
 
 // Show all data sets
@@ -144,7 +161,7 @@ function clear(){
 		$(this).prop("checked", false);
 		$(this).prop("disabled", false);
 	});
-	filter_type = "";
+	primary_filter = "";
 	is_first_search = true;
 }
 
