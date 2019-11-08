@@ -1,5 +1,7 @@
 var map;
 var markers = [];
+var bounds = new google.maps.LatLngBounds();
+
 
 var url = new URL(location);
 var package = url.searchParams.get('package');
@@ -9,6 +11,15 @@ if (package == null)
 
 var packageUrl = `https://pasta.lternet.edu/package/metadata/eml/${ package.replace(/\./g, "/") }/newest`;
 showDetail(packageUrl);
+
+// Reset map bound on coverage tab focus
+function onCoverageOpen() {
+	// Hack to get fitBounds work correctly
+	setTimeout(function() {
+		map.fitBounds(bounds);
+	}, 0);
+	return true;
+}
 
 // Create popup window for xml links
 function showDetail(url) {
@@ -30,6 +41,7 @@ function showDetail(url) {
 			var title = data['eml:eml']['dataset']['title'];
 			console.log(data);
 
+			initMap();
 			makeSummary(template, data);
 			makePeople(template, data);
 			makeCoverage(template, data);
@@ -380,7 +392,6 @@ function plotMarkers(element, data) {
 		points = [points];
 
 	var infowindow = new google.maps.InfoWindow();
-	var bounds = new google.maps.LatLngBounds();
 	var map_data = [];
 	const lat_n = 1;
 	const lat_s = 2;
@@ -392,24 +403,24 @@ function plotMarkers(element, data) {
 		var title = points[i]['geographicDescription'];
 		data_entry.push(title);
 
-		var lat = points[i]['boundingCoordinates']['northBoundingCoordinate'];
-		data_entry.push(parseFloat(lat));
+		var north = parseFloat(points[i]['boundingCoordinates']['northBoundingCoordinate']);
+		data_entry.push(north);
 
-		var lat_s1 = points[i]['boundingCoordinates']['southBoundingCoordinate'];
-		data_entry.push(parseFloat(lat_s1));
+		var south = parseFloat(points[i]['boundingCoordinates']['southBoundingCoordinate']);
+		data_entry.push(south);
 
-		var lng = points[i]['boundingCoordinates']['eastBoundingCoordinate'];
-		data_entry.push(parseFloat(lng));
+		var east = parseFloat(points[i]['boundingCoordinates']['eastBoundingCoordinate']);
+		data_entry.push(east);
 
-		var lng_w1 = points[i]['boundingCoordinates']['westBoundingCoordinate'];
-		data_entry.push(parseFloat(lng_w1));
+		var west = parseFloat(points[i]['boundingCoordinates']['westBoundingCoordinate']);
+		data_entry.push(west);
 
 		map_data.push(data_entry);
-		
-		// bounds.extend(myLatLng);
-		// map.fitBounds(bounds);
-
+		bounds.extend(new google.maps.LatLng(south, west));
+		bounds.extend(new google.maps.LatLng(north, east));
 	}
+
+	map.fitBounds(bounds);
 
 	for (var i = 0; i < map_data.length; i++) {
 		// Just a point so draw a marker
@@ -470,6 +481,7 @@ function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center:new google.maps.LatLng(34.3, - 120.000),
 		zoom: 9,
+		maxZoom: 12,
 		mapTypeId: google.maps.MapTypeId.TERRAIN
 	});
 }
