@@ -240,8 +240,8 @@
   abstract: "Profiles of seawater constituents collected by CTD and water sampling at our nearshore\n      reef stations have been ongoing since November 2000. Rosette bottle profiles include\n      associated CTD parameters."
   dataPackages: 
     package: 
-      shortTitle: "Nearshore CTD and Rosette Bottle Profiles"
-      docid: "knb-lter-sbc.10"
+      - shortTitle: "Nearshore CTD and Rosette Bottle Profiles"
+        docid: "knb-lter-sbc.10"
   habitats: 
     habitat: 
       - reef
@@ -746,12 +746,11 @@
 - collectionName: "Carbon, Nitogen and Hydrogen isotopes"
   abstract: "Stable isotope ratio analysis to evaulate relative contribution of primary producers\n    to reef food webs, and at locations adjacent to sources of freshwater runoff,\n    terrestrially-derived material. \n    Samples of algae, terrestrial and oceanic POM, and infauna were collected\n    from SBCLTER research reefs and adjacent areas."
   dataPackages: 
-    - package:
-        docid: "knb-lter-sbc.92"
-        shortTitle: "C, N and H isotopes in algae, terrestrial and oceanic POM, 2009-2010"
-    - package:
-        docid: "knb-lter-sbc.107"
-        shortTitle: "C, N and H isotopes in epibenthic suspension feeders and M. pyrifera at 3 reefs, 2010-2011"
+    package:
+      -  docid: "knb-lter-sbc.92"
+         shortTitle: "C, N and H isotopes in algae, terrestrial and oceanic POM, 2009-2010"
+      -  docid: "knb-lter-sbc.107"
+         shortTitle: "C, N and H isotopes in epibenthic suspension feeders and M. pyrifera at 3 reefs, 2010-2011"
   habitats: 
     habitat: reef
   measurementTypes: 
