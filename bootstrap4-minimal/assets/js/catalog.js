@@ -99,12 +99,17 @@ function apply_filters() {
 
 	// Apply filter on collections data
 	$.each($("tr.data-record"), function() {
-		let h_tag = $(this).attr(FILTER.HABITAT.attr).split("-")[0];
-		let m_tag = $(this).attr(FILTER.MEASUREMENT.attr).split("-")[0];
-		let a_tag = $(this).attr(FILTER.AREA.attr).split("-")[0];
+		let h_tags = $(this).attr(FILTER.HABITAT.attr).split("-");
+		let m_tags = $(this).attr(FILTER.MEASUREMENT.attr).split("-");
+		let a_tags = $(this).attr(FILTER.AREA.attr).split("-");
+
+		// Check if each tag satisfies the filters
+		let h_satisfied = h_tags.some((tag) => h_filters.has(tag));
+		let m_satisfied = m_tags.some((tag) => m_filters.has(tag));
+		let a_satisfied = a_tags.some((tag) => a_filters.has(tag));
 
 		// Actual filtering logic
-		if ((h_filters.has(h_tag) && m_filters.has(m_tag)) || a_filters.has(a_tag))
+		if ((h_satisfied && m_satisfied) || a_satisfied)
 			$(this).show();
 	});
 }
