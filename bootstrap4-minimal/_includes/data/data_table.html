@@ -28,7 +28,8 @@
 			<td class="cell col-5"> {{ itemrow.abstract }} </td>
 			<td class="cell col-4">
 			{% for package in itemrow.dataPackages.package %}
-				<a class="package-link" href="/data/catalog/package/?package={{ package.docid }}"> {{ package.shortTitle }} </a>
+				{% assign docid = package.docid | split: "." %}
+				<a class="package-link" href="https://portal.edirepository.org/nis/mapbrowse?scope={{ docid[0] }}&identifier={{ docid[1] }}&revision=newest"> {{ package.shortTitle }} </a>
 				<br/>
 			{% endfor %}
 			</td>
