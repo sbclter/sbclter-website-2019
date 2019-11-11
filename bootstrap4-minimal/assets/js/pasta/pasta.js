@@ -12,7 +12,7 @@ var PASTA_CONFIG = {
    "csvElementId": "csvDownload", // Element with link to download results as CSV
    "pagesTopElementId": "paginationTop", // Element to display result page links above results
    "pagesBotElementId": "paginationBot", // Element to display result page links below results
-   "showPages": 5, // MUST BE ODD NUMBER! Max number of page links to show
+   "showPages": 7, // MUST BE ODD NUMBER! Max number of page links to show
    "sortDiv": "sortDiv" // Element with interactive sort options
 };
 
