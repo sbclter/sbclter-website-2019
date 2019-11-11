@@ -72,7 +72,6 @@ description: Home page description here.
       <img class="d-block w-100" src="/assets/img/1495_1000px.jpg" alt="slide 3">
       <div class="carousel-caption d-none d-md-block">
         <h5>Giant Kelp</h5>
-> 
         <p class="font-italic">(Macrocystis pyrifera)</p>
       </div>
     </div>
