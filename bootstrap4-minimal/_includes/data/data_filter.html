@@ -4,7 +4,8 @@
 {% assign placeholder_search = "Search for datasets ..." %}
 
 
-
+<!-- move to another file -->
+<!-- 
 <div class="pull-left" style="margin-top: 3%; margin-bottom: 3%">
 	<p class="col-lg-2"><strong>Search data:</strong></p>
 	<div style="display: flex;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">	
@@ -12,6 +13,8 @@
 		<button class="btn" id="search-bar-button">Search</button>
 	</div>
 </div>
+-->
+
 
 <div class="row"></div>
 <div class="pull-left row" >
@@ -57,7 +60,7 @@
 	</div>
 
 	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 d-flex flex-row justify-content-center align-items-center">
-	<strong><h3>- OR -</h3></strong>
+	<strong><h3>OR</h3></strong>
 	</div>
 
    	<!------------------------------------------------- 
@@ -103,10 +106,34 @@
 	</table>
 	</div>
 
+<!-- buttons in a small table on the right -->
+
+	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 d-flex flex-row justify-content-center align-items-center"> 	
+		<table class="table-borderless" style="">		
+			<tbody>
+				<tr class="row">		
+					<td class="cell col">
+						<button type="button" id="show_button" class="btn-outline-primary .btn-lg rounded">Show all</button>					
+					</td>					
+				</tr>
+				<tr class="row">		
+					<td class="cell col">
+						<button type="button" id="clear_button" class="btn-outline-primary .btn-lg rounded">Reset</button>
+					</td>					
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+
+
+
+
 </div>
-<!-- Buttons -->
+<!-- Buttons 
 
 <div class="btn-group" role="group">
   <button type="button" id="show_button" class="btn">Show all</button>
   <button type="button" id="clear_button" class="btn">Reset</button>
 </div>
+-->
