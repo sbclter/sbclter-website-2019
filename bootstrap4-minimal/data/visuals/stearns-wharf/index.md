@@ -15,7 +15,7 @@ description: page description here.
         <p>These groups collaborate with SBC LTER on collection of data at Stearns Wharf</p>
         <ul>                                                                                                                                                                    
             <li class="">                                                                                                 
-                <a href="https:piscoweb.org" onmouseover="PISCO">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
+                <a href="https://piscoweb.org" onmouseover="PISCO">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
                 <br />
                 <a href=""><img src="/assets/img/pisco_sm2.png"/></a>                                                    
             </li>                                                                                                                       
@@ -25,13 +25,25 @@ description: page description here.
                 <a href=""><img src="/assets/img/sccoos_sm2.jpg"/></a>                                                   
             </li>                                                                                                                       
         </ul>
-    </div>                                                                                                                          
-    <div class="col-md-10"> 
-                       <!-- http://www.sccoos.org/data/autoss/timeline/?main=single&station=stearns_wharf  -->                                                          
-                                                                                                                                                                                         
+    </div>                                                                                                                 
+        <div class="col-md-6"> 
+            <h2>Under Construction</h2>
+              <img class="img-thumbnail img-responsive img-center" src="/assets/img/under_construction.jpg"  alt="Coming soon..." />
+        </div>  
+        <div class="col-md-4 my-auto">
+        <p>Custom view coming soon. Please visit SCCOOS at: 
+    <a href="http://www.sccoos.org/data/autoss/timeline/?main=single&station=stearns_wharf">http://www.sccoos.org/data/autoss/timeline/?main=single&station=stearns_wharf</a>
+    </p>
+        </div>
+               
+ <!-- iframe to sccoos no longer works -->                                                
+  <!--                                       
+    <div class="col-md-10">                                                                                                                                                                    
         <iframe  height="800px" width="1000px" src="http://www.sccoos.org/data/autoss/timeline/?main=single&station=stearns_wharf">
-                    <!-- occasionally, sccoos will refuse to connect. It may be frequency -->                                                
-        </iframe>                                                                                                          
+                                                                    
+        </iframe>                                                                                                 
     </div>
+
+ -->
 </div>
 </div>
