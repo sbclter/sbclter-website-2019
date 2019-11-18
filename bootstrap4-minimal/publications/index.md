@@ -26,6 +26,7 @@ category_labels:
   Mastersthesis: Masters Theses
   phdthesis:     PhD Dissertations
   Techreport:    Technical Reports
+  Presentation:  Presentations
 
 ---
 
