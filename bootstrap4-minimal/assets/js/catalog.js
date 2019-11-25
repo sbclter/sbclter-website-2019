@@ -43,6 +43,7 @@ $(document).ready(function(){
 			$(this).prop("checked", false);
 		});
 
+		// Clear area checkboxes
 		if (current_filter && current_filter != FILTER.HABITAT) {
 			clear();
 			$(this).prop("checked", true);
@@ -64,6 +65,11 @@ $(document).ready(function(){
 
 		// Apply filter on collections data
 		apply_filters();
+
+		// Enable secondary checkboxes when no primary filter is selected
+		if ($(`input[name='${ primary_filter }']:checked`).length == 0) {
+			clear();
+		}
 	});
 
 	// Handle area filter changes
@@ -74,6 +80,7 @@ $(document).ready(function(){
 			$(this).prop("checked", false);
 		})
 
+		// Clear habitat checkboxes
 		if (current_filter && current_filter != FILTER.AREA) {
 			clear();
 			$(this).prop("checked", true);
