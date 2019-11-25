@@ -2,10 +2,11 @@
 layout: article
 title: 'Overview'
 description: Overview of data resources of and related to SBC LTER.
-
+placeholder: "Search datasets ..."
 ---
 
 <h1>{{ page.title }}</h1>
+{% include search_bar.html placeholder=page.placeholder %}
 
 <div id="main-container">
   <div class="row">
@@ -174,7 +175,4 @@ follow instructions <a href="http://lists.msi.ucsb.edu/mailman/listinfo/sbclter-
     </div> <!-- close row -->
     </div> <!-- cose main container -->
 
-
-
-
-
+<script src="/assets/js/simple_search.js"/></script>
