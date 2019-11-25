@@ -15,12 +15,12 @@ description: page description here.
         <p>These groups collaborate with SBC LTER on collection of data at Stearns Wharf</p>
         <ul>                                                                                                                                                                    
             <li class="">                                                                                                 
-                <a href="https://piscoweb.org" onmouseover="PISCO">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
+                <a href="http://piscoweb.org" onmouseover="PISCO">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
                 <br />
                 <a href=""><img src="/assets/img/pisco_sm2.png"/></a>                                                    
             </li>                                                                                                                       
             <li class="">                                                                                                 
-                <a href="https://sccoos.org" onmouseover="SCCOOS">Southern California Coastal Ocean Observing System (SCCOOS)</a>       
+                <a href="http://sccoos.org" onmouseover="SCCOOS">Southern California Coastal Ocean Observing System (SCCOOS)</a>       
                 <br />                                                                                                                  
                 <a href=""><img src="/assets/img/sccoos_sm2.jpg"/></a>                                                   
             </li>                                                                                                                       
@@ -36,7 +36,7 @@ description: page description here.
     </p>
         </div>
                
- <!-- iframe to sccoos no longer works -->                                                
+ <!-- iframe to sccoos no longer works (we are on https, they are not) -->                                                
   <!--                                       
     <div class="col-md-10">                                                                                                                                                                    
         <iframe  height="800px" width="1000px" src="http://www.sccoos.org/data/autoss/timeline/?main=single&station=stearns_wharf">
