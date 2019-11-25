@@ -15,6 +15,7 @@ var FILTER = {
 		attr: "data-type-ltercoreresearchareas"
 	}
 };
+var current_filter = undefined;
 
 // Responsible for any changes to radio button or search
 $(document).ready(function(){
@@ -40,8 +41,13 @@ $(document).ready(function(){
 		// We're filtering by habitat and measure so disable the research areas boxes
 		$("input[group='Areas']").each(function() {
 			$(this).prop("checked", false);
-			$(this).prop("disabled", true);
 		});
+
+		if (current_filter && current_filter != FILTER.HABITAT) {
+			clear();
+			$(this).prop("checked", true);
+		}
+		current_filter = FILTER.HABITAT;
 
 		// Initialize primary filter (can change after clicking reset button)
 		if (primary_filter == "") {
@@ -66,8 +72,13 @@ $(document).ready(function(){
 		// We're filtering by area so disable the habitat/measurement buttons
 		$.each($("input[group='Hab-Meas']"), function(){
 			$(this).prop("checked", false);
-			$(this).prop("disabled", true);
 		})
+
+		if (current_filter && current_filter != FILTER.AREA) {
+			clear();
+			$(this).prop("checked", true);
+		}
+		current_filter = FILTER.AREA;
 
 		// Apply filter on collections data
 		apply_filters();
