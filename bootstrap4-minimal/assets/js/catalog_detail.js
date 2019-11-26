@@ -45,6 +45,7 @@ function showDetail(url) {
 			makeSummary(template, data);
 			makePeople(template, data);
 			makeCoverage(template, data);
+			makeMethods(template, data);
 
 			$('#detail #detail-title').text(title);
 			$('#detail #detail-body').html(template);
@@ -219,13 +220,43 @@ function makeSummary(template, data) {
 	} catch(err) { console.error(err); }
 }
 
+function makeMethods(template, data) {
+	var element = template.find('#content-class-methods');
 
+	// fill method description table
+	try {
+		var methodList = data['eml:eml']['dataset']['methods']['methodStep']['description']['section'];
+		if (!Array.isArray(methodList)) methodList = [methodList];
+
+		for (let i = 0; i < methodList.length; i++) {
+			let method = methodList[i];
+
+			var row =
+			'<tr class="row mb-3">' +
+				`<td class="cell col-12"> <strong>${ extractData(method['title']) }</strong><br> ${ extractData(method['para'], '<br><br>').replace(/ulink/g, 'a').replace(/<a url/g, '<a href') } </td>` +
+			'</tr>';
+			element.find('#field-methods').append(row);
+		}
+
+	} catch(err) { console.error(err); }
+
+	// fill method protocol table
+	try {
+		var protocol = data['eml:eml']['dataset']['methods']['methodStep']['protocol'];
+
+		element.find('#field-protocol-author').text(protocol['creator']['individualName']['surName']);
+		element.find('#field-protocol-title').text(protocol['title']);
+		element.find('#field-protocol-view').html(activateLink(protocol['distribution']['online']['url']['#text']));
+
+		element.find('.protocol-section').removeAttr('hidden');
+	} catch(err) { console.error(err); }
+}
 
 // ----------------------- Helper Functions! -------------------------
 
 // Extract object, array, or text from JSON data
 function extractData(data, delim, keys) {
-	if (data === undefined) return '';
+	if (data === undefined || data === null) return '';
 
 	var str = '';
 	if (Array.isArray(data))
@@ -245,7 +276,7 @@ function extractData(data, delim, keys) {
 
 // Extract object from JSON data
 function extractDataObject(data, delim, keys) {
-	if (data === undefined) return '';
+	if (data === undefined || data === null) return '';
 	if (keys === undefined) return data;
 
 	var str = '';
