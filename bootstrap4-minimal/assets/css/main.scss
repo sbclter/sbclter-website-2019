@@ -19,3 +19,26 @@ body {
 	font-size: 17px;
 	font-style: normal;
 }
+
+.dropdown-submenu {
+	position: relative;
+}
+
+.dropdown-submenu a::after {
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 1em;
+}
+
+.dropdown-submenu .dropdown-toggle {
+	margin-left: 15px;
+}
+
+.dropdown-submenu .dropdown-menu {
+	top: 0;
+	left: 100%;
+}
+
+.hide {
+	display: none !important;
+}
