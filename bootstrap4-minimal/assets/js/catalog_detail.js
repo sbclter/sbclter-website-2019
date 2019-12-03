@@ -221,35 +221,54 @@ function makeSummary(template, data) {
 }
 
 function makeMethods(template, data) {
-	var element = template.find('#content-class-methods');
+	let element = template.find('#content-class-methods');
 
 	// fill method description table
 	try {
-		var methodList = data['eml:eml']['dataset']['methods']['methodStep']['description']['section'];
+		let methodList = data['eml:eml']['dataset']['methods']['methodStep'];
 		if (!Array.isArray(methodList)) methodList = [methodList];
 
 		for (let i = 0; i < methodList.length; i++) {
-			let method = methodList[i];
+			let descriptions = methodList[i]['description']['section'];
+			let protocols = methodList[i]['protocol'];
+			if (!Array.isArray(descriptions)) descriptions = [descriptions];
+			if (!Array.isArray(protocols)) protocols = [protocols];
 
-			var row =
-			'<tr class="row mb-3">' +
-				`<td class="cell col-12"> <strong>${ extractData(method['title']) }</strong><br> ${ extractData(method['para'], '<br><br>').replace(/ulink/g, 'a').replace(/<a url/g, '<a href') } </td>` +
-			'</tr>';
-			element.find('#field-methods').append(row);
+			// fill method's description
+			let html =
+				`<div class="section-title">` +
+				`	Description:<br>`;
+			for (let j = 0; j < descriptions.length; j++) {
+				let description = descriptions[j];
+				let title = extractData(description['title']);
+				try {
+					html +=
+						`${ title ? title + '<br>' : '' }` +
+						`<div style="font-weight: normal">${ extractData(description['para'], '<br><br>').replace(/ulink/g, 'a').replace(/<a url/g, '<a href') }</div>`;
+					html += (j != descriptions.length - 1) ? '<hr>' : '';
+				} catch(err) { console.error(err); }
+			}
+			html += `</div>`;
+
+			// fill method's protocols
+			for (let j = 0; j < protocols.length; j++) {
+				let protocol = protocols[j];
+				try {
+					html +=
+						`<div class="ml-2 p-2">` +
+						`	<div><strong>Protocol</strong>: ${ protocol['title'] }</div>` +
+						`	<div><strong>Author</strong>: ${ protocol['creator']['individualName']['surName'] }</div>` +
+						`	<div><strong>Available Online</strong>: ${ activateLink(protocol['distribution']['online']['url']['#text']) }</div>` +
+						`</div>`;
+					html += (j != protocols.length - 1) ? '<hr>' : '<br>';
+				} catch(err) { console.error(err); }
+			}
+
+			element.append(html);
 		}
 
 	} catch(err) { console.error(err); }
 
-	// fill method protocol table
-	try {
-		var protocol = data['eml:eml']['dataset']['methods']['methodStep']['protocol'];
-
-		element.find('#field-protocol-author').text(protocol['creator']['individualName']['surName']);
-		element.find('#field-protocol-title').text(protocol['title']);
-		element.find('#field-protocol-view').html(activateLink(protocol['distribution']['online']['url']['#text']));
-
-		element.find('.protocol-section').removeAttr('hidden');
-	} catch(err) { console.error(err); }
 }
 
 // ----------------------- Helper Functions! -------------------------
