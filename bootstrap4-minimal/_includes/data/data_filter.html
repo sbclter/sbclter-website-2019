@@ -15,11 +15,21 @@
 </div>
 -->
 
+<!-- buttons at the top -->
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-flex flex-row justify-content-left align-items-center"> 	
+<p>
+	<button type="button" id="show_button" class="btn-outline-primary .btn-lg rounded">Show all</button>	
+	&nbsp;&nbsp;
+    <button type="button" id="clear_button" class="btn-outline-primary .btn-lg rounded">Reset</button>
+</p>
+	
+</div>
+
 
 <div class="row"></div>
 <div class="pull-left row" >
 	<div class="col-lg-{{group_width}} col-md-{{group_width}} col-sm-{{group_width}} col-xs-{{group_width}}">
-	<p class="table-title"> <strong> Filter By Habitat and Measurement Type: </strong> </p>
+	<p class="table-title"> <strong> Filter SBC Data Collections by Habitat and Measurement Type: </strong> </p>
 	<table class="table table-bordered">
 		<thead>
 			<tr class="row title-row">
@@ -106,7 +116,31 @@
 	</table>
 	</div>
 
-<!-- buttons in a small table on the right -->
+<!-- search box option here -->
+	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 d-flex flex-row justify-content-center align-items-center"> 	
+		<table class="table-borderless" style="">		
+			<tbody>
+				<tr class="row">		
+					<td class="cell col">
+						<strong><h3>OR</h3></strong>					
+					</td>					
+				</tr>
+				<tr class="row">		
+					<td class="cell col">
+						<a href="{{page.url}}search">Search for datasets individually</a>
+					</td>					
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		<br/>
+		
+		
+	</div>
+
+
+<!-- buttons in a small table on the right 
 
 	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 d-flex flex-row justify-content-center align-items-center"> 	
 		<table class="table-borderless" style="">		
@@ -126,7 +160,7 @@
 		
 	</div>
 
-
+-->
 
 
 </div>
@@ -137,3 +171,7 @@
   <button type="button" id="clear_button" class="btn">Reset</button>
 </div>
 -->
+
+
+<script src="/assets/js/catalog.js"/></script>
+<script src="/assets/js/simple_search.js"/></script>
