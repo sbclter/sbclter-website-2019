@@ -6,7 +6,6 @@ placeholder: "Search datasets ..."
 ---
 
 <h1>{{ page.title }}</h1>
-{% include search_bar.html placeholder=page.placeholder %}
 
 <div id="main-container">
   <div class="row">
@@ -14,9 +13,12 @@ placeholder: "Search datasets ..."
     <div class="col-md-9">
 
       <h2 class="">SBC LTER Data</h2>
-      <ul>          
+      <ul> 
         <li class="">
-          <a href="{{page.url}}catalog/search">SBC LTER Data Catalog</a> 100s of publicly available datasets covering all SBC LTER research activities.
+          <a href="{{page.url}}catalog/">Browse SBC LTER Data Catalog</a> of all publicly available datasets, organized into research collections
+        </li>               
+        <li class="">
+          <a href="{{page.url}}catalog/search/">Search SBC LTER Data Packages</a> individually by person, date range and/or location (sampling site)
         </li>
         <!-- possibly, quick search here -->
         <li class="">

@@ -16,7 +16,6 @@ individidual dataset display pulls XML from pasta, uses local XSL to transform t
 probably most complex part of the website.
 -->
 
-{% include search_bar.html placeholder=page.placeholder %}
 <div id="filter-container">
 	{% include data/data_filter.html data=site.data.dataFilters %}
 </div>
