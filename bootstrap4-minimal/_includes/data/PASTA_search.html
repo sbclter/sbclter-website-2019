@@ -18,7 +18,7 @@
       <div class="col-md-4">
          <div class="input-block">
             <i class="fas fa-bullseye"></i><label class="group-label" for="identifier">Identifier</label>
-            <input class="search-input" name="id" id="identifier" placeholder="DOI or ID" type="text" title="Find a dataset if you have its DOI or ID">
+            <input class="search-input" name="id" id="identifier" placeholder="DOI or ID" type="text" title="Find a dataset if you have its DOI or ID"/>
          </div>
       </div>
    </div>
@@ -74,7 +74,7 @@
          <div class="yeardiv">
             <input id="data_year" name="datayear" value="y" type="checkbox" title="Only show results with data collected within the year range">
             <label class="form-check-label" for="data_year"> Data coverage </label><br/>
-            <input id="publish_year" name="pubyear" value="y" type="checkbox" title="Only show results that were published within the year range">
+            <input id="publish_year" name="pubyear" value="y" type="checkbox" title="Only show results that were published within the year range"/>
             <label class="form-check-label" for="publish_year"> Publish year </label>
          </div>
       </div>
@@ -84,7 +84,7 @@
          <div class="col-md-3">
       <div class="input-block">
          <i class="fas fa-globe"></i><label class="group-label" for="geo">Location</label>
-         <input class="search-input" name="geo" id="geo" placeholder="Sampling Site" type="text" title="The geographic area or site described">
+         <input class="search-input" name="geo" id="geo" placeholder="Sampling Site" type="text" title="The geographic area or site described"/>
       </div>
          </div>
       
@@ -99,8 +99,10 @@
       -->
   
       
-      <!-- CRA -->
+      
          <div class="col-md-3">
+          <!-- CRA -->
+           <!--  
       <div class="input-block">
          <i class="fas fa-leaf"></i>
          <label class="group-label" for="coreArea">LTER Core Area</label>
@@ -114,6 +116,25 @@
             <option value="populations">Populations</option>
          </select>
       </div>
+            -->
+            
+            <!-- link to browse page  -->
+            <table class="table-borderless" style="">		
+               <tbody>
+                  <tr class="row">		
+                     <td class="cell col">
+                        <strong><h3>OR</h3></strong>					
+                     </td>					
+                  </tr>
+                  <tr class="row">		
+                     <td class="cell col">
+                        <strong><a href="{{site.baseurl}}/data/catalog">Browse datasets in collections by biome, meaurement type or research area</a></strong>
+                     </td>					
+                  </tr>
+               </tbody>
+            </table>
+            
+            
          </div>
          
       </div>     
@@ -164,4 +185,4 @@
 <p id="searchUrl"></p>
 
 
-<!-- TO DO: someday, get a save-query link that goes to this page with the resultset -->
+<!-- TO DO: someday, create a save-query link that goes to this page with the resultset, and can be shared -->
