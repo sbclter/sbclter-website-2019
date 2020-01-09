@@ -229,7 +229,9 @@ function makeMethods(template, data) {
 		if (!Array.isArray(methodList)) methodList = [methodList];
 
 		for (let i = 0; i < methodList.length; i++) {
-			let descriptions = methodList[i]['description']['section'];
+			let descriptions = methodList[i]['description'];
+			if (descriptions['section']) descriptions = descriptions['section'] 
+
 			let protocols = methodList[i]['protocol'];
 			if (!Array.isArray(descriptions)) descriptions = [descriptions];
 			if (!Array.isArray(protocols)) protocols = [protocols];
@@ -242,9 +244,22 @@ function makeMethods(template, data) {
 				let description = descriptions[j];
 				let title = extractData(description['title']);
 				try {
-					html +=
-						`${ title ? title + '<br>' : '' }` +
-						`<div style="font-weight: normal">${ extractData(description['para'], '<br><br>').replace(/ulink/g, 'a').replace(/<a url/g, '<a href') }</div>`;
+					let paraList = description['para'];
+					if (!Array.isArray(paraList)) paraList = [paraList];
+					html += `${ title ? title + '<br>' : '' }` + `<div style="font-weight: normal">`;
+
+					for (let k = 0; k < paraList.length; k++) {
+						if (typeof paraList[k] == "object") {
+							html += extractData(paraList[k], ' ', ['#text']).replace(/ulink/g, 'a').replace(/<a url/g, '<a href');
+							html += activateLink(extractData(paraList[k], ' ', ['ulink/#text']));
+						}
+						else {
+							html += paraList[k];
+						}
+						html += (k != paraList.length - 1) ? '<br><br>' : '';
+					}
+
+					html += `</div>`;
 					html += (j != descriptions.length - 1) ? '<hr>' : '';
 				} catch(err) { console.error(err); }
 			}
