@@ -27,7 +27,7 @@ category_labels:
   phdthesis:     PhD Dissertations
   Techreport:    Technical Reports
   Presentation:  Presentations
-
+urlkey: true
 ---
 
 <h1>SBC LTER Publications</h1>
@@ -46,7 +46,8 @@ category_labels:
 							  data = pubs
 							  dataFilter = page.dataFilter
 							  category_labels = page.category_labels
-							  table_font_size = page.table_font_size %}
+							  table_font_size = page.table_font_size
+							  urlkey = page.urlkey %}
 	{% endfor %}
 </div>
 
