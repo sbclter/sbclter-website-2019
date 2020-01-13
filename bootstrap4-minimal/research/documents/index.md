@@ -89,7 +89,7 @@ add links to documents using an existing document as a template.
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year5_2017.pdf">SBC LTER Annual Report 2017</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year6_2018.pdf">SBC LTER Annual Report 2018</a></li>
 
-              <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Final_Report_2012-2018.pdf">SBC LTER Final Report 2013-2018</a></li> -->
+<!--   <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Final_Report_2012-2018.pdf">SBC LTER Final Report 2013-2018</a></li> -->
             </ul>
        <hr/>       
                
