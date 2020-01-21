@@ -9,7 +9,7 @@ description: news and event in SBCLTER
 
 <h1> SBC LTER news and events </h1>
 
-<p> We like to share with you about our recent news and events. If you are interested in the event, please join in us! </p>
+<p> We like to share with you about our recent news and events. If you are interested in the event, please join us! </p>
 
 
 <hr/>
