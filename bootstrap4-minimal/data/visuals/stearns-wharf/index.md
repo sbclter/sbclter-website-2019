@@ -47,3 +47,7 @@ description: page description here.
  -->
 </div>
 </div>
+
+<div id="myDiv"></div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="/assets/js/shore_graph.js"/></script>
