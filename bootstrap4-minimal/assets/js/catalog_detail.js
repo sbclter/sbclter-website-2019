@@ -46,6 +46,7 @@ function showDetail(url) {
 			makePeople(template, data);
 			makeCoverage(template, data);
 			makeMethods(template, data);
+			makeFiles(template, data);
 
 			$('#detail #detail-title').text(title);
 			$('#detail #detail-body').html(template);
@@ -270,7 +271,7 @@ function makeMethods(template, data) {
 				let protocol = protocols[j];
 				try {
 					html +=
-						`<table class="tablr">` +
+						`<table>` +
 						`	<tr><th class="col-2">Protocol:</th> <td class="col-8">${ protocol['title'] }</td></tr>` +
 						`	<tr><th class="col-2">Author:</th> <td class="col-8">${ protocol['creator']['individualName']['surName'] }</td></tr>` +
 						`	<tr><th class="col-2">Available Online:</th> <td class="col-8">${ activateLink(protocol['distribution']['online']['url']['#text']) }</td></tr>` +
@@ -282,6 +283,29 @@ function makeMethods(template, data) {
 			element.append(html);
 		}
 
+	} catch(err) { console.error(err); }
+
+}
+
+// Make file's page
+function makeFiles(template, data) {
+	var element = template.find('#content-class-files');
+
+	// Fill datatable data
+	try {
+		let tableList = data['eml:eml']['dataset']['dataTable'];
+		if (!Array.isArray(tableList)) tableList = [tableList];
+
+		let html = ``;
+		for (let i = 0; i < tableList.length; i++) {
+			let table = tableList[i];
+			html += `<div class="section-title"> Data Table ${ i + 1 } </div><table>
+				<tr><th class="col-2">Name:</th><td class="col-8">${ table['entityName'] }</td></tr>
+				<tr><th class="col-2">Description:</th><td class="col-8">${ table['entityDescription'] }</td></tr>
+			</table><br/>`;
+		}
+
+		element.append(html);
 	} catch(err) { console.error(err); }
 
 }
