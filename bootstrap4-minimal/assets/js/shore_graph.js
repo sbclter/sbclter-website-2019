@@ -9,70 +9,89 @@ Plotly.d3.csv(stearns_wharf_csv, function(err, rows) {
     return rows.map(function(row) { return row[key]; });
   }
 
-  var trace1 = {
+  var pressure = {
     type: "scatter",
     mode: "lines",
-    name: 'Pressure',
+    name: 'Pressure, decibars',
     x: unpack(rows, 'time'),
     y: unpack(rows, 'pressure'),
-    line: {color: '#00dddd'}
+    line: {color: '#dd00dd'} /* magenta */
+
   }
 
-  var trace2 = {
+  var temp = {
     type: "scatter",
     mode: "lines",
-    name: 'Temperature',
+    name: 'Temperature, degrees Celsius (coming soon: unit option',
     x: unpack(rows, 'time'),
     y: unpack(rows, 'temperature'),
-    line: {color: '#dd00dd'}
+    line: {color: '#00dddd'} /* cyan */
+
   }
 
-  var trace3 = {
+  var chl = {
     type: "scatter",
     mode: "lines",
-    name: 'Chlorophyll',
+    name: 'Chlorophyll, ~ &mu;g/liter',
     x: unpack(rows, 'time'),
     y: unpack(rows, 'chlorophyll'),
-    line: {color: '#00dd00'}
+    line: {color: '#00dd00'} /* green */
   }
 
-  var trace4 = {
+  var sal = {
     type: "scatter",
     mode: "lines",
-    name: 'Salinity',
+    name: 'Salinity, PSU (~ ppt)',
     x: unpack(rows, 'time'),
     y: unpack(rows, 'salinity'),
-    line: {color: '#ff8800'}
+    line: {color: '#ff8800'} /* orange */
   }
+  
+  
+  
 
-  var data = [trace1, trace2, trace3, trace4];
+  var data = [temp, chl, pressure, sal];
 
   var layout = {
     title: 'Automated Shore Stations - Timeline',
     xaxis: {
       autorange: true,
       rangeselector: {buttons: [
-          {
+        {
             count: 1,
-            label: '1 month',
+            label: '1 Day',
+            step: 'day',
+            stepmode: 'backward'
+          },
+          {
+            count: 7,
+            label: '1 Week',
+            step: 'day',
+            stepmode: 'backward'
+          },
+       {
+            count: 1,
+            label: '1 Month',
             step: 'month',
             stepmode: 'backward'
           },
           {
             count: 3,
-            label: '3 months',
+            label: '3 Months',
             step: 'month',
             stepmode: 'backward'
-          },
-          {
+          }/* , */   
+         /*  {
             count: 6,
             label: '6 months',
             step: 'month',
             stepmode: 'backward'
-          },
+          } 
+           
           {
             step: 'all'
           }
+            */
         ]},
       type: 'date'
     },
