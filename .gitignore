@@ -54,6 +54,7 @@ build-iPhoneSimulator/
 _site/
 .jekyll-metadata
 .sass-cache/
+.jekyll-cache/
 
 # ignore the config. the dummy is stored, without the api key
 _config.yml
