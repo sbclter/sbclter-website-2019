@@ -1,4 +1,6 @@
-var stearns_wharf_csv = `http://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`
+var stearns_wharf_csv = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`
+console.log(stearns_wharf_csv)
+
 
 
 Plotly.d3.csv(stearns_wharf_csv, function(err, rows) {
@@ -52,19 +54,19 @@ Plotly.d3.csv(stearns_wharf_csv, function(err, rows) {
       rangeselector: {buttons: [
           {
             count: 1,
-            label: '1m',
+            label: '1 month',
             step: 'month',
             stepmode: 'backward'
           },
           {
             count: 3,
-            label: '3m',
+            label: '3 months',
             step: 'month',
             stepmode: 'backward'
           },
           {
             count: 6,
-            label: '6m',
+            label: '6 months',
             step: 'month',
             stepmode: 'backward'
           },
@@ -81,4 +83,6 @@ Plotly.d3.csv(stearns_wharf_csv, function(err, rows) {
   };
 
   Plotly.newPlot('myDiv', data, layout);
+
+  $(".modebar").attr("hidden", "hidden");
 })

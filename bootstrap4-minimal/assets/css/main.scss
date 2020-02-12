@@ -43,3 +43,11 @@ body {
 .hide {
 	display: none !important;
 }
+
+.col-2 {
+	width: unset !important;
+}
+
+td {
+	word-break: break-word;
+}
