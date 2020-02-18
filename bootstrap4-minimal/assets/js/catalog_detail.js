@@ -46,6 +46,7 @@ function showDetail(url) {
 			makePeople(template, data);
 			makeCoverage(template, data);
 			makeMethods(template, data);
+			makeFiles(template, data);
 
 			$('#detail #detail-title').text(title);
 			$('#detail #detail-body').html(template);
@@ -238,15 +239,15 @@ function makeMethods(template, data) {
 
 			// fill method's description
 			let html =
-				`<div class="section-title">` +
-				`	Description:<br>`;
+				`<div class="section-title"> Protocol </div>` +
+				`	<div class="ml-3">`;
 			for (let j = 0; j < descriptions.length; j++) {
 				let description = descriptions[j];
 				let title = extractData(description['title']);
 				try {
 					let paraList = description['para'];
 					if (!Array.isArray(paraList)) paraList = [paraList];
-					html += `${ title ? title + '<br>' : '' }` + `<div style="font-weight: normal">`;
+					html += `<div style="font-weight: normal"><strong>${ title ? title + '' : '' }</strong>` + ``;
 
 					for (let k = 0; k < paraList.length; k++) {
 						if (typeof paraList[k] == "object") {
@@ -263,18 +264,18 @@ function makeMethods(template, data) {
 					html += (j != descriptions.length - 1) ? '<hr>' : '';
 				} catch(err) { console.error(err); }
 			}
-			html += `</div>`;
+			html += `</div> <br/>`;
 
 			// fill method's protocols
 			for (let j = 0; j < protocols.length; j++) {
 				let protocol = protocols[j];
 				try {
 					html +=
-						`<div class="ml-2 p-2">` +
-						`	<div><strong>Protocol</strong>: ${ protocol['title'] }</div>` +
-						`	<div><strong>Author</strong>: ${ protocol['creator']['individualName']['surName'] }</div>` +
-						`	<div><strong>Available Online</strong>: ${ activateLink(protocol['distribution']['online']['url']['#text']) }</div>` +
-						`</div>`;
+						`<table>` +
+						`	<tr><th class="col-2">Protocol:</th> <td class="col-8">${ protocol['title'] }</td></tr>` +
+						`	<tr><th class="col-2">Author:</th> <td class="col-8">${ protocol['creator']['individualName']['surName'] }</td></tr>` +
+						`	<tr><th class="col-2">Available Online:</th> <td class="col-8">${ activateLink(protocol['distribution']['online']['url']['#text']) }</td></tr>` +
+						`</table>`;
 					html += (j != protocols.length - 1) ? '<hr>' : '<br>';
 				} catch(err) { console.error(err); }
 			}
@@ -282,6 +283,29 @@ function makeMethods(template, data) {
 			element.append(html);
 		}
 
+	} catch(err) { console.error(err); }
+
+}
+
+// Make file's page
+function makeFiles(template, data) {
+	var element = template.find('#content-class-files');
+
+	// Fill datatable data
+	try {
+		let tableList = data['eml:eml']['dataset']['dataTable'];
+		if (!Array.isArray(tableList)) tableList = [tableList];
+
+		let html = ``;
+		for (let i = 0; i < tableList.length; i++) {
+			let table = tableList[i];
+			html += `<div class="section-title"> Data Table ${ i + 1 } </div><table>
+				<tr><th class="col-2">Name:</th><td class="col-8">${ table['entityName'] }</td></tr>
+				<tr><th class="col-2">Description:</th><td class="col-8">${ table['entityDescription'] }</td></tr>
+			</table><br/>`;
+		}
+
+		element.append(html);
 	} catch(err) { console.error(err); }
 
 }

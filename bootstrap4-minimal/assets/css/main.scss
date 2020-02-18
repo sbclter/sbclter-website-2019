@@ -18,6 +18,7 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 17px;
 	font-style: normal;
+	overflow-wrap: break-word;
 }
 
 .dropdown-submenu {
@@ -41,4 +42,12 @@ body {
 
 .hide {
 	display: none !important;
+}
+
+.col-2 {
+	width: unset !important;
+}
+
+td {
+	word-break: break-word;
 }
