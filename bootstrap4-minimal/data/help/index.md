@@ -59,5 +59,7 @@ These resources include a <a href="{{site.baseurl}}/internal/information_managem
   
 <p>If you plan to house your data in the SBC system, it is essential that the <a href="mailto:lkui@ucsb.edu">SBC information manager</a> and SBC leadership be kept informed of your proposal's progress. </p> 
 
+<hr/>
+<p>If you have any question about SBC data, please contact <a href="mailto:lkui@ucsb.edu">SBC information manager</a>. </p> 
 
 
