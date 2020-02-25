@@ -1,76 +1,63 @@
 ---
 layout: article
-title: 'Page tltle here'
-description: page description here.
-
+title: 'Data Help Desk'
+description: help to solve data related questions
 ---
 
-<h1>H1 header</h1>
-	
-<!-- how to col: individual articles can vary the col widths; for full-width total should = 12. 
-	col-md scales up (med to large desktops), and automatically stacks on phones and tablets (within the row). -->
-
-<p>site has two layouts: "articles", and "posts". Most pages are articles (like this one); posts are for news. </p>
-
 <div id="main-container">
-	<div class="row">
-	       <div class="col-md-4">
-           <p>Sample col with a list </p>
-            <ul>
-                <li>list 1</li>
-                <li>list 2</li>
-                <li>list 3</li>
-                <li>list 4</li>
-            </ul>
-        </div>
+<div class="container-fluid">
 
-       <div class="col-md-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-anim id est laborum.
-          </p>
-        </div>
-   </div>
-    
-    <!-- possibly could add a clear here instead of row. see getbootstrap.com/docs/ examples grid -->
-    
-    <div class="row"> 
-        <div class="col-md-4">
-           <p>this is row 2 </p>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
-            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
-            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id 
-            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-            id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor 
-            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-            saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque 
-            earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
-            alias consequatur aut perferendis doloribus asperiores repellat.
-          </p>
-        </div>
+<h1> Data Help Desk </h1>
 
-       <div class="col-md-8">
-       <p>block has an image. </p>
-       
-    <img class="featurette-image img-responsive center-block" src="/assets/img/avatar.png"  alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />       
-     </div>
-     
-        <hr />
-        
-        <div>
-        <img class="featurette-image img-responsive center-block" src="/assets/img/avatar.png" alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />
-        <p>Example of a section with a float-right image. size is fixed.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-anim id est laborum.</p>
-        </div>
-        
-     
-    </div>
+<p> If you have questions related to data access, data publication, and data cleanning, here are some documents that can assist you.  </p>
+
+<hr/>
+<h4>Get SBC login</h4>
+
+<p>Usually an investigator or staff member requests a login for new students, staff or associate investigators. 
+  Those requesting a login should contact <a href="/about/people/lkui/">Li Kui</a> (SBC's information manager), 
+  and provide the new partipant's name, email address and advisor's name. If you have an active login, 
+  your name will show up on <a href="/about/people/"> SBC's People page</a>. </p>
+
+<hr/>
+<h4>Data access through data catalog</h4>
+
+<p>This document demonstrates dataset search, metadata review dataset download, and dataset citation.
+    <a href="{{site.baseurl}}/external/Documents/data_help/SBCLTER_DataDownloadProtocol_WithWebsite.pdf">SBC data review and download protocol</a></p>
+
+ <hr/>
+<h4>Dataset publication</h4>
+<li>
+<p>To publish your dataset, please download the template in the zipped file that includes the metadata collection 
+    Excel worksheet as well as abstract and method word documents.  
+    <a href="{{site.baseurl}}/external/Documents/data_help/Metadata_collection.zip">SBC data publication template</a></p> 
+</li>
+<li>   
+<p> This is the detail instruction on how to fill out the meatadata sheet and prepare your data for publication.
+    <a href="{{site.baseurl}}/external/Documents/data_help/Instruction_on_filling_out_metadata.pdf">SBC data publication instruction</a> </p>
+</li>
+
+ <hr/>
+ <h4>Access SBC server via Web Browser</h4>
+<p>Access to SBC server requires a SBC login name and password, which is the same as MSI login name and password. <a href="https://sbc.lternet.edu/internal">Login to Internal File Server</a></p> 
+<p>Remember, you can always download files from your browser, at "Internal Data", but you may not deposit files this way. Additionally, downloads via a browser will be one file at a time.</p> 
+<p>If you encounter any issue about file permission, please review <a href="{{site.baseurl}}/external/Documents/data_help/potential_data_sharing_issue.pdf">SBC data sharing permission issue</a>.</p> 
+
+
+<h4>Access SBC server via network drive mapping</h4>
+<p>SBC user can map SBC sever on your computer, which allows you to view all SBC related documents, pictures, data, collaborated projects as 
+if it were a drive on your UCSB desktop. Only the computers on campus or connected via VPN 
+(<a href="https://www.it.ucsb.edu/get-connected-vpn">UCSB VPN</a>) can map SBC server. 
+    <a href="{{site.baseurl}}/external/Documents/data_help/SBC_map_network_drive.pdf">Map SBC file sever</a></p> 
+
+ <hr/>
+ <h4>Data management plan</h4>
+<p>In 2011, NSF added a requirement that all proposals include a 2-page Data Management Plan. In LTER, data management plans have been a requirement for a much longer time, and generally, 
+the LTER Network is a leader in data management practices for diverse environmental data. SBC has gathered some resources for scientists writing data management plans for NSF proposals. 
+These resources include a <a href="{{site.baseurl}}/internal/information_management/NSF_data_mgt_plans/00_NSF_data_management_plan_template_DRAFT.rtf">
+ template data management plan (require login) </a> for collaborative projects which plan to post their data in the SBC LTER data catalog.
+  
+<p>If you plan to house your data in the SBC system, it is essential that the <a href="mailto:lkui@ucsb.edu">SBC information manager</a> and SBC leadership be kept informed of your proposal's progress. </p> 
+
+
+
