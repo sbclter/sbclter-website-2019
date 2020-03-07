@@ -1,17 +1,13 @@
-- collectionName: 'SBC LTER: Ongoing time-series of giant kelp forest community structure'
-  abstract: 'Size, abundance, and biomass data of algae, invertebrates and fish collected
-    twice per season in permanent transects (40 x 2 meter) at five permanent sites
-    as part of the SBC LTER long-term kelp removal experiment. The experiment tests
-    the consequences of consistent annual giant kelp loss arising from winter storms.
-    The following manipulations were maintained: Control- M. pyrifera surface canopy
-    was left intact; Annual removal- M. pyrifera was removed once each winter and
-    allowed to re-colonize over the course of the year, and Continuous removal- M.
-    pyrifera was removed on each sampling date. The experiment began in 2008, and
-    the continuous-removal treatment began in April, 2010. The experiment ended in
-    2017 and transects continue to be surveyed to study dynamics of recovery. Data
-    include bottom topography for control and annual removal transects. Time-series
-    estimates of net primary production of understory macroalgae at each transect
-    is also collected.'
+- collectionName: 'SBC LTER: Ongoing time-series of giant kelp forest community dynamics
+    (KFCD)'
+  abstract: 'Data on the abundance (density or percent cover), size and biomass of
+    ~250 species of kelp forest algae, invertebrates and fish, and the type and percent
+    cover of bottom substrate are collected annually in summer within replicate 40
+    m x 2 m permanent transects at 11 sites in the Santa Barbara Channel (n = 2 to
+    8 transects per site). Data collection began in the summer of 2000 and continues
+    annually to provide information on community structure, population dynamics and
+    species change. Measurements of the bottom topography of each transect collected
+    on a single occasion are also included.   '
   dataPackages:
     package:
     - docid: knb-lter-sbc.15
@@ -25,7 +21,7 @@
     - docid: knb-lter-sbc.50
       shortTitle: KFCD - Biomass of algae, invertebrates and fish
     - docid: knb-lter-sbc.43
-      shortTitle: Reef monitoring transects - Bottom topography
+      shortTitle: KFCD bottom topography
     - docid: knb-lter-sbc.120
       shortTitle: Master species list
   habitats:
@@ -36,17 +32,20 @@
     lterCoreResearchArea: Population Studies
   mapLayers:
     mapLayer: reefAnnPopSurvey
-- collectionName: 'SBC LTER: Ongoing long-term kelp removal experiment'
-  abstract: 'Size and abundance data of algae, invertebrates and fish collected twice
-    per season in permanent transects (40 x 2 meter) at 4 permanent sites as part
-    of the SBC LTER long-term kelp removal experiment. The experiment tests the consequences
-    of consistent annual giant kelp loss arising from winter storms. The following
-    manipulations are being currently maintained: Control- M. pyrifera surface canopy
-    is left intact; Annual removal- M. pyrifera is removed once each winter and allowed
-    to re-colonize over the course of the year, and Continuous removal- M. pyrifera
-    is removed on each sampling date. The experiment began in 2008, and the continuous-removal
-    treatment began in April, 2010. Data include bottom topography for control and
-    annual removal transects.'
+- collectionName: 'SBC LTER: Ongoing long-term experiment of kelp removal (LTE KR)'
+  abstract: 'This collection includes data from a long-term experiment designed to
+    test the ecological consequences of increased storm disturbance on the structure,
+    dynamics and productivity of the kelp forest community. The experiment consists
+    of paired 40 m x 40 m plots at five kelp forest sites located along the mainland
+    coast of the Santa Barbara Channel. Increased disturbance frequency is simulated
+    in one of the plots in each pair by removing giant kelp annually in winter while
+    the other plot in each pair serves as a control that experiences natural levels
+    of disturbance. Changes in the structure (e.g. species abundance, diversity) and
+    function (e.g. primary production of understory algae, detrital accumulation)
+    of the kelp forest community are measured 1 to 2 times per season in permanent
+    40 m x 2 m transects centered within each plot. Giant kelp is continually removed
+    each seasonal within an additional transect in the annual kelp removal plot to
+    evaluate the overall effects of giant kelp on the reef community. '
   dataPackages:
     package:
     - docid: knb-lter-sbc.28
@@ -87,12 +86,12 @@
 - collectionName: 'SBC LTER: Ongoing time-series of net primary production of giant
     kelp'
   abstract: This collection includes an ongoing time series of net primary production
-    (NPP), growth, standing crop and loss rates for the giant kelp, Macrocystis pyrifera,
-    that are appropriate for examining seasonal and inter-annual patterns. Sampling
-    is conducted monthly at three reef sites, and began in 2002. Data sets supporting
-    modeled loss parameters are included (blade content, lifespan, loss and DOC exudation).
-    Data on the allometry and lifespan of giant kelp fronds, the turnover of blades,
-    and photosynthetic characteristics of blades is also provided.
+    (NPP), growth, standing crop and loss rates for the giant kelp, <i>Macrocystis
+    pyrifera</i>, that are appropriate for examining seasonal and inter-annual patterns.
+    Sampling is conducted monthly at three reef sites, and began in 2002. Data sets
+    supporting modeled loss parameters are included (blade content, lifespan, loss
+    and DOC exudation). Data on the allometry and lifespan of giant kelp fronds, the
+    turnover of blades, and photosynthetic characteristics of blades are also provided.
   dataPackages:
     package:
     - docid: knb-lter-sbc.112
@@ -122,7 +121,7 @@
     mapLayer: reefNPPgiantKelp
 - collectionName: 'SBC LTER: Ongoing and long-term time-series of satellite and aerial
     estimates of giant kelp biomass'
-  abstract: Historical estimates of giant kelp biomass along the coast of California
+  abstract: Historical estimates of giant kelp canopy biomass along the coast of California
     from aerial based surveys (1958-2006) and ongoing estimates of giant kelp biomass
     derived from satellite imagery (1984-present).
   dataPackages:
@@ -142,9 +141,9 @@
     - Disturbance Patterns
   mapLayers: ~
 - collectionName: ' SBC LTER: Spiny lobster in California'
-  abstract: Annual data on abundance and size of California spiny lobster, Panulirus
-    interruptus, at SBC LTER long-term giant kelp removal experiment study sites  and
-    monthly estimates of trap density along the Santa Barbara coast.
+  abstract: Annual data on the abundance and size of California spiny lobster, <i>Panulirus
+    interruptus</i>, and monthly estimates of lobster trap density during the lobster
+    fishing season at five sites along the mainland coast of the Santa Barbara Channel.
   dataPackages:
     package:
     - docid: knb-lter-sbc.77
@@ -158,14 +157,16 @@
   mapLayers:
     mapLayer: reefLobsters
 - collectionName: 'SBC LTER: Sea urchins in California'
-  abstract: Time-series and laboratory data on sea urchins (Strongylocentrotus purpuratus
-    and Mesocentrotus franciscanus). The collection includes 1) ongoing measurements
-    of sea urchins (and additional invertebrate) larval settlement beginning in 1990,
-    2) data on the effects of diet on purple sea urchin  consumption, growth, and
-    gonad weight and 3) data on the effects of purple sea urchin egg concentration
-    on fertilization. SBC LTER also collects time-series data on the size, abundance
-    and biomass of sea urchins at annual monitoring and long-term kelp removal experiment
-    transects.
+  abstract: 'Time-series and laboratory data on sea urchins (<i>Strongylocentrotus
+    purpuratus</i> and <i>Mesocentrotus franciscanus</i>). The collection includes
+    data on: (1) biweekly settlement of larval sea urchins and other invertebrates
+    at four locations in southern California and one location in northern California
+    from 1990 present, (2) the effects of dietary composition on purple sea urchin
+    consumption, growth, and gonad weight, and (3) the effects of purple sea urchin
+    egg concentration on fertilization success. Ongoing time-series data on the size,
+    abundance and biomass of sea urchins are provided in the SBC data collections
+    ‘Giant kelp forest community dynamics (KFCD)’ and ‘Long-term experiment of kelp
+    removal (LTE KR)’.'
   dataPackages:
     package:
     - docid: knb-lter-sbc.52
@@ -184,10 +185,10 @@
     mapLayer: inshoreLarvae
 - collectionName: 'SBC LTER: Long-term time-series of Santa Cruz Island reef community
     structure'
-  abstract: Long-term data on the community structure at Santa Cruz Island, including
-    abundance of selected fish and their food (algae) resources, benthic cover, density
-    of kelp and occurrence of the sunflower star, Pycnopodia helianthoides. Surveys
-    began in 1982 and ended in 2015.
+  abstract: Long-term data on the community structure of shallow reefs at Santa Cruz
+    Island, including abundance of selected fish and their food (algae) resources,
+    benthic cover, density of kelp and occurrence of the sunflower star, <i>Pycnopodia
+    helianthoides</i>. Surveys began in 1982 and ended in 2015.
   dataPackages:
     package:
     - docid: knb-lter-sbc.39
@@ -231,12 +232,12 @@
   mapLayers:
     mapLayer: inshoreProfiles
 - collectionName: 'SBC LTER: Ongoing time-series of moored ADCP, CTD, and Temperature'
-  abstract: 'Currents and hydrography data have been collected by at several reef
-    sites since 2001 to observe patterns of transport and processing. Sites are located
-    on the outer edge of kelp forests in 10-16m of water. Instruments include: bottom-mounted
-    acoustic doppler current profiler (ADCP), CTD mounted near the surface and thermistors
-    mounted at bottom, midwater and near the surface. Data were aggregated into 1m
-    bins and interpolated onto a 20 min grid.'
+  abstract: 'Currents and hydrography data have been collected at several reef sites
+    since 2001 to observe patterns of transport and processing. Sites are located
+    on the outer edge of kelp forests in 10 - 16 m of water. Instruments include:
+    bottom-mounted acoustic doppler current profiler (ADCP), CTD mounted near the
+    surface, and thermistors mounted at bottom, midwater and near the surface. Data
+    were aggregated into 1 m bins and interpolated onto a 20 min grid.'
   dataPackages:
     package:
     - docid: knb-lter-sbc.2008
@@ -263,8 +264,8 @@
   abstract: 'Currents and hydrography data have been collected intermittently at several
     reef sites. Instruments deployed intermittently include: bottom-mounted acoustic
     doppler current profiler (ADCP), CTD mounted in mid-water and thermistors mounted
-    at bottom, mid-water and near the surface. Data were aggregated into 1m bins and
-    interpolated onto a 20 min grid.'
+    at bottom, mid-water and near the surface. Data were aggregated into 1 m bins
+    and interpolated onto a 20 min grid.'
   dataPackages:
     package:
     - docid: knb-lter-sbc.2001
@@ -282,8 +283,8 @@
   mapLayers: ~
 - collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET, with calibration'
   abstract: SeaFET instruments have been deployed at four SBC reefs starting in 2011.
-    Time-series are of of pH, plus and CO2 system parameters derived from the "CO2calc"
-    algorithms. Reported time interval matches that reported for other moored instruments.
+    Time-series are of pH, and CO2 system parameters derived from the "CO2calc" algorithms.
+    The reported time interval matches that reported for other moored instruments.
     Benchmark water samples are also available at moored stations, plus from other
     subtidal and intertidal stations.
   dataPackages:
@@ -329,8 +330,8 @@
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers: ~
 - collectionName: 'SBC LTER: Sea otters in California'
-  abstract: Location, number and behavior of sea otters (Enhydra lutris) in the Santa
-    Barbara Channel area, observed during other SBC sampling events.
+  abstract: Location, number and behavior of sea otters (<i>Enhydra lutris</i>) in
+    the Santa Barbara Channel observed during other SBC sampling events.
   dataPackages:
     package:
     - docid: knb-lter-sbc.61
@@ -345,13 +346,9 @@
     lterCoreResearchArea: Population Studies
   mapLayers: ~
 - collectionName: 'SBC LTER: Ongoing time-series of abiotic variables in kelp forests'
-  abstract: Ongoing measurements of abiotic variables inkelp forest communities. This
-    collection includessurface and seafloor irradiance, bottom temperature, and waves.
-    Temperature is measured at each SBC LTER long-term monitoring), irradiance is
-    measured at a subset of long-term kelp removal experiment experiment transects,
-    and wave height is modeled for each SBC LTER site using data from CDIP (http://cdip.ucsb.edu).
-    Data collected from in situ deployments of paired spherical and planar sensors
-    is also provided.
+  abstract: 'Ongoing measurements of abiotic variables at SBC’s long-term kelp forest
+    study sites. This collection includes data on surface and seafloor irradiance,
+    bottom temperature, and waves. '
   dataPackages:
     package:
     - docid: knb-lter-sbc.35
@@ -670,10 +667,10 @@
   mapLayers:
     mapLayer: landStreamChem
 - collectionName: 'SBC LTER: Kelp forest food webs'
-  abstract: Measurements of the movement of organic material in kelp forest food webs
-    including stable isotopes of carbon and nitrogen reef consumers and potential
-    food sources and feeding relationships for common kelp forest taxa measured annually
-    at each SBC LTER site and seasonally as part of a long-term kelp removal experiment.
+  abstract: 'Information pertaining to kelp forest food webs including: (1) carbon
+    and nitrogen stable isotope data for key reef consumers and their potential food
+    sources (macroalgae, phytoplankton, terrestrial POM macroalgae), and (2) feeding
+    relationships among common kelp forest taxa derived from the literature.'
   dataPackages:
     package:
     - docid: knb-lter-sbc.92
@@ -682,6 +679,8 @@
       shortTitle: C, N and H isotopes in epibenthic suspension feeders
     - docid: knb-lter-sbc.56
       shortTitle: Kelp forest food web
+    - docid: knb-lter-sbc.12
+      shortTitle: Stable isotopes in reef food webs
   habitats:
     habitat: reef
   measurementTypes:
@@ -716,39 +715,17 @@
     - Population Studies
     - Movement of Organic Matter
   mapLayers: ~
-- collectionName: 'SBC LTER: Stable Isotopes in reef food webs'
-  abstract: Stable isotopes of carbon and nitrogen in reef consumers and potential
-    food sources (phytoplankton, kelp and kelp-derived detritus, and terrestrial POM)
-    were collected from 2002 to 2005.
-  dataPackages:
-    package:
-    - docid: knb-lter-sbc.12
-      shortTitle: Stable isotopes in reef food webs
-  habitats:
-    habitat:
-    - watershed
-    - reef
-  measurementTypes:
-    measurementType: ecosystem_processes
-  lterCoreResearchAreas:
-    lterCoreResearchArea:
-    - Movement of Inorganic Matter
-    - Movement of Organic Matter
-    - Population Studies
-  mapLayers: ~
 - collectionName: 'SBC LTER: Net primary production of understory algae and phytoplankton'
-  abstract: This data collection includes in situ incubations of understory algal
-    communities and phytoplankton communities. It also provides laboratory measurements
-    of photosynthetic parameters for common understory macroalgae. P Photosynthetic
-    parameters have been combined with in situ measurements of light and biomass to
-    estimate net primary production of algae for the SBC LTER long-term kelp removal
-    experiment time series.
+  abstract: 'This collection includes data on primary production derived from in situ
+    incubations of natural assemblages of understory algae and phytoplankton in giant
+    kelp forests. It also provides laboratory measurements of photosynthetic parameters
+    for common understory macroalgae. '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.55
-      shortTitle: Benthic and phytoplankton production in treatment plots
     - docid: knb-lter-sbc.37
       shortTitle: Turf and foliose algal assemblages
+    - docid: knb-lter-sbc.55
+      shortTitle: Benthic and phytoplankton production in treatment plots
     - docid: knb-lter-sbc.57
       shortTitle: 'Photosynthesis parameters for macroalgae '
   habitats:
@@ -761,11 +738,14 @@
     - Disturbance Patterns
   mapLayers: ~
 - collectionName: 'SBC LTER: Giant kelp metapopulation dynamics'
-  abstract: Metapopulation theory suggests that connectivity among habitat patches
-    may act to "rescue" extinct local populations. This theory is tested with M. pyrifera,
-    as it occurs in discrete patches that undergo frequent local extinctions and recolonizations
-    on time scales of a few years. See SBC LTER Giant kelp genetics collections for
-    supporting data on kelp microsatellite markers.
+  abstract: 'Patch delineations for southern California giant kelp (<i>Macrocystis
+    pyrifera</i>) forests as determined using a combination of spatial autocorrelation
+    and graph theory analyses applied to a 27-year times series of canopy biomass
+    derived from Landsat satellite imagery. These patch delineations were used to
+    calculate the area, biomass, and fecundity of kelp patches in southern California,
+    and the demographic connectivity among them (based in part on spore dispersal
+    times). Together the data in this collection were used to examine the metapopulation
+    dynamics of giant kelp in southern California.  '
   dataPackages:
     package:
     - docid: knb-lter-sbc.101
@@ -788,8 +768,7 @@
   mapLayers: ~
 - collectionName: 'SBC LTER: Giant kelp genetics'
   abstract: Microsatellite markers for giant kelp (collected from SBC LTER sites in
-    2006, 2009, and from 62 sites from Alaska to Baja California in 2014 to support
-    studies of kelp metapopulation theory.
+    2006, 2009, and from 62 sites from Alaska to Baja California in 2014.
   dataPackages:
     package:
     - docid: knb-lter-sbc.73
@@ -807,10 +786,10 @@
   mapLayers: ~
 - collectionName: 'SBC LTER: Invasive species in kelp forests'
   abstract: Measurements of invasive species in kelp forests including recruitment
-    of the invasive bryozoan, Watersipora subatra, and the occurrence and management
-    of the invasive fucoid Sargassum horneri. Abundance of kelp forest species, including
-    invasive species, is also monitored annually at each SBC LTER site in summer and
-    seasonally as part of a long-term kelp removal experiment.
+    of the invasive bryozoan, <i>Watersipora subatra</i>, and the occurrence and management
+    of the invasive fucoid alga <i>Sargassum horneri</i>. Abundance of kelp forest
+    species, including invasive species, is also monitored annually at each SBC LTER
+    site in summer and seasonally as part of a long-term kelp removal experiment.
   dataPackages:
     package:
     - docid: knb-lter-sbc.90
@@ -835,10 +814,9 @@
     - Disturbance Patterns
   mapLayers: ~
 - collectionName: 'SBC LTER: Nitrogen sources, delivery, and utilization in kelp forests'
-  abstract: In situ and lab experiment data to investigate forms (ammonia, urea, nitrate),
-    sources (sediments, coastal waters) and utilization (uptake by giant kelp and
-    phytoplankton) of nitrogen in kelp forests. These data complement ongoing time-series
-    measurements of water chemistry, including nitrogen, at SBC LTER sites.
+  abstract: Data from in situ and laboratory experiments on the availability of different
+    forms of nitrogen (nitrate, ammonium, and urea) in coastal waters and bottom sediments
+    and the uptake kinetics of these different nitrogen forms  by giant kelp and phytoplankton.
   dataPackages:
     package:
     - docid: knb-lter-sbc.109
@@ -1034,8 +1012,8 @@
     - Movement of Inorganic Matter
   mapLayers: ~
 - collectionName: 'SBC LTER: Cross-shelf study, 2008-2009'
-  abstract: Oceanagraphic profiles on a cross-shelf transect were collect to resolve
-    development of the temporal and spatial gradients in organic and inorganic constituents
+  abstract: Oceanographic profiles of a cross-shelf transect collected to resolve
+    the development of temporal and spatial gradients in organic and inorganic constituents
     and related microbial activity and community structure.
   dataPackages:
     package:
