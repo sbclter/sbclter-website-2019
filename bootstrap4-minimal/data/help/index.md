@@ -22,20 +22,18 @@ description: help to solve data related questions
 <hr/>
 <h4>Data access through data catalog</h4>
 
-<p>This document demonstrates dataset search, metadata review dataset download, and dataset citation.
-    <a href="{{site.baseurl}}/external/Documents/data_help/SBCLTER_DataDownloadProtocol_WithWebsite.pdf">SBC data review and download protocol</a></p>
+<p><a href="{{site.baseurl}}/external/Documents/data_help/SBCLTER_DataDownloadProtocol_WithWebsite.pdf">SBC data review and download protocol</a> demonstrates dataset search, metadata review, dataset download, and dataset citation.
+    </p>
 
  <hr/>
 <h4>Dataset publication</h4>
-<li>
-<p>To publish your dataset, please download the template in the zipped file that includes the metadata collection 
-    Excel worksheet as well as abstract and method word documents.  
-    <a href="{{site.baseurl}}/external/Documents/data_help/Metadata_collection.zip">SBC data publication template</a></p> 
-</li>
-<li>   
-<p> This is the detail instruction on how to fill out the meatadata sheet and prepare your data for publication.
-    <a href="{{site.baseurl}}/external/Documents/data_help/Instruction_on_filling_out_metadata.pdf">SBC data publication instruction</a> </p>
-</li>
+
+<p>To publish your dataset, please download the <a href="{{site.baseurl}}/external/Documents/data_help/Metadata_collection.zip">SBC data publication template</a> in a zipped file that includes the metadata collection 
+    Excel worksheet as well as abstract and method word documents.  </p>
+    
+  
+<p> <a href="{{site.baseurl}}/external/Documents/data_help/Instruction_on_filling_out_metadata.pdf">SBC data publication instruction</a> will show you how to fill out the meatadata sheet and prepare your data for publication.
+     </p>
 
  <hr/>
  <h4>Access SBC server via Web Browser</h4>
@@ -45,10 +43,11 @@ description: help to solve data related questions
 
 
 <h4>Access SBC server via network drive mapping</h4>
-<p>SBC user can map SBC sever on your computer, which allows you to view all SBC related documents, pictures, data, collaborated projects as 
+<p>SBC user can <a href="{{site.baseurl}}/external/Documents/data_help/SBC_map_network_drive.pdf">map SBC file sever</a> on your computer, 
+which allows you to view all SBC related documents, pictures, data, collaborated projects as 
 if it were a drive on your UCSB desktop. Only the computers on campus or connected via VPN 
-(<a href="https://www.it.ucsb.edu/get-connected-vpn">UCSB VPN</a>) can map SBC server. 
-    <a href="{{site.baseurl}}/external/Documents/data_help/SBC_map_network_drive.pdf">Map SBC file sever</a></p> 
+(<a href="https://www.it.ucsb.edu/get-connected-vpn">UCSB VPN</a>) can map the SBC server. 
+    </p> 
 
  <hr/>
  <h4>Data management plan</h4>
