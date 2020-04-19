@@ -27,9 +27,9 @@ add links to documents using an existing document as a template.
     <div class="col-md-4">
      <h2>SBC LTER Proposals</h2>
 
-            <p>SBC LTER has been funded by NSF since 2000, on a 6-year cycle. The four primary proposals are available.</p>
+      <p>SBC LTER has been funded by NSF since 2000, on a 6-year cycle. The four primary proposals are available.</p>
     </div>
-        
+    
 	   <div class="col-md-8">
             <ul>
                 <li><a href="{{site.baseurl}}/external/Documents/Proposals/1999-SBCLTER-proposal.pdf">SBC LTER I (1999)</a></li>
