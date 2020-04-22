@@ -49,7 +49,7 @@ description: page description here.
 </div>
 
 <div class="col-md-10">
-    <div id="myDiv"></div>
+    <div id="shore-graph"></div>
     
     <p>Tide predictions for Santa Barbara: <a href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9411340&legacy=1">Tides and currennts at NOAA</a>
     </p>

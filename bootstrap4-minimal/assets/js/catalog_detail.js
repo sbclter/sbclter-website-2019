@@ -111,7 +111,13 @@ function makePeople(template, data) {
 
 		for(var key in publisher) {
 			row += `<th class="cell col-2"> ${ camelToWords(key) } </th>`;
-			row += `<td class="cell col-10"> ${ publisher[key] } </td>`;
+
+			if (key == 'onlineUrl')
+				row += `<td class="cell col-10"> ${ activateLink(publisher[key]) } </td>`;
+			else if (key == 'address')
+				row += `<td class="cell col-10"> ${ parseAddress(publisher[key]) } </td>`;
+			else
+				row += `<td class="cell col-10"> ${ publisher[key] } </td>`;
 		}
 
 		row += '</tr>';
@@ -131,6 +137,13 @@ function makePeople(template, data) {
 		var contacts = data['eml:eml']['dataset']['contact'];
 		var contents = makePeopleTables(contacts);
 		element.find('#field-contacts').append(contents);
+	} catch(err) { console.error(err); }
+
+	// fill associated parties field
+	try {
+		var contacts = data['eml:eml']['dataset']['associatedParty'];
+		var contents = makePeopleTables(contacts);
+		element.find('#field-associated').append(contents);
 	} catch(err) { console.error(err); }
 
 }
@@ -200,12 +213,21 @@ function makeSummary(template, data) {
 	try {
 		var keywordList = data['eml:eml']['dataset']['keywordSet'];
 		for (var i = 0; i < keywordList.length; i++) {
-			var keywordItem = keywordList[i];
-			var row =
-			'<tr class="row">' +
-				`<th class="cell col-4"> ${ extractData(keywordItem['keywordThesaurus']) } </th>` +
-				`<td class="cell col-8"> ${ extractData(keywordItem['keyword'], ', ', ['#text']) } </td>` +
-			'</tr>';
+			let keywordItem = keywordList[i];
+			let key = extractData(keywordItem['keywordThesaurus']);
+			let val = extractData(keywordItem['keyword'], ', ', ['#text']);
+			let row;
+			if (key == "") {
+				row = '<tr class="row">' +
+					`<td class="cell col-12"> ${ val } </td>` +
+				'</tr>';
+			}
+			else {
+				row = '<tr class="row">' +
+					`<th class="cell col-4"> ${ key } </th>` +
+					`<td class="cell col-8"> ${ val } </td>` +
+				'</tr>';
+			}
 			element.find('#field-keywords').append(row);
 		}
 	} catch(err) { console.error(err); }
@@ -247,7 +269,7 @@ function makeMethods(template, data) {
 				try {
 					let paraList = description['para'];
 					if (!Array.isArray(paraList)) paraList = [paraList];
-					html += `<div style="font-weight: normal"><strong>${ title ? title + '' : '' }</strong>` + ``;
+					html += `<div style="font-weight: normal"><strong>${ title ? title + '' : '' }</strong><br/>`;
 
 					for (let k = 0; k < paraList.length; k++) {
 						if (typeof paraList[k] == "object") {
@@ -299,10 +321,8 @@ function makeFiles(template, data) {
 		let html = ``;
 		for (let i = 0; i < tableList.length; i++) {
 			let table = tableList[i];
-			html += `<div class="section-title"> Data Table ${ i + 1 } </div><table>
-				<tr><th class="col-2">Name:</th><td class="col-8">${ table['entityName'] }</td></tr>
-				<tr><th class="col-2">Description:</th><td class="col-8">${ table['entityDescription'] }</td></tr>
-			</table><br/>`;
+			html += `<div class="section-title"> Data Table ${i + 1}: ${ table['entityName'] } </div>
+					<div class="ml-3"> ${ table['entityDescription'] } </div><br/>`;
 		}
 
 		element.append(html);

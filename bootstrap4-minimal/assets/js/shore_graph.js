@@ -1,9 +1,55 @@
-var stearns_wharf_csv = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`
-console.log(stearns_wharf_csv)
+const stearns_wharf_csv = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+const layout = {
+  title: 'Automated Shore Stations - Timeline',
+  xaxis: {
+    autorange: true,
+    rangeselector: {buttons: [
+      {
+          count: 1,
+          label: '1 Day',
+          step: 'day',
+          stepmode: 'backward'
+        },
+        {
+          count: 7,
+          label: '1 Week',
+          step: 'day',
+          stepmode: 'backward'
+        },
+     {
+          count: 1,
+          label: '1 Month',
+          step: 'month',
+          stepmode: 'backward'
+        },
+        {
+          count: 3,
+          label: '3 Months',
+          step: 'month',
+          stepmode: 'backward'
+        }/* , */   
+       /*  {
+          count: 6,
+          label: '6 months',
+          step: 'month',
+          stepmode: 'backward'
+        } 
+         
+        {
+          step: 'all'
+        }
+          */
+      ]},
+    type: 'date'
+  },
+  yaxis: {
+    autorange: true,
+    type: 'linear'
+  }
+};
 
 
-
-Plotly.d3.csv(stearns_wharf_csv, function(err, rows) {
+Plotly.d3.csv(stearns_wharf_csv, async function(err, rows) {
 
   function unpack(rows, key) {
     return rows.map(function(row) { return row[key]; });
@@ -46,62 +92,10 @@ Plotly.d3.csv(stearns_wharf_csv, function(err, rows) {
     y: unpack(rows, 'salinity'),
     line: {color: '#ff8800'} /* orange */
   }
-  
-  
-  
 
   var data = [temp, chl, pressure, sal];
-
-  var layout = {
-    title: 'Automated Shore Stations - Timeline',
-    xaxis: {
-      autorange: true,
-      rangeselector: {buttons: [
-        {
-            count: 1,
-            label: '1 Day',
-            step: 'day',
-            stepmode: 'backward'
-          },
-          {
-            count: 7,
-            label: '1 Week',
-            step: 'day',
-            stepmode: 'backward'
-          },
-       {
-            count: 1,
-            label: '1 Month',
-            step: 'month',
-            stepmode: 'backward'
-          },
-          {
-            count: 3,
-            label: '3 Months',
-            step: 'month',
-            stepmode: 'backward'
-          }/* , */   
-         /*  {
-            count: 6,
-            label: '6 months',
-            step: 'month',
-            stepmode: 'backward'
-          } 
-           
-          {
-            step: 'all'
-          }
-            */
-        ]},
-      type: 'date'
-    },
-    yaxis: {
-      autorange: true,
-      type: 'linear'
-    }
-  };
-
-  Plotly.newPlot('myDiv', data, layout);
-
+  Plotly.newPlot('shore-graph', data, layout);
   $(".modebar").attr("hidden", "hidden");
 })
+
+Plotly.newPlot('shore-graph', [], layout);
