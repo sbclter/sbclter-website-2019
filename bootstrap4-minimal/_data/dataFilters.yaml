@@ -50,20 +50,17 @@
   group: "Areas"
   filters:
      - label: "Primary Production"
-       id: primary production
+       id: Primary Production
        description: "Patterns and control of primary production"
      - label: "Population Studies"
-       id: population dynamics
+       id: Population Studies
        description: "Spatial and temporal distribution of selected populations"
      - label: "Organic Matter"
-       id: organic matter
+       id: Movement of Organic Matter
        description: "Patterns and control of organic matter cycling and accumulation"
      - label: "Inorganic Matter"
-       id: inorganic matter
+       id: Movement of Inorganic Matter
        description: "Patterns and transport of inorganic material and nutrients such as N and P"
      - label: "Disturbance Patterns"
-       id: disturbance patterns
+       id: Disturbance Patterns
        description: "Patterns and frequency of events that shape ecosystems"
-     - label: "Human Dimensions"
-       id: human dimensions
-       description: "Social and historical processes"

@@ -49,7 +49,13 @@ The primary objectives of the SBC IM system are to 1) preserve high-quality and 
 <div id="main-container">
 
 <h3>2. Data and metadata access</h3>
-<p>SBC LTER data were categorized into collections of five habitats, eight measurement types, and six core research areas. You can look into each of the collections and find the data package that you are interested in. If your target datasets are outside of our collection categories, please use the search function and provide the keywords for indexing. The metadata for each data package can be viewed in the Environmental Data Initiative (EDI) metadata tab. The detail instruction of data search and it’s associated metadata can be seen here:<a href="/data/management/SBCLTER_DataDownloadProtocol_WithWebsite_20191001.pdf">Data Download Protocol</a>   </p>
+<p>SBC LTER data were categorized into collections of five habitats, eight measurement types,
+and six core research areas. You can look into each of the collections and find the data 
+package that you are interested in. If your target datasets are outside of our collection 
+categories, please use the search function and provide the keywords for indexing. 
+The metadata for each data package can be viewed in the Environmental Data Initiative (EDI) 
+metadata tab.
+</p>
 </div>
 
 <div id="main-container">
