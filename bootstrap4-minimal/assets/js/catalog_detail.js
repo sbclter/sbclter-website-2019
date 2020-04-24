@@ -36,10 +36,8 @@ function showDetail(url) {
 
 	loadXMLDoc(url, function(xml) {
 		try {
-			var dataString = xml2json(xml, "	");
-			var data = JSON.parse(dataString);
-			var title = data['eml:eml']['dataset']['title'];
-			console.log(data);
+			var data = new X2JS().xml2json(xml);
+			var title = data['eml']['dataset']['title'];
 
 			initMap();
 			makeSummary(template, data);
@@ -72,7 +70,7 @@ function makeCoverage(template, data) {
 
 	// Fill temporal converage data
 	try {
-		var dateText = extractData(data['eml:eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
+		var dateText = extractData(data['eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
 		element.find('#field-temporal').text(dateText);
 	} catch(err) { console.error(err); }
 
@@ -94,7 +92,7 @@ function makeCoverage(template, data) {
 			 <th class="cell tax-cell"> Genus </th>\
 			 <th class="cell tax-cell"> Species </th>\
 		   </tr>`).appendTo(element.find('#field-taxonomic'));
-		fillTaxonomicRow(data['eml:eml']['dataset']['coverage']['taxonomicCoverage']['taxonomicClassification'], element.find('#field-taxonomic #tax-head'), 0);
+		fillTaxonomicRow(data['eml']['dataset']['coverage']['taxonomicCoverage']['taxonomicClassification'], element.find('#field-taxonomic #tax-head'), 0);
 		element.find('#section-taxonomic').removeAttr('hidden');
 	} catch(err) { console.error(err); }
 
@@ -106,7 +104,7 @@ function makePeople(template, data) {
 
 	// fill publishers field
 	try {
-		var publisher = data['eml:eml']['dataset']['publisher'];
+		var publisher = data['eml']['dataset']['publisher'];
 		var row = '<tr class="row">';
 
 		for(var key in publisher) {
@@ -127,21 +125,21 @@ function makePeople(template, data) {
 
 	// fill owners field
 	try {
-		var creators = data['eml:eml']['dataset']['creator'];
+		var creators = data['eml']['dataset']['creator'];
 		var contents = makePeopleTables(creators);
 		element.find('#field-owners').append(contents);
 	} catch(err) { console.error(err); }
 
 	// fill contacts field
 	try {
-		var contacts = data['eml:eml']['dataset']['contact'];
+		var contacts = data['eml']['dataset']['contact'];
 		var contents = makePeopleTables(contacts);
 		element.find('#field-contacts').append(contents);
 	} catch(err) { console.error(err); }
 
 	// fill associated parties field
 	try {
-		var contacts = data['eml:eml']['dataset']['associatedParty'];
+		var contacts = data['eml']['dataset']['associatedParty'];
 		var contents = makePeopleTables(contacts);
 		element.find('#field-associated').append(contents);
 	} catch(err) { console.error(err); }
@@ -153,65 +151,65 @@ function makeSummary(template, data) {
 
 	// fill id field
 	try {
-		var text = extractData(data['eml:eml']['@packageId']);
+		var text = extractData(data['eml']['_packageId']);
 		element.find('#field-id').text(text);
 	} catch(err) { console.error(err); }
 
 	// fill alternate id field
 	try {
-		var text = extractData(data['eml:eml']['dataset']['alternateIdentifier'], '<br>', ['#text']);
+		var text = extractData(data['eml']['dataset']['alternateIdentifier'], '<br>');
 		element.find('#field-id-alt').html(text);
 	} catch(err) { console.error(err); }
 
 	// fill abstract paragraph field
 	try {
-		var text = extractData(data['eml:eml']['dataset']['abstract']['para'], '<br><br>', ['#text']);
+		var text = extractData(data['eml']['dataset']['abstract']['para'], '<br><br>', ['#text']);
 		element.find('#field-abstract').html(text);
 	} catch(err) { console.error(err); }
 
 	// fill shortname field
 	try {
-		var text = extractData(data['eml:eml']['dataset']['shortName']);
+		var text = extractData(data['eml']['dataset']['shortName']);
 		element.find('#field-shortname').html(text);
 	} catch(err) { console.error(err); }
 
 	// fill publication date field
 	try {
-		var text = extractData(data['eml:eml']['dataset']['pubDate']);
+		var text = extractData(data['eml']['dataset']['pubDate']);
 		element.find('#field-pubdate').html(text);
 	} catch(err) { console.error(err); }
 
 	// fill language field
 	try {
-		var text = extractData(data['eml:eml']['dataset']['language']);
+		var text = extractData(data['eml']['dataset']['language']);
 		element.find('#field-language').html(text);
 	} catch(err) { console.error(err); }
 
 	// fill time period field
 	try {
-		var text = extractData(data['eml:eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
+		var text = extractData(data['eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
 		element.find('#field-daterange').html(text);
 	} catch(err) { console.error(err); }
 
 	// fill citation field
 	try {
 		var text = '';
-		var creators = data['eml:eml']['dataset']['creator'];
+		var creators = data['eml']['dataset']['creator'];
 		for (var i = 0; i < creators.length; i++)
 			if (creators[i]['individualName'] !== undefined)
 				text += parseName(creators[i]['individualName'], '%L, %f. ');
 
-		text += extractData(data['eml:eml']['dataset']['pubDate']).split('-')[0] + '. ';
-		text += extractData(data['eml:eml']['dataset']['title']) + '. ';
-		text += extractData(data['eml:eml']['dataset']['publisher']['organizationName']) + '. ';
-		text += extractData(data['eml:eml']['dataset']['alternateIdentifier'][1]['#text']) + '.';
+		text += extractData(data['eml']['dataset']['pubDate']).split('-')[0] + '. ';
+		text += extractData(data['eml']['dataset']['title']) + '. ';
+		text += extractData(data['eml']['dataset']['publisher']['organizationName']) + '. ';
+		text += extractData(data['eml']['dataset']['alternateIdentifier']) + '.';
 
 		element.find('#field-citation').html(text);
 	} catch(err) { console.error(err); }
 
 	// fill keywords field
 	try {
-		var keywordList = data['eml:eml']['dataset']['keywordSet'];
+		var keywordList = data['eml']['dataset']['keywordSet'];
 		for (var i = 0; i < keywordList.length; i++) {
 			let keywordItem = keywordList[i];
 			let key = extractData(keywordItem['keywordThesaurus']);
@@ -234,9 +232,9 @@ function makeSummary(template, data) {
 
 	// fill usage rights field
 	try {
-		var rights = extractData(data['eml:eml']['dataset']['intellectualRights']['para'], '</li>\n<li>');
+		var rights = extractData(data['eml']['dataset']['intellectualRights']['para'], '</li>\n<li>');
 		if (rights === '[object Object]')
-			rights = extractData(data['eml:eml']['dataset']['intellectualRights']['para']['itemizedlist']['listitem'], '</li>\n<li>', ['para']);
+			rights = extractData(data['eml']['dataset']['intellectualRights']['para']['itemizedlist']['listitem'], '</li>\n<li>', ['para']);
 
 		var text = '<li>' + rights + '</li>';
 		element.find('#field-usage-rights').html(text);
@@ -248,7 +246,7 @@ function makeMethods(template, data) {
 
 	// fill method description table
 	try {
-		let methodList = data['eml:eml']['dataset']['methods']['methodStep'];
+		let methodList = data['eml']['dataset']['methods']['methodStep'];
 		if (!Array.isArray(methodList)) methodList = [methodList];
 
 		for (let i = 0; i < methodList.length; i++) {
@@ -273,8 +271,10 @@ function makeMethods(template, data) {
 
 					for (let k = 0; k < paraList.length; k++) {
 						if (typeof paraList[k] == "object") {
-							html += extractData(paraList[k], ' ', ['#text']).replace(/ulink/g, 'a').replace(/<a url/g, '<a href');
-							html += activateLink(extractData(paraList[k], ' ', ['ulink/#text']));
+							html += extractData(paraList[k], ' ') + ' ';
+
+							if (paraList[k] && paraList[k]['ulink'])
+								html += activateLink(paraList[k]['ulink']['_url'], paraList[k]['ulink']);
 						}
 						else {
 							html += paraList[k];
@@ -296,7 +296,7 @@ function makeMethods(template, data) {
 						`<table>` +
 						`	<tr><th class="col-2">Protocol:</th> <td class="col-8">${ protocol['title'] }</td></tr>` +
 						`	<tr><th class="col-2">Author:</th> <td class="col-8">${ protocol['creator']['individualName']['surName'] }</td></tr>` +
-						`	<tr><th class="col-2">Available Online:</th> <td class="col-8">${ activateLink(protocol['distribution']['online']['url']['#text']) }</td></tr>` +
+						`	<tr><th class="col-2">Available Online:</th> <td class="col-8">${ activateLink(protocol['distribution']['online']['url']) }</td></tr>` +
 						`</table>`;
 					html += (j != protocols.length - 1) ? '<hr>' : '<br>';
 				} catch(err) { console.error(err); }
@@ -315,7 +315,7 @@ function makeFiles(template, data) {
 
 	// Fill datatable data
 	try {
-		let tableList = data['eml:eml']['dataset']['dataTable'];
+		let tableList = data['eml']['dataset']['dataTable'];
 		if (!Array.isArray(tableList)) tableList = [tableList];
 
 		let html = ``;
@@ -474,8 +474,8 @@ function makePeopleTables(data) {
 			if (typeof value === 'object') {
 				if      (key === 'address')        value = parseAddress(value);
 				else if (key === 'individualName') value = parseName(value, '%F %L');
-				else if (key === 'phone')          value = extractData(value, '; ', ['#text', '@phonetype']);
-				else                               value = extractData(value, ', ', ['#text']);
+				else if (key === 'phone')          value = extractData(value, '; ');
+				else                               value = extractData(value, ', ');
 			}
 
 			// activate any link
@@ -496,7 +496,7 @@ function makePeopleTables(data) {
 
 // Plot markers for coverage tab
 function plotMarkers(element, data) {
-	var points = data['eml:eml']['dataset']['coverage']['geographicCoverage'];
+	var points = data['eml']['dataset']['coverage']['geographicCoverage'];
 	if (!Array.isArray(points))
 		points = [points];
 

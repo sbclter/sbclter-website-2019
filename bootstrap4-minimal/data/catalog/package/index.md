@@ -36,7 +36,6 @@ to do:
 
 
 <script src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 <script src="/assets/js/ext/xml2json.js"></script>
 <script src="/assets/js/catalog_detail.js"></script>
-
