@@ -18,6 +18,8 @@ table_font_size: 12
 page_css:
   - "/assets/css/custom/includes/table.css"
   - "/assets/css/custom/includes/search_bar.css"
+  - "/assets/css/custom/includes/bookmark_list.css"
+  - "/assets/css/custom/publications.css"
 category_labels:
   Article:       Articles
   Book:          Books
@@ -30,16 +32,18 @@ category_labels:
 urlkey: true
 ---
 
-<h1>SBC LTER Publications</h1>
-
 
 <div id="table-content" class="small" >
+
+	<h1>SBC LTER Publications</h1>
+
 	{% include search_bar.html placeholder=page.placeholder %}
 
 	{% include bookmark_list.html category_labels=page.category_labels %}
 
-	{% assign pub_groups = site.data.Website_citation_export | group_by: "category" | sort: "name" %}
+	{% assign pub_groups = site.data.Website_citation_export | sort: "citation" | reverse | sort: "year" | reverse | group_by: "category" %}
 
+	<div class="tab-content">
 	{% for pubs in pub_groups %}
 		{% include table.html columns = page.columns
 							  columns_size = page.columns_size
@@ -49,12 +53,16 @@ urlkey: true
 							  table_font_size = page.table_font_size
 							  urlkey = page.urlkey %}
 	{% endfor %}
+	</div>
 </div>
 
 
 <script src="/assets/js/table.js"></script>
 <script>
 	$(document).ready(function() {
+		$('#bookmark-list .nav-link:first').addClass('active');
+		$('.section:first').addClass('active');
+
 		$('tbody').each(function() {
 			$(this).find('.row').each(function() {
 				var doi = $(this).children().last().text().split("DOI: ")[1];
@@ -65,6 +73,5 @@ urlkey: true
 				}
 			});
 		});
-	    $('.table').DataTable({ retrieve: true }).order([[ 0, "desc"], [1, "asc"]]).draw();
 	});
 </script>

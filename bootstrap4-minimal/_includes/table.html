@@ -1,4 +1,4 @@
-<div class="pull-left" class="mt-4">
+<div id="section_{{include.data.name}}" class="section mt-4">
   <h3 id="table_{{include.data.name}}" class="table-title pl-1">
     <strong>
     {% if include.category_labels[include.data.name] %}
@@ -16,7 +16,7 @@
         <th class="cell col-{{ include.columns_size[forloop.index0] }} row" style="justify-content: space-between;">
           <strong> {{ column }} </strong>
           {% if forloop.index0 == 0 %}
-            <img src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
+            <img class="sort-btn" src="/assets/img/sort.png" style="height: 50%; width: 10px; margin: 5px;" />
           {% endif %}
         </th>
       {% endfor %}

@@ -1,92 +1,101 @@
+function hideEmptyTable(table_id) {
+	if (table_id == "") return;
 
-// Searches the page for a table with id "myId"
-// It will check each row of the table for the id parsed from myId
-// If all rows are hidden, then the table is empty and should be hidden
-function isEmptyTable(myId){
-	if(myId != ""){
-		// Parse id to look at row id's
-		parsedId = myId.replace("table_", "")
+	table_id = table_id.replace("table_", "");
+	let rows = document.getElementsByClassName("table_row_" + table_id);
+	let hide = true;
 
-	    let trs = document.getElementsByClassName("table_row_" + parsedId);
-	    let hide = true
-	    // Look through all table rows
-	    for (let element of trs) {
-	      if (element.style.display !== "none"){
-	      	hide = false;
-	      }
-	    }
-
-	    let myTable = document.getElementById(myId).parentNode;
-	    let myHeader = document.getElementById("table_header_" + parsedId);
-	    if (hide){  // Hide the table
-	    	myTable.style.display = 'none';
-	    	myHeader.style.display = 'none';
-	    }
-	    else {  // Unhide the table
-	    	myTable.style.display = 'block'
-	    	myHeader.style.display = 'table-header-group';
+	for (let row of rows) {
+		if (row.style.display !== "none"){
+			hide = false;
 		}
 	}
+
+	let myTable = document.getElementById("table_" + table_id).parentNode;
+	let myHeader = document.getElementById("table_header_" + table_id);
+
+	$(myTable).toggleClass('hidden', hide);
+	myHeader.style.display = hide ? 'none' : 'table-header-group';
 }
 
-// Simple function for adding custom styling when hovering a table row
-jQuery(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
-    });
-    $(".clickable-row").hover(function() {
-	    $(this).addClass('table-hover');
-	}, function() {
-	    $(this).removeClass('table-hover');
-	});
-	// $("#article-content").hide();
-	$.each($("table"), function(){
-		sortTable($(this), 'asc');
+function sortTable(tbody, order) {
+	let asc   = order === 'asc';
+
+	tbody.find('tr').sort(function(a, b) {
+		// console.log($('td:first', a).text());
+		// console.log($('td:first', b).text());
+		let comp = parseInt($('td:first', a).text()) - parseInt($('td:first', b).text());
+		// console.log(comp);
+		return asc ? comp : -1 * comp;
 	})
-	$("#table-content").show();
+	.appendTo(tbody);
+}
 
-});
-
-// Search the tables on the page for the input to the search bar
-// Handles searching multiple tables and hides empty tables
 $(document).ready(function(){
-	var h3IdArr = [];
+	$(".clickable-row").click(function() {
+		window.location = $(this).data("href");
+	});
 
-	var h3s = document.getElementsByClassName("table-title");
+	$(".clickable-row").hover(
+		function() {
+			$(this).addClass('table-hover');
+		},
+		function() {
+			$(this).removeClass('table-hover');
+		}
+	);
 
-	for(var i=0; i < h3s.length; i++)
-	{
-		// Will have to look for id's with table_title in future
-		if(h3s[i].id.includes("table_")){
-			// Gets titles for all tables on page to search
-	   		h3IdArr.push(h3s[i].id); 
+	$('.sort-btn').parent().click((e) => {
+		let tbody = $(e.target).closest('table').find('tbody');
+		let order = tbody.attr('order') == 'asc' ? 'desc' : 'asc';
+		tbody.attr('order', order);
+		sortTable(tbody, order);
+	});
+
+	let table_ids = [];
+	let titles = document.getElementsByClassName("table-title");
+
+	for (let i = 0; i < titles.length; i++) {
+		if (titles[i].id.includes("table_")) {
+			table_ids.push(titles[i].id); 
 		}
 	}
 
 	$("#search-bar").on("keyup", function() {
-		var value = $(this).val().toLowerCase();
-		$("tbody > tr").filter(function() {  // Look for keyword in table row
-		  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		let input = $(this).val().toLowerCase();
+
+		if (input == '') {
+			$('#bookmark-list .nav-link').removeClass('active');
+			$('#bookmark-list .nav-link:first').addClass('active');
+			$('.section').removeClass('active');
+			$('.section:first').addClass('active');
+			$('#bookmark-list').removeClass('hidden');
+		}
+		else {
+			$('.section').addClass('active');
+			$('#bookmark-list').addClass('hidden');
+		}
+
+		// Hide table rows
+		$("tbody > tr").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(input) > -1)
 		});
 
-		for(var i=0; i < h3IdArr.length; i++){
-			isEmptyTable(h3IdArr[i]);  // Hide empty tables
+		// Hide empty tables
+		for (let i = 0; i < table_ids.length; i++) {
+			hideEmptyTable(table_ids[i]);
 		}
 	});
 
+// 	// $('table').DataTable({searching: false, paging: false, info: false});
+	// $('table').DataTable();
+// 		destroy: true,
+// 		retrieve: true,
+// 		searching: false,
+// 		paging: false,
+// 		info: false,
+// 		// order: [[0, "desc"], [1, "desc"]],
+// 	});
 
-	$('table').DataTable({searching: false, paging: false, info: false});
+	$("#table-content").show();
 });
-
-
-function sortTable(table, order) {
-    var asc   = order === 'asc',
-        tbody = $(table).find('tbody');
-    tbody.find('tr').sort(function(a, b) {
-        if (asc) {
-            return $('td:first', a).text().localeCompare($('td:first', b).text());
-        } else {
-            return $('td:first', b).text().localeCompare($('td:first', a).text());
-        }
-    }).appendTo(tbody);
-}

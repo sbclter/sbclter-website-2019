@@ -17,3 +17,11 @@ table .cell {
 	padding-bottom: 5px !important;
 	overflow-wrap: break-word;
 }
+
+table th {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none !important;
+}

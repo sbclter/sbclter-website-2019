@@ -36,6 +36,9 @@ category_labels:
 ---
 
 <div id="table-content" style="display: none;">
+
+  <h1>SBC LTER People</h1>
+
 	{% include search_bar.html placeholder=page.placeholder %}
 
 	{% assign bio_groups = site.data.people_bios | group_by: "projectRole" %}

@@ -1,0 +1,30 @@
+---
+---
+#bookmark-list {
+	text-align: center;
+	margin-bottom: 2vh;
+	background-color: #ffffff;
+	font-size: 1rem;
+}
+
+.nav .nav-item .nav-link {
+	height: 100%;
+	text-align: center;
+	border: none !important;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+
+	&.active {
+		border-bottom: 2px solid !important;
+		border-color: #003366 !important;
+		color: black;
+	}
+}
+
+.section {
+	display: none;
+}
+
+.active {
+	display: block;
+}
