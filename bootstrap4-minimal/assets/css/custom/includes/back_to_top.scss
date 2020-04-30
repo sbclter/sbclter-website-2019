@@ -1,0 +1,31 @@
+---
+---
+@media screen and (orientation: portrait) {
+	:root {
+		--to-top-margin: 5vw;
+		--to-top-img: 10vw;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	:root {
+		--to-top-margin: 5vh;
+		--to-top-img: 10vh;
+	}
+}
+
+#back-to-top-btn {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: var(--to-top-margin);
+	text-align: center;
+
+	img {
+		width: var(--to-top-img);
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}

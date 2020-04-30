@@ -19,6 +19,7 @@ page_css:
   - "/assets/css/custom/includes/table.css"
   - "/assets/css/custom/includes/search_bar.css"
   - "/assets/css/custom/includes/bookmark_list.css"
+  - "/assets/css/custom/includes/back_to_top.css"
   - "/assets/css/custom/publications.css"
 category_labels:
   Article:       Articles
@@ -36,6 +37,8 @@ urlkey: true
 <div id="table-content" class="small" >
 
 	<h1>SBC LTER Publications</h1>
+
+	{% include back_to_top.html %}
 
 	{% include search_bar.html placeholder=page.placeholder %}
 
