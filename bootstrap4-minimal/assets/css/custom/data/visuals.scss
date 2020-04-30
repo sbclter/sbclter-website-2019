@@ -1,0 +1,105 @@
+---
+---
+#article-content {
+    padding: 0;
+}
+
+#graph-container {
+    margin: var(--layout-padding);
+
+    #collab-section {
+        width: 20%;
+        margin-right: 1%;
+    }
+
+    #graph-lines {
+        .line-btn {
+            display: block !important;
+            margin-bottom: 1vh;
+            text-align: left;
+            width: 100%;
+        }
+
+        #temperature-btn {
+            margin-right: 1vh;
+        }
+
+        #current-time {
+            margin-bottom: 3vh;
+        }
+    }
+}
+
+.tooltip {
+}
+
+.row-container {
+    display: flex;
+}
+
+.full-width {
+    width: 100%;
+}
+
+text {
+    font-size: 17px;
+}
+
+path { 
+    stroke-width: 3;
+    fill: none;
+}
+
+.focus, :focus {
+    box-shadow: unset !important;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    font: 17px;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#pressure-btn.btn-color { background-color: #dd00dd; color: white; }
+#temperature-btn.btn-color, .btn-temperature { background-color: #00dddd; }
+#chlorophyll-btn.btn-color { background-color: #00dd00; }
+#salinity-btn.btn-color { background-color: #ff8800; }
+
+#pressure-line { stroke: #dd00dd; }
+#temperature-line { stroke: #00dddd; }
+#chlorophyll-line { stroke: #00dd00; }
+#salinity-line { stroke: #ff8800; }
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

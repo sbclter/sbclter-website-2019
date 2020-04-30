@@ -1,11 +1,21 @@
 ---
 ---
-/*  padding vs margins
- * padding clears area inside border; does not collapse. (use with a border or background box)
- * margins collapse, overlap (use with interior elements) */
+@media screen and (orientation: portrait) {
+	:root {
+		--layout-padding: 5vw 20vw;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	:root {
+		--layout-padding: 5vh 20vh;
+	}
+}
+
+
 
 #article-content {
-	padding: 5vh 20vh;
+	padding: var(--layout-padding);
 }
 
  
@@ -15,9 +25,8 @@
 
 
 blockquote {
-        border-left: 5px solid #eee;
+	border-left: 5px solid #eee;
 	padding: 10px 20px;
 	margin: 0 0 20px;
-        page-break-inside: avoid;
-    }
-
+	page-break-inside: avoid;
+}
