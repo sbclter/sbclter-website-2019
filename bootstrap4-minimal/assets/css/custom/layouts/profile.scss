@@ -1,8 +1,56 @@
 ---
 ---
+@media screen and (orientation: portrait) {
+	:root {
+		--profile-padding-v: 2vh;
+		--profile-padding-h: 2vh;
+		--profile-image-size: 45vw;
+		--profile-margin: 20vw;
+	}
+	#profile-container {
+		margin: 1rem;
+		margin-bottom: var(--profile-margin);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
+@media screen and (orientation: landscape) {
+	:root {
+		--profile-padding-v: 1vw;
+		--profile-padding-h: 20vw;
+		--profile-image-size: 45vh;
+	}
+
+	#profile-container {
+		width: var(--profile-image-size);
+		float: right;
+		margin: 1rem;
+		margin-top: -2rem;
+		margin-top: 0;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
+@media (max-width: 174vh) and (orientation: landscape) {
+	:root {
+		--profile-padding-v: 1vw;
+		--profile-padding-h: 5vw;
+		--profile-image-size: 45vh;
+	}
+
+	#profile-container {
+		width: var(--profile-image-size);
+		float: right;
+		margin: 1rem;
+		margin-top: -2rem;
+		margin-top: 0;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
 
 #profile-picture {
-	border: 1px solid #002f61;
+	// border: 1px solid #002f61;
+	width: 100%;
 }
 
 .contact-icon {
@@ -18,46 +66,49 @@
 
 .profile-section {
 	margin-bottom: 30px;
-	margin-left: 5px;
 	font-size: 20px;
-	max-width: 80%;
+	// max-width: 80%;
+}
+
+.row-container {
+	display: flex;
 }
 
 #main-container {
-	margin-top: 30px;
-	margin-left: 5%;
+	margin: var(--profile-padding-v) calc(var(--profile-padding-h) );
 }
 
-#left-container {
-	width: 326px;
-	margin-right: 2rem;
-	margin-top: 8px;
-	float: left;
-}
-
-#right-container {
-	width: auto;
-	min-width: 326px;
+#text-container {
+	width: 100%;
 	margin: 1rem;
-	margin-left: 0rem;
 	text-align: left;
 	overflow: hidden;
 }
 
 #contact-info {
-	padding-top: 30px;
+	padding: 30px;
 	max-width: 326px; // fixed image width
 	font-size: 18px;
+
+	.row {
+		margin-bottom: 1rem;
+	}
 }
 
 #title-text {
 	font-size: 40px;
 	margin-bottom: 1rem;
+	display: flex;
+}
+
+#title-name {
+	vertical-align: middle;
 }
 
 #title-career {
 	color: #7f7f7f;
-	padding-left: 10px;
+	font-size: 30px;
+	margin: auto 0;
 }
 
 footer {

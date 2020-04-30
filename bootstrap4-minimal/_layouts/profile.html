@@ -9,57 +9,59 @@ layout: profile
 	{% include header_nav.html %}
 
 	<div id="main-container">
-		<div>
+		<div class="row-container">
+			<div id="text-container">
 
-		<div id="title-text">
-			{% if page.employeeType != "" and page.employeeType != nil %}
-				<div id="title-name" class="float-left"> {{ page.commonName | append: "&nbsp;" }} </div>
-				<div id="title-career">({{ page.employeeType }}) </div>
-			{% else %}
-				<div id="title-name"> {{ page.commonName | append: "&nbsp;" }} </div>
-			{% endif %}
-		</div>
+			    <div id="profile-container">
+			    	<img id="profile-picture" src="/assets/img/profile/{{ page.databaseID }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
 
-	    <div id="left-container">
-		<!--		<img id="profile-picture" src="/assets/img/profile/{{ page.givenName | slice: 0 | downcase }}{{ page.surname | downcase }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
--->
-	    	<img id="profile-picture" src="/assets/img/profile/{{ page.databaseID }}.jpg" width="326" height="" onerror="this.src='/assets/img/avatar.png'">
+		 			<div id="contact-info">
 
- 			<div id="contact-info">
-
-					{% if page.email != "" and page.email != nil %}
-						<div class="row">
-							<img class="contact-icon col-2" src="/assets/img/profile/email_icon.png" width="24" height="24">
-							<a class="contact-text col-10" href="mailto:{{ page.email }}" target="_blank"> {{ page.email }} </a>
-							<br/>
-						</div>
-						<br/>
-					{% endif %}
-
-					{% if page.telephoneNumber != "" and page.telephoneNumber != nil %}
-						<div class="row">
-							<img class="contact-icon col-2" src="/assets/img/profile/phone_icon.png" width="24" height="24">
-							<div class="contact-text col-10"> {{ page.telephoneNumber }} </div>
-						</div>
-						<br/>
-					{% endif %}
-
-					{% if page.postalAddress != "" and page.postalAddress != nil %}
-						<div class="row">
-							<img class="contact-icon col-2" src="/assets/img/profile/address_icon.png" width="24" height="24">
-							<div class="contact-text col-10">
-								{% assign addr_lines = page.postalAddress | split: "$" %}
-								{% for addr in addr_lines %}
-									<i> {{ addr | italic }} </i><br/>
-								{% endfor %}
+						{% if page.email != "" and page.email != nil %}
+							<div class="row">
+								<img class="contact-icon col-2" src="/assets/img/profile/email_icon.png" width="24" height="24">
+								<a class="contact-text col-10" href="mailto:{{ page.email }}" target="_blank"> {{ page.email }} </a>
+								<br/>
 							</div>
-						</div>
-						<br/>
-					{% endif %}
+						{% endif %}
 
+						{% if page.telephoneNumber != "" and page.telephoneNumber != nil %}
+							<div class="row">
+								<img class="contact-icon col-2" src="/assets/img/profile/phone_icon.png" width="24" height="24">
+								<div class="contact-text col-10"> {{ page.telephoneNumber }} </div>
+							</div>
+						{% endif %}
+
+						{% if page.postalAddress != "" and page.postalAddress != nil %}
+							<div class="row">
+								<img class="contact-icon col-2" src="/assets/img/profile/address_icon.png" width="24" height="24">
+								<div class="contact-text col-10">
+									{% assign addr_lines = page.postalAddress | split: "$" %}
+									{% for addr in addr_lines %}
+										<i> {{ addr | italic }} </i><br/>
+									{% endfor %}
+								</div>
+							</div>
+						{% endif %}
+
+					</div>
 				</div>
-			</div>
-			<div id="right-container">
+
+				<div id="title-text">
+					{% if page.employeeType != "" and page.employeeType != nil %}
+						<div id="title-name"> {{ page.commonName | append: "&nbsp;" }} </div>
+					{% else %}
+						<div id="title-name"> {{ page.commonName | append: "&nbsp;" }} </div>
+					{% endif %}
+				</div>
+
+				{% if page.employeeType != "" and page.employeeType != nil %}
+					<div class="profile-section">
+						<strong>Job Title: </strong>
+						{{ page.employeeType }}
+					</div>
+				{% endif %}
+
 				{% if page.profileText != "" and page.profileText != nil %}
 					<div class="profile-section">
 						<strong>Biography: </strong>
@@ -82,8 +84,8 @@ layout: profile
 				{% endif %}
 				
 			</div>
-
 		</div>
+
 	</div>
 
 	{% include footer.html %}
