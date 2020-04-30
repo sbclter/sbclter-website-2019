@@ -87,6 +87,7 @@ d3.csv(CSV_FILE).then(data => {
 
 async function updateData(target, _days) {
     days = _days;
+
     udpateGraphData();
 
     $('#graph-time-range .btn').removeClass('btn-primary');
@@ -94,6 +95,8 @@ async function updateData(target, _days) {
 }
 
 function udpateGraphData() {
+    updateLatest();
+
     let end_date = time_data[time_data.length - 1];
     let start_date = new Date(end_date - 1000 * 60 * 60 * 24 * days);
 
@@ -183,6 +186,18 @@ function formatTime(date) {
         minute: 'numeric',
         hour12: true
     });
+}
+
+function updateLatest() {
+    let pressure_val = parseFloat(pressure_data[pressure_data.length - 1].y).toFixed(2);
+    let temperature_val = parseFloat(temperature_data[temperature_data.length - 1].y).toFixed(2);
+    let chlorophyll_val = parseFloat(chlorophyll_data[chlorophyll_data.length - 1].y).toFixed(2);
+    let salinity_val = parseFloat(salinity_data[salinity_data.length - 1].y).toFixed(2);
+
+    $('#pressure-latest')   .text(pressure_val);
+    $('#temperature-latest').text(temperature_val);
+    $('#chlorophyll-latest').text(chlorophyll_val);
+    $('#salinity-latest')   .text(salinity_val);
 }
 
 async function toggleCelsius(e) {

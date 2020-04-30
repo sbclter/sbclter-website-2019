@@ -2,20 +2,22 @@
 ---
 @media screen and (orientation: portrait) {
 	:root {
-		--layout-padding: 5vw 20vw;
+		--layout-padding-v: 5vw;
+		--layout-padding-h: 20vw;
 	}
 }
 
 @media screen and (orientation: landscape) {
 	:root {
-		--layout-padding: 5vh 20vh;
+		--layout-padding-v: 5vh;
+		--layout-padding-h: 20vh;
 	}
 }
 
 
 
 #article-content {
-	padding: var(--layout-padding);
+	padding: var(--layout-padding-v) var(--layout-padding-h);
 }
 
  
