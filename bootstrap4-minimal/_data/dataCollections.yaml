@@ -722,10 +722,10 @@
     for common understory macroalgae. '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.37
-      shortTitle: Turf and foliose algal assemblages
     - docid: knb-lter-sbc.55
       shortTitle: Benthic and phytoplankton production in treatment plots
+    - docid: knb-lter-sbc.37
+      shortTitle: Turf and foliose algal assemblages
     - docid: knb-lter-sbc.57
       shortTitle: 'Photosynthesis parameters for macroalgae '
   habitats:
@@ -1090,13 +1090,15 @@
     - Movement of Organic Matter
     - Disturbance Patterns
   mapLayers: ~
-- collectionName: 'SBC LTER: Beach porewater and wrack, 2003'
+- collectionName: 'SBC LTER: Beach porewater and wrack'
   abstract: Beach wrack along transects, and dissolved nutrients and salinity of porewaters
     in all intertidal zones at selected sandy beaches during 2003
   dataPackages:
     package:
     - docid: knb-lter-sbc.23
       shortTitle: Beach porewater 2003
+    - docid: knb-lter-sbc.130
+      shortTitle: Talitrid amphipod excretion
   habitats:
     habitat: beach
   measurementTypes:

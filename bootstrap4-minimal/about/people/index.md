@@ -44,7 +44,7 @@ category_labels:
 
 	{% include search_bar.html placeholder=page.placeholder %}
 
-	{% assign bio_groups = site.data.people_bios | sort: "commonName" | sort: "projectRole" | group_by: "projectRole" %}
+	{% assign bio_groups = site.data.people_bios | group_by: "projectRole"| sort: "projectRole" |sort: "commonName" %}
 
 	{% for bios in bio_groups %}
 		{% include table.html columns = page.columns

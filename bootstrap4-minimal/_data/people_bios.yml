@@ -6,7 +6,7 @@
     scientificDomainString: Benthic Ecology
     scientificDomainText: Marine Ecology
     employeeType: Associate Research Biologist
-    email: miller@msi.ucsb.edu
+    email: rjmiller@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
@@ -14,23 +14,6 @@
     homepage: ''
     telephoneNumber: 805-893-6174
     projectRole: Project Lead Investigator
-  - databaseID: dreed
-    commonName: Dan Reed
-    givenName: Daniel
-    surName: Reed
-    advisor: ''
-    scientificDomainString: Kelp Forest Ecology
-    scientificDomainText: Reef ecology, dispersal and connectivity, primary production
-      of marine macrophytes
-    employeeType: Research Biologist
-    email: dan.reed@lifesci.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am chiefly responsible for the design and maintenance SBC LTER's long-term studies pertaining to kelp forest structure and function.  These studies include annual kelp forest community dynamics, monthly production, biomass, and stoichiometry of giant kelp, and the recently initiated long-term experiment on ecosystem responses to annual kelp loss.  I also actively participate in a number of SBC LTER's shorter-term process studies and experiments including the partitioning of NPP among kelp forest autotrophs, interactions between the kelp forest and its flow environment, effects of wave disturbance on foodweb structure, gene flow and connectivity in kelp populations, and feedbacks between kelp forest structure and function.
-    homepage: http://sbc.lternet.edu/people/danreed/
-    telephoneNumber: 805-893-8363
-    projectRole: Project Co-Investigator
   - databaseID: astier
     commonName: Adrian Stier
     givenName: Adrian
@@ -68,6 +51,23 @@
     homepage: http://www.icess.ucsb.edu/~davey/
     telephoneNumber: 805-893-4547
     projectRole: Project Co-Investigator
+  - databaseID: dreed
+    commonName: Dan Reed
+    givenName: Daniel
+    surName: Reed
+    advisor: ''
+    scientificDomainString: Kelp Forest Ecology
+    scientificDomainText: Reef ecology, dispersal and connectivity, primary production
+      of marine macrophytes
+    employeeType: Research Biologist
+    email: dan.reed@lifesci.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am chiefly responsible for the design and maintenance SBC LTER's long-term studies pertaining to kelp forest structure and function.  These studies include annual kelp forest community dynamics, monthly production, biomass, and stoichiometry of giant kelp, and the recently initiated long-term experiment on ecosystem responses to annual kelp loss.  I also actively participate in a number of SBC LTER's shorter-term process studies and experiments including the partitioning of NPP among kelp forest autotrophs, interactions between the kelp forest and its flow environment, effects of wave disturbance on foodweb structure, gene flow and connectivity in kelp populations, and feedbacks between kelp forest structure and function.
+    homepage: http://sbc.lternet.edu/people/danreed/
+    telephoneNumber: 805-893-8363
+    projectRole: Project Co-Investigator
   - databaseID: ghofmann
     commonName: Gretchen Hofmann
     givenName: Gretchen
@@ -85,6 +85,39 @@
     homepage: http://hofmannlab.msi.ucsb.edu/
     telephoneNumber: 805-893-6175
     projectRole: Project Co-Investigator
+  - databaseID: arassweiler
+    commonName: Andy Rassweiler
+    givenName: Andrew
+    surName: Rassweiler
+    advisor: ''
+    scientificDomainString: Kelp Forest Community Ecology
+    scientificDomainText: Marine Ecology
+    employeeType: Assistant Professor
+    email: rassweiler@bio.fsu.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      My main focus is on the mechanisms underlying sharp transitions in community state.  Marine benthic systems are known for these sharp transitions, which manifest themselves both as spatial patchiness and as rapid changes in community composition.  My graduate work used a combination of observational, experimental and theoretical approaches to explore the feedbacks that lead to these sudden shifts on reefs in the Santa Barbara Channel. I am continuing to pursue these questions in my postdoc, working to synthesize our results from the SBC LTER with insights from other LTER sites.  My interest in kelp forest community dynamics caused me to be very involved in developing the methods used by the SBC-LTER to estimate primary productivity by giant kelp, and I continue to be active in collaborative analyses of these data as well.
+    homepage: ''
+    telephoneNumber: 805-893-7823
+    projectRole: Investigator
+  - databaseID: jmelack
+    commonName: John Melack
+    givenName: John
+    surName: Melack
+    advisor: ''
+    scientificDomainString: Hydrology and Biogeochemistry
+    scientificDomainText: Limnology, hydrology, watershed science, biogeochemistry,
+      wetland ecology, remote sensing
+    employeeType: Professor
+    email: john.melack@lifesci.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      I have led the hydrological and hydrochemical measurement and modeling aspects of the SBC LTER.  This research has involved installation and operation of stream gauging system and automatic rain gauges, intensive sampling for solutes, and processing and analysis of thousands of water and particulate samples.  These data are incorporated into mechanistic and statistical models of runoff and export, and are included in examination of nutrient supply to the near-shore kelp ecosystem.
+    homepage: http://www.lifesci.ucsb.edu/eemb/faculty/melack/
+    telephoneNumber: 805-893-3879
+    projectRole: Investigator
   - databaseID: eeliason
     commonName: Erika Eliason
     givenName: Erika
@@ -184,6 +217,40 @@
     homepage: http://www.lifesci.ucsb.edu/eemb/faculty/brzezinski/
     telephoneNumber: 805-893-8605
     projectRole: Investigator
+  - databaseID: hmoeller_xxxx
+    commonName: Holly Moeller
+    givenName: Holly
+    surName: Moeller
+    advisor: ''
+    scientificDomainString: ' Community structure and function'
+    scientificDomainText: Community assembly and population dynamics, mathematical modeling,
+      microbial ecology, fisheries bioeconomics
+    employeeType: Assistant Professor
+    email: holly.moeller@lifesci.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      I am a community ecologist with particular interest in how community structure affects ecosystem functions. My SBC research focuses on understanding how the composition of encrusting communities on kelp blades (including bacteria, protists, and metazoans) affects the fate of kelp carbon. We are interested in trajectories of biofilm assembly, the influences of biofilms on blade senescence, and the effects of microbial metabolism on the chemical composition of exuded kelp DOC. Another branch of my more theoretical work applies optimal control theory to models for fisheries bioeconomics, seeking "win-win" scenarios that can meet both conservation and economic goals.
+    homepage: https://moellerlab.org/
+    telephoneNumber: '805-893-3216 '
+    projectRole: Investigator
+  - databaseID: smacintyre
+    commonName: Sally MacIntyre
+    givenName: Sally
+    surName: MacIntyre
+    advisor: ''
+    scientificDomainString: Limnology and Oceanography
+    scientificDomainText: Limnology, coastal oceanography, biogeochemical responses
+      to physical processes
+    employeeType: Professor
+    email: sally@eri.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      I've contributed to time series and process studies of interactions between the kelp forest and its flow environment with regards to the delivery and utilization of nutrients and will jointly lead studies of the pathways of incoming streams and delivery of subsidies to kelp and other organisms in the nearshore environment.
+    homepage: http://www.lifesci.ucsb.edu/eemb/faculty/macintyre/
+    telephoneNumber: 805-893-3951
+    projectRole: Investigator
   - databaseID: dburkepile
     commonName: Deron Burkepile
     givenName: Deron
@@ -197,6 +264,38 @@
       Marine Science Institute<br />University of California<br />Santa Barbara CA 93106
     profileText: |
       Our work in the SBC LTER is focused on understanding the impacts of animals on nutrient cycling in kelp forests. We are examining how benthic invertebrates and fishes are potential sources of nitrogen and phosphorus for kelps and understory seaweeds. Additionally, we are interested in how these consumer-derived nutrients change over space and time in response to disturbance, fishing, and the creation of marine protected areas
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Investigator
+  - databaseID: lwilbanks
+    commonName: Lizzy Wilbanks
+    givenName: Lizzy
+    surName: Wilbanks
+    advisor: ''
+    scientificDomainString: Microbial metabolism and biogeochemistry
+    scientificDomainText: Microbial ecology and biogeochemistry
+    employeeType: 'Assistant Professor '
+    email: elizabeth.wilbanks@lifesci.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      My research examines how the ecology of microorganisms influences their evolution and drives nutrient cycling in marine environments. At present, our research is focused the influence of spatial structure on the ecophysiology and evolution of microbes in marine aggregates and biofilms. Our work with the SBC-LTER focuses on characterizing the giant kelp microbiome and the microbiome's influence the flux of dissolved organic carbon from giant kelp. Other projects include examining the biogeography and population genomics of kelp-associated bacteria to assess the drivers of species distributions and phenotypic variation between kelp ecotypes.
+    homepage: https://www.wilbankslab.org/
+    telephoneNumber: 805-893-2601
+    projectRole: Investigator
+  - databaseID: tturner
+    commonName: Tom Turner
+    givenName: Thomas
+    surName: Turner
+    advisor: ''
+    scientificDomainString: Evolutionary Biology and Ecology
+    scientificDomainText: Evolution, Evolutionary Genetics, Marine Biology, Zoology
+    employeeType: Associate Professor
+    email: tturner@lifesci.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      Past work in the Turner lab has used various systems to investigate evolution, genetics, and behavior. Current projects are focused on marine sponges. We aim to improve our understanding of the diversity, evolutionary history, and ecological services of sponges in rocky reef habitats in California. These kelp forest habitats contain an astonishing diversity of suspension-feeding marine invertebrates. Together with other colonial filter feeders like tunicates, anthozoans, and bryozoans, sponges occupy a considerable portion of the hard-bottom substrate in shallow waters. Despite the important ecological roles and services of these taxa, we know little about the ecology or evolution of most species in this benthic community.
     homepage: ''
     telephoneNumber: ''
     projectRole: Investigator
@@ -299,40 +398,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Investigator
-  - databaseID: hmoeller_xxxx
-    commonName: Holly Moeller
-    givenName: Holly
-    surName: Moeller
-    advisor: ''
-    scientificDomainString: ' Community structure and function'
-    scientificDomainText: Community assembly and population dynamics, mathematical modeling,
-      microbial ecology, fisheries bioeconomics
-    employeeType: Assistant Professor
-    email: holly.moeller@lifesci.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I am a community ecologist with particular interest in how community structure affects ecosystem functions. My SBC research focuses on understanding how the composition of encrusting communities on kelp blades (including bacteria, protists, and metazoans) affects the fate of kelp carbon. We are interested in trajectories of biofilm assembly, the influences of biofilms on blade senescence, and the effects of microbial metabolism on the chemical composition of exuded kelp DOC. Another branch of my more theoretical work applies optimal control theory to models for fisheries bioeconomics, seeking "win-win" scenarios that can meet both conservation and economic goals.
-    homepage: https://moellerlab.org/
-    telephoneNumber: '805-893-3216 '
-    projectRole: Investigator
-  - databaseID: smacintyre
-    commonName: Sally MacIntyre
-    givenName: Sally
-    surName: MacIntyre
-    advisor: ''
-    scientificDomainString: Limnology and Oceanography
-    scientificDomainText: Limnology, coastal oceanography, biogeochemical responses
-      to physical processes
-    employeeType: Professor
-    email: sally@eri.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I've contributed to time series and process studies of interactions between the kelp forest and its flow environment with regards to the delivery and utilization of nutrients and will jointly lead studies of the pathways of incoming streams and delivery of subsidies to kelp and other organisms in the nearshore environment.
-    homepage: http://www.lifesci.ucsb.edu/eemb/faculty/macintyre/
-    telephoneNumber: 805-893-3951
-    projectRole: Investigator
   - databaseID: tbell1
     commonName: Tom Bell
     givenName: Tom
@@ -348,22 +413,6 @@
       My research involves exploring nutrient cycling in kelp forest ecosystems, with an emphasis on the carbon cycle. Using a variety of methodologies, including satellite observation, I study the physical and biotic controls on carbon delivery, uptake and export from this ecosystem and expand these results to larger temporal and spatial scales. The long term and extensive datasets of the SBC LTER will allow for a better understanding of carbon cycle variability in the kelp forest and help expose changes due to oceanographic cycles and climate change.
     homepage: ''
     telephoneNumber: ''
-    projectRole: Investigator
-  - databaseID: lwilbanks_xxxx
-    commonName: Lizzy Wilbanks
-    givenName: Lizzy
-    surName: Wilbanks
-    advisor: ''
-    scientificDomainString: Microbial metabolism and biogeochemistry
-    scientificDomainText: Microbial ecology and biogeochemistry
-    employeeType: 'Assistant Professor '
-    email: elizabeth.wilbanks@lifesci.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      My research examines how the ecology of microorganisms influences their evolution and drives nutrient cycling in marine environments. At present, our research is focused the influence of spatial structure on the ecophysiology and evolution of microbes in marine aggregates and biofilms. Our work with the SBC-LTER focuses on characterizing the giant kelp microbiome and the microbiome's influence the flux of dissolved organic carbon from giant kelp. Other projects include examining the biogeography and population genomics of kelp-associated bacteria to assess the drivers of species distributions and phenotypic variation between kelp ecotypes.
-    homepage: https://www.wilbankslab.org/
-    telephoneNumber: 805-893-2601
     projectRole: Investigator
   - databaseID: asantoro
     commonName: Alyson Santoro
@@ -381,69 +430,36 @@
     homepage: https://labs.eemb.ucsb.edu/santoro/alyson/
     telephoneNumber: 805-893-5318
     projectRole: Investigator
-  - databaseID: arassweiler
-    commonName: Andy Rassweiler
-    givenName: Andrew
-    surName: Rassweiler
+  - databaseID: droberts
+    commonName: Dar Roberts
+    givenName: Dar
+    surName: Roberts
     advisor: ''
-    scientificDomainString: Kelp Forest Community Ecology
-    scientificDomainText: Marine Ecology
-    employeeType: Assistant Professor
-    email: rassweiler@bio.fsu.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      My main focus is on the mechanisms underlying sharp transitions in community state.  Marine benthic systems are known for these sharp transitions, which manifest themselves both as spatial patchiness and as rapid changes in community composition.  My graduate work used a combination of observational, experimental and theoretical approaches to explore the feedbacks that lead to these sudden shifts on reefs in the Santa Barbara Channel. I am continuing to pursue these questions in my postdoc, working to synthesize our results from the SBC LTER with insights from other LTER sites.  My interest in kelp forest community dynamics caused me to be very involved in developing the methods used by the SBC-LTER to estimate primary productivity by giant kelp, and I continue to be active in collaborative analyses of these data as well.
-    homepage: ''
-    telephoneNumber: 805-893-7823
-    projectRole: Investigator
-  - databaseID: jmelack
-    commonName: John Melack
-    givenName: John
-    surName: Melack
-    advisor: ''
-    scientificDomainString: Hydrology and Biogeochemistry
-    scientificDomainText: Limnology, hydrology, watershed science, biogeochemistry,
-      wetland ecology, remote sensing
+    scientificDomainString: Terrestrial Biophysical Processes
+    scientificDomainText: Remote sensing of vegetation, imaging spectroscopy, land-use/land-cover
+      change and multisensor fusion
     employeeType: Professor
-    email: john.melack@lifesci.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
+    email: dar@geog.ucsb.edu
+    postalAddress: Department of Geography<br />University of California<br />Santa
+      Barbara CA 93106-4060
     profileText: |
-      I have led the hydrological and hydrochemical measurement and modeling aspects of the SBC LTER.  This research has involved installation and operation of stream gauging system and automatic rain gauges, intensive sampling for solutes, and processing and analysis of thousands of water and particulate samples.  These data are incorporated into mechanistic and statistical models of runoff and export, and are included in examination of nutrient supply to the near-shore kelp ecosystem.
-    homepage: http://www.lifesci.ucsb.edu/eemb/faculty/melack/
-    telephoneNumber: 805-893-3879
-    projectRole: Investigator
-  - databaseID: jbyrnes
-    commonName: Jarret Byrnes
-    givenName: Jarrett
-    surName: Byrnes
-    advisor: ''
-    scientificDomainString: Kelp Forest Ecology
-    scientificDomainText: Marine Community Ecology
-    employeeType: Assistant Professor
-    email: Jarrett.Byrnes@umb.edu
-    postalAddress: Department of Biology<br />University of Massachusetts<br />Boston
-      MA 2125
-    profileText: |
-      I am interested in characterizing the causes and consequences of ecological complexity in the kelp forests of Southern California.  My experimental work concentrates on examining potential feedbacks between urchin grazing fronts and the diversity of sessile species on reefs subjected to disturbance from storms.  I am also examining the consequences of wave disturbance to kelp forest food webs.  During the past fifty years, average winter storm frequency and intensity has increased.  These storms remove giant kelp, a foundation species that provides both habitat structure and food for rocky reefs.  I am using long-term data records to look at the direct and indirect effects of wave disturbance on food web structure via changes in kelp abundance and productivity.
-    homepage: http://jarrettbyrnes.info/
-    telephoneNumber: ''
+      My research with the SBC LTER focuses mainly on mapping vegetation species and plant functional types, urban composition, pre-fire fuel conditions (fuel types, canopy moisture and fuel loads) and post-fire impacts in the various watersheds that feed in to the coastal zone. I work primarily with passive sensors such as the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) and active sensors such as LIDAR.
+    homepage: http://www.lifesci.ucsb.edu/eemb/resources/tepee/
+    telephoneNumber: 805-893-2276
     projectRole: Project Affiliated Investigator
-  - databaseID: asimms
-    commonName: Alex Simms
-    givenName: Alexander
-    surName: Simms
+  - databaseID: jmcwilliams
+    commonName: Jim McWilliams
+    givenName: James
+    surName: McWilliams
     advisor: ''
-    scientificDomainString: Coastal Geology
-    scientificDomainText: Coastal Geology, sedimentation, estuaries, climate and sea-level
-      changes
-    employeeType: Assistant Professor
-    email: asimms@geol.ucsb.edu
-    postalAddress: Geography Department<br />University of California<br />Santa Barbara
-      CA 93106
+    scientificDomainString: Nearshore Circulation Modeling
+    scientificDomainText: River inflow and dispersal to kelp beds
+    employeeType: Professor
+    email: jcm@atmos.ucla.edu
+    postalAddress: Dept. of Atmospheric and Oceanic Sciences/IGPP<br />University of
+      California<br />Los Angeles CA 90095-1565
     profileText: |
-      I am interested in how coastal systems respond to climate and sea-level changes.  I use the sedimentary record to decipher the long-term history of coastal systems such as estuaries, barrier islands, and beaches. I am providing the SBC LTER a long-term perspective for placing current environmental changes into context.  For this  study, I will be taking sediment cores and using them to reconstruct a long-term record of how the physical processes affecting the coast have changed through time.
+      The "plumes project" in the SBC LTER characterizes storm water dilution and land-ocean interactions by model surface wave-current interactions and stream water dispersion. We apply the Regional Ocean Model System (ROMS) several SBC LTER sites in the Santa Barbara Channel. The research is conducted at UCSB by Dave Siegel's group, and at UCLA with Dr. Uchiyama.
     homepage: ''
     telephoneNumber: ''
     projectRole: Project Affiliated Investigator
@@ -497,23 +513,6 @@
     homepage: http://www.lifesci.ucsb.edu/eemb/faculty/gaines/
     telephoneNumber: 805-893-3764
     projectRole: Project Affiliated Investigator
-  - databaseID: rschmitt
-    commonName: Russ Schmitt
-    givenName: Russell
-    surName: Schmitt
-    advisor: ''
-    scientificDomainString: Marine Community Ecology
-    scientificDomainText: Population and community ecology, applied ecology, consumer-resource
-      interactions, marine invertebrates and reef fishes
-    employeeType: Professor
-    email: russ.schmitt@lifesci.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I am a population ecologist interested in consumer - resource interactions and the dynamics of demographically open populations of benthic marine fishes and invertebrates.  One of my principal functions in the SBC LTER is to oversee the Santa Cruz Island long term time series component, initiated in 1982, on the dynamics of surfperch populations, their invertebrate food and the benthic substrata upon which the fish feed.  I also am involved in cross-site collaborations with the Moorea Coral Reef LTER (of which I am Lead PI), including a comparison of the responses of fishes to fluctuations in abundance the major foundation taxa in each ecosystem (giant kelp, hard corals).
-    homepage: http://www.lifesci.ucsb.edu/eemb/faculty/schmitt/
-    telephoneNumber: 805-893-2051
-    projectRole: Project Affiliated Investigator
   - databaseID: kdavis
     commonName: Kristen Davis
     givenName: Kristen
@@ -548,6 +547,23 @@
       I am interested in light propagation and photosynthesis of submerged plant canopies.  My work with the LTER involves the use of radiative transfer theory to model the absorption and scattering of light by the giant kelp.  Accurate knowledge of absorption permits the calculation of important plant- and ecosystem-level properties such as rates of primary production, nutrient utilization and the amount of light available to understory algae.  Knowledge of light scattering is being used to explore techniques for remote sensing quantification of the abundance and distribution of marine vegetation across a range of spatial scales.
     homepage: http://sci.odu.edu/oceanography/directory/faculty/zimmerman/index.shtml
     telephoneNumber: 757-683-5991
+    projectRole: Project Affiliated Investigator
+  - databaseID: rschmitt
+    commonName: Russ Schmitt
+    givenName: Russell
+    surName: Schmitt
+    advisor: ''
+    scientificDomainString: Marine Community Ecology
+    scientificDomainText: Population and community ecology, applied ecology, consumer-resource
+      interactions, marine invertebrates and reef fishes
+    employeeType: Professor
+    email: russ.schmitt@lifesci.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      I am a population ecologist interested in consumer - resource interactions and the dynamics of demographically open populations of benthic marine fishes and invertebrates.  One of my principal functions in the SBC LTER is to oversee the Santa Cruz Island long term time series component, initiated in 1982, on the dynamics of surfperch populations, their invertebrate food and the benthic substrata upon which the fish feed.  I also am involved in cross-site collaborations with the Moorea Coral Reef LTER (of which I am Lead PI), including a comparison of the responses of fishes to fluctuations in abundance the major foundation taxa in each ecosystem (giant kelp, hard corals).
+    homepage: http://www.lifesci.ucsb.edu/eemb/faculty/schmitt/
+    telephoneNumber: 805-893-2051
     projectRole: Project Affiliated Investigator
   - databaseID: scooper
     commonName: Scott Cooper
@@ -629,39 +645,6 @@
     homepage: http://www.lifesci.ucsb.edu/eemb/faculty/holbrook/index.html
     telephoneNumber: 805-893-3956
     projectRole: Project Affiliated Investigator
-  - databaseID: jmcwilliams
-    commonName: Jim McWilliams
-    givenName: James
-    surName: McWilliams
-    advisor: ''
-    scientificDomainString: Nearshore Circulation Modeling
-    scientificDomainText: River inflow and dispersal to kelp beds
-    employeeType: Professor
-    email: jcm@atmos.ucla.edu
-    postalAddress: Dept. of Atmospheric and Oceanic Sciences/IGPP<br />University of
-      California<br />Los Angeles CA 90095-1565
-    profileText: |
-      The "plumes project" in the SBC LTER characterizes storm water dilution and land-ocean interactions by model surface wave-current interactions and stream water dispersion. We apply the Regional Ocean Model System (ROMS) several SBC LTER sites in the Santa Barbara Channel. The research is conducted at UCSB by Dave Siegel's group, and at UCLA with Dr. Uchiyama.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Project Affiliated Investigator
-  - databaseID: bgaylord
-    commonName: Brian Gaylord
-    givenName: Brian
-    surName: Gaylord
-    advisor: ''
-    scientificDomainString: ' Hydrodynamics and Biomechanics'
-    scientificDomainText: Coastal hydrodynamics, functional ecology and biomecha nics
-      of marine organisms, larval and spore dispersal ocean acidification
-    employeeType: Associate Professor
-    email: bpgaylord@ucdavis.edu
-    postalAddress: Bodega Marine Laboratory<br />P.O. Box 247 2099 Westshore Road<br
-      />Bodega Bay CA 94923
-    profileText: |
-      My research in the SBC focuses on interactions and feedbacks between the kelp forest and its flow environment. Components of this work involve fluxes of material into and around kelp beds, and modeling and measuring spore dispersal to develop estimates of population connectivity among forests, and levels of inbreeding within them
-    homepage: ''
-    telephoneNumber: 707-875-1940
-    projectRole: Project Affiliated Investigator
   - databaseID: jschimel
     commonName: Josh Schimel
     givenName: Joshua
@@ -714,22 +697,38 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Project Affiliated Investigator
-  - databaseID: droberts
-    commonName: Dar Roberts
-    givenName: Dar
-    surName: Roberts
+  - databaseID: jbyrnes
+    commonName: Jarret Byrnes
+    givenName: Jarrett
+    surName: Byrnes
     advisor: ''
-    scientificDomainString: Terrestrial Biophysical Processes
-    scientificDomainText: Remote sensing of vegetation, imaging spectroscopy, land-use/land-cover
-      change and multisensor fusion
-    employeeType: Professor
-    email: dar@geog.ucsb.edu
-    postalAddress: Department of Geography<br />University of California<br />Santa
-      Barbara CA 93106-4060
+    scientificDomainString: Kelp Forest Ecology
+    scientificDomainText: Marine Community Ecology
+    employeeType: Assistant Professor
+    email: Jarrett.Byrnes@umb.edu
+    postalAddress: Department of Biology<br />University of Massachusetts<br />Boston
+      MA 2125
     profileText: |
-      My research with the SBC LTER focuses mainly on mapping vegetation species and plant functional types, urban composition, pre-fire fuel conditions (fuel types, canopy moisture and fuel loads) and post-fire impacts in the various watersheds that feed in to the coastal zone. I work primarily with passive sensors such as the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) and active sensors such as LIDAR.
-    homepage: http://www.lifesci.ucsb.edu/eemb/resources/tepee/
-    telephoneNumber: 805-893-2276
+      I am interested in characterizing the causes and consequences of ecological complexity in the kelp forests of Southern California.  My experimental work concentrates on examining potential feedbacks between urchin grazing fronts and the diversity of sessile species on reefs subjected to disturbance from storms.  I am also examining the consequences of wave disturbance to kelp forest food webs.  During the past fifty years, average winter storm frequency and intensity has increased.  These storms remove giant kelp, a foundation species that provides both habitat structure and food for rocky reefs.  I am using long-term data records to look at the direct and indirect effects of wave disturbance on food web structure via changes in kelp abundance and productivity.
+    homepage: http://jarrettbyrnes.info/
+    telephoneNumber: ''
+    projectRole: Project Affiliated Investigator
+  - databaseID: asimms
+    commonName: Alex Simms
+    givenName: Alexander
+    surName: Simms
+    advisor: ''
+    scientificDomainString: Coastal Geology
+    scientificDomainText: Coastal Geology, sedimentation, estuaries, climate and sea-level
+      changes
+    employeeType: Assistant Professor
+    email: asimms@geol.ucsb.edu
+    postalAddress: Geography Department<br />University of California<br />Santa Barbara
+      CA 93106
+    profileText: |
+      I am interested in how coastal systems respond to climate and sea-level changes.  I use the sedimentary record to decipher the long-term history of coastal systems such as estuaries, barrier islands, and beaches. I am providing the SBC LTER a long-term perspective for placing current environmental changes into context.  For this  study, I will be taking sediment cores and using them to reconstruct a long-term record of how the physical processes affecting the coast have changed through time.
+    homepage: ''
+    telephoneNumber: ''
     projectRole: Project Affiliated Investigator
   - databaseID: cbenitez-nelson
     commonName: Claudia Benitez-Nelson
@@ -782,6 +781,23 @@
       My main research focus with the SBC LTER is on the role of history in ecological restoration in the coastal zone.  To this end I have been working with Jenny Dugan on the ecological history of the Coal Oil Point area on the west campus of UCSB.  My particular interest is in exploiting a variety of historical materials (e.g., maps, photos, print and manuscript documents) to find out about past and current human impacts and hopefully inform discussions of restoration and resilience.  I'm also interested in policies concerning endangered species.
     homepage: http://oregonstate.edu/cla/history/anita-guerrini
     telephoneNumber: 541-737-1308
+    projectRole: Project Affiliated Investigator
+  - databaseID: bgaylord
+    commonName: Brian Gaylord
+    givenName: Brian
+    surName: Gaylord
+    advisor: ''
+    scientificDomainString: ' Hydrodynamics and Biomechanics'
+    scientificDomainText: Coastal hydrodynamics, functional ecology and biomecha nics
+      of marine organisms, larval and spore dispersal ocean acidification
+    employeeType: Associate Professor
+    email: bpgaylord@ucdavis.edu
+    postalAddress: Bodega Marine Laboratory<br />P.O. Box 247 2099 Westshore Road<br
+      />Bodega Bay CA 94923
+    profileText: |
+      My research in the SBC focuses on interactions and feedbacks between the kelp forest and its flow environment. Components of this work involve fluxes of material into and around kelp beds, and modeling and measuring spore dispersal to develop estimates of population connectivity among forests, and levels of inbreeding within them
+    homepage: ''
+    telephoneNumber: 707-875-1940
     projectRole: Project Affiliated Investigator
   - databaseID: jdugan
     commonName: Jenny Dugan
@@ -873,9 +889,9 @@
     scientificDomainString: Bacterioplankton, carbon cycling
     scientificDomainText: ''
     employeeType: ''
-    email: anna.james.k@gmail.com
-    postalAddress: Interdepartmental Graduate Program in Marine Science<br />University
-      of California<br />Santa Barbara CA 93106
+    email: ajames@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106
     profileText: |
       My research interest is investigating the effects of ocean acidification on the biogeochemical cycling of carbon in the ocean and the resulting implications for both marine ecosystems and atmospheric CO2 levels. My work in the Carlson laboratory focuses on the short-term and long-term impacts of increasing pCO2 on the use of dissolved organic carbon by natural bacterioplankton communities. With this research focus, my graduate work will help to better constrain surface carbon budgets and enable predictions of the degree to which the global oceans will continue to be a sink for anthropogenic-derived CO2.
     homepage: ''
@@ -961,133 +977,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: kmichaud
-    commonName: Kristen Michaud
-    givenName: Kristen
-    surName: Michaud
-    advisor: Miller
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: kmmichaud@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: csugano
-    commonName: Cailan Sugano
-    givenName: Cailan
-    surName: Sugano
-    advisor: Hofmann
-    scientificDomainString: Ocean Acidification
-    scientificDomainText: Ocean Acidification
-    employeeType: Graduate Student
-    email: cailan.sugano@lifesci.ucsb.edu
-    postalAddress: ''
-    profileText: |
-      I prepare and maintain the SBC LTER autonomous pH sensors that have been deployed throughout the Santa Barbara Channel. I also process calibration samples for these instruments in order to ensure quality data sets. In light of the threat of a continual ocean acidification, documenting the current, natural variability in pH is vital in guiding research and conservation techniques.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: sbogan
-    commonName: Sam Bogan
-    givenName: Sam
-    surName: Bogan
-    advisor: Hofmann
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: snbogan@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: sesaian
-    commonName: Sevan Esaian
-    givenName: Sevan
-    surName: Esaian
-    advisor: Moeller and Wilbanks
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: Graduate Students
-    email: sevanesaian@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: aritger
-    commonName: Amelia Ritger
-    givenName: Amelia
-    surName: Ritger
-    advisor: Stier
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: Graduate Students
-    email: aritger@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: kemery1
-    commonName: Kyle Emery
-    givenName: Kyle
-    surName: Emery
-    advisor: Dugan
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
-    email: emery@ucsb.edu
-    postalAddress: Interdepartmental Graduate Program in Marine Science<br />University
-      of California<br />Santa Barbara CA 93106
-    profileText: |
-      I am interested in subsidies to beach ecosystems and their associated organisms. Sandy beaches along the southern California coast are receive organic matter and nutrient inputs through the deposition of giant kelp (Macrocystis pyrifera) wrack onto the beach. This material supports a variety of consumers through the provision of both habitat and food. I am interested in determining the extent of kelp inputs to beaches across a range of both types and during different seasonal conditions. I am also interested in how the variation in kelp inputs along the SBC LTER coastline controls community compositions and consumer behavior. I will explore these questions and more through kelp tagging and tracking experiments and beach surveys of consumer populations.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: lcarberry
-    commonName: Luke Carberry
-    givenName: Luke
-    surName: Carberry
-    advisor: Nidzieko
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: lcarberry@ucsb.edu
-    postalAddress: Earth Research Institute<br />University of California<br />Santa
-      Barbara CA 93106-3060
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: scsik
-    commonName: Samantha Csik
-    givenName: Samantha
-    surName: Csik
-    advisor: Stier
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: scsik@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: tcedeno_xxxx
     commonName: Tiffany Cedeno
     givenName: Tiffany
@@ -1152,6 +1041,149 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
+  - databaseID: kmichaud
+    commonName: Kristen Michaud
+    givenName: Kristen
+    surName: Michaud
+    advisor: Miller
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: kmmichaud@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: csugano
+    commonName: Cailan Sugano
+    givenName: Cailan
+    surName: Sugano
+    advisor: Hofmann
+    scientificDomainString: Ocean Acidification
+    scientificDomainText: Ocean Acidification
+    employeeType: Graduate Student
+    email: cailan.sugano@lifesci.ucsb.edu
+    postalAddress: ''
+    profileText: |
+      I prepare and maintain the SBC LTER autonomous pH sensors that have been deployed throughout the Santa Barbara Channel. I also process calibration samples for these instruments in order to ensure quality data sets. In light of the threat of a continual ocean acidification, documenting the current, natural variability in pH is vital in guiding research and conservation techniques.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: sbogan
+    commonName: Sam Bogan
+    givenName: Sam
+    surName: Bogan
+    advisor: Hofmann
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: snbogan@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: sesaian
+    commonName: Sevan Esaian
+    givenName: Sevan
+    surName: Esaian
+    advisor: Moeller and Wilbanks
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: sevanesaian@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: aritger
+    commonName: Amelia Ritger
+    givenName: Amelia
+    surName: Ritger
+    advisor: Stier
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: aritger@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: jchamorro_xxxx
+    commonName: Jannine Chamorro
+    givenName: Jannine
+    surName: Chamorro
+    advisor: Hofmann
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: ''
+    email: jannine.chamorro@lifesci.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: kemery1
+    commonName: Kyle Emery
+    givenName: Kyle
+    surName: Emery
+    advisor: Dugan
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: ''
+    email: emery@ucsb.edu
+    postalAddress: Interdepartmental Graduate Program in Marine Science<br />University
+      of California<br />Santa Barbara CA 93106
+    profileText: |
+      I am interested in subsidies to beach ecosystems and their associated organisms. Sandy beaches along the southern California coast are receive organic matter and nutrient inputs through the deposition of giant kelp (Macrocystis pyrifera) wrack onto the beach. This material supports a variety of consumers through the provision of both habitat and food. I am interested in determining the extent of kelp inputs to beaches across a range of both types and during different seasonal conditions. I am also interested in how the variation in kelp inputs along the SBC LTER coastline controls community compositions and consumer behavior. I will explore these questions and more through kelp tagging and tracking experiments and beach surveys of consumer populations.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: amcdonald
+    commonName: Adriane McDonald
+    givenName: Adriane
+    surName: McDonald
+    advisor: Hofmann
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: ''
+    email: adrianemcdonald@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: scsik
+    commonName: Samantha Csik
+    givenName: Samantha
+    surName: Csik
+    advisor: Stier
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: scsik@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
   - databaseID: jsainz
     commonName: Jade Sainz
     givenName: Jade
@@ -1207,38 +1239,8 @@
     advisor: Burkepile, Miller, Reed
     scientificDomainString: ''
     scientificDomainText: ''
-    employeeType: Graduate Students
+    employeeType: Graduate Student
     email: jpeters@umail.ucsb.edu
-    postalAddress: ''
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: kmalakhoff
-    commonName: Katrina Malakhoff
-    givenName: Katrina
-    surName: Malakhoff
-    advisor: Miller
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
-    email: katrina.malakhoff@lifesci.ucsb.edu
-    postalAddress: ''
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: sma
-    commonName: Stephanie Ma
-    givenName: Stephanie
-    surName: Ma
-    advisor: D'Antonio
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
-    email: stephanie.ma@lifesci.ucsb.edu
     postalAddress: ''
     profileText: |2+
 
@@ -1261,17 +1263,17 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: amcdonald
-    commonName: Adriane McDonald
-    givenName: Adriane
-    surName: McDonald
-    advisor: Hofmann
+  - databaseID: neegholm
+    commonName: Nathalie Eegholm
+    givenName: Nathalie
+    surName: Eegholm
+    advisor: Siegel
     scientificDomainString: ''
     scientificDomainText: ''
-    employeeType: ''
-    email: adrianemcdonald@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
+    employeeType: Graduate Student
+    email: nathalie.eegholm@geog.ucsb.edu
+    postalAddress: Earth Research Institute<br />University of California<br />Santa
+      Barbara CA 93106-3060
     profileText: |2+
 
     homepage: ''
@@ -1306,6 +1308,36 @@
     email: zoe.welch@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: kmalakhoff
+    commonName: Katrina Malakhoff
+    givenName: Katrina
+    surName: Malakhoff
+    advisor: Miller
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: ''
+    email: katrina.malakhoff@lifesci.ucsb.edu
+    postalAddress: ''
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: sma
+    commonName: Stephanie Ma
+    givenName: Stephanie
+    surName: Ma
+    advisor: D'Antonio
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: ''
+    email: stephanie.ma@lifesci.ucsb.edu
+    postalAddress: ''
     profileText: |2+
 
     homepage: ''
@@ -1375,31 +1407,15 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: jchamorro_xxxx
-    commonName: Jannine Chamorro
-    givenName: Jannine
-    surName: Chamorro
-    advisor: Hofmann
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
-    email: jannine.chamorro@lifesci.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: neegholm
-    commonName: Nathalie Eegholm
-    givenName: Nathalie
-    surName: Eegholm
-    advisor: Siegel
+  - databaseID: lcarberry
+    commonName: Luke Carberry
+    givenName: Luke
+    surName: Carberry
+    advisor: Nidzieko
     scientificDomainString: ''
     scientificDomainText: ''
     employeeType: Graduate Student
-    email: nathalie.eegholm@geog.ucsb.edu
+    email: lcarberry@ucsb.edu
     postalAddress: Earth Research Institute<br />University of California<br />Santa
       Barbara CA 93106-3060
     profileText: |2+
@@ -1431,7 +1447,7 @@
     scientificDomainString: ''
     scientificDomainText: ''
     employeeType: Graduate Student
-    email: an.bui@lifesci.ucsb.edu
+    email: an_bui@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |2+
@@ -1439,70 +1455,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: ssampson
-    commonName: Sarah Sampson
-    givenName: Sarah
-    surName: Sampson
-    advisor: ''
-    scientificDomainString: ' Reef Sampling and data management'
-    scientificDomainText: ''
-    employeeType: ''
-    email: srsampson@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Staff
-  - databaseID: ewallner
-    commonName: Elisa Walner Halewood
-    givenName: Elisa
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: Oceanography and Microbiology Sampling and Analysis
-    scientificDomainText: ''
-    employeeType: ''
-    email: elisa.wallner@lifesci.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
-    homepage: ''
-    telephoneNumber: 805-893-8087
-    projectRole: Staff
-  - databaseID: shalewood
-    commonName: Stuart Halewood
-    givenName: Stuart
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: ' Oceanographic Sampling and Data Analysis'
-    scientificDomainText: ' Oceanographic Sampling and Data Analysis'
-    employeeType: ''
-    email: halewood@eri.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
-    homepage: ''
-    telephoneNumber: 805-893-7295
-    projectRole: Staff
-  - databaseID: cgotschalk
-    commonName: Chris Gotschalk
-    givenName: Chris
-    surName: Gotschalk
-    advisor: ''
-    scientificDomainString: ' Oceanographic Data Analysis'
-    scientificDomainText: ' Oceanographic Data Analsyis'
-    employeeType: ''
-    email: gots@lifesci.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I provide data processing and analysis of a variety of data sets for the SBC LTER. I am responsible for generating quality checked data products from a suite of moored oceanographic sensors, from data collected during research cruises, and from established data archives and satellite collected data. I also provide students and researchers with Matlab programming tutorials and code to help them perform specific data analysis tasks. I have similar duties with the Moorea LTER, PISCO, and the Ocean Acidification group at UCSB.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Staff
   - databaseID: jjones2
     commonName: Janice Jones
     givenName: Janice
@@ -1558,7 +1510,7 @@
     advisor: ''
     scientificDomainString: Reef Sampling and field coordinator
     scientificDomainText: ''
-    employeeType: Staff Resarch Associate
+    employeeType: Staff Research Associate
     email: clint.nelson@lifesci.ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
@@ -1582,4 +1534,68 @@
 
     homepage: ''
     telephoneNumber: 805-893-5822
+    projectRole: Staff
+  - databaseID: ewallner
+    commonName: Elisa Wallner Halewood
+    givenName: Elisa
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: Oceanography and Microbiology Sampling and Analysis
+    scientificDomainText: ''
+    employeeType: ''
+    email: elisa.wallner@lifesci.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
+    homepage: ''
+    telephoneNumber: 805-893-8087
+    projectRole: Staff
+  - databaseID: shalewood
+    commonName: Stuart Halewood
+    givenName: Stuart
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: ' Oceanographic Sampling and Data Analysis'
+    scientificDomainText: ' Oceanographic Sampling and Data Analysis'
+    employeeType: ''
+    email: halewood@eri.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
+    homepage: ''
+    telephoneNumber: 805-893-7295
+    projectRole: Staff
+  - databaseID: cgotschalk
+    commonName: Chris Gotschalk
+    givenName: Chris
+    surName: Gotschalk
+    advisor: ''
+    scientificDomainString: ' Oceanographic Data Analysis'
+    scientificDomainText: ' Oceanographic Data Analsyis'
+    employeeType: ''
+    email: gots@lifesci.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I provide data processing and analysis of a variety of data sets for the SBC LTER. I am responsible for generating quality checked data products from a suite of moored oceanographic sensors, from data collected during research cruises, and from established data archives and satellite collected data. I also provide students and researchers with Matlab programming tutorials and code to help them perform specific data analysis tasks. I have similar duties with the Moorea LTER, PISCO, and the Ocean Acidification group at UCSB.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Staff
+  - databaseID: ssampson
+    commonName: Sarah Sampson
+    givenName: Sarah
+    surName: Sampson
+    advisor: ''
+    scientificDomainString: ' Reef Sampling and data management'
+    scientificDomainText: ''
+    employeeType: ''
+    email: srsampson@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
     projectRole: Staff
