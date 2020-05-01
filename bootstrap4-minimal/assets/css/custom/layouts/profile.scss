@@ -10,7 +10,7 @@
 	#profile-container {
 		margin: 1rem;
 		margin-bottom: var(--profile-margin);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
 	}
 }
 
@@ -25,9 +25,8 @@
 		width: var(--profile-image-size);
 		float: right;
 		margin: 1rem;
-		margin-top: -2rem;
-		margin-top: 0;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		margin-top: 1rem;
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
 	}
 }
 
@@ -42,9 +41,8 @@
 		width: var(--profile-image-size);
 		float: right;
 		margin: 1rem;
-		margin-top: -2rem;
-		margin-top: 0;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		margin-top: 1rem;
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
 	}
 }
 

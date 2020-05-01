@@ -82,16 +82,16 @@ d3.csv(CSV_FILE).then(data => {
         salinity_data.push      ({ x: time, y: d.salinity });
     });
 
-    updateData($('#graph-time-range #one-month'), 30);
+    updateData(30);
 });
 
-async function updateData(target, _days) {
+async function updateData(_days) {
     days = _days;
 
     udpateGraphData();
 
-    $('#graph-time-range .btn').removeClass('btn-primary');
-    $(target).addClass('btn-primary');
+    $('#shore-graph').toggleClass('hidden', false);
+    $('#graph-loader').toggleClass('hidden', true);
 }
 
 function udpateGraphData() {

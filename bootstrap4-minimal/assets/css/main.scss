@@ -6,6 +6,7 @@
 @import 'bootstrap/bootstrap';
 @import 'custom/includes/header';
 @import 'custom/includes/banner';
+@import 'custom/includes/loader';
 /*@import 'custom/includes/layers_table';*/
 /*@import 'custom/layouts/table';*/
 /*@import 'custom/layouts/gmap';*/
@@ -40,7 +41,7 @@ body {
 	left: 100%;
 }
 
-.hide {
+.hide, .hidden {
 	display: none !important;
 }
 
