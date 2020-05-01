@@ -82,7 +82,7 @@ d3.csv(CSV_FILE).then(data => {
         salinity_data.push      ({ x: time, y: d.salinity });
     });
 
-    updateData(30);
+    updateData(7);
 });
 
 async function updateData(_days) {
