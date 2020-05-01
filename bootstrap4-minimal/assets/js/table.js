@@ -18,14 +18,16 @@ function hideEmptyTable(table_id) {
 	myHeader.style.display = hide ? 'none' : 'table-header-group';
 }
 
-function sortTable(tbody, order) {
-	let asc   = order === 'asc';
+function compareRows(a, b, nth) {
+	let comp = $(`td:nth-child(${ nth })`, a).text().localeCompare($(`td:nth-child(${ nth })`, b).text());
+	return comp;
+}
 
-	tbody.find('tr').sort(function(a, b) {
-		// console.log($('td:first', a).text());
-		// console.log($('td:first', b).text());
-		let comp = parseInt($('td:first', a).text()) - parseInt($('td:first', b).text());
-		// console.log(comp);
+function sortTable(tbody, order, nth) {
+	let asc = order === 'asc';
+
+	tbody.find('tr').sort((a, b) => {
+		let comp = compareRows(a, b, nth);
 		return asc ? comp : -1 * comp;
 	})
 	.appendTo(tbody);
@@ -45,11 +47,14 @@ $(document).ready(function(){
 		}
 	);
 
-	$('.sort-btn').parent().click((e) => {
-		let tbody = $(e.target).closest('table').find('tbody');
-		let order = tbody.attr('order') == 'asc' ? 'desc' : 'asc';
-		tbody.attr('order', order);
-		sortTable(tbody, order);
+	$('.sort-btn').click(function() {
+		let nth = $(this).index() + 1;
+
+		let tbody = $(this).closest('table').find('tbody');
+		let comp = compareRows(tbody.children().first(), tbody.children().last(), nth);
+
+		let order = comp < 0 ? 'desc' : 'asc';
+		sortTable(tbody, order, nth);
 	});
 
 	let table_ids = [];
