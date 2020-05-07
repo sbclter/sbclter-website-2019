@@ -2,7 +2,6 @@ var map;
 var markers = [];
 var bounds = new google.maps.LatLngBounds();
 
-
 var url = new URL(location);
 var package = url.searchParams.get('package');
 
@@ -53,6 +52,12 @@ function showDetail(url) {
 			$('#detail #detail-body table').each(function(index) {
 				$(this).find('tr:first td, tr:first th').addClass('no-border-top');
 			});
+
+			// Added MathJax script
+			var script = document.createElement('script');
+			script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML';
+			script.setAttribute('id', 'MathJax-script');
+			document.head.appendChild(script);
 		}
 		catch (err) {
 			$('#detail #detail-title').text("Error");
@@ -404,7 +409,7 @@ function loadXMLDoc(filename, onReady, onError) {
 
 // Convert camelCaseWord to a sentence (source: https://stackoverflow.com/a/7225450/8443192)
 function camelToWords(text) {
-	var result = text.replace( /([A-Z])/g, " $1" );
+	var result = text.replace('_', '').replace(/([A-Z])/g, " $1");
 	return result.charAt(0).toUpperCase() + result.slice(1);
 }
 
@@ -457,24 +462,25 @@ function activateLink(url, title) {
 
 // Make HTML tables from list of people information
 function makePeopleTables(data) {
+	if (!data) return null;
 	if (!Array.isArray(data)) data = [data];
 	var contents = '';
 
 	for (var i = 0; i < data.length; i++) {
 		var item = data[i];
-		contents += '<table class="table floatbox"><tbody>';
+		contents += '<table class="table floatbox people-table"><tbody>';
 
 		// fill information for each item
 		for(var key in item) {
-			var row = `<tr class="row">` +
-					  `<th class="cell col-4"> ${ camelToWords(key) } </th>`;
+			var row = `<tr>` +
+					  `<th class="cell"> ${ camelToWords(key) } </th>`;
 
 			// parse item information
 			var value = item[key];
 			if (typeof value === 'object') {
 				if      (key === 'address')        value = parseAddress(value);
 				else if (key === 'individualName') value = parseName(value, '%F %L');
-				else if (key === 'phone')          value = extractData(value, '; ');
+				else if (key === 'phone')          value = extractData(value, '<br/>');
 				else                               value = extractData(value, ', ');
 			}
 
@@ -484,7 +490,7 @@ function makePeopleTables(data) {
 				if (value.includes('@'))      value = activateLink(`mailto: ${ value }`, value);
 			}
 
-			row += `<td class="cell col-8"> ${ value } </td> </tr>`;
+			row += `<td class="cell"> ${ value } </td> </tr>`;
 			contents += row;
 		}
 

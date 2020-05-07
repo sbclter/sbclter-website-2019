@@ -4,7 +4,7 @@
   background: $white;
   z-index: 100;
   background-color: #003366;
-  height: 60px;
+  // height: 60px;
   padding-left: 30px;
 
   .nav-item{
@@ -38,7 +38,6 @@
 }
 
 .navbar-nav li .dropdown-menu {
-  background-color: #003366;
   background-clip: unset;
   margin: 0;
 
@@ -73,6 +72,22 @@
   }
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+
+@media (orientation: landscape) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar-nav li .dropdown-menu {
+    background-color: #003366;
+  }
+}
+
+@media (orientation: portrait) {
+  .navbar-nav li .dropdown-menu {
+    background-color: #0055ab;
+  }
+
+  #home-nav h4 {
+    display: none;
+  }
 }

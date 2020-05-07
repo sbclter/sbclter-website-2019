@@ -3,6 +3,14 @@ layout: default
 title: 'Santa Barbara Coastal LTER'
 description: Home page description here.
 ---
+<style>
+@media (orientation: landscape) {
+  #home-nav img {
+    height: 100px;
+    margin-top: -50px;
+  }
+}
+</style>
 
 <div id="main-container">
 

@@ -15,7 +15,7 @@ table .table-hover {
 table .cell {
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
-	overflow-wrap: break-word;
+	// overflow-wrap: break-word;
 }
 
 table th {
@@ -24,4 +24,21 @@ table th {
 
 .hidden {
 	display: none !important;
+}
+
+
+
+@media (orientation: portrait) {
+	td, th {
+		display: none !important;
+
+		&:nth-child(2), &:nth-child(1) {
+			display: block !important;
+		}
+	}
+
+	.cell {
+		max-width: 50% !important;
+		flex: 0 0 50% !important;
+	}
 }
