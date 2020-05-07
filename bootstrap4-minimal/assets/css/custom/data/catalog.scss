@@ -25,3 +25,15 @@
 	white-space: normal;
 	text-align: left;
 }
+
+#search-url-section {
+	display: inline-flex;
+	width: 100%;
+	align-items: center;
+	margin: 10px;
+	margin-bottom: 20px;
+
+	.label {
+		width: 180px;
+	}
+}

@@ -24,3 +24,10 @@ placeholder: "Search datasets ..."
 <script src="/assets/js/pasta/ucsv-1.2.0.min.js"></script>
 <script src="/assets/js/pasta/pasta_lookup.js"></script>
 <script src="/assets/js/pasta/pasta.js"></script>
+
+<script>
+$(function() {
+	console.log(window.location);
+	$('#search-url-section .text').val(window.location.href);
+})
+</script>
