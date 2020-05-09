@@ -97,6 +97,7 @@ function apply_filters() {
 	let h_filters = new Set();
 	let m_filters = new Set();
 	let a_filters = new Set();
+	let no_data = true;
 
 	// Save selected filters into corresponding set
 	$(`input[name='${FILTER.HABITAT.name}']`).each(function() {
@@ -124,9 +125,13 @@ function apply_filters() {
 		let a_satisfied = a_tags.some((tag) => a_filters.has(tag));
 
 		// Actual filtering logic
-		if ((h_satisfied && m_satisfied) || a_satisfied)
+		if ((h_satisfied && m_satisfied) || a_satisfied) {
 			$(this).show();
+			no_data = false;
+		}
 	});
+
+	$('#display-container').toggleClass('hide', no_data);
 }
 
 // Select related filters based on primary filter
@@ -170,6 +175,7 @@ function show_all(){
 		$(this).prop("checked", true);
 		$(this).prop("disabled", false);
 	});
+	$('#display-container').toggleClass('hide', false);
 }
 
 // Clear all checkbox selections
@@ -183,4 +189,5 @@ function clear(){
 	});
 	primary_filter = "";
 	is_first_search = true;
+	$('#display-container').toggleClass('hide', true);
 }

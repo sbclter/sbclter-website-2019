@@ -7,20 +7,26 @@ page_css:
 placeholder: "Search datasets ..."
 ---
 
-<h1>Data Catalog</h1>
+<div id="main-container">
 
-<!--
-plan:
-intro page with browse, search forms
-individidual dataset display pulls XML from pasta, uses local XSL to transform to XML.
-probably most complex part of the website.
--->
+	<div id="title-container">
+		<h1>Data Catalog</h1>
+		<a id="advance-search-btn" class="btn" href="{{page.url}}search"> Advanced Search </a>
+	</div>
 
-<div id="filter-container">
-	{% include data/data_filter.html data=site.data.dataFilters %}
-</div>
-<div id="display-container">
-	{% include data/data_table.html data=site.data.dataCollections %}
+	<!--
+	plan:
+	intro page with browse, search forms
+	individidual dataset display pulls XML from pasta, uses local XSL to transform to XML.
+	probably most complex part of the website.
+	-->
+
+	<div id="filter-container">
+		{% include data/data_filter.html data=site.data.dataFilters %}
+	</div>
+	<div id="display-container" class="hide">
+		{% include data/data_table.html data=site.data.dataCollections %}
+	</div>
 </div>
 
 <script src="/assets/js/catalog.js"/></script>

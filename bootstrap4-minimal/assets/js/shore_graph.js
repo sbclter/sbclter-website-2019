@@ -69,21 +69,29 @@ svg.append("g").attr("class", "grid")
     .call(d3.axisLeft(y).ticks(10).tickSize(-width).tickFormat(''));
 
 
-d3.csv(CSV_FILE).then(data => {
-    data.shift();
+async function updateCSVData() {
+    time_data = [];
+    pressure_data = [];
+    temperature_data = [];
+    chlorophyll_data = [];
+    salinity_data = [];
 
-    data.forEach((d) => {
-        let time = parseDate(d.time);
+    d3.csv(CSV_FILE).then(data => {
+        data.shift();
 
-        time_data.push          (time);
-        pressure_data.push      ({ x: time, y: d.pressure });
-        temperature_data.push   ({ x: time, y: d.temperature });
-        chlorophyll_data.push   ({ x: time, y: d.chlorophyll });
-        salinity_data.push      ({ x: time, y: d.salinity });
+        data.forEach((d) => {
+            let time = parseDate(d.time);
+
+            time_data.push          (time);
+            pressure_data.push      ({ x: time, y: d.pressure });
+            temperature_data.push   ({ x: time, y: d.temperature });
+            chlorophyll_data.push   ({ x: time, y: d.chlorophyll });
+            salinity_data.push      ({ x: time, y: d.salinity });
+        });
+
+        updateData(7);
     });
-
-    updateData(7);
-});
+}
 
 async function updateData(_days) {
     days = _days;
@@ -241,7 +249,11 @@ let network_delay = 1000 - new Date().getMilliseconds();
 $('#current-time').text(formatTime(new Date()));
 
 setTimeout(() => {
+    $('#current-time').text(formatTime(new Date()));
+    updateCSVData();
+
     interval = setInterval(function() {
         $('#current-time').text(formatTime(new Date()));
-    }, 1000);
+        updateCSVData();
+    }, 1000 * 60);
 }, network_delay);

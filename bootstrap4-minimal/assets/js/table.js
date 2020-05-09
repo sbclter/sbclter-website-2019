@@ -35,15 +35,20 @@ function sortTable(tbody, order, nth) {
 
 $(document).ready(function(){
 	$(".clickable-row").click(function() {
-		window.location = $(this).data("href");
+		let url = $(this).data("href");
+		if (url) window.location = url;
 	});
 
 	$(".clickable-row").hover(
 		function() {
-			$(this).addClass('table-hover');
+			if ($(this).data("href"))
+				$(this).addClass('table-hover');
+			else
+				$(this).css('pointer-events', 'none');
 		},
 		function() {
 			$(this).removeClass('table-hover');
+			$(this).css('pointer-events', 'cursor');
 		}
 	);
 
