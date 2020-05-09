@@ -41,10 +41,12 @@ $(document).ready(function(){
 
 	$(".clickable-row").hover(
 		function() {
-			if ($(this).data("href"))
+			if ($(this).data("href")) {
 				$(this).addClass('table-hover');
-			else
+				$(this).css('pointer-events', 'cursor');
+			} else {
 				$(this).css('pointer-events', 'none');
+			}
 		},
 		function() {
 			$(this).removeClass('table-hover');
@@ -71,7 +73,11 @@ $(document).ready(function(){
 		}
 	}
 
-	$("#search-bar").on("keyup", function() {
+	$("#search-bar").on("keyup keypress", function(e) {
+		if (e.type == "keypress" && e.which != 13) {
+			return;
+		}
+
 		let input = $(this).val().toLowerCase();
 
 		if (input == '') {

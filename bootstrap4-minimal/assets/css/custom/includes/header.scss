@@ -3,29 +3,6 @@
 	--menu-margin: 10px;
 }
 
-// Long brand title
-@media(min-width: 1250px) {
-	.navbar-brand {
-
-		.text {
-			&.long { display: block; }
-			&.short { display: none; }
-		}
-	}
-}
-
-// Short brand title
-@media(max-width: 1250px) {
-	.navbar-brand {
-		overflow: hidden;
-
-		.text {
-			&.long { display: none; }
-			&.short { display: block; }
-		}
-	}
-}
-
 // Expanded menu
 @media (min-width: 900px) {
 	:root {

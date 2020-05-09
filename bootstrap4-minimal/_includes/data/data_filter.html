@@ -16,27 +16,19 @@
 -->
 
 <!-- buttons at the top -->
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-flex flex-row justify-content-left align-items-center"> 	
-<p>
-	<button type="button" id="show_button" class="btn-outline-primary .btn-lg rounded">Show All</button>	
-	&nbsp;&nbsp;
-    <button type="button" id="clear_button" class="btn-outline-primary .btn-lg rounded">Reset</button>
-</p>
-	
-</div>
 
 
 <div class="row"></div>
-<div class="pull-left row" >
-	<div class="col-lg-{{group_width}} col-md-{{group_width}} col-sm-{{group_width}} col-xs-{{group_width}}">
+<div id="filter-section" class="pull-left row" >
+	<div class="filter-container col-lg-{{group_width}} col-md-{{group_width}} col-sm-{{group_width}} col-xs-{{group_width}}">
 		<p class="table-title"> <strong> Filter SBC Data Collections by Habitat and Measurement Type: </strong> </p>
-		<table class="table table-bordered">
+		<table class="table">
 			<thead>
 				<tr class="row title-row">
 
 				{% for radioGroup in include.data %}
 					{% if radioGroup.group != "Areas" %}
-						<th class="col"> {{ radioGroup.name }} </th>
+						<th class="cell col"> {{ radioGroup.name }} </th>
 					{% endif %}
 				{% endfor %}
 
@@ -69,22 +61,22 @@
 		</table>
 	</div>
 
-	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 d-flex flex-row justify-content-center align-items-center">
+	<div class="filter-container col-lg-1 col-md-1 col-sm-1 col-xs-1 d-flex flex-row justify-content-center align-items-center">
 		<strong><h3>OR</h3></strong>
 	</div>
 
    	<!------------------------------------------------- 
    		Create separate table for the research areas 
    		----------------------------------------------->
-   	<div class="col-lg-{{area_group_width}} col-md-{{area_group_width}} col-sm-{{area_group_width}} col-xs-{{area_group_width}}"> 
+   	<div class="filter-container col-lg-{{area_group_width}} col-md-{{area_group_width}} col-sm-{{area_group_width}} col-xs-{{area_group_width}}"> 
    		<p class="table-title"> <strong> Filter By <a href="https://lternet.edu/core-research-areas/">Research Area</a></strong>: </p>
-		<table class="table table-bordered" style="">
+		<table class="table" style="">
 			<thead>
 				<tr class="row title-row">
 
 				{% for radioGroup in include.data %}
 					{% if radioGroup.group == "Areas" %}
-						<th class="col"> {{ radioGroup.name }} </th>
+						<th class="cell col"> {{ radioGroup.name }} </th>
 					{% endif %}
 				{% endfor %}
 
@@ -117,7 +109,7 @@
 	</div>
 
 <!-- search box option here -->
-<!-- 	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 d-flex flex-row justify-content-center align-items-center"> 	
+<!-- 	<div class="filter-container col-lg-2 col-md-2 col-sm-2 col-xs-2 d-flex flex-row justify-content-center align-items-center"> 	
 		<table class="table-borderless" style="">		
 			<tbody>
 				<tr class="row">		
@@ -142,7 +134,7 @@
 
 <!-- buttons in a small table on the right 
 
-	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 d-flex flex-row justify-content-center align-items-center"> 	
+	<div class="filter-container col-lg-2 col-md-2 col-sm-2 col-xs-2 d-flex flex-row justify-content-center align-items-center"> 	
 		<table class="table-borderless" style="">		
 			<tbody>
 				<tr class="row">		

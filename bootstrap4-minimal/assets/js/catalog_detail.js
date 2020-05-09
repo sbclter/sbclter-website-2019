@@ -37,6 +37,7 @@ function showDetail(url) {
 		try {
 			var data = new X2JS().xml2json(xml);
 			var title = data['eml']['dataset']['title'];
+			console.log(data);
 
 			initMap();
 			makeSummary(template, data);
@@ -298,10 +299,10 @@ function makeMethods(template, data) {
 				let protocol = protocols[j];
 				try {
 					html +=
-						`<table>` +
-						`	<tr><th class="col-2">Protocol:</th> <td class="col-8">${ protocol['title'] }</td></tr>` +
-						`	<tr><th class="col-2">Author:</th> <td class="col-8">${ protocol['creator']['individualName']['surName'] }</td></tr>` +
-						`	<tr><th class="col-2">Available Online:</th> <td class="col-8">${ activateLink(protocol['distribution']['online']['url']) }</td></tr>` +
+						`<table class="table">` +
+						`	<tr class="row"><th class="cell col-2">Protocol:</th> <td class="cell col-10">${ protocol['title'] }</td></tr>` +
+						`	<tr class="row"><th class="cell col-2">Author:</th> <td class="cell col-10">${ protocol['creator']['individualName']['surName'] }</td></tr>` +
+						`	<tr class="row"><th class="cell col-2">Available Online:</th> <td class="cell col-10">${ activateLink(protocol['distribution']['online']['url']) }</td></tr>` +
 						`</table>`;
 					html += (j != protocols.length - 1) ? '<hr>' : '<br>';
 				} catch(err) { console.error(err); }
@@ -554,8 +555,8 @@ function plotMarkers(element, data) {
 			//markers.push(marker);
 
 			var row = '<tr class="row">';
-			row += `<td class="cell col-10"> ${ m_data[0] } </td>`;
-			row += `<td class="cell col-2"> ${ m_data[lat_n] + ", " + m_data[lng_e] } </td>`;
+			row += `<td class="cell col-9"> ${ m_data[0] } </td>`;
+			row += `<td class="cell col-3 text-right"> (${ m_data[lat_n] + ", " + m_data[lng_e] }) </td>`;
 			row += '</tr>';
 			element.find('#field-geographic').append(row);
 		}else{

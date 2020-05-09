@@ -11,7 +11,11 @@ placeholder: "Search datasets ..."
 
 	<div id="title-container">
 		<h1>Data Catalog</h1>
-		<a id="advance-search-btn" class="btn" href="{{page.url}}search"> Advanced Search </a>
+		<div>
+			<button type="button" id="show_button" class="btn">Show All</button>	
+		    <button type="button" id="clear_button" class="btn">Reset</button>
+			<a id="advance-search-btn" class="btn" href="{{page.url}}search"> Advanced Search </a>
+		</div>
 	</div>
 
 	<!--

@@ -1,25 +1,30 @@
 ---
 ---
-table .row {
-	margin: 0;
-}
 
-table .title-row {
-	background-color: #b3e5fc;
-}
+.table {
+	box-shadow: 1px 1px 3px black;
 
-table .table-hover {
-	border: 1px solid #003366;
-}
+	.cell {
+		overflow-wrap: break-word !important;
+		padding-top: 7px !important;
+		padding-bottom: 7px !important;
+		border-top: unset !important;
+		border-bottom: 1px solid #dee2e6 !important;
+		align-items: center;
+	}
 
-table .cell {
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
-	// overflow-wrap: break-word;
-}
+	tr:last-child .cell {
+		border-bottom: unset !important;
+	}
 
-table th {
-	cursor: pointer;
+	.title-row {
+		background-color: #003366;
+		color: white;
+
+		th {
+			border: unset !important;
+		}
+	}
 }
 
 .hidden {

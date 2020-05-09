@@ -15,6 +15,19 @@
 /*@import 'custom/layouts/article';*/
 /*@import 'custom/layouts/profile';*/
 
+
+// Long brand title
+@media(min-width: 1250px) {
+	.text-long { display: block; }
+	.text-short { display: none; }
+}
+
+// Short brand title
+@media(max-width: 1250px) {
+	.text-long { display: none; }
+	.text-short { display: block; }
+}
+
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 17px;

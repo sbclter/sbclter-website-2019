@@ -3,6 +3,7 @@
 
 body {
 	background-image: radial-gradient(circle, #ffffff, #00b8e6);
+	min-width: 1000px;
 }
 
 .row {
@@ -18,9 +19,8 @@ body {
 }
 
 .cell {
-	overflow-wrap: break-word;
-	padding-top: auto;
-	padding-bottom: auto;
+	// overflow-wrap: break-word;
+	word-break: break-word;
 }
 
 .no-border-top {
@@ -67,7 +67,8 @@ body {
 	}
 
 	.section-title {
-		background-color: #b3e5fc;
+		background-color: #003366;
+		color: white !important;
 		padding: 10px;
 		border-radius: 2px;
 		font-weight: bold;
@@ -81,10 +82,10 @@ body {
 		}
 
 		#field-owners, #field-contacts, #field-associated {
-			margin-right: -1%;
+			margin-right: -1% !important;
 
 			.people-table {
-				width: 48%;
+				width: 49%;
 				margin-right: 1%;
 				padding: 10px;
 

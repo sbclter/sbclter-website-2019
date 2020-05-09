@@ -38,7 +38,8 @@ category_labels:
 
 <div id="table-content" style="display: none;">
 
-  <h1>SBC LTER People</h1>
+  <h1 class="text-long">SBC LTER People</h1>
+  <h1 class="text-short">People</h1>
 
   {% include back_to_top.html %}
 
