@@ -1,24 +1,35 @@
 <!-- NAV -->
 <nav class="navbar navbar-expand-md navbar-dark">
 	<div class="container-fluid">
+
+		<!-- Title Item -->
 		<a href="{{ site.baseurl }}/" class="navbar-brand">
 			<div id="home-nav" class="row">
-				<img src="/assets/img/logo.gif"/>
-				<h4>Santa Barbara Coastal LTER</h4>
+				<img src="/assets/img/logo.png"/>
+				<div class="text long">Santa Barbara Coastal LTER</div>
+				<div class="text short">SBC LTER</div>
 			</div>
 		</a>
+
+		<!-- Menu Toggle -->
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"/>
 		</button>
+
+		<!-- Menu Items -->
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<!-- 
-					
-					ABOUT area -->
+
+				<!-- ABOUT area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/about" class="nav-link dropdown-toggle"
-						id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">About</a>
+					<a  href="{{ site.baseurl }}/about"
+						class="nav-link dropdown-toggle"
+						id="dropdown01"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						About
+					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="{{site.baseurl}}/about/">About</a>
 						<hr/>
@@ -26,39 +37,42 @@
 						<a class="dropdown-item" href="{{site.baseurl}}/about/collaborators">Collaborators</a>
 					</div>
 				</li>
-				<!-- 
-					
-					RESEARCH area -->
+
+				<!-- RESEARCH area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/research" class="nav-link dropdown-toggle"
-						id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Research</a>
+					<a  href="{{ site.baseurl }}/research"
+						class="nav-link dropdown-toggle"
+						id="dropdown02"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						Research
+					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown02">
 						<a class="dropdown-item" href="{{site.baseurl}}/research/">Overview</a>
 						<hr/>
-						<!-- 
-							
-							possible submenu for current research -->
+						<!-- possible submenu for current research -->
 					
 						<a class="dropdown-item" href="{{site.baseurl}}/research/current">Current Research</a>
 						<a class="dropdown-item" href="{{site.baseurl}}/research/current/theme1">Kelp persistence and community structure</a>
 						<a class="dropdown-item" href="{{site.baseurl}}/research/current/theme2">Dynamic biophysical coupling</a>
 						<a class="dropdown-item" href="{{site.baseurl}}/research/current/theme3">Spatial dynamics and connectivity</a>
 						<hr/>
-						
-						
+
 						<a class="dropdown-item" href="{{site.baseurl}}/research/sampling_sites">Sampling Sites</a>
-						
 					</div>
 				</li>
 
-				<!-- 
-					
-					PUBLICATIONS area -->
+				<!-- PUBLICATIONS area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/publications" class="nav-link dropdown-toggle"
-						id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Publications</a>
+					<a  href="{{ site.baseurl }}/publications"
+						class="nav-link dropdown-toggle"
+						id="dropdown03"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						Publications
+					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown03">
 						<a class="dropdown-item" href="{{site.baseurl}}/publications/">SBC Bibliography</a>
 						<hr/>
@@ -66,13 +80,17 @@
 						
 					</div>
 				</li>
-				<!-- 
-					
-					DATA area -->
+
+				<!-- DATA area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/data" class="nav-link dropdown-toggle"
-						id="data-dropdown04" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Data</a>
+					<a  href="{{ site.baseurl }}/data"
+						class="nav-link dropdown-toggle"
+						id="data-dropdown04"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						Data
+					</a>
 					<div class="dropdown-menu" aria-labelledby="data-dropdown04">
 						<a class="dropdown-item" href="{{site.baseurl}}/data">Overview</a>
 						<hr/>
@@ -87,73 +105,89 @@
 						<a class="dropdown-item" href="{{site.baseurl}}/data/help">Data Help Desk</a>
 					</div>
 				</li>
-				<!-- 
-					
-					EDUCATION AND OUTREACH area -->
+
+				<!-- EDUCATION AND OUTREACH area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/education" class="nav-link dropdown-toggle"
-						id="data-dropdown05" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Education</a>
+					<a  href="{{ site.baseurl }}/education"
+						class="nav-link dropdown-toggle"
+						id="data-dropdown05"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						Education
+					</a>
 					<div class="dropdown-menu" aria-labelledby="data-dropdown05">
 						<a class="dropdown-item" href="{{site.baseurl}}/education/">Overview</a>
-
-					<!-- 	<div class="dropdown-submenu">
-							<a href="{{ site.baseurl }}/about" class="nav-link dropdown-toggle"
-								id="test" data-toggle="dropdown" aria-haspopup="true"
-								aria-expanded="false">Nested Menu</a>
+<!--
+						<div class="dropdown-submenu">
+							<a  href="{{ site.baseurl }}/about"
+								class="nav-link dropdown-toggle"
+								id="test"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false">
+								Nested Menu
+							</a>
 							<div class="dropdown-menu hide">
-							  <a class="dropdown-item" href="#">Menu Item 1</a>
-							  <a class="dropdown-item" href="#">Menu Item 2</a>
+								<a class="dropdown-item" href="#">Menu Item 1</a>
+								<a class="dropdown-item" href="#">Menu Item 2</a>
 							</div>
-						</div>-->
-				<!-- 		<hr/>
-						<a class="dropdown-item" href="{{site.baseurl}}/education/graduate">Graduate
-							Students</a>
-						<a class="dropdown-item" href="{{site.baseurl}}/education/undergraduate"
-							>Undergraduates</a>
-						<a class="dropdown-item" href="{{site.baseurl}}/education/k12">K-12 and
-							Public</a>
-							-->
+						</div>
+				 		<hr/>
+						<a class="dropdown-item" href="{{site.baseurl}}/education/graduate">Graduate Students</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/education/undergraduate">Undergraduates</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/education/k12">K-12 and Public</a>
+-->
 					</div>
 				</li>
-                <!-- 	
 
-					Event area -->
+                <!-- Event area -->
 				<li class="nav-item dropdown">
-					<a href="{{ site.baseurl }}/events" class="nav-link dropdown-toggle"
-						id="data-dropdown04" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">News/Events</a>
+					<a href="{{ site.baseurl }}/events"
+						class="nav-link dropdown-toggle"
+						id="data-dropdown04"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						News/Events
+					</a>
 					<div class="dropdown-menu" aria-labelledby="data-dropdown04">
 						<a class="dropdown-item" href="{{site.baseurl}}/events">News/Events</a>
 					</div>
 				</li>
 
 				<!-- dropdown template -->
-				<!-- <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown01"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown-test</a>
+				<!--<li class="nav-item dropdown">
+					<a  class="nav-link dropdown-toggle"
+						href="#"
+						id="dropdown01"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						Dropdown-test
+					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Action</a>
 						<a class="dropdown-item" href="#">Another action</a>
 						<a class="dropdown-item" href="#">Something else here</a>
 					</div>
-				</li> -->
-
+				</li>-->
 			</ul>
 		</div>
 	</div>
 </nav>
 
 <script>
-	$('.dropdown-menu div.dropdown-submenu').hover(function(e) {
-		var subMenu = $(this).find('div.dropdown-menu').first();
-
-		if ($(this).is(':hover')) {
-			subMenu.removeClass('hide');
+$(function() {
+	$('.nav-item').hover(
+		function(e) {
+			$(this).addClass('show');
+			$(this).find('.dropdown-menu').addClass('show');
+		},
+		function(e) {
+			$(this).removeClass('show');
+			$(this).find('.dropdown-menu').removeClass('show');
 		}
-		else {
-			subMenu.addClass('hide');
-		}
-		return false;
-	});
+	);
+});
 </script>

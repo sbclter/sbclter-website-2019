@@ -4,10 +4,11 @@ title: 'Santa Barbara Coastal LTER'
 description: Home page description here.
 ---
 <style>
-@media (orientation: landscape) {
+@media(min-width: 1250px) {
   #home-nav img {
-    height: 100px;
-    margin-top: -50px;
+    height: 100px !important;
+    margin-top: -50px !important;
+    margin-left: 20px;
   }
 }
 </style>
