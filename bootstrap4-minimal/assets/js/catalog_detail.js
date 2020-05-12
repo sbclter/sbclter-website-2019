@@ -350,12 +350,13 @@ function makeFiles(template, data) {
 			let table = tableList[i];
 			let tableData = makeFilesTableData(table);
 			html += `
-				<div class="section-title"> Data Table ${i + 1}: ${ table['entityName'] } </div>
-				
-				<div class="ml-3"> ${ table['entityDescription'] } </div>
-
-				${ tableData }
-
+				<div class="section-title" data-toggle="collapse" href="#datatable${ i }" aria-expanded="false" aria-controls="datatable${ i }">
+					Data Table ${i + 1}: ${ table['entityName'] }
+				</div>
+				<div class="collapse" id="datatable${ i }">
+					<div class="ml-3"> ${ table['entityDescription'] } </div>
+					${ tableData }
+				</div>
 				<br/>`;
 		}
 

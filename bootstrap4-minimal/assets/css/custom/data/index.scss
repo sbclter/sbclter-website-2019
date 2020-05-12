@@ -134,7 +134,17 @@ body {
 		}
 	}
 
+	#content-class-methods {
+		.cell {
+			padding: 0.2rem 1rem;
+		}
+	}
+
 	#content-class-files {
+
+		.section-title {
+			cursor: pointer;
+		}
 
 		.modal-dialog {
 			min-height: calc(100vh - 60px);
@@ -142,8 +152,10 @@ body {
 			flex-direction: column;
 			justify-content: center;
 			overflow: auto;
+			max-width: 70%;
 			@media(max-width: 768px) {
 				min-height: calc(100vh - 20px);
+				max-width: unset;
 			}
 		}
 

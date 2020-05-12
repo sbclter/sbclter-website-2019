@@ -28,6 +28,7 @@
 .search-input {
     width: 220px;
     margin-bottom: 10px;
+    display: inline;
 }
 
 .resultCount {
@@ -64,7 +65,7 @@ input[type='checkbox'].collapse-toggle {
    transition: all 0.25s ease-out;
 }
  
-.lbl-toggle::before {
+.lbl-toggle::after {
    content: ' ';
    display: inline-block;
  
@@ -79,7 +80,7 @@ input[type='checkbox'].collapse-toggle {
    transition: transform .2s ease-out;
 }
 
-.collapse-toggle:checked + .lbl-toggle::before {
+.collapse-toggle:checked + .lbl-toggle::after {
    transform: rotate(90deg) translateX(-3px);
 }
  
@@ -89,20 +90,21 @@ input[type='checkbox'].collapse-toggle {
 }
 
 .collapsible {
-   padding: 0 11px;
+   /*padding: 0 11px;*/
    max-height: 0;
    overflow: hidden;
    transition: max-height .25s ease-in-out;
 }
 
 .yearbox {
-   width: 80px;
+   /*width: 80px;*/
 }
 
 .yeardiv {
    display: inline-block;
-   margin-left: 10px;
-   margin-bottom: 5px;
+   /*margin-left: 10px;*/
+   /*margin-bottom: 5px;*/
+    width: 40%;
 }
 
 .input-block {
@@ -114,4 +116,25 @@ input[type='checkbox'].collapse-toggle {
 .group-label {
    font-weight: bold;
    margin-left: 7px;
+}
+
+.flex {
+    display: flex;
+}
+
+#simple-submit {
+    width: 100%;
+}
+
+#duration-sign {
+    margin: auto;
+    width: 20%;
+}
+
+.advanced-bottom {
+    width: 100%;
+}
+.advanced-bottom .btn {
+    float: right;
+    margin-left: 0.5rem;
 }
