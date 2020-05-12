@@ -64,6 +64,22 @@ $(document).ready(function(){
 		sortTable(tbody, order, nth);
 	});
 
+	$('.sort-btn').hover(
+		function() {
+			$(this).css('background-color', '#215384');
+			let nth = $(this).index() + 1;
+			let tbody = $(this).closest('table').find('tbody');
+
+			tbody.find(`tr td:nth-child(${ nth })`).css('background-color', '#cee6ff');
+		},
+		function() {
+			$(this).css('background-color', '');
+			let nth = $(this).index() + 1;
+			let tbody = $(this).closest('table').find('tbody');
+
+			tbody.find(`tr td:nth-child(${ nth })`).css('background-color', '');
+		},);
+
 	let table_ids = [];
 	let titles = document.getElementsByClassName("table-title");
 

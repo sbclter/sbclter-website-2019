@@ -2,15 +2,15 @@
 ---
 @media screen and (orientation: portrait) {
 	:root {
-		--to-top-margin: 5vw;
+		--to-top-margin: 2vw;
 		--to-top-img: 10vw;
 	}
 }
 
 @media screen and (orientation: landscape) {
 	:root {
-		--to-top-margin: 2vh;
-		--to-top-img: 10vh;
+		--to-top-margin: 1vh;
+		--to-top-img: 5vh;
 	}
 }
 
@@ -18,11 +18,11 @@
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	margin: var(--to-top-margin);
+	margin: calc(var(--to-top-margin) * 2);
 	text-align: center;
 	z-index: 10;
 	background-color: white;
-	padding: calc(var(--to-top-margin) * 0.5) var(--to-top-margin);
+	padding: var(--to-top-margin);
 	border-radius: calc(var(--to-top-margin) * 0.3);
 	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
 

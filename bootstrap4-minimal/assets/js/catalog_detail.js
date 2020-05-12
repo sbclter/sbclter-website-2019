@@ -20,6 +20,22 @@ function onCoverageOpen() {
 	return true;
 }
 
+function onMeasureClick(e) {
+	let nth = $(e.target).closest('tr').index() + 1;
+	let measure = $(e.target).parent().parent().parent().parent().parent().find(`.measurement-section div:nth-child(${ nth })`);
+
+	$('#attribute-modal .modal-body').html(measure.clone());
+	$('#attribute-modal').modal();
+}
+
+function onMissingClick(e) {
+	let nth = $(e.target).closest('tr').index() + 1;
+	let missing = $(e.target).parent().parent().parent().parent().parent().find(`.missing-section div:nth-child(${ nth })`);
+
+	$('#attribute-modal .modal-body').html(missing.clone());
+	$('#attribute-modal').modal();
+}
+
 // Create popup window for xml links
 function showDetail(url) {
 	var template = $('#detail-template').clone();
@@ -155,6 +171,12 @@ function makePeople(template, data) {
 function makeSummary(template, data) {
 	var element = template.find('#content-class-summary');
 
+	// fill shortname field
+	try {
+		var text = extractData(data['eml']['dataset']['shortName']);
+		element.find('#field-shortname').html(text);
+	} catch(err) { console.error(err); }
+
 	// fill id field
 	try {
 		var text = extractData(data['eml']['_packageId']);
@@ -173,12 +195,6 @@ function makeSummary(template, data) {
 		element.find('#field-abstract').html(text);
 	} catch(err) { console.error(err); }
 
-	// fill shortname field
-	try {
-		var text = extractData(data['eml']['dataset']['shortName']);
-		element.find('#field-shortname').html(text);
-	} catch(err) { console.error(err); }
-
 	// fill publication date field
 	try {
 		var text = extractData(data['eml']['dataset']['pubDate']);
@@ -195,6 +211,11 @@ function makeSummary(template, data) {
 	try {
 		var text = extractData(data['eml']['dataset']['coverage']['temporalCoverage']['rangeOfDates'], ' to ', ['beginDate/calendarDate', 'endDate/calendarDate']);
 		element.find('#field-daterange').html(text);
+	} catch(err) { console.error(err); }
+
+	// fill pasta xml origin
+	try {
+		element.find('#field-pasta-xml').html(activateLink(packageUrl));
 	} catch(err) { console.error(err); }
 
 	// fill citation field
@@ -327,13 +348,239 @@ function makeFiles(template, data) {
 		let html = ``;
 		for (let i = 0; i < tableList.length; i++) {
 			let table = tableList[i];
-			html += `<div class="section-title"> Data Table ${i + 1}: ${ table['entityName'] } </div>
-					<div class="ml-3"> ${ table['entityDescription'] } </div><br/>`;
+			let tableData = makeFilesTableData(table);
+			html += `
+				<div class="section-title"> Data Table ${i + 1}: ${ table['entityName'] } </div>
+				
+				<div class="ml-3"> ${ table['entityDescription'] } </div>
+
+				${ tableData }
+
+				<br/>`;
 		}
 
 		element.append(html);
 	} catch(err) { console.error(err); }
+}
 
+function makeFilesTableData(table) {
+	let attr_rows_html = '';
+	let	attr_measure_html = '';
+	let	attr_missing_html = '';
+
+	let attributes = table['attributeList']['attribute'];
+	if (!Array.isArray(attributes)) attributes = [attributes];
+
+	for (let i in attributes) {
+		let attribute = attributes[i];
+		let missingCode = attribute['missingValueCode'];
+		let measurement = attribute['measurementScale'];
+		let measure_type = Object.keys(measurement)[0];
+		let measure_content = '';
+
+		attr_rows_html += `
+			<tr class="row">
+				<td class="cell col-3">
+					<strong>${ attribute['attributeLabel'] }</strong>
+					<br/>
+					${ attribute['attributeName'] }
+				</td>
+				<td class="cell col-5">${ attribute['attributeDefinition'] }</td>
+				<td class="cell col-1">${ attribute['storageType'] }</td>
+				<td class="cell col-3">
+					Measurement Type: <span class="measure-btn" onclick="onMeasureClick(event)">${ measure_type }</span><br/>
+					Missing Value Code: <span class="missing-btn" onclick="onMissingClick(event)">${ missingCode['code'] }</span>
+				</td>
+			</tr>
+		`;
+
+		switch(measure_type) {
+			case 'nominal':
+				measure_content = makeMeasureNominal(measurement, measure_type);
+				break;
+
+			case 'dateTime':
+				measure_content = makeMeasureDateTime(measurement, measure_type);
+				break;
+
+			case 'ratio':
+				measure_content = makeMeasureRatio(measurement, measure_type);
+				break;
+
+			case 'interval':
+				measure_content = makeMeasureRatio(measurement, measure_type);
+				break;
+		}
+
+		attr_measure_html += `
+			<div>
+				<strong>${ measure_type }: </strong>
+				${ measure_content }
+			</div>
+		`;
+
+		attr_missing_html += `
+			<div>
+				<strong>${ missingCode['code'] }: </strong>
+				<br/>
+				${ missingCode['codeExplanation'] }
+			</div>
+		`;
+	}
+
+	return `
+		<div>
+			<table class="table">
+				<thead>
+					<tr class="row title-row">
+						<th class="cell col-3">Attribute</th>
+						<th class="cell col-5">Definition</th>
+						<th class="cell col-1">Type</th>
+						<th class="cell col-3">Others</th>
+					</tr>
+				</thead>
+				<tbody>
+					${ attr_rows_html }
+				</tbody>
+			</table>
+			<div class="measurement-section hidden">
+				${ attr_measure_html }
+			</div>
+			<div class="missing-section hidden">
+				${ attr_missing_html }
+			</div>
+		</div>
+	`;
+}
+
+function makeMeasureNominal(measurement, measure_type) {
+	let measure_domain1 = Object.keys(measurement[measure_type])[0];
+	let measure_domain2 = Object.keys(measurement[measure_type][measure_domain1])[0];
+	let measure_def_key = Object.keys(measurement[measure_type][measure_domain1][measure_domain2])[0];
+	let rows = '';
+
+	let data = measurement[measure_type][measure_domain1][measure_domain2][measure_def_key];
+	if (!Array.isArray(data)) data = [data];
+
+	if (measure_domain2 == 'enumeratedDomain') {
+
+		for (let j in data) {
+			rows += `
+				<tr class="row">
+					<td class="col-4">${ data[j]['code'] || '' }</td>
+					<td class="col-4">${ data[j]['definition'] || '' }</td>
+					<td class="col-4">${ data[j]['source'] || '' }</td>
+				</tr>
+			`;
+		}
+
+		return `
+			<table class="table">
+				<thead>
+					<tr class="row title-row">
+						<th class="col-4">Code</th>
+						<th class="col-4">Definition</th>
+						<th class="col-4">Source</th>
+					</tr>
+				</thead>
+				<tbody>
+					${ rows }
+				</tbody>
+			</table>
+		`;
+	}
+	else {
+		for (let j in data) {
+			rows += `${data[j]}, `;
+		}
+
+		return rows.substring(0, rows.length - 2);
+	}
+}
+
+function makeMeasureDateTime(measurement, measure_type) {
+	let data = measurement[measure_type];
+	if (!Array.isArray(data)) data = [data];
+
+	let rows = '';
+
+	for (let j in data) {
+		rows += `
+			<tr class="row">
+				<td class="col-4">${ data[j]['formatString'] || '' }</td>
+				<td class="col-4">${ data[j]['dateTimePrecision'] || '' }</td>
+				<td class="col-4">${ data[j]['dateTimeDomain'] || '' }</td>
+			</tr>
+		`;
+	}
+
+	return `
+		<table class="table">
+			<thead>
+				<tr class="row title-row">
+					<th class="col-4">Format</th>
+					<th class="col-4">Precision</th>
+					<th class="col-4">Domain</th>
+				</tr>
+			</thead>
+			<tbody>
+				${ rows }
+			</tbody>
+		</table>
+	`;
+}
+
+function makeMeasureRatio(measurement, measure_type) {
+	let data = measurement[measure_type];
+	if (!Array.isArray(data)) data = [data];
+
+	let rows = '';
+
+	for (let j in data) {
+		let unit = data[j]['unit'];
+		unit = unit[Object.keys(unit)[0]];
+
+		let min = '';
+		let max = '';
+		let type = '';
+		let domain = data[j]['numericDomain'];
+
+		if (domain) {
+			if (domain['bounds']) {
+				min = domain['bounds']['minimum'];
+				max = domain['bounds']['maximum'];
+			}
+			type = domain['numberType'];
+		}
+
+		rows += `
+			<tr class="row">
+				<td class="col-3">${ unit || '' }</td>
+				<td class="col-3">${ data[j]['precision'] || '' }</td>
+				<td class="col-2">${ type || '' }</td>
+				<td class="col-2">${ min || '' }</td>
+				<td class="col-2">${ max || '' }</td>
+			</tr>
+		`;
+	}
+
+
+	return `
+		<table class="table">
+			<thead>
+				<tr class="row title-row">
+					<th class="col-3">Unit</th>
+					<th class="col-3">Precision</th>
+					<th class="col-2">Type</th>
+					<th class="col-2">Min</th>
+					<th class="col-2">Max</th>
+				</tr>
+			</thead>
+			<tbody>
+				${ rows }
+			</tbody>
+		</table>
+	`;
 }
 
 // ----------------------- Helper Functions! -------------------------

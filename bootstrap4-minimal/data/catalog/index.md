@@ -4,10 +4,13 @@ title: 'Page tltle here'
 description: page description here.
 page_css:
   - /assets/css/custom/data/catalog.css
+  - /assets/css/custom/includes/back_to_top.css
 placeholder: "Search datasets ..."
 ---
 
 <div id="main-container">
+
+	{% include back_to_top.html %}
 
 	<div id="title-container">
 		<h1>Data Catalog</h1>

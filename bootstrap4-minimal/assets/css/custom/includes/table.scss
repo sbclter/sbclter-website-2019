@@ -13,8 +13,14 @@
 		align-items: center;
 	}
 
-	tr:last-child .cell {
-		border-bottom: unset !important;
+	tr {
+		&:hover {
+			box-shadow: 0 0 3px black;
+		}
+
+		&:last-child .cell {
+			border-bottom: unset !important;
+		}
 	}
 
 	.title-row {
@@ -23,6 +29,11 @@
 
 		th {
 			border: unset !important;
+		}
+
+		&:hover {
+			box-shadow: unset;
+			cursor: pointer !important;
 		}
 	}
 }
