@@ -82,7 +82,7 @@ body {
 			text-transform: capitalize;
 		}
 
-		#field-owners, #field-contacts, #field-associated {
+		#field-publishers, #field-owners, #field-contacts, #field-associated {
 			margin-right: -1% !important;
 
 			.people-table {
@@ -90,19 +90,23 @@ body {
 				margin-right: 1%;
 				padding: 10px;
 
-				tr {
-					padding-right: 2%;
-					padding-left: 2%;
-				}
+				tbody {
+					width: 100%;
 
-				th {
-					border-top: none;
-					width: 40%;
-				}
+					tr {
+						padding-right: 2%;
+						padding-left: 2%;
+					}
 
-				td {
-					border-top: none;
-					width: 60%;
+					th {
+						border-top: none;
+						width: 40%;
+					}
+
+					td {
+						border-top: none;
+						width: 60%;
+					}
 				}
 			}
 		}
@@ -122,6 +126,7 @@ body {
 
 			.tax-cell {
 				display: table-cell;
+				font-size: 0.7em;
 			}
 
 			.colored {
