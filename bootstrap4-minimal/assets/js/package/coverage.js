@@ -2,6 +2,16 @@ var map;
 var markers = [];
 var bounds = new google.maps.LatLngBounds();
 
+const TAX_COLUMNS = {
+	kingdom: 0,
+	phylum:  1,
+	class:   2,
+	order:   3,
+	family:  4,
+	genus:   5,
+	species: 6
+};
+
 class PackageCoverage {
 
 	parse(json) {
@@ -127,12 +137,22 @@ class PackageCoverage {
 				}
 			}
 
+			let chosen_column = column;
+
+			let rank = data[i]['taxonRankName'] || '';
+			rank = rank.toLowerCase();
+
+			// Change column if rank is different from column name
+			if (rank && TAX_COLUMNS[rank] != chosen_column) {
+				chosen_column = TAX_COLUMNS[rank];
+			}
+
 			// Color every cell up to current column
-			for (let c = 0; c <= column; c++)
+			for (let c = 0; c <= chosen_column; c++)
 				row.children().eq(c).addClass('colored');
 
-			row.children().eq(column).html(text);
-			this.fillTaxonomicRow(table, data[i]['taxonomicClassification'], row, column + 1);
+			row.children().eq(chosen_column).html(text);
+			this.fillTaxonomicRow(table, data[i]['taxonomicClassification'], row, chosen_column + 1);
 		}
 	}
 
