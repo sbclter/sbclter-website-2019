@@ -5,6 +5,7 @@ if (package == null)
 	document.location = "/data/catalog";
 
 var packageUrl = `https://pasta.lternet.edu/package/metadata/eml/${ package.replace(/\./g, "/") }/newest`;
+var repoUrl = `https://portal.edirepository.org/nis/mapbrowse?scope=${ package.split('.')[0] }&identifier=${ package.split('.')[1] }`;
 
 var summary  = new PackageSummary();
 var people   = new PackagePeople();
@@ -57,8 +58,22 @@ function showDetail(url) {
 			method  .build(template);
 			file    .build(template);
 
+			let edi_logo = `
+				<img src="https://portal.edirepository.org/nis/images/EDI-logo-300DPI_5.png"
+					 height=70
+					 width=70 />
+				<br>
+				Package Origin
+			`;
+
 			// Load template onto actual HTML
-			updateView(title, template);
+			updateView(
+				makeTableRow([
+					['th', title                                                     , 10, 'title'],
+					['td', `<a href="${ repoUrl }" target="_blank">${ edi_logo }</a>`, 2 , 'sub-title']
+				]),
+				template
+			);
 
 			// customize tables: take out first border top of every table
 			$('#detail #detail-body table').each(function(index) {
@@ -339,7 +354,7 @@ function makeTableRow(cells, classes) {
 
 // Update package's main view
 function updateView(title, body) {
-	$('#detail #detail-title').text(title);
+	$('#detail #detail-title').html(title);
 	$('#detail #detail-body').html(body);
 }
 

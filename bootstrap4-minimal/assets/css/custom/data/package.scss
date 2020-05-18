@@ -6,6 +6,27 @@ body {
 	min-width: 1000px;
 }
 
+
+#detail-title {
+	font-size: 25px;
+
+	.title {
+		margin: auto;
+	}
+
+	.sub-title {
+		margin: auto;
+		font-size: 15px;
+
+		a {
+			display: block;
+			text-align: center;
+			color: black;
+			text-decoration: underline;
+		}
+	}
+}
+
 .row {
 	margin: 0;
 }
@@ -26,10 +47,6 @@ body {
 
 .no-border-top {
 	border-top: none !important;
-}
-
-#detail-title {
-	text-align: center;
 }
 
 #detail {
