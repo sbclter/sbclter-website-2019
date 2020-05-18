@@ -24,9 +24,16 @@ class PackageSummary {
 
 		// Parse citation
 		let citation = '';
-		let creators = json['dataset']['creator'];
-		for (let i in creators)
-			citation += parseName(creators[i]['individualName'], '%L, %f. ');
+		let creators = extractList(json, 'dataset > creator');
+
+		for (let i in creators) {
+			if (creators[i]['organizationName'] && !(creators[i]['organizationName'] == 'Santa Barbara Coastal LTER' && creators.length > 1)) {
+				citation += creators[i]['organizationName'] + '. ';
+			}
+			else {
+				citation += parseName(creators[i]['individualName'], '%L, %f. ');
+			}
+		}
 
 		citation += extractString(json, 'dataset > pubDate').split('-')[0]      + '. ' +
 					extractString(json, 'dataset > title')                      + '. ' +
