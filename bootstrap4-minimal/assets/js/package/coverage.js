@@ -109,10 +109,13 @@ class PackageCoverage {
 		let first_row = row;
 
 		for (let i in data) {
-			let text = '<strong>' + data[i]['taxonRankValue'] + '</strong>';
+			let text = '';
+
+			if (data[i]['taxonRankValue'])
+				text += '<strong>' + data[i]['taxonRankValue'] + '</strong><br>';
 
 			if (data[i]['commonName'])
-				text += `<br>(${ data[i]['commonName'] })`;
+				text += `${ data[i]['commonName'] }`;
 
 			// Create new row if 1) new kingdom, or 2) more than 1 data for each column
 			if (i == 0 && row == null || i > 0) {
