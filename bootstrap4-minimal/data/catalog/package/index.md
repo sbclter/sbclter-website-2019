@@ -3,7 +3,7 @@ layout: article
 title: 'Data Package'
 description: detail of a single data package.
 page_css:
-  - /assets/css/custom/data/index.css
+  - /assets/css/custom/data/package.css
 ---
 
 <!--
@@ -31,10 +31,16 @@ to do:
 
 
 <div id="detail-container">
-	{% include data/data_detail.html %}
+	{% include data/package.html %}
 </div>
 
 
 <script src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}"></script>
 <script src="/assets/js/ext/xml2json.js"></script>
-<script src="/assets/js/catalog_detail.js"></script>
+
+<script src="/assets/js/package/summary.js"></script>
+<script src="/assets/js/package/people.js"></script>
+<script src="/assets/js/package/coverage.js"></script>
+<script src="/assets/js/package/method.js"></script>
+<script src="/assets/js/package/file.js"></script>
+<script src="/assets/js/package/main.js"></script>

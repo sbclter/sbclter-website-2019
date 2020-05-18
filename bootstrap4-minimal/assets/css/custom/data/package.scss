@@ -114,23 +114,46 @@ body {
 
 	#content-class-coverage {
 		#map {
-		 height: 360px;
-		 width: 100%;
-		 overflow: hidden;
-		 float: left;
-		 border: thin solid #333;
+			height: 360px;
+			width: 100%;
+			overflow: hidden;
+			float: left;
+			border: thin solid #333;
 		}
 
 		#field-taxonomic {
 			text-align: center;
 
+			td:nth-child(2) {
+
+			}
+
 			.tax-cell {
 				display: table-cell;
+			}
+
+			.tax-row {
 				font-size: 0.7em;
 			}
 
 			.colored {
-				background: #b3e5fc;
+				// background: #b3e5fc;
+
+				// &:nth-child(7) { background-color: #d68c70; }
+				// &:nth-child(6) { background-color: #ec9706; }
+				// &:nth-child(5) { background-color: #ffc30b; }
+				// &:nth-child(4) { background-color: #dcd7a0; }
+				// &:nth-child(3) { background-color: #ece9c5; }
+				// &:nth-child(2) { background-color: #fffada; }
+				// &:nth-child(1) { background-color: #ffffff; }
+
+				&:nth-child(1) { background-color: #d68c70; }
+				&:nth-child(2) { background-color: #ec9706; }
+				&:nth-child(3) { background-color: #ffc30b; }
+				&:nth-child(4) { background-color: #ffd968; }
+				&:nth-child(5) { background-color: #ffebae; }
+				&:nth-child(6) { background-color: #fffada; }
+				&:nth-child(7) { background-color: #fffdf1; }
 			}
 
 			.row {
