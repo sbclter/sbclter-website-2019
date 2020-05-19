@@ -30,7 +30,7 @@ category_labels:
   phdthesis:     PhD Dissertations
   Techreport:    Technical Reports
   Presentation:  Presentations
-urlkey: true
+urlkey: false
 ---
 
 
@@ -68,11 +68,17 @@ urlkey: true
 
 		$('tbody').each(function() {
 			$(this).find('.row').each(function() {
-				var doi = $(this).children().last().text().split("DOI: ")[1];
+				let clickable_cell = $(this).children().last();
+				let doi = clickable_cell.text().split("DOI: ")[1];
+
 				if (doi) {
-					$(this).addClass('clickable-row');
-					$(this).attr('data-href', `http://dx.doi.org/${ doi }`);
-					$(this).css('background-color: ');
+					clickable_cell.replaceWith(`
+						<td class="cell col-11">
+							<a href="http://dx.doi.org/${ doi }" target="_blank">
+								${ clickable_cell.html() }
+							</a>
+						</td>
+					`);
 				}
 			});
 		});
