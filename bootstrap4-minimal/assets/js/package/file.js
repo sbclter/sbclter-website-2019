@@ -83,7 +83,8 @@ class PackageFile {
 						code:        extractString(attribute, 'missingValueCode > code'),
 						description: extractString(attribute, 'missingValueCode > codeExplanation')
 					},
-					measurement: measure_data
+					measurement: measure_data,
+					annotation: extractString(attribute, 'annotation', ['propertyURI > _label', 'valueURI > _label'], ' ')
 				});
 			}
 
@@ -201,10 +202,11 @@ class PackageFile {
 			}
 
 			attr_rows_html += makeTableRow([
-				['td', `<strong> ${ attribute['label'] } </strong><br> ${ attribute['name'] }`, 3],
-				['td', attribute['definition'], 5],
-				['td', attribute['unit'], 1],
-				['td', ` ${ measure_type_html } <br/> ${ missing_value_html } `, 3]
+				['td', `<strong> ${ attribute['label'] } </strong><br> ${ attribute['name'] }`, 2],
+				['td', attribute['definition']                                                , 4],
+				['td', attribute['annotation']                                                , 2],
+				['td', attribute['unit']                                                      , 1],
+				['td', ` ${ measure_type_html } <br/> ${ missing_value_html } `               , 3]
 			]);
 
 			switch(measure_type) {
@@ -231,10 +233,11 @@ class PackageFile {
 		}
 
 		let title_row = makeTableRow([
-			['th', 'Attribute', 3],
-			['th', 'Definition', 5],
-			['th', 'Type', 1],
-			['th', 'Others', 3]
+			['th', 'Attribute' , 2],
+			['th', 'Definition', 4],
+			['th', 'Annotation', 2],
+			['th', 'Type'      , 1],
+			['th', 'Others'    , 3]
 		], 'title-row');
 
 		return `
