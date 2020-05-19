@@ -96,7 +96,7 @@ function showDetail(url) {
 
 
 // Extract object, array, or text from JSON data
-function extractString(data, path, keys, delim) {
+function extractString(data, path, keys, delim='') {
 	if (data === undefined || data === null) return '';
 
 	// Safely traverse down the JSON path
@@ -129,13 +129,13 @@ function extractString(data, path, keys, delim) {
 			str += extractStringHelper(data, keys, delim);
 		}
 	}
-	catch(err) { console.error(err); }
+	catch(err) { console.error(err.stack); }
 
 	return str;
 }
 
 // Extract object from JSON data
-function extractStringHelper(data, keys, delim) {
+function extractStringHelper(data, keys, delim='') {
 	if (data === undefined || data === null) return '';
 	if (keys === undefined || keys.length == 0) return data;
 
@@ -160,10 +160,9 @@ function extractStringHelper(data, keys, delim) {
 		}
 
 		if (val != '') {
-			str += extractString(val, [], delim) + delim;
+			str += extractString(val, '', [], delim) + delim;
 		}
 	}
-
 
 	// Remove last delimeter
 	let str1 = str.slice(str.length - delim.length);

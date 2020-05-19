@@ -90,6 +90,8 @@ class PackageFile {
 			this.data['datatables'].push({
 				name:        extractString(tables[i], 'entityName'),
 				description: extractString(tables[i], 'entityDescription'),
+				url:         extractString(tables[i], 'physical > distribution > online > url'),
+				orientation: extractString(tables[i], 'physical > dataFormat > textFormat > attributeOrientation'),
 				attributes:  attribute_data
 			});
 		}
@@ -100,23 +102,48 @@ class PackageFile {
 
 		// Fill datatable data
 		let tables = this.data['datatables'];
-		let html = '';
 
 		for (let i in tables) {
 			let tableData = this.makeFilesTableData(tables[i]);
-			html += `
+
+			element.append(`
 				<div class="section-title" data-toggle="collapse" href="#datatable${ i }" aria-expanded="false" aria-controls="datatable${ i }">
 					Data Table ${ parseInt(i) + 1 }: ${ tables[i]['name'] }
 				</div>
+
 				<div class="collapse" id="datatable${ i }">
-					<div class="ml-3"> ${ tables[i]['description'] } </div>
+					<div class="ml-3">${ tables[i]['description'] }</div>
+					<div class="ml-3">${ activateLink(tables[i]['url'], 'Download CSV File') }</div>
 					${ tableData }
 				</div>
-				<br/>
-			`;
-		}
+				<br>
+			`);
 
-		element.append(html);
+			// Flip rows and columns if it's column orientation
+			if (tables[i]['orientation'] == 'column') {
+				element.find(`#datatable${ i } .datatable`).each(function() {
+					let $this = $(this);
+
+					$this.addClass('column-orientation');
+
+					let newrows = [];
+					$this.find("tr").each(function() {
+
+						let j = 0;
+						$(this).find("td, th").each(function(){
+							j++;
+							if(newrows[j] === undefined) { newrows[j] = $("<tr class='row'></tr>"); }
+							newrows[j].append($(this));
+						});
+					});
+
+					$this.find("tr").remove();
+					$.each(newrows, function(){
+						$this.append(this);
+					});
+				});
+			}
+		}
 	}
 
 
@@ -144,12 +171,24 @@ class PackageFile {
 			let missing_value_html = '';
 
 			if (measure_type != '') {
-				measure_type_html = `
-					Measurement Type:
-					<span class="measure-btn" onclick="onMeasureClick(event)">
-						${ measure_type }
-					</span>
-				`;
+				let unit = extractString(measurement, 'data', ['unit']);
+
+				if (unit != '') {
+					measure_type_html = `
+						Measurement Unit:
+						<span class="measure-btn" onclick="onMeasureClick(event)">
+							${ unit }
+						</span>
+					`;
+				}
+				else {
+					measure_type_html = `
+						Measurement Type:
+						<span class="measure-btn" onclick="onMeasureClick(event)">
+							${ measure_type }
+						</span>
+					`;
+				}
 			}
 
 			if (missing_value['code'] != '') {
@@ -194,17 +233,15 @@ class PackageFile {
 		let title_row = makeTableRow([
 			['th', 'Attribute', 3],
 			['th', 'Definition', 5],
-			['th', 'Unit', 1],
+			['th', 'Type', 1],
 			['th', 'Others', 3]
 		], 'title-row');
 
 		return `
-			<div>
-				<table class="table">
-					<thead>
-						${ title_row }
-					</thead>
+			<div class="table-wrap">
+				<table class="table datatable">
 					<tbody>
+						${ title_row }
 						${ attr_rows_html }
 					</tbody>
 				</table>
@@ -329,16 +366,28 @@ class PackageFile {
 }
 
 function onMeasureClick(e) {
+	let container = $(e.target).parent().parent().parent().parent().parent();
 	let nth = $(e.target).closest('tr').index() + 1;
-	let measure = $(e.target).parent().parent().parent().parent().parent().find(`.measurement-section div:nth-child(${ nth })`);
+
+	if (container.find('table').hasClass('column-orientation')) {
+		nth = $(e.target).closest('td').index() + 1;
+	}
+
+	let measure = container.find(`.measurement-section div:nth-child(${ nth })`);
 
 	$('#attribute-modal .modal-body').html(measure.clone());
 	$('#attribute-modal').modal();
 }
 
 function onMissingClick(e) {
+	let container = $(e.target).parent().parent().parent().parent().parent();
 	let nth = $(e.target).closest('tr').index() + 1;
-	let missing = $(e.target).parent().parent().parent().parent().parent().find(`.missing-section div:nth-child(${ nth })`);
+
+	if (container.find('table').hasClass('column-orientation')) {
+		nth = $(e.target).closest('td').index() + 1;
+	}
+
+	let missing = container.find(`.missing-section div:nth-child(${ nth })`);
 
 	$('#attribute-modal .modal-body').html(missing.clone());
 	$('#attribute-modal').modal();

@@ -64,185 +64,200 @@ body {
 	color: black;
 }
 
-#detail {
+#detail-container {
+	// min-height: 2000px;
 
-	.nav-link {
-		height: 100%;
-		text-align: center;
-		border: 1px solid transparent;
-		border-top-left-radius: 2px;
-		border-top-right-radius: 2px;
-	}
+	#detail {
 
-	.tab-content {
-		padding: 20px;
-	}
-
-	.floatbox {
-		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
-		border-radius: 2px;
-		display: flex;
-	}
-
-	.section-title {
-		background-color: #003366;
-		color: white !important;
-		padding: 10px;
-		border-radius: 2px;
-		font-weight: bold;
-		color: black;
-		margin-bottom: 10px;
-	}
-
-	#content-class-people {
-		th {
-			text-transform: capitalize;
-		}
-
-		#field-publishers, #field-owners, #field-contacts, #field-associated {
-			margin-right: -1% !important;
-
-			.people-table {
-				width: 49%;
-				margin-right: 1%;
-				padding: 10px;
-
-				tbody {
-					width: 100%;
-
-					tr {
-						padding-right: 2%;
-						padding-left: 2%;
-					}
-
-					th {
-						border-top: none;
-						width: 40%;
-					}
-
-					td {
-						border-top: none;
-						width: 60%;
-					}
-				}
-			}
-		}
-	}
-
-	#content-class-coverage {
-		#map {
-			height: 360px;
-			width: 100%;
-			overflow: hidden;
-			float: left;
-			border: thin solid #333;
-		}
-
-		#field-taxonomic {
+		.nav-link {
+			height: 100%;
 			text-align: center;
-
-			td:nth-child(2) {
-
-			}
-
-			.tax-cell {
-				display: table-cell;
-			}
-
-			.tax-row {
-				font-size: 0.7em;
-			}
-
-			.colored {
-				// background: #b3e5fc;
-
-				// &:nth-child(7) { background-color: #d68c70; }
-				// &:nth-child(6) { background-color: #ec9706; }
-				// &:nth-child(5) { background-color: #ffc30b; }
-				// &:nth-child(4) { background-color: #dcd7a0; }
-				// &:nth-child(3) { background-color: #ece9c5; }
-				// &:nth-child(2) { background-color: #fffada; }
-				// &:nth-child(1) { background-color: #ffffff; }
-
-				&:nth-child(1) { background-color: #d68c70; }
-				&:nth-child(2) { background-color: #ec9706; }
-				&:nth-child(3) { background-color: #ffc30b; }
-				&:nth-child(4) { background-color: #ffd968; }
-				&:nth-child(5) { background-color: #ffebae; }
-				&:nth-child(6) { background-color: #fffada; }
-				&:nth-child(7) { background-color: #fffdf1; }
-			}
-
-			.row {
-				display: table-row;
-			}
+			border: 1px solid transparent;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
 		}
-	}
 
-	#content-class-methods {
-		.cell {
-			padding: 0.2rem 1rem;
+		.tab-content {
+			padding: 20px;
 		}
-	}
 
-	#content-class-files {
+		.floatbox {
+			box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 2px;
+			display: flex;
+		}
 
 		.section-title {
-			cursor: pointer;
+			background-color: #003366;
+			color: white !important;
+			padding: 10px;
+			border-radius: 2px;
+			font-weight: bold;
+			color: black;
+			margin-bottom: 10px;
 		}
 
-		.modal-dialog {
-			min-height: calc(100vh - 60px);
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			overflow: auto;
-			max-width: 70%;
-			@media(max-width: 768px) {
-				min-height: calc(100vh - 20px);
-				max-width: unset;
+		#content-class-people {
+			th {
+				text-transform: capitalize;
+			}
+
+			#field-publishers, #field-owners, #field-contacts, #field-associated {
+				margin-right: -1% !important;
+
+				.people-table {
+					width: 49%;
+					margin-right: 1%;
+					padding: 10px;
+
+					tbody {
+						width: 100%;
+
+						tr {
+							padding-right: 2%;
+							padding-left: 2%;
+						}
+
+						th {
+							border-top: none;
+							width: 40%;
+						}
+
+						td {
+							border-top: none;
+							width: 60%;
+						}
+					}
+				}
 			}
 		}
 
-		.table {
-			box-shadow: 1px 1px 3px black;
-			width: calc(100% - 2rem);
-			margin: 40px auto;
+		#content-class-coverage {
+			#map {
+				height: 360px;
+				width: 100%;
+				overflow: hidden;
+				float: left;
+				border: thin solid #333;
+			}
 
+			#field-taxonomic {
+				text-align: center;
+
+				td:nth-child(2) {
+
+				}
+
+				.tax-cell {
+					display: table-cell;
+				}
+
+				.tax-row {
+					font-size: 0.7em;
+				}
+
+				.colored {
+					&:nth-child(1) { background-color: #d68c70; }
+					&:nth-child(2) { background-color: #ec9706; }
+					&:nth-child(3) { background-color: #ffc30b; }
+					&:nth-child(4) { background-color: #ffd968; }
+					&:nth-child(5) { background-color: #ffebae; }
+					&:nth-child(6) { background-color: #fffada; }
+					&:nth-child(7) { background-color: #fffdf1; }
+				}
+
+				.row {
+					display: table-row;
+				}
+			}
+		}
+
+		#content-class-methods {
 			.cell {
-				overflow-wrap: break-word !important;
-				padding-top: 7px !important;
-				padding-bottom: 7px !important;
-				border-top: unset !important;
-				border-bottom: 1px solid #dee2e6 !important;
-				align-items: center;
+				padding: 0.2rem 1rem;
+			}
+		}
+
+		#content-class-files {
+
+			.section-title {
+				cursor: pointer;
 			}
 
-			.measure-btn, .missing-btn {
-				color: #666600;
-				text-decoration: underline;
-				width: inherit;
-				white-space: normal;
-				text-align: left;
-				display: inline;
-
-				&:hover {
-					cursor: pointer;
+			.modal-dialog {
+				min-height: calc(100vh - 60px);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				overflow: auto;
+				max-width: 70%;
+				@media(max-width: 768px) {
+					min-height: calc(100vh - 20px);
+					max-width: unset;
 				}
 			}
 
-			.title-row {
-				background-color: #003366;
-				color: white;
+			.table-wrap {
+				padding: 15px;
+			}
+
+			.table.column-orientation {
+			    table-layout: fixed;
+			    display: table;
+
+			    tbody {
+					width: 100%;
+				    display: block;
+				    overflow-x: auto;
+			    }
+
+				.row {
+					display: block;
+				}
+
+				.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+					flex: unset;
+					max-width: unset;
+					position: unset;
+					width: unset;
+					min-width: 200px;
+				}
+			}
+
+			.table {
+				box-shadow: 1px 1px 3px black;
+				width: calc(100% - 2rem);
+				margin: 40px auto;
+				font-size: 0.7em;
+
+				.cell {
+					overflow-wrap: break-word !important;
+					padding-top: 7px !important;
+					padding-bottom: 7px !important;
+					border-top: unset !important;
+					border-bottom: 1px solid #dee2e6 !important;
+					align-items: center;
+					background-color: white;
+				}
+
+				.measure-btn, .missing-btn {
+					color: #666600;
+					text-decoration: underline;
+					width: inherit;
+					white-space: normal;
+					text-align: left;
+					display: inline;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
 
 				th {
+					background-color: #003366 !important;
+					color: white !important;
 					border: unset !important;
 				}
-
-				// &:hover {
-				// 	box-shadow: unset;
-				// 	cursor: pointer !important;
-				// }
 			}
 		}
 	}
