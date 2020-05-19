@@ -30,10 +30,11 @@ body {
         }
 
         .latest-value {
-            width: 80px;
+            width: 100px;
             vertical-align: middle;
             margin: auto 2vh;
             margin-right: 0;
+            cursor: unset;
         }
 
         #temperature-btn {
@@ -48,6 +49,8 @@ body {
 
         #current-time {
             margin-bottom: 3vh;
+            width: 100%;
+            margin: auto;
         }
     }
 }
@@ -64,7 +67,7 @@ body {
 }
 
 text {
-    font-size: 17px;
+    font-size: 22px;
 }
 
 path { 
@@ -100,10 +103,10 @@ div.tooltip {
     pointer-events: none;
 }
 
-#pressure-btn.btn-color { background-color: #dd00dd; color: white; }
-#temperature-btn.btn-color, .btn-temperature { background-color: #00dddd; }
-#chlorophyll-btn.btn-color { background-color: #00dd00; }
-#salinity-btn.btn-color { background-color: #ff8800; }
+#pressure-btn.btn-color, #pressure-latest                         { background-color: #dd00dd; color: white; }
+#temperature-btn.btn-color, .btn-temperature, #temperature-latest { background-color: #00dddd; }
+#chlorophyll-btn.btn-color, #chlorophyll-latest                   { background-color: #00dd00; }
+#salinity-btn.btn-color, #salinity-latest                         { background-color: #ff8800; }
 
 #pressure-line { stroke: #dd00dd; }
 #temperature-line { stroke: #00dddd; }

@@ -40,7 +40,10 @@ page_css:
         </div>
 
         <div id="graph-lines">
-            <div id="current-time" class="absolute-right">&nbsp;</div>
+            <div class="row-container line-section" >
+                <div id="current-time" class="absolute-right">&nbsp;</div>
+                <div class="latest-value">Latest</div>
+            </div>
 
             <div class="row-container line-section" >
                 <div style="width: 100%">
@@ -49,27 +52,27 @@ page_css:
                     </div>
                     <input type="checkbox" data-toggle="toggle" data-on="°F" data-off="°C" data-onstyle="temperature" data-offstyle="temperature" onchange="toggleCelsius(event)">
                 </div>
-                <div id="temperature-latest" class="latest-value"></div>
+                <div id="temperature-latest" class="latest-value btn"></div>
             </div>
 
             <div class="row-container line-section">
                 <div id="chlorophyll-btn" class="btn btn-color line-btn" onclick="toggleGraph('chlorophyll')">
                     Chlorophyll (&mu;g / Liter)
                 </div>
-                <div id="chlorophyll-latest" class="latest-value"></div>
+                <div id="chlorophyll-latest" class="latest-value btn"></div>
             </div>
 
             <div class="row-container line-section">
                 <div id="pressure-btn" class="btn btn-color line-btn" onclick="toggleGraph('pressure')">
                     Pressure (Decibars)
                 </div>
-                <div id="pressure-latest" class="latest-value"></div>
+                <div id="pressure-latest" class="latest-value btn"></div>
             </div>
             <div class="row-container line-section">
                 <div id="salinity-btn" class="btn btn-color line-btn" onclick="toggleGraph('salinity')">
                     Salinity (PSU, ~ppt)
                 </div>
-                <div id="salinity-latest" class="latest-value"></div>
+                <div id="salinity-latest" class="latest-value btn"></div>
             </div>
         </div>
     </div>

@@ -187,7 +187,6 @@ async function toggleGraph(topic) {
 
 function formatTime(date) {
     return date.toLocaleString('en-US', {
-        year: 'numeric',
         month: 'long',
         day: 'numeric',
         hour: 'numeric',
