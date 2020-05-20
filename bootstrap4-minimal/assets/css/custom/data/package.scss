@@ -97,6 +97,19 @@ body {
 			font-weight: bold;
 			color: black;
 			margin-bottom: 10px;
+			display: flex;
+
+			.icon {
+				margin-left: auto;
+				width: 25px;
+				height: 25px;
+
+				-khtml-user-select: none;
+				-o-user-select: none;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				user-select: none;
+			}
 		}
 
 		#content-class-people {
@@ -204,14 +217,14 @@ body {
 			}
 
 			.table.column-orientation {
-			    table-layout: fixed;
-			    display: table;
+				table-layout: fixed;
+				display: table;
 
-			    tbody {
+				tbody {
 					width: 100%;
-				    display: block;
-				    overflow-x: auto;
-			    }
+					display: block;
+					overflow-x: auto;
+				}
 
 				.row {
 					display: block;

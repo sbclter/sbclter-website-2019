@@ -108,8 +108,13 @@ class PackageFile {
 			let tableData = this.makeFilesTableData(tables[i]);
 
 			element.append(`
-				<div class="section-title" data-toggle="collapse" href="#datatable${ i }" aria-expanded="false" aria-controls="datatable${ i }">
-					Data Table ${ parseInt(i) + 1 }: ${ tables[i]['name'] }
+				<div class="section-title datatable-title" data-toggle="collapse" href="#datatable${ i }" aria-expanded="false" aria-controls="datatable${ i }">
+					<div class="title">
+						Data Table ${ parseInt(i) + 1 }: ${ tables[i]['name'] }
+					</div>
+
+					<img class="collapse-icon icon hidden" src="/assets/img/collapse.png"/>
+					<img class="expand-icon icon" src="/assets/img/expand.png"/>
 				</div>
 
 				<div class="collapse" id="datatable${ i }">
@@ -145,6 +150,11 @@ class PackageFile {
 				});
 			}
 		}
+
+		element.find('.datatable-title').on('click', function (e) {
+			$(this).find('.icon.collapse-icon').toggleClass('hidden');
+			$(this).find('.icon.expand-icon').toggleClass('hidden');
+		});
 	}
 
 
@@ -370,10 +380,10 @@ class PackageFile {
 
 function onMeasureClick(e) {
 	let container = $(e.target).parent().parent().parent().parent().parent();
-	let nth = $(e.target).closest('tr').index() + 1;
+	let nth = $(e.target).closest('tr').index();
 
 	if (container.find('table').hasClass('column-orientation')) {
-		nth = $(e.target).closest('td').index() + 1;
+		nth = $(e.target).closest('td').index();
 	}
 
 	let measure = container.find(`.measurement-section div:nth-child(${ nth })`);
@@ -384,10 +394,10 @@ function onMeasureClick(e) {
 
 function onMissingClick(e) {
 	let container = $(e.target).parent().parent().parent().parent().parent();
-	let nth = $(e.target).closest('tr').index() + 1;
+	let nth = $(e.target).closest('tr').index();
 
 	if (container.find('table').hasClass('column-orientation')) {
-		nth = $(e.target).closest('td').index() + 1;
+		nth = $(e.target).closest('td').index();
 	}
 
 	let missing = container.find(`.missing-section div:nth-child(${ nth })`);

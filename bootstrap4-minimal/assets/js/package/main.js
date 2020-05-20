@@ -13,10 +13,11 @@ var coverage = new PackageCoverage();
 var method   = new PackageMethod();
 var file     = new PackageFile();
 
-showDetail(packageUrl);
+main(packageUrl);
 
 // Create popup window for xml links
-function showDetail(url) {
+function main(url) {
+
 	// Load package template
 	var template = $('#detail-template').clone();
 	template.removeAttr('hidden');
@@ -26,7 +27,7 @@ function showDetail(url) {
 	var loader = $('#loading-template').clone();
 	loader.removeAttr('hidden');
 	loader.removeAttr('id');
-	updateView("Grabbing Data...", loader);
+	updateView("Loading Data...", loader);
 
 	// Load xml from pasta
 	loadXMLDoc(url, function(xml) {
@@ -66,11 +67,13 @@ function showDetail(url) {
 				Package Origin
 			`;
 
+			let subtitle = `<a href="${ repoUrl }" target="_blank">${ edi_logo }</a>`;
+
 			// Load template onto actual HTML
 			updateView(
 				makeTableRow([
-					['th', title                                                     , 10, 'title'],
-					['td', `<a href="${ repoUrl }" target="_blank">${ edi_logo }</a>`, 2 , 'sub-title']
+					['th', title   , 10,     'title'],
+					['td', subtitle,  2, 'sub-title']
 				]),
 				template
 			);
