@@ -21,9 +21,21 @@
               {% assign has_header = 1 %}
             {% endif %}
 
-            {% for filter in include.dataFilter %}
-              <td> {{ itemrow[filter] }} </td>
-            {% endfor %}
+            <td>
+              {% for filter in include.dataFilter %}
+                  {{ itemrow[filter] }}
+              {% endfor %}
+              {% for geodata in itemrow.geodata %}
+                  <div class="{{itemrow.id}}-geodata"
+                       data-title="{{ geodata.title }}"
+                       data-description="{{ geodata.description }}"
+                       data-sampling="{{ geodata.sampling }}"
+                       data-habitat="{{ geodata.habitat }}"
+                       data-lat="{{ geodata.lat }}"
+                       data-lng="{{ geodata.lng }}">
+                  </div>
+              {% endfor %}
+            </td>
 
             <td>
               <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="layer_box chkbox_{{itemrow.habitatName}}" id="{{itemrow.id}}"/>
@@ -31,5 +43,4 @@
           </tr>
         {% endfor %}
     {% endfor %}
-
 

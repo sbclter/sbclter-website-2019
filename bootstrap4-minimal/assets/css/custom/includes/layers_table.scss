@@ -4,3 +4,19 @@
 	vertical-align: middle;
 	align: center;
 }
+
+
+tr {
+	&:hover {
+		box-shadow: unset !important;
+	}
+
+	td, th {
+		border: 1px solid #dee2e6 !important;
+		
+
+		&:last-child {
+			text-align: center;
+		}
+	}
+}

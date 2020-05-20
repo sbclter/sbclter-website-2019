@@ -20,13 +20,18 @@ page_css:
 {% include gmap.html %}
 
 
-{% assign layer_groups = site.data.sbcMapLayers | group_by:"habitatName" %}
-{% include layers_table.html columns=page.columns data=layer_groups dataFilter=page.dataFilter%}
+{% assign layer_groups = site.data.sbcMapLayers_fake | group_by:"habitatName" %}
+{% include layers_table_fake.html columns=page.columns data=layer_groups dataFilter=page.dataFilter%}
 
 <br/>
 <!-- Current API is just for development, need a new key -->
-<script src="/assets/js/gmap.js"/></script>
+<script src="/assets/js/gmap_fake.js"/></script>
 
-<script async defer
+<script
 src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap">
 // </script>
+
+<!-- 
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap">
+// </script> -->

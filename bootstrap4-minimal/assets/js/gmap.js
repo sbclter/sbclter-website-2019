@@ -55,38 +55,41 @@ function toggle_layer(on, id){
 	}
 }
 
-// Tracks changes to any of the boxes on the page
-$('.layer_box').change(function() {
-	toggle_layer(this.checked, this.id);
+$(function() {
+	// Tracks changes to any of the boxes on the page
+	$('.layer_box').change(function() {
+		toggle_layer(this.checked, this.id);
+	})
+
+	// Toggles on all checkboxes of specific id to on
+	$('.group-toggle').change(function() {
+
+		if (this.checked) {
+			let check_class = "chkbox_" + this.id;
+			$("." + check_class).prop('checked', true);
+
+			// For bootstrap to show toggle
+			$("." + check_class).parent().attr('class', "toggle btn btn-info");
+
+			// Show data on map
+			boxes = document.getElementsByClassName(check_class);
+			for(var i = 0; i < boxes.length; i++){  // Show all layers
+				toggle_layer(true, boxes[i].id);
+			}
+		}
+		else {
+			let check_class = "chkbox_" + this.id;
+			$("." + check_class).prop('checked', false);
+
+			// For bootstrap to show toggle
+			$("." + check_class).parent().attr('class', "toggle btn btn-secondary off");
+
+			// Show data on map
+			boxes = document.getElementsByClassName(check_class);
+			for(var i = 0; i < boxes.length; i++){  // Show all layers
+				toggle_layer(false, boxes[i].id);
+			}
+		}
+	})
+
 })
-
-// Toggles on all checkboxes of specific id to on
-$('.btn_on').click(function() {
-	check_class = "chkbox_" + this.id;
-	$("." + check_class).prop('checked', true);
-
-	// For bootstrap to show toggle
- 	$("." + check_class).parent().attr('class', "toggle btn btn-info");
-
- 	// Show data on map
- 	boxes = document.getElementsByClassName(check_class);
- 	for(var i = 0; i < boxes.length; i++){  // Show all layers
- 		toggle_layer(true, boxes[i].id);
- 	}
-})
-
-// Toggles off all checkboxes of specific id to on
-$('.btn_off').click(function() {
-	check_class = "chkbox_" + this.id;
-	$("." + check_class).prop('checked', false);
-
-	// For bootstrap to show toggle
- 	$("." + check_class).parent().attr('class', "toggle btn btn-outline-secondary off");
-
- 	// Show data on map
- 	boxes = document.getElementsByClassName(check_class);
- 	for(var i = 0; i < boxes.length; i++){  // Show all layers
- 		toggle_layer(false, boxes[i].id);
- 	}
-})
-
