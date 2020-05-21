@@ -29,9 +29,11 @@
 			<td class="cell col-4">
 			{% for package in itemrow.dataPackages.package %}
 				{% assign docid = package.docid | split: "." %}
-				<a class="package-link" href="https://portal.edirepository.org/nis/mapbrowse?scope={{ docid[0] }}&identifier={{ docid[1] }}&revision=newest"> {{ package.shortTitle }} </a>
+				<!-- <a class="package-link" href="https://portal.edirepository.org/nis/mapbrowse?scope={{ docid[0] }}&identifier={{ docid[1] }}&revision=newest"> {{ package.shortTitle }} </a> -->
+				<a class="package-link" href="package/?package={{ package.docid }}"> {{ package.shortTitle }} </a>
 				<br/>
 			{% endfor %}
+
 			</td>
 		</tr>
 	{% endfor %}

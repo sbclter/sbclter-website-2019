@@ -70,7 +70,7 @@ $(document).ready(function(){
 			let nth = $(this).index() + 1;
 			let tbody = $(this).closest('table').find('tbody');
 
-			tbody.find(`tr td:nth-child(${ nth })`).css('background-color', '#cee6ff');
+			tbody.find(`tr td:nth-child(${ nth })`).css('background-color', '#d6ffc9');
 		},
 		function() {
 			$(this).css('background-color', '');
