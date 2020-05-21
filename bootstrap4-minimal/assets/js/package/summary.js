@@ -25,20 +25,31 @@ class PackageSummary {
 		// Parse citation
 		let citation = '';
 		let creators = extractList(json, 'dataset > creator');
+		let first_author = true;
 
 		for (let i in creators) {
+			// Include sbclter organization (only if no creator) and other organization
 			if (creators[i]['organizationName'] && !(creators[i]['organizationName'] == 'Santa Barbara Coastal LTER' && creators.length > 1)) {
 				citation += creators[i]['organizationName'] + '. ';
 			}
-			else {
-				citation += parseName(creators[i]['individualName'], '%L, %f. ');
+
+			if (creators[i]['individualName']) {
+				let format = first_author ? '%L, %f, ' : '%f. %L, ';
+				citation += parseName(creators[i]['individualName'], format);
+
+				first_author = false;
 			}
 		}
+		citation = removeLastDelim(citation, ', ', '. ');
 
-		citation += extractString(json, 'dataset > pubDate').split('-')[0]      + '. ' +
-					extractString(json, 'dataset > title')                      + '. ' +
-					extractString(json, 'dataset > publisher > organizationName') + '. ' +
-					extractString(json, 'dataset > alternateIdentifier')        + '.';
+
+		citation += extractString(json, 'dataset > pubDate').split('-')[0]             + '. ' +
+					extractString(json, 'dataset > title')                             + ' ' +
+					'ver ' + extractString(json, '_packageId').split('.').slice(-1)[0] + '. ' +
+					'Environmental Data Initiative'                                    + '. ' +
+					extractString(json, 'dataset > alternateIdentifier')               + '. ' +
+					'Accessed ' + this.formatCitationDate(new Date())                   + '.';
+		console.log(citation);
 		this.data['citation'] = citation;
 
 		// Parse keywords
@@ -112,5 +123,20 @@ class PackageSummary {
 		for (let i in this.data['rights']) {
 			element.find('#field-usage-rights').append(`<li> ${ this.data['rights'][i] } </li>`);
 		}
+	}
+
+	// https://stackoverflow.com/a/23593099/8443192
+	formatCitationDate(date) {
+	    let d = new Date(date),
+	        month = '' + (d.getMonth() + 1),
+	        day = '' + d.getDate(),
+	        year = d.getFullYear();
+
+	    if (month.length < 2)
+	        month = '0' + month;
+	    if (day.length < 2)
+	        day = '0' + day;
+
+	    return [year, month, day].join('-');
 	}
 }

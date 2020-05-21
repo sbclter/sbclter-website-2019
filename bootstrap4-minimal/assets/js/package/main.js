@@ -168,9 +168,7 @@ function extractStringHelper(data, keys, delim='') {
 	}
 
 	// Remove last delimeter
-	let str1 = str.slice(str.length - delim.length);
-	if (str1 == delim) str = str.slice(0, str.length - delim.length);
-
+	str = removeLastDelim(str, delim);
 	return str;
 }
 
@@ -366,4 +364,12 @@ function loadMathJax() {
 	script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML';
 	script.setAttribute('id', 'MathJax-script');
 	document.head.appendChild(script);
+}
+
+function removeLastDelim(str, delim, ending='') {
+	let substr = str.slice(str.length - delim.length);
+	if (substr == delim)
+		str = str.slice(0, str.length - delim.length) + ending;
+
+	return str;
 }
