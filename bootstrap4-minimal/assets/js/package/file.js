@@ -232,7 +232,12 @@ class PackageFile {
 		if (measure_type != '') {
 			let unit = extractString(measurement, 'data', ['unit']);
 
-			if (unit != '') {
+			if (measurement['domain'] == 'textDomain') {
+				table_html = `
+					Measurement Unit: ${ extractString(measurement, 'data', [], ', ') }
+				`;
+			}
+			else if (unit != '') {
 				table_html = `
 					Measurement Unit:
 					<span class="measure-btn" onclick="onMeasureClick(event, ${ popup_id })">
