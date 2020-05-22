@@ -7,22 +7,16 @@
   geodata:
     - title: "Stanwood Fire Station1"
       description: "Santa Barbara County Public Works Department Flood Control District Site at: Stanwood Fire Station"
-      sampling: "Precipitation collected by SBC LTER or Santa Barbara County"
-      habitat: "Land"
       lat: 34.520823
       lng: -119.0088
 
     - title: "Stanwood Fire Station2"
       description: "Santa Barbara County Public Works Department Flood Control District Site at: Stanwood Fire Station"
-      sampling: "Precipitation collected by SBC LTER or Santa Barbara County"
-      habitat: "Land"
       lat: 34.421823
       lng: -119.9088
 
     - title: "Stanwood Fire Station3"
       description: "Santa Barbara County Public Works Department Flood Control District Site at: Stanwood Fire Station"
-      sampling: "Precipitation collected by SBC LTER or Santa Barbara County"
-      habitat: "Land"
       lat: 34.322823
       lng: -119.9088
 
@@ -34,22 +28,16 @@
   geodata:
     - title: "Stanwood Fire Station1"
       description: "Santa Barbara County Public Works Department Flood Control District Site at: Stanwood Fire Station"
-      sampling: "Precipitation collected by SBC LTER or Santa Barbara County"
-      habitat: "Land"
       lat: 34.520823
       lng: -119.0088
 
     - title: "Stanwood Fire Station2"
       description: "Santa Barbara County Public Works Department Flood Control District Site at: Stanwood Fire Station"
-      sampling: "Precipitation collected by SBC LTER or Santa Barbara County"
-      habitat: "Land"
       lat: 34.421823
       lng: -120.5088
 
     - title: "Stanwood Fire Station3"
       description: "Santa Barbara County Public Works Department Flood Control District Site at: Stanwood Fire Station"
-      sampling: "Precipitation collected by SBC LTER or Santa Barbara County"
-      habitat: "Land"
       lat: 34.322823
       lng: -120.5088
 

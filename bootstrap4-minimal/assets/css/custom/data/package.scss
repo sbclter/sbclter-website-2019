@@ -199,19 +199,6 @@ body {
 				cursor: pointer;
 			}
 
-			.modal-dialog {
-				min-height: calc(100vh - 60px);
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				overflow: auto;
-				max-width: 70%;
-				@media(max-width: 768px) {
-					min-height: calc(100vh - 20px);
-					max-width: unset;
-				}
-			}
-
 			.table-wrap {
 				padding: 15px;
 			}

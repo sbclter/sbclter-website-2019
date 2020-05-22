@@ -6,8 +6,7 @@ columns:
   - Habitat
   - Measurements
   - Show
-dataFilter:
-  - label
+dataFilter: label
 page_css:
   - "/assets/css/custom/layouts/gmap.css"
   - "/assets/css/custom/includes/layers_table.css"
@@ -21,17 +20,14 @@ page_css:
 
 
 {% assign layer_groups = site.data.sbcMapLayers_fake | group_by:"habitatName" %}
-{% include layers_table_fake.html columns=page.columns data=layer_groups dataFilter=page.dataFilter%}
+{% include layers_table_fake.html
+	columns=page.columns
+	data=layer_groups
+	dataFilter=page.dataFilter
+	collectionData=site.data.dataCollections %}
 
-<br/>
+<br>
 <!-- Current API is just for development, need a new key -->
-<script src="/assets/js/gmap_fake.js"/></script>
+<script src="/assets/js/gmap_fake.js"></script>
 
-<script
-src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap">
-// </script>
-
-<!-- 
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap">
-// </script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}&callback=initMap"></script>

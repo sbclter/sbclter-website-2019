@@ -20,3 +20,30 @@ tr {
 		}
 	}
 }
+
+#layer-modal {
+	.collection-section {
+		margin-bottom: 50px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.package-section {
+			display: flex;
+			flex-wrap: wrap;
+
+			.package-link {
+				width: 50%;
+
+				a {
+					color: #666600;
+					text-decoration: underline;
+					width: inherit;
+					white-space: normal;
+					text-align: left;
+				}
+			}
+		}
+	}
+}

@@ -1,7 +1,13 @@
+---
+---
+
 // Javascript for creating google maps
 
 var map;
 var layers = {};  // Holds all layer objects that map to URL's
+var layerCollections = {
+	// layer: [{name, packages}, {name, packages}, ...]
+};
 
 function initMap() {
 	// Set up google map
@@ -47,9 +53,9 @@ function initMap() {
 					<h4> ${ data.title } </h4>
 					<strong>Description: </strong> ${ data.description } <br>
 					<strong>Habitat:     </strong> ${ data.habitat }     <br>
+					<strong>Sampling:    </strong> ${ data.sampling }    <br>
 					<strong>Lat:         </strong> ${ data.lat }         <br>
 					<strong>Lng:         </strong> ${ data.lng }         <br>
-					<strong>Sampling:    </strong> ${ data.sampling }    <br>
 				`);
 				infowindow.open(map, marker);
 			});
@@ -59,12 +65,14 @@ function initMap() {
 	}
 }
 
+// Reset map zoom on toggle
 function zoomMap() {
 	var bounds = new google.maps.LatLngBounds();
 
 	for (let i in layers) {
 		let layer = layers[i];
 
+		// Collect bounds of active layers
 		if (layer.visible) {
 			for (let j in layer.markers) {
 				let marker = layer.markers[j];
@@ -144,6 +152,73 @@ $(function() {
 				toggle_layer(false, boxes[i].id);
 			}
 		}
-	})
+	});
 
-})
+	// Build collection data for each map layer
+	$('#layers-collection-data .collection').each(function() {
+		let name = $(this).find('.name').text();
+		let mapLayers = $(this).find('.mapLayers').text().split(',');
+		let packages = JSON.parse($(this).find('.packages').text());
+
+		// Store mapLayer and collection into layerCollections
+		for (let i in mapLayers) {
+			if (mapLayers[i] == '') continue;
+
+			if (!layerCollections[mapLayers[i]]) {
+				layerCollections[mapLayers[i]] = [];
+			}
+
+			layerCollections[mapLayers[i]].push({
+				name: name,
+				packages: packages
+			});
+
+			// Add collection btn to each measurement box
+			if ($(`#${ mapLayers[i] } .collection-btn`).length == 0) {
+				$(`#${ mapLayers[i] }`).append(`
+					<br>
+					<a class="collection-btn" href="#">
+						See collections
+					</a>
+				`);
+			}
+		}
+	});
+
+	// Onclick event for "See collections"
+	$('.collection-btn').click(function(e) {
+		e.preventDefault();
+		let layer = $(this).parent().attr('id');
+		let collections = layerCollections[layer];
+		let html = '';
+
+		// Build popup HTML for each collection
+		for (let i in collections) {
+
+			// Build collection packages HTML
+			let packages_html = collections[i].packages.map(p => {
+				return `
+					<div class="package-link">
+						<a href="/data/catalog/package/?package=${ p.docid }" target="_blank">
+							${ p.shortTitle }
+						</a>
+					</div>
+				`;
+			});
+
+			// Build collection HTML
+			html += `
+				<div class="collection-section">
+					<h3>${ collections[i].name }</h3>
+					<div class="package-section">
+						${ packages_html.join('') }
+					</div>
+				</div>
+			`;
+		}
+
+		// Insert popup HTML
+		$('#layer-modal .modal-body').html(html);
+		$('#layer-modal').modal();
+	});
+});
