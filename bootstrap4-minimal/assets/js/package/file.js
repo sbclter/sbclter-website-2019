@@ -2,11 +2,14 @@ class PackageFile {
 
 	parse(json) {
 		this.data = {
-			datatables: []
+			datatables: [],
+			entities: []
 		};
 
 		let tables = extractList(json, 'dataset > dataTable');
+		let entities = extractList(json, 'dataset > otherEntity');
 
+		// Parse datatables
 		for (let i in tables) {
 			let attributes = extractList(tables[i], 'attributeList > attribute');
 			let attribute_data = [];
@@ -104,14 +107,24 @@ class PackageFile {
 				attributes:  attribute_data
 			});
 		}
+
+		// Parse entities
+		for (let i in entities) {
+			this.data['entities'].push({
+				name:        extractString(entities[i], 'entityName'),
+				description: extractString(entities[i], 'entityDescription'),
+				url:         extractString(entities[i], 'physical > distribution > online > url')
+			});
+		}
 	}
 
 	build(template) {
 		var element = template.find('#content-class-files');
 
-		// Fill datatable data
 		let tables = this.data['datatables'];
+		let entities = this.data['entities'];
 
+		// Fill datatable data
 		for (let i in tables) {
 			let tableData = this.makeDatatable(tables[i]);
 
@@ -157,6 +170,25 @@ class PackageFile {
 					});
 				});
 			}
+		}
+
+		for (let i in entities) {
+			element.append(`
+				<div class="section-title entities-title" data-toggle="collapse" href="#entities${ i }" aria-expanded="false" aria-controls="entities${ i }">
+					<div class="title">
+						Entity ${ parseInt(i) + 1 }: ${ entities[i]['name'] }
+					</div>
+
+					<img class="collapse-icon icon hidden" src="/assets/img/collapse.png"/>
+					<img class="expand-icon icon" src="/assets/img/expand.png"/>
+				</div>
+
+				<div class="collapse" id="entities${ i }">
+					<div class="ml-3">${ entities[i]['description'] }</div>
+					<div class="ml-3">${ activateLink(entities[i]['url'], 'Download Data File') }</div>
+				</div>
+				<br>
+			`);
 		}
 
 		element.find('.datatable-title').on('click', function (e) {
