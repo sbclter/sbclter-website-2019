@@ -149,8 +149,8 @@ All general **helper functions** live inside the main file. They are used everyw
 
     This function takes a list of cells and row classes to form a HTML table row.
 
-    -   **cells - list:** a list of `th` and `td` cells. *Ex: [ [ 'th', 'name', 4 ], [ 'td', 'value', 8 ] ]*
-        -   cell format: [ tag, content, column size (optional), classes (optional) ]
+    -   **cells - list:** a list of `th` and `td` cells. *Ex: [ [ 'th', 'col-4', 'name' ], [ 'td', 'col-8', 'value' ] ]*
+        -   cell format: [ tag, classes, content ]
     -   **classes - string:** (optional) classes of the table row
 
 -   **updateView(title, body)**
