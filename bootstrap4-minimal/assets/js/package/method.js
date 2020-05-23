@@ -87,9 +87,9 @@ class PackageMethod {
 				protocol_html.push(`
 					<table class="table">
 						<tbody>
-							${ makeTableRow([['th', 'Protocol:',         2], ['td', protocol['title'],             10]]) }
-							${ makeTableRow([['th', 'Author:',           2], ['td', protocol['name'],              10]]) }
-							${ makeTableRow([['th', 'Available Online:', 2], ['td', activateLink(protocol['url']), 10]]) }
+							${ makeTableRow([['th', 'col-2', 'Protocol:'        ], ['td', 'col-10', protocol['title']            ]]) }
+							${ makeTableRow([['th', 'col-2', 'Author:'          ], ['td', 'col-10', protocol['name']             ]]) }
+							${ makeTableRow([['th', 'col-2', 'Available Online:'], ['td', 'col-10', activateLink(protocol['url'])]]) }
 						</tbody>
 					</table>
 				`);

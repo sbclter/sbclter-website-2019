@@ -104,10 +104,7 @@ class PackagePeople {
 					if (value.includes('@'))      value = activateLink(`mailto: ${ value }`, value);
 				}
 
-				rows += makeTableRow([
-					['th', key  ],
-					['td', value]
-				]);
+				rows += makeTableRow([['th', '', key], ['td', '', value]]);
 			}
 
 			contents += `

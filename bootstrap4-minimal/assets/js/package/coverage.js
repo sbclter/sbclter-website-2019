@@ -32,23 +32,12 @@ class PackageCoverage {
 
 		for (let i in points) {
 			let title = extractString(points[i], 'geographicDescription');
-
-			let data_entry = [];
-			data_entry.push(title);
-
 			let north = parseFloat(extractString(points[i], 'boundingCoordinates > northBoundingCoordinate'));
-			data_entry.push(north);
-
 			let south = parseFloat(extractString(points[i], 'boundingCoordinates > southBoundingCoordinate'));
-			data_entry.push(south);
+			let east  = parseFloat(extractString(points[i], 'boundingCoordinates > eastBoundingCoordinate'));
+			let west  = parseFloat(extractString(points[i], 'boundingCoordinates > westBoundingCoordinate'));
 
-			let east = parseFloat(extractString(points[i], 'boundingCoordinates > eastBoundingCoordinate'));
-			data_entry.push(east);
-
-			let west = parseFloat(extractString(points[i], 'boundingCoordinates > westBoundingCoordinate'));
-			data_entry.push(west);
-
-			this.data['geographic'].push(data_entry);
+			this.data['geographic'].push([title, north, south, east, west]);
 		}
 
 		// Parse taxonomic coverage
@@ -65,36 +54,36 @@ class PackageCoverage {
 		let element = template.find('#content-class-coverage');
 		let content = null;
 
-		this.initMap();
-
-		// Fill temporal converage data
+		// Build temporal converage data
 		content = this.data['temporal']['start'] + ' to ' + this.data['temporal']['end'];
 		element.find('#field-temporal').text(content);
 
-		// Move map from template to actual popup window
+		// Build map from template to actual popup window
+		this.initMap();
 		$("#map").detach().appendTo(template.find('#field-map'));
 		this.plotMarkers(element);
 
-		// Fill taxonomic range data
+		// Build taxonomic title row
 		let row = makeTableRow([
-			['th', 'Kingdom'],
-			['th', 'Phylum' ],
-			['th', 'Class'  ],
-			['th', 'Order'  ],
-			['th', 'Family' ],
-			['th', 'Genus'  ],
-			['th', 'Species']
+			['th', 'tax-cell', 'Kingdom'],
+			['th', 'tax-cell', 'Phylum' ],
+			['th', 'tax-cell', 'Class'  ],
+			['th', 'tax-cell', 'Order'  ],
+			['th', 'tax-cell', 'Family' ],
+			['th', 'tax-cell', 'Genus'  ],
+			['th', 'tax-cell', 'Species']
 		]);
-
 		row = $(row)
 		row.attr('id', 'tax-head');
-		row.find('th').attr('class', 'cell tax-cell');
-
 		element.find('#field-taxonomic').append(row);
+
+		// Build taxonomic data rows
 		this.fillTaxonomicRow(element.find('#field-taxonomic #tax-head').parent(), this.data['taxonomic'], null, 0);
 
-		if (element.find('#field-taxonomic').children().length > 1)
+		// Show taxonomic section if there are data rows
+		if (element.find('#field-taxonomic').children().length > 1) {
 			element.find('#section-taxonomic').removeAttr('hidden');
+		}
 	}
 
 
@@ -173,7 +162,7 @@ class PackageCoverage {
 			const m_data = map_data[i];
 
 			// Just a point so draw a marker
-			if (m_data[lat_n] == m_data[lat_s] && m_data[lng_e] == m_data[lng_w]){
+			if (m_data[lat_n] == m_data[lat_s] && m_data[lng_e] == m_data[lng_w]) {
 
 				const marker = new google.maps.Marker({
 					position: {lat: m_data[lat_n], lng: m_data[lng_e]},
@@ -187,7 +176,7 @@ class PackageCoverage {
 				});
 			}
 			else {
-				var rectangle = new google.maps.Rectangle({
+				let rectangle = new google.maps.Rectangle({
 					strokeColor: '#FF0000',
 					strokeOpacity: 0.8,
 					strokeWeight: 2,
@@ -210,10 +199,12 @@ class PackageCoverage {
 				});
 			}
 
+			let latlng = `(${ m_data[lat_n] }, ${ m_data[lng_e] })`;
 			let row = makeTableRow([
-				['td', m_data[0], 9],
-				['td', '(' + m_data[lat_n] + ', ' + m_data[lng_e] + ')', 3, 'text-right'],
+				['td', 'col-9'           , m_data[0]],
+				['td', 'col-3 text-right', latlng],
 			]);
+
 			element.find('#field-geographic').append(row);
 
 			bounds.extend(new google.maps.LatLng(m_data[lat_s], m_data[lng_w]));

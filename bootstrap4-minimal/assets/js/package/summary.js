@@ -49,7 +49,6 @@ class PackageSummary {
 					'Environmental Data Initiative'                                    + '. ' +
 					extractString(json, 'dataset > alternateIdentifier')               + '. ' +
 					'Accessed ' + this.formatCitationDate(new Date())                   + '.';
-		console.log(citation);
 		this.data['citation'] = citation;
 
 		// Parse keywords
@@ -112,9 +111,9 @@ class PackageSummary {
 
 			let row;
 			if (key == "" || key == "none")
-				row = makeTableRow([['td', val, 12]]);
+				row = makeTableRow([['td', 'col-12', val]]);
 			else
-				row = makeTableRow([['th', key, 4], ['td', val, 8]]);
+				row = makeTableRow([['th', 'col-4', key], ['td', 'col-8', val]]);
 
 			element.find('#field-keywords').append(row);
 		}

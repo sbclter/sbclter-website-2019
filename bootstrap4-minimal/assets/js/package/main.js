@@ -72,8 +72,8 @@ function main(url) {
 			// Load template onto actual HTML
 			updateView(
 				makeTableRow([
-					['th', title   , 10,     'title'],
-					['td', subtitle,  2, 'sub-title']
+					['th', 'col-10 title', title],
+					['td', 'col-2 subtitle', subtitle]
 				]),
 				template
 			);
@@ -120,16 +120,16 @@ function extractString(data, path, keys, delim='') {
 		if (Array.isArray(data)) {
 			for (let i in data) {
 				if (i >= data.length - 1)
-					str += extractStringHelper(data[i], keys, ', ');
+					str += extractStringObject(data[i], keys, ', ');
 				else
-					str += extractStringHelper(data[i], keys, ', ') + delim;
+					str += extractStringObject(data[i], keys, ', ') + delim;
 			}
 		}
 		else if (data.__text !== undefined) {
-			str += extractStringHelper(data.__text, keys, delim);
+			str += extractStringObject(data.__text, keys, delim);
 		}
 		else {
-			str += extractStringHelper(data, keys, delim);
+			str += extractStringObject(data, keys, delim);
 		}
 	}
 	catch(err) { console.error(err.stack); }
@@ -138,7 +138,7 @@ function extractString(data, path, keys, delim='') {
 }
 
 // Extract object from JSON data
-function extractStringHelper(data, keys, delim='') {
+function extractStringObject(data, keys, delim='') {
 	if (data === undefined || data === null) return '';
 	if (keys === undefined || keys.length == 0) return data;
 
@@ -173,10 +173,10 @@ function extractStringHelper(data, keys, delim='') {
 }
 
 // Extract list from JSON data
-function extractList(json, path, keys, to_string) {
-	if (json === undefined || json === null) return [];
+function extractList(data, path, keys, to_string) {
+	if (data === undefined || data === null) return [];
 
-	let dataList = json;
+	let dataList = data;
 	let result = [];
 
 	// Safely traverse down the JSON path
@@ -204,7 +204,7 @@ function extractList(json, path, keys, to_string) {
 		for (let i in dataList) {
 
 			for (let j in keys) {
-				let data = dataList[i];
+				let data_item = dataList[i];
 				let keyPath = keys[j].split(' > ');
 
 				try {
@@ -212,19 +212,19 @@ function extractList(json, path, keys, to_string) {
 						let key = keyPath[k];
 
 						if (key == '') {
-							data = data;
+							data_item = data_item;
 						}
-						else if (data[key] === undefined) {
-							data = undefined;
+						else if (data_item[key] === undefined) {
+							data_item = undefined;
 							break;
 						}
 						else {
-							data = data[key];
+							data_item = data_item[key];
 						}
 					}
 
-					if (data !== undefined) {
-						result.push(...extractList(data, '', []));
+					if (data_item !== undefined) {
+						result.push(...extractList(data_item, '', []));
 					}
 				}
 				catch(err) { console.error(err); }
@@ -241,13 +241,13 @@ function extractList(json, path, keys, to_string) {
 }
 
 // Load XML document
-function loadXMLDoc(filename, onReady, onError) {
+function loadXMLDoc(fileUrl, onReady, onError) {
 	var xhttp;
 	if (window.ActiveXObject)
 		xhttp = new ActiveXObject("Msxml2.XMLHTTP");
 	else
 		xhttp = new XMLHttpRequest();
-	xhttp.open("GET", filename, true);
+	xhttp.open("GET", fileUrl, true);
 
 	if (false || !!document.documentMode)
 		try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11
@@ -256,7 +256,7 @@ function loadXMLDoc(filename, onReady, onError) {
 		if (xhttp.readyState === 4 && xhttp.status === 200)
 			onReady(xhttp.responseXML);
 		else
-			onError(`File ${ filename } not found.`);
+			onError(`File ${ fileUrl } not found.`);
 	};
 
 	xhttp.send("");
@@ -327,23 +327,18 @@ function activateLink(url, title) {
 // Create a table row with specified cells.
 function makeTableRow(cells, classes) {
 	/**
-	 * @cells    Table row cells    [[tag, content, size (optional), classes (optional)], ...]
+	 * @cells    Table row cells    [[tag, classes, content], ...]
 	 * @classes  Table row classes  "class1 class2 ..."
 	 */
 
 	let html = '';
 
 	for (let i in cells) {
-		let tag     = cells[i][0] || 'td';
-		let content = cells[i][1];
-		let size    = cells[i][2];
-		let cell_classes = cells[i][3] || '';
+		let tag          = cells[i][0] || 'td';
+		let cell_classes = cells[i][1] || '';
+		let content      = cells[i][2];
 
-		if (size) {
-			size = `col-${ size }`;
-		}
-
-		html += `<${ tag } class="cell ${ size } ${ cell_classes }"> ${ content || '' } </${ tag }>`;
+		html += `<${ tag } class="cell ${ cell_classes }"> ${ content || '' } </${ tag }>\n`;
 	}
 
 	return `
