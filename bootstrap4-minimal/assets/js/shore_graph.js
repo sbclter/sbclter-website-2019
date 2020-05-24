@@ -1,5 +1,7 @@
+// CSV source file
 const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
 
+// Data configs
 var units_data = {
     pressure: 'Decibars',
     temperature: '°C',
@@ -12,22 +14,26 @@ var pressure_data = [];
 var temperature_data = [];
 var chlorophyll_data = [];
 var salinity_data = [];
+var days = 7;
 
-var days = 0;
-
+// Layout configs
 var margin = {top: 10, right: 50, bottom: 50, left: 0};
 var width = $(window).width() * 0.8 - margin.left - margin.right;
 var height = $(window).height() * 0.7 - margin.top - margin.bottom;
 
+// Date format configs
 var parseDate = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
 
+// Domain and range configs
 var x = d3.scaleTime().range([0, width]);
 var y = d3.scaleLinear().range([height, 0]);
 
+// Axis configs
 var xAxis = d3.axisBottom(x).ticks(8);
 var yAxis = d3.axisRight(y).ticks(8);
 var valueline = d3.line().x(d => x(d.x)).y(d => y(d.y));
 
+// Initialize resizable graph
 var svg = d3.select("#shore-graph")
     .classed("svg-container", true)
     .append("svg")
@@ -39,37 +45,70 @@ var svg = d3.select("#shore-graph")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom);
 
-var div = d3.select(".tooltip");
+// Initialize tooltip window
+var tooltip = d3.select(".tooltip");
 
+// Draw data lines
 svg.append("path").attr("id", "pressure-line").attr("class", "line");
 svg.append("path").attr("id", "temperature-line").attr("class", "line");
 svg.append("path").attr("id", "chlorophyll-line").attr("class", "line");
 svg.append("path").attr("id", "salinity-line").attr("class", "line");
 
-svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")");
-svg.append("g").attr("class", "y axis").attr("transform", "translate( " + width + ", 0 )");
+// Draw x-axis labels
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")");
+
+// Draw y-axis labels
+svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate( " + width + ", 0 )");
+
+// Draw vertical grid lines
+svg.append("g")
+    .attr("class", "grid")
+    .attr("transform", "translate(0," + height + ")")
+    .call(
+        d3.axisBottom(x)
+            .ticks(10)
+            .tickSize(-height)
+            .tickFormat('')
+    );
+
+// Draw horizontal grid lines
+svg.append("g")
+    .attr("class", "grid")
+    .call(
+        d3.axisLeft(y)
+            .ticks(10)
+            .tickSize(-width)
+            .tickFormat('')
+    );
 
 
-// svg.append("text").attr("transform", "translate(" + (width / 2) + ", " + (height + margin.top + 20) + ")")
-//     .style("text-anchor", "middle")
-//     .text("Time");
+// Time until the next whole minute
+let network_delay = 60000 - new Date().getTime() % 60000;
 
-// svg.append("text")
-//     .attr("transform", "rotate(-90)")
-//     .attr("y", 0 - margin.left)
-//     .attr("x", 0 - (height / 2))
-//     .attr("dy", "1em")
-//     .style("text-anchor", "middle")
-//     .text("Value");
+// Show graph
+updateCSVData();
 
-svg.append("g").attr("class", "grid").attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x).ticks(10).tickSize(-height).tickFormat(''));
+// Update graph periodically at every whole minute
+setTimeout(() => {
+    updateCSVData();
 
-svg.append("g").attr("class", "grid")
-    .call(d3.axisLeft(y).ticks(10).tickSize(-width).tickFormat(''));
+    interval = setInterval(function() {
+        updateCSVData();
+    }, 1000 * 60);
+
+}, network_delay);
+
+
+// ==================== Functions ======================
 
 
 async function updateCSVData() {
+    $('#current-time').text(formatTime(new Date()));
+
     time_data = [];
     pressure_data = [];
     temperature_data = [];
@@ -89,7 +128,7 @@ async function updateCSVData() {
             salinity_data.push      ({ x: time, y: d.salinity });
         });
 
-        updateData(7);
+        updateData(days);
     });
 }
 
@@ -98,7 +137,6 @@ async function updateData(_days) {
 
     udpateGraphData();
 
-    $('#shore-graph').toggleClass('hidden', false);
     $('#graph-loader').toggleClass('hidden', true);
 }
 
@@ -160,17 +198,17 @@ function udpateGraphData() {
                 .attr("cy", d => y(d.y))
                 .attr("fill", "transparent")
                 .on("mouseover", function(d) {
-                    div.transition()
+                    tooltip.transition()
                         .duration(200)
                         .style("opacity", .9);
-                    div.html(formatTime(d.x) + '<br/>' + parseFloat(d.y).toFixed(2) + ' ' + units_data[topic])
+                    tooltip.html(formatTime(d.x) + '<br/>' + parseFloat(d.y).toFixed(2) + ' ' + units_data[topic])
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY) + "px");
                     $(this).attr("fill", "black");
                     $(this).css("cursor", "pointer");
                 })
                 .on("mouseout", function(d) {
-                    div.transition()
+                    tooltip.transition()
                     .duration(500)
                     .style("opacity", 0);
                     $(this).attr("fill", "transparent");
@@ -208,14 +246,10 @@ function updateLatest() {
 }
 
 async function toggleCelsius(e) {
-
     let turnOn = $(e.target).parent().hasClass('off');
-    console.log($(e.target).parent().hasClass('off'));
-
 
     if (turnOn && units_data.temperature != '°C') {
         units_data.temperature = '°C';
-        // $(`#temperature-btn`).text('Temperature (°C)');
 
         temperature_data.forEach(d => {
             d.y = toCelsius(d.y);
@@ -225,7 +259,6 @@ async function toggleCelsius(e) {
     }
     else if (!turnOn && units_data.temperature != '°F') {
         units_data.temperature = '°F';
-        // $(`#temperature-btn`).text('Temperature (°F)');
 
         temperature_data.forEach(d => {
             d.y = toFahrenheit(d.y);
@@ -242,17 +275,3 @@ function toCelsius(f) {
 function toFahrenheit(c) {
     return c * 9 / 5 + 32;
 }
-
-
-let network_delay = 1000 - new Date().getMilliseconds();
-$('#current-time').text(formatTime(new Date()));
-
-setTimeout(() => {
-    $('#current-time').text(formatTime(new Date()));
-    updateCSVData();
-
-    interval = setInterval(function() {
-        $('#current-time').text(formatTime(new Date()));
-        updateCSVData();
-    }, 1000 * 60);
-}, network_delay);

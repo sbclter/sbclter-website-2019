@@ -13,16 +13,16 @@ page_css:
 
         <div id="collab-section">
             <p>These groups collaborate with SBC LTER on collection of data at Stearns Wharf</p>
-            <li class="">
+            <div>
                 <a href="http://piscoweb.org" onmouseover="PISCO">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
                 <br />
                 <a href=""><img src="/assets/img/pisco_sm2.png"/></a>
-            </li>
-            <li class="">
+            </div>
+            <div>
                 <a href="http://sccoos.org" onmouseover="SCCOOS">Southern California Coastal Ocean Observing System (SCCOOS)</a>
                 <br />
                 <a href=""><img src="/assets/img/sccoos_sm2.jpg"/></a>
-            </li>
+            </div>
         </div>
 
         <div class="full-width">
@@ -32,8 +32,9 @@ page_css:
                 <label id="one-month"    class="btn btn-primary"        onclick="updateData(31)"> <input type="radio" name="options" autocomplete="off"> 1 Month </label>
                 <label id="three-months" class="btn btn-primary"        onclick="updateData(93)"> <input type="radio" name="options" autocomplete="off"> 3 Months </label>
             </div>
-            <div id="shore-graph" class="hidden"></div>
-            <div id="graph-loader" class="loader"></div>
+            <div id="shore-graph">
+                <div id="graph-loader" class="loader"></div>
+            </div>
 
             <p><a href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9411340&legacy=1"> Tide predictions for Santa Barbara from NOAA</a></p>
             <div class="tooltip"></div>
@@ -52,27 +53,27 @@ page_css:
                     </div>
                     <input type="checkbox" data-toggle="toggle" data-on="°F" data-off="°C" data-onstyle="temperature" data-offstyle="temperature" onchange="toggleCelsius(event)">
                 </div>
-                <div id="temperature-latest" class="latest-value btn"></div>
+                <div id="temperature-latest" class="latest-value btn">&nbsp;</div>
             </div>
 
             <div class="row-container line-section">
                 <div id="chlorophyll-btn" class="btn btn-color line-btn" onclick="toggleGraph('chlorophyll')">
                     Chlorophyll (&mu;g / Liter)
                 </div>
-                <div id="chlorophyll-latest" class="latest-value btn"></div>
+                <div id="chlorophyll-latest" class="latest-value btn">&nbsp;</div>
             </div>
 
             <div class="row-container line-section">
                 <div id="pressure-btn" class="btn btn-color line-btn" onclick="toggleGraph('pressure')">
                     Pressure (Decibars)
                 </div>
-                <div id="pressure-latest" class="latest-value btn"></div>
+                <div id="pressure-latest" class="latest-value btn">&nbsp;</div>
             </div>
             <div class="row-container line-section">
                 <div id="salinity-btn" class="btn btn-color line-btn" onclick="toggleGraph('salinity')">
                     Salinity (PSU, ~ppt)
                 </div>
-                <div id="salinity-latest" class="latest-value btn"></div>
+                <div id="salinity-latest" class="latest-value btn">&nbsp;</div>
             </div>
         </div>
     </div>

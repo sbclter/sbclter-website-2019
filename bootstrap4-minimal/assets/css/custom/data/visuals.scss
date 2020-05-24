@@ -128,7 +128,9 @@ div.tooltip {
 }
 
 #graph-loader {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    position: absolute;
+    top: 0;
+    bottom: 35px;
+    left: 0;
+    right: 35px;
 }
-
