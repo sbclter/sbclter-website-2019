@@ -1,3 +1,6 @@
+---
+---
+
 .loading {
 	display: none;
     width: 100px;
@@ -40,7 +43,7 @@
 }
 
 .pagination {
-	margin: 16px 8px 16px 8px;
+	margin: 16px 8px 16px 0px;
 }
 .pagination a {
 	color: black;
@@ -137,4 +140,48 @@ input[type='checkbox'].collapse-toggle {
 .advanced-bottom .btn {
     float: right;
     margin-left: 0.5rem;
+}
+
+
+#dataSearchForm {
+  #definition {
+    border-radius: 20px;
+    background-color: #e5f2ff;
+    padding: 20px;
+  }
+
+  #search-section {
+    padding-right: 3rem;
+
+    @media (orientation: portrait) {
+      padding-right: 0 !important;
+    }
+  }
+
+  .nav .nav-item .nav-link {
+    height: 100%;
+    text-align: center;
+    border: none !important;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    &.active {
+      border-bottom: 2px solid !important;
+      border-color: #003366 !important;
+      color: black;
+    }
+  }
+}
+
+.resultCount, .resultCount p {
+  margin: auto 0;
+}
+
+#sortDiv {
+  margin-left: auto;
+
+  #visibleSort {
+    -webkit-appearance: none;
+    width: unset;
+  }
 }

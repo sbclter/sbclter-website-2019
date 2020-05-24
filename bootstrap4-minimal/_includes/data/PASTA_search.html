@@ -5,43 +5,51 @@
 
 <form id="dataSearchForm" name="dataSearchForm" class="pl-3 row">
 
-	<div class="col-md-8 pl-0 pr-0 pr-5 pb-2">
-		<div class="row mb-1">
-			<input type="hidden" id="sort" name="sort" value="score"/>
-			<div class="col-md-4 pr-2 pl-0 pb-2">
-				<div>
-					<i class="fa fa-search"></i>
-					<label class="group-label">Term</label>
+	<div id="search-section" class="col-md-8 pl-0 pb-2">
+
+		<!-- Tabs -->
+		<ul class="nav nav-tabs nav-justified mb-3" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="tab-basic-search" data-toggle="tab" href="#basic-search"> Basic Search </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="tab-advanced-search" data-toggle="tab" href="#advanced-search"> Advanced Search </a>
+			</li>
+		</ul>
+
+		<!-- Tab contents -->
+		<div class="tab-content">
+
+			<!-- Basic Search -->
+			<div id="basic-search" class="tab-pane active">
+				<div class="row mb-1">
+					<input type="hidden" id="sort" name="sort" value="score"/>
+					<div class="col-md-5 pr-2 pl-0 pb-2">
+						<div>
+							<i class="fa fa-search"></i>
+							<label class="group-label">Term</label>
+						</div>
+						<input class="form-control" name="q" placeholder="Enter search term" type="text"/>
+					</div>
+
+					<div class="col-md-5 pr-2 pl-0 pb-2 id-field-box">
+						<div>
+							<i class="fas fa-bullseye"></i>
+							<label class="group-label" for="identifier">Identifier</label>
+						</div>
+						<input class="form-control" name="id" id="identifier" placeholder="DOI or ID" type="text" title="Find a dataset if you have its DOI or ID"/>
+					</div>
+
+					<div class="col-md-2 pr-0 pl-0 pr-2 pb-2 flex">
+						<input class="btn mb-0" id="simple-submit" type="submit" value="Search"/>
+					</div>
 				</div>
-				<input class="form-control" name="q" placeholder="Enter search term" type="text"/>
+
+				<p class="small">With no search terms, all SBC LTER datasets are listed.</p>
 			</div>
 
-			<div class="col-md-4 pr-2 pl-0 pb-2 id-field-box">
-				<div>
-					<i class="fas fa-bullseye"></i>
-					<label class="group-label" for="identifier">Identifier</label>
-				</div>
-				<input class="form-control" name="id" id="identifier" placeholder="DOI or ID" type="text" title="Find a dataset if you have its DOI or ID"/>
-			</div>
-
-			<div class="col-md-2 pr-0 pl-0 pr-2 pb-2 flex">
-				<input class="btn mb-0" id="simple-submit" type="submit" value="Search"/>
-			</div>
-		</div>
-
-		<p class="small">With no search terms, all SBC LTER datasets are listed.</p>
-
-		<div>
-			<input aria-expanded="true" aria-controls="advancedInputs" class="collapse-toggle" name="expanded" type="checkbox"
-			value="false" id="advancedToggle" role="button"/>
-			<label class="h4 lbl-toggle" for="advancedToggle">
-				Advanced Search
-			</label>
-		</div>
-
-		<div class="collapsible" id="advancedInputs">
-			<div class="" id="advancedInputs">
-				
+			<!-- Advanced Search -->
+			<div id="advanced-search" class="tab-pane">
 				<div class="row">
 					<!-- Creator -->
 					<div class="col-md-4 pl-0 pr-2 pb-2">
@@ -75,13 +83,17 @@
 							</div>
 						</div>
 						<div>
-							<input id="data_year" name="datayear" value="y" type="checkbox" title="Only show results with data collected within the year range">
-							<label class="form-check-label" for="data_year"> Data coverage </label><br/>
-							<input id="publish_year" name="pubyear" value="y" type="checkbox" title="Only show results that were published within the year range"/>
-							<label class="form-check-label" for="publish_year"> Publish year </label>
+							<div class="custom-control custom-checkbox mt-3">
+								<input id="data_year" class="custom-control-input" name="datayear" value="y" type="checkbox" title="Only show results with data collected within the year range">
+								<label class="custom-control-label" for="data_year"> Data coverage </label><br/>
+							</div>
+							<div class="custom-control custom-checkbox mt-2">
+								<input id="publish_year" class="custom-control-input" name="pubyear" value="y" type="checkbox" title="Only show results that were published within the year range"/>
+								<label class="custom-control-label" for="publish_year"> Publish year </label>
+							</div>
 						</div>
 					</div>
-					
+
 					<!-- Taxon -->
 					<div class="col-md-2 hidden">
 						<div class="input-block">
@@ -110,18 +122,20 @@
 					</div>
 				</div>
 
+				<br>
+
 				<!-- submit! -->
 				<div class="advanced-bottom">
 					<input type="button" class="btn" onclick="clearParams()" value="Clear Form">
 					<input type="submit" value="Search" class="btn" id="advanced-submit">
 				</div>
-
 			</div>
+
 		</div>
+
 	</div>
 
-	<div class="col-md-4 pl-0 pr-0">
-				<hr>
+	<div id="definition" class="col-md-4">
 		<p class="small"><strong>Basic Search: </strong>To search anywhere in the dataset, enter a term. Use quotes for an exact phrase ("kelp forest"), and a minus sign to exclude
 		terms (cruise -nitrate), as for other search engines. </p>
 		<p class="small"><strong>Advanced Search: </strong>To filter or refine
@@ -141,28 +155,35 @@
 	<span class="sr-only">Loading...</span>
 </div>
 
-<hr/>
-
 <div class="pl-3">
-	<p>Search results will be written below:</p>
-	<div class="resultCount" id="resultCount"></div>
+
+	<br>
+	<hr>
+
+	<div class="row">
+		<div class="resultCount" id="resultCount"></div>
+		<div style="display:none" id="sortDiv">
+			<div class="col-auto my-1">
+				<label class="mr-sm-2" for="visibleSort">Sort by</label>
+				<select class="custom-select mr-sm-2" data-toggle="dropdown" id="visibleSort" name="sort">
+					<option value="score">Relevance</option>
+					<option value="pubdate">Most recently published</option>
+					<option value="enddate">Most recent data</option>
+					<option value="titles">Title (a-z)</option>
+					<option value="responsibleParties">Creator (a-z)</option>
+				</select>
+			</div>
+		</div>
+	</div>
 
 	<div class="pagination" id="paginationTop"></div>
-	<div style="display:none" id="sortDiv">
-		<label for="visibleSort">Sort by</label>
-		<select name="sort" id="visibleSort">
-			<option value="score">Relevance</option>
-			<option value="pubdate">Most recently published</option>
-			<option value="enddate">Most recent data</option>
-			<option value="titles">Title (a-z)</option>
-			<option value="responsibleParties">Creator (a-z)</option>
-		</select>
-	</div>
 	<div id="searchResults"></div>
 	<div class="pagination" id="paginationBot"></div>
 
+	<div class="row"></div>
+	<hr>
+	<br>
 
-	<hr/>
 	<p class="h3">For Data Managers: </p>
 
 	<div id="csvDownload"></div>
