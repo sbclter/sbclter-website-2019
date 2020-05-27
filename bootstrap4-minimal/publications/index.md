@@ -63,8 +63,10 @@ urlkey: false
 <script src="/assets/js/table.js"></script>
 <script>
 	$(document).ready(function() {
-		$('#bookmark-list .nav-link:first').addClass('active');
-		$('.section:first').addClass('active');
+		const first_section = "Article";
+
+		$(`#tab-${ first_section }`).addClass('active');
+		$(`#section_${ first_section }`).addClass('active');
 
 		$('tbody').each(function() {
 			$(this).find('.row').each(function() {
