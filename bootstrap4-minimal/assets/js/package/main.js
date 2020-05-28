@@ -125,8 +125,14 @@ function extractString(data, path, keys, delim='') {
 					str += extractStringObject(data[i], keys, ', ') + delim;
 			}
 		}
+		else if (data.ulink) {
+			str += activateLink(data.ulink._url, extractStringObject(data.ulink, keys, delim));
+		}
 		else if (data.__text !== undefined) {
 			str += extractStringObject(data.__text, keys, delim);
+		}
+		else if (typeof data === 'object' && !(keys && keys.length > 0)) {
+			str += JSON.stringify(extractStringObject(data, keys, delim));
 		}
 		else {
 			str += extractStringObject(data, keys, delim);
@@ -173,71 +179,83 @@ function extractStringObject(data, keys, delim='') {
 }
 
 // Extract list from JSON data
-function extractList(data, path, keys, to_string) {
+function extractList(data, paths, keys, to_string) {
 	if (data === undefined || data === null) return [];
+	if (!Array.isArray(paths)) paths = [paths];
 
-	let dataList = data;
-	let result = [];
+	let result_all = [];
 
-	// Safely traverse down the JSON path
-	if (path !== undefined && path.length > 0) {
-		let pathList = path.split(' > ');
+	for (let p in paths) {
+		let result = [];
+		let dataList = data;
+		let path = paths[p];
 
-		for (let i in pathList) {
-			let pathNode = pathList[i];
-			if (dataList[pathNode] === undefined)
-				return [];
-			dataList = dataList[pathNode];
-		}
-	}
+		// Safely traverse down the JSON path
+		if (path !== undefined && path.length > 0) {
+			let pathList = path.split(' > ');
 
-	// Always convert to a data list
-	if (!Array.isArray(dataList))
-		dataList = [dataList];
+			for (let i in pathList) {
+				let pathNode = pathList[i];
 
-	// Return data list if no specific key is specified
-	if (keys === undefined || keys.length <= 0) {
-		result = dataList;
-	}
-	else {
-		// Parse specific data in datalist, by keys
-		for (let i in dataList) {
-
-			for (let j in keys) {
-				let data_item = dataList[i];
-				let keyPath = keys[j].split(' > ');
-
-				try {
-					for (let k in keyPath) {
-						let key = keyPath[k];
-
-						if (key == '') {
-							data_item = data_item;
-						}
-						else if (data_item[key] === undefined) {
-							data_item = undefined;
-							break;
-						}
-						else {
-							data_item = data_item[key];
-						}
-					}
-
-					if (data_item !== undefined) {
-						result.push(...extractList(data_item, '', []));
-					}
+				if (dataList[pathNode] === undefined) {
+					dataList = [];
+					break;
 				}
-				catch(err) { console.error(err); }
+
+				dataList = dataList[pathNode];
 			}
 		}
+
+		// Always convert to a data list
+		if (!Array.isArray(dataList))
+			dataList = [dataList];
+
+		// Return data list if no specific key is specified
+		if (keys === undefined || keys.length <= 0) {
+			result = dataList;
+		}
+		else {
+			// Parse specific data in datalist, by keys
+			for (let i in dataList) {
+
+				for (let j in keys) {
+					let data_item = dataList[i];
+					let keyPath = keys[j].split(' > ');
+
+					try {
+						for (let k in keyPath) {
+							let key = keyPath[k];
+
+							if (key == '') {
+								data_item = data_item;
+							}
+							else if (data_item[key] === undefined) {
+								data_item = undefined;
+								break;
+							}
+							else {
+								data_item = data_item[key];
+							}
+						}
+
+						if (data_item !== undefined) {
+							result.push(...extractList(data_item, '', []));
+						}
+					}
+					catch(err) { console.error(err); }
+				}
+			}
+		}
+
+		result_all = result_all.concat(result);
 	}
 
 	// Convert all list items to string
 	if (to_string) {
-		for (let i in result)
-			result[i] = extractString(result[i]);
+		for (let i in result_all)
+			result_all[i] = extractString(result_all[i]);
 	}
-	return result;
+	return result_all;
 }
 
 // Load XML document
@@ -320,6 +338,12 @@ function parseName(json, format) {
 
 // Turns text to HTML link
 function activateLink(url, title) {
+	if (url['_url']) {
+		if (!title)
+			title = url['__text'];
+		url = url['_url'];
+	}
+
 	if (title === undefined) title = url;
 	return `<a href='${ url }'>${ title }</a>`;
 }

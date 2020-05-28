@@ -55,7 +55,7 @@ class PackageCoverage {
 		let content = null;
 
 		// Build temporal converage data
-		content = this.data['temporal']['start'] + ' to ' + this.data['temporal']['end'];
+		content = extractString(this.data, 'temporal', ['start', 'end'], ' to ');
 		element.find('#field-temporal').text(content);
 
 		// Build map from template to actual popup window

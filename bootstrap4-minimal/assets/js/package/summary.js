@@ -8,12 +8,27 @@ class PackageSummary {
 			rights: []
 		};
 
+		let abstract = extractList(json, ['dataset > abstract', 'dataset > abstract > section']);
+		let abstract_data = [];
+
+		for (let i in abstract) {
+			let abstract_titles = extractList(abstract[i], ['section > title', 'title']);
+			let abstract_paragraphs = extractList(abstract[i], ['section > para', 'para']);
+
+			if (abstract_titles.length > 0 || abstract_paragraphs.length > 0) {
+				abstract_data.push({
+					title:     abstract_titles,
+					paragraph: abstract_paragraphs
+				});
+			}
+		}
+
 		// Parse general
 		this.data['general'] = {
 			name:             extractString(json, 'dataset > shortName'),
 			id:               extractString(json, '_packageId'),
 			alternate_id:     extractList(json, 'dataset > alternateIdentifier'),
-			abstract:         extractList(json, 'dataset > abstract', ['para', 'section > para']),
+			abstract:         abstract_data,
 			publication_date: extractString(json, 'dataset > pubDate'),
 			language:         extractString(json, 'dataset > language'),
 			time_range: {
@@ -85,7 +100,18 @@ class PackageSummary {
 		element.find('#field-id-alt').html(content);
 
 		// fill abstract field
-		content = this.data['general']['abstract'].join('<br><br>');
+		content = '';
+
+		let abstract_data = this.data['general']['abstract'];
+		for (let i in abstract_data) {
+			let abstract_title = abstract_data[i].title.join('<br><br>');
+
+			if (abstract_title != '') {
+				content += `<strong>${ abstract_title }</strong><br>`;
+			}
+			content += extractString(abstract_data[i].paragraph, '', [''], '<br><br>') + '<br><br>';
+		}
+
 		element.find('#field-abstract').html(content);
 
 		// fill publication date field
@@ -97,7 +123,7 @@ class PackageSummary {
 		element.find('#field-language').html(content);
 
 		// fill time period field
-		content = this.data['general']['time_range']['start'] + ' to ' + this.data['general']['time_range']['end'];
+		content = extractString(this.data, 'general > time_range', ['start', 'end'], ' to ');
 		element.find('#field-daterange').html(content);
 
 		// fill citation field

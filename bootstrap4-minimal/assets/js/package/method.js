@@ -14,9 +14,10 @@ class PackageMethod {
 				protocols: []
 			};
 
-			let descriptions = extractList(methodList[i], 'description > section');
-			if (descriptions.length == 0)
-				descriptions = extractList(methodList[i], 'description');
+			// Extract description list starting from most nested possible location.
+			let descriptions = extractList(methodList[i], 'description > section > para > itemizedlist > listitem');
+			if (descriptions.length == 0) descriptions = extractList(methodList[i], 'description > section');
+			if (descriptions.length == 0) descriptions = extractList(methodList[i], 'description');
 
 			let protocols = extractList(methodList[i], 'protocol');
 
@@ -73,8 +74,7 @@ class PackageMethod {
 
 				description_html.push(`
 					<div style="font-weight: normal">
-						<strong>${ title }</strong>
-						<br>
+						<strong>${ title ? title + '<br><br>' : '' }</strong>
 						${ paragraphs_html.join('<br><br>') }
 						<br><br>
 					</div>
