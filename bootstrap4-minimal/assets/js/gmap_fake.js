@@ -51,11 +51,10 @@ function initMap() {
 			google.maps.event.addListener(marker, 'click', function() {
 				infowindow.setContent(`
 					<h4> ${ data.title } </h4>
-					<strong>Description: </strong> ${ data.description } <br>
+					<strong>Description: </strong> ${ data.description } <br><br>
 					<strong>Habitat:     </strong> ${ data.habitat }     <br>
-					<strong>Sampling:    </strong> ${ data.sampling }    <br>
 					<strong>Lat:         </strong> ${ data.lat }         <br>
-					<strong>Lng:         </strong> ${ data.lng }         <br>
+					<strong>Lng:         </strong> ${ data.lng }
 				`);
 				infowindow.open(map, marker);
 			});
