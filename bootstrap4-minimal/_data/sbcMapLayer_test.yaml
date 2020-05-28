@@ -1,2314 +1,1684 @@
 - id: reefAnnPopSurvey
   label: Abundance of >200 species of algae, invertebrates and fish
+  frequency: Annually
+  initiated: '2000'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AHND
-      description: Arroyo Hondo Reef is located on the Santa Barbara Channel near
-        the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.
-      lat: '34.471817'
-      lng: '-120.1426165'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: BULL
-      description: 'Builto: Bulito has three permanent transect: Transect I, III,
-        VI. Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real
-        road and Hollister Ranch road crossing section.'
-      lat: '34.45850533'
-      lng: '-120.33349'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: GOLB
-      description: Goleta Bay is located on the Santa Barbara Channel east of Goleta
-        Pier. Depth range is -4.2 to -5 meters.
-      lat: '34.4137165'
-      lng: '-119.8721'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: SCDI
-      description: Santa Cruz Island, Diablo
-      lat: '34.05865'
-      lng: '-119.75763'
-    - title: SCTW
-      description: Santa Cruz Island, Twin Harbor West
-      lat: '34.0445'
-      lng: '-119.7155'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AHND
-      description: Arroyo Hondo Reef is located on the Santa Barbara Channel near
-        the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.
-      lat: '34.471817'
-      lng: '-120.1426165'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: BULL
-      description: 'Builto: Bulito has three permanent transect: Transect I, III,
-        VI. Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real
-        road and Hollister Ranch road crossing section.'
-      lat: '34.45850533'
-      lng: '-120.33349'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: GOLB
-      description: Goleta Bay is located on the Santa Barbara Channel east of Goleta
-        Pier. Depth range is -4.2 to -5 meters.
-      lat: '34.4137165'
-      lng: '-119.8721'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: SCDI
-      description: Santa Cruz Island, Diablo
-      lat: '34.05865'
-      lng: '-119.75763'
-    - title: SCTW
-      description: Santa Cruz Island, Twin Harbor West
-      lat: '34.0445'
-      lng: '-119.7155'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AHND
-      description: Arroyo Hondo Reef is located on the Santa Barbara Channel near
-        the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.
-      lat: '34.471817'
-      lng: '-120.1426165'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: BULL
-      description: 'Builto: Bulito has three permanent transect: Transect I, III,
-        VI. Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real
-        road and Hollister Ranch road crossing section.'
-      lat: '34.45850533'
-      lng: '-120.33349'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: GOLB
-      description: Goleta Bay is located on the Santa Barbara Channel east of Goleta
-        Pier. Depth range is -4.2 to -5 meters.
-      lat: '34.4137165'
-      lng: '-119.8721'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: SCDI
-      description: Santa Cruz Island, Diablo
-      lat: '34.05865'
-      lng: '-119.75763'
-    - title: SCTW
-      description: Santa Cruz Island, Twin Harbor West
-      lat: '34.0445'
-      lng: '-119.7155'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AHND
-      description: Arroyo Hondo Reef is located on the Santa Barbara Channel near
-        the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.
-      lat: '34.471817'
-      lng: '-120.1426165'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: BULL
-      description: 'Builto: Bulito has three permanent transect: Transect I, III,
-        VI. Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real
-        road and Hollister Ranch road crossing section.'
-      lat: '34.45850533'
-      lng: '-120.33349'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: GOLB
-      description: Goleta Bay is located on the Santa Barbara Channel east of Goleta
-        Pier. Depth range is -4.2 to -5 meters.
-      lat: '34.4137165'
-      lng: '-119.8721'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: SCDI
-      description: Santa Cruz Island, Diablo
-      lat: '34.05865'
-      lng: '-119.75763'
-    - title: SCTW
-      description: Santa Cruz Island, Twin Harbor West
-      lat: '34.0445'
-      lng: '-119.7155'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AHND
-      description: Arroyo Hondo Reef is located on the Santa Barbara Channel near
-        the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.
-      lat: '34.471817'
-      lng: '-120.1426165'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: BULL
-      description: 'Builto: Bulito has three permanent transect: Transect I, III,
-        VI. Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real
-        road and Hollister Ranch road crossing section.'
-      lat: '34.45850533'
-      lng: '-120.33349'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: GOLB
-      description: Goleta Bay is located on the Santa Barbara Channel east of Goleta
-        Pier. Depth range is -4.2 to -5 meters.
-      lat: '34.4137165'
-      lng: '-119.8721'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: SCDI
-      description: Santa Cruz Island, Diablo
-      lat: '34.05865'
-      lng: '-119.75763'
-    - title: SCTW
-      description: Santa Cruz Island, Twin Harbor West
-      lat: '34.0445'
-      lng: '-119.7155'
-    - title: ABUR1
-      description: "Arroyo Burro Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 305
-        (degree). Transect begins directly offshore of the Arroyo Burro creek mouth.
-        Bedrock and sand substrate has little relief (0-0.5 m). Depth approximately
-        24-27â\x80\x99. This transect often becomes inundated with sand."
-      lat: '34.400117'
-      lng: '-119.744383'
-    - title: ABUR2
-      description: 'Arroyo Burro Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 320
-        (degree). Transect consists of low bedrock ridges (0-0.5m) with areas of sand.
-        The first half of the transect is in deeper sand and the second half runs
-        along a ridge covered in shallow sand. Depth is approximately 22''.'
-      lat: '34.400433'
-      lng: '-119.7448'
-    - title: AHND1
-      description: "Arroyo Hondo Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 105
-        (degree). From 2003-present this transect has been ~0.5m deep sand, with no
-        exposed reef, but Diopatra beds with epiphytic algae are present . Depth slopes
-        from approximately 16â\x80\x99 at the 0 m bolt to 24â\x80\x99 at the 40 m
-        bolt."
-      lat: '34.471867'
-      lng: '-120.144383'
-    - title: AHND2
-      description: 'Arroyo Hondo Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 85
-        (degree). This transect is in a boulder field with some relief (0-0.75m) and
-        patchy sand with Diopatra beds. Depth is approximately 25''.'
-      lat: '34.471767'
-      lng: '-120.14085'
-    - title: AQUE1
-      description: 'Arroyo Quemado Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect begins west of the river mouth, on the backside of one
-        of the larger ridges (1m). Bedrock substrate with some moderate relief (0-1.5
-        m). Depth is approximately 24''.'
-      lat: '34.468783'
-      lng: '-120.121417'
-    - title: AQUE2
-      description: 'Arroyo Quemado Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect transverses slightly southeast across the prominent east/west
-        ridges. Bedrock substrate with some moderate relief (0-1.5 m). Depth is approximately
-        24''.'
-      lat: '34.468733'
-      lng: '-120.120783'
-    - title: AQUE3
-      description: 'Arroyo Quemado Transect 3: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 113
-        (degree). Transect begins at the western edge of the hard substrate, nearly
-        directly offshore of the river mouth (~200 m). Silt covered bedrock and small
-        boulder substrate with little relief (0-0.5 m), some moderate sized areas
-        of deep sand present along with Pterygophora and Diopatra beds. Depth is approximately
-        30''.'
-      lat: '34.467933'
-      lng: '-120.119283'
-    - title: AQUE4
-      description: 'Arroyo Quemado Transect 4: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect begins east of the river mouth. Bedrock with several large
-        boulder outcrops creating some significant relief (0-2.5 m) along transect.
-        Some moderate sized areas of sand (1-5 m). Depth is approximately 23 feet.'
-      lat: '34.467467'
-      lng: '-120.117183'
-    - title: AQUE5
-      description: 'Arroyo Quemado Transect 5: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 95
-        (degree). Bedrock substrate, some moderate relief (0-1.5 m), one small overhanging
-        ridge with sand channels and Diopatra beds. Depth is approximately 33 feet.'
-      lat: '34.46685'
-      lng: '-120.11735'
-    - title: AQUE6
-      description: 'Arroyo Quemado Transect 6: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect begins slightly west of the river mouth. Sand (1-3cm deep)
-        and bedrock substrate with low relief (0-0.5m). Depth is approximately 33
-        feet.'
-      lat: '34.46755'
-      lng: '-120.12085'
-    - title: BULL1
-      description: 'Bulito Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Transect is closest to the river mouth, bedrock and shale substrate
-        with some slight relief (0-1 m) and thick understory algal cover.'
-      lat: '34.458883'
-      lng: '-120.333433'
-    - title: BULL3
-      description: 'Bulito Transect 3: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 85
-        (degree). Bedrock and shale substrate with some sandy areas and slight relief
-        (0-1 m). Thick Pterygophora beds typically present. Depth is approximately
-        20 feet.'
-      lat: '34.458483'
-      lng: '-120.333483'
-    - title: BULL6
-      description: 'Bulito Transect 6: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock and shale substrate with some sandy areas and slight relief
-        (0-1m). Depth is approximately 24 feet.'
-      lat: '34.45815'
-      lng: '-120.33355'
-    - title: CARP1
-      description: 'Carpinteria Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 70
-        (degree). Transect runs parallel along the significant NE-running reef ridge
-        and has significant relief (up to 3 m) on the northern side. Bedrock substrate
-        with some slight relief (0-1 m). Depth is approximately 8-12 feet.'
-      lat: '34.392417'
-      lng: '-119.5438'
-    - title: CARP2
-      description: 'Carpinteria Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 60
-        (degree). Generally a mudstone substrate with little relief (0-0.5 m). Depth
-        is approximately 10-13 feet.'
-      lat: '34.392767'
-      lng: '-119.540367'
-    - title: CARP3
-      description: 'Carpinteria Transect 3: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 85
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m), boulders,
-        and some small areas (1-3 m) of silt and sand. Depth is approximately 24 feet.'
-      lat: '34.391517'
-      lng: '-119.544'
-    - title: CARP4
-      description: 'Carpinteria Transect 4: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m) and some small
-        areas (1-3 m) of silty sand. 0 bolt begins at the crevice between two ridges.
-        Depth is approximately 22 feet.'
-      lat: '34.391717'
-      lng: '-119.54165'
-    - title: CARP5
-      description: 'Carpinteria Transect 5: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Mudstone ridges (1-2m) with areas of shell debris, cobble, and small
-        boulders. Depth is approximately 20 feet.'
-      lat: '34.391817'
-      lng: '-119.539317'
-    - title: CARP6
-      description: 'Carpinteria Transect 6: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m) and some small
-        areas (1-3 m) of silty sand. Depth is approximately 27 feet.'
-      lat: '34.391117'
-      lng: '-119.544133'
-    - title: CARP7
-      description: 'Carpinteria Transect 7: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m) and some small
-        areas (1-3 m) of silty sand and cobble channels. Depth is approximately 27
-        feet.'
-      lat: '34.391233'
-      lng: '-119.541833'
-    - title: CARP8
-      description: 'Carpinteria Transect 8: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Mudstone substrate with some moderate relief (0-1.5 m) and some
-        small areas of shell debris, cobble, and small boulders. Depth is approximately
-        27 feet.'
-      lat: '34.3914'
-      lng: '-119.539533'
-    - title: GOLB1
-      description: 'Goleta Bay Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect begins at western edge of existing kelp bed. Mudstone and
-        sand substrate with several large isolated boulders creating some moderate
-        relief (0-1.5 m). Depth is approximately 18 feet.'
-      lat: '34.413783'
-      lng: '-119.8224'
-    - title: GOLB2
-      description: 'Goleta Bay Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect has mudstone and sand substrate with several large isolated
-        boulders creating some moderate relief (0-1.5 m). Depth is approximately 18
-        feet.'
-      lat: '34.41365'
-      lng: '-119.8218'
-    - title: IVEE1
-      description: 'Isla Vista Reef Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect begins at western edge of existing eastern kelp bed near
-        Depressions beach; a mudstone and small boulder substrate with some sand channels
-        and slight relief (0-1 m). Depth is approximately 30 feet.'
-      lat: '34.402833'
-      lng: '-119.857867'
-    - title: IVEE2
-      description: 'IV Reef Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 85
-        (degree). Transect has a mudstone and sand substrate with several large isolated
-        boulders creating some moderate relief (0-1.5 m). Depth is approximately 30
-        feet.'
-      lat: '34.402733'
-      lng: '-119.857233'
-    - title: MOHK1
-      description: 'Mohawk Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect has a bedrock substrate with some moderate relief (0-1.5
-        m) and some small (1-2 m) areas of silty sand / shell hash. Transect follows
-        a reef ledge that is ~1-2m off the sand below. Depth is approximately 24 feet.'
-      lat: '34.394333'
-      lng: '-119.73'
-    - title: MOHK2
-      description: 'Mohawk Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m) and some small
-        (1-2 m) areas of silty sand. Transect follows a small reef ledge that is ~1m
-        off the sand below. Depth is approximately 24 feet.'
-      lat: '34.39415'
-      lng: '-119.729367'
-    - title: NAPL1
-      description: 'Naples Transect 1: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 60
-        (degree). Transect begins at extreme western edge of Naples main reef. Bedrock
-        substrate with some significant relief (0-2 m). Depth is approximately 25
-        feet.'
-      lat: '34.422333'
-      lng: '-119.952933'
-    - title: NAPL2
-      description: 'Naples Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some significant relief (0-2 m). Depth is
-        approximately 25 feet.'
-      lat: '34.422467'
-      lng: '-119.952317'
-    - title: NAPL3
-      description: 'Naples Transect 3: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some significant relief (0-2 m). Depth approximately
-        25''.'
-      lat: '34.422367'
-      lng: '-119.9517'
-    - title: NAPL4
-      description: "Naples Transect 4: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). â\x80\x9CDeep Cobble.â\x80\x9D Located approximately 7 m south of
-        the ridges that define the main reef. Depth is approximately 35 feet."
-      lat: '34.4223'
-      lng: '-119.9519'
-    - title: NAPL5
-      description: "Naples Transect 5: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 100
-        (degree). Transect begins at the apex of the â\x80\x9Chorseshoeâ\x80\x9D on
-        the first flat bench east of deep cobble. Bedrock substrate with some moderate
-        relief (0-1.5 m). Depth is approximately 35 feet."
-      lat: '34.421883'
-      lng: '-119.951283'
-    - title: NAPL6
-      description: 'Naples Transect 6: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 105
-        (degree). Bedrock substrate with some significant relief (0-2 m). Depth increases
-        from approximately 33 to 45 feet along transect.'
-      lat: '34.42195'
-      lng: '-119.950633'
-    - title: NAPL7
-      description: "Naples Transect 7: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect begins at the western end of â\x80\x9CThree fingersâ\x80\x9D
-        where the reef begins to slope from east to west into deeper water. Bedrock
-        substrate with some significant relief (0-2 m). Depth decreases from approximately
-        36 to 28 feet along transect."
-      lat: '34.4219'
-      lng: '-119.951833'
-    - title: NAPL8
-      description: 'Naples Transect 8: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 100
-        (degree). Located on a prominent ridge (3 m relief). Bedrock substrate with
-        some significant relief (0-2 m). Depth increases from approximately 33 to
-        45 feet along the transect.'
-      lat: '34.421833'
-      lng: '-119.950317'
-    - title: SCDI2
-      description: 'Santa Cruz Island Diablo Transect 2: a line starting at the lat-lon
-        coordinates with a length of 40 (meter), and width of 2 (meter) along a heading
-        of 305 (degree). Transect runs along rocky reef with patches of sand/shell
-        debris and several large boulders. Depth is approximately 30 feet.'
-      lat: '34.058633'
-      lng: '-119.757633'
-    - title: SCDI3
-      description: 'Santa Cruz Island Diablo Transect 3: a line starting at the lat-lon
-        coordinates with a length of 40 (meter), and width of 2 (meter) along a heading
-        of 335 (degree). Transect runs along rocky reef with patches of sand/shell
-        debris and several large boulders and ledges. Depth varies from approximately
-        43 to 50 feet.'
-      lat: '34.058667'
-      lng: '-119.757633'
-    - title: SCTW2
-      description: 'Santa Cruz Island Twin Harbors West Transect 2: a line starting
-        at the lat-lon coordinates with a length of 40 (meter), and width of 2 (meter)
-        along a heading of 330 (degree). Transect 2 lies along rocky reef with large
-        boulders and patches of sand/shell debris. Depth is approximately 20''.'
-      lat: '34.0444'
-      lng: '-119.715133'
-    - title: SCTW3
-      description: 'Santa Cruz Island Twin Harbors West Transect 3: a line starting
-        at the lat-lon coordinates with a length of 40 (meter), and width of 2 (meter)
-        along a heading of 290 (degree). Transect 3 lies along rocky reef with large
-        boulders and patches of sand/shell debris. Depth is approximately 30 feet.
-        At the end of the transect there is a pinnacle about 3-4m tall.'
-      lat: '34.044467'
-      lng: '-119.715133'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AHND
-      description: Arroyo Hondo Reef is located on the Santa Barbara Channel near
-        the east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.
-      lat: '34.471817'
-      lng: '-120.1426165'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: BULL
-      description: 'Builto: Bulito has three permanent transect: Transect I, III,
-        VI. Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real
-        road and Hollister Ranch road crossing section.'
-      lat: '34.45850533'
-      lng: '-120.33349'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: GOLB
-      description: Goleta Bay is located on the Santa Barbara Channel east of Goleta
-        Pier. Depth range is -4.2 to -5 meters.
-      lat: '34.4137165'
-      lng: '-119.8721'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: SCDI
-      description: Santa Cruz Island, Diablo
-      lat: '34.05865'
-      lng: '-119.75763'
-    - title: SCTW
-      description: Santa Cruz Island, Twin Harbor West
-      lat: '34.0445'
-      lng: '-119.7155'
+  - title: ABUR
+    description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n  near
+      the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to 7 meters."
+    lat: '34.400275'
+    lng: '-119.7445915'
+  - title: AHND
+    description: Arroyo Hondo Reef is located on the Santa Barbara Channel near the
+      east end of Gaviota State Park, CA. Depth ranges from -4.3m to -6.6 meters.
+    lat: '34.471817'
+    lng: '-120.1426165'
+  - title: AQUE
+    description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4 m
+      to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
+    lat: '34.46774988'
+    lng: '-120.11905'
+  - title: BULL
+    description: 'Builto: Bulito has three permanent transect: Transect I, III, VI.
+      Depth Range from -5.5 to -7.3. Reference on land is close to Ranch Real road
+      and Hollister Ranch road crossing section.'
+    lat: '34.45850533'
+    lng: '-120.33349'
+  - title: CARP
+    description: Carpinteria Reef is located on the Santa Barbara Channel offshore
+      of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
+    lat: '34.3916319'
+    lng: '-119.5416933'
+  - title: GOLB
+    description: Goleta Bay is located on the Santa Barbara Channel east of Goleta
+      Pier. Depth range is -4.2 to -5 meters.
+    lat: '34.4137165'
+    lng: '-119.8721'
+  - title: IVEE
+    description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
+      the University of California Santa Barbara, CA. Depth range is from -8.2 to
+      -8.8 meters.
+    lat: '34.402783'
+    lng: '-119.85755'
+  - title: MOHK
+    description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
+      on land is Mohawk Rd / Edgewater Way.'
+    lat: '34.3940708'
+    lng: '-119.72957'
+  - title: NAPL
+    description: Naples Reef is located on the Santa Barbara Channel near the community
+      of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
+      -5.9 to -13.4 meters.
+    lat: '34.4221216'
+    lng: '-119.95154'
+  - title: SCDI
+    description: Santa Cruz Island, Diablo
+    lat: '34.05865'
+    lng: '-119.75763'
+  - title: SCTW
+    description: Santa Cruz Island, Twin Harbor West
+    lat: '34.0445'
+    lng: '-119.7155'
+  - title: ABUR1
+    description: "Arroyo Burro Transect 1: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 305 (degree).
+      Transect begins directly offshore of the Arroyo Burro creek mouth. Bedrock and
+      sand substrate has little relief (0-0.5 m). Depth approximately 24-27â\x80\x99.
+      This transect often becomes inundated with sand."
+    lat: '34.400117'
+    lng: '-119.744383'
+  - title: ABUR2
+    description: 'Arroyo Burro Transect 2: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 320 (degree).
+      Transect consists of low bedrock ridges (0-0.5m) with areas of sand. The first
+      half of the transect is in deeper sand and the second half runs along a ridge
+      covered in shallow sand. Depth is approximately 22''.'
+    lat: '34.400433'
+    lng: '-119.7448'
+  - title: AHND1
+    description: "Arroyo Hondo Transect 1: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 105 (degree).
+      From 2003-present this transect has been ~0.5m deep sand, with no exposed reef,
+      but Diopatra beds with epiphytic algae are present . Depth slopes from approximately
+      16â\x80\x99 at the 0 m bolt to 24â\x80\x99 at the 40 m bolt."
+    lat: '34.471867'
+    lng: '-120.144383'
+  - title: AHND2
+    description: 'Arroyo Hondo Transect 2: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 85 (degree).
+      This transect is in a boulder field with some relief (0-0.75m) and patchy sand
+      with Diopatra beds. Depth is approximately 25''.'
+    lat: '34.471767'
+    lng: '-120.14085'
+  - title: AQUE1
+    description: 'Arroyo Quemado Transect 1: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect begins west of the river mouth, on the backside of one of the larger
+      ridges (1m). Bedrock substrate with some moderate relief (0-1.5 m). Depth is
+      approximately 24''.'
+    lat: '34.468783'
+    lng: '-120.121417'
+  - title: AQUE2
+    description: 'Arroyo Quemado Transect 2: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect transverses slightly southeast across the prominent east/west ridges.
+      Bedrock substrate with some moderate relief (0-1.5 m). Depth is approximately
+      24''.'
+    lat: '34.468733'
+    lng: '-120.120783'
+  - title: AQUE3
+    description: 'Arroyo Quemado Transect 3: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 113 (degree).
+      Transect begins at the western edge of the hard substrate, nearly directly offshore
+      of the river mouth (~200 m). Silt covered bedrock and small boulder substrate
+      with little relief (0-0.5 m), some moderate sized areas of deep sand present
+      along with Pterygophora and Diopatra beds. Depth is approximately 30''.'
+    lat: '34.467933'
+    lng: '-120.119283'
+  - title: AQUE4
+    description: 'Arroyo Quemado Transect 4: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect begins east of the river mouth. Bedrock with several large boulder
+      outcrops creating some significant relief (0-2.5 m) along transect. Some moderate
+      sized areas of sand (1-5 m). Depth is approximately 23 feet.'
+    lat: '34.467467'
+    lng: '-120.117183'
+  - title: AQUE5
+    description: 'Arroyo Quemado Transect 5: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 95 (degree).
+      Bedrock substrate, some moderate relief (0-1.5 m), one small overhanging ridge
+      with sand channels and Diopatra beds. Depth is approximately 33 feet.'
+    lat: '34.46685'
+    lng: '-120.11735'
+  - title: AQUE6
+    description: 'Arroyo Quemado Transect 6: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect begins slightly west of the river mouth. Sand (1-3cm deep) and bedrock
+      substrate with low relief (0-0.5m). Depth is approximately 33 feet.'
+    lat: '34.46755'
+    lng: '-120.12085'
+  - title: BULL1
+    description: 'Bulito Transect 1: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Transect is closest to the river mouth, bedrock and shale substrate with some
+      slight relief (0-1 m) and thick understory algal cover.'
+    lat: '34.458883'
+    lng: '-120.333433'
+  - title: BULL3
+    description: 'Bulito Transect 3: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 85 (degree).
+      Bedrock and shale substrate with some sandy areas and slight relief (0-1 m).
+      Thick Pterygophora beds typically present. Depth is approximately 20 feet.'
+    lat: '34.458483'
+    lng: '-120.333483'
+  - title: BULL6
+    description: 'Bulito Transect 6: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock and shale substrate with some sandy areas and slight relief (0-1m).
+      Depth is approximately 24 feet.'
+    lat: '34.45815'
+    lng: '-120.33355'
+  - title: CARP1
+    description: 'Carpinteria Transect 1: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 70 (degree).
+      Transect runs parallel along the significant NE-running reef ridge and has significant
+      relief (up to 3 m) on the northern side. Bedrock substrate with some slight
+      relief (0-1 m). Depth is approximately 8-12 feet.'
+    lat: '34.392417'
+    lng: '-119.5438'
+  - title: CARP2
+    description: 'Carpinteria Transect 2: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 60 (degree).
+      Generally a mudstone substrate with little relief (0-0.5 m). Depth is approximately
+      10-13 feet.'
+    lat: '34.392767'
+    lng: '-119.540367'
+  - title: CARP3
+    description: 'Carpinteria Transect 3: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 85 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m), boulders, and some small
+      areas (1-3 m) of silt and sand. Depth is approximately 24 feet.'
+    lat: '34.391517'
+    lng: '-119.544'
+  - title: CARP4
+    description: 'Carpinteria Transect 4: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m) and some small areas (1-3
+      m) of silty sand. 0 bolt begins at the crevice between two ridges. Depth is
+      approximately 22 feet.'
+    lat: '34.391717'
+    lng: '-119.54165'
+  - title: CARP5
+    description: 'Carpinteria Transect 5: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Mudstone ridges (1-2m) with areas of shell debris, cobble, and small boulders.
+      Depth is approximately 20 feet.'
+    lat: '34.391817'
+    lng: '-119.539317'
+  - title: CARP6
+    description: 'Carpinteria Transect 6: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m) and some small areas (1-3
+      m) of silty sand. Depth is approximately 27 feet.'
+    lat: '34.391117'
+    lng: '-119.544133'
+  - title: CARP7
+    description: 'Carpinteria Transect 7: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m) and some small areas (1-3
+      m) of silty sand and cobble channels. Depth is approximately 27 feet.'
+    lat: '34.391233'
+    lng: '-119.541833'
+  - title: CARP8
+    description: 'Carpinteria Transect 8: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Mudstone substrate with some moderate relief (0-1.5 m) and some small areas
+      of shell debris, cobble, and small boulders. Depth is approximately 27 feet.'
+    lat: '34.3914'
+    lng: '-119.539533'
+  - title: GOLB1
+    description: 'Goleta Bay Transect 1: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect begins at western edge of existing kelp bed. Mudstone and sand substrate
+      with several large isolated boulders creating some moderate relief (0-1.5 m).
+      Depth is approximately 18 feet.'
+    lat: '34.413783'
+    lng: '-119.8224'
+  - title: GOLB2
+    description: 'Goleta Bay Transect 2: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect has mudstone and sand substrate with several large isolated boulders
+      creating some moderate relief (0-1.5 m). Depth is approximately 18 feet.'
+    lat: '34.41365'
+    lng: '-119.8218'
+  - title: IVEE1
+    description: 'Isla Vista Reef Transect 1: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect begins at western edge of existing eastern kelp bed near Depressions
+      beach; a mudstone and small boulder substrate with some sand channels and slight
+      relief (0-1 m). Depth is approximately 30 feet.'
+    lat: '34.402833'
+    lng: '-119.857867'
+  - title: IVEE2
+    description: 'IV Reef Transect 2: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 85 (degree).
+      Transect has a mudstone and sand substrate with several large isolated boulders
+      creating some moderate relief (0-1.5 m). Depth is approximately 30 feet.'
+    lat: '34.402733'
+    lng: '-119.857233'
+  - title: MOHK1
+    description: 'Mohawk Transect 1: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect has a bedrock substrate with some moderate relief (0-1.5 m) and some
+      small (1-2 m) areas of silty sand / shell hash. Transect follows a reef ledge
+      that is ~1-2m off the sand below. Depth is approximately 24 feet.'
+    lat: '34.394333'
+    lng: '-119.73'
+  - title: MOHK2
+    description: 'Mohawk Transect 2: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m) and some small (1-2 m)
+      areas of silty sand. Transect follows a small reef ledge that is ~1m off the
+      sand below. Depth is approximately 24 feet.'
+    lat: '34.39415'
+    lng: '-119.729367'
+  - title: NAPL1
+    description: 'Naples Transect 1: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 60 (degree).
+      Transect begins at extreme western edge of Naples main reef. Bedrock substrate
+      with some significant relief (0-2 m). Depth is approximately 25 feet.'
+    lat: '34.422333'
+    lng: '-119.952933'
+  - title: NAPL2
+    description: 'Naples Transect 2: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some significant relief (0-2 m). Depth is approximately
+      25 feet.'
+    lat: '34.422467'
+    lng: '-119.952317'
+  - title: NAPL3
+    description: 'Naples Transect 3: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some significant relief (0-2 m). Depth approximately
+      25''.'
+    lat: '34.422367'
+    lng: '-119.9517'
+  - title: NAPL4
+    description: "Naples Transect 4: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      â\x80\x9CDeep Cobble.â\x80\x9D Located approximately 7 m south of the ridges
+      that define the main reef. Depth is approximately 35 feet."
+    lat: '34.4223'
+    lng: '-119.9519'
+  - title: NAPL5
+    description: "Naples Transect 5: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 100 (degree).
+      Transect begins at the apex of the â\x80\x9Chorseshoeâ\x80\x9D on the first
+      flat bench east of deep cobble. Bedrock substrate with some moderate relief
+      (0-1.5 m). Depth is approximately 35 feet."
+    lat: '34.421883'
+    lng: '-119.951283'
+  - title: NAPL6
+    description: 'Naples Transect 6: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 105 (degree).
+      Bedrock substrate with some significant relief (0-2 m). Depth increases from
+      approximately 33 to 45 feet along transect.'
+    lat: '34.42195'
+    lng: '-119.950633'
+  - title: NAPL7
+    description: "Naples Transect 7: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect begins at the western end of â\x80\x9CThree fingersâ\x80\x9D where
+      the reef begins to slope from east to west into deeper water. Bedrock substrate
+      with some significant relief (0-2 m). Depth decreases from approximately 36
+      to 28 feet along transect."
+    lat: '34.4219'
+    lng: '-119.951833'
+  - title: NAPL8
+    description: 'Naples Transect 8: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 100 (degree).
+      Located on a prominent ridge (3 m relief). Bedrock substrate with some significant
+      relief (0-2 m). Depth increases from approximately 33 to 45 feet along the transect.'
+    lat: '34.421833'
+    lng: '-119.950317'
+  - title: SCDI2
+    description: 'Santa Cruz Island Diablo Transect 2: a line starting at the lat-lon
+      coordinates with a length of 40 (meter), and width of 2 (meter) along a heading
+      of 305 (degree). Transect runs along rocky reef with patches of sand/shell debris
+      and several large boulders. Depth is approximately 30 feet.'
+    lat: '34.058633'
+    lng: '-119.757633'
+  - title: SCDI3
+    description: 'Santa Cruz Island Diablo Transect 3: a line starting at the lat-lon
+      coordinates with a length of 40 (meter), and width of 2 (meter) along a heading
+      of 335 (degree). Transect runs along rocky reef with patches of sand/shell debris
+      and several large boulders and ledges. Depth varies from approximately 43 to
+      50 feet.'
+    lat: '34.058667'
+    lng: '-119.757633'
+  - title: SCTW2
+    description: 'Santa Cruz Island Twin Harbors West Transect 2: a line starting
+      at the lat-lon coordinates with a length of 40 (meter), and width of 2 (meter)
+      along a heading of 330 (degree). Transect 2 lies along rocky reef with large
+      boulders and patches of sand/shell debris. Depth is approximately 20''.'
+    lat: '34.0444'
+    lng: '-119.715133'
+  - title: SCTW3
+    description: 'Santa Cruz Island Twin Harbors West Transect 3: a line starting
+      at the lat-lon coordinates with a length of 40 (meter), and width of 2 (meter)
+      along a heading of 290 (degree). Transect 3 lies along rocky reef with large
+      boulders and patches of sand/shell debris. Depth is approximately 30 feet. At
+      the end of the transect there is a pinnacle about 3-4m tall.'
+    lat: '34.044467'
+    lng: '-119.715133'
+  packages:
+    package:
+    - docid: knb-lter-sbc.15
+      shortTitle: KFCD percent cover of algae, invertebrates and bottom substrate
+    - docid: knb-lter-sbc.17
+      shortTitle: KFCD abundance and size of reef fish
+    - docid: knb-lter-sbc.18
+      shortTitle: KFCD abundance and size of giant kelp
+    - docid: knb-lter-sbc.19
+      shortTitle: KFCD abundance of algae and invertebrates
+    - docid: knb-lter-sbc.50
+      shortTitle: KFCD - Biomass of algae, invertebrates and fish
+    - docid: knb-lter-sbc.43
+      shortTitle: KFCD bottom topography
+    - docid: knb-lter-sbc.120
+      shortTitle: Master species list
 - id: reefLTE
   label: Abundance of algae, invertebrates, and fish in the kelp removal experiment
+  frequency: Seasonally
+  initiated: '2008'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: AQUE4
-      description: 'Arroyo Quemado Transect 4: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Transect begins east of the river mouth. Bedrock with several large
-        boulder outcrops creating some significant relief (0-2.5 m) along transect.
-        Some moderate sized areas of sand (1-5 m). Depth is approximately 23 feet.'
-      lat: '34.467467'
-      lng: '-120.117183'
-    - title: AQUE7
-      description: 'Arroyo Quemado Transect 7: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 95
-        (degree). Transect begins east of the river mouth. Bedrock with several large
-        boulder outcrops creating some significant relief (0-2.5 m) along transect.
-        Some moderate sized areas of sand (1-3 m) present along with Diopatra beds.
-        Depth is approximately 25 feet.'
-      lat: '34.4674'
-      lng: '-120.117783'
-    - title: AQUE8
-      description: "Arroyo Quemado Transect 8: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Substrate is mostly bedrock with several large boulder outcrops.
-        Some moderate sized areas of sand present. Depth is approximately 30â\x80\x99.
-        Kelp is continually cleared in 2m band on all sides of this transect."
-      lat: '34.467283'
-      lng: '-120.117783'
-    - title: CARP10
-      description: 'Carpinteria Transect 10: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Bedrock substrate with moderate relief (0-1.5 m). Kelp continually
-        cleared in 2m band on all sides of the transect. Depth is approximately 24
-        feet.'
-      lat: '34.391217'
-      lng: '-119.541183'
-    - title: CARP7
-      description: 'Carpinteria Transect 7: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m) and some small
-        areas (1-3 m) of silty sand and cobble channels. Depth is approximately 27
-        feet.'
-      lat: '34.391233'
-      lng: '-119.541833'
-    - title: CARP9
-      description: 'Carpinteria Transect 9: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with moderate relief (0-1.5 m) and some small
-        areas (1-3 m) of silty sand and cobble channels. Depth is approximately 27
-        feet.'
-      lat: '34.391117'
-      lng: '-119.541117'
-    - title: MOHK2
-      description: 'Mohawk Transect 2: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m) and some small
-        (1-2 m) areas of silty sand. Transect follows a small reef ledge that is ~1m
-        off the sand below. Depth is approximately 24 feet.'
-      lat: '34.39415'
-      lng: '-119.729367'
-    - title: MOHK3
-      description: 'Mohawk Transect 3: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 55
-        (degree). Bedrock substrate with some moderate relief (0-1.5 m) and some small
-        (1-3 m) areas of silty sand. Transect follows a small reef ledge that is ~1.5m
-        off the sand below. Depth is approximately 26 feet.'
-      lat: '34.3938'
-      lng: '-119.729483'
-    - title: MOHK4
-      description: 'Mohawk Transect 4: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 270
-        (degree). Runs west along bedrock substrate with low relief (0-1.5m) and some
-        areas of silty sand. Depth approximately 25 feet.. Kelp continually cleared
-        in 2m band on all sides of the transect.'
-      lat: '34.394'
-      lng: '-119.729417'
-    - title: NAPL10
-      description: "Naples Transect 10: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Bedrock substrate with some significant relief (0-2.5m). Transect
-        crosses several ridges that run ~110-120 degrees. Depth is approximately 30â\x80\x99.
-        Kelp continually cleared in 2m band on all sides of the transect."
-      lat: '34.422033'
-      lng: '-119.951217'
-    - title: NAPL3
-      description: 'Naples Transect 3: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 80
-        (degree). Bedrock substrate with some significant relief (0-2 m). Depth approximately
-        25''.'
-      lat: '34.422367'
-      lng: '-119.9517'
-    - title: NAPL9
-      description: 'Naples Transect 9: a line starting at the lat-lon coordinates
-        with a length of 40 (meter), and width of 2 (meter) along a heading of 90
-        (degree). Bedrock substrate with some significant relief (0-2 m). Depth approximately
-        25 feet.'
-      lat: '34.42215'
-      lng: '-119.951217'
-    - title: IVEE3
-      description: Isla Vista Reef Transect 3
-      lat: '34.404583'
-      lng: '-119.863200'
-    - title: IVEE4
-      description: Isla Vista Reef Transect 4
-      lat: '34.404450'
-      lng: '-119.862583'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
+  - title: AQUE
+    description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4 m
+      to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
+    lat: '34.46774988'
+    lng: '-120.11905'
+  - title: CARP
+    description: Carpinteria Reef is located on the Santa Barbara Channel offshore
+      of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
+    lat: '34.3916319'
+    lng: '-119.5416933'
+  - title: IVEE
+    description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
+      the University of California Santa Barbara, CA. Depth range is from -8.2 to
+      -8.8 meters.
+    lat: '34.402783'
+    lng: '-119.85755'
+  - title: MOHK
+    description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
+      on land is Mohawk Rd / Edgewater Way.'
+    lat: '34.3940708'
+    lng: '-119.72957'
+  - title: NAPL
+    description: Naples Reef is located on the Santa Barbara Channel near the community
+      of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
+      -5.9 to -13.4 meters.
+    lat: '34.4221216'
+    lng: '-119.95154'
+  - title: AQUE4
+    description: 'Arroyo Quemado Transect 4: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Transect begins east of the river mouth. Bedrock with several large boulder
+      outcrops creating some significant relief (0-2.5 m) along transect. Some moderate
+      sized areas of sand (1-5 m). Depth is approximately 23 feet.'
+    lat: '34.467467'
+    lng: '-120.117183'
+  - title: AQUE7
+    description: 'Arroyo Quemado Transect 7: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 95 (degree).
+      Transect begins east of the river mouth. Bedrock with several large boulder
+      outcrops creating some significant relief (0-2.5 m) along transect. Some moderate
+      sized areas of sand (1-3 m) present along with Diopatra beds. Depth is approximately
+      25 feet.'
+    lat: '34.4674'
+    lng: '-120.117783'
+  - title: AQUE8
+    description: "Arroyo Quemado Transect 8: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Substrate is mostly bedrock with several large boulder outcrops. Some moderate
+      sized areas of sand present. Depth is approximately 30â\x80\x99. Kelp is continually
+      cleared in 2m band on all sides of this transect."
+    lat: '34.467283'
+    lng: '-120.117783'
+  - title: CARP10
+    description: 'Carpinteria Transect 10: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Bedrock substrate with moderate relief (0-1.5 m). Kelp continually cleared in
+      2m band on all sides of the transect. Depth is approximately 24 feet.'
+    lat: '34.391217'
+    lng: '-119.541183'
+  - title: CARP7
+    description: 'Carpinteria Transect 7: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m) and some small areas (1-3
+      m) of silty sand and cobble channels. Depth is approximately 27 feet.'
+    lat: '34.391233'
+    lng: '-119.541833'
+  - title: CARP9
+    description: 'Carpinteria Transect 9: a line starting at the lat-lon coordinates
+      with a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with moderate relief (0-1.5 m) and some small areas (1-3 m)
+      of silty sand and cobble channels. Depth is approximately 27 feet.'
+    lat: '34.391117'
+    lng: '-119.541117'
+  - title: MOHK2
+    description: 'Mohawk Transect 2: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m) and some small (1-2 m)
+      areas of silty sand. Transect follows a small reef ledge that is ~1m off the
+      sand below. Depth is approximately 24 feet.'
+    lat: '34.39415'
+    lng: '-119.729367'
+  - title: MOHK3
+    description: 'Mohawk Transect 3: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 55 (degree).
+      Bedrock substrate with some moderate relief (0-1.5 m) and some small (1-3 m)
+      areas of silty sand. Transect follows a small reef ledge that is ~1.5m off the
+      sand below. Depth is approximately 26 feet.'
+    lat: '34.3938'
+    lng: '-119.729483'
+  - title: MOHK4
+    description: 'Mohawk Transect 4: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 270 (degree).
+      Runs west along bedrock substrate with low relief (0-1.5m) and some areas of
+      silty sand. Depth approximately 25 feet.. Kelp continually cleared in 2m band
+      on all sides of the transect.'
+    lat: '34.394'
+    lng: '-119.729417'
+  - title: NAPL10
+    description: "Naples Transect 10: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Bedrock substrate with some significant relief (0-2.5m). Transect crosses several
+      ridges that run ~110-120 degrees. Depth is approximately 30â\x80\x99. Kelp continually
+      cleared in 2m band on all sides of the transect."
+    lat: '34.422033'
+    lng: '-119.951217'
+  - title: NAPL3
+    description: 'Naples Transect 3: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 80 (degree).
+      Bedrock substrate with some significant relief (0-2 m). Depth approximately
+      25''.'
+    lat: '34.422367'
+    lng: '-119.9517'
+  - title: NAPL9
+    description: 'Naples Transect 9: a line starting at the lat-lon coordinates with
+      a length of 40 (meter), and width of 2 (meter) along a heading of 90 (degree).
+      Bedrock substrate with some significant relief (0-2 m). Depth approximately
+      25 feet.'
+    lat: '34.42215'
+    lng: '-119.951217'
+  - title: IVEE3
+    description: Isla Vista Reef Transect 3
+    lat: '34.404583'
+    lng: '-119.863200'
+  - title: IVEE4
+    description: Isla Vista Reef Transect 4
+    lat: '34.404450'
+    lng: '-119.862583'
+  packages:
+    package:
+    - docid: knb-lter-sbc.28
+      shortTitle: LTE KR - Percent cover of algae, invertebrates and substrate
+    - docid: knb-lter-sbc.29
+      shortTitle: LTE KR - Abundance and size of giant kelp
+    - docid: knb-lter-sbc.30
+      shortTitle: LTE KR - Abundance and size of reef fish
+    - docid: knb-lter-sbc.34
+      shortTitle: LTE KR - Abundance of algae and invertebrates
+    - docid: knb-lter-sbc.119
+      shortTitle: LTE KR - Biomass of algae, invertebrates and fish
+    - docid: knb-lter-sbc.25
+      shortTitle: LTE KR - Biomass of macroalgal detritus
+    - docid: knb-lter-sbc.26
+      shortTitle: LTE KR - Sea urchin size structure
+    - docid: knb-lter-sbc.27
+      shortTitle: LTE KR - Understory kelp allometrics
+    - docid: knb-lter-sbc.44
+      shortTitle: LTE KR transects - Bottom topography
+    - docid: knb-lter-sbc.58
+      shortTitle: LTE KR - Net primary production of macroalgae
 - id: reefNPPgiantKelp
   label: Giant kelp biomass, growth, loss, NPP and stoichiometry
+  frequency: Seasonally
+  initiated: '2002'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: Isla Vista Reef
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters
-      lat: '34.4137993'
-      lng: '-119.857803'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: ABUR
-      description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n
-        \ near the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to
-        7 meters."
-      lat: '34.400275'
-      lng: '-119.7445915'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
+  - title: ABUR
+    description: "Arroyo Burro Reef is located on the Santa Barbara Channel\r\n  near
+      the mouth of Arroyo Burro Creek and Beach. Depth ranges from 5.4 to 7 meters."
+    lat: '34.400275'
+    lng: '-119.7445915'
+  - title: AQUE
+    description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4 m
+      to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
+    lat: '34.46774988'
+    lng: '-120.11905'
+  - title: MOHK
+    description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
+      on land is Mohawk Rd / Edgewater Way.'
+    lat: '34.3940708'
+    lng: '-119.72957'
+  - title: Isla Vista Reef
+    description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
+      the University of California Santa Barbara, CA. Depth range is from -8.2 to
+      -8.8 meters
+    lat: '34.4137993'
+    lng: '-119.857803'
+  - title: IVEE
+    description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
+      the University of California Santa Barbara, CA. Depth range is from -8.2 to
+      -8.8 meters.
+    lat: '34.402783'
+    lng: '-119.85755'
+  packages:
+    package:
+    - docid: knb-lter-sbc.112
+      shortTitle: Giant kelp NPP
+    - docid: knb-lter-sbc.24
+      shortTitle: Giant kelp carbon and nitrogen content
+    - docid: knb-lter-sbc.114
+      shortTitle: Giant kelp DOC exudation
+    - docid: knb-lter-sbc.85
+      shortTitle: Giant kelp blade characteristics
+    - docid: knb-lter-sbc.108
+      shortTitle: Giant kelp blade loss dynamics
+    - docid: knb-lter-sbc.115
+      shortTitle: Giant kelp blade lifespan
+    - docid: knb-lter-sbc.123
+      shortTitle: Giant kelp frond allometry
 - id: reefLobsters
   label: Lobsters
+  frequency: Annually
+  initiated: '2012'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: Arroyo Burro Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-119.74333'
-    - title: Arroyo Hondo Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-120.14333'
-    - title: Arroyo Hondo-to-Arroyo Quemado lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-120.135'
-    - title: AQUE
-      description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4
-        m to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
-      lat: '34.46774988'
-      lng: '-120.11905'
-    - title: Arroyo Quemado Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-120.12333'
-    - title: CARP
-      description: Carpinteria Reef is located on the Santa Barbara Channel offshore
-        of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
-      lat: '34.3916319'
-      lng: '-119.5416933'
-    - title: Carpinteria Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-119.53917'
-    - title: Goleta Bay Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-119.81958'
-    - title: IVEE
-      description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
-        the University of California Santa Barbara, CA. Depth range is from -8.2 to
-        -8.8 meters.
-      lat: '34.402783'
-      lng: '-119.85755'
-    - title: Isla Vista Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-119.87208'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: Mohawk Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-119.7325'
-    - title: NAPL
-      description: Naples Reef is located on the Santa Barbara Channel near the community
-        of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
-        -5.9 to -13.4 meters.
-      lat: '34.4221216'
-      lng: '-119.95154'
-    - title: Naples Reef lobster trap survey extent
-      description: 'Approximate maximum bounding coordinates for lobster trap survey.
-        Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
-        (approx 1km offshore). '
-      lat: '34.46973'
-      lng: '-119.9575'
+  - title: Arroyo Burro Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-119.74333'
+  - title: Arroyo Hondo Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-120.14333'
+  - title: Arroyo Hondo-to-Arroyo Quemado lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-120.135'
+  - title: AQUE
+    description: 'Arroyo Quemado Reef: Arroyo Quemado Reef depth range from 5.4 m
+      to 10.7 m. Reference on Land is close to US101/Arroyo Quemada Ln.'
+    lat: '34.46774988'
+    lng: '-120.11905'
+  - title: Arroyo Quemado Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-120.12333'
+  - title: CARP
+    description: Carpinteria Reef is located on the Santa Barbara Channel offshore
+      of the Carpinteria Salt Marsh. Depth range is from -2.2 to -8.8 meters
+    lat: '34.3916319'
+    lng: '-119.5416933'
+  - title: Carpinteria Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-119.53917'
+  - title: Goleta Bay Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-119.81958'
+  - title: IVEE
+    description: Isla Vista (IV) Reef is located on the Santa Barbara Channel near
+      the University of California Santa Barbara, CA. Depth range is from -8.2 to
+      -8.8 meters.
+    lat: '34.402783'
+    lng: '-119.85755'
+  - title: Isla Vista Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-119.87208'
+  - title: MOHK
+    description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
+      on land is Mohawk Rd / Edgewater Way.'
+    lat: '34.3940708'
+    lng: '-119.72957'
+  - title: Mohawk Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-119.7325'
+  - title: NAPL
+    description: Naples Reef is located on the Santa Barbara Channel near the community
+      of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
+      -5.9 to -13.4 meters.
+    lat: '34.4221216'
+    lng: '-119.95154'
+  - title: Naples Reef lobster trap survey extent
+    description: 'Approximate maximum bounding coordinates for lobster trap survey.
+      Survey area covers a swath parallel to shore, from shoreline to the 15m isobath
+      (approx 1km offshore). '
+    lat: '34.46973'
+    lng: '-119.9575'
+  packages:
+    package:
+    - docid: knb-lter-sbc.77
+      shortTitle: Lobster abundance, size and fishing pressure
 - id: reefSCIsland
   label: Surfperch density and size, foraging habitat, prey biomass
+  frequency: Annually
+  initiated: '1992'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: BC 1
-      description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
-        main point.
-      lat: '34.05076667'
-      lng: '-119.7414167'
-    - title: BC 2
-      description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
-        main point.
-      lat: '34.05116667'
-      lng: '-119.7418167'
-    - title: BC Point
-      description: The BC reef is the west side of Platt's Harbor. BC Point is  off
-        a small outcrop.
-      lat: '34.05035'
-      lng: '-119.7406333'
-    - title: Diablo Pt
-      description: ' Diablo Pt, north shore Santa Cruz Island'
-      lat: '34.05815'
-      lng: '-119.75745'
-    - title: Fern 1
-      description: Fern 1 is located on the west edge of a small headland east of
-        Fry's Harbor.
-      lat: '34.05365'
-      lng: '-119.7496333'
-    - title: Fern Offshore
-      description: Fern Offshore is located on the east edge of a small headland east
-        of Fry's Harbor.
-      lat: '34.05291667'
-      lng: '-119.7470333'
-    - title: Fry's 1
-      description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05695'
-      lng: '-119.7551'
-    - title: Fry's 2
-      description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05765'
-      lng: '-119.7558833'
-    - title: Fry's 3
-      description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05776667'
-      lng: '-119.7563'
-    - title: Twin E
-      description: Twin Harbors, East. North shore, Santa Cruz Island, CA
-      lat: '34.04345'
-      lng: '-119.7140833'
-    - title: Twin W
-      description: Twin Harbors, West. North shore, Santa Cruz Island, CA
-      lat: '34.0444'
-      lng: '-119.7151333'
-    - title: BC 1
-      description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
-        main point.
-      lat: '34.05076667'
-      lng: '-119.7414167'
-    - title: BC 2
-      description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
-        main point.
-      lat: '34.05116667'
-      lng: '-119.7418167'
-    - title: BC Point
-      description: The BC reef is the west side of Platt's Harbor. BC Point is  off
-        a small outcrop.
-      lat: '34.05035'
-      lng: '-119.7406333'
-    - title: Diablo Pt
-      description: ' Diablo Pt, north shore Santa Cruz Island'
-      lat: '34.05815'
-      lng: '-119.75745'
-    - title: Fern 1
-      description: Fern 1 is located on the west edge of a small headland east of
-        Fry's Harbor.
-      lat: '34.05365'
-      lng: '-119.7496333'
-    - title: Fern Offshore
-      description: Fern Offshore is located on the east edge of a small headland east
-        of Fry's Harbor.
-      lat: '34.05291667'
-      lng: '-119.7470333'
-    - title: Fry's 1
-      description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05695'
-      lng: '-119.7551'
-    - title: Fry's 2
-      description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05765'
-      lng: '-119.7558833'
-    - title: Fry's 3
-      description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05776667'
-      lng: '-119.7563'
-    - title: Twin E
-      description: Twin Harbors, East. North shore, Santa Cruz Island, CA
-      lat: '34.04345'
-      lng: '-119.7140833'
-    - title: Twin W
-      description: Twin Harbors, West. North shore, Santa Cruz Island, CA
-      lat: '34.0444'
-      lng: '-119.7151333'
-    - title: BC 1
-      description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
-        main point.
-      lat: '34.05076667'
-      lng: '-119.7414167'
-    - title: BC 2
-      description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
-        main point.
-      lat: '34.05116667'
-      lng: '-119.7418167'
-    - title: BC Point
-      description: The BC reef is the west side of Platt's Harbor. BC Point is  off
-        a small outcrop.
-      lat: '34.05035'
-      lng: '-119.7406333'
-    - title: Diablo Pt
-      description: ' Diablo Pt, north shore Santa Cruz Island'
-      lat: '34.05815'
-      lng: '-119.75745'
-    - title: Fern 1
-      description: Fern 1 is located on the west edge of a small headland east of
-        Fry's Harbor.
-      lat: '34.05365'
-      lng: '-119.7496333'
-    - title: Fern Offshore
-      description: Fern Offshore is located on the east edge of a small headland east
-        of Fry's Harbor.
-      lat: '34.05291667'
-      lng: '-119.7470333'
-    - title: Fry's 1
-      description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05695'
-      lng: '-119.7551'
-    - title: Fry's 2
-      description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05765'
-      lng: '-119.7558833'
-    - title: Fry's 3
-      description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05776667'
-      lng: '-119.7563'
-    - title: Twin E
-      description: Twin Harbors, East. North shore, Santa Cruz Island, CA
-      lat: '34.04345'
-      lng: '-119.7140833'
-    - title: Twin W
-      description: Twin Harbors, West. North shore, Santa Cruz Island, CA
-      lat: '34.0444'
-      lng: '-119.7151333'
-    - title: BC 1
-      description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
-        main point.
-      lat: '34.05076667'
-      lng: '-119.7414167'
-    - title: BC 2
-      description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
-        main point.
-      lat: '34.05116667'
-      lng: '-119.7418167'
-    - title: BC Point
-      description: The BC reef is the west side of Platt's Harbor. BC Point is  off
-        a small outcrop.
-      lat: '34.05035'
-      lng: '-119.7406333'
-    - title: Diablo Pt
-      description: ' Diablo Pt, north shore Santa Cruz Island'
-      lat: '34.05815'
-      lng: '-119.75745'
-    - title: Fern 1
-      description: Fern 1 is located on the west edge of a small headland east of
-        Fry's Harbor.
-      lat: '34.05365'
-      lng: '-119.7496333'
-    - title: Fern Offshore
-      description: Fern Offshore is located on the east edge of a small headland east
-        of Fry's Harbor.
-      lat: '34.05291667'
-      lng: '-119.7470333'
-    - title: Fry's 1
-      description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05695'
-      lng: '-119.7551'
-    - title: Fry's 2
-      description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05765'
-      lng: '-119.7558833'
-    - title: Fry's 3
-      description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05776667'
-      lng: '-119.7563'
-    - title: Twin E
-      description: Twin Harbors, East. North shore, Santa Cruz Island, CA
-      lat: '34.04345'
-      lng: '-119.7140833'
-    - title: Twin W
-      description: Twin Harbors, West. North shore, Santa Cruz Island, CA
-      lat: '34.0444'
-      lng: '-119.7151333'
-    - title: BC 1
-      description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
-        main point.
-      lat: '34.05076667'
-      lng: '-119.7414167'
-    - title: BC 2
-      description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
-        main point.
-      lat: '34.05116667'
-      lng: '-119.7418167'
-    - title: BC Point
-      description: The BC reef is the west side of Platt's Harbor. BC Point is  off
-        a small outcrop.
-      lat: '34.05035'
-      lng: '-119.7406333'
-    - title: Diablo Pt
-      description: ' Diablo Pt, north shore Santa Cruz Island'
-      lat: '34.05815'
-      lng: '-119.75745'
-    - title: Fern 1
-      description: Fern 1 is located on the west edge of a small headland east of
-        Fry's Harbor.
-      lat: '34.05365'
-      lng: '-119.7496333'
-    - title: Fern Offshore
-      description: Fern Offshore is located on the east edge of a small headland east
-        of Fry's Harbor.
-      lat: '34.05291667'
-      lng: '-119.7470333'
-    - title: Fry's 1
-      description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05695'
-      lng: '-119.7551'
-    - title: Fry's 2
-      description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05765'
-      lng: '-119.7558833'
-    - title: Fry's 3
-      description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05776667'
-      lng: '-119.7563'
-    - title: Twin E
-      description: Twin Harbors, East. North shore, Santa Cruz Island, CA
-      lat: '34.04345'
-      lng: '-119.7140833'
-    - title: Twin W
-      description: Twin Harbors, West. North shore, Santa Cruz Island, CA
-      lat: '34.0444'
-      lng: '-119.7151333'
-    - title: BC 1
-      description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
-        main point.
-      lat: '34.05076667'
-      lng: '-119.7414167'
-    - title: BC 2
-      description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
-        main point.
-      lat: '34.05116667'
-      lng: '-119.7418167'
-    - title: BC Point
-      description: The BC reef is the west side of Platt's Harbor. BC Point is  off
-        a small outcrop.
-      lat: '34.05035'
-      lng: '-119.7406333'
-    - title: Diablo Pt
-      description: ' Diablo Pt, north shore Santa Cruz Island'
-      lat: '34.05815'
-      lng: '-119.75745'
-    - title: Fern 1
-      description: Fern 1 is located on the west edge of a small headland east of
-        Fry's Harbor.
-      lat: '34.05365'
-      lng: '-119.7496333'
-    - title: Fern Offshore
-      description: Fern Offshore is located on the east edge of a small headland east
-        of Fry's Harbor.
-      lat: '34.05291667'
-      lng: '-119.7470333'
-    - title: Fry's 1
-      description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05695'
-      lng: '-119.7551'
-    - title: Fry's 2
-      description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05765'
-      lng: '-119.7558833'
-    - title: Fry's 3
-      description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05776667'
-      lng: '-119.7563'
-    - title: Twin E
-      description: Twin Harbors, East. North shore, Santa Cruz Island, CA
-      lat: '34.04345'
-      lng: '-119.7140833'
-    - title: Twin W
-      description: Twin Harbors, West. North shore, Santa Cruz Island, CA
-      lat: '34.0444'
-      lng: '-119.7151333'
-    - title: BC 1
-      description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
-        main point.
-      lat: '34.05076667'
-      lng: '-119.7414167'
-    - title: BC 2
-      description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
-        main point.
-      lat: '34.05116667'
-      lng: '-119.7418167'
-    - title: BC Point
-      description: The BC reef is the west side of Platt's Harbor. BC Point is  off
-        a small outcrop.
-      lat: '34.05035'
-      lng: '-119.7406333'
-    - title: Diablo Pt
-      description: ' Diablo Pt, north shore Santa Cruz Island'
-      lat: '34.05815'
-      lng: '-119.75745'
-    - title: Fern 1
-      description: Fern 1 is located on the west edge of a small headland east of
-        Fry's Harbor.
-      lat: '34.05365'
-      lng: '-119.7496333'
-    - title: Fern Offshore
-      description: Fern Offshore is located on the east edge of a small headland east
-        of Fry's Harbor.
-      lat: '34.05291667'
-      lng: '-119.7470333'
-    - title: Fry's 1
-      description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05695'
-      lng: '-119.7551'
-    - title: Fry's 2
-      description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05765'
-      lng: '-119.7558833'
-    - title: Fry's 3
-      description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
-        of Santa Cruz Island, CA.
-      lat: '34.05776667'
-      lng: '-119.7563'
-    - title: Twin E
-      description: Twin Harbors, East. North shore, Santa Cruz Island, CA
-      lat: '34.04345'
-      lng: '-119.7140833'
-    - title: Twin W
-      description: Twin Harbors, West. North shore, Santa Cruz Island, CA
-      lat: '34.0444'
-      lng: '-119.7151333'
+  - title: BC 1
+    description: The BC reef is the west side of Platt's Harbor. BC 1 is SE of the
+      main point.
+    lat: '34.05076667'
+    lng: '-119.7414167'
+  - title: BC 2
+    description: The BC reef is the west side of Platt's Harbor. BC 2 is NW of the
+      main point.
+    lat: '34.05116667'
+    lng: '-119.7418167'
+  - title: BC Point
+    description: The BC reef is the west side of Platt's Harbor. BC Point is  off
+      a small outcrop.
+    lat: '34.05035'
+    lng: '-119.7406333'
+  - title: Diablo Pt
+    description: ' Diablo Pt, north shore Santa Cruz Island'
+    lat: '34.05815'
+    lng: '-119.75745'
+  - title: Fern 1
+    description: Fern 1 is located on the west edge of a small headland east of Fry's
+      Harbor.
+    lat: '34.05365'
+    lng: '-119.7496333'
+  - title: Fern Offshore
+    description: Fern Offshore is located on the east edge of a small headland east
+      of Fry's Harbor.
+    lat: '34.05291667'
+    lng: '-119.7470333'
+  - title: Fry's 1
+    description: Fry's 1 is north of the Fry's harbor anchorage on the north shore
+      of Santa Cruz Island, CA.
+    lat: '34.05695'
+    lng: '-119.7551'
+  - title: Fry's 2
+    description: Fry's 2 is north of the Fry's harbor anchorage on the north shore
+      of Santa Cruz Island, CA.
+    lat: '34.05765'
+    lng: '-119.7558833'
+  - title: Fry's 3
+    description: Fry's 3 is north of the Fry's harbor anchorage on the north shore
+      of Santa Cruz Island, CA.
+    lat: '34.05776667'
+    lng: '-119.7563'
+  - title: Twin E
+    description: Twin Harbors, East. North shore, Santa Cruz Island, CA
+    lat: '34.04345'
+    lng: '-119.7140833'
+  - title: Twin W
+    description: Twin Harbors, West. North shore, Santa Cruz Island, CA
+    lat: '34.0444'
+    lng: '-119.7151333'
+  packages:
+    package:
+    - docid: knb-lter-sbc.39
+      shortTitle: SCI abundance and age structure of Surfperch and Garibaldi
+    - docid: knb-lter-sbc.38
+      shortTitle: SCI percent cover of algae, invertebrates and bottom substrate
+    - docid: knb-lter-sbc.47
+      shortTitle: SCI biomass of macroalgae
+    - docid: knb-lter-sbc.48
+      shortTitle: SCI abundance and size of giant kelp
+    - docid: knb-lter-sbc.97
+      shortTitle: 'Santa Cruz Island: Black surfperch and prey, density effects'
+    - docid: knb-lter-sbc.60
+      shortTitle: SCI abundance of black surfperch and prey (1994-2008)
+    - docid: knb-lter-sbc.46
+      shortTitle: SCI abundance of Pycnopodia helianthoides
 - id: inshoreProfiles
   label: Nutrients, particulate N P & C, chlorophyll-a and CTD profiles
+  frequency: Monthly
+  initiated: '2002'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: Arroyo Burro
-      description: Arroyo Burro
-      lat: '34.40017'
-      lng: '-119.74438'
-    - title: Bulito Inshore
-      description: Bulito Inshore
-      lat: '34.4589'
-      lng: '-120.3334'
-    - title: Bulito Offshore
-      description: Bulito Offshore
-      lat: '34.4582'
-      lng: '-120.3336'
-    - title: Bulito Reef
-      description: Bulito Reef
-      lat: '34.4585'
-      lng: '-120.3335'
-    - title: Carpinteria Inshore
-      description: Carpinteria Inshore
-      lat: '34.39388'
-      lng: '-119.53925'
-    - title: Carpinteria Offshore
-      description: Carpinteria Offshore
-      lat: '34.38387'
-      lng: '-119.54187'
-    - title: Carpinteria Reef - near mooring site CAR
-      description: Carpinteria Reef - near mooring site CAR
-      lat: '34.39023'
-      lng: '-119.53987'
-    - title: Mohawk Inshore
-      description: Mohawk Inshore
-      lat: '34.39488'
-      lng: '-119.72917'
-    - title: Mohawk Reef
-      description: Mohawk Reef
-      lat: '34.39338'
-      lng: '-119.73012'
-    - title: Naples Inshore
-      description: Naples Inshore
-      lat: '34.42772'
-      lng: '-119.95053'
-    - title: Naples Offshore
-      description: Naples Offshore
-      lat: '34.41305'
-      lng: '-119.95602'
-    - title: Naples Reef - near mooring site NAP
-      description: Naples Reef - near mooring site NAP
-      lat: '34.42385'
-      lng: '-119.95032'
-    - title: Arroyo Quemado Inshore
-      description: Arroyo Quemado Inshore
-      lat: '34.46843'
-      lng: '-120.11933'
-    - title: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
-      description: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
-      lat: '34.46464'
-      lng: '-120.12057'
-    - title: Arroyo Qmemado Offshore
-      description: Arroyo Qmemado Offshore
-      lat: '34.4614'
-      lng: '-120.11937'
-    - title: Arroyo Quemado Reef - near pre2005 mooring site AQM
-      description: Arroyo Quemado Reef - near pre2005 mooring site AQM
-      lat: '34.46722'
-      lng: '-120.12005'
+  - title: Arroyo Burro
+    description: Arroyo Burro
+    lat: '34.40017'
+    lng: '-119.74438'
+  - title: Bulito Inshore
+    description: Bulito Inshore
+    lat: '34.4589'
+    lng: '-120.3334'
+  - title: Bulito Offshore
+    description: Bulito Offshore
+    lat: '34.4582'
+    lng: '-120.3336'
+  - title: Bulito Reef
+    description: Bulito Reef
+    lat: '34.4585'
+    lng: '-120.3335'
+  - title: Carpinteria Inshore
+    description: Carpinteria Inshore
+    lat: '34.39388'
+    lng: '-119.53925'
+  - title: Carpinteria Offshore
+    description: Carpinteria Offshore
+    lat: '34.38387'
+    lng: '-119.54187'
+  - title: Carpinteria Reef - near mooring site CAR
+    description: Carpinteria Reef - near mooring site CAR
+    lat: '34.39023'
+    lng: '-119.53987'
+  - title: Mohawk Inshore
+    description: Mohawk Inshore
+    lat: '34.39488'
+    lng: '-119.72917'
+  - title: Mohawk Reef
+    description: Mohawk Reef
+    lat: '34.39338'
+    lng: '-119.73012'
+  - title: Naples Inshore
+    description: Naples Inshore
+    lat: '34.42772'
+    lng: '-119.95053'
+  - title: Naples Offshore
+    description: Naples Offshore
+    lat: '34.41305'
+    lng: '-119.95602'
+  - title: Naples Reef - near mooring site NAP
+    description: Naples Reef - near mooring site NAP
+    lat: '34.42385'
+    lng: '-119.95032'
+  - title: Arroyo Quemado Inshore
+    description: Arroyo Quemado Inshore
+    lat: '34.46843'
+    lng: '-120.11933'
+  - title: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
+    description: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
+    lat: '34.46464'
+    lng: '-120.12057'
+  - title: Arroyo Qmemado Offshore
+    description: Arroyo Qmemado Offshore
+    lat: '34.4614'
+    lng: '-120.11937'
+  - title: Arroyo Quemado Reef - near pre2005 mooring site AQM
+    description: Arroyo Quemado Reef - near pre2005 mooring site AQM
+    lat: '34.46722'
+    lng: '-120.12005'
+  packages:
+    package:
+    - docid: knb-lter-sbc.10
+      shortTitle: Nearshore CTD and Rosette Bottle Profiles
 - id: inshoreProfiles
   label: Nutrients, particulate N P & C, chlorophyll-a and CTD profiles
+  frequency: Monthly
+  initiated: '2002'
   habitatName: nearshore
-  habitatLabel: Nearshore
+  habitatLabel: Inshore Ocean
   geodata:
-    geodata:
-    - title: Arroyo Burro
-      description: Arroyo Burro
-      lat: '34.40017'
-      lng: '-119.74438'
-    - title: Bulito Inshore
-      description: Bulito Inshore
-      lat: '34.4589'
-      lng: '-120.3334'
-    - title: Bulito Offshore
-      description: Bulito Offshore
-      lat: '34.4582'
-      lng: '-120.3336'
-    - title: Bulito Reef
-      description: Bulito Reef
-      lat: '34.4585'
-      lng: '-120.3335'
-    - title: Carpinteria Inshore
-      description: Carpinteria Inshore
-      lat: '34.39388'
-      lng: '-119.53925'
-    - title: Carpinteria Offshore
-      description: Carpinteria Offshore
-      lat: '34.38387'
-      lng: '-119.54187'
-    - title: Carpinteria Reef - near mooring site CAR
-      description: Carpinteria Reef - near mooring site CAR
-      lat: '34.39023'
-      lng: '-119.53987'
-    - title: Mohawk Inshore
-      description: Mohawk Inshore
-      lat: '34.39488'
-      lng: '-119.72917'
-    - title: Mohawk Reef
-      description: Mohawk Reef
-      lat: '34.39338'
-      lng: '-119.73012'
-    - title: Naples Inshore
-      description: Naples Inshore
-      lat: '34.42772'
-      lng: '-119.95053'
-    - title: Naples Offshore
-      description: Naples Offshore
-      lat: '34.41305'
-      lng: '-119.95602'
-    - title: Naples Reef - near mooring site NAP
-      description: Naples Reef - near mooring site NAP
-      lat: '34.42385'
-      lng: '-119.95032'
-    - title: Arroyo Quemado Inshore
-      description: Arroyo Quemado Inshore
-      lat: '34.46843'
-      lng: '-120.11933'
-    - title: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
-      description: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
-      lat: '34.46464'
-      lng: '-120.12057'
-    - title: Arroyo Qmemado Offshore
-      description: Arroyo Qmemado Offshore
-      lat: '34.4614'
-      lng: '-120.11937'
-    - title: Arroyo Quemado Reef - near pre2005 mooring site AQM
-      description: Arroyo Quemado Reef - near pre2005 mooring site AQM
-      lat: '34.46722'
-      lng: '-120.12005'
+  - title: Arroyo Burro
+    description: Arroyo Burro
+    lat: '34.40017'
+    lng: '-119.74438'
+  - title: Bulito Inshore
+    description: Bulito Inshore
+    lat: '34.4589'
+    lng: '-120.3334'
+  - title: Bulito Offshore
+    description: Bulito Offshore
+    lat: '34.4582'
+    lng: '-120.3336'
+  - title: Bulito Reef
+    description: Bulito Reef
+    lat: '34.4585'
+    lng: '-120.3335'
+  - title: Carpinteria Inshore
+    description: Carpinteria Inshore
+    lat: '34.39388'
+    lng: '-119.53925'
+  - title: Carpinteria Offshore
+    description: Carpinteria Offshore
+    lat: '34.38387'
+    lng: '-119.54187'
+  - title: Carpinteria Reef - near mooring site CAR
+    description: Carpinteria Reef - near mooring site CAR
+    lat: '34.39023'
+    lng: '-119.53987'
+  - title: Mohawk Inshore
+    description: Mohawk Inshore
+    lat: '34.39488'
+    lng: '-119.72917'
+  - title: Mohawk Reef
+    description: Mohawk Reef
+    lat: '34.39338'
+    lng: '-119.73012'
+  - title: Naples Inshore
+    description: Naples Inshore
+    lat: '34.42772'
+    lng: '-119.95053'
+  - title: Naples Offshore
+    description: Naples Offshore
+    lat: '34.41305'
+    lng: '-119.95602'
+  - title: Naples Reef - near mooring site NAP
+    description: Naples Reef - near mooring site NAP
+    lat: '34.42385'
+    lng: '-119.95032'
+  - title: Arroyo Quemado Inshore
+    description: Arroyo Quemado Inshore
+    lat: '34.46843'
+    lng: '-120.11933'
+  - title: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
+    description: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
+    lat: '34.46464'
+    lng: '-120.12057'
+  - title: Arroyo Qmemado Offshore
+    description: Arroyo Qmemado Offshore
+    lat: '34.4614'
+    lng: '-120.11937'
+  - title: Arroyo Quemado Reef - near pre2005 mooring site AQM
+    description: Arroyo Quemado Reef - near pre2005 mooring site AQM
+    lat: '34.46722'
+    lng: '-120.12005'
+  packages:
+    package:
+    - docid: knb-lter-sbc.10
+      shortTitle: Nearshore CTD and Rosette Bottle Profiles
 - id: inshoreMoorings
   label: Moored current velocity, conductivity & temperature
+  frequency: 20 min
+  initiated: '2002'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: ALE
-      description: 'Alegria (ALE) is located offshore from the community of Hollister
-        Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-      lat: '34.46085'
-      lng: '-120.28998'
-    - title: ARQ
-      description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
-        depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously
-        sampled site, AQM.
-      lat: '34.46495'
-      lng: '-120.11965'
-    - title: NAP
-      description: ' The reef is offshore from the community of Naples. Depth: 16.5
-        meters.'
-      lat: '34.42388'
-      lng: '-119.95032'
-    - title: MKO
-      description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth
-        is 10.8 meters.
-      lat: '34.39323'
-      lng: '-119.73012'
-    - title: 'Carpinteria Reef mooring '
-      description: Carpinteria Reef (CAR) is ofshore of the rock groin near the salt
-        marsh, west of the campground. Depth is estimated at 26 ft.
-      lat: '34.39015'
-      lng: '-119.5399'
+  - title: ALE
+    description: 'Alegria (ALE) is located offshore from the community of Hollister
+      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
+    lat: '34.46085'
+    lng: '-120.28998'
+  - title: ARQ
+    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
+      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
+      site, AQM.
+    lat: '34.46495'
+    lng: '-120.11965'
+  - title: NAP
+    description: ' The reef is offshore from the community of Naples. Depth: 16.5
+      meters.'
+    lat: '34.42388'
+    lng: '-119.95032'
+  - title: MKO
+    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
+      10.8 meters.
+    lat: '34.39323'
+    lng: '-119.73012'
+  - title: 'Carpinteria Reef mooring '
+    description: Carpinteria Reef (CAR) is ofshore of the rock groin near the salt
+      marsh, west of the campground. Depth is estimated at 26 ft.
+    lat: '34.39015'
+    lng: '-119.5399'
+  packages:
+    package:
+    - docid: knb-lter-sbc.2008
+      shortTitle: 'Moored CTD and ADCP: ALE'
+    - docid: knb-lter-sbc.2005
+      shortTitle: 'Moored CTD and ADCP: ARQ, close by AQM'
+    - docid: knb-lter-sbc.2002
+      shortTitle: 'Moored CTD and ADCP: NAP'
+    - docid: knb-lter-sbc.2007
+      shortTitle: 'Moored CTD and ADCP: MKO'
+    - docid: knb-lter-sbc.2004
+      shortTitle: 'Moored CTD and ADCP: CAR'
 - id: inshoreMoorings
   label: Moored current velocity, conductivity & temperature
+  frequency: 20 min
+  initiated: '2002'
   habitatName: nearshore
-  habitatLabel: Nearshore
+  habitatLabel: Inshore Ocean
   geodata:
-    geodata:
-    - title: ALE
-      description: 'Alegria (ALE) is located offshore from the community of Hollister
-        Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-      lat: '34.46085'
-      lng: '-120.28998'
-    - title: ARQ
-      description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
-        depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously
-        sampled site, AQM.
-      lat: '34.46495'
-      lng: '-120.11965'
-    - title: NAP
-      description: ' The reef is offshore from the community of Naples. Depth: 16.5
-        meters.'
-      lat: '34.42388'
-      lng: '-119.95032'
-    - title: MKO
-      description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth
-        is 10.8 meters.
-      lat: '34.39323'
-      lng: '-119.73012'
-    - title: 'Carpinteria Reef mooring '
-      description: Carpinteria Reef (CAR) is ofshore of the rock groin near the salt
-        marsh, west of the campground. Depth is estimated at 26 ft.
-      lat: '34.39015'
-      lng: '-119.5399'
+  - title: ALE
+    description: 'Alegria (ALE) is located offshore from the community of Hollister
+      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
+    lat: '34.46085'
+    lng: '-120.28998'
+  - title: ARQ
+    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
+      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
+      site, AQM.
+    lat: '34.46495'
+    lng: '-120.11965'
+  - title: NAP
+    description: ' The reef is offshore from the community of Naples. Depth: 16.5
+      meters.'
+    lat: '34.42388'
+    lng: '-119.95032'
+  - title: MKO
+    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
+      10.8 meters.
+    lat: '34.39323'
+    lng: '-119.73012'
+  - title: 'Carpinteria Reef mooring '
+    description: Carpinteria Reef (CAR) is ofshore of the rock groin near the salt
+      marsh, west of the campground. Depth is estimated at 26 ft.
+    lat: '34.39015'
+    lng: '-119.5399'
+  packages:
+    package:
+    - docid: knb-lter-sbc.2008
+      shortTitle: 'Moored CTD and ADCP: ALE'
+    - docid: knb-lter-sbc.2005
+      shortTitle: 'Moored CTD and ADCP: ARQ, close by AQM'
+    - docid: knb-lter-sbc.2002
+      shortTitle: 'Moored CTD and ADCP: NAP'
+    - docid: knb-lter-sbc.2007
+      shortTitle: 'Moored CTD and ADCP: MKO'
+    - docid: knb-lter-sbc.2004
+      shortTitle: 'Moored CTD and ADCP: CAR'
 - id: inshore_pH
   label: pH
+  frequency: 20 min
+  initiated: '2012'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: ALE
-      description: 'Alegria (ALE) is located offshore from the community of Hollister
-        Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-      lat: '34.46085'
-      lng: '-120.28998'
-    - title: ARQ
-      description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
-        depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously
-        sampled site, AQM.
-      lat: '34.46495'
-      lng: '-120.11965'
-    - title: Coal Oil Point
-      description: Coal Oil Point (COP) is located in the rocky intertidal area on
-        the western edge of the University of California, Santa Barbara (UCSB) campus,
-        and is part of the UC Natural Reserve System
-      lat: '34.40685962'
-      lng: '-119.8782861'
-    - title: Lompoc Landing
-      description: Lompoc Landing (LOL) is a rocky intertidal site located on the
-        Vandenberg Air Force Base (VAFB) and is just north of Surf Beach
-      lat: '34.71905679'
-      lng: '-120.6087994'
-    - title: MKO
-      description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth
-        is 10.8 meters.
-      lat: '34.39323'
-      lng: '-119.73012'
-    - title: Purisima Point
-      description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
-        California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
-      lat: '34.72602'
-      lng: '-120.6276'
-    - title: Rancho Marino
-      description: Rancho Marino (RMC) is in the rocky intertidal area near Cambria,
-        CA. It is is part of the Univeristy of California Natural Reserve System
-      lat: '35.54030478'
-      lng: '-121.0928466'
-    - title: Razors
-      description: Razors (RZR) is in the rocky intertidal near Alegria Beach, located
-        on the Hollister Ranch, between Gaviota and Point Conception
-      lat: '34.46713695'
-      lng: '-120.278178'
-    - title: Stearns Wharf, Santa Barbara CA
-      description: Stearns Wharf, Santa Barbara CA
-      lat: '34.40934'
-      lng: '-119.68493'
+  - title: .na.character
+    description: .na.character
+    lat: .na.character
+    lng: .na.character
+  - title: ALE
+    description: 'Alegria (ALE) is located offshore from the community of Hollister
+      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
+    lat: '34.46085'
+    lng: '-120.28998'
+  - title: ARQ
+    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
+      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
+      site, AQM.
+    lat: '34.46495'
+    lng: '-120.11965'
+  - title: Coal Oil Point
+    description: Coal Oil Point (COP) is located in the rocky intertidal area on the
+      western edge of the University of California, Santa Barbara (UCSB) campus, and
+      is part of the UC Natural Reserve System
+    lat: '34.40685962'
+    lng: '-119.8782861'
+  - title: Lompoc Landing
+    description: Lompoc Landing (LOL) is a rocky intertidal site located on the Vandenberg
+      Air Force Base (VAFB) and is just north of Surf Beach
+    lat: '34.71905679'
+    lng: '-120.6087994'
+  - title: MKO
+    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
+      10.8 meters.
+    lat: '34.39323'
+    lng: '-119.73012'
+  - title: Purisima Point
+    description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
+      California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
+    lat: '34.72602'
+    lng: '-120.6276'
+  - title: Rancho Marino
+    description: Rancho Marino (RMC) is in the rocky intertidal area near Cambria,
+      CA. It is is part of the Univeristy of California Natural Reserve System
+    lat: '35.54030478'
+    lng: '-121.0928466'
+  - title: Razors
+    description: Razors (RZR) is in the rocky intertidal near Alegria Beach, located
+      on the Hollister Ranch, between Gaviota and Point Conception
+    lat: '34.46713695'
+    lng: '-120.278178'
+  - title: Stearns Wharf, Santa Barbara CA
+    description: Stearns Wharf, Santa Barbara CA
+    lat: '34.40934'
+    lng: '-119.68493'
+  packages:
+    package:
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
+    - docid: knb-lter-sbc.6003
+      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6004
+      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+    - docid: knb-lter-sbc.75
+      shortTitle: Benchmark water samples pH for field calibration
 - id: inshore_pH
   label: pH
+  frequency: 20 min
+  initiated: '2012'
   habitatName: nearshore
-  habitatLabel: Nearshore
+  habitatLabel: Inshore Ocean
   geodata:
-    geodata:
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: .na.character
-      description: .na.character
-      lat: .na.character
-      lng: .na.character
-    - title: ALE
-      description: 'Alegria (ALE) is located offshore from the community of Hollister
-        Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-      lat: '34.46085'
-      lng: '-120.28998'
-    - title: ARQ
-      description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
-        depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously
-        sampled site, AQM.
-      lat: '34.46495'
-      lng: '-120.11965'
-    - title: Coal Oil Point
-      description: Coal Oil Point (COP) is located in the rocky intertidal area on
-        the western edge of the University of California, Santa Barbara (UCSB) campus,
-        and is part of the UC Natural Reserve System
-      lat: '34.40685962'
-      lng: '-119.8782861'
-    - title: Lompoc Landing
-      description: Lompoc Landing (LOL) is a rocky intertidal site located on the
-        Vandenberg Air Force Base (VAFB) and is just north of Surf Beach
-      lat: '34.71905679'
-      lng: '-120.6087994'
-    - title: MKO
-      description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth
-        is 10.8 meters.
-      lat: '34.39323'
-      lng: '-119.73012'
-    - title: Purisima Point
-      description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
-        California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
-      lat: '34.72602'
-      lng: '-120.6276'
-    - title: Rancho Marino
-      description: Rancho Marino (RMC) is in the rocky intertidal area near Cambria,
-        CA. It is is part of the Univeristy of California Natural Reserve System
-      lat: '35.54030478'
-      lng: '-121.0928466'
-    - title: Razors
-      description: Razors (RZR) is in the rocky intertidal near Alegria Beach, located
-        on the Hollister Ranch, between Gaviota and Point Conception
-      lat: '34.46713695'
-      lng: '-120.278178'
-    - title: Stearns Wharf, Santa Barbara CA
-      description: Stearns Wharf, Santa Barbara CA
-      lat: '34.40934'
-      lng: '-119.68493'
+  - title: .na.character
+    description: .na.character
+    lat: .na.character
+    lng: .na.character
+  - title: ALE
+    description: 'Alegria (ALE) is located offshore from the community of Hollister
+      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
+    lat: '34.46085'
+    lng: '-120.28998'
+  - title: ARQ
+    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
+      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
+      site, AQM.
+    lat: '34.46495'
+    lng: '-120.11965'
+  - title: Coal Oil Point
+    description: Coal Oil Point (COP) is located in the rocky intertidal area on the
+      western edge of the University of California, Santa Barbara (UCSB) campus, and
+      is part of the UC Natural Reserve System
+    lat: '34.40685962'
+    lng: '-119.8782861'
+  - title: Lompoc Landing
+    description: Lompoc Landing (LOL) is a rocky intertidal site located on the Vandenberg
+      Air Force Base (VAFB) and is just north of Surf Beach
+    lat: '34.71905679'
+    lng: '-120.6087994'
+  - title: MKO
+    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
+      10.8 meters.
+    lat: '34.39323'
+    lng: '-119.73012'
+  - title: Purisima Point
+    description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
+      California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
+    lat: '34.72602'
+    lng: '-120.6276'
+  - title: Rancho Marino
+    description: Rancho Marino (RMC) is in the rocky intertidal area near Cambria,
+      CA. It is is part of the Univeristy of California Natural Reserve System
+    lat: '35.54030478'
+    lng: '-121.0928466'
+  - title: Razors
+    description: Razors (RZR) is in the rocky intertidal near Alegria Beach, located
+      on the Hollister Ranch, between Gaviota and Point Conception
+    lat: '34.46713695'
+    lng: '-120.278178'
+  - title: Stearns Wharf, Santa Barbara CA
+    description: Stearns Wharf, Santa Barbara CA
+    lat: '34.40934'
+    lng: '-119.68493'
+  packages:
+    package:
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
+    - docid: knb-lter-sbc.6003
+      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6004
+      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+    - docid: knb-lter-sbc.75
+      shortTitle: Benchmark water samples pH for field calibration
 - id: beachWrack
   label: Biomass and species composition of macroalgal wrack
+  frequency: Monthly
+  initiated: '2008'
   habitatName: beach
   habitatLabel: Beach
   geodata:
-    geodata:
-    - title: Arroyo Burro Beach
-      description: Arroyo Burro Beach
-      lat: '34.40305'
-      lng: '-119.74375'
-    - title: Arroyo Quemado Beach
-      description: Arroyo Quemado Beach
-      lat: '34.470467'
-      lng: '-120.118617'
-    - title: East UCSB Campus Beach
-      description: East UCSB Campus Beach
-      lat: '34.410767'
-      lng: '-119.842017'
-    - title: Isla Vista West Beach
-      description: Isla Vista West Beach
-      lat: '34.409283'
-      lng: '-119.87385'
-    - title: Santa Claus Lane Beach
-      description: Santa Claus Lane Beach
-      lat: '34.408533'
-      lng: '-119.551583'
-    - title: Carpinteria City Beach
-      description: Carpinteria City Beach
-      lat: '34.39452'
-      lng: '-119.52699'
-    - title: Carpinteria State Beach
-      description: Carpinteria State Beach
-      lat: '34.391151'
-      lng: '-119.521236'
-    - title: East Santa Barbara City Beach
-      description: East Santa Barbara City Beach
-      lat: '34.415751'
-      lng: '-119.674178'
+  - title: Arroyo Burro Beach
+    description: Arroyo Burro Beach
+    lat: '34.40305'
+    lng: '-119.74375'
+  - title: Arroyo Quemado Beach
+    description: Arroyo Quemado Beach
+    lat: '34.470467'
+    lng: '-120.118617'
+  - title: East UCSB Campus Beach
+    description: East UCSB Campus Beach
+    lat: '34.410767'
+    lng: '-119.842017'
+  - title: Isla Vista West Beach
+    description: Isla Vista West Beach
+    lat: '34.409283'
+    lng: '-119.87385'
+  - title: Santa Claus Lane Beach
+    description: Santa Claus Lane Beach
+    lat: '34.408533'
+    lng: '-119.551583'
+  - title: Carpinteria City Beach
+    description: Carpinteria City Beach
+    lat: '34.39452'
+    lng: '-119.52699'
+  - title: Carpinteria State Beach
+    description: Carpinteria State Beach
+    lat: '34.391151'
+    lng: '-119.521236'
+  - title: East Santa Barbara City Beach
+    description: East Santa Barbara City Beach
+    lat: '34.415751'
+    lng: '-119.674178'
+  packages:
+    package:
+    - docid: knb-lter-sbc.40
+      shortTitle: Time series of wrack cover and biomass at selected beaches
 - id: beachBirds
   label: Abundance and diversity of birds
+  frequency: Monthly
+  initiated: '2008'
   habitatName: beach
   habitatLabel: Beach
   geodata:
-    geodata:
-    - title: Arroyo Burro Beach
-      description: Arroyo Burro Beach
-      lat: '34.40305'
-      lng: '-119.74375'
-    - title: Arroyo Quemado Beach
-      description: Arroyo Quemado Beach
-      lat: '34.470467'
-      lng: '-120.118617'
-    - title: East UCSB Campus Beach
-      description: East UCSB Campus Beach
-      lat: '34.410767'
-      lng: '-119.842017'
-    - title: SCLB
-      description: Santa Claus Lane Beach
-      lat: '34.408533'
-      lng: '-119.551583'
-    - title: Carpinteria City Beach
-      description: Carpinteria City Beach
-      lat: '34.39452'
-      lng: '-119.52699'
-    - title: Carpinteria State Beach
-      description: Carpinteria State Beach
-      lat: '34.391151'
-      lng: '-119.521236'
-    - title: Isla Vista West Beach
-      description: Isla Vista West Beach
-      lat: '34.40928'
-      lng: '-119.87385'
-    - title: East Santa Barbara City Beach
-      description: East Santa Barbara City Beach
-      lat: '34.415751'
-      lng: '-119.674178'
+  - title: Arroyo Burro Beach
+    description: Arroyo Burro Beach
+    lat: '34.40305'
+    lng: '-119.74375'
+  - title: Arroyo Quemado Beach
+    description: Arroyo Quemado Beach
+    lat: '34.470467'
+    lng: '-120.118617'
+  - title: East UCSB Campus Beach
+    description: East UCSB Campus Beach
+    lat: '34.410767'
+    lng: '-119.842017'
+  - title: SCLB
+    description: Santa Claus Lane Beach
+    lat: '34.408533'
+    lng: '-119.551583'
+  - title: Carpinteria City Beach
+    description: Carpinteria City Beach
+    lat: '34.39452'
+    lng: '-119.52699'
+  - title: Carpinteria State Beach
+    description: Carpinteria State Beach
+    lat: '34.391151'
+    lng: '-119.521236'
+  - title: Isla Vista West Beach
+    description: Isla Vista West Beach
+    lat: '34.40928'
+    lng: '-119.87385'
+  - title: East Santa Barbara City Beach
+    description: East Santa Barbara City Beach
+    lat: '34.415751'
+    lng: '-119.674178'
+  packages:
+    package:
+    - docid: knb-lter-sbc.51
+      shortTitle: Beach birds and stranded kelp
 - id: beachWrackConsumers
   label: Abundance of invertebrate wrack consumers
+  frequency: Annually
+  initiated: '2011'
   habitatName: beach
   habitatLabel: Beach
   geodata:
-    geodata:
-    - title: Arroyo Burro Beach
-      description: Arroyo Burro Beach
-      lat: '34.40305'
-      lng: '-119.74375'
-    - title: Arroyo Quemado Beach
-      description: Arroyo Quemado Beach
-      lat: '34.470467'
-      lng: '-120.118617'
-    - title: East UCSB Campus Beach
-      description: East UCSB Campus Beach
-      lat: '34.410767'
-      lng: '-119.842017'
-    - title: Isla Vista West Beach
-      description: Isla Vista West Beach
-      lat: '34.409283'
-      lng: '-119.87385'
-    - title: Santa Claus Lane Beach
-      description: Santa Claus Lane Beach
-      lat: '34.408533'
-      lng: '-119.551583'
-    - title: Carpinteria City Beach
-      description: Carpinteria City Beach
-      lat: '34.39452'
-      lng: '-119.52699'
+  - title: Arroyo Burro Beach
+    description: Arroyo Burro Beach
+    lat: '34.40305'
+    lng: '-119.74375'
+  - title: Arroyo Quemado Beach
+    description: Arroyo Quemado Beach
+    lat: '34.470467'
+    lng: '-120.118617'
+  - title: East UCSB Campus Beach
+    description: East UCSB Campus Beach
+    lat: '34.410767'
+    lng: '-119.842017'
+  - title: Isla Vista West Beach
+    description: Isla Vista West Beach
+    lat: '34.409283'
+    lng: '-119.87385'
+  - title: Santa Claus Lane Beach
+    description: Santa Claus Lane Beach
+    lat: '34.408533'
+    lng: '-119.551583'
+  - title: Carpinteria City Beach
+    description: Carpinteria City Beach
+    lat: '34.39452'
+    lng: '-119.52699'
+  packages:
+    package:
+    - docid: knb-lter-sbc.91
+      shortTitle: 'Time series of macroinvertebrates counts and biomass '
 - id: landPrecip
   label: Precipitation collected by SBC LTER or Santa Barbara County
+  frequency: 5 min
+  initiated: 2001-2005
   habitatName: watershed
-  habitatLabel: Watershed
+  habitatLabel: Land
   geodata:
-    geodata:
-    - title: Carpinteria Creek at Veddar's Ranch
-      description: Carpinteria at Veddar's Ranch
-      lat: '34.42374'
-      lng: '-119.48104'
-    - title: El Capitan at State Beach
-      description: El Capitan at State Beach
-      lat: '34.462283'
-      lng: '-120.024883'
-    - title: El Capitan at Upper Bill Wallace Trail
-      description: El Capitan at Upper Bill Wallace Trail
-      lat: '34.496117'
-      lng: '-120.00785'
-    - title: Gobernador at Veddar's Ranch
-      description: Gobernador at Veddar's Ranch
-      lat: '34.4245'
-      lng: '-119.47089'
-    - title: Gaviota at Hwy 101 N rest stop
-      description: Gaviota at Hwy 101 N rest stop
-      lat: '34.48011'
-      lng: '-120.22917'
-    - title: Gaviota at Las Cruces School
-      description: Gaviota at Las Cruces School
-      lat: '34.50765'
-      lng: '-120.22861'
-    - title: Arroyo Hondo at East Avocado Orchard
-      description: Arroyo Hondo at East Avocado Orchard
-      lat: '34.47651'
-      lng: '-120.14064'
-    - title: Arroyo Hondo at Upper Outlaw Trail
-      description: Arroyo Hondo at Upper Outlaw Trail
-      lat: '34.49059'
-      lng: '-120.13678'
-    - title: Refugio at State Park
-      description: Refugio at State Park
-      lat: '34.461853'
-      lng: '-120.076261'
-    - title: Refugio at Lower Aguacitos Ranch
-      description: Refugio at Lower Aguacitos Ranch
-      lat: '34.49122'
-      lng: '-120.07483'
-    - title: Refugio at Upper Aguacitos Ranch
-      description: Refugio at Upper Aguacitos Ranch
-      lat: '34.50856'
-      lng: '-120.07947'
-    - title: Refugio at Rancho La Scherpa
-      description: Refugio at Rancho La Scherpa
-      lat: '34.5303'
-      lng: '-120.05636'
-    - title: Baron Ranch
-      description: Baron Ranch
-      lat: '34.48333333'
-      lng: '-120.1291667'
-    - title: Carpinteria Fire Station
-      description: Carpinteria Fire Station
-      lat: '34.4'
-      lng: '-119.5166667'
-    - title: Cater Water Treatment Plant
-      description: Cater Water Treatment Plant
-      lat: '34.45416667'
-      lng: '-119.7302778'
-    - title: Cold Springs Basin
-      description: Cold Springs Basin
-      lat: '34.45'
-      lng: '-119.6166667'
-    - title: Dos Pueblos Ranch
-      description: Dos Pueblos Ranch
-      lat: '34.44666667'
-      lng: '-119.9516667'
-    - title: Doulton Tunnel
-      description: Doulton Tunnel
-      lat: '34.45694444'
-      lng: '-119.5638889'
-    - title: Edison Trail
-      description: Edison Trail
-      lat: '34.44277778'
-      lng: '-119.5077778'
-    - title: El Deseo
-      description: El Deseo
-      lat: '34.49166667'
-      lng: '-119.6958333'
-    - title: Santa Barbara County Road Yard
-      description: Santa Barbara County Road Yard
-      lat: '34.45'
-      lng: '-119.7666667'
-    - title: KTYD
-      description: KTYD
-      lat: '34.422301'
-      lng: '-119.691716'
-    - title: Nojoqui Falls Park
-      description: Nojoqui Falls Park
-      lat: '34.53388889'
-      lng: '-120.1777778'
-    - title: San Marcos Pass USFS Stn
-      description: San Marcos Pass USFS Stn
-      lat: '34.51111111'
-      lng: '-119.8238889'
-    - title: Santa Barbara Co. FCD Eng. Bldg.
-      description: Santa Barbara Co. FCD Eng. Bldg.
-      lat: '34.41666667'
-      lng: '-119.7'
-    - title: Stanwood Fire Station
-      description: Stanwood Fire Station
-      lat: '34.45'
-      lng: '-119.6833333'
-    - title: Trout Club
-      description: Trout Club
-      lat: '34.48972222'
-      lng: '-119.8'
-    - title: UCSB200
-      description: 'UCSB200: Santa Barbara County Public Works Department Flood Control
-        District Site at: Ellison Hall Roof, UC Santa Barbara'
-      lat: '34.415'
-      lng: '-119.8461111'
-    - title: Gaviota State Park
-      description: 'Gaviota State Park '
-      lat: '34.47245'
-      lng: '-120.22944'
-    - title: Refugio Pass
-      description: Refugio Pass
-      lat: '34.53'
-      lng: '-120.0922'
-    - title: Tecolote Canyon
-      description: Tecolote Canyon
-      lat: '34.520823'
-      lng: "-119.9088 \t"
-    - title: Glen Annie Canyon
-      description: Glen Annie Canyon
-      lat: '34.4750'
-      lng: '-119.8833'
-    - title: Goleta Fire Station
-      description: Goleta Fire Station
-      lat: '34.443055'
-      lng: '-119.85361'
-    - title: Goleta Water District
-      description: Goleta Water District
-      lat: '34.436944'
-      lng: '-119.7855'
-    - title: Santa Barbara Caltrans Office
-      description: Santa Barbara Caltrans Office
-      lat: '34.438611'
-      lng: '-119.755'
-    - title: Botanic Garden
-      description: Botanic Garden
-      lat: '34.45388'
-      lng: '-119.70694'
-    - title: Carpinteria US Forest Service Office
-      description: Carpinteria US Forest Service Office
-      lat: '34.40194'
-      lng: '-119.49138'
-    - title: Montecito
-      description: Montecito
-      lat: '34.429444'
-      lng: '-119.640555'
-    - title: Rancho San Julian
-      description: Rancho San Julian
-      lat: '34.531666'
-      lng: '-120.33777'
-    - title: Buellton Fire Station
-      description: Buellton Fire Station
-      lat: '34.61333'
-      lng: '-120.19667'
+  - title: Carpinteria Creek at Veddar's Ranch
+    description: Carpinteria at Veddar's Ranch
+    lat: '34.42374'
+    lng: '-119.48104'
+  - title: El Capitan at State Beach
+    description: El Capitan at State Beach
+    lat: '34.462283'
+    lng: '-120.024883'
+  - title: El Capitan at Upper Bill Wallace Trail
+    description: El Capitan at Upper Bill Wallace Trail
+    lat: '34.496117'
+    lng: '-120.00785'
+  - title: Gobernador at Veddar's Ranch
+    description: Gobernador at Veddar's Ranch
+    lat: '34.4245'
+    lng: '-119.47089'
+  - title: Gaviota at Hwy 101 N rest stop
+    description: Gaviota at Hwy 101 N rest stop
+    lat: '34.48011'
+    lng: '-120.22917'
+  - title: Gaviota at Las Cruces School
+    description: Gaviota at Las Cruces School
+    lat: '34.50765'
+    lng: '-120.22861'
+  - title: Arroyo Hondo at East Avocado Orchard
+    description: Arroyo Hondo at East Avocado Orchard
+    lat: '34.47651'
+    lng: '-120.14064'
+  - title: Arroyo Hondo at Upper Outlaw Trail
+    description: Arroyo Hondo at Upper Outlaw Trail
+    lat: '34.49059'
+    lng: '-120.13678'
+  - title: Refugio at State Park
+    description: Refugio at State Park
+    lat: '34.461853'
+    lng: '-120.076261'
+  - title: Refugio at Lower Aguacitos Ranch
+    description: Refugio at Lower Aguacitos Ranch
+    lat: '34.49122'
+    lng: '-120.07483'
+  - title: Refugio at Upper Aguacitos Ranch
+    description: Refugio at Upper Aguacitos Ranch
+    lat: '34.50856'
+    lng: '-120.07947'
+  - title: Refugio at Rancho La Scherpa
+    description: Refugio at Rancho La Scherpa
+    lat: '34.5303'
+    lng: '-120.05636'
+  packages:
+    package:
+    - docid: knb-lter-sbc.4001
+      shortTitle: 'Precipitation: CP201, Carpinteria at Veddar''s Ranch'
+    - docid: knb-lter-sbc.4002
+      shortTitle: 'Precipitation: EL201,El Capitan at State Beach'
+    - docid: knb-lter-sbc.4003
+      shortTitle: 'Precipitation: EL202, El Capitan at Upper Bill Wallace Trail'
+    - docid: knb-lter-sbc.4004
+      shortTitle: 'Precipitation: GB201, Gobernador at Veddar''s Ranch'
+    - docid: knb-lter-sbc.4005
+      shortTitle: 'Precipitation: GV201, Gaviota at Hwy 101 N rest stop'
+    - docid: knb-lter-sbc.4006
+      shortTitle: 'Precipitation: GV202, Gaviota at Las Cruces School'
+    - docid: knb-lter-sbc.4007
+      shortTitle: 'Precipitation: HO201, Arroyo Hondo at East Avocado Orchard'
+    - docid: knb-lter-sbc.4008
+      shortTitle: 'Precipitation: HO202, Arroyo Hondo at Upper Outlaw Trail'
+    - docid: knb-lter-sbc.4009
+      shortTitle: 'Precipitation: RG201, Refugio at State Park'
+    - docid: knb-lter-sbc.4010
+      shortTitle: 'Precipitation: RG202, Refugio at Lower Aguacitos Ranch'
+    - docid: knb-lter-sbc.4011
+      shortTitle: 'Precipitation: RG203, Refugio at Upper Aguacitos Ranch'
+    - docid: knb-lter-sbc.4012
+      shortTitle: 'Precipitation: RG204, Refugio at Rancho La Scherpa'
+- id: landPrecip
+  label: Precipitation collected by SBC LTER or Santa Barbara County
+  frequency: 5 min
+  initiated: 2001-2005
+  habitatName: watershed
+  habitatLabel: Land
+  geodata:
+  - title: Baron Ranch
+    description: Baron Ranch
+    lat: '34.48333333'
+    lng: '-120.1291667'
+  - title: Carpinteria Fire Station
+    description: Carpinteria Fire Station
+    lat: '34.4'
+    lng: '-119.5166667'
+  - title: Cater Water Treatment Plant
+    description: Cater Water Treatment Plant
+    lat: '34.45416667'
+    lng: '-119.7302778'
+  - title: Cold Springs Basin
+    description: Cold Springs Basin
+    lat: '34.45'
+    lng: '-119.6166667'
+  - title: Dos Pueblos Ranch
+    description: Dos Pueblos Ranch
+    lat: '34.44666667'
+    lng: '-119.9516667'
+  - title: Doulton Tunnel
+    description: Doulton Tunnel
+    lat: '34.45694444'
+    lng: '-119.5638889'
+  - title: Edison Trail
+    description: Edison Trail
+    lat: '34.44277778'
+    lng: '-119.5077778'
+  - title: El Deseo
+    description: El Deseo
+    lat: '34.49166667'
+    lng: '-119.6958333'
+  - title: Santa Barbara County Road Yard
+    description: Santa Barbara County Road Yard
+    lat: '34.45'
+    lng: '-119.7666667'
+  - title: KTYD
+    description: KTYD
+    lat: '34.422301'
+    lng: '-119.691716'
+  - title: Nojoqui Falls Park
+    description: Nojoqui Falls Park
+    lat: '34.53388889'
+    lng: '-120.1777778'
+  - title: San Marcos Pass USFS Stn
+    description: San Marcos Pass USFS Stn
+    lat: '34.51111111'
+    lng: '-119.8238889'
+  - title: Santa Barbara Co. FCD Eng. Bldg.
+    description: Santa Barbara Co. FCD Eng. Bldg.
+    lat: '34.41666667'
+    lng: '-119.7'
+  - title: Stanwood Fire Station
+    description: Stanwood Fire Station
+    lat: '34.45'
+    lng: '-119.6833333'
+  - title: Trout Club
+    description: Trout Club
+    lat: '34.48972222'
+    lng: '-119.8'
+  - title: UCSB200
+    description: 'UCSB200: Santa Barbara County Public Works Department Flood Control
+      District Site at: Ellison Hall Roof, UC Santa Barbara'
+    lat: '34.415'
+    lng: '-119.8461111'
+  - title: Gaviota State Park
+    description: 'Gaviota State Park '
+    lat: '34.47245'
+    lng: '-120.22944'
+  - title: Refugio Pass
+    description: Refugio Pass
+    lat: '34.53'
+    lng: '-120.0922'
+  - title: Tecolote Canyon
+    description: Tecolote Canyon
+    lat: '34.520823'
+    lng: "-119.9088 \t"
+  - title: Glen Annie Canyon
+    description: Glen Annie Canyon
+    lat: '34.4750'
+    lng: '-119.8833'
+  - title: Goleta Fire Station
+    description: Goleta Fire Station
+    lat: '34.443055'
+    lng: '-119.85361'
+  - title: Goleta Water District
+    description: Goleta Water District
+    lat: '34.436944'
+    lng: '-119.7855'
+  - title: Santa Barbara Caltrans Office
+    description: Santa Barbara Caltrans Office
+    lat: '34.438611'
+    lng: '-119.755'
+  - title: Botanic Garden
+    description: Botanic Garden
+    lat: '34.45388'
+    lng: '-119.70694'
+  - title: Carpinteria US Forest Service Office
+    description: Carpinteria US Forest Service Office
+    lat: '34.40194'
+    lng: '-119.49138'
+  - title: Montecito
+    description: Montecito
+    lat: '34.429444'
+    lng: '-119.640555'
+  - title: Rancho San Julian
+    description: Rancho San Julian
+    lat: '34.531666'
+    lng: '-120.33777'
+  - title: Buellton Fire Station
+    description: Buellton Fire Station
+    lat: '34.61333'
+    lng: '-120.19667'
+  packages:
+    package:
+    - docid: knb-lter-sbc.5001
+      shortTitle: 'County FCD Precipitation: Baron Ranch 262'
+    - docid: knb-lter-sbc.5002
+      shortTitle: 'County FCD Precipitation: Carpinteria Fire Station 208'
+    - docid: knb-lter-sbc.5003
+      shortTitle: 'County FCD Precipitation: Cater Water Treatment Plant 229'
+    - docid: knb-lter-sbc.5004
+      shortTitle: 'County FCD Precipitation: Cold Springs 210'
+    - docid: knb-lter-sbc.5005
+      shortTitle: 'County FCD Precipitation: Dos Pueblos Ranch 226'
+    - docid: knb-lter-sbc.5006
+      shortTitle: 'County FCD Precipitation: Doulton Tunnel 231'
+    - docid: knb-lter-sbc.5007
+      shortTitle: 'County FCD Precipitation: Edison Trail 252'
+    - docid: knb-lter-sbc.5008
+      shortTitle: 'County FCD Precipitation: El Deseo 255'
+    - docid: knb-lter-sbc.5009
+      shortTitle: 'County FCD Precipitation: Santa Barbara County Road Yard  211'
+    - docid: knb-lter-sbc.5010
+      shortTitle: 'County FCD Precipitation: KTYD227'
+    - docid: knb-lter-sbc.5011
+      shortTitle: 'County FCD Precipitation: Nojoqui Falls Park 236'
+    - docid: knb-lter-sbc.5012
+      shortTitle: 'County FCD Precipitation: San Marcos Pass USFS Stn 212'
+    - docid: knb-lter-sbc.5013
+      shortTitle: 'County FCD Precipitation: Santa Barbara Co. FCD Eng. Bldg 234'
+    - docid: knb-lter-sbc.5014
+      shortTitle: 'County FCD Precipitation: Stanwood Fire Station 228'
+    - docid: knb-lter-sbc.5015
+      shortTitle: 'County FCD Precipitation: Trout Club 242'
+    - docid: knb-lter-sbc.5016
+      shortTitle: 'County FCD Precipitation: UCSB 200'
+    - docid: knb-lter-sbc.5017
+      shortTitle: County FCD PrecipitationGaviota State Park 301
+    - docid: knb-lter-sbc.5018
+      shortTitle: 'County FCD Precipitation: Refugio Pass 429'
+    - docid: knb-lter-sbc.5019
+      shortTitle: 'County FCD Precipitation: Tecolote Canyon 280'
+    - docid: knb-lter-sbc.5020
+      shortTitle: 'County FCD Precipitation: Glen Annie Canyon 309'
+    - docid: knb-lter-sbc.5021
+      shortTitle: 'County FCD Precipitation: Goleta Fire Station 440'
+    - docid: knb-lter-sbc.5022
+      shortTitle: 'County FCD Precipitation: Goleta Water District 334'
+    - docid: knb-lter-sbc.5023
+      shortTitle: 'County FCD Precipitation: SB Caltrans Office 335'
+    - docid: knb-lter-sbc.5024
+      shortTitle: 'County FCD Precipitation: Botanic Garden 321'
+    - docid: knb-lter-sbc.5025
+      shortTitle: 'County FCD Precipitation: Carpinteria Fire Station 383'
+    - docid: knb-lter-sbc.5026
+      shortTitle: 'County FCD Precipitation: Montecito 325'
+    - docid: knb-lter-sbc.5027
+      shortTitle: 'County FCD Precipitation: Rancho San Julian 389'
+    - docid: knb-lter-sbc.5028
+      shortTitle: 'County FCD Precipitation: Buellton 233'
 - id: landStreamDisch
   label: Stream Discharge
+  frequency: 15 min
+  initiated: 2001-2005
   habitatName: watershed
-  habitatLabel: Watershed
+  habitatLabel: Land
   geodata:
-    geodata:
-    - title: AB00
-      description: Arroyo Burro, Arroyo Burro at Cliff Drive
-      lat: '34.40505027'
-      lng: '-119.74021'
-    - title: BC02
-      description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road
-        culvert
-      lat: '34.43854'
-      lng: '-119.90563'
-    - title: ' Gaviota Creek'
-      description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
-      lat: '34.4855'
-      lng: '-120.22917'
-    - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-      description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101
-        Bridge
-      lat: '34.4752858'
-      lng: '-120.14122'
-    - title: MC00
-      description: Mission Creek, Mission at Montecito St
-      lat: '34.41307303'
-      lng: '-119.69499'
-    - title: Mission Creek at Rocky Nook, USGS 11119745
-      description: Mission Creek at Rocky Nook, USGS 11119745
-      lat: '34.44072'
-      lng: '-119.71244'
-    - title: RG01
-      description: Refugio Creek, Refugio at Hwy 101 Bridge
-      lat: '34.46573164'
-      lng: '-120.06932'
-    - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-      description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-      lat: '34.45761111'
-      lng: '-119.69222'
-    - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-      description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-      lat: '34.44861'
-      lng: '-119.84028'
+  - title: AB00
+    description: Arroyo Burro, Arroyo Burro at Cliff Drive
+    lat: '34.40505027'
+    lng: '-119.74021'
+  - title: BC02
+    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
+    lat: '34.43854'
+    lng: '-119.90563'
+  - title: ' Gaviota Creek'
+    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
+    lat: '34.4855'
+    lng: '-120.22917'
+  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    lat: '34.4752858'
+    lng: '-120.14122'
+  - title: MC00
+    description: Mission Creek, Mission at Montecito St
+    lat: '34.41307303'
+    lng: '-119.69499'
+  - title: Mission Creek at Rocky Nook, USGS 11119745
+    description: Mission Creek at Rocky Nook, USGS 11119745
+    lat: '34.44072'
+    lng: '-119.71244'
+  - title: RG01
+    description: Refugio Creek, Refugio at Hwy 101 Bridge
+    lat: '34.46573164'
+    lng: '-120.06932'
+  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    lat: '34.45761111'
+    lng: '-119.69222'
+  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    lat: '34.44861'
+    lng: '-119.84028'
+  packages:
+    package:
+    - docid: knb-lter-sbc.3001
+      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
+    - docid: knb-lter-sbc.3003
+      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3007
+      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3009
+      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
+    - docid: knb-lter-sbc.3011
+      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
+    - docid: knb-lter-sbc.3013
+      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
 - id: landStreamChem
   label: Nutrients, particulate N, P, and C, TSS, conductivity
+  frequency: Hourly-weekly
+  initiated: 2001-2005
   habitatName: watershed
-  habitatLabel: Watershed
+  habitatLabel: Land
   geodata:
-    geodata:
-    - title: AB00
-      description: Arroyo Burro, Arroyo Burro at Cliff Drive
-      lat: '34.40505027'
-      lng: '-119.74021'
-    - title: Atascadero Creek at Puente Street
-      description: Atascadero Creek, Atascadero at Puente
-      lat: '34.43226'
-      lng: '-119.78414'
-    - title: BC02
-      description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road
-        culvert
-      lat: '34.43854'
-      lng: '-119.90563'
-    - title: Devereaux Creek at Devereaux Slough inflow
-      description: DV01, Devereaux Creek, Devereaux Creek at Devereaux Slough inflow
-      lat: '34.41761'
-      lng: '-119.87406'
-    - title: ' Gaviota Creek'
-      description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
-      lat: '34.4855'
-      lng: '-120.22917'
-    - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-      description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101
-        Bridge
-      lat: '34.4752858'
-      lng: '-120.14122'
-    - title: MC00
-      description: Mission Creek, Mission at Montecito St
-      lat: '34.41307303'
-      lng: '-119.69499'
-    - title: Mission Creek at Rocky Nook, USGS 11119745
-      description: Mission Creek at Rocky Nook, USGS 11119745
-      lat: '34.44072'
-      lng: '-119.71244'
-    - title: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
-      description: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
-      lat: '34.472'
-      lng: '-120.28885'
-    - title: RG01
-      description: Refugio Creek, Refugio at Hwy 101 Bridge
-      lat: '34.46573164'
-      lng: '-120.06932'
-    - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-      description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-      lat: '34.45761111'
-      lng: '-119.69222'
-    - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-      description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-      lat: '34.44861'
-      lng: '-119.84028'
-    - title: TO02, Tecolote Creek at Vereda Galeria, Goleta
-      description: TO02, Tecolote Creek at Vereda Galeria, Goleta
-      lat: '34.440614'
-      lng: '-119.917915'
+  - title: AB00
+    description: Arroyo Burro, Arroyo Burro at Cliff Drive
+    lat: '34.40505027'
+    lng: '-119.74021'
+  - title: Atascadero Creek at Puente Street
+    description: Atascadero Creek, Atascadero at Puente
+    lat: '34.43226'
+    lng: '-119.78414'
+  - title: BC02
+    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
+    lat: '34.43854'
+    lng: '-119.90563'
+  - title: Devereaux Creek at Devereaux Slough inflow
+    description: DV01, Devereaux Creek, Devereaux Creek at Devereaux Slough inflow
+    lat: '34.41761'
+    lng: '-119.87406'
+  - title: ' Gaviota Creek'
+    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
+    lat: '34.4855'
+    lng: '-120.22917'
+  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    lat: '34.4752858'
+    lng: '-120.14122'
+  - title: MC00
+    description: Mission Creek, Mission at Montecito St
+    lat: '34.41307303'
+    lng: '-119.69499'
+  - title: Mission Creek at Rocky Nook, USGS 11119745
+    description: Mission Creek at Rocky Nook, USGS 11119745
+    lat: '34.44072'
+    lng: '-119.71244'
+  - title: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
+    description: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
+    lat: '34.472'
+    lng: '-120.28885'
+  - title: RG01
+    description: Refugio Creek, Refugio at Hwy 101 Bridge
+    lat: '34.46573164'
+    lng: '-120.06932'
+  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    lat: '34.45761111'
+    lng: '-119.69222'
+  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    lat: '34.44861'
+    lng: '-119.84028'
+  - title: TO02, Tecolote Creek at Vereda Galeria, Goleta
+    description: TO02, Tecolote Creek at Vereda Galeria, Goleta
+    lat: '34.440614'
+    lng: '-119.917915'
+  packages:
+    package:
+    - docid: knb-lter-sbc.6
+      shortTitle: Stream Chemistry
 - id: inshoreLarvae
   label: Invertebrate larval settlement
+  frequency: Bi-weekly
+  initiated: '1990'
   habitatName: reef
   habitatLabel: Reef
   geodata:
-    geodata:
-    - title: Anacapa Island CA
-      description: Anacapa Island CA
-      lat: '34.01681'
-      lng: '-119.362097'
-    - title: Point Cabrillo, Mendocino County CA
-      description: Point Cabrillo, Mendocino County CA
-      lat: '39.35037'
-      lng: '-123.82679'
-    - title: Gaviota Pier, Santa Barbara County CA
-      description: Gaviota Pier, Santa Barbara County CA
-      lat: '34.46978'
-      lng: '-120.22821'
-    - title: Ocean Beach, San Diego CA
-      description: Ocean Beach, San Diego CA
-      lat: '32.74914'
-      lng: '-117.25662'
-    - title: Ellwood Pier, Goleta CA
-      description: Ellwood Pier, Goleta CA
-      lat: '34.43085'
-      lng: '-119.92408'
-    - title: Stearns Wharf, Santa Barbara CA
-      description: Stearns Wharf, Santa Barbara CA
-      lat: '34.40934'
-      lng: '-119.68493'
-    - title: Scripps Peir, San Diego CA
-      description: Scripps Peir, San Diego CA
-      lat: '32.85039'
-      lng: '-117.25647'
-    - title: Foster et al, Urchin collection site
-      description: Collection site for Foster et al (2014) Urchin sampling
-      lat: '34.415'
-      lng: '-119.83'
-    - title: UC Santa Barbara, Marine Science Institute
-      description: Marine Science Institute, Univeristy of California, Santa Barbara
-      lat: '34.4125'
-      lng: '-119.842'
-    - title: MOHK
-      description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-        on land is Mohawk Rd / Edgewater Way.'
-      lat: '34.3940708'
-      lng: '-119.72957'
-    - title: UC Santa Barbara, Marine Science Institute
-      description: Marine Science Institute, Univeristy of California, Santa Barbara
-      lat: '34.4125'
-      lng: '-119.842'
+  - title: Anacapa Island CA
+    description: Anacapa Island CA
+    lat: '34.01681'
+    lng: '-119.362097'
+  - title: Point Cabrillo, Mendocino County CA
+    description: Point Cabrillo, Mendocino County CA
+    lat: '39.35037'
+    lng: '-123.82679'
+  - title: Gaviota Pier, Santa Barbara County CA
+    description: Gaviota Pier, Santa Barbara County CA
+    lat: '34.46978'
+    lng: '-120.22821'
+  - title: Ocean Beach, San Diego CA
+    description: Ocean Beach, San Diego CA
+    lat: '32.74914'
+    lng: '-117.25662'
+  - title: Ellwood Pier, Goleta CA
+    description: Ellwood Pier, Goleta CA
+    lat: '34.43085'
+    lng: '-119.92408'
+  - title: Stearns Wharf, Santa Barbara CA
+    description: Stearns Wharf, Santa Barbara CA
+    lat: '34.40934'
+    lng: '-119.68493'
+  - title: Scripps Peir, San Diego CA
+    description: Scripps Peir, San Diego CA
+    lat: '32.85039'
+    lng: '-117.25647'
+  - title: Foster et al, Urchin collection site
+    description: Collection site for Foster et al (2014) Urchin sampling
+    lat: '34.415'
+    lng: '-119.83'
+  - title: UC Santa Barbara, Marine Science Institute
+    description: Marine Science Institute, Univeristy of California, Santa Barbara
+    lat: '34.4125'
+    lng: '-119.842'
+  - title: MOHK
+    description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
+      on land is Mohawk Rd / Edgewater Way.'
+    lat: '34.3940708'
+    lng: '-119.72957'
+  packages:
+    package:
+    - docid: knb-lter-sbc.52
+      shortTitle: Larval Settlement
+    - docid: knb-lter-sbc.83
+      shortTitle: Diet effects in the Purple Sea Urchin, 2011
+    - docid: knb-lter-sbc.86
+      shortTitle: Effect of egg concentration on purple sea urchin fertilization
