@@ -32,12 +32,18 @@ function initMap() {
 
 		elements.each(function(index, value) {
 			let data = $(this).data();
+			let lat = parseFloat(data.lat);
+			let lng = parseFloat(data.lng);
+
+			if (Number.isNaN(lat) || Number.isNaN(lng)) {
+				return;
+			}
 
 			// Initialize marker
 			const marker = new google.maps.Marker({
 				position: {
-					lat: data.lat,
-					lng: data.lng
+					lat: lat,
+					lng: lng
 				},
 				map: map,
 				title: data.title,
@@ -124,32 +130,26 @@ $(function() {
 
 	// Toggles on all checkboxes of specific id to on
 	$('.group-toggle').change(function() {
+		let check_class = ".chkbox_" + this.id;
+		let boxes = $(check_class);
 
 		if (this.checked) {
-			let check_class = "chkbox_" + this.id;
-			$("." + check_class).prop('checked', true);
+			$(check_class).prop('checked', true);
+			$(check_class).parent().attr('class', "toggle btn btn-info");
 
-			// For bootstrap to show toggle
-			$("." + check_class).parent().attr('class', "toggle btn btn-info");
-
-			// Show data on map
-			boxes = document.getElementsByClassName(check_class);
-			for (let i in boxes) {  // Show all layers
+			// Show layers on map
+			boxes.each((i) => {
 				toggle_layer(true, boxes[i].id);
-			}
+			});
 		}
 		else {
-			let check_class = "chkbox_" + this.id;
-			$("." + check_class).prop('checked', false);
+			$(check_class).prop('checked', false);
+			$(check_class).parent().attr('class', "toggle btn btn-secondary off");
 
-			// For bootstrap to show toggle
-			$("." + check_class).parent().attr('class', "toggle btn btn-secondary off");
-
-			// Show data on map
-			boxes = document.getElementsByClassName(check_class);
-			for (let i in boxes){  // Show all layers
+			// Hide layers on map
+			boxes.each((i) => {
 				toggle_layer(false, boxes[i].id);
-			}
+			});
 		}
 	});
 
@@ -163,18 +163,20 @@ $(function() {
 		for (let i in mapLayers) {
 			if (mapLayers[i] == '') continue;
 
-			if (!layerCollections[mapLayers[i]]) {
-				layerCollections[mapLayers[i]] = [];
+			let mapLayer = mapLayers[i] + '-measurement';
+
+			if (!layerCollections[mapLayer]) {
+				layerCollections[mapLayer] = [];
 			}
 
-			layerCollections[mapLayers[i]].push({
+			layerCollections[mapLayer].push({
 				name: name,
 				packages: packages
 			});
 
 			// Add collection btn to each measurement box
-			if ($(`#${ mapLayers[i] } .collection-btn`).length == 0) {
-				$(`#${ mapLayers[i] }`).append(`
+			if ($(`#${ mapLayer } .collection-btn`).length == 0) {
+				$(`#${ mapLayer }`).append(`
 					<br>
 					<a class="collection-btn" href="#">
 						See collections

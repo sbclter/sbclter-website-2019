@@ -19,14 +19,13 @@ page_css:
 {% include gmap.html %}
 
 
-{% assign layer_groups = site.data.sbcMapLayers_fake | group_by:"habitatName" %}
+{% assign layer_groups = site.data.sbcMapLayer_test | group_by:"habitatName" %}
 {% include layers_table_fake.html
 	columns=page.columns
 	data=layer_groups
 	dataFilter=page.dataFilter
 	collectionData=site.data.dataCollections %}
 
-<br>
 <!-- Current API is just for development, need a new key -->
 <script src="/assets/js/gmap_fake.js"></script>
 
