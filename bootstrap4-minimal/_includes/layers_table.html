@@ -1,4 +1,5 @@
 <div class="pull-left">
+  <br>
   <table class="table">
     <thead id="table_header_{{include.data.name}}">
       <tr class="title-row">
@@ -8,28 +9,59 @@
       </tr>
     </thead>
     <tbody id="myTable">
-    {% for group in include.data %}
+      {% for group in include.data %}
         {% assign has_header = 0 %}
         {% for itemrow in group.items %}
           <tr class="hover_row">
 
             {% if has_header != 1 %}
-              <th style=" vertical-align: middle; text-align: center;" rowspan="{{group.items | size}}">
+              <th id="{{ itemrow.habitatName }}-habitat" style=" vertical-align: middle; text-align: center;" rowspan="{{group.items | size}}">
                 <h3>{{itemrow["habitatLabel"]}}</h3>
-                <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="group-toggle" id="{{itemrow.habitatName}}"/>
+                <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="group-toggle" id="{{ itemrow.habitatName }}"/>
               </th>
               {% assign has_header = 1 %}
             {% endif %}
 
-            {% for filter in include.dataFilter %}
-              <td> {{ itemrow[filter] }} </td>
-            {% endfor %}
+            <td id="{{ itemrow.id }}-measurement">
+              {{ itemrow[include.dataFilter] }}
+              {% for geodata in itemrow.geodata %}
+                  <div class="{{ itemrow.habitatName }}-{{itemrow.id}}-geodata hidden"
+                       data-title="{{ geodata.title }}"
+                       data-description="{{ geodata.description }}"
+                       data-habitat="{{ itemrow.habitatLabel }}"
+                       data-lat="{{ geodata.lat }}"
+                       data-lng="{{ geodata.lng }}">
+                  </div>
+              {% endfor %}
+            </td>
 
             <td>
-              <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="layer_box chkbox_{{itemrow.habitatName}}" id="{{itemrow.id}}"/>
+              <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="layer_box chkbox_{{ itemrow.habitatName }}" id="{{ itemrow.habitatName }}-{{ itemrow.id }}"/>
             </td>
           </tr>
         {% endfor %}
-    {% endfor %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
+<!-- Store collection data for Javscript processing -->
+<div id="layers-collection-data" class="hidden">
+  {% for collection in include.collectionData %}
+      <div class="collection">
+        <div class="name">{{ collection.collectionName }}</div>
+        <div class="mapLayers">{{ collection.mapLayers.mapLayer | join: ',' }}</div>
+        <div class="packages">{{ collection.dataPackages.package | jsonify }}</div>
+      </div>
+  {% endfor %}
+</div>
 
+<!-- Popup Modal -->
+<div id="layer-modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
