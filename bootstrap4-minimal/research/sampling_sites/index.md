@@ -20,7 +20,7 @@ page_css:
 
 
 {% assign layer_groups = site.data.sbcMapLayer_test | group_by:"habitatName" %}
-{% include layers_table_fake.html
+{% include layers_table.html
 	columns=page.columns
 	data=layer_groups
 	dataFilter=page.dataFilter
