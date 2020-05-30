@@ -64,7 +64,7 @@ class PackageFile {
 
 			// Build datatable section
 			element.append(`
-				<div class="section-title datatable-title" data-toggle="collapse" href="#datatable${ i }" aria-expanded="false" aria-controls="datatable${ i }">
+				<div class="section-title datatable-title clickable" data-toggle="collapse" href="#datatable${ i }" aria-expanded="false" aria-controls="datatable${ i }">
 					<div class="title">
 						Data Table ${ parseInt(i) + 1 }: ${ tables[i]['name'] }
 					</div>
@@ -92,7 +92,7 @@ class PackageFile {
 
 			// Build entity section
 			element.append(`
-				<div class="section-title entities-title" data-toggle="collapse" href="#entities${ i }" aria-expanded="false" aria-controls="entities${ i }">
+				<div class="section-title entities-title clickable" data-toggle="collapse" href="#entities${ i }" aria-expanded="false" aria-controls="entities${ i }">
 					<div class="title">
 						Entity ${ parseInt(i) + 1 }: ${ entities[i]['name'] }
 					</div>
