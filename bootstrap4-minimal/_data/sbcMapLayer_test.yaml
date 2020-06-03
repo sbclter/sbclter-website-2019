@@ -1,5 +1,7 @@
 - id: reefAnnPopSurvey
   label: Abundance of >200 species of algae, invertebrates and fish
+  collectionName: 'SBC LTER: Ongoing time-series of giant kelp forest community dynamics
+    (KFCD)'
   frequency: Annually
   initiated: '2000'
   habitatName: reef
@@ -371,6 +373,7 @@
       shortTitle: Master species list
 - id: reefLTE
   label: Abundance of algae, invertebrates, and fish in the kelp removal experiment
+  collectionName: 'SBC LTER: Ongoing long-term experiment of kelp removal (LTE KR)'
   frequency: Seasonally
   initiated: '2008'
   habitatName: reef
@@ -527,6 +530,8 @@
       shortTitle: LTE KR - Net primary production of macroalgae
 - id: reefNPPgiantKelp
   label: Giant kelp biomass, growth, loss, NPP and stoichiometry
+  collectionName: 'SBC LTER: Ongoing time-series of net primary production of giant
+    kelp'
   frequency: Seasonally
   initiated: '2002'
   habitatName: reef
@@ -577,6 +582,7 @@
       shortTitle: Giant kelp frond allometry
 - id: reefLobsters
   label: Lobsters
+  collectionName: ' SBC LTER: Spiny lobster in California'
   frequency: Annually
   initiated: '2012'
   habitatName: reef
@@ -669,6 +675,8 @@
       shortTitle: Lobster abundance, size and fishing pressure
 - id: reefSCIsland
   label: Surfperch density and size, foraging habitat, prey biomass
+  collectionName: 'SBC LTER: Long-term time-series of Santa Cruz Island reef community
+    structure'
   frequency: Annually
   initiated: '1992'
   habitatName: reef
@@ -744,81 +752,7 @@
       shortTitle: SCI abundance of Pycnopodia helianthoides
 - id: inshoreProfiles
   label: Nutrients, particulate N P & C, chlorophyll-a and CTD profiles
-  frequency: Monthly
-  initiated: '2002'
-  habitatName: reef
-  habitatLabel: Reef
-  geodata:
-  - title: Arroyo Burro
-    description: Arroyo Burro
-    lat: '34.40017'
-    lng: '-119.74438'
-  - title: Bulito Inshore
-    description: Bulito Inshore
-    lat: '34.4589'
-    lng: '-120.3334'
-  - title: Bulito Offshore
-    description: Bulito Offshore
-    lat: '34.4582'
-    lng: '-120.3336'
-  - title: Bulito Reef
-    description: Bulito Reef
-    lat: '34.4585'
-    lng: '-120.3335'
-  - title: Carpinteria Inshore
-    description: Carpinteria Inshore
-    lat: '34.39388'
-    lng: '-119.53925'
-  - title: Carpinteria Offshore
-    description: Carpinteria Offshore
-    lat: '34.38387'
-    lng: '-119.54187'
-  - title: Carpinteria Reef - near mooring site CAR
-    description: Carpinteria Reef - near mooring site CAR
-    lat: '34.39023'
-    lng: '-119.53987'
-  - title: Mohawk Inshore
-    description: Mohawk Inshore
-    lat: '34.39488'
-    lng: '-119.72917'
-  - title: Mohawk Reef
-    description: Mohawk Reef
-    lat: '34.39338'
-    lng: '-119.73012'
-  - title: Naples Inshore
-    description: Naples Inshore
-    lat: '34.42772'
-    lng: '-119.95053'
-  - title: Naples Offshore
-    description: Naples Offshore
-    lat: '34.41305'
-    lng: '-119.95602'
-  - title: Naples Reef - near mooring site NAP
-    description: Naples Reef - near mooring site NAP
-    lat: '34.42385'
-    lng: '-119.95032'
-  - title: Arroyo Quemado Inshore
-    description: Arroyo Quemado Inshore
-    lat: '34.46843'
-    lng: '-120.11933'
-  - title: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
-    description: Arroyo Quemado Reef1 - - at pre2005-mooring site AQM
-    lat: '34.46464'
-    lng: '-120.12057'
-  - title: Arroyo Qmemado Offshore
-    description: Arroyo Qmemado Offshore
-    lat: '34.4614'
-    lng: '-120.11937'
-  - title: Arroyo Quemado Reef - near pre2005 mooring site AQM
-    description: Arroyo Quemado Reef - near pre2005 mooring site AQM
-    lat: '34.46722'
-    lng: '-120.12005'
-  packages:
-    package:
-    - docid: knb-lter-sbc.10
-      shortTitle: Nearshore CTD and Rosette Bottle Profiles
-- id: inshoreProfiles
-  label: Nutrients, particulate N P & C, chlorophyll-a and CTD profiles
+  collectionName: 'SBC LTER: Ongoing time-series of CTD and water chemistry profiles'
   frequency: Monthly
   initiated: '2002'
   habitatName: nearshore
@@ -894,51 +828,7 @@
       shortTitle: Nearshore CTD and Rosette Bottle Profiles
 - id: inshoreMoorings
   label: Moored current velocity, conductivity & temperature
-  frequency: 20 min
-  initiated: '2002'
-  habitatName: reef
-  habitatLabel: Reef
-  geodata:
-  - title: ALE
-    description: 'Alegria (ALE) is located offshore from the community of Hollister
-      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-    lat: '34.46085'
-    lng: '-120.28998'
-  - title: ARQ
-    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
-      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
-      site, AQM.
-    lat: '34.46495'
-    lng: '-120.11965'
-  - title: NAP
-    description: ' The reef is offshore from the community of Naples. Depth: 16.5
-      meters.'
-    lat: '34.42388'
-    lng: '-119.95032'
-  - title: MKO
-    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
-      10.8 meters.
-    lat: '34.39323'
-    lng: '-119.73012'
-  - title: 'Carpinteria Reef mooring '
-    description: Carpinteria Reef (CAR) is ofshore of the rock groin near the salt
-      marsh, west of the campground. Depth is estimated at 26 ft.
-    lat: '34.39015'
-    lng: '-119.5399'
-  packages:
-    package:
-    - docid: knb-lter-sbc.2008
-      shortTitle: 'Moored CTD and ADCP: ALE'
-    - docid: knb-lter-sbc.2005
-      shortTitle: 'Moored CTD and ADCP: ARQ, close by AQM'
-    - docid: knb-lter-sbc.2002
-      shortTitle: 'Moored CTD and ADCP: NAP'
-    - docid: knb-lter-sbc.2007
-      shortTitle: 'Moored CTD and ADCP: MKO'
-    - docid: knb-lter-sbc.2004
-      shortTitle: 'Moored CTD and ADCP: CAR'
-- id: inshoreMoorings
-  label: Moored current velocity, conductivity & temperature
+  collectionName: 'SBC LTER: Ongoing time-series of moored ADCP, CTD, and Temperature'
   frequency: 20 min
   initiated: '2002'
   habitatName: nearshore
@@ -984,75 +874,7 @@
       shortTitle: 'Moored CTD and ADCP: CAR'
 - id: inshore_pH
   label: pH
-  frequency: 20 min
-  initiated: '2012'
-  habitatName: reef
-  habitatLabel: Reef
-  geodata:
-  - title: .na.character
-    description: .na.character
-    lat: .na.character
-    lng: .na.character
-  - title: ALE
-    description: 'Alegria (ALE) is located offshore from the community of Hollister
-      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-    lat: '34.46085'
-    lng: '-120.28998'
-  - title: ARQ
-    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
-      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
-      site, AQM.
-    lat: '34.46495'
-    lng: '-120.11965'
-  - title: Coal Oil Point
-    description: Coal Oil Point (COP) is located in the rocky intertidal area on the
-      western edge of the University of California, Santa Barbara (UCSB) campus, and
-      is part of the UC Natural Reserve System
-    lat: '34.40685962'
-    lng: '-119.8782861'
-  - title: Lompoc Landing
-    description: Lompoc Landing (LOL) is a rocky intertidal site located on the Vandenberg
-      Air Force Base (VAFB) and is just north of Surf Beach
-    lat: '34.71905679'
-    lng: '-120.6087994'
-  - title: MKO
-    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
-      10.8 meters.
-    lat: '34.39323'
-    lng: '-119.73012'
-  - title: Purisima Point
-    description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
-      California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
-    lat: '34.72602'
-    lng: '-120.6276'
-  - title: Rancho Marino
-    description: Rancho Marino (RMC) is in the rocky intertidal area near Cambria,
-      CA. It is is part of the Univeristy of California Natural Reserve System
-    lat: '35.54030478'
-    lng: '-121.0928466'
-  - title: Razors
-    description: Razors (RZR) is in the rocky intertidal near Alegria Beach, located
-      on the Hollister Ranch, between Gaviota and Point Conception
-    lat: '34.46713695'
-    lng: '-120.278178'
-  - title: Stearns Wharf, Santa Barbara CA
-    description: Stearns Wharf, Santa Barbara CA
-    lat: '34.40934'
-    lng: '-119.68493'
-  packages:
-    package:
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
-    - docid: knb-lter-sbc.6003
-      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
-    - docid: knb-lter-sbc.6004
-      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
-    - docid: knb-lter-sbc.75
-      shortTitle: Benchmark water samples pH for field calibration
-- id: inshore_pH
-  label: pH
+  collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET, with calibration'
   frequency: 20 min
   initiated: '2012'
   habitatName: nearshore
@@ -1122,6 +944,7 @@
       shortTitle: Benchmark water samples pH for field calibration
 - id: beachWrack
   label: Biomass and species composition of macroalgal wrack
+  collectionName: 'SBC LTER: Ongoing time-series of macroalgal wrack'
   frequency: Monthly
   initiated: '2008'
   habitatName: beach
@@ -1165,6 +988,7 @@
       shortTitle: Time series of wrack cover and biomass at selected beaches
 - id: beachBirds
   label: Abundance and diversity of birds
+  collectionName: 'SBC LTER: Ongoing time-series of beach birds and stranded kelp'
   frequency: Monthly
   initiated: '2008'
   habitatName: beach
@@ -1208,6 +1032,7 @@
       shortTitle: Beach birds and stranded kelp
 - id: beachWrackConsumers
   label: Abundance of invertebrate wrack consumers
+  collectionName: 'SBC LTER: Ongoing time-series of beach macroinvertebrates'
   frequency: Annually
   initiated: '2011'
   habitatName: beach
@@ -1243,6 +1068,7 @@
       shortTitle: 'Time series of macroinvertebrates counts and biomass '
 - id: landPrecip
   label: Precipitation collected by SBC LTER or Santa Barbara County
+  collectionName: 'SBC LTER: Ongoing time-series of high-frequency precipitation'
   frequency: 5 min
   initiated: 2001-2005
   habitatName: watershed
@@ -1322,8 +1148,195 @@
       shortTitle: 'Precipitation: RG203, Refugio at Upper Aguacitos Ranch'
     - docid: knb-lter-sbc.4012
       shortTitle: 'Precipitation: RG204, Refugio at Rancho La Scherpa'
+- id: landStreamDisch
+  label: Stream Discharge
+  collectionName: 'SBC LTER: Ongoing time-series of stream discharge'
+  frequency: 15 min
+  initiated: 2001-2005
+  habitatName: watershed
+  habitatLabel: Land
+  geodata:
+  - title: AB00
+    description: Arroyo Burro, Arroyo Burro at Cliff Drive
+    lat: '34.40505027'
+    lng: '-119.74021'
+  - title: BC02
+    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
+    lat: '34.43854'
+    lng: '-119.90563'
+  - title: ' Gaviota Creek'
+    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
+    lat: '34.4855'
+    lng: '-120.22917'
+  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    lat: '34.4752858'
+    lng: '-120.14122'
+  - title: MC00
+    description: Mission Creek, Mission at Montecito St
+    lat: '34.41307303'
+    lng: '-119.69499'
+  - title: Mission Creek at Rocky Nook, USGS 11119745
+    description: Mission Creek at Rocky Nook, USGS 11119745
+    lat: '34.44072'
+    lng: '-119.71244'
+  - title: RG01
+    description: Refugio Creek, Refugio at Hwy 101 Bridge
+    lat: '34.46573164'
+    lng: '-120.06932'
+  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    lat: '34.45761111'
+    lng: '-119.69222'
+  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    lat: '34.44861'
+    lng: '-119.84028'
+  packages:
+    package:
+    - docid: knb-lter-sbc.3001
+      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
+    - docid: knb-lter-sbc.3003
+      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3007
+      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3009
+      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
+    - docid: knb-lter-sbc.3011
+      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
+    - docid: knb-lter-sbc.3013
+      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+- id: landStreamChem
+  label: Nutrients, particulate N, P, and C, TSS, conductivity
+  collectionName: 'SBC LTER: Ongoing time-series of stream chemistry'
+  frequency: Hourly-weekly
+  initiated: 2001-2005
+  habitatName: watershed
+  habitatLabel: Land
+  geodata:
+  - title: AB00
+    description: Arroyo Burro, Arroyo Burro at Cliff Drive
+    lat: '34.40505027'
+    lng: '-119.74021'
+  - title: Atascadero Creek at Puente Street
+    description: Atascadero Creek, Atascadero at Puente
+    lat: '34.43226'
+    lng: '-119.78414'
+  - title: BC02
+    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
+    lat: '34.43854'
+    lng: '-119.90563'
+  - title: Devereaux Creek at Devereaux Slough inflow
+    description: DV01, Devereaux Creek, Devereaux Creek at Devereaux Slough inflow
+    lat: '34.41761'
+    lng: '-119.87406'
+  - title: ' Gaviota Creek'
+    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
+    lat: '34.4855'
+    lng: '-120.22917'
+  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    lat: '34.4752858'
+    lng: '-120.14122'
+  - title: MC00
+    description: Mission Creek, Mission at Montecito St
+    lat: '34.41307303'
+    lng: '-119.69499'
+  - title: Mission Creek at Rocky Nook, USGS 11119745
+    description: Mission Creek at Rocky Nook, USGS 11119745
+    lat: '34.44072'
+    lng: '-119.71244'
+  - title: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
+    description: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
+    lat: '34.472'
+    lng: '-120.28885'
+  - title: RG01
+    description: Refugio Creek, Refugio at Hwy 101 Bridge
+    lat: '34.46573164'
+    lng: '-120.06932'
+  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    lat: '34.45761111'
+    lng: '-119.69222'
+  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    lat: '34.44861'
+    lng: '-119.84028'
+  - title: TO02, Tecolote Creek at Vereda Galeria, Goleta
+    description: TO02, Tecolote Creek at Vereda Galeria, Goleta
+    lat: '34.440614'
+    lng: '-119.917915'
+  packages:
+    package:
+    - docid: knb-lter-sbc.6
+      shortTitle: Stream Chemistry
+- id: inshoreLarvae
+  label: Invertebrate larval settlement
+  collectionName: 'SBC LTER: Sea urchins in California'
+  frequency: Bi-weekly
+  initiated: '1990'
+  habitatName: reef
+  habitatLabel: Reef
+  geodata:
+  - title: Anacapa Island CA
+    description: Anacapa Island CA
+    lat: '34.01681'
+    lng: '-119.362097'
+  - title: Point Cabrillo, Mendocino County CA
+    description: Point Cabrillo, Mendocino County CA
+    lat: '39.35037'
+    lng: '-123.82679'
+  - title: Gaviota Pier, Santa Barbara County CA
+    description: Gaviota Pier, Santa Barbara County CA
+    lat: '34.46978'
+    lng: '-120.22821'
+  - title: Ocean Beach, San Diego CA
+    description: Ocean Beach, San Diego CA
+    lat: '32.74914'
+    lng: '-117.25662'
+  - title: Ellwood Pier, Goleta CA
+    description: Ellwood Pier, Goleta CA
+    lat: '34.43085'
+    lng: '-119.92408'
+  - title: Stearns Wharf, Santa Barbara CA
+    description: Stearns Wharf, Santa Barbara CA
+    lat: '34.40934'
+    lng: '-119.68493'
+  - title: Scripps Peir, San Diego CA
+    description: Scripps Peir, San Diego CA
+    lat: '32.85039'
+    lng: '-117.25647'
+  - title: Foster et al, Urchin collection site
+    description: Collection site for Foster et al (2014) Urchin sampling
+    lat: '34.415'
+    lng: '-119.83'
+  - title: UC Santa Barbara, Marine Science Institute
+    description: Marine Science Institute, Univeristy of California, Santa Barbara
+    lat: '34.4125'
+    lng: '-119.842'
+  - title: MOHK
+    description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
+      on land is Mohawk Rd / Edgewater Way.'
+    lat: '34.3940708'
+    lng: '-119.72957'
+  packages:
+    package:
+    - docid: knb-lter-sbc.52
+      shortTitle: Larval Settlement
+    - docid: knb-lter-sbc.83
+      shortTitle: Diet effects in the Purple Sea Urchin, 2011
+    - docid: knb-lter-sbc.86
+      shortTitle: Effect of egg concentration on purple sea urchin fertilization
 - id: landPrecip
   label: Precipitation collected by SBC LTER or Santa Barbara County
+  collectionName: 'Santa Barbara County: Precipitation from Santa Barbara County FCD
+    stations'
   frequency: 5 min
   initiated: 2001-2005
   habitatName: watershed
@@ -1405,7 +1418,7 @@
   - title: Tecolote Canyon
     description: Tecolote Canyon
     lat: '34.520823'
-    lng: "-119.9088 \t"
+    lng: '-119.9088'
   - title: Glen Annie Canyon
     description: Glen Annie Canyon
     lat: '34.4750'
@@ -1500,185 +1513,3 @@
       shortTitle: 'County FCD Precipitation: Rancho San Julian 389'
     - docid: knb-lter-sbc.5028
       shortTitle: 'County FCD Precipitation: Buellton 233'
-- id: landStreamDisch
-  label: Stream Discharge
-  frequency: 15 min
-  initiated: 2001-2005
-  habitatName: watershed
-  habitatLabel: Land
-  geodata:
-  - title: AB00
-    description: Arroyo Burro, Arroyo Burro at Cliff Drive
-    lat: '34.40505027'
-    lng: '-119.74021'
-  - title: BC02
-    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
-    lat: '34.43854'
-    lng: '-119.90563'
-  - title: ' Gaviota Creek'
-    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
-    lat: '34.4855'
-    lng: '-120.22917'
-  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    lat: '34.4752858'
-    lng: '-120.14122'
-  - title: MC00
-    description: Mission Creek, Mission at Montecito St
-    lat: '34.41307303'
-    lng: '-119.69499'
-  - title: Mission Creek at Rocky Nook, USGS 11119745
-    description: Mission Creek at Rocky Nook, USGS 11119745
-    lat: '34.44072'
-    lng: '-119.71244'
-  - title: RG01
-    description: Refugio Creek, Refugio at Hwy 101 Bridge
-    lat: '34.46573164'
-    lng: '-120.06932'
-  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-    lat: '34.45761111'
-    lng: '-119.69222'
-  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-    lat: '34.44861'
-    lng: '-119.84028'
-  packages:
-    package:
-    - docid: knb-lter-sbc.3001
-      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
-    - docid: knb-lter-sbc.3003
-      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
-    - docid: knb-lter-sbc.3007
-      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3008
-      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
-    - docid: knb-lter-sbc.3009
-      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
-    - docid: knb-lter-sbc.3011
-      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3013
-      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
-    - docid: knb-lter-sbc.3018
-      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
-- id: landStreamChem
-  label: Nutrients, particulate N, P, and C, TSS, conductivity
-  frequency: Hourly-weekly
-  initiated: 2001-2005
-  habitatName: watershed
-  habitatLabel: Land
-  geodata:
-  - title: AB00
-    description: Arroyo Burro, Arroyo Burro at Cliff Drive
-    lat: '34.40505027'
-    lng: '-119.74021'
-  - title: Atascadero Creek at Puente Street
-    description: Atascadero Creek, Atascadero at Puente
-    lat: '34.43226'
-    lng: '-119.78414'
-  - title: BC02
-    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
-    lat: '34.43854'
-    lng: '-119.90563'
-  - title: Devereaux Creek at Devereaux Slough inflow
-    description: DV01, Devereaux Creek, Devereaux Creek at Devereaux Slough inflow
-    lat: '34.41761'
-    lng: '-119.87406'
-  - title: ' Gaviota Creek'
-    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
-    lat: '34.4855'
-    lng: '-120.22917'
-  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    lat: '34.4752858'
-    lng: '-120.14122'
-  - title: MC00
-    description: Mission Creek, Mission at Montecito St
-    lat: '34.41307303'
-    lng: '-119.69499'
-  - title: Mission Creek at Rocky Nook, USGS 11119745
-    description: Mission Creek at Rocky Nook, USGS 11119745
-    lat: '34.44072'
-    lng: '-119.71244'
-  - title: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
-    description: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
-    lat: '34.472'
-    lng: '-120.28885'
-  - title: RG01
-    description: Refugio Creek, Refugio at Hwy 101 Bridge
-    lat: '34.46573164'
-    lng: '-120.06932'
-  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-    lat: '34.45761111'
-    lng: '-119.69222'
-  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-    lat: '34.44861'
-    lng: '-119.84028'
-  - title: TO02, Tecolote Creek at Vereda Galeria, Goleta
-    description: TO02, Tecolote Creek at Vereda Galeria, Goleta
-    lat: '34.440614'
-    lng: '-119.917915'
-  packages:
-    package:
-    - docid: knb-lter-sbc.6
-      shortTitle: Stream Chemistry
-- id: inshoreLarvae
-  label: Invertebrate larval settlement
-  frequency: Bi-weekly
-  initiated: '1990'
-  habitatName: reef
-  habitatLabel: Reef
-  geodata:
-  - title: Anacapa Island CA
-    description: Anacapa Island CA
-    lat: '34.01681'
-    lng: '-119.362097'
-  - title: Point Cabrillo, Mendocino County CA
-    description: Point Cabrillo, Mendocino County CA
-    lat: '39.35037'
-    lng: '-123.82679'
-  - title: Gaviota Pier, Santa Barbara County CA
-    description: Gaviota Pier, Santa Barbara County CA
-    lat: '34.46978'
-    lng: '-120.22821'
-  - title: Ocean Beach, San Diego CA
-    description: Ocean Beach, San Diego CA
-    lat: '32.74914'
-    lng: '-117.25662'
-  - title: Ellwood Pier, Goleta CA
-    description: Ellwood Pier, Goleta CA
-    lat: '34.43085'
-    lng: '-119.92408'
-  - title: Stearns Wharf, Santa Barbara CA
-    description: Stearns Wharf, Santa Barbara CA
-    lat: '34.40934'
-    lng: '-119.68493'
-  - title: Scripps Peir, San Diego CA
-    description: Scripps Peir, San Diego CA
-    lat: '32.85039'
-    lng: '-117.25647'
-  - title: Foster et al, Urchin collection site
-    description: Collection site for Foster et al (2014) Urchin sampling
-    lat: '34.415'
-    lng: '-119.83'
-  - title: UC Santa Barbara, Marine Science Institute
-    description: Marine Science Institute, Univeristy of California, Santa Barbara
-    lat: '34.4125'
-    lng: '-119.842'
-  - title: MOHK
-    description: 'Mohawk Reef: Mohawk Reef depth ranges from 4.5m to 6.0 m. Reference
-      on land is Mohawk Rd / Edgewater Way.'
-    lat: '34.3940708'
-    lng: '-119.72957'
-  packages:
-    package:
-    - docid: knb-lter-sbc.52
-      shortTitle: Larval Settlement
-    - docid: knb-lter-sbc.83
-      shortTitle: Diet effects in the Purple Sea Urchin, 2011
-    - docid: knb-lter-sbc.86
-      shortTitle: Effect of egg concentration on purple sea urchin fertilization
