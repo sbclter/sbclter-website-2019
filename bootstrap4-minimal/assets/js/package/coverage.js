@@ -199,7 +199,13 @@ class PackageCoverage {
 				});
 			}
 
-			let latlng = `(${ m_data[lat_n] }, ${ m_data[lng_e] })`;
+			let latlng = '';
+
+			if (m_data[lat_n] == m_data[lat_s] && m_data[lng_e] == m_data[lng_w])
+				latlng = `(${ m_data[lat_n] }, ${ m_data[lng_e] })`;
+			else
+				latlng = `NE (${ m_data[lat_n] }, ${ m_data[lng_e] })<br>SW (${ m_data[lat_s] }, ${ m_data[lng_w] })`;
+
 			let row = makeTableRow([
 				['td', 'col-9'           , m_data[0]],
 				['td', 'col-3 text-right', latlng],
