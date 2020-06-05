@@ -5,6 +5,8 @@ description: page description here.
 columns:
   - Habitat
   - Measurements
+  - Frequency
+  - Initiated
   - Show
 dataFilter: label
 page_css:
@@ -18,13 +20,11 @@ page_css:
 
 {% include gmap.html %}
 
-
-{% assign layer_groups = site.data.sbcMapLayer_test | group_by:"habitatName" %}
+{% assign layer_groups = site.data.sbcMapLayer_test | sort: "id" | sort: "habitatLabel" | group_by:"habitatName" %}
 {% include layers_table.html
 	columns=page.columns
 	data=layer_groups
-	dataFilter=page.dataFilter
-	collectionData=site.data.dataCollections %}
+	dataFilter=page.dataFilter %}
 
 <script src="/assets/js/gmap.js"></script>
 

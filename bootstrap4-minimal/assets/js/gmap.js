@@ -24,7 +24,8 @@ function initMap() {
 
 	// Add markers to each layer (defined by checkbox)
 	for (let i in boxes) {
-		let elements = $(`.${ boxes[i].id }-geodata`);
+		let elements = $(`.${ boxes[i].id }-geodata-list .geodata`);
+		console.log(`.${ boxes[i].id }-geodata-list .geodata`);
 		layers[boxes[i].id] = {
 			markers: [],
 			visible: false
@@ -153,55 +154,24 @@ $(function() {
 		}
 	});
 
-	// Build collection data for each map layer
-	$('#layers-collection-data .collection').each(function() {
-		let name = $(this).find('.name').text();
-		let mapLayers = $(this).find('.mapLayers').text().split(',');
-		let packages = JSON.parse($(this).find('.packages').text());
-
-		// Store mapLayer and collection into layerCollections
-		for (let i in mapLayers) {
-			if (mapLayers[i] == '') continue;
-
-			let mapLayer = mapLayers[i] + '-measurement';
-
-			if (!layerCollections[mapLayer]) {
-				layerCollections[mapLayer] = [];
-			}
-
-			layerCollections[mapLayer].push({
-				name: name,
-				packages: packages
-			});
-
-			// Add collection btn to each measurement box
-			if ($(`#${ mapLayer } .collection-btn`).length == 0) {
-				$(`#${ mapLayer }`).append(`
-					<br>
-					<a class="collection-btn" href="#">
-						See collections
-					</a>
-				`);
-			}
-		}
-	});
-
 	// Onclick event for "See collections"
 	$('.collection-btn').click(function(e) {
 		e.preventDefault();
-		let layer = $(this).parent().attr('id');
-		let collections = layerCollections[layer];
+		let info = $(this).parent().attr('id').split('-');
+		let habitat = info[0];
+		let measurement = info[1];
 		let html = '';
 
 		// Build popup HTML for each collection
-		for (let i in collections) {
+		$(`.${ habitat }-${ measurement }-package-list`).each(function() {
 
 			// Build collection packages HTML
-			let packages_html = collections[i].packages.map(p => {
+			let packages_html = $.map($(this).find('.package'), item => {
+				let p = $(item).data();
 				return `
 					<div class="package-link">
 						<a href="/data/catalog/package/?package=${ p.docid }" target="_blank">
-							${ p.shortTitle }
+							${ p.shorttitle }
 						</a>
 					</div>
 				`;
@@ -210,13 +180,13 @@ $(function() {
 			// Build collection HTML
 			html += `
 				<div class="collection-section">
-					<h3>${ collections[i].name }</h3>
+					<h3>${ $(this).data().collection }</h3>
 					<div class="package-section">
 						${ packages_html.join('') }
 					</div>
 				</div>
 			`;
-		}
+		});
 
 		// Insert popup HTML
 		$('#layer-modal .modal-body').html(html);

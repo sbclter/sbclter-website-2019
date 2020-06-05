@@ -11,49 +11,73 @@
     <tbody id="myTable">
       {% for group in include.data %}
         {% assign has_header = 0 %}
+
         {% for itemrow in group.items %}
           <tr class="hover_row">
+            {% assign prev_index = forloop.index | minus: 2 %}
 
-            {% if has_header != 1 %}
-              <th id="{{ itemrow.habitatName }}-habitat" style=" vertical-align: middle; text-align: center;" rowspan="{{group.items | size}}">
-                <h3>{{itemrow["habitatLabel"]}}</h3>
-                <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="group-toggle" id="{{ itemrow.habitatName }}"/>
-              </th>
-              {% assign has_header = 1 %}
+            <!-- Keep non-duplicated measurement rows -->
+            {% if group.items[prev_index].id != itemrow.id %}
+
+              <!-- Habitat header -->
+              {% if has_header != 1 %}
+                <th id="{{ itemrow.habitatName }}-habitat" style=" vertical-align: middle; text-align: center;" rowspan="{{group.items | size}}">
+                  <h3>{{itemrow["habitatLabel"]}}</h3>
+                  <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="group-toggle" id="{{ itemrow.habitatName }}"/>
+                </th>
+
+                {% assign has_header = 1 %}
+              {% endif %}
+
+              <!-- Measurement column -->
+              <td id="{{ itemrow.habitatName }}-{{ itemrow.id }}-measurement">
+                {{ itemrow[include.dataFilter] }}
+                <br>
+                <a class="collection-btn" href="#"> See collections </a>
+              </td>
+
+              <!-- Frequency column -->
+              <td>{{ itemrow.frequency }}</td>
+
+              <!-- Initiated column -->
+              <td>{{ itemrow.initiated }}</td>
+
+              <!-- Display column -->
+              <td>
+                <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="layer_box chkbox_{{ itemrow.habitatName }}" id="{{ itemrow.habitatName }}-{{ itemrow.id }}"/>
+              </td>
             {% endif %}
 
-            <td id="{{ itemrow.id }}-measurement">
-              {{ itemrow[include.dataFilter] }}
-              {% for geodata in itemrow.geodata %}
-                  <div class="{{ itemrow.habitatName }}-{{itemrow.id}}-geodata hidden"
+            <!-- Store geodata and collection data for JavaScript processing -->
+            <td class="hidden">
+              <div class="{{ itemrow.habitatName }}-{{itemrow.id}}-geodata-list">
+                {% for geodata in itemrow.geodata %}
+                  <div class="geodata"
                        data-title="{{ geodata.title }}"
                        data-description="{{ geodata.description }}"
                        data-habitat="{{ itemrow.habitatLabel }}"
                        data-lat="{{ geodata.lat }}"
                        data-lng="{{ geodata.lng }}">
                   </div>
-              {% endfor %}
+                {% endfor %}
+              </div>
+
+              <div class="{{ itemrow.habitatName }}-{{itemrow.id}}-package-list" data-collection="{{ itemrow.collectionName }}">
+                {% for package in itemrow.packages.package %}
+                  <div class="package"
+                       data-docid="{{ package.docid }}"
+                       data-shorttitle="{{ package.shortTitle }}">
+                  </div>
+                {% endfor %}
+              </div>
             </td>
 
-            <td>
-              <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="layer_box chkbox_{{ itemrow.habitatName }}" id="{{ itemrow.habitatName }}-{{ itemrow.id }}"/>
-            </td>
           </tr>
         {% endfor %}
+
       {% endfor %}
     </tbody>
   </table>
-</div>
-
-<!-- Store collection data for Javscript processing -->
-<div id="layers-collection-data" class="hidden">
-  {% for collection in include.collectionData %}
-      <div class="collection">
-        <div class="name">{{ collection.collectionName }}</div>
-        <div class="mapLayers">{{ collection.mapLayers.mapLayer | join: ',' }}</div>
-        <div class="packages">{{ collection.dataPackages.package | jsonify }}</div>
-      </div>
-  {% endfor %}
 </div>
 
 <!-- Popup Modal -->
