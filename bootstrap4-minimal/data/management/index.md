@@ -33,11 +33,12 @@ The primary objectives of the SBC IM system are to 1) preserve high-quality and 
 
 </div>
 
+<hr/>
 
-<div id="main-container">
+<div>
 
 <h3>1. Who we are</h3>
-<p>SBC personnel involved in information management include <a href="/about/people/lkui/">Li Kui</a> (SBC's information manager), and scientific staff in research groups: <a href="/about/people/jdugan/">Jenny Dugan</a>  (science coordinator), <a href="/about/people/ssampson/">Sarah Sampson</a> (Reef group), <a href="/about/people/cnelson1/">Clint Nelson</a> and <a href="/about/people/dsalazar/">David Salazar</a> (Ocean group).</p>
+<p>SBC personnel involved in information management include <a href="/about/people/lkui/">Li Kui</a> (SBC's information manager), and scientific staff in research groups: <a href="/about/people/jdugan/">Jenny Dugan</a>  (science coordinator), <a href="/about/people/cnelson1/">Clint Nelson</a>, and <a href="/about/people/dsalazar/">David Salazar</a> (Ocean group).</p>
  
 <p>We also leverage or work closely with the following groups for system support, standards development, informatics, software development, and/or data processing:</p>
 <p>- Marine Science Institute (<a href="http://msi.ucsb.edu">MSI.ucsb.edu</a>) and the UC Santa Barbara campus network infrastructure</p>
@@ -46,7 +47,9 @@ The primary objectives of the SBC IM system are to 1) preserve high-quality and 
 
 </div>
 
-<div id="main-container">
+<hr/>
+
+<div>
 
 <h3>2. Data and metadata access</h3>
 <p>SBC LTER data were categorized into collections of five habitats, eight measurement types,
@@ -57,8 +60,8 @@ The metadata for each data package can be viewed in the Environmental Data Initi
 metadata tab.
 </p>
 </div>
-
-<div id="main-container">
+<hr/>
+<div>
 
 <h3>3. IM System</h3>
 <p>A copy of SBC's Information Management plan and overview is available by request to: <a href="mailto:sbclter@msi.ucsb.edu" target="_blank"> sbclter@msi.ucsb.edu </a> </p>
@@ -73,9 +76,10 @@ metadata tab.
 <p>SBC's system for data sharing and publication is compatible with the Network-adopted specification, Ecological Metadata Language (EML), and data are published in the Environmental Data Initiative repository (a repository funded by NSF and recommended for the LTER sites).  </p>
 
 </div>
+<hr/>
 
 
-
-
+<p>SBC LTER receives a free OxygenXML Editor license through their Support Life Program <a href="http://www.oxygenxml.com" title="Oxygen XML Editor"><img src="http://www.oxygenxml.com/img/resources/oxygen190x62.png" width="95" height="31" alt="Oxygen XML Editor" border="0"></a>
+</p>
 
 
