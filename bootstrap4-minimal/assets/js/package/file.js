@@ -32,12 +32,26 @@ class PackageFile {
 				});
 			}
 
+			// Parse constraints
+			let constraints = extractList(tables[i], 'constraint', ['primaryKey']);
+			let constraint_data = [];
+
+			for (let j in constraints) {
+				let constraint = constraints[j];
+
+				constraint_data.push({
+					name: extractString(constraint, 'constraintName'),
+					keys: extractList(constraint, 'key > attributeReference', [], true)
+				});
+			}
+
 			this.data['datatables'].push({
 				name:        extractString(tables[i], 'entityName'),
 				description: extractString(tables[i], 'entityDescription'),
 				url:         extractString(tables[i], 'physical > distribution > online > url'),
 				orientation: extractString(tables[i], 'physical > dataFormat > textFormat > attributeOrientation'),
-				attributes:  attribute_data
+				attributes:  attribute_data,
+				constraints: constraint_data
 			});
 		}
 
@@ -62,6 +76,13 @@ class PackageFile {
 			// Build attribute table
 			let tableData = this.buildAttributeTable(tables[i]);
 
+			let constraints_data = tables[i].constraints;
+			let constraints_html = "";
+
+			for (let j in constraints_data) {
+				constraints_html += `<strong>Primary Key (${ constraints_data[i].name }): </strong>${ constraints_data[i].keys.join(', ') }<br>`;
+			}
+
 			// Build datatable section
 			element.append(`
 				<div class="section-title datatable-title clickable" data-toggle="collapse" href="#datatable${ i }" aria-expanded="false" aria-controls="datatable${ i }">
@@ -74,8 +95,10 @@ class PackageFile {
 				</div>
 
 				<div class="collapse" id="datatable${ i }">
-					<div class="ml-3">${ tables[i]['description'] }</div>
-					<div class="ml-3">${ activateLink(tables[i]['url'], 'Download Data File') }</div>
+					<div class="ml-3"> <strong>Description: </strong>${ tables[i]['description'] }</div>
+					<div class="ml-3"> ${ constraints_html } </div>
+					<div class="ml-3"> <strong>${ activateLink(tables[i]['url'], 'Download Data File') }</strong> </div>
+
 					${ tableData }
 				</div>
 				<br>
