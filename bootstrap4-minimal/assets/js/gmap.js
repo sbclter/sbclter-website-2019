@@ -33,40 +33,79 @@ function initMap() {
 
 		elements.each(function(index, value) {
 			let data = $(this).data();
-			let lat = parseFloat(data.lat);
-			let lng = parseFloat(data.lng);
+			let south = parseFloat(data.southbound);
+			let north = parseFloat(data.northbound);
+			let west = parseFloat(data.westbound);
+			let east = parseFloat(data.eastbound);
 
-			if (Number.isNaN(lat) || Number.isNaN(lng)) {
+			if (Number.isNaN(south) || Number.isNaN(north) || Number.isNaN(east) || Number.isNaN(west)) {
 				return;
 			}
 
-			// Initialize marker
-			const marker = new google.maps.Marker({
-				position: {
-					lat: lat,
-					lng: lng
-				},
-				map: map,
-				title: data.title,
-				visible: false,
-				icon: {
-					url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-				}
-			});
 
-			// Initialize marker popup window
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.setContent(`
-					<h4> ${ data.title } </h4>
-					<strong>Description: </strong> ${ data.description } <br><br>
-					<strong>Habitat:     </strong> ${ data.habitat }     <br>
-					<strong>Lat:         </strong> ${ data.lat }         <br>
-					<strong>Lng:         </strong> ${ data.lng }
-				`);
-				infowindow.open(map, marker);
-			});
+			// Draw marker
+			if (south == north && east == west) {
 
-			layers[boxes[i].id]['markers'].push(marker);
+				const marker = new google.maps.Marker({
+					position: {
+						lat: north,
+						lng: east
+					},
+					map: map,
+					title: data.title,
+					visible: false,
+					icon: {
+						url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+					}
+				});
+
+				// Initialize popup window
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.setContent(`
+						<h4> ${ data.title } </h4>
+						<strong>Description: </strong> ${ data.description }   <br><br>
+						<strong>Habitat:     </strong> ${ data.habitat }       <br>
+						<strong>LatLng:      </strong> (${ north }, ${ east }) <br>
+					`);
+					infowindow.open(map, marker);
+				});
+
+				layers[boxes[i].id]['markers'].push(marker);
+			}
+			// Draw rectangle
+			else {
+
+				const marker = new google.maps.Rectangle({
+					strokeColor: '#0000FF',
+					strokeOpacity: 0.8,
+					strokeWeight: 2,
+					fillColor: '#0000FF',
+					fillOpacity: 0.35,
+					map: map,
+					title: data.title,
+					visible: false,
+					bounds: {
+						north: north,
+						south: south,
+						east: east,
+						west: west
+					}
+				});
+
+				// Initialize popup window
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.setContent(`
+						<h4> ${ data.title } </h4>
+						<strong>Description:   </strong> ${ data.description } <br><br>
+						<strong>Habitat:       </strong> ${ data.habitat }     <br>
+						<strong>LatLng Bounds: </strong> NE (${ north }, ${ east }), SW (${ south }, ${ west }) <br>
+					`);
+					infowindow.setPosition({lat: north, lng: west});
+					infowindow.open(map, marker);
+				});
+
+				layers[boxes[i].id]['markers'].push(marker);
+			}
 		});
 	}
 }
@@ -82,9 +121,16 @@ function zoomMap() {
 		if (layer.visible) {
 			for (let j in layer.markers) {
 				let marker = layer.markers[j];
-				bounds.extend(marker.getPosition());
+
+				if (typeof marker.getPosition === "function") {
+					bounds.extend(marker.getPosition());
+				}
+				else {
+					bounds.extend(marker.getBounds().getNorthEast());
+					bounds.extend(marker.getBounds().getSouthWest());
+				}
 			}
-		}	
+		}
 	}
 
 	if (!bounds.isEmpty())
