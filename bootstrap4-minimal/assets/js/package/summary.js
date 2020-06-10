@@ -52,7 +52,7 @@ class PackageSummary {
 		this.data['citation'] = citation;
 
 		// Parse project
-		let projects = extractList(json, 'dataset > project');
+		let projects = extractList(json, ['dataset > project', 'dataset > project > relatedProject']);
 
 		for (let i in projects) {
 			this.data['projects'].push({
@@ -124,17 +124,26 @@ class PackageSummary {
 			let project = this.data['projects'][i];
 
 			content += `
-				<table class="table">
-					<tbody>
-						${ makeTableRow([['th', '', 'Title'], ['td', 'col-10', project['title']]]) }
-						${ makeTableRow([['th', '', 'Abstract'], ['td', 'col-10', this.buildAbstract(project['abstract'])]]) }
-						${ makeTableRow([['th', '', 'Funding'], ['td', 'col-10', this.buildAbstract(project['funding'])]]) }
-					</tbody>
-				</table>
-
-				<div class="row people-table-wrap">
-				${ people.makePeopleTables(project['personnels']) }
+				<div class="section-title clickable" data-toggle="collapse" href="#field-project-wrap-${i}" aria-expanded="false" aria-controls="field-project-wrap">
+					<div class="title"> Project ${ parseInt(i) + 1 } - ${ project['title'] } </div>
+					<img class="collapse-icon icon hidden" src="/assets/img/collapse.png"/>
+					<img class="expand-icon icon" src="/assets/img/expand.png"/>
 				</div>
+				<div class="collapse" id="field-project-wrap-${i}">
+					<div class="pl-2">
+						<table class="table">
+						<tbody>
+							${ makeTableRow([['th', '', 'Abstract'], ['td', 'col-10', this.buildAbstract(project['abstract'])]]) }
+							${ makeTableRow([['th', '', 'Funding'], ['td', 'col-10', this.buildAbstract(project['funding'])]]) }
+						</tbody>
+						</table>
+
+						<div class="row people-table-wrap">
+						${ people.makePeopleTables(project['personnels']) }
+						</div>
+					</div>
+				</div>
+				<br>
 			`;
 		}
 
@@ -144,7 +153,7 @@ class PackageSummary {
 			$(this).find('.icon.expand-icon').toggleClass('hidden');
 		});
 
-		element.find('#field-project').html(content);
+		element.find('#section-project').html(content);
 
 		// fill keywords field
 		for (let i in this.data['keywords']) {
