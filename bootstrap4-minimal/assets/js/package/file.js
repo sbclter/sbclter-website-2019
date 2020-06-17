@@ -69,6 +69,7 @@ class PackageFile {
 		let element = template.find('#content-class-files');
 		let tables = this.data['datatables'];
 		let entities = this.data['entities'];
+		let onlyone = (tables.length + entities.length == 1);
 
 		// Build datatables
 		for (let i in tables) {
@@ -94,7 +95,7 @@ class PackageFile {
 					<img class="expand-icon icon" src="/assets/img/expand.png"/>
 				</div>
 
-				<div class="collapse" id="datatable${ i }">
+				<div class="collapse ${ onlyone ? 'show' : '' }" id="datatable${ i }">
 					<div class="ml-3"> <strong>Description: </strong>${ tables[i]['description'] }</div>
 					<div class="ml-3"> ${ constraints_html } </div>
 					<div class="ml-3"> <strong>${ activateLink(tables[i]['url'], 'Download Data File') }</strong> </div>
@@ -124,7 +125,7 @@ class PackageFile {
 					<img class="expand-icon icon" src="/assets/img/expand.png"/>
 				</div>
 
-				<div class="collapse" id="entities${ i }">
+				<div class="collapse ${ onlyone ? 'show' : '' }" id="entities${ i }">
 					<div class="ml-3">${ entities[i]['description'] }</div>
 					<div class="ml-3">${ activateLink(entities[i]['url'], 'Download Data File') }</div>
 				</div>
