@@ -1,6 +1,6 @@
 class PackageSummary {
 
-	parse(json) {
+	parse(json, citation) {
 		this.data = {
 			general: {},
 			citation: '',
@@ -24,32 +24,32 @@ class PackageSummary {
 		};
 
 		// Parse citation
-		let citation = '';
-		let creators = extractList(json, 'dataset > creator');
-		let first_author = true;
+		// let citation = '';
+		// let creators = extractList(json, 'dataset > creator');
+		// let first_author = true;
 
-		for (let i in creators) {
-			// Include sbclter organization (only if no creator) and other organization
-			if (creators[i]['organizationName'] && !(creators[i]['organizationName'] == 'Santa Barbara Coastal LTER' && creators.length > 1)) {
-				citation += creators[i]['organizationName'] + '. ';
-			}
+		// for (let i in creators) {
+		// 	// Include sbclter organization (only if no creator) and other organization
+		// 	if (creators[i]['organizationName'] && !(creators[i]['organizationName'] == 'Santa Barbara Coastal LTER' && creators.length > 1)) {
+		// 		citation += creators[i]['organizationName'] + '. ';
+		// 	}
 
-			if (creators[i]['individualName']) {
-				let format = first_author ? '%L, %f, ' : '%f. %L, ';
-				citation += parseName(creators[i]['individualName'], format);
+		// 	if (creators[i]['individualName']) {
+		// 		let format = first_author ? '%L, %f, ' : '%f. %L, ';
+		// 		citation += parseName(creators[i]['individualName'], format);
 
-				first_author = false;
-			}
-		}
-		citation = removeLastDelim(citation, ', ', '. ');
+		// 		first_author = false;
+		// 	}
+		// }
+		// citation = removeLastDelim(citation, ', ', '. ');
 
-		citation += extractString(json, 'dataset > pubDate').split('-')[0]             + '. ' +
-					extractString(json, 'dataset > title')                             + ' ' +
-					'ver ' + extractString(json, '_packageId').split('.').slice(-1)[0] + '. ' +
-					'Environmental Data Initiative'                                    + '. ' +
-					extractString(json, 'dataset > alternateIdentifier')               + '. ' +
-					'Accessed ' + this.formatCitationDate(new Date())                  + '.';
-		this.data['citation'] = citation;
+		// citation += extractString(json, 'dataset > pubDate').split('-')[0]             + '. ' +
+		// 			extractString(json, 'dataset > title')                             + ' ' +
+		// 			'ver ' + extractString(json, '_packageId').split('.').slice(-1)[0] + '. ' +
+		// 			'Environmental Data Initiative'                                    + '. ' +
+		// 			extractString(json, 'dataset > alternateIdentifier')               + '. ' +
+		// 			'Accessed ' + this.formatCitationDate(new Date())                  + '.';
+		this.data['citation'] = citation.replace(/(https:\/\/.*)([,\.\s])/, (match, $1, $2) => activateLink($1) + $2);
 
 		// Parse project
 		let projects = extractList(json, ['dataset > project', 'dataset > project > relatedProject']);

@@ -30,15 +30,19 @@ function main(url) {
 	updateView("Loading Data...", loader);
 
 	// Load xml from pasta
-	loadXMLDoc(url, function(xml) {
+	loadXMLDoc(url, async function(xml) {
 		try {
 			let json = new X2JS().xml2json(xml)['eml'];
 			let title = json['dataset']['title'];
-
 			console.log("Raw Data: ", json);
 
+			// Get citation text
+			let packageId = json['_packageId'];
+			let citation = await fetch('https://cite.edirepository.org/cite/' + packageId);
+			citation = await citation.text();
+
 			// Load json data onto each page
-			summary .parse(json);
+			summary .parse(json, citation);
 			people  .parse(json);
 			coverage.parse(json);
 			method  .parse(json);
