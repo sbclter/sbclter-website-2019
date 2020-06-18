@@ -38,8 +38,9 @@ function main(url) {
 
 			// Get citation text
 			let packageId = json['_packageId'];
-			let citation = await fetch('https://cite.edirepository.org/cite/' + packageId);
+			let citation = await fetch('https://cite.edirepository.org/cite/' + packageId + '?style=RAW');
 			citation = await citation.text();
+			citation = JSON.parse(citation.replace(/'/g, '"'));
 
 			// Load json data onto each page
 			summary .parse(json, citation);
@@ -320,8 +321,8 @@ function parseName(json, format) {
 		return '';
 
 	try {
-		var fname = json['givenName'] || ' ';
-		var lname = json['surName'] || ' ';
+		var fname = json['givenName'] || (json['given_names'] ? json['given_names'].join(' ') : '') || ' ';
+		var lname = json['surName'] || json['sur_name'] || ' ';
 		var mname = '';
 
 		if (Array.isArray(fname)) {
