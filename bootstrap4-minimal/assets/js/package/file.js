@@ -81,7 +81,8 @@ class PackageFile {
 			let constraints_html = "";
 
 			for (let j in constraints_data) {
-				constraints_html += `<strong>Primary Key (${ constraints_data[i].name }): </strong>${ constraints_data[i].keys.join(', ') }<br>`;
+				if (constraints_data[j])
+					constraints_html += `<strong>Primary Key (${ constraints_data[j].name }): </strong>${ constraints_data[j].keys.join(', ') }<br>`;
 			}
 
 			// Build datatable section
