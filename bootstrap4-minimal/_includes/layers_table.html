@@ -1,5 +1,4 @@
-<div class="pull-left">
-  <br>
+<div class="table-section pull-left">
   <table class="table">
     <thead id="table_header_{{include.data.name}}">
       <tr class="title-row">
@@ -23,7 +22,7 @@
               {% if has_header != 1 %}
                 <th id="{{ itemrow.habitatName }}-habitat" style=" vertical-align: middle; text-align: center;" rowspan="{{group.items | size}}">
                   <h3>{{itemrow["habitatLabel"]}}</h3>
-                  <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="group-toggle" id="{{ itemrow.habitatName }}"/>
+                  <input type="checkbox" class="group-toggle" id="{{ itemrow.habitatName }}"/>
                 </th>
 
                 {% assign has_header = 1 %}
@@ -31,9 +30,7 @@
 
               <!-- Measurement column -->
               <td id="{{ itemrow.habitatName }}-{{ itemrow.id }}-measurement">
-                {{ itemrow[include.dataFilter] }}
-                <br>
-                <a class="collection-btn" href="#"> Access data </a>
+                <a class="collection-btn" href="#"> {{ itemrow[include.dataFilter] }} </a>
               </td>
 
               <!-- Frequency column -->
@@ -44,7 +41,7 @@
 
               <!-- Display column -->
               <td>
-                <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="secondary" class="layer_box chkbox_{{ itemrow.habitatName }}" id="{{ itemrow.habitatName }}-{{ itemrow.id }}"/>
+                <input type="checkbox" class="layer_box chkbox_{{ itemrow.habitatName }}" id="{{ itemrow.habitatName }}-{{ itemrow.id }}"/>
               </td>
             {% endif %}
 

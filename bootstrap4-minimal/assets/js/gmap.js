@@ -182,7 +182,7 @@ $(function() {
 
 		if (this.checked) {
 			$(check_class).prop('checked', true);
-			$(check_class).parent().attr('class', "toggle btn btn-info");
+			// $(check_class).parent().attr('class', "toggle btn btn-info");
 
 			// Show layers on map
 			boxes.each((i) => {
@@ -191,7 +191,7 @@ $(function() {
 		}
 		else {
 			$(check_class).prop('checked', false);
-			$(check_class).parent().attr('class', "toggle btn btn-secondary off");
+			// $(check_class).parent().attr('class', "toggle btn btn-secondary off");
 
 			// Hide layers on map
 			boxes.each((i) => {

@@ -17,14 +17,15 @@ page_css:
 
 <h1>Time Series Sampling Sites</h1>
 
+<div id="secondary-container">
+  {% include gmap.html %}
 
-{% include gmap.html %}
-
-{% assign layer_groups = site.data.sbcMapLayer_test | sort: "id" | sort: "habitatLabel" | group_by:"habitatName" %}
-{% include layers_table.html
-	columns=page.columns
-	data=layer_groups
-	dataFilter=page.dataFilter %}
+  {% assign layer_groups = site.data.sbcMapLayer_test | sort: "id" | sort: "habitatLabel" | group_by:"habitatName" %}
+  {% include layers_table.html
+  	columns=page.columns
+  	data=layer_groups
+  	dataFilter=page.dataFilter %}
+</div>
 
 <script src="/assets/js/gmap.js"></script>
 

@@ -5,25 +5,42 @@
 	align: center;
 }
 
+.table-section {
+	// width: 60%;
+	// min-width: 500px;
+	height: 100%;
+	flex-grow: 100;
+}
 
-tr {
-	&:hover {
-		box-shadow: unset !important;
-	}
+table {
+	margin-bottom: 0 !important;
+	height: 100%;
 
-	td, th {
-		border: 1px solid #dee2e6 !important;
-		
+	tr {
+		&:hover {
+			box-shadow: unset !important;
+		}
 
-		&:last-child {
-			text-align: center;
+		td, th {
+			border: 1px solid #dee2e6 !important;
+			padding: 1vh!important;
+			font-size: 12px;
+
+			h3 {
+				font-size: 15px;
+			}
+			
+
+			&:last-child {
+				text-align: center;
+			}
 		}
 	}
 }
 
 #layer-modal {
 	.collection-section {
-		margin-bottom: 50px;
+		// margin-bottom: 50px;
 
 		&:last-child {
 			margin-bottom: 0;
