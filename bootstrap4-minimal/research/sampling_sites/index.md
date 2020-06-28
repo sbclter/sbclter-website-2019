@@ -9,6 +9,9 @@ columns:
   - Initiated
   - Show
 dataFilter: label
+collections:
+  sbcMapLayer_test:
+
 page_css:
   - "/assets/css/custom/layouts/gmap.css"
   - "/assets/css/custom/includes/layers_table.css"
@@ -21,10 +24,58 @@ page_css:
   {% include gmap.html %}
 
   {% assign layer_groups = site.data.sbcMapLayer_test | sort: "id" | sort: "habitatLabel" | group_by:"habitatName" %}
-  {% include layers_table.html
-  	columns=page.columns
-  	data=layer_groups
-  	dataFilter=page.dataFilter %}
+
+  <div class="table-section pull-left">
+    <table class="table">
+      <thead id="table_header_{{layer_groups.name}}">
+        <tr class="title-row">
+          {% for column in page.columns %}
+            <th>{{ column }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        {% for group in layer_groups %}
+          {% if group.name == 'watershed' %}
+            {% include layers_table.html
+              group=group
+              dataFilter=page.dataFilter %}
+          {% endif %}
+        {% endfor %}
+        {% for group in layer_groups %}
+          {% if group.name == 'reef' %}
+            {% include layers_table.html
+              group=group
+              dataFilter=page.dataFilter %}
+          {% endif %}
+        {% endfor %}
+        {% for group in layer_groups %}
+          {% if group.name == 'nearshore' %}
+            {% include layers_table.html
+              group=group
+              dataFilter=page.dataFilter %}
+          {% endif %}
+        {% endfor %}
+        {% for group in layer_groups %}
+          {% if group.name == 'beach' %}
+            {% include layers_table.html
+              group=group
+              dataFilter=page.dataFilter %}
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="layer-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="/assets/js/gmap.js"></script>
