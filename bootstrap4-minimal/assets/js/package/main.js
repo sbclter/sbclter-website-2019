@@ -279,6 +279,7 @@ function loadXMLDoc(fileUrl, onReady, onError) {
 		xhttp = new ActiveXObject("Msxml2.XMLHTTP");
 	else
 		xhttp = new XMLHttpRequest();
+	xhttp.timeout = 5000;
 	xhttp.open("GET", fileUrl, true);
 
 	if (false || !!document.documentMode)
@@ -289,6 +290,14 @@ function loadXMLDoc(fileUrl, onReady, onError) {
 			onReady(xhttp.responseXML);
 		else
 			onError(`File ${ fileUrl } not found.`);
+	};
+
+	xhttp.ontimeout = function (e) {
+		onError(`Repository is not responding. Please try again later.`);
+	};
+
+	xhttp.onerror = function (e) {
+		onError(`Repository is not responding. Please try again later.`);
 	};
 
 	xhttp.send("");
