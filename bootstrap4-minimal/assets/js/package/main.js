@@ -72,7 +72,13 @@ function main(url) {
 				Package Origin
 			`;
 
-			let subtitle = `<a href="${ repoUrl }" target="_blank">${ edi_logo }</a>`;
+			let subtitle = `
+				<a href="${ repoUrl }"
+					id="edirepo-link"
+					target="_blank"
+					data-toggle="tooltip" data-placement="right" title="Repository display for this package has links to earlier revisions, provenance, code-generation and other tools.">
+					${ edi_logo }
+				</a>`;
 
 			// Load template onto actual HTML
 			updateView(
@@ -87,6 +93,9 @@ function main(url) {
 			$('#detail #detail-body table').each(function(index) {
 				$(this).find('tr:first td, tr:first th').addClass('no-border-top');
 			});
+
+			// Tooltip for hovering over edi repo link
+			$('#edirepo-link').tooltip();
 
 			// Added MathJax script
 			loadMathJax();
