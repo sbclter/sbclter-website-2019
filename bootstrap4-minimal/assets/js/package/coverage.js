@@ -37,7 +37,13 @@ class PackageCoverage {
 			let east  = parseFloat(extractString(points[i], 'boundingCoordinates > eastBoundingCoordinate'));
 			let west  = parseFloat(extractString(points[i], 'boundingCoordinates > westBoundingCoordinate'));
 
-			this.data['geographic'].push([title, north, south, east, west]);
+			let ring_data = [...extractString(points[i], 'datasetGPolygon > datasetGPolygonOuterGRing > gRing').matchAll(/\S+\.\S+\s*,\S+\.\S+/g)];
+			let polyline = ring_data
+							.map(match => match[0])
+							.map(coord => coord.split(','))
+							.map(coord => ({ lng: parseFloat(coord[0]), lat: parseFloat(coord[1]) }));
+
+			this.data['geographic'].push([title, north, south, east, west, polyline]);
 		}
 
 		// Parse taxonomic coverage
@@ -154,6 +160,7 @@ class PackageCoverage {
 		const lat_s = 2;
 		const lng_e = 3;
 		const lng_w = 4;
+		const poly = 5;
 
 		let infowindow = new google.maps.InfoWindow();
 		let map_data = this.data['geographic'];
@@ -199,6 +206,16 @@ class PackageCoverage {
 				});
 			}
 
+			let polyline = new google.maps.Polyline({
+				path: m_data[poly],
+				geodesic: true,
+				strokeColor: "#FF0000",
+				strokeOpacity: 0.8,
+				strokeWeight: 2,
+				map: map,
+				title: m_data[0],
+			});
+
 			let latlng = '';
 
 			if (m_data[lat_n] == m_data[lat_s] && m_data[lng_e] == m_data[lng_w])
@@ -215,6 +232,9 @@ class PackageCoverage {
 
 			bounds.extend(new google.maps.LatLng(m_data[lat_s], m_data[lng_w]));
 			bounds.extend(new google.maps.LatLng(m_data[lat_n], m_data[lng_e]));
+			m_data[poly].forEach(coord => {
+				bounds.extend(new google.maps.LatLng(coord.lat, coord.lng));
+			});
 		}
 
 		map.fitBounds(bounds);

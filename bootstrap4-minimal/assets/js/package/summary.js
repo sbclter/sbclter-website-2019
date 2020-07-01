@@ -28,7 +28,6 @@ class PackageSummary {
 		let creators = extractList(citation_json, 'authors', ['individual_names']);
 		let organizations = extractList(citation_json, 'authors', ['organization_names']);
 		let first_author = true;
-		console.log(citation_json);
 
 		if (creators.length == 0 && organizations.length > 0) {
 			citation += organizations[0] + '. ';
@@ -42,7 +41,6 @@ class PackageSummary {
 			}
 		}
 		citation = removeLastDelim(citation, ', ', '. ');
-		console.log(citation);
 
 		citation += extractString(citation_json, 'pubdate').split('-')[0]                                                               + '. ' +
 					extractString(citation_json, 'title')                                                                               + ' '  +
