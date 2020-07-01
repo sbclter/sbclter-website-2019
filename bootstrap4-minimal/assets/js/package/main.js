@@ -157,7 +157,7 @@ function extractString(data, path, keys, delim='') {
 		else if (data.para) {
 			str += extractList(data, 'para').map(para => extractString(para)).join('<br><br>');
 		}
-		else if (data.__text !== undefined) {
+		else if (data.__text !== undefined && (!keys || !keys.includes('__text'))) {
 			str += extractStringObject(data.__text, keys, delim);
 		}
 		else if (typeof data === 'object' && !(keys && keys.length > 0)) {

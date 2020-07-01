@@ -126,6 +126,7 @@ class PackageCoverage {
 
 			text += '<strong>' + data[i]['taxonRankValue'] + '</strong><br>';
 			text += `${ data[i]['commonName'] || '' }`;
+			text += `${ extractString(data[i], 'taxonId', ['_provider', '__text'], ': ') }`;
 
 			// Create new row if 1) new kingdom, or 2) more than 1 data for each column
 			if (i == 0 && row == null || i > 0) {
