@@ -51,7 +51,15 @@ class PackageFile {
 				url:         extractString(tables[i], 'physical > distribution > online > url'),
 				orientation: extractString(tables[i], 'physical > dataFormat > textFormat > attributeOrientation'),
 				attributes:  attribute_data,
-				constraints: constraint_data
+				constraints: constraint_data,
+
+				physical: {
+					numHeaderLines:  extractString(tables[i], 'physical > dataFormat > textFormat > numHeaderLines'),
+					fieldDelimiter:  extractString(tables[i], 'physical > dataFormat > textFormat > simpleDelimited > fieldDelimiter'),
+					objectName:      extractString(tables[i], 'physical > objectName'),
+					size:            extractString(tables[i], 'physical > size'),
+					numberOfRecords: extractString(tables[i], 'numberOfRecords'),
+				}
 			});
 		}
 
@@ -97,9 +105,24 @@ class PackageFile {
 				</div>
 
 				<div class="collapse ${ onlyone ? 'show' : '' }" id="datatable${ i }">
-					<div class="ml-3"> <strong>Description: </strong>${ tables[i]['description'] }</div>
-					<div class="ml-3"> ${ constraints_html } </div>
-					<div class="ml-3"> <strong>${ activateLink(tables[i]['url'], 'Download Data File') }</strong> </div>
+
+					<div class="ml-3 mr-3 row">
+						<div style="width: 65%">
+							<div> <strong>Description: </strong>${ tables[i]['description'] }</div>
+							<div> ${ constraints_html } </div>
+							<div> <strong>${ activateLink(tables[i]['url'], 'Download Data File') }</strong> </div>
+						</div>
+						<table class="table" style="width: 30%; margin-left: 5%;">
+							${
+								makeTableRow([['th', 'col-4', 'Title'],           ['th', 'col-8', 'Value']]) +
+								makeTableRow([['td', 'col-4', '# of Headers'],    ['td', 'col-8', tables[i].physical.numHeaderLines]]) +
+								makeTableRow([['td', 'col-4', 'Field Delimiter'], ['td', 'col-8', tables[i].physical.fieldDelimiter]]) +
+								makeTableRow([['td', 'col-4', 'Object Name'],     ['td', 'col-8', tables[i].physical.objectName]]) +
+								makeTableRow([['td', 'col-4', 'Size'],            ['td', 'col-8', humanBytes(tables[i].physical.size, true)]]) +
+								makeTableRow([['td', 'col-4', '# of Records'],    ['td', 'col-8', tables[i].physical.numberOfRecords]])
+							}
+						</table>
+					</div>
 
 					${ tableData }
 				</div>
@@ -552,4 +575,26 @@ function onMeasureClick(e, id) {
 
 	$('#attribute-modal .modal-body').html(measure.clone());
 	$('#attribute-modal').modal();
+}
+
+// Source: https://stackoverflow.com/a/14919494/8443192
+function humanBytes(bytes, si=false, dp=1) {
+	const thresh = si ? 1000 : 1024;
+
+	if (Math.abs(bytes) < thresh) {
+		return bytes + ' B';
+	}
+
+	const units = si
+		? ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+		: ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'];
+	let u = -1;
+	const r = 10**dp;
+
+	do {
+		bytes /= thresh;
+		++u;
+	} while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < units.length - 1);
+
+	return bytes.toFixed(dp) + ' ' + units[u];
 }
