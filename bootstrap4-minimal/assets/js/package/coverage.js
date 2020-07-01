@@ -88,7 +88,8 @@ class PackageCoverage {
 			['th', 'tax-cell', 'Order'  ],
 			['th', 'tax-cell', 'Family' ],
 			['th', 'tax-cell', 'Genus'  ],
-			['th', 'tax-cell', 'Species']
+			['th', 'tax-cell', 'Species'],
+			['th', 'tax-cell', 'Common Names'],
 		]);
 		row = $(row)
 		row.attr('id', 'tax-head');
@@ -112,35 +113,38 @@ class PackageCoverage {
 		if (!data) return;
 		if (!Array.isArray(data)) data = [data];
 
-		let first_row = row;
+		let parent_row = row;
+		let common_names = [];
 
 		for (let i in data) {
 			let text = '';
 
-			if (data[i]['taxonRankValue'])
-				text += '<strong>' + data[i]['taxonRankValue'] + '</strong><br>';
+			if (!data[i]['taxonRankValue'] && !data[i]['taxonomicClassification']) {
+				common_names.push(data[i]['commonName']);
+				continue;
+			}
 
-			if (data[i]['commonName'])
-				text += `${ data[i]['commonName'] }`;
+			text += '<strong>' + data[i]['taxonRankValue'] + '</strong><br>';
+			text += `${ data[i]['commonName'] || '' }`;
 
 			// Create new row if 1) new kingdom, or 2) more than 1 data for each column
 			if (i == 0 && row == null || i > 0) {
-				row = makeTableRow([[], [], [], [], [], [], []], 'tax-row');
+				row = makeTableRow([[], [], [], [], [], [], [], []], 'tax-row');
 				row = $(row);
 				row.find('td').attr('class', 'cell tax-cell');
 
 				// Append row at end of table if it's new kingdom
 				if (column == 0) {
 					table.append(row);
-					first_row = row;
+					parent_row = row;
 				}
 				else {
-					row.insertAfter(first_row);
+					row.insertAfter(parent_row);
 				}
 
 				// Add spacing when creating new kingdom
-				if (column == 0) {
-					let space_row = makeTableRow([[], [], [], [], [], [], []]);
+				if (i != 0 && column == 0) {
+					let space_row = makeTableRow([[], [], [], [], [], [], [], []]);
 					space_row = $(space_row);
 					space_row.insertBefore(row);
 				}
@@ -163,6 +167,8 @@ class PackageCoverage {
 			row.children().eq(chosen_column).html(text);
 			this.fillTaxonomicRow(table, data[i]['taxonomicClassification'], row, chosen_column + 1);
 		}
+
+		parent_row.children().eq(7).html(common_names.join('<br>'));
 	}
 
 	// Plot markers for coverage tab
