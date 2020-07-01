@@ -23,8 +23,11 @@ class PackageCoverage {
 
 		// Parse timporal coverage
 		this.data['temporal'] = {
-			start: extractString(json, 'dataset > coverage > temporalCoverage > rangeOfDates > beginDate > calendarDate'),
-			end:   extractString(json, 'dataset > coverage > temporalCoverage > rangeOfDates > endDate > calendarDate')
+			range: {
+				start: extractString(json, 'dataset > coverage > temporalCoverage > rangeOfDates > beginDate > calendarDate'),
+				end:   extractString(json, 'dataset > coverage > temporalCoverage > rangeOfDates > endDate > calendarDate'),
+			},
+			list: extractList(json, 'dataset > coverage > temporalCoverage > singleDateTime', ['calendarDate'])
 		};
 
 		// Parse geographical coverage
@@ -61,7 +64,15 @@ class PackageCoverage {
 		let content = null;
 
 		// Build temporal converage data
-		content = extractString(this.data, 'temporal', ['start', 'end'], ' to ');
+		content = extractString(this.data, 'temporal > range', ['start', 'end'], ' to ');
+		content += ' ' + this.data.temporal.list
+							.map(date => {
+								let str = date.substring(0, 4);
+								if (date.length > 4) str += '-' + date.substring(4, 6);
+								if (date.length > 6) str += '-' + date.substring(6, 8);
+								return str;
+							})
+							.join(', ');
 		element.find('#field-temporal').text(content);
 
 		// Build map from template to actual popup window
