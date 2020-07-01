@@ -430,8 +430,8 @@ class PackageFile {
 
 			for (let j in data) {
 				rows += makeTableRow([
-					['td', 'col-4', data[j]['code']],
-					['td', 'col-4', data[j]['definition']],
+					['td', 'col-4', data[j]['code'] || data[j]['codesetName']],
+					['td', 'col-4', data[j]['definition'] || activateLink(data[j]['codesetURL'])],
 					['td', 'col-4', data[j]['source']]
 				]);
 			}
