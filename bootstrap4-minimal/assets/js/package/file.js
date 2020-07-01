@@ -28,7 +28,10 @@ class PackageFile {
 					name:       extractString(attribute, 'attributeName'),
 					missing_value: missing_parsed,
 					measurement:   measure_parsed,
-					annotation: extractString(attribute, 'annotation', ['propertyURI > _label', 'valueURI > _label'], ' ')
+					annotation: {
+						property: extractString(attribute, 'annotation > propertyURI > _label'),
+						value: activateLink(extractString(attribute, 'annotation > valueURI'), extractString(attribute, 'annotation > valueURI > _label')),
+					}
 				});
 			}
 
@@ -290,7 +293,7 @@ class PackageFile {
 			attr_rows_html += makeTableRow([
 				['td', 'col-2', `<strong> ${ attribute['label'] } </strong><br> ${ attribute['name'] }`],
 				['td', 'col-4', attribute['definition']],
-				['td', 'col-2', attribute['annotation']],
+				['td', 'col-2', attribute['annotation'].property + ' ' + attribute['annotation'].value],
 				['td', 'col-1', attribute['unit']],
 				['td', 'col-3', `${ measure_html['brief'] }<br>${ missing_html['brief'] }`]
 			]);
