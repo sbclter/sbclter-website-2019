@@ -15,16 +15,16 @@ class PackageMethod {
 			};
 
 			// Extract description list starting from most nested possible location.
-			let descriptions = extractList(methodList[i], 'description > section > para > itemizedlist > listitem');
-			if (descriptions.length == 0) descriptions = extractList(methodList[i], 'description > section');
+			let descriptions = extractList(methodList[i], 'description > section');
 			if (descriptions.length == 0) descriptions = extractList(methodList[i], 'description');
+			descriptions = [...descriptions, ...extractList(methodList[i], 'instrumentation')];
 
 			let protocols = extractList(methodList[i], 'protocol');
 
 			for (let j in descriptions) {
 				methodData['descriptions'].push({
 					title: extractString(descriptions[j], 'title'),
-					paragraph: extractList(descriptions[j], 'para')
+					paragraph: extractString(descriptions[j])
 				});
 			}
 
@@ -56,26 +56,11 @@ class PackageMethod {
 			// fill method's description
 			for (let j in descriptions) {
 				let title = descriptions[j]['title'];
-				let paraList = descriptions[j]['paragraph'];
-				let paragraphs_html = [];
-
-				// fill method's description's paragraphs
-				for (let k in paraList) {
-					if (paraList[k]['ulink']) {
-						paragraphs_html.push(
-							extractString(paraList[k]['__text']) + ' ' +
-							activateLink(paraList[k]['ulink']['_url'], paraList[k]['ulink'])
-						);
-					}
-					else {
-						paragraphs_html.push(paraList[k]);
-					}
-				}
 
 				description_html.push(`
 					<div style="font-weight: normal">
 						<strong>${ title ? title + '<br><br>' : '' }</strong>
-						${ paragraphs_html.join('<br><br>') }
+						${ descriptions[j]['paragraph'] }
 						<br><br>
 					</div>
 				`);

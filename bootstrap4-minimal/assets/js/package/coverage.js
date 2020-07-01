@@ -195,10 +195,10 @@ class PackageCoverage {
 			}
 			else {
 				let rectangle = new google.maps.Rectangle({
-					strokeColor: '#FF0000',
+					strokeColor: '#0000FF',
 					strokeOpacity: 0.8,
 					strokeWeight: 2,
-					fillColor: '#FF0000',
+					fillColor: '#0000FF',
 					fillOpacity: 0.35,
 					map: map,
 					title: m_data[0],
@@ -220,7 +220,7 @@ class PackageCoverage {
 			let polyline = new google.maps.Polyline({
 				path: m_data[poly],
 				geodesic: true,
-				strokeColor: "#FF0000",
+				strokeColor: "#0000FF",
 				strokeOpacity: 0.8,
 				strokeWeight: 2,
 				map: map,

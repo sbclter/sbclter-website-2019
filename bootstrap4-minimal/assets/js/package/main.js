@@ -142,6 +142,21 @@ function extractString(data, path, keys, delim='') {
 		else if (data.ulink) {
 			str += activateLink(data.ulink._url, extractStringObject(data.ulink, keys, delim));
 		}
+		else if (data.emphasis) {
+			str += extractStringObject(data.__text.replace(/([^a-z0-9]\s*)\n(\s*[^a-z0-9])/i, '$1<i>' + data.emphasis + '</i>$2'), keys, delim);
+		}
+		else if (data.subscript) {
+			str += extractStringObject(data.__text.replace(/([^a-z0-9]\s*)\n(\s*[^a-z0-9])/i, '$1<sub>' + data.subscript + '</sub>$2'), keys, delim);
+		}
+		else if (data.superscript) {
+			str += extractStringObject(data.__text.replace(/([^a-z0-9]\s*)\n(\s*[^a-z0-9])/i, '$1<sup>' + data.superscript + '</sup>$2'), keys, delim);
+		}
+		else if (data.itemizedlist && data.itemizedlist.listitem) {
+			str += '<ul>' + extractList(data.itemizedlist.listitem).map(item => '<li>' + extractString(item) + '</li>').join('') + '</ul>';
+		}
+		else if (data.para) {
+			str += extractList(data, 'para').map(para => extractString(para)).join('<br><br>');
+		}
 		else if (data.__text !== undefined) {
 			str += extractStringObject(data.__text, keys, delim);
 		}

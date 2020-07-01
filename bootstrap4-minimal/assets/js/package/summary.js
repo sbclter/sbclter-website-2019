@@ -71,10 +71,7 @@ class PackageSummary {
 		}
 
 		// Parse rights
-		let rights = extractList(json, 'dataset > intellectualRights > para > itemizedlist > listitem', ['para']);
-
-		if (rights.length == 0)
-			rights = extractList(json, 'dataset > intellectualRights > para');
+		let rights = extractString(json, 'dataset > intellectualRights');
 
 		this.data['rights'] = rights;
 	}
@@ -169,9 +166,7 @@ class PackageSummary {
 		}
 
 		// fill rights field
-		for (let i in this.data['rights']) {
-			element.find('#field-usage-rights').append(`<li> ${ this.data['rights'][i] } </li>`);
-		}
+		element.find('#field-usage-rights').html(this.data['rights']);
 	}
 
 	parseAbstract(json, path) {
