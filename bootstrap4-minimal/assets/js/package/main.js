@@ -292,11 +292,7 @@ function loadXMLDoc(fileUrl, onReady, onError) {
 			onError(`File ${ fileUrl } not found.`);
 	};
 
-	xhttp.ontimeout = function (e) {
-		onError(`Repository is not responding. Please try again later.`);
-	};
-
-	xhttp.onerror = function (e) {
+	xhttp.onerror = xhttp.ontimeout = function (e) {
 		onError(`Repository is not responding. Please try again later.`);
 	};
 
