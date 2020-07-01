@@ -17,7 +17,7 @@ class PackageMethod {
 			// Extract description list starting from most nested possible location.
 			let descriptions = extractList(methodList[i], 'description > section');
 			if (descriptions.length == 0) descriptions = extractList(methodList[i], 'description');
-			descriptions = [...descriptions, ...extractList(methodList[i], 'instrumentation')];
+			methodData['instrumentation'] = extractList(methodList[i], 'instrumentation');
 
 			let protocols = extractList(methodList[i], 'protocol');
 
@@ -87,6 +87,11 @@ class PackageMethod {
 				</div>
 				<br>
 				${ protocol_html.join('<hr>') }
+				<br>
+				<div class="ml-3">
+					${ methodList[i]['instrumentation'].join('<hr>') }
+				</div>
+				<br>
 			`;
 			element.append(html);
 		}

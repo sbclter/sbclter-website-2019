@@ -4,6 +4,7 @@
 // Javascript for creating google maps
 
 var map;
+var cluster;
 var layers = {};  // Holds all layer objects that map to URL's
 var layerCollections = {
 	// layer: [{name, packages}, {name, packages}, ...]
@@ -114,16 +115,23 @@ function initMap() {
 function zoomMap() {
 	var bounds = new google.maps.LatLngBounds();
 
+	if (cluster)
+		cluster.clearMarkers();
+
+	let all_markers = [];
+
 	for (let i in layers) {
 		let layer = layers[i];
 
 		// Collect bounds of active layers
 		if (layer.visible) {
+
 			for (let j in layer.markers) {
 				let marker = layer.markers[j];
 
 				if (typeof marker.getPosition === "function") {
 					bounds.extend(marker.getPosition());
+					all_markers.push(marker);
 				}
 				else {
 					bounds.extend(marker.getBounds().getNorthEast());
@@ -135,6 +143,12 @@ function zoomMap() {
 
 	if (!bounds.isEmpty())
 		map.fitBounds(bounds);
+
+	// Add cluster
+	cluster = new MarkerClusterer(map, all_markers, {
+		imagePath: '/assets/img/gmap/m',
+		maxZoom: 13
+	});
 }
 
 // Display the layer with the given id on the map

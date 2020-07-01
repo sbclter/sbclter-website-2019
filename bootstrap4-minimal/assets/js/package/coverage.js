@@ -168,7 +168,9 @@ class PackageCoverage {
 			this.fillTaxonomicRow(table, data[i]['taxonomicClassification'], row, chosen_column + 1);
 		}
 
-		parent_row.children().eq(7).html(common_names.join('<br>'));
+		if (parent_row) {
+			parent_row.children().eq(7).html(common_names.join('<br>'));
+		}
 	}
 
 	// Plot markers for coverage tab

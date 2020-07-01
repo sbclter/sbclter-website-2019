@@ -78,6 +78,7 @@ page_css:
   </div>
 </div>
 
+<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 <script src="/assets/js/gmap.js"></script>
 
 <!-- Current API is just for development, need a new key -->
