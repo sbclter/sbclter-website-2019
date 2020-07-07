@@ -2,7 +2,7 @@
 layout: article
 title: 'Overview'
 description: Overview of data resources of and related to SBC LTER.
-placeholder: "Search datasets ..."
+placeholder: "Overview of data"
 ---
 
 <h1>{{ page.title }}</h1>
@@ -150,7 +150,7 @@ SBC internal and personal information will not be disclosed to other parties nor
  <a href="{{page.url}}internal_access">Instructions for accessing Internal Data</a>. 
  </p> 
 --> 
- <p class="">
+ <p class="small">
  To request access, contact <a href="mailto:sbclter@msi.ucsb.edu" target="_blank"> sbclter@msi.ucsb.edu </a> 
    or the <a href="mailto:lkui@ucsb.edu">Information Manager</a>.
  </p>  
@@ -163,9 +163,9 @@ SBC internal and personal information will not be disclosed to other parties nor
 
       <p class="small"> SBC has three email lists: </p>
       <ul>
-        <li class="small"> <a href="mailto:sbclter-investigators@lists.msi.ucsb.edu" target="_blank"> Investigators</a>  </li>
-        <li class="small"> <a href="mailto:sbclter-grad@lists.msi.ucsb.edu" target="_blank"> Grad students</a>  </li>
-        <li class="small"> <a href="mailto:sbclter-all@lists.msi.ucsb.edu" target="_blank"> All participants</a> </li>
+        <li class="small"> <a href="mailto:sbclter-investigators@msi.ucsb.edu" target="_blank"> Investigators</a>  </li>
+        <li class="small"> <a href="mailto:sbclter-grad@msi.ucsb.edu" target="_blank"> Grad students</a>  </li>
+        <li class="small"> <a href="mailto:sbclter-all@msi.ucsb.edu" target="_blank"> All participants</a> </li>
       </ul>
       <p class="small">To modify your own subscription to the email lists, please 
 follow instructions <a href="http://lists.msi.ucsb.edu/mailman/listinfo/sbclter-all">here</a> </p>
