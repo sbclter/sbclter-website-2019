@@ -23,6 +23,7 @@ page_css:
   - "/assets/css/custom/includes/table.css"
   - "/assets/css/custom/includes/search_bar.css"
   - "/assets/css/custom/includes/back_to_top.css"
+  - "/assets/css/custom/includes/people_table.css"
 category_labels:
   Project Lead Investigator: Project Lead Investigator
   Project Co-Investigator: Project Co-Investigators

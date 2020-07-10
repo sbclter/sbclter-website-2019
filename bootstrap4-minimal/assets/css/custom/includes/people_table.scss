@@ -1,0 +1,17 @@
+---
+---
+
+@media (orientation: portrait) {
+	td, th {
+		display: none !important;
+
+		&:nth-child(2), &:nth-child(1) {
+			display: table-cell !important;
+		}
+	}
+
+	.cell {
+		max-width: 50% !important;
+		flex: 0 0 50% !important;
+	}
+}

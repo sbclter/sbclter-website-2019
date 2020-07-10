@@ -4,3 +4,10 @@
 .tab-content {
 	margin: 0 1vh;
 }
+
+@media (orientation: portrait) {
+	.cell {
+		max-width: 50% !important;
+		flex: 0 0 50% !important;
+	}
+}
