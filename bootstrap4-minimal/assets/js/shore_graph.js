@@ -40,6 +40,8 @@ setTimeout(() => {
 
 
 async function updateCSVData() {
+    $('#current-time').text(formatTime(new Date()));
+
     fetch(CSV_FILE).then(async res => {
         let text = await res.text();
 
@@ -89,7 +91,6 @@ async function updateCSVData() {
 
         updateLatest();
 
-
         graphData(series);
     });
 }
@@ -118,10 +119,13 @@ function graphData(series) {
                 month:       '%b \'%y',
                 year:        '%Y'
             },
+            // minorTickInterval: 5,
+            // minorGridLineWidth: 1,
+            tickInterval: 2,
+            gridLineWidth: 1,
         },
         yAxis: {
             opposite: false,
-            minorTickInterval: undefined,
         },
         legend: {
             enabled: false
@@ -168,7 +172,7 @@ function graphData(series) {
                 // 'stroke-width': 0,
                 // r: 8,
                 width: 70,
-                padding: 10,
+                padding: 6,
                 fill: '#3f51b5',
                 style: {
                     color: 'white',
