@@ -66,12 +66,12 @@ class PackageCoverage {
 		// Build temporal converage data
 		content = extractString(this.data, 'temporal > range', ['start', 'end'], ' to ');
 		content += ' ' + this.data.temporal.list
-							.map(date => {
-								let str = date.substring(0, 4);
-								if (date.length > 4) str += '-' + date.substring(4, 6);
-								if (date.length > 6) str += '-' + date.substring(6, 8);
-								return str;
-							})
+							// .map(date => {
+							// 	let str = date.substring(0, 4);
+							// 	if (date.length > 4) str += '-' + date.substring(4, 6);
+							// 	if (date.length > 6) str += '-' + date.substring(6, 8);
+							// 	return str;
+							// })
 							.join(', ');
 		element.find('#field-temporal').text(content);
 
