@@ -1,3 +1,9 @@
+const IGNORED_ATTRIBUTES = {
+	Id: undefined,
+	Scope: undefined,
+	System: undefined,
+}
+
 class PackagePeople {
 
 	parse(json) {
@@ -104,7 +110,9 @@ class PackagePeople {
 					if (value.includes('@'))      value = activateLink(`mailto: ${ value }`, value);
 				}
 
-				rows += makeTableRow([['th', '', key], ['td', '', value]]);
+				if (!(key in IGNORED_ATTRIBUTES)) {
+					rows += makeTableRow([['th', '', key], ['td', '', value]]);
+				}
 			}
 
 			contents += `
