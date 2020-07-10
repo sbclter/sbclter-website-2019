@@ -140,16 +140,24 @@ function extractString(data, path, keys, delim='') {
 			}
 		}
 		else if (data.ulink) {
-			str += activateLink(data.ulink._url, extractStringObject(data.ulink, keys, delim));
+			let resultText = replaceParaSymbols(data, 'ulink', (link) => activateLink(link._url, extractStringObject(link, keys, delim)));
+			str += extractStringObject(resultText, keys, delim);
 		}
 		else if (data.emphasis) {
-			str += extractStringObject(data.__text.replace(/([^a-z0-9]\s*)\n(\s*[^a-z0-9])/i, '$1<i>' + data.emphasis + '</i>$2'), keys, delim);
+			let resultText = replaceParaSymbols(data, 'emphasis', (text) => '<i>' + text + '</i>');
+			str += extractStringObject(resultText, keys, delim);
 		}
 		else if (data.subscript) {
-			str += extractStringObject(data.__text.replace(/([^a-z0-9]\s*)\n(\s*[^a-z0-9])/i, '$1<sub>' + data.subscript + '</sub>$2'), keys, delim);
+			let resultText = replaceParaSymbols(data, 'subscript', (text) => '<sub>' + text + '</sub>');
+			str += extractStringObject(resultText, keys, delim);
 		}
 		else if (data.superscript) {
-			str += extractStringObject(data.__text.replace(/([^a-z0-9]\s*)\n(\s*[^a-z0-9])/i, '$1<sup>' + data.superscript + '</sup>$2'), keys, delim);
+			let resultText = replaceParaSymbols(data, 'superscript', (text) => '<sup>' + text + '</sup>');
+			str += extractStringObject(resultText, keys, delim);
+		}
+		else if (data.literalLayout) {
+			let resultText = replaceParaSymbols(data, 'literalLayout', (text) => text);
+			str += extractStringObject(resultText, keys, delim);
 		}
 		else if (data.itemizedlist && data.itemizedlist.listitem) {
 			str += '<ul>' + extractList(data.itemizedlist.listitem).map(item => '<li>' + extractString(item) + '</li>').join('') + '</ul>';
@@ -171,6 +179,25 @@ function extractString(data, path, keys, delim='') {
 
 	return str;
 }
+
+function replaceParaSymbols(data, descriptor, handler=() => {}) {
+	let resultText = data.__text;
+	let i = 0;
+	let descriptors = extractList(data[descriptor]);
+
+	for (;i < descriptors.length; i++) {
+		let newText = resultText.replace(/@@@/i, handler(descriptors[i]));
+		if (resultText == newText)
+			break;
+		resultText = newText;
+	}
+
+	if (i < descriptors.length) {
+		console.log(resultText + descriptors.slice(i).map(e => handler(e)).join(' '));
+	}
+	return resultText + ' ' + descriptors.slice(i).map(e => handler(e)).join(' ');
+}
+
 
 // Extract object from JSON data
 function extractStringObject(data, keys, delim='') {
@@ -198,7 +225,7 @@ function extractStringObject(data, keys, delim='') {
 		}
 
 		if (val != '') {
-			str += extractString(val, '', [], delim) + delim;
+			str += extractString(val, '', [], delim).replace(/@@@/g, '') + delim;
 		}
 	}
 

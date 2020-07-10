@@ -255,7 +255,9 @@
 				if(result["#text"]!=null) {				
 					result.__text = result["#text"];
 					if(result.__text instanceof Array) {
-						result.__text = result.__text.join("\n");
+						result.__text = result.__text.filter(e => {
+							return e.replace(/^\s+|\s+$/g, '').length != 0;
+						}).join("@@@");
 					}
 					//if(config.escapeMode)
 					//	result.__text = unescapeXmlChars(result.__text);
