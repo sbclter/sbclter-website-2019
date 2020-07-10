@@ -26,12 +26,12 @@ page_css:
         </div>
 
         <div class="full-width">
-            <div id="time-change-panel" class="btn-group btn-group-toggle" data-toggle="buttons">
+            <!-- <div id="time-change-panel" class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label id="one-day"      class="btn btn-primary"        onclick="updateData(1)">  <input type="radio" name="options" autocomplete="off"> 1 Day </label>
                 <label id="one-week"     class="btn btn-primary active" onclick="updateData(7)">  <input type="radio" name="options" autocomplete="off" checked> 1 Week </label>
                 <label id="one-month"    class="btn btn-primary"        onclick="updateData(31)"> <input type="radio" name="options" autocomplete="off"> 1 Month </label>
                 <label id="three-months" class="btn btn-primary"        onclick="updateData(93)"> <input type="radio" name="options" autocomplete="off"> 3 Months </label>
-            </div>
+            </div> -->
             <div id="shore-graph">
                 <div id="graph-loader" class="loader"></div>
             </div>
@@ -79,5 +79,6 @@ page_css:
     </div>
 </div>
 
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="/assets/js/shore_graph.js"/></script>

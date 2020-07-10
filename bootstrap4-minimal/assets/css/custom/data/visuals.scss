@@ -67,46 +67,67 @@ body {
 }
 
 text {
-    font-size: 22px;
+    font-size: 16px !important;
+    fill: black !important;
 }
 
-path { 
-    stroke-width: 3;
-    fill: none;
+.highcharts-input-group {
+    display: none !important;
 }
 
-.focus, :focus {
-    box-shadow: unset !important;
+.highcharts-button {
+    cursor: pointer;
+    border-radius: 0.25rem !important;
+
+    text {
+        fill: white !important;
+    }
+
+    &.highcharts-button-hover rect {
+        fill: #354499 !important;
+    }
 }
 
-.axis path, .axis line {
-    fill: none;
-    stroke: grey;
-    stroke-width: 1;
-    shape-rendering: crispEdges;
-}
+// path { 
+//     stroke-width: 3;
+//     fill: none;
+// }
 
-.grid line {
-    stroke: lightgrey;
-    stroke-opacity: 0.7;
-    shape-rendering: crispEdges;
-}
+// .focus, :focus {
+//     box-shadow: unset !important;
+// }
 
-div.tooltip {
-    position: absolute;
-    text-align: center;
-    padding: 15px;
-    font: 17px;
-    background: lightsteelblue;
-    border: 0px;
-    border-radius: 8px;
-    pointer-events: none;
-}
+// .axis path, .axis line {
+//     fill: none;
+//     stroke: grey;
+//     stroke-width: 1;
+//     shape-rendering: crispEdges;
+// }
 
-#pressure-btn.btn-color, #pressure-latest                         { background-color: #dd00dd; color: white; }
-#temperature-btn.btn-color, .btn-temperature, #temperature-latest { background-color: #00dddd; }
-#chlorophyll-btn.btn-color, #chlorophyll-latest                   { background-color: #00dd00; }
-#salinity-btn.btn-color, #salinity-latest                         { background-color: #ff8800; }
+// .grid line {
+//     stroke: lightgrey;
+//     stroke-opacity: 0.7;
+//     shape-rendering: crispEdges;
+// }
+
+// div.tooltip {
+//     position: absolute;
+//     text-align: center;
+//     padding: 15px;
+//     font: 17px;
+//     background: lightsteelblue;
+//     border: 0px;
+//     border-radius: 8px;
+//     pointer-events: none;
+// }
+
+.highcharts-series-0 path, #pressure-btn.btn-color,    #pressure-latest                      { background-color: #dd00dd; stroke-width: 2; stroke: #dd00dd; color: white; }
+.highcharts-series-1 path, #temperature-btn.btn-color, .btn-temperature, #temperature-latest { background-color: #00dddd; stroke-width: 2; stroke: #00dddd; }
+.highcharts-series-2 path, #chlorophyll-btn.btn-color, #chlorophyll-latest                   { background-color: #00dd00; stroke-width: 2; stroke: #00dd00; }
+.highcharts-series-3 path, #salinity-btn.btn-color,    #salinity-latest                      { background-color: #ff8800; stroke-width: 2; stroke: #ff8800; }
+
+
+
 
 #pressure-line { stroke: #dd00dd; }
 #temperature-line { stroke: #00dddd; }

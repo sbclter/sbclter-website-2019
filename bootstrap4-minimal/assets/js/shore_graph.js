@@ -1,89 +1,22 @@
-// CSV source file
+// // CSV source file
 const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+
+var chart;
+
+let seriesIndex = {
+    pressure: 0,
+    temperature: 1,
+    chlorophyll: 2,
+    salinity: 3,
+};
 
 // Data configs
 var units_data = {
     pressure: 'Decibars',
     temperature: '°C',
-    chlorophyll: '&mu;g / Liter',
+    chlorophyll: 'μg / Liter',
     salinity: 'PSU',
 };
-
-var time_data = [];
-var pressure_data = [];
-var temperature_data = [];
-var chlorophyll_data = [];
-var salinity_data = [];
-var days = 7;
-
-// Layout configs
-var margin = {top: 10, right: 50, bottom: 50, left: 0};
-var width = $(window).width() * 0.8 - margin.left - margin.right;
-var height = $(window).height() * 0.7 - margin.top - margin.bottom;
-
-// Date format configs
-var parseDate = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
-
-// Domain and range configs
-var x = d3.scaleTime().range([0, width]);
-var y = d3.scaleLinear().range([height, 0]);
-
-// Axis configs
-var xAxis = d3.axisBottom(x).ticks(8);
-var yAxis = d3.axisRight(y).ticks(8);
-var valueline = d3.line().x(d => x(d.x)).y(d => y(d.y));
-
-// Initialize resizable graph
-var svg = d3.select("#shore-graph")
-    .classed("svg-container", true)
-    .append("svg")
-    .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .classed("svg-content-responsive", true)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom);
-
-// Initialize tooltip window
-var tooltip = d3.select(".tooltip");
-
-// Draw data lines
-svg.append("path").attr("id", "pressure-line").attr("class", "line");
-svg.append("path").attr("id", "temperature-line").attr("class", "line");
-svg.append("path").attr("id", "chlorophyll-line").attr("class", "line");
-svg.append("path").attr("id", "salinity-line").attr("class", "line");
-
-// Draw x-axis labels
-svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")");
-
-// Draw y-axis labels
-svg.append("g")
-    .attr("class", "y axis")
-    .attr("transform", "translate( " + width + ", 0 )");
-
-// Draw vertical grid lines
-svg.append("g")
-    .attr("class", "grid")
-    .attr("transform", "translate(0," + height + ")")
-    .call(
-        d3.axisBottom(x)
-            .ticks(10)
-            .tickSize(-height)
-            .tickFormat('')
-    );
-
-// Draw horizontal grid lines
-svg.append("g")
-    .attr("class", "grid")
-    .call(
-        d3.axisLeft(y)
-            .ticks(10)
-            .tickSize(-width)
-            .tickFormat('')
-    );
 
 
 // Time until the next whole minute
@@ -107,120 +40,188 @@ setTimeout(() => {
 
 
 async function updateCSVData() {
-    $('#current-time').text(formatTime(new Date()));
+    fetch(CSV_FILE).then(async res => {
+        let text = await res.text();
 
-    time_data = [];
-    pressure_data = [];
-    temperature_data = [];
-    chlorophyll_data = [];
-    salinity_data = [];
+        let series = [
+            {
+                name: 'pressure',
+                data: [],
+            },
+            {
+                name: 'temperature',
+                data: [],
+            },
+            {
+                name: 'chlorophyll',
+                data: [],
+            },
+            {
+                name: 'salinity',
+                data: [],
+            }
+        ];
 
-    d3.csv(CSV_FILE).then(data => {
+        // Parse data
+        let data = text.split('\n');
         data.shift();
+        data.shift();
+        data.forEach(line => {
+            if (line.trim().length == 0) return;
 
-        data.forEach((d) => {
-            let time = parseDate(d.time);
+            let vals = line.split(',');
+            let time = new Date(vals[0]);
+            let val1 = parseFloat(vals[1]) || undefined;
+            let val2 = parseFloat(vals[3]) || undefined;
+            let val3 = parseFloat(vals[5]) || undefined;
+            let val4 = parseFloat(vals[7]) || undefined;
 
-            time_data.push          (time);
-            pressure_data.push      ({ x: time, y: d.pressure });
-            temperature_data.push   ({ x: time, y: d.temperature });
-            chlorophyll_data.push   ({ x: time, y: d.chlorophyll });
-            salinity_data.push      ({ x: time, y: d.salinity });
+            series[0].data.push([time, val1]);
+            series[1].data.push([time, val2]);
+            series[2].data.push([time, val3]);
+            series[3].data.push([time, val4]);
         });
 
-        updateData(days);
+        pressure_data = series[0].data;
+        temperature_data = series[1].data;
+        chlorophyll_data = series[2].data;
+        salinity_data = series[3].data;
+
+        updateLatest();
+
+
+        graphData(series);
     });
 }
 
-async function updateData(_days) {
-    days = _days;
+function graphData(series) {
+    Highcharts.setOptions({
+        lang:{
+            rangeSelectorZoom: ''
+        },
+    });
 
-    udpateGraphData();
+    Highcharts.stockChart('shore-graph', {
+        credits: {
+            enabled: false
+        },
+        chart: {
+            plotBorderColor: 'black',
+            plotBorderWidth: 2,
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                minute:      '%l %p',
+                day:         '%b %e',
+                week:        '%b %e',
+                month:       '%b \'%y',
+                year:        '%Y'
+            },
+        },
+        yAxis: {
+            opposite: false,
+            minorTickInterval: undefined,
+        },
+        legend: {
+            enabled: false
+        },
+        rangeSelector: {
+            selected: 1,
+            buttons: [{
+                type: 'day',
+                count: 1,
+                text: '1 Day',
+                dataGrouping: {
+                    forced: true,
+                    units: [['minute', [1]]]
+                }
+            },{
+                type: 'week',
+                count: 1,
+                text: '1 Week',
+                dataGrouping: {
+                    forced: true,
+                    units: [['minute', [1]]]
+                }
+            },{
+                type: 'month',
+                count: 1,
+                text: ' 1 Month ',
+                dataGrouping: {
+                    forced: true,
+                    units: [['hour', [1]]]
+                }
+            },{
+                type: 'month',
+                count: 3,
+                text: ' 3 Month ',
+                dataGrouping: {
+                    forced: true,
+                    units: [['hour', [1]]]
+                }
+            }],
+
+            buttonTheme: {
+                // fill: 'none',
+                // stroke: 'none',
+                // 'stroke-width': 0,
+                // r: 8,
+                width: 70,
+                padding: 10,
+                fill: '#3f51b5',
+                style: {
+                    color: 'white',
+                    // fontWeight: 'bold'
+                },
+                states: {
+                    hover: {
+                    },
+                    select: {
+                        fill: '#32408f',
+                        style: {
+                            color: 'white',
+                            fontWeight: 'normal'
+                        }
+                    }
+                    // disabled: { ... }
+                }
+            }
+        },
+        navigator: {
+            enabled: false
+        },
+        scrollbar: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                showInNavigator: true
+            }
+        },
+        tooltip: {
+            formatter: function (tooltip) {
+                return ['<b>' + formatTime(new Date(this.x)) + '</b>'].concat(
+                    this.points ?
+                        this.points.map(function (point) {
+                            return point.series.name + ': ' + point.y + ' ' + units_data[point.series.name];
+                        }) : []
+                );
+            }
+        },
+        series: series
+    },
+    function(_chart) {
+        chart = _chart;
+    });
 
     $('#graph-loader').toggleClass('hidden', true);
 }
 
-function udpateGraphData() {
-    updateLatest();
-
-    let end_date = time_data[time_data.length - 1];
-    let start_date = new Date(end_date - 1000 * 60 * 60 * 24 * days);
-
-    let start_i = time_data.findIndex(time => time > start_date);
-    let end_i = time_data.findIndex(time => time > end_date);
-
-    if (end_i == -1) end_i = time_data.length;
-
-    let min_x = end_date, max_x = start_date, min_y = 0, max_y = 0;
-    let i = start_i;
-    for (; i < end_i; i++) {
-        max_y = Math.max(max_y, pressure_data[i].y, temperature_data[i].y, chlorophyll_data[i].y, salinity_data[i].y);
-        min_x = Math.min(min_x, time_data[i]);
-        max_x = Math.max(max_x, time_data[i]);
-    }
-
-    x.domain([min_x, max_x]);
-    y.domain([min_y, max_y + (max_y - min_y) / 10]);
-
-    let svgt = svg.transition();
-
-    svgt.select("#pressure-line")    .duration(500).attr("d", valueline(pressure_data    .slice(start_i, end_i)));
-    svgt.select("#temperature-line") .duration(500).attr("d", valueline(temperature_data .slice(start_i, end_i)));
-    svgt.select("#chlorophyll-line") .duration(500).attr("d", valueline(chlorophyll_data .slice(start_i, end_i)));
-    svgt.select("#salinity-line")    .duration(500).attr("d", valueline(salinity_data    .slice(start_i, end_i)));
-
-    svgt.select(".x.axis").duration(500).call(xAxis);
-    svgt.select(".y.axis").duration(500).call(yAxis);
-
-
-    $('.dots').remove();
-    makeDot('pressure', pressure_data    .slice(start_i, end_i));
-    makeDot('temperature', temperature_data .slice(start_i, end_i));
-    makeDot('chlorophyll', chlorophyll_data .slice(start_i, end_i));
-    makeDot('salinity', salinity_data    .slice(start_i, end_i));
-
-    function makeDot(topic, data) {
-        let sparse_data = [];
-        let inc = Math.floor(data.length / 300);
-        if (inc < 1) inc = 1;
-
-        for (let i = 0; i < data.length; i += inc) {
-            sparse_data.push(data[i]);
-        }
-
-        svg.selectAll("dot")
-            .data(sparse_data)
-            .enter()
-            .append("circle")
-                .attr("r", 7)
-                .attr("class", `dots ${topic}-dots`)
-                .attr("cx", d => x(d.x))
-                .attr("cy", d => y(d.y))
-                .attr("fill", "transparent")
-                .on("mouseover", function(d) {
-                    tooltip.transition()
-                        .duration(200)
-                        .style("opacity", .9);
-                    tooltip.html(formatTime(d.x) + '<br/>' + parseFloat(d.y).toFixed(2) + ' ' + units_data[topic])
-                        .style("left", (d3.event.pageX) + "px")
-                        .style("top", (d3.event.pageY) + "px");
-                    $(this).attr("fill", "black");
-                    $(this).css("cursor", "pointer");
-                })
-                .on("mouseout", function(d) {
-                    tooltip.transition()
-                    .duration(500)
-                    .style("opacity", 0);
-                    $(this).attr("fill", "transparent");
-                    $(this).css("cursor", "unset");
-                });
-    }
-}
 
 async function toggleGraph(topic) {
+    chart.series[seriesIndex[topic]].setVisible();
     $(`#${topic}-btn`).toggleClass('btn-color');
-    $(`#${topic}-line`).toggleClass('hide');
-    $(`.${topic}-dots`).toggleClass('hide');
 }
 
 function formatTime(date) {
@@ -234,10 +235,11 @@ function formatTime(date) {
 }
 
 function updateLatest() {
-    let pressure_val = parseFloat(pressure_data[pressure_data.length - 1].y).toFixed(2);
-    let temperature_val = parseFloat(temperature_data[temperature_data.length - 1].y).toFixed(2);
-    let chlorophyll_val = parseFloat(chlorophyll_data[chlorophyll_data.length - 1].y).toFixed(2);
-    let salinity_val = parseFloat(salinity_data[salinity_data.length - 1].y).toFixed(2);
+    console.log(pressure_data);
+    let pressure_val = parseFloat(pressure_data[pressure_data.length - 1][1]).toFixed(2);
+    let temperature_val = parseFloat(temperature_data[temperature_data.length - 1][1]).toFixed(2);
+    let chlorophyll_val = parseFloat(chlorophyll_data[chlorophyll_data.length - 1][1]).toFixed(2);
+    let salinity_val = parseFloat(salinity_data[salinity_data.length - 1][1]).toFixed(2);
 
     $('#pressure-latest')   .text(pressure_val);
     $('#temperature-latest').text(temperature_val);
@@ -252,18 +254,20 @@ async function toggleCelsius(e) {
         units_data.temperature = '°C';
 
         temperature_data.forEach(d => {
-            d.y = toCelsius(d.y);
+            d[1] = toCelsius(d[1]);
         });
 
-        udpateGraphData();
+        chart.series[seriesIndex.temperature].setData(temperature_data, true, true);
+        // udpateGraphData();
     }
     else if (!turnOn && units_data.temperature != '°F') {
         units_data.temperature = '°F';
 
         temperature_data.forEach(d => {
-            d.y = toFahrenheit(d.y);
+            d[1] = toFahrenheit(d[1]);
         });
-        udpateGraphData();
+        // udpateGraphData();
+        chart.series[seriesIndex.temperature].setData(temperature_data, true, true);
     }
 
 }
