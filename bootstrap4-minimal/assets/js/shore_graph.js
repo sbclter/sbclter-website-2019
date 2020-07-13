@@ -2,6 +2,7 @@
 const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
 
 var chart;
+var timeIndex = 1;
 
 let seriesIndex = {
     pressure: 0,
@@ -49,18 +50,22 @@ async function updateCSVData() {
             {
                 name: 'pressure',
                 data: [],
+                visible: $(`#pressure-btn`).hasClass('btn-color'),
             },
             {
                 name: 'temperature',
                 data: [],
+                visible: $(`#temperature-btn`).hasClass('btn-color'),
             },
             {
                 name: 'chlorophyll',
                 data: [],
+                visible: $(`#chlorophyll-btn`).hasClass('btn-color'),
             },
             {
                 name: 'salinity',
                 data: [],
+                visible: $(`#salinity-btn`).hasClass('btn-color'),
             }
         ];
 
@@ -109,6 +114,7 @@ function graphData(series) {
         chart: {
             plotBorderColor: 'black',
             plotBorderWidth: 2,
+            height: '60%',
         },
         xAxis: {
             type: 'datetime',
@@ -131,7 +137,7 @@ function graphData(series) {
             enabled: false
         },
         rangeSelector: {
-            selected: 1,
+            selected: timeIndex,
             buttons: [{
                 type: 'day',
                 count: 1,
@@ -220,11 +226,22 @@ function graphData(series) {
     });
 
     $('#graph-loader').toggleClass('hidden', true);
+
+    $('.highcharts-range-selector-buttons .highcharts-button').click(function(e) {
+        let element = $(e.target);
+
+        while (element.prop("tagName") != 'g') {
+            element = element.parent();
+        }
+
+        timeIndex = element.index() - 1;
+    });
 }
 
-
 async function toggleGraph(topic) {
-    chart.series[seriesIndex[topic]].setVisible();
+    let turnOff = $(`#${topic}-btn`).hasClass('btn-color');
+
+    chart.series[seriesIndex[topic]].setVisible(!turnOff);
     $(`#${topic}-btn`).toggleClass('btn-color');
 }
 
