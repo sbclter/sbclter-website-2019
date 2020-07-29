@@ -12,7 +12,7 @@ placeholder: "Overview of data"
   <!-- fun stuff -->
     <div class="col-md-9">
 
-      <h2 class="">SBC LTER Data</h2>
+      <h3 class="">SBC LTER Data</h3>
       <ul> 
         <li class="">
           <a href="{{page.url}}catalog/">Browse SBC LTER Data Catalog</a> of all publicly available datasets, organized into research collections
@@ -27,24 +27,12 @@ placeholder: "Overview of data"
 
  
       <!-- create these page-links when the browse collections page is done, and main catalog link above points there -->   
- <!--
-    <li class="">
-	       <a href="">Search All SBC Data Holdings</a>
-        </li>
-        <li class="">
-   	  <a href="">SBC Signature Data</a>
-        </li> 
- -->
+ 
       </ul>
-<!-- 
-<p>SBC LTER collects data on _ TO DO: A brief description of the scope and type of data collected at a site.____
-</p>
-Contact information for the site’s information manager or link to the contact page of the site.
- -->
 
       <hr/>
        
-      <h2>Data from Collaborative Research Projects</h2>
+      <h3>Data from Collaborative Research Projects</h3>
       <ul>
         <li class="">
           <a href="http://www.icess.ucsb.edu/">Current data measured with High Frequency Radar (CODAR)</a> 
@@ -61,8 +49,7 @@ Contact information for the site’s information manager or link to the contact 
       </ul>
 
       <hr/>
-      <h2>Other Data Resources for this Region</h2>
-      <h3>Research Data</h3>
+      <h3>Research Data Resources for this Region</h3>
       <ul>
         <li  class="">
           <a href="http://www.piscoweb.org">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
@@ -155,7 +142,7 @@ SBC internal and personal information will not be disclosed to other parties nor
    or the <a href="mailto:lkui@ucsb.edu">Information Manager</a>.
  </p>  
        <hr/>  
- <h3><a href="https://sbc.lternet.edu/internal">Login to Internal File Server</a></h3> 
+ <h4><a href="https://sbc.lternet.edu/internal">Login to Internal File Server</a></h4> 
       <hr/> 
 
 
@@ -167,8 +154,6 @@ SBC internal and personal information will not be disclosed to other parties nor
         <li class="small"> <a href="mailto:sbclter-grad@msi.ucsb.edu" target="_blank"> Grad students</a>  </li>
         <li class="small"> <a href="mailto:sbclter-all@msi.ucsb.edu" target="_blank"> All participants</a> </li>
       </ul>
-      <p class="small">To modify your own subscription to the email lists, please 
-follow instructions <a href="http://lists.msi.ucsb.edu/mailman/listinfo/sbclter-all">here</a> </p>
 
       <hr/> 
 
