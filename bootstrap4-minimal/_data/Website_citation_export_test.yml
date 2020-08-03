@@ -1,0 +1,30 @@
+  - sbc_id: 1
+    year: '2000'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Busse, L. B. (2000). The use of diatoms as indicators for water quality in streams and wetlands. Presented at the meeting of Water Quality Meeting, Santa Barbara, CA, US
+  - sbc_id: 32
+    year: '2009'
+    category: Techreport
+    hyperlink: https://sbclter.msi.ucsb.edu/external/Documents/Publications/FieldGuide.pdf
+    citation: |
+      Nelson, C., Donahue, C., Harrer, S., Reed, D. C. (2009). Field Guide to Kelp Forests of the Santa Barbara Channel, Fourth Edition. Santa Barbara Coastal Ecosystem Long-Term Ecological Research Program, University of California, Santa Barbara.
+   - sbc_id: 79
+    year: '2002'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1006/jmsc.2002.1224
+    citation: |
+      Holbrook, S. (2002). Survival Experiments With Outplanted Seedlings of Surfgrass (Phyllospadix torreyi) to Enhance Establishment on Artificial Structures. ICES Journal of Marine Science. 59:S350--S355. DOI: 10.1006/jmsc.2002.1224
+  - sbc_id: 1345
+    year: '2018'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/8md6z1gs
+    citation: |
+      Emery, B. Improved Methods for Oceanographic High Frequency Radars. (2018). Mechanical Engineering, University of California, Santa Barbara.
+  - sbc_id: 1347
+    year: '2019'
+    category: phdthesis
+    hyperlink: https://escholarship.org/content/qt8ns8w1r4/qt8ns8w1r4_noSplash_6485d0f152982b47b7b98bec043ab520.pdf
+    citation: |
+      Wong, J. Investigating the Response of Sea Urchin Early Developmental Stages to Multiple Stressors Related to Climate Change. (2019). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
