@@ -94,3 +94,24 @@ body {
 		max-width: unset;
 	}
 }
+
+
+// Google search bar
+#___gcse_0 {
+	width: 30%;
+	min-width: 500px;
+	margin: auto;
+
+	.gsc-control-cse {
+		border: unset !important;
+		background-color: unset !important;
+	}
+
+	.gstl_50 tr, #gsc-iw-id1, .gsc-input, .gsib_a {
+		border-radius: 5px;
+	}
+
+	.gsc-input {
+		padding: 0;
+	}
+}
