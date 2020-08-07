@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 'Page tltle here'
+title: 'Education and Outreach'
 description: page description here.
 
 ---
@@ -97,6 +97,8 @@ description: page description here.
 
           
    </div>
-   
+   <hr/>
+
+   Check out the Santa Barbara Coastal marine classes offered by the <a href="https://www.youtube.com/channel/UCzNC-IK5BNlgY3cZrGrWEqQ/videos" target="new">VirtualREEF education team</a>. Here are the two episodes for SBC LTER research: <a href="https://www.youtube.com/watch?v=u-N92UU6Ks8" target="new">SBCLTER part I</a> and <a href="https://www.youtube.com/watch?v=X_SAgz-Sj3M" target="new">SBCLTER part II</a>
     
 </div>

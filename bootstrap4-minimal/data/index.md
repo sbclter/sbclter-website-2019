@@ -77,7 +77,7 @@ placeholder: "Overview of data"
         </li>  
         -->
         <li class="">
-          <a href="http://digital.library.ucsb.edu/collections/show/23">Ronald H. McPeak, Photographs of Underwater and Coastal California</a>
+          <a href="https://alexandria.ucsb.edu/lib/ark:/48907/f3f76c59">Ronald H. McPeak, Photographs of Underwater and Coastal California</a>
         </li>
       </ul>
   

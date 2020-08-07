@@ -21,27 +21,6 @@ description: news and event in SBCLTER
 
  <hr/>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-<div style="position: bottom: 5px;">
-     <p>Find out more about the <a href="https://www.youtube.com/channel/UCF9VmuIO6jlzjrz8CnKc3eQ" target="_blank">SBC LTER YouTube Channel</a></p>
-</div>
-
 
 </div>
 </div>
