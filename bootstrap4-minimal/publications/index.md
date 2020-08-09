@@ -30,7 +30,8 @@ category_labels:
   phdthesis:     PhD Dissertations
   Techreport:    Technical Reports
   Presentation:  Presentations
-urlkey: false
+urlkey: hyperlink
+urlcell: 1
 ---
 
 
@@ -44,7 +45,7 @@ urlkey: false
 
 	{% include bookmark_list.html category_labels=page.category_labels %}
 
-	{% assign pub_groups = site.data.Website_citation_export | sort: "citation" | reverse | sort: "year" | reverse | group_by: "category" %}
+	{% assign pub_groups = site.data.Website_citation_export_test | sort: "citation" | reverse | sort: "year" | reverse | group_by: "category" %}
 
 	<div class="tab-content">
 	{% for pubs in pub_groups %}
@@ -54,7 +55,8 @@ urlkey: false
 							  dataFilter = page.dataFilter
 							  category_labels = page.category_labels
 							  table_font_size = page.table_font_size
-							  urlkey = page.urlkey %}
+							  urlkey = page.urlkey
+							  urlcell = page.urlcell %}
 	{% endfor %}
 	</div>
 </div>
@@ -68,21 +70,23 @@ urlkey: false
 		$(`#tab-${ first_section }`).addClass('active');
 		$(`#section_${ first_section }`).addClass('active');
 
-		$('tbody').each(function() {
-			$(this).find('.row').each(function() {
-				let clickable_cell = $(this).children().last();
-				let doi = clickable_cell.text().split("DOI: ")[1];
+		// $('tbody').each(function() {
+		// 	$(this).find('.row').each(function() {
+		// 		let clickable_cell = $(this).children().last();
+		// 		let doi = clickable_cell.text().split("DOI: ")[1];
+				
 
-				if (doi) {
-					clickable_cell.replaceWith(`
-						<td class="cell col-11">
-							<a href="http://dx.doi.org/${ doi }" target="_blank">
-								${ clickable_cell.html() }
-							</a>
-						</td>
-					`);
-				}
-			});
-		});
+		// 		if (doi) {
+		// 			clickable_cell.replaceWith(`
+		// 				<td class="cell col-11">
+
+		// 					<a href="http://dx.doi.org/${ doi }" target="_blank">
+		// 						${ clickable_cell.html() }
+		// 					</a>
+		// 				</td>
+		// 			`);
+		// 		}
+		// 	});
+		// });
 	});
 </script>

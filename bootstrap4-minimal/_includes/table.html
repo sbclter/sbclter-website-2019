@@ -28,11 +28,28 @@
 		<tbody id="myTable">
 		{% for itemrow in include.data.items %}
 			{% if include.urlkey %}
-				<tr class="row clickable-row table_row_{{include.data.name}}" data-href='{{ itemrow[include.urlkey] }}' style="cursor: pointer">
-					{% for filter in include.dataFilter %}
-						<td class="cell col-{{ include.columns_size[forloop.index0] }}" data-order="{{ itemrow['surName'] }}"> {{ itemrow[filter] }} </td>
-					{% endfor %}
-				</tr>
+
+				{% if include.urlcell %}
+					<tr class="row table_row_{{include.data.name}}" data-href='{{ itemrow[include.urlkey] }}' style="cursor: pointer">
+						{% for filter in include.dataFilter %}
+							{% if forloop.index0 == include.urlcell %}
+								<td class="cell col-{{ include.columns_size[forloop.index0] }}" data-order="{{ itemrow['surName'] }}"> 
+									<a href="{{ itemrow[include.urlkey] }}" target="_blank">
+										{{ itemrow[filter] }}
+									</a>
+								</td>
+							{% else %}
+								<td class="cell col-{{ include.columns_size[forloop.index0] }}" data-order="{{ itemrow['surName'] }}"> {{ itemrow[filter] }} </td>
+							{% endif %}
+						{% endfor %}
+					</tr>
+				{% else %}
+					<tr class="row clickable-row table_row_{{include.data.name}}" data-href='{{ itemrow[include.urlkey] }}' style="cursor: pointer">
+						{% for filter in include.dataFilter %}
+							<td class="cell col-{{ include.columns_size[forloop.index0] }}" data-order="{{ itemrow['surName'] }}"> {{ itemrow[filter] }} </td>
+						{% endfor %}
+					</tr>
+				{% endif %}
 			{% else %}
 				<tr class="row table_row_{{include.data.name}}">
 					{% for filter in include.dataFilter %}
