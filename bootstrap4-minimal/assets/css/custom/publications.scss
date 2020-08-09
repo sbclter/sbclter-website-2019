@@ -6,8 +6,14 @@
 }
 
 @media (orientation: portrait) {
-	.cell {
-		max-width: 50% !important;
+	.cell:first-child {
+		max-width: 25%;
+		// width: 500px !important;
 		flex: 0 0 50% !important;
+	}
+	.cell:nth-child(2) {
+		max-width: 75%;
+		// width: calc(100% - 500px) !important;
+		// flex: 0 0 50% !important;
 	}
 }
