@@ -52,7 +52,7 @@
   - sbc_id: 8
     year: '2001'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1130/0091-7613(2001)029<0659:mfofcw>2.0.co;2
     citation: |
       Mertes, L. A., Warrick, J. A. (2001). Measuring Flood Output from 110 Coastal Watersheds in California With Field Measurements and Seawifs. Geology. 29:659--662. DOI: 10.1130/0091-7613(2001)029<0659:mfofcw>2.0.co;2
     author: ''
@@ -927,7 +927,7 @@
   - sbc_id: 146
     year: '2003'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1890/1051-0761(2003)013[0170:aectmr]2.0.co;2
     citation: |
       Airame, S., Dugan, J. E., Lafferty, K. D., Leslie, H., McArdle, D. A., Warner, R. R. (2003). Applying Ecological Criteria to Marine Reserve Design: a Case Study from the California Channel Islands. Ecological Applications. 13:170-184. DOI: 10.1890/1051-0761(2003)013[0170:aectmr]2.0.co;2
     author: Dugan, Jenifer
@@ -1118,14 +1118,14 @@
   - sbc_id: 178
     year: '2003'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1890/1051-0761(2003)013[0215:aoecis]2.0.co;2
     citation: |
       Roberts, C. M., Branch, G., Bustamante, R. H., Castilla, J. C., Dugan, J., Halpern, B. S., Warner, R. R. (2003). Application of Ecological Criteria in Selecting Marine Reserves and  Developing Reserve Networks. Ecological Applications. 13:215-228. DOI: 10.1890/1051-0761(2003)013[0215:aoecis]2.0.co;2
     author: Dugan, Jenifer
   - sbc_id: 179
     year: '2003'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1890/1051-0761(2003)013[0199:ecfecs]2.0.co;2
     citation: |
       Roberts, C. M., Andelman, S., Branch, G., Bustamante, R. H., Castilla, C., Dugan, J., Warner, R. R. (2003). Ecological Criteria for Evaluating Candidate Sites for Marine Reserves. Ecological Applications. 13:199-214. DOI: 10.1890/1051-0761(2003)013[0199:ecfecs]2.0.co;2
     author: Dugan, Jenifer
@@ -1818,7 +1818,7 @@
   - sbc_id: 309
     year: '2006'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1890/1540-9295(2006)4[525:memfct]2.0.co;2
     citation: |
       Arkema, K. K., Abramson, S. C., Dewsbury, B. M. (2006). Marine Ecosystem-Based Management: from Characterization to Implementation. Frontiers in Ecology and the Environment. 4:525-532. DOI: 10.1890/1540-9295(2006)4[525:memfct]2.0.co;2
     author: ''
@@ -1846,7 +1846,7 @@
   - sbc_id: 317
     year: '2006'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1890/0012-9615(2006)076[0481:msdice]2.0.co;2
     citation: |
       Gaylord, B., Reed, D. C., Raimondi, P. T., Washburn, L. (2006). Macroalgal Spore Dispersal in Coastal Environments: Mechanistic Insights Revealed by Theory and Experiment. Ecological Monographs. 76:481-502. DOI: 10.1890/0012-9615(2006)076[0481:msdice]2.0.co;2
     author: Gaylord, Brian; Reed, Daniel; Washburn, Libe
@@ -6764,7 +6764,7 @@
   - sbc_id: 1089
     year: '2014'
     category: Article
-    hyperlink: ''
+    hyperlink: https://tos.org/oceanography/assets/docs/27-4_supp_bios.pdf
     citation: |
       Emery, K. (2014). Autobiographical Sketch In: Women in Oceanography: a Decade Later. Oceanography. 27:supplement.
     author: ''
@@ -7572,7 +7572,7 @@
   - sbc_id: 1220
     year: '2016'
     category: phdthesis
-    hyperlink: ''
+    hyperlink: https://escholarship.org/uc/item/0ch8m0bc
     citation: |
       Freitas, F. H. Space-Time Variability of Bio-Optical Properties in the Southern California Bight. (2016). Dept of Geography, University of California, Santa Barbara.
     author: ''
@@ -7749,7 +7749,7 @@
   - sbc_id: 1247
     year: '2017'
     category: phdthesis
-    hyperlink: ''
+    hyperlink: https://escholarship.org/uc/item/4d5550cv
     citation: |
       Reynolds, L. C. Late Quaternary Evolution of the Southern California Coast: Sea-Level Change, Storms, and Subsidence. (2017). University of California, Santa Barbara.
     author: ''
@@ -7763,7 +7763,7 @@
   - sbc_id: 1249
     year: '2017'
     category: phdthesis
-    hyperlink: ''
+    hyperlink: https://escholarship.org/uc/item/8gb4z43c
     citation: |
       Wear, E. K. Bottom-Up Drivers of Bacterial Community Composition and Metabolism of Dissolved Organic Carbon in the Santa Barbara Channel, CA. (2017). University of California, Santa Barbara.
     author: ''
@@ -8059,9 +8059,9 @@
   - sbc_id: 1293
     year: '2017'
     category: phdthesis
-    hyperlink: ''
+    hyperlink: https://escholarship.org/uc/item/253930m5
     citation: |
-      James, A. The Effects of CO2 on Bacterioplankton-Mediated Carbon Cycling. (2017). University of California, Santa Barbara.
+      James, A. The Effects of pCO2 on Bacterioplankton-Mediated Carbon Cycling. (2017). University of California, Santa Barbara.
     author: James, Anna
   - sbc_id: 1295
     year: '2017'
@@ -8073,7 +8073,7 @@
   - sbc_id: 1296
     year: '2017'
     category: phdthesis
-    hyperlink: ''
+    hyperlink: https://escholarship.org/uc/item/0d38q2nj
     citation: |
       Frazier, H. N. Ecosystem Productivity and Water Temperature in Coastal California Streams. (2017). University of California, Santa Barbara.
     author: ''
@@ -8115,7 +8115,7 @@
   - sbc_id: 1302
     year: '2018'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1111/geb.12729
     citation: |
       Dornelas, M., Antao, L. H., Moyes, F., Bates, A. E., Magurran, A. E., Adam, D., Akhmetzhanova, A. A., Appeltans, W., Arcos, J. M., Arnold, H., et al. (2018). Biotime: a Database of Biodiversity Time Series for the Anthropocene. Global Ecology and Biogeography. 27:760-786. DOI: 10.1111/geb.12729
     author: Reed, Daniel
@@ -8241,7 +8241,7 @@
   - sbc_id: 1320
     year: '2018'
     category: Article
-    hyperlink: ''
+    hyperlink: https://doi.org/10.1002/ecy.2485
     citation: |
       Castorani, M. C., Reed, D. C., Miller, R. J. (2018). Loss of Foundation Species: Disturbance Frequency Outweighs Severity in Structuring Kelp Forest Communities. Ecology. 99:2442--2454. DOI: 10.1002/ecy.2485
     author: Castorani, Max; Reed, Daniel; Miller, Robert
