@@ -27,8 +27,11 @@
 
 		<tbody id="myTable">
 		{% for itemrow in include.data.items %}
-			{% if include.urlkey %}
 
+			<!-- Enable URL -->
+			{% if include.urlkey and itemrow[include.urlkey] != '' %}
+
+				<!-- Enable cell click -->
 				{% if include.urlcell %}
 					<tr class="row table_row_{{include.data.name}}" data-href='{{ itemrow[include.urlkey] }}' style="cursor: pointer">
 						{% for filter in include.dataFilter %}
@@ -43,6 +46,8 @@
 							{% endif %}
 						{% endfor %}
 					</tr>
+
+				<!-- Enable row click -->
 				{% else %}
 					<tr class="row clickable-row table_row_{{include.data.name}}" data-href='{{ itemrow[include.urlkey] }}' style="cursor: pointer">
 						{% for filter in include.dataFilter %}
@@ -50,6 +55,8 @@
 						{% endfor %}
 					</tr>
 				{% endif %}
+
+			<!-- Disable URL -->
 			{% else %}
 				<tr class="row table_row_{{include.data.name}}">
 					{% for filter in include.dataFilter %}
@@ -57,6 +64,7 @@
 					{% endfor %}
 				</tr>
 			{% endif %}
+
 		{% endfor %}
 		</tbody>
 
