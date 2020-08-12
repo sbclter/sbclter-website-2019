@@ -108,9 +108,16 @@ $(document).ready(function(){
 			$('#bookmark-list').addClass('hidden');
 		}
 
+		const pattern = new RegExp(`(\\W|^)${ input }(\\W|$)`, 'gm');
+
 		// Hide table rows
 		$("tbody > tr").filter(function() {
-			$(this).toggle($(this).text().toLowerCase().indexOf(input) > -1)
+
+			let toToggle = input.split(' ').every(inputItem => {
+				return $(this).text().toLowerCase().search(pattern) > -1;
+			});
+
+			$(this).toggle(toToggle);
 		});
 
 		// Hide empty tables
