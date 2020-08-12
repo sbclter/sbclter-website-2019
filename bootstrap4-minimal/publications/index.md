@@ -11,9 +11,11 @@ columns:
 columns_size:
   - 1
   - 11
+  - 0
 dataFilter:
   - year
   - citation
+  - author
 table_font_size: 12
 page_css:
   - "/assets/css/custom/includes/table.css"
@@ -45,7 +47,7 @@ urlcell: 1
 
 	{% include bookmark_list.html category_labels=page.category_labels %}
 
-	{% assign pub_groups = site.data.Website_citation_export_test | sort: "citation" | reverse | sort: "year" | reverse | group_by: "category" %}
+	{% assign pub_groups = site.data.Website_citation_export | sort: "citation" | reverse | sort: "year" | reverse | group_by: "category" %}
 
 	<div class="tab-content">
 	{% for pubs in pub_groups %}

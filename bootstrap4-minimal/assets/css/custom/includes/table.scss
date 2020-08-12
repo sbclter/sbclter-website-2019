@@ -13,6 +13,10 @@
 		align-items: center;
 	}
 
+	.col-0 {
+		display: none;
+	}
+
 	tr {
 		&:hover {
 			box-shadow: 0 0 3px black;

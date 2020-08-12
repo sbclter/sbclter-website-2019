@@ -23,7 +23,7 @@ page_css:
 <div id="secondary-container">
   {% include gmap.html %}
 
-  {% assign layer_groups = site.data.sbcMapLayer_test | sort: "id" | sort: "habitatLabel" | group_by:"habitatName" %}
+  {% assign layer_groups = site.data.sbcMapLayer | sort: "id" | sort: "habitatLabel" | group_by:"habitatName" %}
 
   <div class="table-section pull-left">
     <table class="table">
