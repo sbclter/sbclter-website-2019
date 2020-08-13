@@ -108,12 +108,11 @@ $(document).ready(function(){
 			$('#bookmark-list').addClass('hidden');
 		}
 
-		const pattern = new RegExp(`(\\W|^)${ input }(\\W|$)`, 'gm');
 
 		// Hide table rows
 		$("tbody > tr").filter(function() {
-
 			let toToggle = input.split(' ').every(inputItem => {
+				const pattern = new RegExp(`(\\W|^)${ inputItem }(\\W|$)`, 'gm');
 				return $(this).text().toLowerCase().search(pattern) > -1;
 			});
 
