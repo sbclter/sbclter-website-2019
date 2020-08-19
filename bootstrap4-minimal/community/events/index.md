@@ -8,9 +8,7 @@ description: news and event in SBCLTER
 <div class="container-fluid">
 
 <h1> SBC LTER news and events </h1>
-
-<p> We like to share with you about our recent news and events. If you are interested in the event, please join us! </p>
-
+<br>
 
 <hr/>
 <h3>SBC LTER 2020 winter seminars </h3>
