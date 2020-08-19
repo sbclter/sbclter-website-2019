@@ -4,47 +4,47 @@ title: 'SBC LTER People'
 description: people invovled in the Santa Barbara Coastal LTER.
 placeholder: "Search LTER People ..."
 columns:
-	- Name
-	- Scientific Domain
-	- Email
-	- Phone
+  - Name
+  - Scientific Domain
+  - Email
+  - Phone
 columnsGradStudent:
-	- Name
-	- Scientific Domain
-	- Email
-	- Advisor
+  - Name
+  - Scientific Domain
+  - Email
+  - Advisor
 columns_size:
-	- 2
-	- 3
-	- 4
-	- 3
+  - 2
+  - 3
+  - 4
+  - 3
 dataFilter:
-	- commonName
-	- scientificDomainString
-	- email
-	- telephoneNumber
+  - commonName
+  - scientificDomainString
+  - email
+  - telephoneNumber
 dataFilterGradStudent:
-	- commonName
-	- scientificDomainString
-	- email
-	- advisor
+  - commonName
+  - scientificDomainString
+  - email
+  - advisor
 urlkey: databaseID
 page_css:
-	- "/assets/css/custom/includes/table.css"
-	- "/assets/css/custom/includes/search_bar.css"
-	- "/assets/css/custom/includes/back_to_top.css"
-	- "/assets/css/custom/includes/people_table.css"
+  - "/assets/css/custom/includes/table.css"
+  - "/assets/css/custom/includes/search_bar.css"
+  - "/assets/css/custom/includes/back_to_top.css"
+  - "/assets/css/custom/includes/people_table.css"
 category_labels:
-	Project Lead Investigator: Project Lead Investigator
-	Project Co-Investigator: Project Co-Investigators
-	Investigator: Investigators
-	Project Affiliated Investigator: Affiliated Investigators
-	Project Coordinator: Project Coordination
-	Information Manager: Information Management
-	Education Manager: Education and Outreach
-	Post Doctoral Associate: Postdoctoral Associates
-	Graduate Student: Graduate Students
-	Staff: Staff
+  Project Lead Investigator: Project Lead Investigator
+  Project Co-Investigator: Project Co-Investigators
+  Investigator: Investigators
+  Project Affiliated Investigator: Affiliated Investigators
+  Project Coordinator: Project Coordination
+  Information Manager: Information Management
+  Education Manager: Education and Outreach
+  Post Doctoral Associate: Postdoctoral Associates
+  Graduate Student: Graduate Students
+  Staff: Staff
 ---
 
 <div id="table-content" style="display: none;">

@@ -94,6 +94,13 @@ async function updateCSVData() {
         chlorophyll_data = series[2].data;
         salinity_data = series[3].data;
 
+        let isCelcius = $('.btn-temperature').hasClass('off');
+        if (!isCelcius) {
+            temperature_data.forEach(d => {
+                d[1] = toFahrenheit(d[1]);
+            });
+        }
+
         updateLatest();
 
         graphData(series);
@@ -256,7 +263,6 @@ function formatTime(date) {
 }
 
 function updateLatest() {
-    console.log(pressure_data);
     let pressure_val = parseFloat(pressure_data[pressure_data.length - 1][1]).toFixed(2);
     let temperature_val = parseFloat(temperature_data[temperature_data.length - 1][1]).toFixed(2);
     let chlorophyll_val = parseFloat(chlorophyll_data[chlorophyll_data.length - 1][1]).toFixed(2);
@@ -279,7 +285,6 @@ async function toggleCelsius(e) {
         });
 
         chart.series[seriesIndex.temperature].setData(temperature_data, true, true);
-        // udpateGraphData();
     }
     else if (!turnOn && units_data.temperature != '°F') {
         units_data.temperature = '°F';
@@ -287,10 +292,11 @@ async function toggleCelsius(e) {
         temperature_data.forEach(d => {
             d[1] = toFahrenheit(d[1]);
         });
-        // udpateGraphData();
+
         chart.series[seriesIndex.temperature].setData(temperature_data, true, true);
     }
 
+    updateLatest();
 }
 
 function toCelsius(f) {
