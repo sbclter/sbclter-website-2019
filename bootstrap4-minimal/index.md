@@ -59,36 +59,36 @@ description: Home page description here.
     <div class="carousel-item active">
       <img class="d-block w-100" src="/assets/img/0096_1000px.jpg" alt="slide 0">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Giant Kelp and Halfmoon Perch</h5>
-        <p class="font-italic">(Macrocystis pyrifera, Medialuna californiensis)</p>
+        <div class="title">Giant Kelp and Halfmoon Perch</div>
+        <p class="subtitle font-italic">(Macrocystis pyrifera, Medialuna californiensis)</p>
       </div>
      </div>
      <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/0573_1000px.jpg" alt="slide 1">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Garibaldi, Coralline algae and Blacksmith Perch</h5>
-        <p class="font-italic">(Hypsypops rubicundus, Calliarthron sp., Chromis punctipinnis)</p>
+        <div class="title">Garibaldi, Coralline algae and Blacksmith Perch</div>
+        <p class="subtitle font-italic">(Hypsypops rubicundus, Calliarthron sp., Chromis punctipinnis)</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/rocky_reef_scdi_1000.jpg" alt="slide 2">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Epibenthic anemones and tunicates on a rocky reef</h5>
-        <p class="font-italic">(Corynactis californica, unknown white Ascidian)</p>
+        <div class="title">Epibenthic anemones and tunicates on a rocky reef</div>
+        <p class="subtitle font-italic">(Corynactis californica, unknown white Ascidian)</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/1495_1000px.jpg" alt="slide 3">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Giant Kelp</h5>
-        <p class="font-italic">(Macrocystis pyrifera)</p>
+        <div class="title">Giant Kelp</div>
+        <p class="subtitle font-italic">(Macrocystis pyrifera)</p>
       </div>
     </div>
    <div class="carousel-item">
       <img class="d-block w-100" src="/assets/img/1304_1000px.jpg" alt="slide 4">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Kelp wrack and Marbled Godwits</h5>
-        <p class="font-italic">(Macrocystis pyrifera, Limosa fedoa)</p>
+        <div class="title">Kelp wrack and Marbled Godwits</div>
+        <p class="subtitle font-italic">(Macrocystis pyrifera, Limosa fedoa)</p>
       </div>
     </div>
   </div>
