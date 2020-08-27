@@ -57,7 +57,7 @@
     - docid: knb-lter-sbc.34
       shortTitle: LTE KR - Abundance of algae and invertebrates
     - docid: knb-lter-sbc.119
-      shortTitle: LTE KR - Biomass of algae, invertebrates and fish(
+      shortTitle: LTE KR - Biomass of algae, invertebrates and fish
     - docid: knb-lter-sbc.25
       shortTitle: LTE KR - Biomass of macroalgal detritus
     - docid: knb-lter-sbc.26
@@ -68,6 +68,8 @@
       shortTitle: LTE KR transects - Bottom topography
     - docid: knb-lter-sbc.58
       shortTitle: LTE KR - Net primary production of macroalgae
+    - docid: knb-lter-sbc.36
+      shortTitle: LTE KR - Hourly irradiance, surface and seafloor
   habitats:
     habitat: reef
   measurementTypes:
@@ -222,9 +224,7 @@
     - docid: knb-lter-sbc.10
       shortTitle: Nearshore CTD and Rosette Bottle Profiles
   habitats:
-    habitat:
-    - reef
-    - nearshore
+    habitat: nearshore
   measurementTypes:
     measurementType: biogeochemistry
   lterCoreResearchAreas:
@@ -251,9 +251,7 @@
     - docid: knb-lter-sbc.2004
       shortTitle: 'Moored CTD and ADCP: CAR'
   habitats:
-    habitat:
-    - reef
-    - nearshore
+    habitat: nearshore
   measurementTypes:
     measurementType: physical_oceanography
   lterCoreResearchAreas:
@@ -300,9 +298,7 @@
     - docid: knb-lter-sbc.75
       shortTitle: Benchmark water samples pH for field calibration
   habitats:
-    habitat:
-    - reef
-    - nearshore
+    habitat: nearshore
   measurementTypes:
     measurementType:
     - biogeochemistry
@@ -353,8 +349,6 @@
     package:
     - docid: knb-lter-sbc.35
       shortTitle: Mean CDIP Hs and Tp
-    - docid: knb-lter-sbc.36
-      shortTitle: Hourly irradiance, surface and seafloor
     - docid: knb-lter-sbc.128
       shortTitle: PAR sensor comparison
     - docid: knb-lter-sbc.13
@@ -518,7 +512,7 @@
     - docid: knb-lter-sbc.5016
       shortTitle: 'County FCD Precipitation: UCSB 200'
     - docid: knb-lter-sbc.5017
-      shortTitle: County FCD PrecipitationGaviota State Park 301
+      shortTitle: 'County FCD Precipitation: Gaviota State Park 301'
     - docid: knb-lter-sbc.5018
       shortTitle: 'County FCD Precipitation: Refugio Pass 429'
     - docid: knb-lter-sbc.5019
@@ -722,10 +716,10 @@
     for common understory macroalgae. '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.55
-      shortTitle: Benthic and phytoplankton production in treatment plots
     - docid: knb-lter-sbc.37
       shortTitle: Turf and foliose algal assemblages
+    - docid: knb-lter-sbc.55
+      shortTitle: Benthic and phytoplankton production in treatment plots
     - docid: knb-lter-sbc.57
       shortTitle: 'Photosynthesis parameters for macroalgae '
   habitats:
