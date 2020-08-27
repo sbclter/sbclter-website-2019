@@ -56,6 +56,7 @@ class PackageMethod {
 	build(template) {
 		let element = template.find('#content-class-methods');
 		let methodList = this.data['protocols'];
+		const EDI_URL = 'https://portal.edirepository.org/nis/metadataviewer?url=';
 
 		// fill method description table
 		for (let i in methodList) {
@@ -98,8 +99,7 @@ class PackageMethod {
 				protocol_html.push(`
 					<table class="table">
 						<tbody>
-							${ makeTableRow([['th', 'col-2', 'Data Source:'     ], ['td', 'col-10', dataSource['title']            ]]) }
-							${ makeTableRow([['th', 'col-2', 'Available Online:'], ['td', 'col-10', activateLink(dataSource['url'])]]) }
+							${ makeTableRow([['th', 'col-2', 'Data Source:'], ['td', 'col-10', activateLink(EDI_URL + dataSource['url'], dataSource['title'])]]) }
 						</tbody>
 					</table>
 				`);
