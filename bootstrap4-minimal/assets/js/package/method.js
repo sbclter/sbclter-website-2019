@@ -99,9 +99,6 @@ class PackageMethod {
 					<table class="table">
 						<tbody>
 							${ makeTableRow([['th', 'col-2', 'Data Source:'     ], ['td', 'col-10', dataSource['title']            ]]) }
-							${ makeTableRow([['th', 'col-2', 'Creators:'        ], ['td', 'col-10', '<div class="row people-table-wrap">' +
-																										people.makePeopleTables(dataSource['creators']) +
-																									'</div>']]) }
 							${ makeTableRow([['th', 'col-2', 'Available Online:'], ['td', 'col-10', activateLink(dataSource['url'])]]) }
 						</tbody>
 					</table>
