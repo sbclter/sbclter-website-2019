@@ -14,5 +14,5 @@ description: news and event in SBCLTER
 <h3>Internship</h3>
 
 <div style="position: bottom: 5px;">
-     <p>We are looking for undergraduates who are interested in kelp forest ecology. The application form will be posted here soon. </p>
+     <p>We are looking for undergraduates who are interested in kelp forest ecology: <a href="{{site.baseurl}}/external/Documents/Other/SBCLTER_Intern_Application_Waiver_20190410.pdf">SBC volunteer application form</a></p>
 </div>

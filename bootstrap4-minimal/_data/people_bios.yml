@@ -1551,6 +1551,22 @@
     homepage: ''
     telephoneNumber: 805-893-7061
     projectRole: Staff
+  - databaseID: kjohnson
+    commonName: Kaitlin Johnson
+    givenName: Kaitlin
+    surName: Johnson
+    advisor: ''
+    scientificDomainString: Field research and data management
+    scientificDomainText: ''
+    employeeType: 'Assistant Research Specialist '
+    email: 'kaitlin_johnson@ucsb.edu '
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      My job entails many facets! I work closely with SBC LTER investigators and other research staff in the implementation of multiple projects. I help conduct subtidal and oceanographic monitoring, process samples, maintain our equipment, and program our instruments. I also help manage the abundance of data we collect and supervise and mentor our many undergraduate student assistants. My personal research interests include; kelp forest ecology, fisheries conservation, habitat restoration, and ecosystem-based management.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Staff
   - databaseID: kopalk
     commonName: Keri Opalk
     givenName: Keri
@@ -1598,20 +1614,4 @@
       Rocky reef ecosystems are largely dominated by giant kelp, Macrocystis pyrifera, whose quick growth and monopolization of light is well documented as a mechanism for competitive exclusion among most benthos associated primary producers.  Relief from intense competition for light is accomplished through disturbance events associated with large winter swells that forcefully uproot Macrocystis individuals reduce surface canopy density and allow ample light to reach the seafloor.  To better understand patterns, causes, and ecological consequences of change in understory algal productivity, I am working to develop a logistically simple model incorporating irradiance, photosynthesis vs. irradiance and understory algal abundance data collected by the SBC LTER.
     homepage: ''
     telephoneNumber: 805-893-7295
-    projectRole: Staff
-  - databaseID: kjohnson
-    commonName: Kaitlin Johnson
-    givenName: Kaitlin
-    surName: Johnson
-    advisor: ''
-    scientificDomainString: 'Field research and data management'
-    scientificDomainText: ''
-    employeeType: ''
-    email: kaitlin_johnson@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
     projectRole: Staff
