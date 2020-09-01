@@ -16,6 +16,6 @@ description: SBCLTER producted software and codes
 <h3>Excel-to-EML</h3>
 
 <div style="position: bottom: 5px;">
-     <p>This tool uses R programming language to create an EML document from an Excel metadata workbook (".xlsx") for the ecological data archive. If you plan to publish data on your own and the data repository you use requires EML document, please check out the package (with codes and examples) on <a href="https://github.com/sbclter/sbclter-website-2019" target="_blank">GitHub</a> and demo video on <a href="https://www.youtube.com/watch?v=rn8Uee49LsM&t=1s" target="_blank">YouTube</a> </p>
+     <p>This tool uses R programming language to create an EML document from an Excel metadata workbook (".xlsx") for the ecological data archive. If you plan to publish data on your own and the data repository you use requires EML document, please check out the package (with codes and examples) on <a href="https://github.com/lkuiucsb/Excel-to-EML" target="_blank">GitHub</a> and demo video on <a href="https://www.youtube.com/watch?v=rn8Uee49LsM&t=1s" target="_blank">YouTube</a> </p>
 </div>
 <hr/>
