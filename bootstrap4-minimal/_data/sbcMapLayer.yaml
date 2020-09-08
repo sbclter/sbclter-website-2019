@@ -666,6 +666,8 @@
       shortTitle: LTE KR transects - Bottom topography
     - docid: knb-lter-sbc.58
       shortTitle: LTE KR - Net primary production of macroalgae
+    - docid: knb-lter-sbc.36
+      shortTitle: LTE KR - Hourly irradiance, surface and seafloor
 - id: reefNPPgiantKelp
   label: Giant kelp biomass, growth, loss, NPP and stoichiometry
   collectionName: 'SBC LTER: Ongoing time-series of net primary production of giant
@@ -1120,19 +1122,6 @@
   habitatName: nearshore
   habitatLabel: Inshore Ocean
   geodata:
-  - title: .na.character
-    description: .na.character
-    southbound: .na.character
-    northbound: .na.character
-    westbound: .na.character
-    eastbound: .na.character
-  - title: ALE
-    description: 'Alegria (ALE) is located offshore from the community of Hollister
-      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-    southbound: '34.46085'
-    northbound: '34.46085'
-    westbound: '-120.28998'
-    eastbound: '-120.28998'
   - title: ARQ
     description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
       depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
@@ -1141,6 +1130,33 @@
     northbound: '34.46495'
     westbound: '-120.11965'
     eastbound: '-120.11965'
+  - title: MKO
+    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
+      10.8 meters.
+    southbound: '34.39323'
+    northbound: '34.39323'
+    westbound: '-119.73012'
+    eastbound: '-119.73012'
+  - title: ALE
+    description: 'Alegria (ALE) is located offshore from the community of Hollister
+      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
+    southbound: '34.46085'
+    northbound: '34.46085'
+    westbound: '-120.28998'
+    eastbound: '-120.28998'
+  - title: Santa Barbara Harbor
+    description: Santa Barbara Harbor is bounded by Stearns Wharf on the east and
+      the harbor breakwater on the wes and south.
+    southbound: '34.4104667'
+    northbound: '34.4104667'
+    westbound: '-119.6857500'
+    eastbound: '-119.6857500'
+  - title: .na.character
+    description: .na.character
+    southbound: .na.character
+    northbound: .na.character
+    westbound: .na.character
+    eastbound: .na.character
   - title: Coal Oil Point
     description: Coal Oil Point (COP) is located in the rocky intertidal area on the
       western edge of the University of California, Santa Barbara (UCSB) campus, and
@@ -1156,13 +1172,6 @@
     northbound: '34.71905679'
     westbound: '-120.6087994'
     eastbound: '-120.6087994'
-  - title: MKO
-    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
-      10.8 meters.
-    southbound: '34.39323'
-    northbound: '34.39323'
-    westbound: '-119.73012'
-    eastbound: '-119.73012'
   - title: Purisima Point
     description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
       California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
@@ -1192,6 +1201,8 @@
     eastbound: '-119.68493'
   packages:
     package:
+    - docid: knb-lter-sbc.6005
+      shortTitle: pH SeaFET for all sites
     - docid: knb-lter-sbc.6001
       shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6002
@@ -1372,7 +1383,7 @@
       shortTitle: 'Time series of macroinvertebrates counts and biomass '
 - id: landPrecip
   label: Precipitation collected by SBC LTER or Santa Barbara County
-  collectionName: 'SBC LTER: Ongoing time-series of high-frequency precipitation'
+  collectionName: 'SBC LTER: Completed time-series of high-frequency precipitation'
   frequency: 5 min
   initiated: 2001-2005
   habitatName: watershed
@@ -1476,91 +1487,9 @@
       shortTitle: 'Precipitation: RG203, Refugio at Upper Aguacitos Ranch'
     - docid: knb-lter-sbc.4012
       shortTitle: 'Precipitation: RG204, Refugio at Rancho La Scherpa'
-- id: landStreamDisch
-  label: Stream Discharge
-  collectionName: 'SBC LTER: Ongoing time-series of stream discharge'
-  frequency: 15 min
-  initiated: 2001-2005
-  habitatName: watershed
-  habitatLabel: Land
-  geodata:
-  - title: AB00
-    description: Arroyo Burro, Arroyo Burro at Cliff Drive
-    southbound: '34.40505027'
-    northbound: '34.40505027'
-    westbound: '-119.74021'
-    eastbound: '-119.74021'
-  - title: BC02
-    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
-    southbound: '34.43854'
-    northbound: '34.43854'
-    westbound: '-119.90563'
-    eastbound: '-119.90563'
-  - title: ' Gaviota Creek'
-    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
-    southbound: '34.4855'
-    northbound: '34.4855'
-    westbound: '-120.22917'
-    eastbound: '-120.22917'
-  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    southbound: '34.4752858'
-    northbound: '34.4752858'
-    westbound: '-120.14122'
-    eastbound: '-120.14122'
-  - title: MC00
-    description: Mission Creek, Mission at Montecito St
-    southbound: '34.41307303'
-    northbound: '34.41307303'
-    westbound: '-119.69499'
-    eastbound: '-119.69499'
-  - title: Mission Creek at Rocky Nook, USGS 11119745
-    description: Mission Creek at Rocky Nook, USGS 11119745
-    southbound: '34.44072'
-    northbound: '34.44072'
-    westbound: '-119.71244'
-    eastbound: '-119.71244'
-  - title: RG01
-    description: Refugio Creek, Refugio at Hwy 101 Bridge
-    southbound: '34.46573164'
-    northbound: '34.46573164'
-    westbound: '-120.06932'
-    eastbound: '-120.06932'
-  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
-    southbound: '34.45761111'
-    northbound: '34.45761111'
-    westbound: '-119.69222'
-    eastbound: '-119.69222'
-  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
-    southbound: '34.44861'
-    northbound: '34.44861'
-    westbound: '-119.84028'
-    eastbound: '-119.84028'
-  packages:
-    package:
-    - docid: knb-lter-sbc.3001
-      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
-    - docid: knb-lter-sbc.3003
-      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
-    - docid: knb-lter-sbc.3007
-      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3008
-      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
-    - docid: knb-lter-sbc.3009
-      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
-    - docid: knb-lter-sbc.3011
-      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3013
-      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
-    - docid: knb-lter-sbc.3018
-      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
 - id: landStreamChem
   label: Nutrients, particulate N, P, and C, TSS, conductivity
-  collectionName: 'SBC LTER: Ongoing time-series of stream chemistry'
+  collectionName: 'SBC LTER: Time-series of stream chemistry'
   frequency: Hourly-weekly
   initiated: 2001-2005
   habitatName: watershed
@@ -1903,6 +1832,14 @@
     northbound: '34.61333'
     westbound: '-120.19667'
     eastbound: '-120.19667'
+  - title: Santa Barbara Coastal LTER bounding box
+    description: The Santa Barbara Coastal LTER research area extends from Point Conception
+      (W) to the mouth of the Santa Clara River (E) and from the Santa Ynez Mountains
+      (N) to the north shores of the Channel Islands (S), California, USA
+    southbound: '34'
+    northbound: '34.531'
+    westbound: '-120.475'
+    eastbound: '-119.255'
   packages:
     package:
     - docid: knb-lter-sbc.5001
@@ -1938,7 +1875,7 @@
     - docid: knb-lter-sbc.5016
       shortTitle: 'County FCD Precipitation: UCSB 200'
     - docid: knb-lter-sbc.5017
-      shortTitle: County FCD PrecipitationGaviota State Park 301
+      shortTitle: 'County FCD Precipitation: Gaviota State Park 301'
     - docid: knb-lter-sbc.5018
       shortTitle: 'County FCD Precipitation: Refugio Pass 429'
     - docid: knb-lter-sbc.5019
@@ -1961,3 +1898,159 @@
       shortTitle: 'County FCD Precipitation: Rancho San Julian 389'
     - docid: knb-lter-sbc.5028
       shortTitle: 'County FCD Precipitation: Buellton 233'
+    - docid: knb-lter-sbc.3
+      shortTitle: Daily Precipitation (County Public Works Dept.)
+- id: landStreamDisch
+  label: Stream Discharge
+  collectionName: 'SBC LTER: Stream discharge at SBC sites'
+  frequency: 15 min
+  initiated: 2001-2005
+  habitatName: watershed
+  habitatLabel: Land
+  geodata:
+  - title: AB00
+    description: Arroyo Burro, Arroyo Burro at Cliff Drive
+    southbound: '34.40505027'
+    northbound: '34.40505027'
+    westbound: '-119.74021'
+    eastbound: '-119.74021'
+  - title: Atascadero Creek at Puente Street
+    description: Atascadero Creek, Atascadero at Puente
+    southbound: '34.43226'
+    northbound: '34.43226'
+    westbound: '-119.78414'
+    eastbound: '-119.78414'
+  - title: BC02
+    description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
+    southbound: '34.43854'
+    northbound: '34.43854'
+    westbound: '-119.90563'
+    eastbound: '-119.90563'
+  - title: Carpinteria Creek at 8th St Foot Bridge
+    description: Carpinteria Creek, 8th St Foot Bridge
+    southbound: '34.39301245'
+    northbound: '34.39301245'
+    westbound: '-119.51413'
+    eastbound: '-119.51413'
+  - title: ' Gaviota Creek'
+    description: GV01, Gaviota Creek, Gaviota at Hwy 101 South Rest Stop Exit
+    southbound: '34.4855'
+    northbound: '34.4855'
+    westbound: '-120.22917'
+    eastbound: '-120.22917'
+  - title: Devereaux Creek at Devereaux Slough inflow
+    description: DV01, Devereaux Creek, Devereaux Creek at Devereaux Slough inflow
+    southbound: '34.41761'
+    northbound: '34.41761'
+    westbound: '-119.87406'
+    eastbound: '-119.87406'
+  - title: Franklin Creek at Carpinteria Ave
+    description: Franklin Creek, Carpinteria Ave
+    southbound: '34.40164787'
+    northbound: '34.40164787'
+    westbound: '-119.52145'
+    eastbound: '-119.52145'
+  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    southbound: '34.4752858'
+    northbound: '34.4752858'
+    westbound: '-120.14122'
+    eastbound: '-120.14122'
+  - title: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
+    description: ON02, San Onofre Creek, San Onofre Creek at Highway 101 North culvert
+    southbound: '34.472'
+    northbound: '34.472'
+    westbound: '-120.28885'
+    eastbound: '-120.28885'
+  - title: MC00
+    description: Mission Creek, Mission at Montecito St
+    southbound: '34.41307303'
+    northbound: '34.41307303'
+    westbound: '-119.69499'
+    eastbound: '-119.69499'
+  - title: Mission Creek at Rocky Nook, USGS 11119745
+    description: Mission Creek at Rocky Nook, USGS 11119745
+    southbound: '34.44072'
+    northbound: '34.44072'
+    westbound: '-119.71244'
+    eastbound: '-119.71244'
+  - title: Rincon Creek, Hwy 101 Culvert, North
+    description: Rincon Creek, Hwy 101 Culvert, North
+    southbound: '34.3773'
+    northbound: '34.3773'
+    westbound: '-119.47794'
+    eastbound: '-119.47794'
+  - title: Santa Monica Creek, Via Real
+    description: Santa Monica Creek, Via Real
+    southbound: '34.40479765'
+    northbound: '34.40479765'
+    westbound: '-119.52869'
+    eastbound: '-119.52869'
+  - title: RG01
+    description: Refugio Creek, Refugio at Hwy 101 Bridge
+    southbound: '34.46573164'
+    northbound: '34.46573164'
+    westbound: '-120.06932'
+    eastbound: '-120.06932'
+  - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
+    southbound: '34.45761111'
+    northbound: '34.45761111'
+    westbound: '-119.69222'
+    eastbound: '-119.69222'
+  - title: Santa Monica at Scoop
+    description: Santa Monica at Scoop
+    southbound: '34.41898512'
+    northbound: '34.41898512'
+    westbound: '-119.52701'
+    eastbound: '-119.52701'
+  - title: Tecolotito Creek, Hollister Road
+    description: Tecolotito Creek, Hollister Road
+    southbound: '34.43055'
+    northbound: '34.43055'
+    westbound: '-119.85762'
+    eastbound: '-119.85762'
+  - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
+    southbound: '34.44861'
+    northbound: '34.44861'
+    westbound: '-119.84028'
+    eastbound: '-119.84028'
+  packages:
+    package:
+    - docid: knb-lter-sbc.3001
+      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
+    - docid: knb-lter-sbc.3002
+      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
+    - docid: knb-lter-sbc.3003
+      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3004
+      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
+    - docid: knb-lter-sbc.3007
+      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3005
+      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
+    - docid: knb-lter-sbc.3006
+      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3010
+      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
+    - docid: knb-lter-sbc.3009
+      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
+    - docid: knb-lter-sbc.3012
+      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3011
+      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
+    - docid: knb-lter-sbc.3013
+      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3015
+      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3016
+      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'

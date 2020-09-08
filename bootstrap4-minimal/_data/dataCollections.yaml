@@ -280,13 +280,15 @@
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers: ~
 - collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET, with calibration'
-  abstract: SeaFET instruments have been deployed at four SBC reefs starting in 2011.
-    Time-series are of pH, and CO2 system parameters derived from the "CO2calc" algorithms.
-    The reported time interval matches that reported for other moored instruments.
-    Benchmark water samples are also available at moored stations, plus from other
-    subtidal and intertidal stations.
+  abstract: SeaFET instruments have been deployed at various SBC reefs starting in
+    2011. Time-series are of pH calibrated by the bentchmark water sample. The reported
+    time interval matches that reported for other moored instruments. Benchmark water
+    samples are also available at moored stations, plus from other subtidal and intertidal
+    stations.
   dataPackages:
     package:
+    - docid: knb-lter-sbc.6005
+      shortTitle: pH SeaFET for all sites
     - docid: knb-lter-sbc.6001
       shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6002
@@ -433,9 +435,9 @@
   lterCoreResearchAreas:
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers: ~
-- collectionName: 'SBC LTER: Ongoing time-series of high-frequency precipitation'
-  abstract: Since 2002, SBC has collected high-frequency precipitation data at 15-25
-    stations (site coverage varies by year). These sites have ongoing data collections.
+- collectionName: 'SBC LTER: Completed time-series of high-frequency precipitation'
+  abstract: 'Between 2002 and 2018, SBC had collected high-frequency precipitation
+    data at 15-25 stations (site coverage varies by year). '
   dataPackages:
     package:
     - docid: knb-lter-sbc.4001
@@ -474,9 +476,10 @@
     mapLayer: landPrecip
 - collectionName: 'Santa Barbara County: Precipitation from Santa Barbara County FCD
     stations'
-  abstract: In 2001, SBC began archiving data high frequency precipitation data from
+  abstract: 'In 2001, SBC began archiving data high frequency precipitation data from
     the Santa Barbara County Flood Control District (FCD). Legacy data from these
     (and other) sites is also available. The SB Co. FCD station number is in parentheses.
+    We had stopped the data update from these stations.  '
   dataPackages:
     package:
     - docid: knb-lter-sbc.5001
@@ -535,21 +538,6 @@
       shortTitle: 'County FCD Precipitation: Rancho San Julian 389'
     - docid: knb-lter-sbc.5028
       shortTitle: 'County FCD Precipitation: Buellton 233'
-  habitats:
-    habitat: watershed
-  measurementTypes:
-    measurementType:
-    - meteorology
-    - hydrology
-  lterCoreResearchAreas:
-    lterCoreResearchArea: Movement of Inorganic Matter
-  mapLayers:
-    mapLayer: landPrecip
-- collectionName: Daily precipitation (legacy)
-  abstract: SBC has access to climate data from external sources such as the Santa
-    Barbara County Flood Control District.
-  dataPackages:
-    package:
     - docid: knb-lter-sbc.3
       shortTitle: Daily Precipitation (County Public Works Dept.)
   habitats:
@@ -560,7 +548,8 @@
     - hydrology
   lterCoreResearchAreas:
     lterCoreResearchArea: Movement of Inorganic Matter
-  mapLayers: ~
+  mapLayers:
+    mapLayer: landPrecip
 - collectionName: NCDC climate catalogs
   abstract: The National Climate Data Center (NCDC) provides a long record of several
     parameters Their catalog for sites in the Santa Barbara area is available through
@@ -583,24 +572,51 @@
     Canyon began in 2004 and at San Pedro in 2008. For all SBC sites, collection began
     with water-year 2002. At two sites (indicated) data collection is by USGS sites.
     These sites have ongoing data collections.
+  dataPackages: ~
+  habitats: ~
+  measurementTypes: ~
+  lterCoreResearchAreas: ~
+  mapLayers: ~
+- collectionName: 'SBC LTER: Stream discharge at SBC sites'
+  abstract: Between 2002 and 2018, SBC collected high-frequency discharge data at
+    several stations. Site coverage varies by year. These sites have historical data
+    collections.
   dataPackages:
     package:
     - docid: knb-lter-sbc.3001
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
+    - docid: knb-lter-sbc.3002
+      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3004
+      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3005
+      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
+    - docid: knb-lter-sbc.3006
+      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3010
+      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
+    - docid: knb-lter-sbc.3012
+      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3015
+      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3016
+      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
       shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
   habitats:
@@ -611,38 +627,7 @@
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers:
     mapLayer: landStreamDisch
-- collectionName: 'SBC LTER: Stream discharge at SBC sites (historical sites)'
-  abstract: Between 2002 and 2010, SBC collected high-frequency discharge data at
-    several stations. Site coverage varies by year. These sites have historical data
-    collections.
-  dataPackages:
-    package:
-    - docid: knb-lter-sbc.3002
-      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3004
-      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
-    - docid: knb-lter-sbc.3005
-      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
-    - docid: knb-lter-sbc.3006
-      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
-    - docid: knb-lter-sbc.3010
-      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3012
-      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
-    - docid: knb-lter-sbc.3014
-      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
-    - docid: knb-lter-sbc.3015
-      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3016
-      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
-  habitats:
-    habitat: watershed
-  measurementTypes:
-    measurementType: hydrology
-  lterCoreResearchAreas:
-    lterCoreResearchArea: Movement of Inorganic Matter
-  mapLayers: ~
-- collectionName: 'SBC LTER: Ongoing time-series of stream chemistry'
+- collectionName: 'SBC LTER: Time-series of stream chemistry'
   abstract: Analytes sampled in the SBC streams include major dissolved nutrients,
     particulates, cations, anions, and occasionally stable isotopes. A number of watersheds
     with different land uses are sampled. Sampling frequency depends on flow conditions.
@@ -716,10 +701,10 @@
     for common understory macroalgae. '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.37
-      shortTitle: Turf and foliose algal assemblages
     - docid: knb-lter-sbc.55
       shortTitle: Benthic and phytoplankton production in treatment plots
+    - docid: knb-lter-sbc.37
+      shortTitle: Turf and foliose algal assemblages
     - docid: knb-lter-sbc.57
       shortTitle: 'Photosynthesis parameters for macroalgae '
   habitats:
