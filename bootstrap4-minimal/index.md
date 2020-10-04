@@ -42,6 +42,10 @@ description: Home page description here.
 
    <p> <a href="{{ site.baseurl }}/about">More about SBC LTER and the LTER Network</a> </p>
 
+   <p><a href="https://www.instagram.com/sbc_lter/" target="_blank"><img src="/assets/img/instagram.png" alt="Instagram" width="70" height="70"></a> 
+   <a href="https://twitter.com/LterSbc" target="_blank"><img src="/assets/img/twitter.png" alt="Twitter" width="70" height="70"></a>
+   </p>
+
   </div>
 
 <div class="col-md">
