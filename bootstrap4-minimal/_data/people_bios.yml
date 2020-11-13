@@ -60,7 +60,7 @@
       change and its impacts, fishery oceanography, numerical modeling and Lagrangian
       approaches
     employeeType: Professor
-    email: davey@eri.ucsb.edu
+    email: davesiegel@ucsb.edu
     postalAddress: Earth Research Institute<br />University of California<br />Santa
       Barbara CA 93106-3060
     profileText: |
@@ -657,10 +657,10 @@
     scientificDomainText: Ocean remote sensing techniques, upper ocean dynamics, surface
       wave dynamics, air-sea interaction, wave-current interaction, ocean mixing, wave
       breaking, numerical modeling, field observations
-    employeeType: Post Doctoral Associate
-    email: leromero@eri.ucsb.edu
-    postalAddress: Earth Research Institute<br />University of California<br />Santa
-      Barbara CA 93106-3060
+    employeeType: Assistant Professor
+    email: leonel.romero@uconn.edu
+    postalAddress: Department of Marine Sciences<br />University of Connecticut<br />Storrs
+      CT 06269
     profileText: |
       My role in the SBC LTER is to study the coastal circulation and mixing of runoff waters. The project uses the Regional Ocean Model System (ROMS) coupled to a wave model (e.g. Simulating Waves Nearshore - SWAN) to model surface wave-current interactions and stream water dispersion for several SBC LTER sites. My overall objective is to characterize storm water dilution and land-ocean interactions and to characterize their potential ecological impacts.
     homepage: ''
@@ -791,7 +791,7 @@
     scientificDomainString: ''
     scientificDomainText: ''
     employeeType: ''
-    email: tlamy@ucsb.edu
+    email: thomas.lamy27@gmail.com
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |2+
@@ -981,7 +981,7 @@
     commonName: An Bui
     givenName: An
     surName: Bui
-    advisor: Turner, Young
+    advisor: Stier, Moeller
     scientificDomainString: ''
     scientificDomainText: ''
     employeeType: Graduate Student
@@ -1013,7 +1013,7 @@
     commonName: Amelia Ritger
     givenName: Amelia
     surName: Ritger
-    advisor: Stier
+    advisor: Hofmann
     scientificDomainString: ''
     scientificDomainText: ''
     employeeType: Graduate Student
@@ -1022,6 +1022,22 @@
       of California<br />Santa Barbara CA 93106-9620
     profileText: |2+
 
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: bbeckley
+    commonName: Billie Beckley
+    givenName: Billie
+    surName: Beckley
+    advisor: Miller
+    scientificDomainString: Community Ecology and Mathematical Modeling
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: billiebeckley@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      Raine is interested in both community ecology and mathematical modeling. She is particularly interested in using models to better understand species interactions in marine communities and how these interactions may be affected by environmental stressors. Her work in the Moeller Lab leverages the Santa Barbara Coastal and Moorea Coral Reef LTER datasets. Raine began her research career by modeling the interactions between Macrocystis pyrifera (giant kelp), benthic macroalgae, and sessile invertebrates and how this system is affected by disturbance from storms. More recently, she is exploring the incorporation of coral-associated animals into models of coral growth and bleaching.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1066,27 +1082,11 @@
       molecular approaches for this purpose, with the hope of developing novel methods
       for the remote sensing of microbial community structure. '
     employeeType: Graduate Student
-    email: dylan.catlett@lifesci.ucsb.edu
+    email: dsc@ucsb.edu
     postalAddress: Earth Research Institute<br />University of California<br />Santa
       Barbara CA 93106-3060
     profileText: |2+
 
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: ddauhajre
-    commonName: Daniel Dauhajre
-    givenName: Daniel
-    surName: Dauhajre
-    advisor: McWilliams
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
-    email: ddauhajre@atmos.ucla.edu
-    postalAddress: Dept. of Atmospheric and Oceanic Sciences/IGPP<br />University of
-      California<br />Los Angeles CA 90095-1565
-    profileText: |
-      I am a PhD student at UCLA working with James McWilliams.  I aim to diagnose and characterize the physical transport mechanisms on the inner-shelf of the Southern California Bight.  The transport pathways I am seeking to uncover occur in the along- and cross- shore directions.  In the cross-shore direction, I am examining transport between two boundaries: transport to/from the shelf to//from the surf-zone and offshore waters.  To perform these analyses I utilize very high resolution (less than 100m horizontal resolution) ROMS (Regional Ocean Modeling System) simulations.  The high resolution allows the submesoscale processes on the shelf to be examined with great detail.  The characterization of these flow patterns and their relative importance in material exchange is vital to understanding the nutrient and material fluxes into the kelp forests of the Santa Barbara Channel.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1122,19 +1122,19 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: hlowman
-    commonName: Heili Lowman
-    givenName: Heili
-    surName: Lowman
-    advisor: Melack
-    scientificDomainString: Biogeochemistry
+  - databaseID: hgoss
+    commonName: Hayley Goss
+    givenName: Hayley
+    surName: Goss
+    advisor: Page, Siegel
+    scientificDomainString: ''
     scientificDomainText: ''
     employeeType: Graduate Student
-    email: heili.lowman@lifesci.ucsb.edu
+    email: hgoss@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |
-      Heili is currently a PhD candidate in the Department of Ecology, Evolution, and Marine Biology, and she is interested in biogeochemical reactions that take place at ecological margins - land/ocean, sediment/water, wildland/urban. Her current projects examine the fate of organic matter and nutrient species as they traverse the land to ocean margin from the Santa Ynez Mountains to the nearshore kelp forests in the Santa Barbara Channel. Prior to attending graduate school, she worked at Stroud Water Research Center, World Learning, the National Marine Sanctuary Foundation, and in laboratories at the University of Iowa and Texas A&M University at Galveston.
+    profileText: |2+
+
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1174,7 +1174,7 @@
     commonName: Joey Peters
     givenName: Joey
     surName: Peters
-    advisor: Burkepile, Miller, Reed
+    advisor: Burkepile, Reed
     scientificDomainString: ''
     scientificDomainText: ''
     employeeType: Graduate Student
@@ -1205,10 +1205,10 @@
     commonName: Kate Cavanaugh
     givenName: Kate
     surName: Cavanaugh
-    advisor: ''
-    scientificDomainString: ''
+    advisor: Cavanaugh
+    scientificDomainString: remote sensing
     scientificDomainText: ''
-    employeeType: ''
+    employeeType: Graduate Student
     email: kccavanaugh@g.ucla.edu
     postalAddress: Department of Geography<br />University of California<br />Los Angeles
       CA 90095
@@ -1312,6 +1312,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
+  - databaseID: ndornan
+    commonName: Natalie Dornan
+    givenName: Natalie
+    surName: Dornan
+    advisor: Santoro
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: nataliedornan@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
   - databaseID: neegholm
     commonName: Nathalie Eegholm
     givenName: Nathalie
@@ -1343,6 +1359,38 @@
       I am interested in the status and trends in biodiversity and ecological function of sandy beach ecosystems, which make up ~75% of the California coastline. My research will evaluate hypotheses concerning alteration in intertidal biodiversity as a result of shifts in species distributions along with habitat change in response to climate change, other press and pulse environmental drivers, and a variety of anthropogenic activities over the last 30+ years using a combination of historic, mid-range and new datasets. My project will benefit from the core research on SBC beaches and historic and modern data on the abundance of giant kelp, a key resource for beach ecosystems, collected by the SBC LTER for my analyses. SBC-LTER will also be a source of expertise and digital infrastructure needed to archive the newly aquired historic datasets from California beaches.
     homepage: ''
     telephoneNumber: 805-893-4123
+    projectRole: Graduate Student
+  - databaseID: rbrokaw
+    commonName: Ricky Brokaw
+    givenName: Ricky
+    surName: Brokaw
+    advisor: Siegel
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: rbrokaw@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: rdetmer
+    commonName: Raine Detmer
+    givenName: Raine
+    surName: Detmer
+    advisor: 'Moeller  '
+    scientificDomainString: ''
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: adetmer@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
     projectRole: Graduate Student
   - databaseID: sbogan
     commonName: Sam Bogan
@@ -1387,37 +1435,6 @@
     email: sevanesaian@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: sma
-    commonName: Stephanie Ma
-    givenName: Stephanie
-    surName: Ma
-    advisor: D'Antonio
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
-    email: stephanie.ma@lifesci.ucsb.edu
-    postalAddress: ''
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: tcedeno
-    commonName: Tiffany Cedeno
-    givenName: Tiffany
-    surName: Cedeno
-    advisor: ''
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
-    email: tcedeno@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
     profileText: |2+
 
     homepage: ''

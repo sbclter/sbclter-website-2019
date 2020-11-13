@@ -7887,7 +7887,7 @@
     hyperlink: ''
     citation: |
       Ma, S. (2017). Chaparral succession during drought conditions and linking field measurements with hyperspectral imagery. Presented at the meeting of Ecological Society of America, Portland, Oregon, United States
-    author: Ma, Stephanie
+    author: ''
   - sbc_id: 1267
     year: '2017'
     category: Presentation
@@ -7978,7 +7978,7 @@
     hyperlink: https://doi.org/10.1175%2Fjpo-d-16-0270.1
     citation: |
       Dauhajre, D. P., McWilliams, J. C., Uchiyama, Y. (2017). Submesoscale Coherent Structures on the Continental Shelf. Journal of Physical Oceanography. 47:2949--2976. DOI: 10.1175/jpo-d-16-0270.1
-    author: Dauhajre, Daniel; McWilliams, James
+    author: McWilliams, James
   - sbc_id: 1280
     year: '2018'
     category: Incollection
@@ -8251,7 +8251,7 @@
     hyperlink: https://doi.org/10.1016/j.ecss.2019.02.004
     citation: |
       Lowman, H. E., Emery, K. A., Kubler-Dudgeon, L., Dugan, J. E., Melack, J. M. (2019). Contribution of Macroalgal Wrack Consumers to Dissolved Inorganic Nitrogen Concentrations in Intertidal Pore Waters of Sandy Beaches. Estuarine, Coastal and Shelf Science. 219:363 - 371. DOI: 10.1016/j.ecss.2019.02.004
-    author: Melack, John; Dugan, Jenifer; Lowman, Heili
+    author: Melack, John; Dugan, Jenifer
   - sbc_id: 1322
     year: '2018'
     category: Article
@@ -8307,7 +8307,7 @@
     hyperlink: https://doi.org/10.1029%2F2019jc014943
     citation: |
       Dauhajre, D. P., McWilliams, J. C. (2019). Nearshore Lagrangian Connectivity: Submesoscale Influence and Resolution Sensitivity. Journal of Geophysical Research: Oceans. DOI: 10.1029/2019jc014943
-    author: Dauhajre, Daniel; McWilliams, James
+    author: McWilliams, James
   - sbc_id: 1331
     year: '2019'
     category: Article
@@ -8339,7 +8339,7 @@
   - sbc_id: 1335
     year: '2019'
     category: Article
-    hyperlink: https://doi.org/10.1002%2Fecy.2719
+    hyperlink: https://doi.org/10.1002/ecy.2719
     citation: |
       Lamy, T., Wang, S., Renard, D., Lafferty, K. D., Reed, D. C., Miller, R. J. (2019). Species insurance trumps spatial insurance in stabilizing biomass of a marine macroalgal metacommunity. Ecology. 100:. DOI: 10.1002/ecy.2719
     author: Lamy, Thomas; Reed, Daniel; Miller, Robert
@@ -8405,7 +8405,7 @@
     category: Article
     hyperlink: https://doi.org/10.3354%2Fmeps12906
     citation: |
-      Yorke, C., Hanns, B., Shears, N., Page, H., Miller, R. (2019). Living kelp versus plankton as food sources for suspension feeders. Marine Ecology Progress Series. 614:21--33. DOI: 10.3354/meps12906
+      Yorke, C. E., Hanns, B., Shears, N., Page, H. M., Miller, R. J. (2019). Living kelp versus plankton as food sources for suspension feeders. Marine Ecology Progress Series. 614:21--33. DOI: 10.3354/meps12906
     author: Miller, Robert; Yorke, Christie; Page, Henry
   - sbc_id: 1345
     year: '2018'
@@ -8792,10 +8792,353 @@
     citation: |
       Fitzgerald, S. P., Wilson, J. R., Lenihan, H. S. (2018). Detecting a need for improved management in a data-limited crab fishery. Fisheries Research. 208:133--144. DOI: 10.1016/j.fishres.2018.07.012
     author: ''
-  - sbc_id: 9999
-    year: '2003'
+  - sbc_id: 1404
+    year: '2020'
     category: Article
-    hyperlink: https://www.biodiversitylibrary.org/page/39824279#page/204/mode/1up
+    hyperlink: https://doi.org/10.1002%2Fhyp.13742
     citation: |
-      Page, H. M., Schroeter, S. C., Reed, D. C., Ambrose, R. F., Callaway, J., Dixon, J. (2003). An Inexpensive Method to Identify the Elevation of Tidally Inundated Habitat in Coastal Wedands. Bulletin of the Southern California Academy of Sciences. 102:130-142.
+      Chen, X., Tague, C. L., Melack, J. M., Keller, A. A. (2020). Sensitivity of nitrate concentration-discharge patterns to soil nitrate distribution and drainage properties in the vertical dimension. Hydrological Processes. 34:2477--2493. DOI: 10.1002/hyp.13742
+    author: ''
+  - sbc_id: 1406
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1093%2Fbiosci%2Fbiz162
+    citation: |
+      Gaiser, E. E., Bell, D. M., Castorani, M. C. N., Childers, D. L., Groffman, P. M., Jackson, C. R., Kominoski, J. S., Peters, D. P. C., Pickett, S. T. A., Ripplinger, J., et al. (2020). Long-Term Ecological Research and Evolving Frameworks of Disturbance Ecology. BioScience. 70:141--156. DOI: 10.1093/biosci/biz162
+    author: ''
+  - sbc_id: 1407
+    year: '2019'
+    category: Article
+    hyperlink: https://doi.org/10.1111%2Fjpy.12918
+    citation: |
+      Hargarten, H. L., Johansson, M. L., Reed, D. C., Coelho, N. C., Siegel, D. A., Alberto, F. (2019). Seascape genetics of the stalked kelp. Journal of Phycology. 56:110--120. DOI: 10.1111/jpy.12918
+    author: ''
+  - sbc_id: 1410
+    year: '2019'
+    category: Article
+    hyperlink: https://doi.org/10.1175%2Fjtech-d-19-0029.1
+    citation: |
+      Kirincich, A., Emery, B., Washburn, L., Flament, P. (2019). Improving Surface Current Resolution Using Direction Finding Algorithms for Multiantenna High-Frequency Radars. Journal of Atmospheric and Oceanic Technology. 36:1997--2014. DOI: 10.1175/jtech-d-19-0029.1
+    author: ''
+  - sbc_id: 1411
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1002%2Fecy.2987
+    citation: |
+      Lamy, T., Koenigs, C., Holbrook, S. J., Miller, R. J., Stier, A. C., Reed, D. C. (2020). Foundation species promote community stability by increasing diversity in a giant kelp forest. Ecology. 101:. DOI: 10.1002/ecy.2987
+    author: ''
+  - sbc_id: 1412
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.3390%2Fd12020054
+    citation: |
+      Marks, L. M., Reed, D. C., Holbrook, S. J. (2020). Niche Complementarity and Resistance to Grazing Promote the Invasion Success of Sargassum horneri in North America. Diversity. 12:54. DOI: 10.3390/d12020054
+    author: ''
+  - sbc_id: 1413
+    year: '2019'
+    category: Article
+    hyperlink: https://doi.org/10.5343%2Fbms.2018.0068
+    citation: |
+      Nishimoto, M. M., Washburn, L., Love, M. S., Schroeder, D. M., Emery, B. M., Kui, L. (2019). Timing of juvenile fish settlement at offshore oil platforms coincides with water mass advection into the Santa Barbara Channel, California. Bulletin of Marine Science. 95:559--582. DOI: 10.5343/bms.2018.0068
+    author: ''
+  - sbc_id: 1414
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1002%2Flno.11440
+    citation: |
+      Okamoto, D. K., Schroeter, S. C., Reed, D. C. (2020). Effects of ocean climate on spatiotemporal variation in sea urchin settlement and recruitment. Limnology and Oceanography. 65:2076--2091. DOI: 10.1002/lno.11440
+    author: ''
+  - sbc_id: 1415
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.3389%2Ffmars.2020.00022
+    citation: |
+      Snyder, J. N., Bell, T. W., Siegel, D. A., Nidzieko, N. J., Cavanaugh, K. C. (2020). Sea Surface Temperature Imagery Elucidates Spatiotemporal Nutrient Patterns for Offshore Kelp Aquaculture Siting in the Southern California Bight. Frontiers in Marine Science. 7:. DOI: 10.3389/fmars.2020.00022
+    author: ''
+  - sbc_id: 1416
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1002%2Fecs2.3114
+    citation: |
+      Zhao, L., Wang, S., Hallett, L. M., Rypel, A. L., Sheppard, L. W., Castorani, M. C. N., Shoemaker, L. G., Cottingham, K. L., Suding, K., Reuman, D. C., et al. (2020). A new variance ratio metric to detect the timescale of compensatory dynamics. Ecosphere. 11:. DOI: 10.1002/ecs2.3114
+    author: ''
+  - sbc_id: 1417
+    year: '2020'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/7nj792b9
+    citation: |
+      Lowman, H. E. Nutrient and organic matter cycling in the nearshore ocean and marine sediment of the Santa Barbara Channel. (2020). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1418
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Bell, T. W. (2020). Patterns and dynamics in spatially explicit ecological systems. Presented at the meeting of Society Industrial & Applied Mathematics: Mathematics of Planet Earth, Garden Grove, CA, US
+    author: ''
+  - sbc_id: 1419
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Bell, T. W., Siegel, D. A. (2020). Nutrient availability and programmed senescence spatially structure the dynamics of an cosystem engineer. Presented at the meeting of Ocean Sciences Meeting, San Diego, CA, US
+    author: ''
+  - sbc_id: 1420
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Bell, T. W., Allen, J. A., Cavanaugh, K. C., Siegel, D. A. (2019). Disentangling potential global change trends from low frequency climate oscillations in marine environments. Presented at the meeting of Eastern Pacific Ocean Conference, Fallen Leaf Lake, CA, US
+    author: ''
+  - sbc_id: 1421
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Castorani, M. C. N., Wilcox, D., Bell, T. W., Kaufman, K. (2019). Mapping SAV and coastal habitats: drones and other recent technologies. Presented at the meeting of 25th Biennial Conference of the Coastal & Estuarine Research Federation, Mobile, AL, US
+    author: ''
+  - sbc_id: 1422
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Castorani, M. C. N., Bell, T. W., Walter, J. A., Reuman, D. C., Sheppard, L. W. (2019). Disturbance, resources, and climate interactively synchronize kelp forests across scales. Presented at the meeting of Ocean Sciences Meeting, San Diego, CA, US
+    author: ''
+  - sbc_id: 1423
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Castorani, M. C. N., Bell, T. W., Miller, R. J., Reed, D. C., Reuman, D. C., Sheppard, L. W., Walter, J. A. (2019). Disturbance structures the dynamics, synchrony, and biodiversity of giant kelp forests. Presented at the meeting of 25th Biennial Conference of the Coastal & Estuarine Research Federation, Mobile, AL, US
+    author: ''
+  - sbc_id: 1424
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Castorani, M. C. N., Bell, T. W., Walter, J. A., Reuman, D. C., Sheppard, L. W. (2019). Disturbance, resources, and climate interactively synchronize kelp forests across scales. Presented at the meeting of 100th Western Society of Naturalists Annual Meeting, Ensenada, Mexico
+    author: ''
+  - sbc_id: 1425
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Catlett, D., Siegel, D. A., Carlson, C. A., Matson, P. G., Wear, E. K., Iglesias-Rodriguez, M. D. (2020). Integrating high-throughput sequencing observations into remotely sensible phytoplankton functional type determinations. Presented at the meeting of Ocean Sciences Meeting , San Diego, CA, US
+    author: ''
+  - sbc_id: 1426
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Cavanaugh, K. C. (2020). Satelite mapping of giant kelp. Presented at the meeting of Commercial Kelp Harvest South of Pt. Montara Science Forum, Online
+    author: ''
+  - sbc_id: 1427
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: "Cavanaugh, K. C., Reed, D. C., Bell, T. W., Castorani, M. C. N., Beas-Luna,
+      R. (2020). Spatial variability in the resistance and resilience of giant kelp
+      in southern and Baja California to a multi-year heatwave\t. Presented at the meeting
+      of Ocean Sciences Meeting , San Diego, CA, US\n"
+    author: ''
+  - sbc_id: 1428
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Cavanaugh, K. C. (2020). Natural history from above: confronting the problem of pattern and scale in ecology with remote sensing. Presented at the meeting of 100th Western Society of Naturalists Annual Meeting, Ensenada, Mexico
+    author: ''
+  - sbc_id: 1429
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Cornish, M. R., Emery, K. A., Dugan, J. E., Miller, R. J., Hubbard, D. M. (2019). Secondary production of intertidal consumers on sandy beaches. Presented at the meeting of 25th Biennial Conference of the Coastal & Estuarine Research Federation, Mobile, AL, US
+    author: ''
+  - sbc_id: 1430
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      DiFiore, B. P., Stier, A. C. (2020). Body size of predators and prey alters the strength of trophic interactions in a harvested ecosystem. Presented at the meeting of Gordon Research Conference, Ventura, CA, US
+    author: ''
+  - sbc_id: 1431
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: "Dugan, J. E., Hubbard, D. M., Emery, K. A., Miller, R. J., Ohlmann, J.
+      C., Madden, J. M. (2019). Quantifying ecological responses to trophic connectivity
+      between kelp forests and sandy beaches. Presented at the meeting of 25th Biennial
+      Conference of the Coastal & Estuarine Research Federation, Mobile, AL, US\tNov
+      2019\n"
+    author: ''
+  - sbc_id: 1432
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: "Emery, K. A., Dugan, J. E., Miller, R. J., Hubbard, D. M., Ohlmann, J.
+      C. (2019). Marine wrack subsidies drive sandy beach community structure and ecosystem
+      function. Presented at the meeting of 25th Biennial Conference of the Coastal
+      & Estuarine Research Federation, Mobile, AL, US\tNov 2019\n"
+    author: ''
+  - sbc_id: 1433
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Kui, L. (2020). Generating EML using Excel-to-EML tool. Presented at the meeting of ESIP Annual Meeting, Online
+    author: ''
+  - sbc_id: 1434
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Kui, L., Vanderbilt, K. L., Porter, J. H. (2020). Streamline QA/QC for observational data. Presented at the meeting of ESA Annual Meeting, Online
+    author: ''
+  - sbc_id: 1435
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Lamy, T., Wang, S., Renard, D., Reed, D. C., Miller, R. J. (2019). Species insurance trumps spatial insurance in stabilizing biomass of a marine macroalgal metacommunity. Presented at the meeting of International Long Term Ecological Research Network 2nd Open Science Meeting, Leipzig, Germany
+    author: ''
+  - sbc_id: 1436
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Rassweiler, A., Hernan, G., Dubel, A. K. (2020). Choosing an efficient portfolio of sampling strategies for monitoring marine biodiversity. Presented at the meeting of Ocean Sciences Meeting, San Diego, CA, US
+    author: ''
+  - sbc_id: 1437
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Schooler, N. K., Emery, K. A., Dugan, J. E., Miller, R. J., Page, H. M., Schroeder, D. M., Beresford, L. D., Madden, J. M. (2020). Cross ecosystem subsidies support surf zone fish on island beaches. Presented at the meeting of Ocean Sciences Meeting, San Diego, CA, US
+    author: ''
+  - sbc_id: 1438
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Schooler, N. K., Gold, Z., Dugan, J. E., Miller, R. J., Page, H. M., Schroeder, D. M., Emery, K. A., Madden, J. M. (2019). Detecting surf zone fish diversity using environmental DNA and other non-destructive methods. Presented at the meeting of 25th Biennial Conference of the Coastal & Estuarine Research Federation, Mobile, AL, US
+    author: ''
+  - sbc_id: 1439
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Swan, C., Sokol, E. R., Wisnoski, N. I., Andrade, R., Castorani, M. C. N., Compagnoni, A., Cooper, A., Lamy, T., Lany, N. K., Marazzi, L., et al. (2019). Patterns and drivers of stability in long-term metacommunity data. Presented at the meeting of International Long Term Ecological Research Network 2nd Open Science Meeting, Leipzig, Germany
+    author: ''
+  - sbc_id: 1440
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Washburn, L., Nidzieko, N. N., Miller, R. J., Emery, B., Kirincich, A. (2020). Complex coastal flows and connectivity between kelp forests and the coastal ocean in the Southern California Bight. Presented at the meeting of Ocean Sciences Meeting , San Diego, CA, US
+    author: ''
+  - sbc_id: 1441
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Welch, Z. S., Schroeter, S., Iglesias-Rodriguez, M. D. (2020). Back to the future of sea urchins: Using long-term datasets to generate proxies of climate change impacts on California's purple urchin populations. Presented at the meeting of Ocean Sciences Meeting , San Diego, CA, US
+    author: ''
+  - sbc_id: 1442
+    year: '2019'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Wisnoski, N. I., Sokol, E. R., Andrade, R., Castorani, M. C. N., Catano, C. P., Compagnoni, A., Lamy, T., Lany, N. K., Marazzi, L., Record, S., et al. (2019). Patterns and drivers of stability in long-term metacommunity data. Presented at the meeting of 104th Annual Meeting of the Ecological Society of America, Louisville, KY
+    author: ''
+  - sbc_id: 1443
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.5670%2Foceanog.2020.110
+    citation: |
+      Bisson, K., Baetge, N., Kramer, S., Catlett, D., Girling, G., McNair, H., Arrington, E., Hayes, D., Jacobs, C., James, A., et al. (2020). California Wildfire Burns Boundaries Between Science and Art. Oceanography. 33:16--19. DOI: 10.5670/oceanog.2020.110
+    author: ''
+  - sbc_id: 1444
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.5194%2Fhess-24-2253-2020
+    citation: |
+      Feng, D., Beighley, E. (2020). Identifying uncertainties in hydrologic fluxes and seasonality from hydrologic model components for  climate change impact assessments. Hydrology and Earth System Sciences. 24:2253--2267. DOI: 10.5194/hess-24-2253-2020
+    author: ''
+  - sbc_id: 1445
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1371%2Fjournal.pone.0229259
+    citation: |
+      Friedlander, A. M., Ballesteros, E., Bell, T. W., Caselle, J. E., Campagna, C., Goodell, W., H�ne, M., Mu{~{n}}oz, A., Salinas-de-Le{'{o}}n, P., Sala, E., et al. (2020). Kelp forests at the end of the earth: 45 years later. PLOS ONE. 15:e0229259. DOI: 10.1371/journal.pone.0229259
+    author: ''
+  - sbc_id: 1446
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1111%2Fgeb.13137
+    citation: |
+      Genung, M. A., Fox, J., Winfree, R. (2020). Species loss drives ecosystem function in experiments, but in nature the importance of species loss depends on dominance. Global Ecology and Biogeography. 29:1531--1541. DOI: 10.1111/geb.13137
+    author: ''
+  - sbc_id: 1447
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1002%2Fecy.3031
+    citation: |
+      Hamilton, S. L., Bell, T. W., Watson, J. R., Grorud-Colvert, K. A., Menge, B. A. (2020). Remote sensing: generation of long-term kelp bed data sets for evaluation of impacts of climatic variation. Ecology. 101:. DOI: 10.1002/ecy.3031
+    author: ''
+  - sbc_id: 1448
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1002%2Flol2.10157
+    citation: |
+      James, A. K., English, C. J., Nidzieko, N. J., Carlson, C. A., Wilbanks, E. G. (2020). Giant kelp microbiome altered in the presence of epiphytes. Limnology and Oceanography Letters. 5:354--362. DOI: 10.1002/lol2.10157
+    author: ''
+  - sbc_id: 1449
+    year: '2019'
+    category: Article
+    hyperlink: https://doi.org/10.3389%2Ffmars.2019.00527
+    citation: |
+      Muelbert, J. H., Nidzieko, N. J., Acosta, A. T. R., Beaulieu, S. E., Bernardino, A. F., Boikova, E., Bornman, T. G., Cataletto, B., Deneudt, K., Eliason, E., et al. (2019). ILTER} {textendash} The International Long-Term Ecological Research Network as a Platform for Global Coastal and Ocean Observation. Frontiers in Marine Science. 6:. DOI: 10.3389/fmars.2019.00527
+    author: ''
+  - sbc_id: 1450
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.3354%2Fmeps13364
+    citation: |
+      Scheibling, R. E., Black, R. (2020). Persistence of giants: population dynamics of the limpet Scutellastra laticostata on rocky shores in Western Australia. Marine Ecology Progress Series. 646:79--92. DOI: 10.3354/meps13364
+    author: ''
+  - sbc_id: 1451
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.3389%2Ffmars.2020.00205
+    citation: |
+      Strader, M. E., Kozal, L. C., Leach, T. S., Wong, J. M., Chamorro, J. D., Housh, M. J., Hofmann, G. E. (2020). Examining the Role of {DNA} Methylation in Transcriptomic Plasticity of Early Stage Sea Urchins: Developmental and Maternal Effects in a Kelp Forest Herbivore. Frontiers in Marine Science. 7:. DOI: 10.3389/fmars.2020.00205
+    author: ''
+  - sbc_id: 1452
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1177%2F0036850420936204
+    citation: |
+      Taylor-Burns, R., Cochran, C., Ferron, K., Harris, M., Thomas, C., Fredston, A., Kendall, B. E. (2020). Locating gaps in the California Current System ocean acidification monitoring network. Science Progress. 103:003685042093620. DOI: 10.1177/0036850420936204
+    author: ''
+  - sbc_id: 1453
+    year: '2020'
+    category: Article
+    hyperlink: https://doi.org/10.1007%2Fs00227-019-3633-y
+    citation: |
+      Wong, J. M., Hofmann, G. E. (2020). The effects of temperature and {pCO}2 on the size, thermal tolerance and metabolic rate of the red sea urchin (Mesocentrotus franciscanus) during early development. Marine Biology. 167:. DOI: 10.1007/s00227-019-3633-y
+    author: ''
+  - sbc_id: 1454
+    year: '2019'
+    category: Article
+    hyperlink: https://doi.org/10.1016%2Fj.margen.2019.05.007
+    citation: |
+      Wong, J. M., Gait{'{a}}n-Espitia, J. D., Hofmann, G. E. (2019). Transcriptional profiles of early stage red sea urchins (Mesocentrotus franciscanus) reveal differential regulation of gene expression across development. Marine Genomics. 48:100692. DOI: 10.1016/j.margen.2019.05.007
+    author: ''
+  - sbc_id: 1455
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Kui, L., O'Brien, M. C. (2020). Get Your Data into a Repository. Presented at the meeting of ESA Annual Meeting , Online
     author: ''
