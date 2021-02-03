@@ -32,7 +32,7 @@ description: help to solve data related questions
     Excel worksheet as well as abstract and method word documents.  </p>
     
   
-<p> <a href="{{site.baseurl}}/external/Documents/data_help/Instruction_on_filling_out_metadata.pdf">SBC data publication instruction</a> will show you how to fill out the meatadata sheet and prepare your data for publication.
+<p> <a href="{{site.baseurl}}/external/Documents/data_help/Instruction_on_filling_out_metadata.pdf">SBC data publication instruction</a> will show you how to fill out the meatadata sheet and prepare your data for publication. If you are a first time user, this is the step-by-step <a href="https://www.youtube.com/watch?v=0n7TteZFbpc">metadata tutorial Youtube video</a> to guide you through the process. 
      </p>
 
  <hr/>
