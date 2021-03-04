@@ -131,7 +131,7 @@
     - docid: knb-lter-sbc.14
       shortTitle: 'Giant kelp canopy biomass from aerial overflights  '
     - docid: knb-lter-sbc.74
-      shortTitle: Giant kelp canopy biomass from Landsat (ongoing dataset)
+      shortTitle: Kelp canopy area and biomass from Landsat (ongoing dataset)
   habitats:
     habitat: reef
   measurementTypes:
@@ -250,6 +250,8 @@
       shortTitle: 'Moored CTD and ADCP: MKO'
     - docid: knb-lter-sbc.2004
       shortTitle: 'Moored CTD and ADCP: CAR'
+    - docid: knb-lter-sbc.2010
+      shortTitle: 'Moored CTD and ADCP: SBH'
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -279,16 +281,19 @@
   lterCoreResearchAreas:
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers: ~
-- collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET, with calibration'
-  abstract: SeaFET instruments have been deployed at various SBC reefs starting in
-    2011. Time-series are of pH calibrated by the bentchmark water sample. The reported
-    time interval matches that reported for other moored instruments. Benchmark water
-    samples are also available at moored stations, plus from other subtidal and intertidal
-    stations.
+- collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET and dissolved oxygen
+    from miniDot'
+  abstract: SeaFET instruments and miniDOT have been deployed at various SBC reefs
+    starting in 2011. Time-series are of pH calibrated by the bentchmark water sample
+    and the dissolved oxygen on the same mooring. The reported time interval matches
+    that reported for other moored instruments. Benchmark water samples for pH are
+    also available at moored stations, plus from other subtidal and intertidal stations.
   dataPackages:
     package:
     - docid: knb-lter-sbc.6005
       shortTitle: pH SeaFET for all sites
+    - docid: knb-lter-sbc.6006
+      shortTitle: Dissolved oxygen for all sites
     - docid: knb-lter-sbc.6001
       shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6002
@@ -310,7 +315,7 @@
     - Movement of Inorganic Matter
     - Disturbance Patterns
   mapLayers:
-    mapLayer: inshore_pH
+    mapLayer: inshore_chemistry
 - collectionName: 'Santa Barbara Harbor: Long term surface temperature (reference)'
   abstract: Surface seawater temperature collected daily at Santa Barbara Harbor,
     Santa Barbara, CA, from 1955 to 2004, and is currently supported by the Scripps
@@ -351,6 +356,8 @@
     package:
     - docid: knb-lter-sbc.35
       shortTitle: Mean CDIP Hs and Tp
+    - docid: knb-lter-sbc.36
+      shortTitle: LTE KR - Hourly irradiance, surface and seafloor
     - docid: knb-lter-sbc.128
       shortTitle: PAR sensor comparison
     - docid: knb-lter-sbc.13
@@ -591,18 +598,18 @@
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
-    - docid: knb-lter-sbc.3007
-      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
+    - docid: knb-lter-sbc.3007
+      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
-    - docid: knb-lter-sbc.3010
-      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
+    - docid: knb-lter-sbc.3010
+      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
@@ -806,6 +813,8 @@
       shortTitle: Rapid urea and ammonium in porewater and overlying water
     - docid: knb-lter-sbc.118
       shortTitle: Rapid POM and grain size
+    - docid: knb-lter-sbc.136
+      shortTitle: CTD and chemistry at Goleta pier
   habitats:
     habitat: reef
   measurementTypes:
@@ -1147,6 +1156,8 @@
     package:
     - docid: knb-lter-sbc.126
       shortTitle: ROMS model files and codes
+    - docid: knb-lter-sbc.135
+      shortTitle: Temperature to Nitrate
   habitats:
     habitat:
     - offshore
