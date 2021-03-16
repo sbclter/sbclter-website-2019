@@ -787,10 +787,7 @@
     commonName: Thomas Lamy
     givenName: Thomas
     surName: Lamy
-    advisor: ''
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
+    scientificDomainString: Marine biodiversity
     email: thomas.lamy27@gmail.com
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
@@ -999,16 +996,13 @@
     surName: Bui
     advisor: Stier, Moeller
     scientificDomainString: Community ecology, functional ecology
-    scientificDomainText: An is a community ecologist specializing in community responses
-      to disturbance as modulated by species functional traits. She is working on elucidating
-      the effects of disturbance history on subsequent community response in kelp forest
-      systems.
+    scientificDomainText: Community ecology, functional ecology
     employeeType: Graduate Student
     email: an_bui@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      An is a community ecologist specializing in community responses to disturbance as modulated by species functional traits. She is working on elucidating the effects of disturbance history on subsequent community response in kelp forest systems.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1049,14 +1043,14 @@
     givenName: Billie
     surName: Beckley
     advisor: Miller
-    scientificDomainString: Community Ecology and Mathematical Modeling
+    scientificDomainString: Marine Ecology
     scientificDomainText: ''
     employeeType: Graduate Student
     email: billiebeckley@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |
-      Raine is interested in both community ecology and mathematical modeling. She is particularly interested in using models to better understand species interactions in marine communities and how these interactions may be affected by environmental stressors. Her work in the Moeller Lab leverages the Santa Barbara Coastal and Moorea Coral Reef LTER datasets. Raine began her research career by modeling the interactions between Macrocystis pyrifera (giant kelp), benthic macroalgae, and sessile invertebrates and how this system is affected by disturbance from storms. More recently, she is exploring the incorporation of coral-associated animals into models of coral growth and bleaching.
+    profileText: |2+
+
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1130,9 +1124,9 @@
     givenName: Emily
     surName: Hardison
     advisor: Eliason
-    scientificDomainString: ''
+    scientificDomainString: Eco-physiology
     scientificDomainText: ''
-    employeeType: ''
+    employeeType: Graduate Student
     email: emily.hardison@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
@@ -1241,9 +1235,9 @@
     givenName: Kyle
     surName: Emery
     advisor: Dugan
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
+    scientificDomainString: Kelp forest and sandy beach ecology
+    scientificDomainText: Kelp forest and sandy beach ecology
+    employeeType: Graduate Student
     email: emery@ucsb.edu
     postalAddress: Interdepartmental Graduate Program in Marine Science<br />University
       of California<br />Santa Barbara CA 93106
@@ -1273,9 +1267,9 @@
     givenName: Katrina
     surName: Malakhoff
     advisor: Miller
-    scientificDomainString: ''
+    scientificDomainString: Sea urchin ecology
     scientificDomainText: ''
-    employeeType: ''
+    employeeType: Graduate Student
     email: katrina.malakhoff@lifesci.ucsb.edu
     postalAddress: ''
     profileText: |2+
@@ -1384,8 +1378,8 @@
     givenName: Ricky
     surName: Brokaw
     advisor: Siegel
-    scientificDomainString: ''
-    scientificDomainText: ''
+    scientificDomainString: Physical Oceanography
+    scientificDomainText: Physical Oceanography
     employeeType: Graduate Student
     email: rbrokaw@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
@@ -1400,14 +1394,14 @@
     givenName: Raine
     surName: Detmer
     advisor: 'Moeller  '
-    scientificDomainString: ''
+    scientificDomainString: Community Ecology and Mathematical Modeling
     scientificDomainText: ''
     employeeType: Graduate Student
     email: adetmer@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106
-    profileText: |2+
-
+    profileText: |
+      Raine is interested in both community ecology and mathematical modeling. She is particularly interested in using models to better understand species interactions in marine communities and how these interactions may be affected by environmental stressors. Her work in the Moeller Lab leverages the Santa Barbara Coastal and Moorea Coral Reef LTER datasets. Raine began her research career by modeling the interactions between Macrocystis pyrifera (giant kelp), benthic macroalgae, and sessile invertebrates and how this system is affected by disturbance from storms. More recently, she is exploring the incorporation of coral-associated animals into models of coral growth and bleaching.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
