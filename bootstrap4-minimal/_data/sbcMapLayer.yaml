@@ -1102,6 +1102,13 @@
     northbound: '34.39015'
     westbound: '-119.5399'
     eastbound: '-119.5399'
+  - title: Santa Barbara Harbor (SBH)
+    description: Santa Barbara Harbor is bounded by Stearns Wharf on the east and
+      the harbor breakwater on the wes and south.
+    southbound: '34.4104667'
+    northbound: '34.4104667'
+    westbound: '-119.6857500'
+    eastbound: '-119.6857500'
   packages:
     package:
     - docid: knb-lter-sbc.2008
@@ -1114,105 +1121,8 @@
       shortTitle: 'Moored CTD and ADCP: MKO'
     - docid: knb-lter-sbc.2004
       shortTitle: 'Moored CTD and ADCP: CAR'
-- id: inshore_pH
-  label: pH
-  collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET, with calibration'
-  frequency: 20 min
-  initiated: '2012'
-  habitatName: nearshore
-  habitatLabel: Inshore Ocean
-  geodata:
-  - title: ARQ
-    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
-      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
-      site, AQM.
-    southbound: '34.46495'
-    northbound: '34.46495'
-    westbound: '-120.11965'
-    eastbound: '-120.11965'
-  - title: MKO
-    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
-      10.8 meters.
-    southbound: '34.39323'
-    northbound: '34.39323'
-    westbound: '-119.73012'
-    eastbound: '-119.73012'
-  - title: ALE
-    description: 'Alegria (ALE) is located offshore from the community of Hollister
-      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
-    southbound: '34.46085'
-    northbound: '34.46085'
-    westbound: '-120.28998'
-    eastbound: '-120.28998'
-  - title: Santa Barbara Harbor
-    description: Santa Barbara Harbor is bounded by Stearns Wharf on the east and
-      the harbor breakwater on the wes and south.
-    southbound: '34.4104667'
-    northbound: '34.4104667'
-    westbound: '-119.6857500'
-    eastbound: '-119.6857500'
-  - title: .na.character
-    description: .na.character
-    southbound: .na.character
-    northbound: .na.character
-    westbound: .na.character
-    eastbound: .na.character
-  - title: Coal Oil Point
-    description: Coal Oil Point (COP) is located in the rocky intertidal area on the
-      western edge of the University of California, Santa Barbara (UCSB) campus, and
-      is part of the UC Natural Reserve System
-    southbound: '34.40685962'
-    northbound: '34.40685962'
-    westbound: '-119.8782861'
-    eastbound: '-119.8782861'
-  - title: Lompoc Landing
-    description: Lompoc Landing (LOL) is a rocky intertidal site located on the Vandenberg
-      Air Force Base (VAFB) and is just north of Surf Beach
-    southbound: '34.71905679'
-    northbound: '34.71905679'
-    westbound: '-120.6087994'
-    eastbound: '-120.6087994'
-  - title: Purisima Point
-    description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
-      California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
-    southbound: '34.72602'
-    northbound: '34.72602'
-    westbound: '-120.6276'
-    eastbound: '-120.6276'
-  - title: Rancho Marino
-    description: Rancho Marino (RMC) is in the rocky intertidal area near Cambria,
-      CA. It is is part of the Univeristy of California Natural Reserve System
-    southbound: '35.54030478'
-    northbound: '35.54030478'
-    westbound: '-121.0928466'
-    eastbound: '-121.0928466'
-  - title: Razors
-    description: Razors (RZR) is in the rocky intertidal near Alegria Beach, located
-      on the Hollister Ranch, between Gaviota and Point Conception
-    southbound: '34.46713695'
-    northbound: '34.46713695'
-    westbound: '-120.278178'
-    eastbound: '-120.278178'
-  - title: Stearns Wharf, Santa Barbara CA
-    description: Stearns Wharf, Santa Barbara CA
-    southbound: '34.40934'
-    northbound: '34.40934'
-    westbound: '-119.68493'
-    eastbound: '-119.68493'
-  packages:
-    package:
-    - docid: knb-lter-sbc.6005
-      shortTitle: pH SeaFET for all sites
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
-    - docid: knb-lter-sbc.6003
-      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
-    - docid: knb-lter-sbc.6004
-      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
-    - docid: knb-lter-sbc.75
-      shortTitle: Benchmark water samples pH for field calibration
+    - docid: knb-lter-sbc.2010
+      shortTitle: 'Moored CTD and ADCP: SBH'
 - id: beachWrack
   label: Biomass and species composition of macroalgal wrack
   collectionName: 'SBC LTER: Ongoing time-series of macroalgal wrack'
@@ -1968,18 +1878,18 @@
     northbound: '34.41307303'
     westbound: '-119.69499'
     eastbound: '-119.69499'
-  - title: Mission Creek at Rocky Nook, USGS 11119745
-    description: Mission Creek at Rocky Nook, USGS 11119745
-    southbound: '34.44072'
-    northbound: '34.44072'
-    westbound: '-119.71244'
-    eastbound: '-119.71244'
   - title: Rincon Creek, Hwy 101 Culvert, North
     description: Rincon Creek, Hwy 101 Culvert, North
     southbound: '34.3773'
     northbound: '34.3773'
     westbound: '-119.47794'
     eastbound: '-119.47794'
+  - title: Mission Creek at Rocky Nook, USGS 11119745
+    description: Mission Creek at Rocky Nook, USGS 11119745
+    southbound: '34.44072'
+    northbound: '34.44072'
+    westbound: '-119.71244'
+    eastbound: '-119.71244'
   - title: Santa Monica Creek, Via Real
     description: Santa Monica Creek, Via Real
     southbound: '34.40479765'
@@ -2004,18 +1914,18 @@
     northbound: '34.41898512'
     westbound: '-119.52701'
     eastbound: '-119.52701'
-  - title: Tecolotito Creek, Hollister Road
-    description: Tecolotito Creek, Hollister Road
-    southbound: '34.43055'
-    northbound: '34.43055'
-    westbound: '-119.85762'
-    eastbound: '-119.85762'
   - title: San Pedro Creek at Stow Canyon Park, , USGS 11120520
     description: San Pedro Creek at Stow Canyon Park, , USGS 11120520
     southbound: '34.44861'
     northbound: '34.44861'
     westbound: '-119.84028'
     eastbound: '-119.84028'
+  - title: Tecolotito Creek, Hollister Road
+    description: Tecolotito Creek, Hollister Road
+    southbound: '34.43055'
+    northbound: '34.43055'
+    westbound: '-119.85762'
+    eastbound: '-119.85762'
   packages:
     package:
     - docid: knb-lter-sbc.3001
@@ -2038,10 +1948,10 @@
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3014
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3011
@@ -2050,7 +1960,277 @@
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3016
-      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
       shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+    - docid: knb-lter-sbc.3016
+      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+- id: inshore_chemistry
+  label: pH and dissolved oxygen
+  collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET and dissolved oxygen
+    from miniDot'
+  frequency: 20 min
+  initiated: '2011'
+  habitatName: nearshore
+  habitatLabel: Inshore Ocean
+  geodata:
+  - title: ARQ
+    description: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated
+      depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled
+      site, AQM.
+    southbound: '34.46495'
+    northbound: '34.46495'
+    westbound: '-120.11965'
+    eastbound: '-120.11965'
+  - title: MKI
+    description: Mohawk Reef Inshore is located east of Arroyo Burro Beach, Santa
+      Barbara, CA
+    southbound: '34.3943291'
+    northbound: '34.3943291'
+    westbound: '-119.730003'
+    eastbound: '-119.730003'
+  - title: MKO
+    description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
+      10.8 meters.
+    southbound: '34.39323'
+    northbound: '34.39323'
+    westbound: '-119.73012'
+    eastbound: '-119.73012'
+  - title: ALE
+    description: 'Alegria (ALE) is located offshore from the community of Hollister
+      Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.'
+    southbound: '34.46085'
+    northbound: '34.46085'
+    westbound: '-120.28998'
+    eastbound: '-120.28998'
+  - title: Santa Barbara Harbor (SBH)
+    description: Santa Barbara Harbor is bounded by Stearns Wharf on the east and
+      the harbor breakwater on the wes and south.
+    southbound: '34.4104667'
+    northbound: '34.4104667'
+    westbound: '-119.6857500'
+    eastbound: '-119.6857500'
+  - title: AQI
+    description: Arroyo Quemado Inshore is located at Arroyo Quemado Reef near the
+      mouth of Arroyo Quemada Creek, Santa Barbara County, CA
+    southbound: '34.4688301'
+    northbound: '34.4688301'
+    westbound: '-120.121498'
+    eastbound: '-120.121498'
+  - title: NPR
+    description: Naples Reef is located on the Santa Barbara Channel near the community
+      of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
+      -5.9 to -13.4 meters.
+    southbound: '34.4239006'
+    northbound: '34.4239006'
+    westbound: '-119.949997'
+    eastbound: '-119.949997'
+  - title: CRP
+    description: Carpinteria Reef is located on the Santa Barbara Channel offshore
+      of the Carpinteria Salt Marsh.
+    southbound: '34.3902016'
+    northbound: '34.3902016'
+    westbound: '-119.539902'
+    eastbound: '-119.539902'
+  - title: Anacapa Island Landing Cove Pier (ALC)
+    description: North shore of Anacapa Island, Santa Barbara Channel Islands, California.
+    southbound: '34.0164'
+    northbound: '34.0164'
+    westbound: '-119.3621'
+    eastbound: '-119.3621'
+  - title: Prisoner's Harbor Pier, Santa Cruz Island (PRZ)
+    description: North shore of Santa Cruz Island, Santa Barbara Channel Islands,
+      California.
+    southbound: '34.0204'
+    northbound: '34.0204'
+    westbound: '-119.6843'
+    eastbound: '-119.6843'
+  - title: Coal Oil Point
+    description: Coal Oil Point (COP) is located in the rocky intertidal area on the
+      western edge of the University of California, Santa Barbara (UCSB) campus, and
+      is part of the UC Natural Reserve System
+    southbound: '34.40685962'
+    northbound: '34.40685962'
+    westbound: '-119.8782861'
+    eastbound: '-119.8782861'
+  - title: Lompoc Landing
+    description: Lompoc Landing (LOL) is a rocky intertidal site located on the Vandenberg
+      Air Force Base (VAFB) and is just north of Surf Beach
+    southbound: '34.71905679'
+    northbound: '34.71905679'
+    westbound: '-120.6087994'
+    eastbound: '-120.6087994'
+  - title: Purisima Point
+    description: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point,
+      California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
+    southbound: '34.72602'
+    northbound: '34.72602'
+    westbound: '-120.6276'
+    eastbound: '-120.6276'
+  - title: Rancho Marino
+    description: Rancho Marino (RMC) is in the rocky intertidal area near Cambria,
+      CA. It is is part of the Univeristy of California Natural Reserve System
+    southbound: '35.54030478'
+    northbound: '35.54030478'
+    westbound: '-121.0928466'
+    eastbound: '-121.0928466'
+  - title: Razors
+    description: Razors (RZR) is in the rocky intertidal near Alegria Beach, located
+      on the Hollister Ranch, between Gaviota and Point Conception
+    southbound: '34.46713695'
+    northbound: '34.46713695'
+    westbound: '-120.278178'
+    eastbound: '-120.278178'
+  - title: Stearns Wharf, Santa Barbara CA
+    description: Stearns Wharf, Santa Barbara CA
+    southbound: '34.40934'
+    northbound: '34.40934'
+    westbound: '-119.68493'
+    eastbound: '-119.68493'
+  packages:
+    package:
+    - docid: knb-lter-sbc.6005
+      shortTitle: pH SeaFET for all sites
+    - docid: knb-lter-sbc.6006
+      shortTitle: Dissolved oxygen for all sites
+    - docid: knb-lter-sbc.75
+      shortTitle: Benchmark water samples pH for field calibration
+- id: inshoreMoorings
+  label: Moored current velocity, conductivity & temperature
+  collectionName: 'SBC LTER: Ongoing time-series of moored Temperature at Northern
+    Channel Island sites'
+  frequency: 20 min
+  initiated: '2002'
+  habitatName: nearshore
+  habitatLabel: Inshore Ocean
+  geodata:
+  - title: ANS
+    description: Anacapa South; Water depth is ~15 m
+    southbound: '34.0109'
+    northbound: '34.0109'
+    westbound: '-119.3681'
+    eastbound: '-119.3681'
+  - title: BAY
+    description: Bay Point; Water depth is ~15 m
+    southbound: '34.0396'
+    northbound: '34.0396'
+    westbound: '-120.312'
+    eastbound: '-120.312'
+  - title: BEA
+    description: Beacon Reef Santa Rosa Island; Water depth is ~15 m
+    southbound: '34.0379'
+    northbound: '34.0379'
+    westbound: '-120.0322'
+    eastbound: '-120.0322'
+  - title: CTN
+    description: Carrington Point Santa Rosa Island; Water depth is ~15 m
+    southbound: '34.0246'
+    northbound: '34.0246'
+    westbound: '-120.0829'
+    eastbound: '-120.0829'
+  - title: CUY
+    description: Cuyler Harbor; Water depth is ~15 m
+    southbound: '34.0592'
+    northbound: '34.0592'
+    westbound: '-120.3523'
+    eastbound: '-120.3523'
+  - title: GUL
+    description: Gull Island Santa Cruz Island; Water depth is ~15 m
+    southbound: '33.9601'
+    northbound: '33.9601'
+    westbound: '-119.796'
+    eastbound: '-119.796'
+  - title: HAZ
+    description: Hazards Anchorage Santa Cruz Island; Water depth is ~15 m
+    southbound: '34.0587'
+    northbound: '34.0587'
+    westbound: '-119.8244'
+    eastbound: '-119.8244'
+  - title: LND
+    description: Landing Cove Anacapa Island; Water depth is ~13 m
+    southbound: '34.0174'
+    northbound: '34.0174'
+    westbound: '-119.3604'
+    eastbound: '-119.3604'
+  - title: MOR
+    description: Morse Point Santa Cruz Island; Water depth is ~15 m
+    southbound: '33.9666'
+    northbound: '33.9666'
+    westbound: '-119.8548'
+    eastbound: '-119.8548'
+  - title: PEL
+    description: Pelican Bay Santa Cruz Island; Water depth is ~15 m
+    southbound: '34.0307'
+    northbound: '34.0307'
+    westbound: '-119.6967'
+    eastbound: '-119.6967'
+  - title: PRO
+    description: Profile Point Santa Cruz Island; Water depth is ~15 m
+    southbound: '34.066'
+    northbound: '34.066'
+    westbound: '-119.9416'
+    eastbound: '-119.9416'
+  - title: SCP
+    description: Scorpion Anchorage Santa Cruz Island; Water depth is ~15 m
+    southbound: '34.0549'
+    northbound: '34.0549'
+    westbound: '-119.56'
+    eastbound: '-119.56'
+  - title: SMG
+    description: Smugglers Anchorage Santa Cruz Island; Water depth is ~15 m
+    southbound: '34.0116'
+    northbound: '34.0116'
+    westbound: '-119.5384'
+    eastbound: '-119.5384'
+  - title: SMN
+    description: North shore of San Migule Island, Santa Barbara Channel. Water depth
+      is ~15 m
+    southbound: '34.057'
+    northbound: '34.057'
+    westbound: '-120.3455'
+    eastbound: '-120.3455'
+  - title: SMS
+    description: San Miguel South; Water depth is ~15 m
+    southbound: '34.0159'
+    northbound: '34.0159'
+    westbound: '-120.3311'
+    eastbound: '-120.3311'
+  - title: SRN
+    description: Santa Rosa North; Water depth is ~15 m
+    southbound: '34.0261'
+    northbound: '34.0261'
+    westbound: '-120.08'
+    eastbound: '-120.08'
+  - title: SRS
+    description: Santa Rosa South; Water depth is ~15 m
+    southbound: '33.8958'
+    northbound: '33.8958'
+    westbound: '-120.1278'
+    eastbound: '-120.1278'
+  - title: TRL
+    description: Trailer Santa Cruz Island; Water depth is ~15 m
+    southbound: '34.051'
+    northbound: '34.051'
+    westbound: '-119.9101'
+    eastbound: '-119.9101'
+  - title: VAL
+    description: Valley Anchorage Santa Cruz Island; Water depth is ~15 m
+    southbound: '33.9783'
+    northbound: '33.9783'
+    westbound: '-119.67'
+    eastbound: '-119.67'
+  - title: WIL
+    description: Willows Anchorage Santa Cruz Island; Water depth is ~15 m
+    southbound: '33.9594'
+    northbound: '33.9594'
+    westbound: '-119.7527'
+    eastbound: '-119.7527'
+  - title: WIN
+    description: Winfield Scott Anacapa Island; Water depth is ~15 m
+    southbound: '34.0087'
+    northbound: '34.0087'
+    westbound: '-119.3958'
+    eastbound: '-119.3958'
+  packages:
+    package:
+    - docid: knb-lter-sbc.2030
+      shortTitle: Hourly temperature at 21 island sites

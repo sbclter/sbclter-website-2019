@@ -260,6 +260,23 @@
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers:
     mapLayer: inshoreMoorings
+- collectionName: 'SBC LTER: Ongoing time-series of moored Temperature at Northern
+    Channel Island sites'
+  abstract: Temperature data have been collected at 21 nearshore sites along the Northern
+    Channel islands in the Santa Barbara Channel. The sites are ~15 m deep. Data were
+    aggregated into hourly average.
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.2030
+      shortTitle: Hourly temperature at 21 island sites
+  habitats:
+    habitat: nearshore
+  measurementTypes:
+    measurementType: physical_oceanography
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Movement of Inorganic Matter
+  mapLayers:
+    mapLayer: inshoreMoorings
 - collectionName: 'SBC LTER: Other moored instruments'
   abstract: 'Currents and hydrography data have been collected intermittently at several
     reef sites. Instruments deployed intermittently include: bottom-mounted acoustic
@@ -294,14 +311,6 @@
       shortTitle: pH SeaFET for all sites
     - docid: knb-lter-sbc.6006
       shortTitle: Dissolved oxygen for all sites
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
-    - docid: knb-lter-sbc.6003
-      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
-    - docid: knb-lter-sbc.6004
-      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
     - docid: knb-lter-sbc.75
       shortTitle: Benchmark water samples pH for field calibration
   habitats:
@@ -318,9 +327,8 @@
     mapLayer: inshore_chemistry
 - collectionName: 'Santa Barbara Harbor: Long term surface temperature (reference)'
   abstract: Surface seawater temperature collected daily at Santa Barbara Harbor,
-    Santa Barbara, CA, from 1955 to 2004, and is currently supported by the Scripps
-    Insitution of Oceanography Manual Shore Stations program. The dataset will recommence
-    after calibration issues have been resolved.
+    Santa Barbara, CA, starting in 1955, and is currently supported by the Scripps
+    Insitution of Oceanography Manual Shore Stations program.
   dataPackages:
     package:
     - docid: knb-lter-sbc.32
@@ -598,22 +606,22 @@
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
-    - docid: knb-lter-sbc.3005
-      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3005
+      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
-    - docid: knb-lter-sbc.3009
-      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
+    - docid: knb-lter-sbc.3009
+      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3014
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3011
@@ -622,10 +630,10 @@
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3016
-      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
       shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+    - docid: knb-lter-sbc.3016
+      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
   habitats:
     habitat: watershed
   measurementTypes:
@@ -815,6 +823,8 @@
       shortTitle: Rapid POM and grain size
     - docid: knb-lter-sbc.136
       shortTitle: CTD and chemistry at Goleta pier
+    - docid: knb-lter-sbc.137
+      shortTitle: Ammonium excretion rates of macroinvertebrates
   habitats:
     habitat: reef
   measurementTypes:
