@@ -106,7 +106,7 @@
     givenName: Alyson
     surName: Santoro
     advisor: ''
-    scientificDomainString: ' Microbial nitrogen cycling'
+    scientificDomainString: Microbial nitrogen cycling
     scientificDomainText: Microbial ecology, nitrogen cycling
     employeeType: 'Assistant Professor '
     email: 'alyson.santoro@lifesci.ucsb.edu '
@@ -220,7 +220,7 @@
     givenName: Holly
     surName: Moeller
     advisor: ''
-    scientificDomainString: ' Community structure and function'
+    scientificDomainString: Community structure and function
     scientificDomainText: Community assembly and population dynamics, mathematical modeling,
       microbial ecology, fisheries bioeconomics
     employeeType: Assistant Professor
@@ -286,8 +286,8 @@
     givenName: Kyle
     surName: Cavanaugh
     advisor: ''
-    scientificDomainString: ' Remote Sensing'
-    scientificDomainText: ' Remote Sensing'
+    scientificDomainString: Remote Sensing
+    scientificDomainText: Remote Sensing
     employeeType: Assistant Professor
     email: kcavanaugh@geog.ucla.edu
     postalAddress: Department of Geography<br />University of California<br />Los Angeles
@@ -353,7 +353,7 @@
     surName: Castorani
     advisor: ''
     scientificDomainString: Marine Ecology
-    scientificDomainText: marine ecology, population dynamics, community ecology, metapopulations,
+    scientificDomainText: Marine ecology, population dynamics, community ecology, metapopulations,
       disturbance and stress, seagrass, kelp
     employeeType: ''
     email: castorani@virginia.edu
@@ -469,7 +469,7 @@
     givenName: Brian
     surName: Gaylord
     advisor: ''
-    scientificDomainString: ' Hydrodynamics and Biomechanics'
+    scientificDomainString: Hydrodynamics and Biomechanics
     scientificDomainText: Coastal hydrodynamics, functional ecology and biomecha nics
       of marine organisms, larval and spore dispersal ocean acidification
     employeeType: Associate Professor
@@ -521,7 +521,7 @@
     givenName: Craig
     surName: Nelson
     advisor: ''
-    scientificDomainString: microbial community
+    scientificDomainString: Microbial community
     scientificDomainText: Structure and function of natural bacterial communities in
       aquatic habitats such as coral reefs, lakes, streams, and the open ocean
     employeeType: Associate Specialist
@@ -787,7 +787,7 @@
     surName: Schroeter
     advisor: ''
     scientificDomainString: Kelp Forest, Intertidal and Wetland Ecology
-    scientificDomainText: kelp forest, rocky intertidal, and wetland ecology, larval
+    scientificDomainText: Kelp forest, rocky intertidal, and wetland ecology, larval
       settlement, dispersal and connectivity, ecological impact assessment, mitigation
       and restoration, assessment of nearshore fishery stocks
     employeeType: Research Biologist
@@ -1000,7 +1000,7 @@
     surName: Aguilera
     advisor: ''
     scientificDomainString: Hydrologic Modeling
-    scientificDomainText: watershed science, biogeochemistry, hydrology, modeling
+    scientificDomainText: Watershed science, biogeochemistry, hydrology, modeling
     employeeType: ''
     email: raguilera@bren.ucsb.edu
     postalAddress: Bren School<br />University of California<br />Santa Barbara CA 93106
@@ -1078,9 +1078,9 @@
     givenName: Bart
     surName: DiFiore
     advisor: Stier
-    scientificDomainString: ''
+    scientificDomainString: Population and community ecology
     scientificDomainText: ''
-    employeeType: ''
+    employeeType: Graduate Student
     email: bart.difiore@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
@@ -1125,7 +1125,7 @@
     givenName: Dylan
     surName: Catlett
     advisor: Iglesias-rodriguez
-    scientificDomainString: microbial community
+    scientificDomainString: Microbial community
     scientificDomainText: 'My primary focus is linking optical, chemotaxonomic, and
       molecular approaches for this purpose, with the hope of developing novel methods
       for the remote sensing of microbial community structure. '
@@ -1139,13 +1139,13 @@
     telephoneNumber: ''
     projectRole: Graduate Student
   - databaseID: dvanderzee
-    commonName: David Vanderzee
+    commonName: David VanderZee
     givenName: David
-    surName: Vanderzee
+    surName: VanderZee
     advisor: Miller
-    scientificDomainString: ''
+    scientificDomainString: Historical Ecology
     scientificDomainText: ''
-    employeeType: ''
+    employeeType: Graduate Student
     email: david.vanderzee@lifesci.ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
@@ -1270,7 +1270,7 @@
     givenName: Kate
     surName: Cavanaugh
     advisor: Cavanaugh
-    scientificDomainString: remote sensing
+    scientificDomainString: Remote sensing
     scientificDomainText: ''
     employeeType: Graduate Student
     email: kccavanaugh@g.ucla.edu
@@ -1397,7 +1397,7 @@
     givenName: Nathalie
     surName: Eegholm
     advisor: Siegel
-    scientificDomainString: kelp forests and modeling
+    scientificDomainString: Kelp forests and modeling
     scientificDomainText: ''
     employeeType: Graduate Student
     email: nathalie.eegholm@geog.ucsb.edu
@@ -1653,8 +1653,8 @@
     givenName: Stuart
     surName: Halewood
     advisor: ''
-    scientificDomainString: ' Oceanographic Sampling and Data Analysis'
-    scientificDomainText: ' Oceanographic Sampling and Data Analysis'
+    scientificDomainString: Oceanographic Sampling and Data Analysis
+    scientificDomainText: Oceanographic Sampling and Data Analysis
     employeeType: ''
     email: halewood@eri.ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
