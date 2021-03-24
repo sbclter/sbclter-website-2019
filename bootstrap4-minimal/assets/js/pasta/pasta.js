@@ -56,7 +56,8 @@ function parsePastaResults(xmlDoc) {
          date = "";
       }
       var link = "";
-      try {
+/*     // if there is a doi, use that for the link. else, use the pasta pkg link.	
+        try {
          var doi = doc.getElementsByTagName("doi")[0].childNodes[0].nodeValue;
          if (doi.slice(0, 4) === "doi:") {
             doi = doi.slice(4);
@@ -65,9 +66,34 @@ function parsePastaResults(xmlDoc) {
       } catch (err) {
          link = ("https://portal.edirepository.org/nis/mapbrowse?packageid=" +
             doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue);
-      }
-      var title = '<a rel="external" href="' + link + '" target="_blank">' +
+      } 
+       var title = '<a rel="external" href="' + link + '" target="_blank">' +
          doc.getElementsByTagName("title")[0].childNodes[0].nodeValue.trim() + '</a>';
+      // end or original code (DOI and external link.
+*/
+
+
+      // SBC code for a link to our local catalog
+      // first try {} is to build a local link. on err use portal link
+      try {
+         var temp1 = doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue;
+	 var temp2 = temp1.split(".",2);
+         var scope_docid = temp2.join(".");         
+
+	// not sure how to spec the host name. this path is relative. 
+         link = "../package/?package=" + scope_docid;
+      } catch (err) {
+         link = ("https://portal.edirepository.org/nis/mapbrowse?packageid=" +
+            doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue);
+      } 
+
+      // link stays on this tab
+      var title = '<a href="' + link + '">' +
+         doc.getElementsByTagName("title")[0].childNodes[0].nodeValue.trim() + '</a>';
+
+      // end of SBC edit
+
+
       var row = '<p><span class="dataset-title">' + title +
          '</span><br><span class="dataset-author">' + names + date +
          '</span></p>';

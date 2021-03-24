@@ -11,7 +11,7 @@ placeholder: "Search datasets ..."
 <h1>{{ page.title }}</h1>
 
 <div id="search-container">
-	{% include data/PASTA_search.html %}
+        {% include data/PASTA_search.html %}
 </div>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
