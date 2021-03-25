@@ -311,15 +311,21 @@ function initCollapsible(expanded) {
 
 function clearParams() {
    var areas = document.getElementById("coreArea");
-   areas[0].selected = true;
-   document.forms.dataSearchForm.creator.value = "";
-   document.forms.dataSearchForm.identifier.value = "";
-   document.forms.dataSearchForm.taxon.value = "";
-   document.forms.dataSearchForm.geo.value = "";
-   document.forms.dataSearchForm.data_year.checked = false;
-   document.forms.dataSearchForm.publish_year.checked = false;
-   document.forms.dataSearchForm.min_year.value = "1900";
-   document.forms.dataSearchForm.max_year.value = "2018";
+   if (areas && areas.length > 0) {
+      areas[0].selected = true;
+   }
+
+   const dataSearchForm = document.forms.dataSearchForm;
+
+   // Checks each form item exists before setting its value
+   if (dataSearchForm.creator)      dataSearchForm.creator.value = "";
+   if (dataSearchForm.identifier)   dataSearchForm.identifier.value = "";
+   if (dataSearchForm.taxon)        dataSearchForm.taxon.value = "";
+   if (dataSearchForm.geo)          dataSearchForm.geo.value = "";
+   if (dataSearchForm.data_year)    dataSearchForm.data_year.checked = false;
+   if (dataSearchForm.publish_year) dataSearchForm.publish_year.checked = false;
+   if (dataSearchForm.min_year)     dataSearchForm.min_year.value = "1900";
+   if (dataSearchForm.max_year)     dataSearchForm.max_year.value = "2018";
 }
 
 // Selects the desired value in the Select control. If value is not in the
