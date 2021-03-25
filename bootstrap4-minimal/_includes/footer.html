@@ -59,8 +59,11 @@
 
   </div>
 
-  <script src="https://cse.google.com/cse.js?cx=007161706378070698320:kaqf5hj-bne"></script>
-  <div class="gcse-search"></div>
+  <!-- Include footer google search only if the flag exclude_footer_search is not set -->
+  {% if page.exclude_footer_search != true %}
+    <script src="https://cse.google.com/cse.js?cx=007161706378070698320:kaqf5hj-bne"></script>
+    <div class="gcse-search"></div>
+  {% endif %}
 </footer>
 
 <!-- JS -->

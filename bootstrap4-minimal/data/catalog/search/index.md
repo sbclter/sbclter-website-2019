@@ -5,6 +5,9 @@ description: page description here.
 page_css:
   - /assets/css/custom/data/catalog.css
 placeholder: "Search datasets ..."
+
+# Excluding footer search because the URL parameters PASTA uses interfere with the ones footer search uses
+exclude_footer_search: true
 ---
 
 
