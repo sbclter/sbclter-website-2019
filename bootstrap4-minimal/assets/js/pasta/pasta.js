@@ -318,6 +318,7 @@ function clearParams() {
    const dataSearchForm = document.forms.dataSearchForm;
 
    // Checks each form item exists before setting its value
+   if (dataSearchForm.search_term)      dataSearchForm.search_term.value = "";
    if (dataSearchForm.creator)      dataSearchForm.creator.value = "";
    if (dataSearchForm.identifier)   dataSearchForm.identifier.value = "";
    if (dataSearchForm.taxon)        dataSearchForm.taxon.value = "";
