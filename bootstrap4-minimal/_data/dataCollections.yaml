@@ -12,6 +12,8 @@
     package:
     - docid: knb-lter-sbc.15
       shortTitle: KFCD percent cover of algae, invertebrates and bottom substrate
+    - docid: knb-lter-sbc.138
+      shortTitle: KFCD percent cover of bottom substrate and sand depth
     - docid: knb-lter-sbc.17
       shortTitle: KFCD abundance and size of reef fish
     - docid: knb-lter-sbc.18
@@ -50,6 +52,8 @@
     package:
     - docid: knb-lter-sbc.28
       shortTitle: LTE KR - Percent cover of algae, invertebrates and substrate
+    - docid: knb-lter-sbc.139
+      shortTitle: LTE KR - Percent cover of substrate and sand depth
     - docid: knb-lter-sbc.29
       shortTitle: LTE KR - Abundance and size of giant kelp
     - docid: knb-lter-sbc.30
@@ -610,30 +614,30 @@
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
-    - docid: knb-lter-sbc.3006
-      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3006
+      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
-    - docid: knb-lter-sbc.3012
-      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
-    - docid: knb-lter-sbc.3014
-      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3012
+      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3013
-      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3018
-      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+    - docid: knb-lter-sbc.3013
+      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
   habitats:
     habitat: watershed
   measurementTypes:
@@ -1164,10 +1168,10 @@
     to the Santa Barbara Coastal area
   dataPackages:
     package:
-    - docid: knb-lter-sbc.126
-      shortTitle: ROMS model files and codes
     - docid: knb-lter-sbc.135
       shortTitle: Temperature to Nitrate
+    - docid: knb-lter-sbc.126
+      shortTitle: ROMS model files and codes
   habitats:
     habitat:
     - offshore
