@@ -20,7 +20,7 @@ description: news and event in SBCLTER
 <p><a href="https://www.youtube.com/watch?v=M1WnZQ49aWA" target="_blank">Mar 5: Theme 2a. Effects of kelp on physical and chemical fluxes. Presenter: Nick Nidzieko</a></p>
 <p><a href="https://www.youtube.com/watch?v=X6mBDS_uWhI" target="_blank">Mar 10: Theme 2b. Effects of kelp on the processing and fate of dissolved organic matter. Presenters: Craig Carlson & Chance English</a></p>
 <p><a href="https://www.youtube.com/watch?v=FgPLKLKwr2s" target="_blank">Mar 17: Theme 2c. Ecological and evolutionary consequences of kelp-induced changes in seawater chemistry. Presenters: Gretchen Hofmann & Sam Bogan</a></p>
-<p>Mar 24: Theme 1c. Sources and utilization of recycled nitrogen. Presenters: Alyson Santoro</p>
+<p><a href= "https://www.youtube.com/watch?v=t5V6TXaukgM&t=3s" target="_blank">Apr 8: Theme 1c. Sources and utilization of recycled nitrogen. Presenters: Alyson Santoro</a></p>
 <p>Apr 14: Theme 3b. Trophic connectivity between kelp forests and beaches. Presenters: Jenny Dugan & Kyle Emery</p>
 <p>Apr 21: Theme 3c. Trophic connectivity between the coastal ocean and kelp forests. Presenters: Dave Siegel & Ricky Brokaw</p>
 
