@@ -40,7 +40,7 @@
     scientificDomainText: Reef ecology, dispersal and connectivity, primary production
       of marine macrophytes
     employeeType: Research Biologist
-    email: danreed@ucsb.edu
+    email: dan.reed@lifesci.ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
@@ -282,22 +282,6 @@
       I have led the hydrological and hydrochemical measurement and modeling aspects of the SBC LTER.  This research has involved installation and operation of stream gauging system and automatic rain gauges, intensive sampling for solutes, and processing and analysis of thousands of water and particulate samples.  These data are incorporated into mechanistic and statistical models of runoff and export, and are included in examination of nutrient supply to the near-shore kelp ecosystem.
     homepage: https://www.eemb.ucsb.edu/people/faculty/melack/
     telephoneNumber: 805-893-3879
-    projectRole: Investigator
-  - databaseID: pmiller
-    commonName: Paige Miller
-    givenName: Paige
-    surName: Miller
-    advisor: ''
-    scientificDomainString: Evolutionary biology
-    scientificDomainText: Ecology and Evolution, population genetics
-    employeeType: Assistant Project Scientist
-    email: paigemiller@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am a molecular biologist interested in evolution and ecology. My graduate work was based on studying the recent evolution of distinct sex chromosomes (XY) in a flowering plant, Silene (commonly called Catchfly). My postdoctoral work with William Rice, here at UCSB, focused on sexual selection and the evolution of sexual conflict, primarily in the fruit fly Drosophila melanogaster.  Discerning the underlying patterns of population structure, genetic dispersal and natural selection from molecular data has always played a central role in my research.  I am presently working on population genetics of marine species, in particular a globally, and locally, invasive bryozoan, Watersipora, and the intertidal rockweed Silvetia compressa, using Next-generation sequencing (NGS) techniques.  I am also working on the microbiomes of kelp forest species, including invertebrates and fishes, and the role of the microbiome in the physiology and ecology of these species.
-    homepage: ''
-    telephoneNumber: ''
     projectRole: Investigator
   - databaseID: hmoeller
     commonName: Holly Moeller
@@ -657,6 +641,24 @@
       California<br />Los Angeles CA 90095-1565
     profileText: |
       The "plumes project" in the SBC LTER characterizes storm water dilution and land-ocean interactions by model surface wave-current interactions and stream water dispersion. We apply the Regional Ocean Model System (ROMS) several SBC LTER sites in the Santa Barbara Channel. The research is conducted at UCSB by Dave Siegel's group, and at UCLA with Dr. Uchiyama.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Project Affiliated Investigator
+  - databaseID: pmiller
+    commonName: Paige Miller
+    givenName: Paige
+    surName: Miller
+    advisor: ''
+    scientificDomainString: Molecular biology
+    scientificDomainText: Ecology and Evolution, population genetics
+    employeeType: Assistant Project Scientist
+    email: |
+      paigemiller@ucsb.edu
+      Fax
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am a molecular biologist interested in evolution and ecology. My graduate work was based on studying the recent evolution of distinct sex chromosomes (XY) in a flowering plant, Silene (commonly called Catchfly). My postdoctoral work with William Rice, here at UCSB, focused on sexual selection and the evolution of sexual conflict, primarily in the fruit fly Drosophila melanogaster.  Discerning the underlying patterns of population structure, genetic dispersal and natural selection from molecular data has always played a central role in my research.  I am presently working on population genetics of marine species, in particular a globally, and locally, invasive bryozoan, Watersipora, and the intertidal rockweed Silvetia compressa, using Next-generation sequencing (NGS) techniques.  I am also working on the microbiomes of kelp forest species, including invertebrates and fishes, and the role of the microbiome in the physiology and ecology of these species.
     homepage: ''
     telephoneNumber: ''
     projectRole: Project Affiliated Investigator
@@ -1582,7 +1584,7 @@
     profileText: |
       Rocky reef ecosystems are largely dominated by giant kelp, Macrocystis pyrifera, whose quick growth and monopolization of light is well documented as a mechanism for competitive exclusion among most benthos associated primary producers.  Relief from intense competition for light is accomplished through disturbance events associated with large winter swells that forcefully uproot Macrocystis individuals reduce surface canopy density and allow ample light to reach the seafloor.  To better understand patterns, causes, and ecological consequences of change in understory algal productivity, I am working to develop a logistically simple model incorporating irradiance, photosynthesis vs. irradiance and understory algal abundance data collected by the SBC LTER.
     homepage: ''
-    telephoneNumber: ''
+    telephoneNumber: 805-893-7295
     projectRole: Staff
   - databaseID: kjohnson
     commonName: Kaitlin Johnson
