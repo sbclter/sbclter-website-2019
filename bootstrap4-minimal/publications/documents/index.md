@@ -55,10 +55,8 @@ add links to documents using an existing document as a template.
 	   <div class="col-md-8">
            <h3>SBC LTER I (NSF OCE-9982105)</h3>
             <ul>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2001-2002.pdf">SBC LTER Annual Report 2001-2001</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2002-2003.pdf">SBC LTER Annual Report 2002-2003</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2002.pdf">SBC LTER Annual Report 2002</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2003.pdf">SBC LTER Annual Report 2003</a></li>
+                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2001-2002.pdf">SBC LTER Annual Report 2002</a></li>
+                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2002-2003.pdf">SBC LTER Annual Report 2003</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Midterm_Review/SBC_LTER_3-yr_report_Vol_1.pdf">SBC LTER Midterm Review Report 2003</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2004.pdf">SBC LTER Annual Report 2004</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2005.pdf">SBC LTER Annual Report 2005</a></li>
