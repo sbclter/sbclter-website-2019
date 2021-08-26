@@ -134,6 +134,8 @@
     package:
     - docid: knb-lter-sbc.14
       shortTitle: 'Giant kelp canopy biomass from aerial overflights  '
+    - docid: knb-lter-sbc.140
+      shortTitle: Kelp canopy chlorophyll to carbon ratio
     - docid: knb-lter-sbc.74
       shortTitle: Kelp canopy area and biomass from Landsat (ongoing dataset)
   habitats:
@@ -146,7 +148,7 @@
     - Movement of Organic Matter
     - Disturbance Patterns
   mapLayers: ~
-- collectionName: ' SBC LTER: Spiny lobster in California'
+- collectionName: 'SBC LTER: Spiny lobster in California'
   abstract: Annual data on the abundance and size of California spiny lobster, <i>Panulirus
     interruptus</i>, and monthly estimates of lobster trap density during the lobster
     fishing season at five sites along the mainland coast of the Santa Barbara Channel.
@@ -163,7 +165,7 @@
   mapLayers:
     mapLayer: reefLobsters
 - collectionName: 'SBC LTER: Sea urchins in California'
-  abstract: 'Time-series and laboratory data on sea urchins (<i>Strongylocentrotus
+  abstract: 'Time series and laboratory data on sea urchins (<i>Strongylocentrotus
     purpuratus</i> and <i>Mesocentrotus franciscanus</i>). The collection includes
     data on: (1) biweekly settlement of larval sea urchins and other invertebrates
     at four locations in southern California and one location in northern California
@@ -294,21 +296,19 @@
     - docid: knb-lter-sbc.2003
       shortTitle: Mooring Arroyo Burro
   habitats:
-    habitat:
-    - reef
-    - nearshore
+    habitat: nearshore
   measurementTypes:
     measurementType: physical_oceanography
   lterCoreResearchAreas:
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers: ~
-- collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFET and dissolved oxygen
-    from miniDot'
-  abstract: SeaFET instruments and miniDOT have been deployed at various SBC reefs
-    starting in 2011. Time-series are of pH calibrated by the bentchmark water sample
-    and the dissolved oxygen on the same mooring. The reported time interval matches
-    that reported for other moored instruments. Benchmark water samples for pH are
-    also available at moored stations, plus from other subtidal and intertidal stations.
+- collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFETs and dissolved
+    oxygen from miniDots'
+  abstract: SeaFET and miniDOT instruments have been deployed at various SBC reefs
+    starting in 2011. Time series are of pH, calibrated to benchmark water samples,
+    and dissolved oxygen paired by mooring. pH, salinity, and TA values of benchmark
+    water samples are also available for mooring stations, and from other subtidal
+    and intertidal stations.
   dataPackages:
     package:
     - docid: knb-lter-sbc.6005
@@ -329,6 +329,35 @@
     - Disturbance Patterns
   mapLayers:
     mapLayer: inshore_chemistry
+- collectionName: 'SBC LTER: Completed time-series of pH from SeaFETs and dissolved
+    oxygen from miniDots'
+  abstract: 'Completed time series calibrated pH (Total scale, SeaFET sensor) an disolved
+    oxygen (miniDOT) data that were collected at three reefs and Santa Barbara Harbor
+    along the mainland. Associated carbonate chemistry parameters were calculated
+    with the CO2calc programs from USGS.  The update for the data packages are terminated,
+    and now the pH and dissolved oxygen data are reformated and updated in the "Ongoing
+    time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
+    - docid: knb-lter-sbc.6003
+      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6004
+      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+  habitats:
+    habitat: nearshore
+  measurementTypes:
+    measurementType:
+    - biogeochemistry
+    - physical_oceanography
+  lterCoreResearchAreas:
+    lterCoreResearchArea:
+    - Movement of Inorganic Matter
+    - Disturbance Patterns
+  mapLayers: ~
 - collectionName: 'Santa Barbara Harbor: Long term surface temperature (reference)'
   abstract: Surface seawater temperature collected daily at Santa Barbara Harbor,
     Santa Barbara, CA, starting in 1955, and is currently supported by the Scripps
@@ -352,9 +381,7 @@
     - docid: knb-lter-sbc.61
       shortTitle: Sea otter sightings, Santa Barbara Channel area
   habitats:
-    habitat:
-    - reef
-    - nearshore
+    habitat: reef
   measurementTypes:
     measurementType: community_structure
   lterCoreResearchAreas:
@@ -602,38 +629,38 @@
     collections.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.3001
-      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
+    - docid: knb-lter-sbc.3001
+      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
-    - docid: knb-lter-sbc.3007
-      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
+    - docid: knb-lter-sbc.3007
+      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
-    - docid: knb-lter-sbc.3010
-      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
+    - docid: knb-lter-sbc.3010
+      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
-    - docid: knb-lter-sbc.3011
-      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
     - docid: knb-lter-sbc.3014
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
-    - docid: knb-lter-sbc.3015
-      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3011
+      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3015
+      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
