@@ -1144,13 +1144,13 @@
     surName: Eegholm
     advisor: Siegel
     scientificDomainString: Kelp forests and modeling
-    scientificDomainText: ''
+    scientificDomainText: Giant kelp forests, Modeling, Remote sensing
     employeeType: Graduate Student
     email: nathalie.eegholm@geog.ucsb.edu
     postalAddress: Earth Research Institute<br />University of California<br />Santa
       Barbara CA 93106-3060
-    profileText: |2+
-
+    profileText: |
+      I am currently pursuing my Ph.D. under the guidance of Dr. David Siegel. I am broadly interested in ecological modeling, and my current research is focused on developing a demographic model of giant kelp forest dynamics in the Santa Barbara Channel. I am using SBC LTER data products to help parameterize the model and test its validity against observed data. My future plans for this work include improving the model with data collected from drones and satellites, as well as working to apply the model on a regional scale to improve our understanding of spatiotemporal dynamics of giant kelp forests and the effects of perturbations and disturbances on these important ecosystem engineers.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1309,8 +1309,8 @@
     email: jessicamadden@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |2+
-
+    profileText: |
+      I am interested in coastal marine ecology and cross-ecosystem connectivity between sandy beach and marine food webs. I assist SBC LTER with the ongoing monitoring of kelp deposition on beaches and the ecological responses of beach food webs. My thesis research investigates how seasonal variation in kelp wrack subsidies to beaches drives sandy beach community dynamics and how kelp consuming sandy beach invertebrates are utilized as prey by surf zone fish predators such as barred surfperch (Amphistichus argenteus).
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1371,8 +1371,8 @@
     employeeType: Graduate Student
     email: jpeters@umail.ucsb.edu
     postalAddress: ''
-    profileText: |2+
-
+    profileText: |
+      My research characterizes the role of consumer mediated nutrient cycling in giant kelp forests. Specifically, I quantify sources of nitrogen (as ammonium) that are excreted from fishes and invertebrates and scale them to populations using SBC LTER monitoring data. I use these time series of consumer nitrogen excretions to determine what factors (e.g. fishing, disease, disturbance) are important for regulating nitrogen recycling in giant kelp forests.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1412,7 +1412,7 @@
     commonName: Jordan Snyder
     givenName: Jordan
     surName: Snyder
-    advisor: ''
+    advisor: Nidzieko
     scientificDomainString: Oceanography
     scientificDomainText: ''
     employeeType: Graduate Student
