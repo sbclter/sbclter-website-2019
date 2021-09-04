@@ -65,7 +65,7 @@
       Barbara CA 93106-3060
     profileText: |
       My primary role in the SBC LTER is to assess regional kelp cover and biomass using high spatial resolution (10 to 30 m) satellite imagery (SPOT and Landsat) and to provide access, interpretation and analysis of data on ocean color remote sensing and optical oceanography.  These observations are providing SBC LTER with a regional perspective on time scales from months to decades. I am also the Lead PI of the NASA funded Plumes and Blooms (PnB) project whose goal is to understand the land and ocean processes changing ocean color. Relevant for the SBC LTER, PnB makes monthly transect surveys across the Santa Barbara Channel of hydrographic, optical and biological parameters.
-    homepage: http://www.icess.ucsb.edu/~davey/
+    homepage: https://msi.ucsb.edu/people/faculty/david-siegel
     telephoneNumber: 805-893-4547
     projectRole: Project Co-Investigator
   - databaseID: astier
@@ -148,7 +148,7 @@
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
       My research focuses on the interaction between microbial processes and dissolved organic matter in marine systems. The SBC LTER reaches across a large gradient of inorganic and organic nutrients and productivity and is an ideal location to investigate the sources and fate of organic matter and how its quality both affects and is affected by microbial community composition and associated processes. As an associate investigator I have participated in several of the oceanographic cruises, have studied rates of DOC production by giant kelp and am currently a Co- investigator (w/ Brzezinski) on the Cross Shelf Time Series (CSTS) campaign. The objective of the CSTS campaign is to resolve development of the temporal and spatial gradients in organic and inorganic nutrients in the near shore environment and to determine if those gradients are related to microbial activity and resulting community structure.
-    homepage: http://web.me.com/carlson223/CARLSON_LABORATORY/HOME.html
+    homepage: https://msi.ucsb.edu/people/faculty/craig-carlson
     telephoneNumber: 805-893-2541
     projectRole: Investigator
   - databaseID: mcastorani
@@ -443,7 +443,7 @@
       Barbara CA 93106-6150
     profileText: |
       I am responsible for directing the physical oceanographic monitoring effort at the core sites in kelp forests. I also coordinate much of the analysis and synthesis of oceanographic data obtained from a series of cruises during 2000-2006 and from moorings at the core sites from 2000 to the present. My research group operates an extensive array of high frequency radars for mapping surface currents in the coastal ocean encompassing all of the field sites within the SBC LTER.  Data from the array are important for identifying the spatial structure of currents causing transport through kelp forests at the core sites. A key objective of these efforts is to understand the role of ocean transport processes in the delivery of nutrients, biogenic particles, and other ecologically important waterborne materials to kelp forests on the inner shelf. In collaboration with a group from UC San Diego and the Moorea Coral Reef LTER, I am working to establish real time data nodes in the program and our first installation is on the Stearns Wharf in Santa Barbara.
-    homepage: http://www.icess.ucsb.edu/~washburn/
+    homepage: https://msi.ucsb.edu/people/faculty/libe-washburn
     telephoneNumber: 805-893-7367
     projectRole: Investigator
   - databaseID: lwilbanks
@@ -609,7 +609,7 @@
       97331-5104
     profileText: |
       My main research focus with the SBC LTER is on the role of history in ecological restoration in the coastal zone.  To this end I have been working with Jenny Dugan on the ecological history of the Coal Oil Point area on the west campus of UCSB.  My particular interest is in exploiting a variety of historical materials (e.g., maps, photos, print and manuscript documents) to find out about past and current human impacts and hopefully inform discussions of restoration and resilience.  I'm also interested in policies concerning endangered species.
-    homepage: http://oregonstate.edu/cla/history/anita-guerrini
+    homepage: ''
     telephoneNumber: 541-737-1308
     projectRole: Project Affiliated Investigator
   - databaseID: sholbrook
@@ -795,7 +795,7 @@
       University<br />4600 Elkhorn Ave.<br />Norfolk VA 23529
     profileText: |
       I am interested in light propagation and photosynthesis of submerged plant canopies.  My work with the LTER involves the use of radiative transfer theory to model the absorption and scattering of light by the giant kelp.  Accurate knowledge of absorption permits the calculation of important plant- and ecosystem-level properties such as rates of primary production, nutrient utilization and the amount of light available to understory algae.  Knowledge of light scattering is being used to explore techniques for remote sensing quantification of the abundance and distribution of marine vegetation across a range of spatial scales.
-    homepage: http://sci.odu.edu/oceanography/directory/faculty/zimmerman/index.shtml
+    homepage: https://www.odu.edu/directory/people/r/rzimmerm
     telephoneNumber: 757-683-5991
     projectRole: Project Affiliated Investigator
   - databaseID: jdugan
@@ -951,13 +951,14 @@
     surName: Beckley
     advisor: Miller
     scientificDomainString: Marine Ecology
-    scientificDomainText: ''
+    scientificDomainText: Marine ecology, conservation, disturbance ecology, kelp forests,
+      primary producers
     employeeType: Graduate Student
     email: billiebeckley@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |2+
-
+    profileText: "2020 M.S. Ecology, San Diego State University\r\n2014 B.S. Environmental
+      Science, Dickinson College\n"
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -967,13 +968,13 @@
     surName: Bogan
     advisor: Hofmann
     scientificDomainString: Evolutionary and physiological ecology
-    scientificDomainText: ''
+    scientificDomainText: Eco-evolutionary processes controlling environmental adaptation/acclimatization
     employeeType: Graduate Student
     email: snbogan@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I joined the Hofmann Lab as a PhD student in the Fall of 2018. Before coming to UC Santa Barbara, I received an MS from Sonoma State University, CA, where I studied the evolution of gene regulatory elements underpinning physiological losses-of-function in Antarctic fishes. As an undergraduate at Dickinson College, PA, I studied the responses of gastropod larvae and juveniles to ocean acidification and multiple stressors. Building off of these experiences, my research with the Hofmann Lab will integrate my background in molecular biology and gene regulation with my interest global change biology. I hope to better understand the cellular and evolutionary processes that limit or enable the capacity for rapid adaptation to environmental change. Specifically, I am interested in the evolutionary role of epigenetics and how environmental adaptation may act upon its processes. For example, how might DNA methylation respond to future ocean temperatures or pCO2 in closely-related stenotherms and eurytherms? What might this suggest for these organisms' capacities to adapt using an evolutionary framework that considers plasticity?
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -988,8 +989,8 @@
     email: rbrokaw@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106
-    profileText: |2+
-
+    profileText: |
+      My research focuses on using remote sensing and in-situ measurement techniques to investigate physical processes such as advection, convergence, and divergence as they relate to water mass properties in order to understand the transport of materials to kelp forests.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1047,13 +1048,13 @@
     surName: Chamorro
     advisor: Hofmann
     scientificDomainString: Ecophysiology and climate change
-    scientificDomainText: ''
+    scientificDomainText: Marine invertebrates cope with stressors such as marine heatwaves.
     employeeType: Graduate Student
     email: jannine.chamorro@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I am a graduate student in the Hofmann Lab studying how marine invertebrates cope with climate change associated stressors such as marine heatwaves. Growing up, I had always been fascinated by animals and their interactions with the environment, but never in my wildest dreams did I think I would become a scientist studying these interactions. After graduating high school, I began my college career at my local community college, then transferred to UC Davis where I majored in Animal Biology. It was during my time at UC Davis that I got involved in undergraduate research studying the effects of climate change on marine invertebrates. By participating in undergraduate research, I received amazing mentorship from graduate students and professors I worked with along the way. This experience gave me confidence to pursue scientific research as career. As a Latin-American and first-generation college student I have recognized some of the many challenges associated with succeeding in environmental sciences. As I continue in with my graduate career, I am passionate about helping under-represented students in STEM overcome these challenges and increase their accessibility to scientific careers.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1095,7 +1096,8 @@
     surName: DiFiore
     advisor: Stier
     scientificDomainString: Population and community ecology
-    scientificDomainText: ''
+    scientificDomainText: 'Kelp forest ecology, predator-prey interactions, fisheries,
+      trophic ecology. '
     employeeType: Graduate Student
     email: bart.difiore@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
@@ -1176,7 +1178,9 @@
     surName: English
     advisor: Carlson
     scientificDomainString: Microbial community
-    scientificDomainText: ''
+    scientificDomainText: Microbial oceanography emphasizing the role of marine microbes
+      in the production, alteration, and fate of dissolved organic matter in the open
+      ocean and coastal kelp forests.
     employeeType: Graduate Student
     email: cje@umail.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
@@ -1197,8 +1201,8 @@
     email: sevanesaian@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA
-    profileText: |2+
-
+    profileText: |
+      Sevan’s research is a part of the Santa Barbara Coastal Long Term Ecological Research Project (SBC LTER). He is using molecular biology, mathematical modeling, and geographic information science, to investigate epiphytic microbial population dynamics on Macrocystis pyrifera (giant kelp). His research focuses broadly on the synergistic effects of environmental factors driving giant kelp microbial abundance, diversity, and recovery throughout its life cycle (primarily senescence). During undergraduate studies at CSU – Los Angeles he studied the gene regulatory network of migratory neural crest cells in chicken embryos. He continued his education there as a MSc student by studying bird population dynamics and foraging preferences throughout the Los Angeles urban forest. Sevan joined the lab in Fall 2018.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1208,7 +1212,7 @@
     surName: Goss
     advisor: Page, Siegel
     scientificDomainString: Population genetics
-    scientificDomainText: ''
+    scientificDomainText: 'Genetic structure of rock scallops in the Santa Barbara Channel '
     employeeType: Graduate Student
     email: hgoss@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
@@ -1229,8 +1233,8 @@
     email: emily.hardison@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      Emily is interested in the effects of diet on thermal acclimation responses. A major assumption about thermal acclimation is that an individual will always respond to a given temperature in the same way. Emily uses a local omnivorous fish (opaleye) as a model system for exploring if/how diet may alter the way fish experience and respond to changes in environmental temperature.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1245,8 +1249,8 @@
     email: karinajohnston@ucsb.edu
     postalAddress: Bren School of Environmental Science & Management<br />University
       of California<br />Santa Barbara CA 93106-5131
-    profileText: |2+
-
+    profileText: |
+      Karina Johnston has recently enrolled as a doctoral student at UCSB, after serving as a scientific and community leader in the Los Angeles region for 10 years with The Bay Foundation. As the Science Director for TBF, Karina develops and manages federal, state, and other grants to implement the Action Plan for the Santa Monica Bay National Estuary Program, which strives to clean up waterways and create healthy habitats in the Los Angeles region. She is currently leading multiple projects to restore and monitor the Bay’s coastal habitats, with a focus on wetlands, dunes, and beaches. Karina has extensive experience developing, implementing, and directing scientific research programs including mentoring graduate and undergraduate students. She has a Master’s in Marine Ecology from James Cook University and a BS in Aquatic Biology with a minor in Geology from UCSB.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1256,13 +1260,13 @@
     surName: Kozal
     advisor: Hofmann
     scientificDomainString: 'Ecophysiology and  plasticity '
-    scientificDomainText: ''
+    scientificDomainText: 'Ecophysiology and  plasticity '
     employeeType: Graduate Student
     email: logan.kozal@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I joined the Hofmann Lab as a Ph.D. student in Fall of 2016. I am interested in studying the capacity of commercially important California fishery species to cope with the environmental stress associated with climate change and ocean acidification. I am pursuing two pathways to investigate this question. First, I am interested in looking at the physiological mechanisms by which organisms can rapidly adapt to environmental stressors in the hopes of forecasting which organisms will be resilient to the stress of a changing ocean. Our current investigations focus on the role of maternal provisioning and transgenerational plasticity as a potential avenue for resilience in early life stages. In addition, I am looking at how marine macrophytes, such as eelgrass, modify ocean chemistry and investigating the potential for these habitats to serve as local refuges from ocean acidification.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1277,8 +1281,8 @@
     email: krista.kraskura@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      Krista is interested in exploring how body size affects an individual’s capacity to deal with changing conditions, both acutely and long term. During her PhD journey, Krista is exploring how metabolic scaling relationships change with temperature and life-histories in fish, and will study the underlying morphological and physiological mechanisms that can alter metabolic scaling. Krista also is interested in better understanding why climate change is “shrinking” our fish, and what the consequences may be.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1310,7 +1314,7 @@
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
-      I am interested in coastal marine ecology and cross-ecosystem connectivity between sandy beach and marine food webs. I assist SBC LTER with the ongoing monitoring of kelp deposition on beaches and the ecological responses of beach food webs. My thesis research investigates how seasonal variation in kelp wrack subsidies to beaches drives sandy beach community dynamics and how kelp consuming sandy beach invertebrates are utilized as prey by surf zone fish predators such as barred surfperch (Amphistichus argenteus).
+      I am interested in coastal marine ecology and cross-ecosystem connectivity between sandy beach and marine food webs. I assist SBC LTER with the ongoing monitoring of kelp deposition on beaches and the ecological responses of beach food webs. My thesis research investigates how seasonal variation in kelp wrack subsidies to beaches drives sandy beach community dynamics and how  surf zone fish predators, such as barred surfperch (Amphistichus argenteus), utilize kelp consuming sandy beach invertebrates as prey.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1320,7 +1324,8 @@
     surName: Malakhoff
     advisor: Miller
     scientificDomainString: Sea urchin ecology
-    scientificDomainText: ''
+    scientificDomainText: Sea urchin ecology, focusing on the impact of fishing and
+      marine reserves on dominant urchin species in the Santa Barbara Chanel.
     employeeType: Graduate Student
     email: katrina.malakhoff@lifesci.ucsb.edu
     postalAddress: ''
@@ -1335,13 +1340,15 @@
     surName: McDonald
     advisor: Hofmann
     scientificDomainString: Eco-physiology
-    scientificDomainText: ''
+    scientificDomainText: Evaluating the responses of marine invertebrate aquaculture
+      species to multiple environmental stressors, such as elevated temperature and
+      hypoxia
     employeeType: Graduate Student
     email: adrianemcdonald@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      Adriane McDonald is a second year Ph.D. student in the Hofmann Lab in the EEMB Department. She received her Bachelors of Science in Biology with Honors at Spelman College, a historically Black college in Atlanta, Georgia, but developed her passion for Marine Ecology through participation in REUs, such as The Diversity Project and WHOI Summer Student Fellowship. Adriane's research interests include evaluating the responses of marine invertebrate species approved for California aquaculture to multiple environmental stressors. Specifically, she plans to assess physiological responses of early stages of Spiny lobster to both elevated temperature and hypoxic stress. Adriane is also an advocate for diversity, equity, and inclusion in STEM, which she hopes to continue to work for through outreach programs like FUERTE. In her free time, Adriane enjoys cooking, sewing, painting, and exercising.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1398,13 +1405,14 @@
     surName: Sainz
     advisor: Gaines
     scientificDomainString: Applied marine ecology and aquaculture
-    scientificDomainText: ''
+    scientificDomainText: Marine aquaculture, marine spatial planning, climate variability,
+      climate change, sustainable seafood
     employeeType: Graduate Student
     email: jadesainz@umail.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      Jade’s dissertation focuses on marine aquaculture, an expanding industry with great potential to provide sustainable seafood in the upcoming decades. She is studying the effects of climate variability and change to assist marine spatial planning of aquaculture in Southern California.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1413,8 +1421,9 @@
     givenName: Jordan
     surName: Snyder
     advisor: Nidzieko
-    scientificDomainString: Oceanography
-    scientificDomainText: ''
+    scientificDomainString: Coastal oceanography
+    scientificDomainText: Coastal oceanography; remote sensing-based flux measurements
+      in the inner shelf.
     employeeType: Graduate Student
     email: jordan_snyder@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
@@ -1461,13 +1470,22 @@
     surName: Welch
     advisor: Iglesias-Rodriguez
     scientificDomainString: Ocean acidification
-    scientificDomainText: ''
-    employeeType: ''
+    scientificDomainText: 'My dissertation explores the impacts of ocean acidification
+      and hypoxia on the health and biology of carbonate-producing marine organisms
+      (calcifiers) in California marine systems. Through the lens of calcifiers/calcification,
+      I examine how human actions (directly and indirectly) influence broader potential
+      patterns of change, stability, vulnerability, and resilience in these systems
+      over time and with a mind towards California’s future ocean conditions. My work
+      implements an interdisciplinary, mixed-method approach combining laboratory experimentation
+      with historical and contemporary field observations and datasets. In addition
+      to Dr. Debora Iglesias-Rodriguez (Biological Oceanography), I am also advised
+      on environmental history and historical ecology by Dr. Jennifer Martin. '
+    employeeType: Graduate Student
     email: zoe.welch@lifesci.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I have two hometowns -- Madison, WI and Williamsburg, VA-- and subsequently have an enduring love for both cheese curds and collard greens. I received my B.A. from The College of William and Mary, where I double majored in Anthropology and Environmental Studies and had a wonderful time participating in the Student Environmental Action Coalition&rsquo;s Sustainable Agriculture working group, campus radio (WCWM 90.9FM), and Women&rsquo;s Rugby. After graduation, I gained valuable experience volunteering for a Tidewater region environmental nonprofit, as well as working as a research technician and manager for a molecular and developmental biology lab. I obtained my M.S. in Marine Science from UCSB in 2016, where I researched environmental microbiology and nanomaterial-based toxicology. Together, these experiences helped crystallize my interest in examining human-environment interactions as a career, with special focus upon understanding how anthropogenic stressors influence population health, ecological resilience, and biogeochemical cycling. In addition to my marine-based dissertation work which includes collaboration with and support from the Santa Barbara Coastal Long Term Ecological Research (SBC LTER) group (https://sbclter.msi.ucsb.edu/) and a partnership between The Nature Conservancy (TNC) and the National Center for Ecological Analysis and Synthesis (NCEAS) (https://www.nceas.ucsb.edu/), I am also a member of The California Grizzly Research Network (https://www.calgrizzly.com/home-1). In my free time, I enjoy running, reading, and roller derby.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
