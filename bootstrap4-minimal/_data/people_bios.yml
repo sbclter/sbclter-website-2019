@@ -232,6 +232,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Investigator
+  - databaseID: tlamy
+    commonName: Thomas Lamy
+    givenName: Thomas
+    surName: Lamy
+    advisor: ''
+    scientificDomainString: Marine biodiversity
+    scientificDomainText: ''
+    employeeType: ''
+    email: thomas.lamy27@gmail.com
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |2+
+
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Investigator
   - databaseID: hlenihan1
     commonName: Hunter Lenihan
     givenName: Hunter
@@ -628,22 +644,6 @@
     homepage: https://www.eemb.ucsb.edu/people/faculty/holbrook/
     telephoneNumber: 805-893-3956
     projectRole: Project Affiliated Investigator
-  - databaseID: tlamy
-    commonName: Thomas Lamy
-    givenName: Thomas
-    surName: Lamy
-    advisor: ''
-    scientificDomainString: Marine biodiversity
-    scientificDomainText: ''
-    employeeType: ''
-    email: thomas.lamy27@gmail.com
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Project Affiliated Investigator
   - databaseID: jmcwilliams
     commonName: Jim McWilliams
     givenName: James
@@ -1016,13 +1016,13 @@
     surName: Carberry
     advisor: Nidzieko
     scientificDomainString: Physical oceanography and phytoplankton
-    scientificDomainText: ''
+    scientificDomainText: Physical oceanography and phytoplankton
     employeeType: Graduate Student
     email: lcarberry@ucsb.edu
     postalAddress: Earth Research Institute<br />University of California<br />Santa
       Barbara CA 93106-3060
-    profileText: |2+
-
+    profileText: |
+      My research is focused on understanding how marine phytoplankton interact with physical forcings across time and space scales. In particular, I am interested in studying the way that biophysical interactions on small space and short time scales (those relevant to phytoplankton) impact basin-wide variability in phytoplankton abundance. In the Coastal Oceanography and Autonomous Systems (COAST) Lab, we use autonomous underwater vehicles to study these biophysical interactions at high resolution in order to understand the importance of their scalar variability to the whole ocean.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1032,13 +1032,13 @@
     surName: Cavanaugh
     advisor: Cavanaugh
     scientificDomainString: Remote sensing
-    scientificDomainText: ''
+    scientificDomainText: Remote Sensing
     employeeType: Graduate Student
     email: kccavanaugh@g.ucla.edu
     postalAddress: Department of Geography<br />University of California<br />Los Angeles
       CA 90095
-    profileText: |2+
-
+    profileText: |
+      I am a graduate student in Kyle Cavanaugh’s lab at UCLA (we’re not related!) and am interested in using different remote sensing platforms to study the spatiotemporal responses of giant kelp and bull kelp to a variety of climatic stressors across multiple scales. I am currently working on distinguishing these two species using a fusion of remote sensing data.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1212,13 +1212,14 @@
     surName: Goss
     advisor: Page, Siegel
     scientificDomainString: Population genetics
-    scientificDomainText: 'Genetic structure of rock scallops in the Santa Barbara Channel '
+    scientificDomainText: 'Population structure, seascape genetics, larval dispersal,
+      connectivity '
     employeeType: Graduate Student
     email: hgoss@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |2+
-
+    profileText: |
+      I am interested in understanding the main drivers of ecological connectivity in the Santa Barbara Channel. Currently, my research uses a mix of modeling data and genetic techniques to investigate the potential drivers of genetic structure in the rock scallop Crassadoma gigas.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1292,13 +1293,13 @@
     surName: Leach
     advisor: Hofmann
     scientificDomainString: 'Ecophysiology and adaptation '
-    scientificDomainText: ''
+    scientificDomainText: Ecophysiology and developmental biology
     employeeType: Graduate Student
     email: tleach@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I joined the Hofmann lab in 2016 with an interest in exploring how marine organisms respond to environmental stress induced by climate change. My current research focuses on how environmental stress experienced by marine invertebrates in the Santa Barbara Channel alters their reproduction and the subsequent development of their offspring. Understanding the degree in which different species can reproduce and develop successfully under stress induced by ocean warming and acidification, for example, is crucial for making models and/or predictions about how populations in the Santa Barbara Channel will fare under future climatic change. For this research I have mainly utilized the ecologically relevant purple sea urchin (Strongylocentrotus purpuratus), a key player in our coastal kelp forest ecosystem.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1329,8 +1330,8 @@
     employeeType: Graduate Student
     email: katrina.malakhoff@lifesci.ucsb.edu
     postalAddress: ''
-    profileText: |2+
-
+    profileText: |
+      I am exploring how the population dynamics of sea urchins influences the ecology of kelp forests in the Santa Barbara area.  Through a combination of statistical analysis, dynamical modeling, feeding assays, and physiological experiments, my work aims to quantify the impact of changes in red and purple sea urchin populations and consumption patterns.  I am interested in the differences between red sea urchins, which are harvested by a large local fishery, and purple sea urchins which are generally not fished.  The SBC-LTER dataset contains extensive information on sea urchin populations which is essential to my research goals.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1358,13 +1359,13 @@
     surName: Michaud
     advisor: Miller
     scientificDomainString: 'Benthic Community Ecology '
-    scientificDomainText: ''
+    scientificDomainText: 'Benthic Community Ecology '
     employeeType: Graduate Student
     email: kmmichaud@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |2+
-
+    profileText: |
+      I am a PhD student working with Bob Miller. I am investigating how the benthic suspension feeding community within kelp forests responds to both abiotic and biotic stressors such as thermal stress, food limitation, and competition. As anthropogenic climate change continues to warm our coastal oceans, benthic animals may experience prolonged periods of thermal stress as well as changes in both the quality and quantity of their main food source: plankton. Additionally, I am interested in how these communities respond to the introduction of nonnative species through competition for space and resources.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
