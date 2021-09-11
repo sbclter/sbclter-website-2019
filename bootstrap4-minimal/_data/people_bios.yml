@@ -77,7 +77,7 @@
     scientificDomainText: Community assembly, biodiversity, food webs, fishing, global
       change biology
     employeeType: Assistant Professor
-    email: adrian.stier@lifesci.ucsb.edu
+    email: astier@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -405,7 +405,7 @@
     scientificDomainString: Microbial nitrogen cycling
     scientificDomainText: Microbial ecology, nitrogen cycling
     employeeType: 'Assistant Professor '
-    email: 'alyson.santoro@lifesci.ucsb.edu '
+    email: asantoro@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -553,7 +553,7 @@
       activities and disturbance influence plant communities. I have a strong interest
       in the application of ecological knowledge to ecosystem restoration and management. '
     employeeType: Professor
-    email: dantonio@lifesci.ucsb.edu
+    email: dantonio@es.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -856,7 +856,7 @@
     scientificDomainText: marine ecology, ocean acidification, marine protected areas,
       intertidal ecology, science education, biodiversity
     employeeType: Associate Research Biologist
-    email: blanchet@lifesci.ucsb.edu
+    email: blanchet@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
@@ -998,7 +998,7 @@
     commonName: An Bui
     givenName: An
     surName: Bui
-    advisor: Stier, Moeller
+    advisor: Stier and Moeller
     scientificDomainString: Community ecology, functional ecology
     scientificDomainText: Community ecology, functional ecology
     employeeType: Graduate Student
@@ -1064,13 +1064,14 @@
     surName: Clare
     advisor: Hofmann
     scientificDomainString: Ecophysiology and climate change
-    scientificDomainText: ''
+    scientificDomainText: Climate change, fisheries, larval biology, education, science
+      communication, media
     employeeType: Graduate Student
-    email: xochitl.clare@lifesci.ucsb.edu
+    email: xclare@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I am a first generation Latina African American with island heritage--where the importance of life at sea is in our folktales, music, and food. While most of the world's resources come from the sea, we are only recently learning about how climate change poses a threat to all that the ocean gives. I have firsthand experience with socioeconomic barriers associated with interacting with the marine world. However, my background in both marine biology and the performing arts empowers me with insight on how to increase public engagement in marine sciences. After earning both a Theater Arts B.A. & Marine Biology B.S. at the University of California, Santa Cruz (2017), today, in the lab and at sea, as a Ph.D. Candidate in the Hofmann Lab, I investigate how climate change affects important fished species. Using my multicultural background and interdisciplinary lens, I connect with the public to improve our relationship with our blue backyards.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1099,7 +1100,7 @@
     scientificDomainText: 'Kelp forest ecology, predator-prey interactions, fisheries,
       trophic ecology. '
     employeeType: Graduate Student
-    email: bart.difiore@lifesci.ucsb.edu
+    email: bdifiore@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |2+
@@ -1210,7 +1211,7 @@
     commonName: Hayley Goss
     givenName: Hayley
     surName: Goss
-    advisor: Page, Siegel
+    advisor: Page and Siegel
     scientificDomainString: Population genetics
     scientificDomainText: 'Population structure, seascape genetics, larval dispersal,
       connectivity '
@@ -1243,7 +1244,7 @@
     commonName: Karina Johnston
     givenName: Karina
     surName: Johnston
-    advisor: Gaines & Dugan
+    advisor: Gaines and Dugan
     scientificDomainString: Beach & Dune restoration and climate adaptation
     scientificDomainText: Beach & Dune restoration and climate adaptation
     employeeType: Graduate Student
@@ -1263,7 +1264,7 @@
     scientificDomainString: 'Ecophysiology and  plasticity '
     scientificDomainText: 'Ecophysiology and  plasticity '
     employeeType: Graduate Student
-    email: logan.kozal@lifesci.ucsb.edu
+    email: logankozal@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -1279,7 +1280,7 @@
     scientificDomainString: Fish ecophysiology and plasticity
     scientificDomainText: ''
     employeeType: Graduate Student
-    email: krista.kraskura@lifesci.ucsb.edu
+    email: kkraskura@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -1328,7 +1329,7 @@
     scientificDomainText: Sea urchin ecology, focusing on the impact of fishing and
       marine reserves on dominant urchin species in the Santa Barbara Chanel.
     employeeType: Graduate Student
-    email: katrina.malakhoff@lifesci.ucsb.edu
+    email: kmalakhoff@ucsb.edu
     postalAddress: ''
     profileText: |
       I am exploring how the population dynamics of sea urchins influences the ecology of kelp forests in the Santa Barbara area.  Through a combination of statistical analysis, dynamical modeling, feeding assays, and physiological experiments, my work aims to quantify the impact of changes in red and purple sea urchin populations and consumption patterns.  I am interested in the differences between red sea urchins, which are harvested by a large local fishery, and purple sea urchins which are generally not fished.  The SBC-LTER dataset contains extensive information on sea urchin populations which is essential to my research goals.
@@ -1373,7 +1374,7 @@
     commonName: Joey Peters
     givenName: Joey
     surName: Peters
-    advisor: Burkepile, Reed
+    advisor: Burkepile and Reed
     scientificDomainString: Kelp forest ecology
     scientificDomainText: ''
     employeeType: Graduate Student
@@ -1482,7 +1483,7 @@
       to Dr. Debora Iglesias-Rodriguez (Biological Oceanography), I am also advised
       on environmental history and historical ecology by Dr. Jennifer Martin. '
     employeeType: Graduate Student
-    email: zoe.welch@lifesci.ucsb.edu
+    email: zwelch@.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -1529,7 +1530,7 @@
     advisor: ''
     scientificDomainString: Oceanographic Sampling and Data Analysis
     scientificDomainText: ''
-    employeeType: ''
+    employeeType: Research Staff
     email: 'ja_jones@lifesci.ucsb.edu '
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
@@ -1562,7 +1563,7 @@
     scientificDomainString: Reef Sampling and field coordinator
     scientificDomainText: ''
     employeeType: Staff Research Associate
-    email: clint.nelson@lifesci.ucsb.edu
+    email: scubaclint@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
