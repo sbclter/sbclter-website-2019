@@ -14,148 +14,103 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 -->
 
 <div id="main-container">
+	
+	<div class="row">
+		<div class="col-md-8">
+			<p>SBC LTER's K12 program, Schoolyard LTER (sLTER), focuses on science and environmental education for both students and teachers using SBC research themes to improve ocean science literacy. These themes provide for the integrated development of programs and content that are aligned with the Next Generation Science Standards (NGSS) and Common Core. </p>
+		</div>
+		<div class="col-md-4">
+			<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/ngss_logo.png"  alt="NGSS Logo" />
+		</div>
+	</div> <!-- closes row -->
 
-<div class="row">
- <div class="col-md-8">
+	<div class="row">
+		<div class="col-md-6">
+			<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/IMG_0938-REEF-web.png" alt="From 2, to 2,000, gallons, The REEF has Temperate and Tropical aquaria and touch tanks to explore an Ocean View of the World." style="float:right;" />
+		</div>
+		<div class="col-md-6">
+			<p>Our K12 program is coordinated through <a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a>, part of the Marine Science Institute’s (MSI) Oceans-to-Classrooms (O2C) education and outreach program. Equipped with state-of-the-art touch tanks and aquaria, The REEF provides an “Ocean View of the World” for students in Southern California.</p>
+			<p>The SBC LTER Schoolyard program supports K-12 education in several ways: 
+				<ul>
+					<li>Activities on the UCSB campus</li>
+					<li>Visits to the classroom</li>
+					<li>Professional development for teachers</li>
+					<li>Online and printed materials</li>
+				</ul>
+			</p> 
+		</div> 
+	</div> <!-- closes row -->
 
-<!-- <h2>sub header</h2> --> 
-<!--
-    <img class="featurette-image img-responsive center-block" src="/assets/img/avatar.png"  alt="Generic placeholder image" style="float:right; size:80%; PADDING-LEFT: 15px" />
--->
+		<!-- divider, followed by 3 "for" sections -->
 
-   <p>SBC LTER's K12 program, Schoolyard LTER (sLTER), focuses on science and environmental education for both students and teachers using SBC research themes to improve ocean science literacy. These themes provide for the integrated development of programs and content that are aligned with the Next Generation Science Standards (NGSS). </p>
+	<div class="row">
+	 	<div class="col-md-12">
+	 	   <hr/>
+	 	</div>
+	</div> <!-- close row -->
+	
+	<div class="row">
+		<div class="col-md-4">
+		 	<h2>For K12 Students</h2>
+			<p>We use SBC LTER data to provide rich, place-based hands-on content to support learning in classrooms and after school programs. Grade-specific content is designed by SBC LTER's education coordinator with undergraduate and graduate students, and researchers.</p>
+		</div>
 
+		<div class="col-md-4">
+		 	<h2>For Teachers</h2> 
+			<p>Today's students are facing issues of literacy, and environmental and social justice, and our resources for teachers keep that in mind. Professional development for teachers uses their experience and expertise in 2-way exchanges that provide teachers with rich research experiences and students with a better understanding of today's classrooms</p>
+		</div>
+	 	<div class="col-md-4">
+			<h2>For the Public</h2> 
+			<p><a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a> (always free) is open to the public on Fridays and Saturdays. </p>
+			<p>At community events like Earth Day, Summer Solstice, and the Harbor Festival, we hold hands-on events and exhibits.</p>
+			<p>Many local school host "Family Science Night" where our scientists and students organize specific events.</p> 
+		</div>
+	</div> <!-- closes div class row -->
+		<!-- possibly could add a clear here instead of row. see getbootstrap.com/docs/ examples grid -->
 
+	<div class="row">
+	 	<div class="col-md-12">
+	 	   <hr/>
+	 	</div>
+	</div> <!-- close row -->
+
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Resources</h2>
+			<p>[[embedded graphic of the 4 quadrats.]]<a href="">Educational resources</a> are organized around four primary domains: the Watersheds, Beaches, Oceans and Harbor. In addition to classroom cirricula, we offer books and multimedia resources. </p>   
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Partnerships</h2>
+		</div>
+		<div class="col-md-6">
+			<h3>At UCSB</h3>
+			<p>
+				<ul>
+					<li>Marine Science Institute</li>
+					<li>Gevirtz Graduate School of Education</li>
+					<li>Office of Education Partnerships</li>
+					<li>Office of the Registrar</li>
+					<li>Department of Ecology, Evolution and Marine Biology</li>
+				</ul> 
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>In the Community</h3>
+			<p>
+				<ul>
+					<li>Santa Barbara County Education Office</li>
+					<li>Santa Barbara Unified School District</li>
+					<li>Harding University Partnership School</li>
+					<li>American Association of University Women</li>
+					<li>Channel Islands National Marine Sanctuary</li>
+					<li>Santa Barbara ChannelKeepers</li>
+					<li>Pinhead Institute</li>
+				</ul> 
+			</p>
+		</div>
+	</div> <!-- closes partnerships row -->
+		
 </div>
- <div class="col-md-4">
-
-<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/ngss_logo.png"  alt="NGSS Logo" />
-
-</div> <!-- closes row -->
-
-<div class="row">
-<div class="col-md-6">
-<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/IMG_0938-REEF-web.png" alt="From 2, to 2,000, gallons, The REEF has Temperate and Tropical aquaria and touch tanks to explore an Ocean View of the World." style="float:right;" />
-<!-- 
-<img class="img-thumbnail img-responsive img-center" src="/assets/img/avatar.png"  alt="Generic placeholder image" style="float:right;" /> -->
-
- <!--    <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/EarthDay2018.jpg"  alt="Earth Day, 2018" /> -->
-
-<!-- <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/kids_tank_480.jpg"  alt="Undergraduate docents lead tours of The REEF" /> -->
- </div>
- <div class="col-md-6">
-
-<p>Our K12 program is coordinated through <a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a>, part of the Marine Science Institute’s (MSI) Oceans-to-Classrooms (O2C) education and outreach program. Equipped with state-of-the-art touch tanks and aquaria, The REEF provides an “Ocean View of the World” for students in Southern California.</p>
-
-  <p>The SBC LTER Schoolyard program supports K-12 education in several ways: 
-        <ul>
-        <li>Activities on the UCSB campus</li>
-        <li>Visits to the classroom</li>
-        <li>Professional development for teachers</li>
-        <li>Online and printed materials</li>
-        </ul>
-  </p>           
-        
- </div>
- 
-</div> <!-- closes row -->
-
-
-<div  class="row">
-   <div class='col-md-12'>
-       <p>this is a col-md-12</p>
-    <hr/>
-   </div>
-</div>
-
-<div  class="row">
-   <div class='col-md-4'>
-    <hr/>
-    <p>asfdff</p>
-   </div>
-</div>
-
-<div  class="row">
-   <div class='col-md-4'>
-    <hr/>
-        <p>qwerqwer</p>
-
-   </div>
-</div>
-
-<div  class="row">
-   <div class='col-md-4'>
-    <hr/>
-        <p>ityuityuio</p>
-
-   </div>
-</div>
-
-
-<div class="row">
-
-
-          <div class="col-md-4">
-           <p>Sample col with a list </p>
-            <ul>
-                <li>list 1</li>
-                <li>list 2</li>
-                <li>list 3</li>
-                <li>list 4</li>
-            </ul>
-          </div>
-
-          <div class="col-md-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum.
-            </p>
-          </div>
-</div> <!-- closes div class row -->
-
-
-
-
-    
-    <!-- possibly could add a clear here instead of row. see getbootstrap.com/docs/ examples grid -->
-    
-    <div class="row"> 
-        <div class="col-md-4">
-           <p>this is a new row  </p>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
-            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
-            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id 
-            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-            id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor 
-            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-            saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque 
-            earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
-            alias consequatur aut perferendis doloribus asperiores repellat.
-          </p>
-        </div>
-
-       <div class="col-md-8">
-       <p>block has text with an image below. </p>
-       
-    <img class="featurette-image img-responsive center-block" src="/assets/img/avatar.png"  alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />       
-     </div>
-     
-        <hr />
-        
-        <div>
-        <img class="featurette-image img-responsive center-block" src="/assets/img/avatar.png" alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />
-        <p>Example of a section with a float-right image. size is fixed.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-anim id est laborum.</p>
-        </div>
-        
-     
-    </div>

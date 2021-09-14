@@ -19,13 +19,13 @@ description: page description here.
             
             <p>Collaborations include</p>
             <ul>
+                <li>The REEF at MSI</li>
+                <li>UCSB Departments and Research Units in Natural Sciences</li>
+                <li>Multiple LTER sites</li>
+                <li>Santa Barbara, Ventura County schools</li>
                 <li>American Association of University Women</li>
                 <li>Ocean Education Trust, NautilusLive!</li>
-                <li>Multiple LTER sites</li>
-                <li>Santa Barbara 6th Grades, Ventura County middle school</li>
-                <li>UCSB Departments and Research Units in Natural Sciences</li>
-                <li>The REEF at MSI (Research Experience & Education Facility)</li>
-                      </ul>
+          	 </ul>
           </blockquote>  
            <!--
               <p class="text-center"><a href="{{page.url}}/schoolyard">link to schoolyard page.</a></p>  
@@ -46,22 +46,35 @@ description: page description here.
         </div>
 
 <!-- three ed areas here -->
+		<!-- create a separate row for titles so they stay at a uniform height. -->
+		<div class="row">
+	        <div class="col-md-4">
+	            <h3>Schoolyard LTER and K12 Education</h3>
+			</div>
+	        <div class="col-md-4">
+	            <h3>Undergraduate Education</h3>
+			</div>
+	        <div class="col-md-4">
+	            <h3>Graduate and Postdoctoral Training</h3>
+			</div>
+		</div>
 	<div class="row">
         <div class="col-md-4">
-            <h3>Schoolyard LTER and K-12 Education</h3>
+            <!-- <h3>Schoolyard LTER and <br/>K-12 Education</h3> -->
             <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/kids_tank_480.jpg"  alt="Undergraduate docents lead tours of The REEF" />
         <p>SBC LTER's K-12 program focuses on environmental education for student and teachers, 
         using SBC research themes to development of ocean science literacy. Lessons focus on events that influence ecosystems which can be infrequent and often unpredictable. </p>
        
         <p>SBC LTER collaborates with <a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a>, 
-        UCSB’s educational marine aquarium facility. 
+        UCSB’s educational marine aquarium facility.  
         We work with teachers in professional development workshops and in their classrooms to 
         improve student understanding of key environmental concepts, including ocean circulation, 
         weather, and potential influences on biodiversity.  </p>
+		<p><a href="{{site.baseurl}}/education/schoolyard">Read more ...</a></p>
        
         </div>   
         <div class="col-md-4">
-            <h3>Undergraduate Education</h3>
+           <!--  <h3>Undergraduate Education</h3> -->
             <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/SEEDS07Beachactivity.jpg"  alt="Students at a beach transect" />
 
             <p>SBC’s undergraduate education program includes research and science education 
@@ -72,23 +85,26 @@ description: page description here.
             management and analysis. Students also have access to
             our Research Experience for Undergraduates (REU) program and 
             several other mentorship programs sponsored by the University.</p>
+			<p><a href="{{site.baseurl}}/education/undergrad">Read more ...</a></p>
+			
             <!-- REU 
             students work closely with SBC researchers on a wide range of topics and most choose 
             to pursue an advanced degree following their undergraduate education -->
 
         </div>
         <div class="col-md-4">
-            <h3>Graduate and Postdoctoral Training</h3>
+         <!--   <h3>Graduate and Postdoctoral Training</h3> -->
                             <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/CalifLTERGradSympFeb4_1000px.jpg"  alt="Generic placeholder image" />
              <p>Graduate and postdoctoral scholars from a range of disciplines are 
               actively involved in all aspects of research. Our interdisciplinary 
                research examining the response of coastal ecosystems to natural and human-induced 
                 alterations enables valuable cross-training on diverse aspects of science and its 
                 communcation.
-              Exposure 
-            to Network science is achieved by a student-organized California LTER Graduate Student Symposium 
-            held annually with CCE and MCR. This well-attended symposium has been popular with our graduate 
+              Local networking is ehanced by a student-organized California LTER Graduate Student Symposium 
+            organized with CCE and MCR. This well-attended symposium has been popular with our graduate 
             students as an informal venue to share their work and ideas with students from other LTER sites. </p>
+			<p><a href="{{site.baseurl}}/education/grad_postdoc">Read more ...</a></p>
+			
             <!-- Annually, SBC investigators teach a 10-week course focused on major research themes. -->
         </div>
 
