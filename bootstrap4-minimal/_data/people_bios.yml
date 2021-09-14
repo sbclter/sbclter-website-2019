@@ -77,7 +77,7 @@
     scientificDomainText: Community assembly, biodiversity, food webs, fishing, global
       change biology
     employeeType: Assistant Professor
-    email: adrian.stier@lifesci.ucsb.edu
+    email: astier@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -229,6 +229,22 @@
       of California<br />Santa Barbara CA 93106
     profileText: |
       I investigate the population structure and dynamics of phytoplankton populations in the context of environmental change. A special research focus of my lab has been the coccolithophore species Emiliania huxleyi, which is central to the Earth's precipitation of calcium carbonate, the most important carbon reservoir in our planet. We study the genetic, functional and ecological diversity of coccolithophores in the SBC to improve our representation of populations in the modern ocean, and to build robust predictions in future climate scenarios. Our work has paid special attention to the effect of ocean acidification on the growth and calcification of coccolithophores, and more recently to the impact of oil spills on the physiology of phytoplankton, including neurotoxin production by diatoms. The NSF-funded flow cytometry facility enables monitoring the population structure and isolating phytoplankton cells from natural populations, and the NSF-funded titration system is used in our lab to determine seawater alkalinity using LTER and PnBs monthly sampling. My team conducts molecular, physiological and biogeochemical analysis both in the lab and in the field
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Investigator
+  - databaseID: tlamy
+    commonName: Thomas Lamy
+    givenName: Thomas
+    surName: Lamy
+    advisor: ''
+    scientificDomainString: Marine biodiversity
+    scientificDomainText: ''
+    employeeType: ''
+    email: thomas.lamy27@gmail.com
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |2+
+
     homepage: ''
     telephoneNumber: ''
     projectRole: Investigator
@@ -389,7 +405,7 @@
     scientificDomainString: Microbial nitrogen cycling
     scientificDomainText: Microbial ecology, nitrogen cycling
     employeeType: 'Assistant Professor '
-    email: 'alyson.santoro@lifesci.ucsb.edu '
+    email: asantoro@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -537,7 +553,7 @@
       activities and disturbance influence plant communities. I have a strong interest
       in the application of ecological knowledge to ecosystem restoration and management. '
     employeeType: Professor
-    email: dantonio@lifesci.ucsb.edu
+    email: dantonio@es.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -627,22 +643,6 @@
       My students and I conduct studies of kelp forest community ecology, with a particular emphasis on the effects of physical disturbances and biotic interactions on community structure.  I am particularly interested in the effects of habitat structure on species interactions.  I am also coordinating efforts to bring real-time marine environmental sensing to the project.  This is a collaborative project between the Moorea Coral Reef LTER (of which I am a Co-PI), the SBC LTER and UC San Diego, along with international partners in Australia and Taiwan.  Initial deployments of key instrumentation have been made at the SBC site (at Stearns Wharf)
     homepage: https://www.eemb.ucsb.edu/people/faculty/holbrook/
     telephoneNumber: 805-893-3956
-    projectRole: Project Affiliated Investigator
-  - databaseID: tlamy
-    commonName: Thomas Lamy
-    givenName: Thomas
-    surName: Lamy
-    advisor: ''
-    scientificDomainString: Marine biodiversity
-    scientificDomainText: ''
-    employeeType: ''
-    email: thomas.lamy27@gmail.com
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
     projectRole: Project Affiliated Investigator
   - databaseID: jmcwilliams
     commonName: Jim McWilliams
@@ -856,7 +856,7 @@
     scientificDomainText: marine ecology, ocean acidification, marine protected areas,
       intertidal ecology, science education, biodiversity
     employeeType: Associate Research Biologist
-    email: blanchet@lifesci.ucsb.edu
+    email: blanchet@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
@@ -998,7 +998,7 @@
     commonName: An Bui
     givenName: An
     surName: Bui
-    advisor: Stier, Moeller
+    advisor: Stier and Moeller
     scientificDomainString: Community ecology, functional ecology
     scientificDomainText: Community ecology, functional ecology
     employeeType: Graduate Student
@@ -1016,13 +1016,13 @@
     surName: Carberry
     advisor: Nidzieko
     scientificDomainString: Physical oceanography and phytoplankton
-    scientificDomainText: ''
+    scientificDomainText: Physical oceanography and phytoplankton
     employeeType: Graduate Student
     email: lcarberry@ucsb.edu
     postalAddress: Earth Research Institute<br />University of California<br />Santa
       Barbara CA 93106-3060
-    profileText: |2+
-
+    profileText: |
+      My research is focused on understanding how marine phytoplankton interact with physical forcings across time and space scales. In particular, I am interested in studying the way that biophysical interactions on small space and short time scales (those relevant to phytoplankton) impact basin-wide variability in phytoplankton abundance. In the Coastal Oceanography and Autonomous Systems (COAST) Lab, we use autonomous underwater vehicles to study these biophysical interactions at high resolution in order to understand the importance of their scalar variability to the whole ocean.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1032,13 +1032,13 @@
     surName: Cavanaugh
     advisor: Cavanaugh
     scientificDomainString: Remote sensing
-    scientificDomainText: ''
+    scientificDomainText: Remote Sensing
     employeeType: Graduate Student
     email: kccavanaugh@g.ucla.edu
     postalAddress: Department of Geography<br />University of California<br />Los Angeles
       CA 90095
-    profileText: |2+
-
+    profileText: |
+      I am a graduate student in Kyle Cavanaugh’s lab at UCLA (we’re not related!) and am interested in using different remote sensing platforms to study the spatiotemporal responses of giant kelp and bull kelp to a variety of climatic stressors across multiple scales. I am currently working on distinguishing these two species using a fusion of remote sensing data.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1064,13 +1064,14 @@
     surName: Clare
     advisor: Hofmann
     scientificDomainString: Ecophysiology and climate change
-    scientificDomainText: ''
+    scientificDomainText: Climate change, fisheries, larval biology, education, science
+      communication, media
     employeeType: Graduate Student
-    email: xochitl.clare@lifesci.ucsb.edu
+    email: xclare@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I am a first generation Latina African American with island heritage--where the importance of life at sea is in our folktales, music, and food. While most of the world's resources come from the sea, we are only recently learning about how climate change poses a threat to all that the ocean gives. I have firsthand experience with socioeconomic barriers associated with interacting with the marine world. However, my background in both marine biology and the performing arts empowers me with insight on how to increase public engagement in marine sciences. After earning both a Theater Arts B.A. & Marine Biology B.S. at the University of California, Santa Cruz (2017), today, in the lab and at sea, as a Ph.D. Candidate in the Hofmann Lab, I investigate how climate change affects important fished species. Using my multicultural background and interdisciplinary lens, I connect with the public to improve our relationship with our blue backyards.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1099,7 +1100,7 @@
     scientificDomainText: 'Kelp forest ecology, predator-prey interactions, fisheries,
       trophic ecology. '
     employeeType: Graduate Student
-    email: bart.difiore@lifesci.ucsb.edu
+    email: bdifiore@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |2+
@@ -1210,15 +1211,16 @@
     commonName: Hayley Goss
     givenName: Hayley
     surName: Goss
-    advisor: Page, Siegel
+    advisor: Page and Siegel
     scientificDomainString: Population genetics
-    scientificDomainText: 'Genetic structure of rock scallops in the Santa Barbara Channel '
+    scientificDomainText: 'Population structure, seascape genetics, larval dispersal,
+      connectivity '
     employeeType: Graduate Student
     email: hgoss@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |2+
-
+    profileText: |
+      I am interested in understanding the main drivers of ecological connectivity in the Santa Barbara Channel. Currently, my research uses a mix of modeling data and genetic techniques to investigate the potential drivers of genetic structure in the rock scallop Crassadoma gigas.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1242,7 +1244,7 @@
     commonName: Karina Johnston
     givenName: Karina
     surName: Johnston
-    advisor: Gaines & Dugan
+    advisor: Gaines and Dugan
     scientificDomainString: Beach & Dune restoration and climate adaptation
     scientificDomainText: Beach & Dune restoration and climate adaptation
     employeeType: Graduate Student
@@ -1262,7 +1264,7 @@
     scientificDomainString: 'Ecophysiology and  plasticity '
     scientificDomainText: 'Ecophysiology and  plasticity '
     employeeType: Graduate Student
-    email: logan.kozal@lifesci.ucsb.edu
+    email: logankozal@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -1278,7 +1280,7 @@
     scientificDomainString: Fish ecophysiology and plasticity
     scientificDomainText: ''
     employeeType: Graduate Student
-    email: krista.kraskura@lifesci.ucsb.edu
+    email: kkraskura@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -1292,13 +1294,13 @@
     surName: Leach
     advisor: Hofmann
     scientificDomainString: 'Ecophysiology and adaptation '
-    scientificDomainText: ''
+    scientificDomainText: Ecophysiology and developmental biology
     employeeType: Graduate Student
     email: tleach@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
+    profileText: |
+      I joined the Hofmann lab in 2016 with an interest in exploring how marine organisms respond to environmental stress induced by climate change. My current research focuses on how environmental stress experienced by marine invertebrates in the Santa Barbara Channel alters their reproduction and the subsequent development of their offspring. Understanding the degree in which different species can reproduce and develop successfully under stress induced by ocean warming and acidification, for example, is crucial for making models and/or predictions about how populations in the Santa Barbara Channel will fare under future climatic change. For this research I have mainly utilized the ecologically relevant purple sea urchin (Strongylocentrotus purpuratus), a key player in our coastal kelp forest ecosystem.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1327,10 +1329,10 @@
     scientificDomainText: Sea urchin ecology, focusing on the impact of fishing and
       marine reserves on dominant urchin species in the Santa Barbara Chanel.
     employeeType: Graduate Student
-    email: katrina.malakhoff@lifesci.ucsb.edu
+    email: kmalakhoff@ucsb.edu
     postalAddress: ''
-    profileText: |2+
-
+    profileText: |
+      I am exploring how the population dynamics of sea urchins influences the ecology of kelp forests in the Santa Barbara area.  Through a combination of statistical analysis, dynamical modeling, feeding assays, and physiological experiments, my work aims to quantify the impact of changes in red and purple sea urchin populations and consumption patterns.  I am interested in the differences between red sea urchins, which are harvested by a large local fishery, and purple sea urchins which are generally not fished.  The SBC-LTER dataset contains extensive information on sea urchin populations which is essential to my research goals.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1358,13 +1360,13 @@
     surName: Michaud
     advisor: Miller
     scientificDomainString: 'Benthic Community Ecology '
-    scientificDomainText: ''
+    scientificDomainText: 'Benthic Community Ecology '
     employeeType: Graduate Student
     email: kmmichaud@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
-    profileText: |2+
-
+    profileText: |
+      I am a PhD student working with Bob Miller. I am investigating how the benthic suspension feeding community within kelp forests responds to both abiotic and biotic stressors such as thermal stress, food limitation, and competition. As anthropogenic climate change continues to warm our coastal oceans, benthic animals may experience prolonged periods of thermal stress as well as changes in both the quality and quantity of their main food source: plankton. Additionally, I am interested in how these communities respond to the introduction of nonnative species through competition for space and resources.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1372,7 +1374,7 @@
     commonName: Joey Peters
     givenName: Joey
     surName: Peters
-    advisor: Burkepile, Reed
+    advisor: Burkepile and Reed
     scientificDomainString: Kelp forest ecology
     scientificDomainText: ''
     employeeType: Graduate Student
@@ -1481,7 +1483,7 @@
       to Dr. Debora Iglesias-Rodriguez (Biological Oceanography), I am also advised
       on environmental history and historical ecology by Dr. Jennifer Martin. '
     employeeType: Graduate Student
-    email: zoe.welch@lifesci.ucsb.edu
+    email: zwelch@.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -1528,7 +1530,7 @@
     advisor: ''
     scientificDomainString: Oceanographic Sampling and Data Analysis
     scientificDomainText: ''
-    employeeType: ''
+    employeeType: Research Staff
     email: 'ja_jones@lifesci.ucsb.edu '
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
@@ -1561,7 +1563,7 @@
     scientificDomainString: Reef Sampling and field coordinator
     scientificDomainText: ''
     employeeType: Staff Research Associate
-    email: clint.nelson@lifesci.ucsb.edu
+    email: scubaclint@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
