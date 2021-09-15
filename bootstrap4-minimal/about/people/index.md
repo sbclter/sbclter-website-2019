@@ -37,7 +37,7 @@ page_css:
 category_labels:
   Project Lead Investigator: Project Lead Investigator
   Project Co-Investigator: Project Co-Investigators
-  Investigator: Investigators
+  Investigator: Associate Investigators
   Project Affiliated Investigator: Affiliated Investigators
   Project Coordinator: Project Coordination
   Information Manager: Information Management
