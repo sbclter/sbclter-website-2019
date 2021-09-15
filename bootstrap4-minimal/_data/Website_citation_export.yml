@@ -19,6 +19,20 @@
     citation: |
       Castorani, M. C. N., Harrer, S. L., Miller, R. J., Reed, D. C. (2021). Disturbance structures canopy and understory productivity along an environmental gradient. Ecology Letters. DOI: 10.1111/ele.13849
     author: ''
+  - sbc_id: 1497
+    year: '2021'
+    category: Article
+    hyperlink: https://doi.org/10.1016/j.pocean.2021.102637
+    citation: |
+      Catlett, D., Siegel, D. A., Simons, R. D., Guillocheau, N., Henderikx-Freitas, F., Thomas, C. S. (2021). Diagnosing seasonal to multi-decadal phytoplankton group dynamics in a highly productive coastal ecosystem. Progress in Oceanography. 197:102637. DOI: 10.1016/j.pocean.2021.102637
+    author: ''
+  - sbc_id: 1498
+    year: '2021'
+    category: Article
+    hyperlink: https://doi.org/10.7717/peerj.11865
+    citation: |
+      Catlett, D., Son, K., Liang, C. (2021). ensembleTax: an R package for determinations of ensemble taxonomic assignments of phylogenetically-informative marker gene sequences. PeerJ. 9:e11865. DOI: 10.7717/peerj.11865
+    author: ''
   - sbc_id: 1466
     year: '2021'
     category: Article
@@ -54,6 +68,13 @@
     citation: |
       Emery, K. A., Dugan, J. E., Bailey, R. A., Miller, R. J. (2021). Species identity drives ecosystem function in a subsidy-dependent coastal ecosystem. Oecologia. 196:1195--1206. DOI: 10.1007/s00442-021-05002-w
     author: ''
+  - sbc_id: 1494
+    year: '2021'
+    category: Article
+    hyperlink: https://doi.org/10.1016%2Fj.ecochg.2021.100025
+    citation: |
+      Harms, T. K., Groffman, P. M., Aluwihare, L., Craft, C., Wieder, W. R., Hobbie, S. E., Baer, S. G., Blair, J. M., Frey, S., Remucal, C. K., et al. (2021). Patterns and trends of organic matter processing and transport: Insights from the US Long-Term Ecological Research network. Climate Change Ecology. NA:100025. DOI: 10.1016/j.ecochg.2021.100025
+    author: ''
   - sbc_id: 1408
     year: '2021'
     category: Article
@@ -74,6 +95,13 @@
     hyperlink: https://doi.org/10.1038%2Fs41598-021-93859-5
     citation: |
       Lamy, T., Pitz, K. J., Chavez, F. P., Yorke, C. E., Miller, R. J. (2021). Environmental DNA reveals the fine-grained and hierarchical spatial structure of kelp forest fish communities. Scientific Reports. 11:. DOI: 10.1038/s41598-021-93859-5
+    author: ''
+  - sbc_id: 1496
+    year: '2021'
+    category: Article
+    hyperlink: https://sciencejournalforkids.org/articles/how-can-protecting-lobsters-be-good-for-fishermen/
+    citation: |
+      Lenihan, H. S. (2021). How can protecting lobsters be good for fishermen?. Environmental Science Journal for Teens. NA:NA. NA
     author: ''
   - sbc_id: 1471
     year: '2021'
@@ -144,6 +172,13 @@
     hyperlink: https://doi.org/10.3389%2Ffevo.2020.612794
     citation: |
       Record, S., Voelker, N. M., Zarnetske, P. L., Wisnoski, N. I., Tonkin, J. D., Swan, C., Marazzi, L., Lany, N., Lamy, T., Compagnoni, A., et al. (2021). Novel Insights to Be Gained From Applying Metacommunity Theory to Long-Term, Spatially Replicated Biodiversity Data. Frontiers in Ecology and Evolution. 8:. DOI: 10.3389/fevo.2020.612794
+    author: ''
+  - sbc_id: 1495
+    year: '2021'
+    category: Article
+    hyperlink: https://doi.org/10.3390/w13172402
+    citation: |
+      Swindle, C., Shankin-Clarke, P., Meyerhof, M., Carlson, J., Melack, J. (2021). Effects of Wildfires and Ash Leaching on Stream Chemistry in the Santa Ynez Mountains of Southern California. Water. NA:NA. DOI: 10.3390/w13172402
     author: ''
   - sbc_id: 1482
     year: '2021'
@@ -389,7 +424,7 @@
     hyperlink: https://doi.org/10.1016/j.ecss.2019.02.004
     citation: |
       Lowman, H. E., Emery, K. A., Kubler-Dudgeon, L., Dugan, J. E., Melack, J. M. (2019). Contribution of Macroalgal Wrack Consumers to Dissolved Inorganic Nitrogen Concentrations in Intertidal Pore Waters of Sandy Beaches. Estuarine, Coastal and Shelf Science. 219:363 - 371. DOI: 10.1016/j.ecss.2019.02.004
-    author: Melack, John; Dugan, Jenifer
+    author: Melack, John; Dugan, Jenifer; Lowman, Heili
   - sbc_id: 1336
     year: '2019'
     category: Article
@@ -480,14 +515,14 @@
     hyperlink: https://doi.org/10.3354%2Fmeps12906
     citation: |
       Yorke, C. E., Hanns, B., Shears, N., Page, H. M., Miller, R. J. (2019). Living kelp versus plankton as food sources for suspension feeders. Marine Ecology Progress Series. 614:21--33. DOI: 10.3354/meps12906
-    author: Miller, Robert; Yorke, Christie; Page, Henry
+    author: Miller, Robert; Page, Henry
   - sbc_id: 1343
     year: '2019'
     category: Article
     hyperlink: https://doi.org/10.1098%2Frspb.2019.0846
     citation: |
       Yorke, C. E., Page, H. M., Miller, R. J. (2019). Sea urchins mediate the availability of kelp detritus to benthic consumers. Proceedings of the Royal Society B: Biological Sciences. 286:20190846. DOI: 10.1098/rspb.2019.0846
-    author: Yorke, Christie; Page, Henry; Miller, Robert
+    author: Page, Henry; Miller, Robert
   - sbc_id: 1299
     year: '2018'
     category: Article
@@ -529,7 +564,7 @@
     hyperlink: https://doi.org/10.1002%2F2017jc013195
     citation: |
       Catlett, D., Siegel, D. A. (2018). Phytoplankton Pigment Communities Can Be Modeled Using Unique Relationships With Spectral Absorption Signatures in a Dynamic Coastal Environment. Journal of Geophysical Research: Oceans. 123:246--264. DOI: 10.1002/2017jc013195
-    author: Siegel, David; Catlett, Dylan
+    author: Siegel, David
   - sbc_id: 1233
     year: '2018'
     category: Article
@@ -564,7 +599,7 @@
     hyperlink: 'https://doi.org/10.1111/maec.12470 '
     citation: |
       Freiwald, J., Meye, R., Caselle, J. E., Blanchette, C. A., Hovel, K., Neilson, D., Dugan, J., Altstatt, J., Nielsen, K., Bursek, J., et al. (2018). Citizen Science Monitoring of Marine Protected Areas: Caste Studies and Recommendations for Integration Into Monitoring Programs. Marine Ecology. 39:e12470. DOI: 10.1111/maec.12470
-    author: Caselle, Jen; Blanchette, Carol; Dugan, Jenifer
+    author: Blanchette, Carol; Dugan, Jenifer
   - sbc_id: 1317
     year: '2018'
     category: Article
@@ -606,7 +641,7 @@
     hyperlink: https://doi.org/10.3391%2Fai.2018.13.3.03
     citation: |
       Marks, L., Reed, D., Holbrook, S. (2018). Life History Traits of the Invasive Seaweed Sargassum horneri at Santa Catalina Island, California. Aquatic Invasions. 13:339--350. DOI: 10.3391/ai.2018.13.3.03
-    author: Marks, Lindsay; Reed, Daniel; Holbrook, Sally
+    author: Reed, Daniel; Holbrook, Sally
   - sbc_id: 1285
     year: '2018'
     category: Article
@@ -641,7 +676,7 @@
     hyperlink: https://doi.org/10.1002%2Fecy.2440
     citation: |
       Rassweiler, A., Reed, D. C., Harrer, S. L., Nelson, J. C. (2018). Improved Estimates of Net Primary Production, Growth, and Standing Crop of Macrocystis pyrifera. Ecology. 99:2132--2132. DOI: 10.1002/ecy.2440
-    author: Rassweiler, Andrew; Reed, Daniel; Harrer, Shannon; Nelson, Clint
+    author: Rassweiler, Andrew; Reed, Daniel; Nelson, Clint
   - sbc_id: 1298
     year: '2018'
     category: Article
@@ -669,7 +704,7 @@
     hyperlink: https://doi.org/10.1111%2F1462-2920.14091
     citation: |
       Wear, E. K., Wilbanks, E. G., Nelson, C. E., Carlson, C. A. (2018). Primer Selection Impacts Specific Population Abundances But Not Community Dynamics in a Monthly Time-Series 16S rRNA Gene Amplicon Analysis of Coastal Marine Bacterioplankton. Environmental Microbiology. 20:2709--2726. DOI: 10.1111/1462-2920.14091
-    author: Nelson, Craig; Carlson, Craig
+    author: Carlson, Craig
   - sbc_id: 1291
     year: '2018'
     category: Article
@@ -704,7 +739,7 @@
     hyperlink: https://doi.org/10.1111%2Fele.12869
     citation: |
       Caselle, J. E., Davis, K., Marks, L. M. (2017). Marine Management Affects the Invasion Success of a Non-Native Species in a Temperate Reef System in California, USA. Ecology Letters. 21:43--53. DOI: 10.1111/ele.12869
-    author: Marks, Lindsay
+    author: ''
   - sbc_id: 1231
     year: '2017'
     category: Article
@@ -796,7 +831,7 @@
     hyperlink: https://doi.org/10.3391%2Fmbi.2017.8.2.08
     citation: |
       Marks, L., Reed, D., Obaza, A. (2017). Assessment of Control Methods for the Invasive Seaweed Sargassum Horneri in California, USA. Management of Biological Invasions. 8:205--213. DOI: 10.3391/mbi.2017.8.2.08
-    author: Marks, Lindsay; Reed, Daniel
+    author: Reed, Daniel
   - sbc_id: 1241
     year: '2017'
     category: Article
@@ -810,7 +845,7 @@
     hyperlink: https://doi.org/10.1139%2Fcjfas-2016-0322
     citation: |
       Page, H. M., Cooper, S. D., Wiseman, S. W., Bennett, D., Klose, K., Sadro, S., Nelson, C., Even, T. (2017). Comparisons of Stable Isotope (C, H, N) Signatures for Revealing Organic Matter Sources and Trophic Relationships in Headwater Streams. Canadian Journal of Fisheries and Aquatic Sciences. 74:2110--2121. DOI: 10.1139/cjfas-2016-0322
-    author: Page, Henry; Cooper, Scott; Klose, Kristie
+    author: Page, Henry; Cooper, Scott
   - sbc_id: 1229
     year: '2017'
     category: Article
@@ -901,8 +936,7 @@
     hyperlink: https://doi.org/10.1073%2Fpnas.1606102113
     citation: |
       Krumhansl, K. A., Okamoto, D. K., Rassweiler, A., Novak, M., Bolton, J. J., Cavanaugh, K. C., Connell, S. D., Johnson, C. R., Konar, B., Ling, S. D., et al. (2016). Global Patterns of Kelp Forest Change Over the Past Half-Century. Proceedings of the National Academy of Sciences. 113:13785--13790. DOI: 10.1073/pnas.1606102113
-    author: Okamoto, Daniel; Rassweiler, Andrew; Cavanaugh, Kyle; Reed, Daniel; Byrnes,
-      Jarrett
+    author: Okamoto, Daniel; Rassweiler, Andrew; Cavanaugh, Kyle; Reed, Daniel
   - sbc_id: 1226
     year: '2016'
     category: Article
@@ -951,7 +985,7 @@
     hyperlink: https://doi.org/10.1007%2Fs00227-016-2879-x
     citation: |
       Reed, D. C., Nelson, J. C., Harrer, S. L., Miller, R. J. (2016). Estimating Biomass of Benthic Kelp Forest Invertebrates from Body Size and Percent Cover Data. Marine Biology. 163:. DOI: 10.1007/s00227-016-2879-x
-    author: Reed, Daniel; Nelson, Clint; Harrer, Shannon; Miller, Robert
+    author: Reed, Daniel; Nelson, Clint; Miller, Robert
   - sbc_id: 1024
     year: '2016'
     category: Article
@@ -967,7 +1001,7 @@
     citation: |
       Reed, D., Washburn, L., Rassweiler, A., Miller, R., Bell, T., Harrer, S. (2016). Extreme Warming Challenges Sentinel Status of Kelp Forests As Indicators of Climate Change. Nature Communications. 7:. DOI: 10.1038/ncomms13757
     author: Reed, Daniel; Washburn, Libe; Rassweiler, Andrew; Miller, Robert; Bell,
-      Tom; Harrer, Shannon
+      Tom
   - sbc_id: 1159
     year: '2016'
     category: Article
@@ -1037,7 +1071,7 @@
     hyperlink: https://doi.org/10.3354%2Fmeps11157
     citation: |
       Berriman, J., Kay, M., Reed, D., Rassweiler, A., Goldstein, D., Wright, W. (2015). Shifts in Attack Behavior of an Important Kelp Forest Predator Within Marine Reserves. Marine Ecology Progress Series. 522:193--201. DOI: 10.3354/meps11157
-    author: Kay, Matt; Reed, Daniel; Rassweiler, Andrew
+    author: Reed, Daniel; Rassweiler, Andrew
   - sbc_id: 1083
     year: '2015'
     category: Article
@@ -1101,7 +1135,7 @@
     hyperlink: https://doi.org/10.7717%2Fpeerj.719
     citation: |
       Foster, M. C., Byrnes, J. E. K., Reed, D. C. (2015). Effects of Five Southern California Macroalgal Diets on Consumption, Growth, and Gonad Weight, in the Purple Sea Urchin (Strongylocentrotus purpuratus). PeerJ. 3:e719. DOI: 10.7717/peerj.719
-    author: Byrnes, Jarrett; Reed, Daniel
+    author: Reed, Daniel
   - sbc_id: 1068
     year: '2015'
     category: Article
@@ -1143,7 +1177,7 @@
     hyperlink: https://doi.org/10.3391%2Fbir.2015.4.4.02
     citation: |
       Marks, L., Salinas-Ruiz, P., Reed, D., Holbrook, S., Culver, C., Engle, J., Kushner, D., Caselle, J., Freiwald, J., Williams, J., et al. (2015). Range Expansion of a Non-Native, Invasive Macroalga Sargassum horneri (Turner) C. Agardh, 1820 in the Eastern Pacific. BioInvasions Records. 4:243--248. DOI: 10.3391/bir.2015.4.4.02
-    author: Marks, Lindsay; Reed, Daniel; Holbrook, Sally
+    author: Reed, Daniel; Holbrook, Sally
   - sbc_id: 1073
     year: '2015'
     category: Article
@@ -1164,8 +1198,8 @@
     hyperlink: https://doi.org/10.1002%2Flno.10154
     citation: |
       Reed, D. C., Carlson, C. A., Halewood, E. R., Nelson, J. C., Harrer, S. L., Rassweiler, A., Miller, R. J. (2015). Patterns and Controls of Reef-Scale Production of Dissolved Organic Carbon by Giant Kelp (Macrocystis pyrifera). Limnology and Oceanography. 60:1996--2008. DOI: 10.1002/lno.10154
-    author: Reed, Daniel; Carlson, Craig; Halewood, Elisa; Nelson, Clint; Harrer, Shannon;
-      Rassweiler, Andrew; Miller, Robert
+    author: Reed, Daniel; Carlson, Craig; Halewood, Elisa; Nelson, Clint; Rassweiler,
+      Andrew; Miller, Robert
   - sbc_id: 1142
     year: '2015'
     category: Article
@@ -1200,7 +1234,7 @@
     hyperlink: https://doi.org/10.1016%2Fj.dsr.2015.02.002
     citation: |
       Simons, R. D., Nishimoto, M. M., Washburn, L., Brown, K. S., Siegel, D. A. (2015). Linking Kinematic Characteristics and High Concentrations of Small Pelagic Fish in a Coastal Mesoscale Eddy. Deep Sea Research Part I: Oceanographic Research Papers. 100:34--47. DOI: 10.1016/j.dsr.2015.02.002
-    author: Simons, Rachel; Nishimoto, Mary; Washburn, Libe; Siegel, David
+    author: Simons, Rachel; Washburn, Libe; Siegel, David
   - sbc_id: 1067
     year: '2015'
     category: Article
@@ -1277,7 +1311,7 @@
     hyperlink: https://doi.org/10.1111%2Ffwb.12523
     citation: |
       Cooper, S. D., Page, H. M., Wiseman, S. W., Klose, K., Bennett, D., Even, T., Sadro, S., Nelson, C. E., Dudley, T. L. (2014). Physicochemical and Biological Responses of Streams to Wildfire Severity in Riparian Zones. Freshwater Biology. 60:2600--2619. DOI: 10.1111/fwb.12523
-    author: Cooper, Scott; Page, Henry; Klose, Kristie; Nelson, Craig
+    author: Cooper, Scott; Page, Henry
   - sbc_id: 1009
     year: '2014'
     category: Article
@@ -1396,15 +1430,15 @@
     hyperlink: https://doi.org/10.5670%2Foceanog.2013.53
     citation: |
       Brzezinksi, M., Reed, D., Harrer, S., Rassweiler, A., Melack, J., Goodridge, B., Dugan, J. (2013). Multiple Sources and Forms of Nitrogen Sustain Year-Round Kelp Growth on the Inner Continental Shelf of the Santa Barbara Channel. Oceanography. 26:114--123. DOI: 10.5670/oceanog.2013.53
-    author: Brzezinski, Mark; Reed, Daniel; Harrer, Shannon; Rassweiler, Andrew; Melack,
-      John; Dugan, Jenifer
+    author: Brzezinski, Mark; Reed, Daniel; Rassweiler, Andrew; Melack, John; Dugan,
+      Jenifer
   - sbc_id: 899
     year: '2013'
     category: Article
     hyperlink: https://doi.org/10.1890%2F11-2310.1
     citation: |
       Byrnes, J. E. K., Cardinale, B. J., Reed, D. C. (2013). Interactions Between Sea Urchin Grazing and Prey Diversity on Temperate Rocky Reef Communities. Ecology. 94:1636--1646. DOI: 10.1890/11-2310.1
-    author: Byrnes, Jarrett; Reed, Daniel
+    author: Reed, Daniel
   - sbc_id: 814
     year: '2013'
     category: Article
@@ -1446,7 +1480,7 @@
     hyperlink: https://doi.org/10.1111%2Fjpy.12023
     citation: |
       Harrer, S. L., Reed, D. C., Holbrook, S. J., Miller, R. J. (2013). Patterns and Controls of the Dynamics of Net Primary Production by Understory Macroalgal Assemblages in Giant Kelp Forests. Journal of Phycology. 49:248--257. DOI: 10.1111/jpy.12023
-    author: Harrer, Shannon; Reed, Daniel; Miller, Robert; Holbrook, Sally
+    author: Reed, Daniel; Miller, Robert; Holbrook, Sally
   - sbc_id: 902
     year: '2013'
     category: Article
@@ -1530,7 +1564,7 @@
     hyperlink: https://doi.org/10.1890%2F12-0295.1
     citation: |
       Nelson, C. E., Bennett, D. M., Cardinale, B. J. (2013). Consistency and Sensitivity of Stream Periphyton Community Structural and Functional Responses to Nutrient Enrichment. Ecological Applications. 23:159--173. DOI: 10.1890/12-0295.1
-    author: Nelson, Craig
+    author: ''
   - sbc_id: 855
     year: '2013'
     category: Article
@@ -1607,14 +1641,14 @@
     hyperlink: https://doi.org/10.1111%2Fconl.12073
     citation: |
       Wilson, J. R., Valencia, S. R., Kay, M. C., Lenihan, H. S. (2013). Integration of No-Take Marine Reserves in the Assessment of Data-Limited Fisheries. Conservation Letters. 7:451--458. DOI: 10.1111/conl.12073
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 1014
     year: '2013'
     category: Article
     hyperlink: https://doi.org/10.3354%2Fmeps10502
     citation: |
       Yorke, C., Miller, R., Page, H., Reed, D. (2013). Importance of Kelp Detritus As a Component of Suspended Particulate Organic Matter in Giant Kelp Macrocystis pyrifera Forests. Marine Ecology Progress Series. 493:113--125. DOI: 10.3354/meps10502
-    author: Yorke, Christie; Miller, Robert; Page, Henry; Reed, Daniel
+    author: Miller, Robert; Page, Henry; Reed, Daniel
   - sbc_id: 806
     year: '2012'
     category: Article
@@ -1684,35 +1718,35 @@
     hyperlink: https://doi.org/10.1890%2F11-0155.1
     citation: |
       Kay, M. C., Lenihan, H. S., Guenther, C. M., Wilson, J. R., Miller, C. J., Shrout, S. W. (2012). Collaborative Assessment of California Spiny Lobster Population and Fishery Responses to a Marine Reserve Network. Ecological Applications. 22:322--335. DOI: 10.1890/11-0155.1
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 905
     year: '2012'
     category: Article
     hyperlink: https://doi.org/10.1017%2Fs0376892911000695
     citation: |
       Kay, M. C., Wilson, J. R. (2012). Spatially Explicit Mortality of California Spiny Lobster (Panulirus interruptus) Across a Marine Reserve Network. Environmental Conservation. 39:215--224. DOI: 10.1017/s0376892911000695
-    author: Kay, Matt
+    author: ''
   - sbc_id: 815
     year: '2012'
     category: Article
     hyperlink: https://doi.org/10.3354%2Fmeps09592
     citation: |
       Kay, M., Lenihan, H., Kotchen, M., Miller, C. (2012). Effects of Marine Reserves on California Spiny Lobster Are Robust and Modified by Fine-Scale Habitat Features and Distance from Reserve Borders. Marine Ecology Progress Series. 451:137--150. DOI: 10.3354/meps09592
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 843
     year: '2012'
     category: Article
     hyperlink: https://doi.org/10.1007%2Fs00442-012-2449-y
     citation: |
       Klose, K., Cooper, S. D. (2012). Complex Impacts of an Invasive Omnivore and Native Consumers on Stream Communities in California and Hawaii. Oecologia. 171:945--960. DOI: 10.1007/s00442-012-2449-y
-    author: Klose, Kristie; Cooper, Scott
+    author: Cooper, Scott
   - sbc_id: 828
     year: '2012'
     category: Article
     hyperlink: https://doi.org/10.1899%2F11-155.1
     citation: |
       Klose, K., Cooper, S. D., Leydecker, A. D., Kreitler, J. (2012). Relationships Among Catchment Land Use and Concentrations of Nutrients, Algae, and Dissolved Oxygen in a Southern California River. Freshwater Science. 31:908--927. DOI: 10.1899/11-155.1
-    author: Klose, Kristie; Cooper, Scott
+    author: Cooper, Scott
   - sbc_id: 818
     year: '2012'
     category: Article
@@ -1803,7 +1837,7 @@
     hyperlink: https://doi.org/10.1525%2Fbio.2011.61.2.5
     citation: |
       Beck, M. W., Brumbaugh, R. D., Airoldi, L., Carranza, A., Coen, L. D., Crawford, C., Defeo, O., Edgar, G. J., Hancock, B., Kay, M. C., et al. (2011). Oyster Reefs at Risk and Recommendations for Conservation, Restoration, and Management. BioScience. 61:107--116. DOI: 10.1525/bio.2011.61.2.5
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 807
     year: '2011'
     category: Article
@@ -1824,8 +1858,7 @@
     hyperlink: https://doi.org/10.1111%2Fj.1365-2486.2011.02409.x
     citation: |
       Byrnes, J. E., Reed, D. C., Cardinale, B. J., Cavanaugh, K. C., Holbrook, S. J., Schmitt, R. J. (2011). Climate-Driven Increases in Storm Frequency Simplify Kelp Forest Food Webs. Global Change Biology. 17:2513--2524. DOI: 10.1111/j.1365-2486.2011.02409.x
-    author: Byrnes, Jarrett; Reed, Daniel; Cavanaugh, Kyle; Holbrook, Sally; Schmitt,
-      Russell
+    author: Reed, Daniel; Cavanaugh, Kyle; Holbrook, Sally; Schmitt, Russell
   - sbc_id: 831
     year: '2011'
     category: Article
@@ -1881,7 +1914,7 @@
     hyperlink: ''
     citation: |
       Kay, M. C., Lenihan, H. S., Wilson, J. R. (2011). Managing the Cost of Vessel Insurance As a Barrier to Cooperative Fisheries Research in California. California Fish and Game. 96:33-49.
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 718
     year: '2011'
     category: Article
@@ -1895,28 +1928,28 @@
     hyperlink: https://doi.org/10.1111%2Fj.1744-7410.2011.00232.x
     citation: |
       Klose, K. (2011). Snail Responses to Cues Produced by an Invasive Decapod Predator. Invertebrate Biology. 130:226--235. DOI: 10.1111/j.1744-7410.2011.00232.x
-    author: Klose, Kristie
+    author: ''
   - sbc_id: 720
     year: '2011'
     category: Article
     hyperlink: https://doi.org/10.1111%2Fj.1365-2427.2011.02721.x
     citation: |
       Klose, K., Cooper, S. D. (2011). Contrasting Effects of an Invasive Crayfish (Procambarus clarkii) on Two Temperate Stream Communities. Freshwater Biology. 57:526--540. DOI: 10.1111/j.1365-2427.2011.02721.x
-    author: Klose, Kristie; Cooper, Scott
+    author: Cooper, Scott
   - sbc_id: 722
     year: '2011'
     category: Article
     hyperlink: https://doi.org/10.1890%2F100004
     citation: |
       Melack, J. M., Finzi, A. C., Siegel, D., MacIntyre, S., Nelson, C. E., Aufdenkampe, A. K., Pace, M. L. (2011). Improving Biogeochemical Knowledge Through Technological Innovation. Frontiers in Ecology and the Environment. 9:37--43. DOI: 10.1890/100004
-    author: Melack, John; Siegel, David; MacIntyre, Sally; Nelson, Craig
+    author: Melack, John; Siegel, David; MacIntyre, Sally
   - sbc_id: 816
     year: '2011'
     category: Article
     hyperlink: https://doi.org/10.1007%2Fs00442-011-2143-5
     citation: |
       Miller, R. J., Harrer, S., Reed, D. C. (2011). Addition of Species Abundance and Performance Predicts Community Primary Production of Macroalgae. Oecologia. 168:797--806. DOI: 10.1007/s00442-011-2143-5
-    author: Miller, Robert; Harrer, Shannon; Reed, Daniel
+    author: Miller, Robert; Reed, Daniel
   - sbc_id: 724
     year: '2011'
     category: Article
@@ -1930,7 +1963,7 @@
     hyperlink: https://doi.org/10.1371%2Fjournal.pone.0018320
     citation: |
       Nelson, C. E., Carlson, C. A. (2011). Differential Response of High-Elevation Planktonic Bacterial Community Structure and Metabolism to Experimental Nutrient Enrichment. PLoS ONE. 6:e18320. DOI: 10.1371/journal.pone.0018320
-    author: Nelson, Craig; Carlson, Craig
+    author: Carlson, Craig
   - sbc_id: 728
     year: '2011'
     category: Article
@@ -2056,7 +2089,7 @@
     hyperlink: ''
     citation: |
       Kay, M. C., Lenihan, H. S., Wilson, J. R., Miller, C. J. (2010). Cost of Vessel Insurance in Collaborative Fisheries Resesarch: Strageties and Perspectives from a Program in California, USA. California Fish and Game. 96:129-145.
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 631
     year: '2010'
     category: Article
@@ -2203,7 +2236,7 @@
     hyperlink: https://doi.org/10.1890%2F08-1038.1
     citation: |
       Cardinale, B. J., Bennett, D. M., Nelson, C. E., Gross, K. (2009). Does Productivity Drive Diversity Or Vice Versa? a Test of the Multivariate Productivity Diversity Hypothesis in Streams. Ecology. 90:1227--1241. DOI: 10.1890/08-1038.1
-    author: Nelson, Craig
+    author: ''
   - sbc_id: 529
     year: '2009'
     category: Article
@@ -3162,7 +3195,7 @@
     hyperlink: ''
     citation: |
       O'Brien, M. C., Harrer, S. (2008). Processing and Quality Control of Kelp Forest Community Survey Data. In: Proceedings of the Environmental Information Management Conference. LTER and NCEAS.
-    author: O'Brien, Margaret; Harrer, Shannon
+    author: O'Brien, Margaret
   - sbc_id: 285
     year: '2005'
     category: Inproceedings
@@ -3309,7 +3342,7 @@
     hyperlink: ''
     citation: |
       Harrer, S. Abundance Derived Estimates of Understory Macroalgal Community Standing Biomass and Net Primary Production. (2010). University of California, Santa Barbara.
-    author: Harrer, Shannon
+    author: ''
   - sbc_id: 514
     year: '2009'
     category: Mastersthesis
@@ -3380,6 +3413,13 @@
     citation: |
       Rennebarth, T. Impact of Nutrients on Diatom Communities in a California Salt Marsh (Einfluesse Von Naehrstoffeintraegen Auf Die Diatomeengesellschaften Einer Kalifornischen Salzmarsch). (2002). Technical University of Munich, Limnological Field Station at the OsterseenGermany.
     author: ''
+  - sbc_id: 1493
+    year: '2021'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Catlett, D. Phytoplankton community determinations and dynamics in the Santa Barbara Channel, CA. (2021). University of California, Santa Barbara.
+    author: ''
   - sbc_id: 1417
     year: '2020'
     category: phdthesis
@@ -3407,7 +3447,7 @@
     hyperlink: ''
     citation: |
       Yorke, C. Kelp as a trophic resource to reef food webs. (2019). Interdepartmental Graduate Program in Marine Science, University of California, Santa Barbara.
-    author: Yorke, Christie
+    author: ''
   - sbc_id: 1308
     year: '2018'
     category: phdthesis
@@ -3428,7 +3468,7 @@
     hyperlink: https://escholarship.org/uc/item/8rh799jz
     citation: |
       Marks, L. M. The Distribution, Biology and Ecology of the Invasive Seaweed Sargassum Horneri in Its Introduced Range. (2018). University of California, Santa Barbara.
-    author: Marks, Lindsay
+    author: ''
   - sbc_id: 1313
     year: '2018'
     category: phdthesis
@@ -3596,7 +3636,7 @@
     hyperlink: https://alexandria.ucsb.edu/downloads/hd76s031v
     citation: |
       Kay, M. C. Community Based Fisheries Research on California Spiny Lobster (Panulirus interruptus) at the Santa Barbara Channel Islands. (2011). Master of Environmental Science and ManagementBren School of Environmental Science and Management, University of California, Santa Barbara, CA.
-    author: Kay, Matt
+    author: ''
   - sbc_id: 809
     year: '2011'
     category: phdthesis
@@ -3673,7 +3713,7 @@
     hyperlink: ''
     citation: |
       Klose, K. Complex Effects of an Invasive Consumer (Procambarus clarkii) on Stream Communities in Southern California and Hawaii. (2007). Dept. of Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara, CA.
-    author: Klose, Kristie
+    author: ''
   - sbc_id: 467
     year: '2007'
     category: phdthesis
@@ -3751,6 +3791,27 @@
     citation: |
       Dugan, J., Hubbard, D., Emery, K. (2021). Sandy beach ecosystems: long term studies of life on the edge. Presented at the meeting of First International Symposium on Coastal Ecosystems and Global Change, Virtual
     author: ''
+  - sbc_id: 1500
+    year: '2021'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Lenihan, H. (2021). Influence of a marine reserve network on the CA spiny lobster fishery. Presented at the meeting of Channel Islands Marine Sanctuary, Science Advisory Council, Santa Barbara, CA
+    author: ''
+  - sbc_id: 1501
+    year: '2021'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Lenihan, H. (2021). Influence of a marine reserve network on the CA spiny lobster fishery: an empirical assessment. Presented at the meeting of Center for Marine Science and Technology (CMAST), North Carolina State University
+    author: ''
+  - sbc_id: 1502
+    year: '2021'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Okamoto, D. K. (2021). Recruitment and mortality in dynamic sea urchin barrens. Presented at the meeting of Western Society of Naturalists, NA
+    author: ''
   - sbc_id: 1418
     year: '2020'
     category: Presentation
@@ -3808,6 +3869,15 @@
       R. (2020). Spatial variability in the resistance and resilience of giant kelp
       in southern and Baja California to a multi-year heatwave\t. Presented at the meeting
       of Ocean Sciences Meeting , San Diego, CA, US\n"
+    author: ''
+  - sbc_id: 1499
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: "Comstock, J., Santoro, A., Carlson, C. (2020). Comparison of bacterioplankton
+      community structure across extraction methods and filter type\r\n. Presented at
+      the meeting of AtlantECO Workshop on standard\r\nsampling methods for microbiomes\r\n,
+      NA\n"
     author: ''
   - sbc_id: 1430
     year: '2020'
@@ -4297,7 +4367,7 @@
     hyperlink: ''
     citation: |
       Catlett, D., Siegel, D. A., Guillocheau, N. (2017). Derivative analysis demonstrates the potential and limitations for deriving phytoplankton community structure from hyperspectral ocean color observations (Poster). Presented at the meeting of ASLO, AGU, TOS - Ocean Sciences, Honolulu, HI
-    author: Catlett, Dylan; Siegel, David
+    author: Siegel, David
   - sbc_id: 1262
     year: '2017'
     category: Presentation
@@ -4396,7 +4466,7 @@
     citation: |
       Reed, D. C., Washburn, L., Rassweiler, A., Miller, R. J., Bell, T. W., Harrer, S. (2017). El Nino coupled with anomalous ocean warming challenge sentinel status of giant kelp as an indicator of climate change. Presented at the meeting of ASLO, AGU, TOS - Ocean Sciences, Honolulu, HI
     author: Reed, Daniel; Washburn, Libe; Rassweiler, Andrew; Miller, Robert; Bell,
-      Tom; Harrer, Shannon
+      Tom
   - sbc_id: 1364
     year: '2017'
     category: Presentation
@@ -4594,21 +4664,21 @@
     hyperlink: ''
     citation: |
       Liedle, J., Yorke, C. (2016). Feeding and distribution of the Norris’s kelp snail. Presented at the meeting of UCSB Undergraduate Research Colloquium, Santa Barbara, CA, US
-    author: Yorke, Christie
+    author: ''
   - sbc_id: 1190
     year: '2016'
     category: Presentation
     hyperlink: ''
     citation: |
       Marks, L. M., Reed, D. C., Holbrook, S. J. (2016). Development of management strategies for the invasive seaweed Sargassum horneri (poster). Presented at the meeting of International Conference on Marine Bioinvasions, Sydney, Australia
-    author: Marks, Lindsay; Reed, Daniel; Holbrook, Sally
+    author: Reed, Daniel; Holbrook, Sally
   - sbc_id: 1191
     year: '2016'
     category: Presentation
     hyperlink: ''
     citation: |
       Marks, L. M., Reed, D. C., Holbrook, S. J. (2016). Ecological causes and consequences of the invasive seaweed Sargassum horneri in the eastern Pacific. Presented at the meeting of International Conference on Marine Bioinvasions, Sydney, Australia
-    author: Marks, Lindsay; Reed, Daniel; Holbrook, Sally
+    author: Reed, Daniel; Holbrook, Sally
   - sbc_id: 1192
     year: '2016'
     category: Presentation
@@ -4741,14 +4811,14 @@
     hyperlink: ''
     citation: |
       Wear, E. K., Carlson, C. A., Siegel, D. A., Guillocheau, N., Nelson, C. E. (2016). Bottom-up controls on a coastal bacterioplankton time-series: relative utility of in situ vs. remotely-sensed measurements. Presented at the meeting of Coastal and Estuarine Research Federation, Portland, Oregon, United States
-    author: Carlson, Craig; Siegel, David; Nelson, Craig
+    author: Carlson, Craig; Siegel, David
   - sbc_id: 1207
     year: '2016'
     category: Presentation
     hyperlink: ''
     citation: |
       Wear, E. K., Carlson, C. A., Siegel, D. A., Guillocheau, N., Nelson, C. E. (2016). Spatial variability in bacterioplankton community composition can equal the magnitude of seasonal changes within a highly heterogeneous coastal system (Poster). Presented at the meeting of International Society for Microbial Ecology (ISME), Montreal, ON, Canada
-    author: Carlson, Craig; Siegel, David; Nelson, Craig
+    author: Carlson, Craig; Siegel, David
   - sbc_id: 1097
     year: '2015'
     category: Presentation
@@ -4889,7 +4959,7 @@
     hyperlink: ''
     citation: |
       Yorke, C. (2015). Trophic resources to subtidal suspension feeders (poster). Presented at the meeting of LTER All Scientists Meeting, Estes Park, Colorado, United States
-    author: Yorke, Christie
+    author: ''
   - sbc_id: 1032
     year: '2014'
     category: Presentation
@@ -4931,7 +5001,7 @@
     hyperlink: ''
     citation: |
       Cooper, S. D., Peterson, S., Bookhagen, B., Roberts, D., Wiseman, S. W., Roberts, D., Bennett, D., Page, H. M., Even, T., Sadro, S., et al. (2014). Wildfire impacts from watersheds to stream food webs. Presented at the meeting of Joint Aquatic Sciences Meeting, Portland, Oregon, United States
-    author: Cooper, Scott; Roberts, Dar; Page, Henry; Nelson, Craig
+    author: Cooper, Scott; Roberts, Dar; Page, Henry
   - sbc_id: 1036
     year: '2014'
     category: Presentation
@@ -5071,14 +5141,14 @@
     hyperlink: ''
     citation: |
       Simons, R. D., Nishimoto, M. M., Washburn, L., Brown, K. S., Siegel, D. A. (2014). Retention of juvenile fish in a coastal mesoscale eddy: Field observations and  three-dimensional modeling. Presented at the meeting of 2014 Ocean Sciences Meeting (ASLO, TOS, AGU), Honolulu, HI
-    author: Simons, Rachel; Nishimoto, Mary; Washburn, Libe; Siegel, David
+    author: Simons, Rachel; Washburn, Libe; Siegel, David
   - sbc_id: 1125
     year: '2014'
     category: Presentation
     hyperlink: ''
     citation: |
       Simons, R. D., Nishimoto, M. M., Washburn, L., Siegel, D. A. (2014). Linking physical dynamics and biological productivity in a coastal mesoscale eddy. Presented at the meeting of American Geophysical Union, Annual Meeting, San Francisco, CA, US
-    author: Simons, Rachel; Nishimoto, Mary; Washburn, Libe; Siegel, David
+    author: Simons, Rachel; Washburn, Libe; Siegel, David
   - sbc_id: 1126
     year: '2014'
     category: Presentation
@@ -5120,14 +5190,14 @@
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2013). Causes and consequences of ecological complexity. Presented at the meeting of Invited Seminar, Brown University, Providence, Rhode Island, United States
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 935
     year: '2013'
     category: Presentation
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2013). Causes and consequences of ecological complexity. Presented at the meeting of Invited Seminar, Dalhousie University, Halifax, Nova Scotia, Canada
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 1034
     year: '2013'
     category: Presentation
@@ -5204,7 +5274,7 @@
     hyperlink: ''
     citation: |
       Marks, L. (2013). Do healthy kelp forest communities confer resistance to seaweed invasions? A case study: Sargassum horneri in southern California. Presented at the meeting of California LTER Graduate Student Symposium, Scripps Institute of Oceanography, La Jolla, CaliforniaUnited States
-    author: Marks, Lindsay
+    author: ''
   - sbc_id: 933
     year: '2013'
     category: Presentation
@@ -5365,7 +5435,7 @@
     hyperlink: ''
     citation: |
       Yorke, C. (2013). Kelp Detritus. Presented at the meeting of LTER California Graduate Student Symposium, Scripps Institute of Oceanography, La Jolla, CaliforniaUnited States
-    author: Yorke, Christie
+    author: ''
   - sbc_id: 985
     year: '2012'
     category: Presentation
@@ -5407,21 +5477,21 @@
     hyperlink: ''
     citation: |
       Cooper, S. D., Klose, K., Wiseman, S., Bennett, D., Page, H. M., Even, T., Nelson, C., Sadro, S., Dudley, T. (2012). The effects of wildfire on stream ecosystems in southern California. Presented at the meeting of RAPID-Fire Graduate Seminar, University of California, Santa Barbara, California, US
-    author: Cooper, Scott; Klose, Kristie; Page, Henry; Nelson, Clint
+    author: Cooper, Scott; Page, Henry; Nelson, Clint
   - sbc_id: 865
     year: '2012'
     category: Presentation
     hyperlink: ''
     citation: |
       Cooper, S. D., Klose, K., Wiseman, S., Bennett, D., Page, M., Even, T., Nelson, C., Sadro, S., Dudley, T. (2012). The effects of wildfire on stream ecosystems in Southern California (poster). Presented at the meeting of LTER All Scientists Meeting, Estes Park, Colorado, United States
-    author: Cooper, Scott; Klose, Kristie; Page, Henry; Nelson, Clint
+    author: Cooper, Scott; Page, Henry; Nelson, Clint
   - sbc_id: 866
     year: '2012'
     category: Presentation
     hyperlink: ''
     citation: |
       Cooper, S. D., Klose, K., Wiseman, S., Bennett, D., Page, M., Even, T., Nelson, C., Sadro, S., Dudley, T. (2012). The effects of wildfire on stream ecosystems in Southern California. Presented at the meeting of iLTER Annual Meeting, Lisbon, Portugal
-    author: Cooper, Scott; Klose, Kristie; Page, Henry; Nelson, Clint
+    author: Cooper, Scott; Page, Henry; Nelson, Clint
   - sbc_id: 867
     year: '2012'
     category: Presentation
@@ -5554,7 +5624,7 @@
     hyperlink: ''
     citation: |
       Kay, M. C. (2012). Collaborative development of the spiny lobster fishery management plan: fishery management and conservation. Presented at the meeting of California Department of Fish and Game Santa Barbara Harbor Workshop, Santa Barbara, CA, US
-    author: Kay, Matt
+    author: ''
   - sbc_id: 952
     year: '2012'
     category: Presentation
@@ -5780,7 +5850,7 @@
     hyperlink: ''
     citation: |
       Yorke, C., Miller, R. J., Page, H. M. (2012). Kelp detritus: quantifying carbon contributions and size distributions (Poster). Presented at the meeting of LTER All Scientists Meeting, Estes Park, Colorado, United States
-    author: Yorke, Christie; Miller, Robert; Page, Henry
+    author: Miller, Robert; Page, Henry
   - sbc_id: 736
     year: '2011'
     category: Presentation
@@ -5801,35 +5871,35 @@
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2011). Causes and consequences of ecological complexity. Presented at the meeting of Seminar at Northeastern University, NA
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 740
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2011). Causes and consequences of ecological complexity. Presented at the meeting of Seminar at Stony Brook University, New York, NY
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 738
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2011). Causes and consequences of ecological complexity. Presented at the meeting of Seminar at Universidad Nacional Autonoma de Mexico, Morelia, Mexico
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 741
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2011). Physical and biological drivers of kelp forest community structure and function. Presented at the meeting of SBC LTER research seminar series, Santa Barbara, CA, US
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 800
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2011). Presentation to Math Science Partnership. Presented at the meeting of Presentation to Math Science Partnership - Middle/High School Teachers, NA
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 743
     year: '2011'
     category: Presentation
@@ -5857,15 +5927,14 @@
     hyperlink: ''
     citation: |
       Cooper, S. D., Bennett, D. M., Bookhagen, B., Choate, J., Antonio, C. D., Even, T., Goodridge, B., Hanan, E., Henshaw, M., Jennings, L., et al. (2011). Influence of fire on coastal watersheds. Presented at the meeting of Presentation to SBC LTER Graduate Seminar, Santa Barbara, CA, US
-    author: Cooper, Scott; D'Antonio, Carla; Klose, Kristie; Melack, John; Nelson, Craig;
-      Roberts, Dar; Schimel, Joshua
+    author: Cooper, Scott; D'Antonio, Carla; Melack, John; Roberts, Dar; Schimel, Joshua
   - sbc_id: 862
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Cooper, S. D., Bennett, D., Dudley, T., Even, T., Klose, K., Nelson, C., Sadro, S., Wiseman, S. (2011). The effects of wildfire on stream ecosystems in southern California. Presented at the meeting of The Twelfth International Mediterranean Ecosystems Conference (MEDECOS XII), UCLALos AngelesCaliforniaUnited States
-    author: Cooper, Scott; Klose, Kristie; Nelson, Clint
+    author: Cooper, Scott; Nelson, Clint
   - sbc_id: 755
     year: '2011'
     category: Presentation
@@ -5956,29 +6025,28 @@
     hyperlink: ''
     citation: |
       Kay, M. C. (2011). Fishing, distance, and distance from MPA borders influence spiny lobster abundance on reefs at the Santa Barbara Channel Islands. Presented at the meeting of SBC-MCR-CCC LTER Graduate Student Symposium, Santa Barbara, CA, US
-    author: Kay, Matt
+    author: ''
   - sbc_id: 774
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Lenihan, H. S., Kay, M. C., Wilson, J. R., Guenther, C. M. (2011). Social and ecological impacts and implications of marine reserves on trap fisheries. Presented at the meeting of Duke University Marine Lab Seminar Series, Beaufort North, Carolina, United States
-    author: Lenihan, Hunter; Kay, Matt
+    author: Lenihan, Hunter
   - sbc_id: 775
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Lenihan, H. S., Kay, M. C., Wilson, J. R., Guenther, C. M. (2011). Social and ecological impacts and implications of marine reserves on trap fisheries. Presented at the meeting of UCSB Geography Department Colloquium, Santa Barbara, CA, US
-    author: Lenihan, Hunter; Kay, Matt
+    author: Lenihan, Hunter
   - sbc_id: 778
     year: '2011'
     category: Presentation
     hyperlink: ''
     citation: |
       Miller, R. J., Reed, D. C., Brzezinski, M. A., Cavanaugh, K. C., Harrer, S. (2011). Primary production in California kelp forests. Presented at the meeting of SBC LTER research seminar series, Santa Barbara, CA, US
-    author: Miller, Robert; Reed, Daniel; Brzezinski, Mark; Cavanaugh, Kyle; Harrer,
-      Shannon
+    author: Miller, Robert; Reed, Daniel; Brzezinski, Mark; Cavanaugh, Kyle
   - sbc_id: 784
     year: '2011'
     category: Presentation
@@ -6020,7 +6088,7 @@
     hyperlink: ''
     citation: |
       Schroeter, S., Dixon, J., Page, H. M., Ebert, T., Richards, J., Kalyass, P., Kushner, D., Adams, N., Halmay, P., Steele, B., et al. (2011). Long-term observations of marine invertebrate settlement: a resource for understanding effects. Presented at the meeting of California Current Acidification Network - Shellfish Workshop, Palo Alto, California, United States
-    author: Schroeter, Steven; Page, Henry; Richards, John
+    author: Schroeter, Steven; Page, Henry
   - sbc_id: 791
     year: '2011'
     category: Presentation
@@ -6090,7 +6158,7 @@
     hyperlink: ''
     citation: |
       Yorke, C. E., Miller, R. J., Page, H. M. (2011). Kelp detritus: quantifying carbon contributions and size distribution. Presented at the meeting of Western Society of Naturalists, Vancouver, Washington, United States
-    author: Yorke, Christie; Miller, Robert; Page, Henry
+    author: Miller, Robert; Page, Henry
   - sbc_id: 635
     year: '2010'
     category: Presentation
@@ -6118,7 +6186,7 @@
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2010). Causes and consequences of biodiversity in southern Californian kelp forests. Presented at the meeting of Ecology and Evolutionary Biology Seminar, San Diego State University, CA
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 747
     year: '2010'
     category: Presentation
@@ -6174,7 +6242,7 @@
     hyperlink: ''
     citation: |
       Cooper, S. D., Bennett, D. M., Brinkman, M. A., Busse, L. B., Dudley, T., Even, T., Klose, K., Nelson, C. E., Sadro, S., Simpson, J. C., et al. (2010). Studies of stream biology in the SBC LTER. Presented at the meeting of Plenary talk at the 2010 SBC LTER Annual Conference, NA
-    author: Cooper, Scott; Klose, Kristie; Nelson, Craig
+    author: Cooper, Scott
   - sbc_id: 937
     year: '2010'
     category: Presentation
@@ -6272,14 +6340,14 @@
     hyperlink: ''
     citation: |
       Harrer, S., Miller, R. J., Reed, D. C. (2010). Modeling Benthic Macroalgal Production. Presented at the meeting of Santa Barbara Coastal LTER Graduate Student Symposium, Santa Barbara, CA, US
-    author: Harrer, Shannon; Miller, Robert; Reed, Daniel
+    author: Miller, Robert; Reed, Daniel
   - sbc_id: 765
     year: '2010'
     category: Presentation
     hyperlink: ''
     citation: |
       Harrer, S., Miller, R. J., Reed, D. C. (2010). Modeling Benthic Macroalgal Production. Presented at the meeting of Western Society of Naturalist Meeting, San Diego, California, United States
-    author: Harrer, Shannon; Miller, Robert; Reed, Daniel
+    author: Miller, Robert; Reed, Daniel
   - sbc_id: 768
     year: '2010'
     category: Presentation
@@ -6321,28 +6389,28 @@
     hyperlink: ''
     citation: |
       Lenihan, H. S., Guenther, C. M., Kay, M. C., Wilson, J. R., Miller, C. J. (2010). Collaborative fishery research in the Santa Barbara Channel: the CALobster program and spatially-explicit management based on marine Rreserve monitoring. Presented at the meeting of National Science Foundation LTER Mini-symposium on Social-Ecological-Systems, Washington, D.C., US
-    author: Lenihan, Hunter; Kay, Matt
+    author: Lenihan, Hunter
   - sbc_id: 770
     year: '2010'
     category: Presentation
     hyperlink: ''
     citation: |
       Lenihan, H. S., Kay, M. C., Wilson, J. R., Guenther, C. M. (2010). Social and ecological impacts and implications of marine reserves on trap fisheries. Presented at the meeting of Channel Islands Shore to Sea Lecture Series, Santa Barbara, CA, US
-    author: Lenihan, Hunter; Kay, Matt
+    author: Lenihan, Hunter
   - sbc_id: 771
     year: '2010'
     category: Presentation
     hyperlink: ''
     citation: |
       Lenihan, H. S., Kay, M. C., Wilson, J. R., Guenther, C. M. (2010). Social and ecological impacts and implications of marine reserves on trap fisheries. Presented at the meeting of National Parks Service Shore to Sea Lecture Series, Santa Barbara, CA, US
-    author: Lenihan, Hunter; Kay, Matt
+    author: Lenihan, Hunter
   - sbc_id: 773
     year: '2010'
     category: Presentation
     hyperlink: ''
     citation: |
       Lenihan, H. S., Kay, M. C., Wilson, J. R., Valencia, S., Rathbone, S. (2010). Collaborative fisheries research in the Santa Barbara Channel. Presented at the meeting of CA World Oceans Conference, San Francisco, CA, US
-    author: Lenihan, Hunter; Kay, Matt
+    author: Lenihan, Hunter
   - sbc_id: 777
     year: '2010'
     category: Presentation
@@ -6440,7 +6508,7 @@
     hyperlink: ''
     citation: |
       Schroeter, S., Dixon, J., Page, H. M., Ebert, T., Richards, J., Kalyass, P., Kushner, D., Adams, N., Halmay, P., Steele, B., et al. (2010). Role of long-term data sets on settlement of marine invertebrates in understanding effects of ocean acidification. Presented at the meeting of Ocean Acidification Workshop by Southern California Coastal Water Research Project, Costa Mesa, California, United States
-    author: Schroeter, Steven; Page, Henry; Richards, John
+    author: Schroeter, Steven; Page, Henry
   - sbc_id: 789
     year: '2010'
     category: Presentation
@@ -6517,21 +6585,21 @@
     hyperlink: ''
     citation: |
       Byrnes, J. E. (2009). Community structure in kelp forests. Presented at the meeting of SBC LTER Midterm Review, University of California, Santa Barbara, California, US
-    author: Byrnes, Jarrett
+    author: ''
   - sbc_id: 677
     year: '2009'
     category: Presentation
     hyperlink: ''
     citation: |
       Byrnes, J. E., Cardinale, B. J., Reed, D. C. (2009). The consequences of sessile species richness for resistance to urchin grazing. Presented at the meeting of Western Society of Naturalists, NA
-    author: Byrnes, Jarrett; Reed, Daniel
+    author: Reed, Daniel
   - sbc_id: 573
     year: '2009'
     category: Presentation
     hyperlink: ''
     citation: |
       Byrnes, J. E., Reed, D. C., Cardinale, B. J. (2009). Disturbance by waves alters the structure of kelp forest food webs by changing foundation species abundance (Poster). Presented at the meeting of 2009 LTER All Scientists Meeting, Estes Park, Colorado, United States
-    author: Byrnes, Jarrett; Reed, Daniel
+    author: Reed, Daniel
   - sbc_id: 577
     year: '2009'
     category: Presentation
@@ -6629,7 +6697,7 @@
     hyperlink: ''
     citation: |
       Harrer, S., Reed, D. C., Miller, R. J. (2009). A non-destructive approach to assessing changes in understory algal biomass and productivity in response to climate-induced changes in disturbance (Poster). Presented at the meeting of 2009 LTER All Scientists Meeting, Estes Park, Colorado, United States
-    author: Harrer, Shannon; Reed, Daniel; Miller, Robert
+    author: Reed, Daniel; Miller, Robert
   - sbc_id: 595
     year: '2009'
     category: Presentation
@@ -6657,21 +6725,21 @@
     hyperlink: ''
     citation: |
       Kay, M. C. (2009). Research for sustainable fisheries: Ecology, economics, and biology. Presented at the meeting of UC Santa Barbara Alumni Association Board of Directors Annual Meeting, Santa Barbara, CA, US
-    author: Kay, Matt
+    author: ''
   - sbc_id: 687
     year: '2009'
     category: Presentation
     hyperlink: ''
     citation: |
       Kay, M. C., Lenihan, H. S. (2009). Spiny lobster research at the northern Santa Barbara Channel Islands. Presented at the meeting of California Department of Fish and Game spiny lobster stock assessment workshop, NA
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 689
     year: '2009'
     category: Presentation
     hyperlink: ''
     citation: |
       Lenihan, H. S., Kay, M. C., Wilson, J. R., Miller, C. J., Barsky, K. (2009). Collaborative fisheries research to develop marine-reserve based fishery management for CA spiny lobster. Presented at the meeting of California Department of Fish and Game’s Commission Subcommittee Meeting on Marine Resource Management, NA
-    author: Lenihan, Hunter; Kay, Matt
+    author: Lenihan, Hunter
   - sbc_id: 599
     year: '2009'
     category: Presentation
@@ -6890,7 +6958,7 @@
     hyperlink: ''
     citation: |
       Byrnes, J. E., Reed, D. C., Holbrook, S. J., Cardinale, B. J. (2008). Long-term kelp removal at the Santa Barbara Coastal LTER: A template to examine the consequences of climate change. Presented at the meeting of The Western Society of Naturalists, NA
-    author: Byrnes, Jarrett; Reed, Daniel; Holbrook, Sally
+    author: Reed, Daniel; Holbrook, Sally
   - sbc_id: 576
     year: '2008'
     category: Presentation
@@ -6960,14 +7028,14 @@
     hyperlink: ''
     citation: |
       Kay, M. C., Lenihan, H. S., Miller, C. J., Barsky, K. (2008). Influence of Channel Islands Marine Reserves on Spiny Lobster. Presented at the meeting of Channel Islands Symposium, Special Session: The First Five Years of Monitoring the Channel Islands Marine Protected Area Network, Oxnard CA
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 597
     year: '2008'
     category: Presentation
     hyperlink: ''
     citation: |
       Klose, K. (2008). Complex impacts of an invasive omnivore and native consumers on stream communities in California and Hawaii. Presented at the meeting of 56th Annual Meeting. North American Benthological Society, Salt Lake City, Utah, United States
-    author: Klose, Kristie
+    author: ''
   - sbc_id: 598
     year: '2008'
     category: Presentation
@@ -7240,7 +7308,7 @@
     hyperlink: ''
     citation: |
       Klose, K. (2007). Complex effects of an invasive consumer,Procambarus clarkii, on temperate and tropical stream benthic communities. Presented at the meeting of PhD Seminar: Department of Ecology, Evolution and Marine Biology, Santa Barbara, CA, US
-    author: Klose, Kristie
+    author: ''
   - sbc_id: 505
     year: '2007'
     category: Presentation
@@ -8206,7 +8274,7 @@
     hyperlink: ''
     citation: |
       Klose, K. (2004). Evaluating the Impacts of Biotic Invasions: the Role of an Invasive Consumer (Procambarus clarkii) on the Biota of the Ventura River, California (Poster). Presented at the meeting of Santa Barbara Coastal LTER Annual Retreat, Santa Barbara, CA, US
-    author: Klose, Kristie
+    author: ''
   - sbc_id: 239
     year: '2004'
     category: Presentation
@@ -8619,7 +8687,7 @@
     hyperlink: ''
     citation: |
       Klose, K. (2003). Effects of an Invasive Consumer on Stream Biota of the Santa Ynez River, Santa Barbara County, California (Poster). Presented at the meeting of Santa Barbara Coastal LTER Midterm Review, Santa Barbara, CA, US
-    author: Klose, Kristie
+    author: ''
   - sbc_id: 91
     year: '2003'
     category: Presentation
@@ -9351,28 +9419,28 @@
     hyperlink: http://www.vliz.be/imisdocs/publications/213223.pdf
     citation: |
       Beck, M. W., Brumbaugh, R. D., Airoldi, L., Carranza, A., Coen, L. D., Crawford, C., Defeo, O., Edgar, G. J., Hancock, B., Kay, M. C., et al. (2009). Shellfish Reefs at Risk:Global Analysis of Problems and Solutions. The Nature Conservancy, Arlington VA.
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 650
     year: '2009'
     category: Techreport
     hyperlink: ''
     citation: |
       Klose, K., Cooper, S. D., Leydecker, A. P. (2009). An Assessment of Numeric Algal and Nutrient Targets for Ventura River Watershed Nutrient Total Maximum Daily Loads (Tmdls). State Water Resources Control Board Contract.Report number: 07-112-140
-    author: Klose, Kristie; Cooper, Scott
+    author: Cooper, Scott
   - sbc_id: 32
     year: '2009'
     category: Techreport
     hyperlink: http://sbclter.msi.ucsb.edu/external/Documents/Publications/FieldGuide.pdf
     citation: |
       Nelson, C., Donahue, C., Harrer, S., Reed, D. C. (2009). Field Guide to Kelp Forests of the Santa Barbara Channel, Fourth Edition. Santa Barbara Coastal Ecosystem Long-Term Ecological Research Program, University of California, Santa Barbara.
-    author: Nelson, Clint; Harrer, Shannon; Reed, Daniel
+    author: Nelson, Clint; Reed, Daniel
   - sbc_id: 538
     year: '2008'
     category: Techreport
     hyperlink: ''
     citation: |
       Kay, M. C., Lenihan, H. S., Miller, C. J., Barsky, K. (2008). Numbers, Body Sizes and Movement of Lobster. In: Ariame,And J. Ugoretz. Channel Islands Marine Protected Areas: First 5 Years of Monitoring: 2003-2008. California Department of Fish and Game.
-    author: Kay, Matt; Lenihan, Hunter
+    author: Lenihan, Hunter
   - sbc_id: 548
     year: '2008'
     category: Techreport
