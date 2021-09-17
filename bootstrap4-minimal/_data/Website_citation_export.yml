@@ -3252,6 +3252,13 @@
     citation: |
       Frew, J., Bose, R. K. (2001). Earth System Science Workbench:Data Management Infrastructure for Earth Science Products. In: Proceedings of the 13th International Conference on Scientific and Statistical Database Management (SSDBM 2001). IEEE Computer Society.
     author: ''
+  - sbc_id: 1504
+    year: '2020'
+    category: Mastersthesis
+    hyperlink: https://www.proquest.com/docview/2500545304?pq-origsite=gscholar&fromopenview=true
+    citation: |
+      Cedeno, T. H. An Evaluation of Surge Uptake Capability in Macrocystis pyrifera in Response to Pulses of Three Different Forms of Nitrogen. (2020). University of California, Santa Barbara.
+    author: ''
   - sbc_id: 1309
     year: '2018'
     category: Mastersthesis
@@ -3426,6 +3433,13 @@
     hyperlink: https://escholarship.org/uc/item/7nj792b9
     citation: |
       Lowman, H. E. Nutrient and organic matter cycling in the nearshore ocean and marine sediment of the Santa Barbara Channel. (2020). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1503
+    year: '2019'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/5xz4n7jq
+    citation: |
+      Dauhajre, D. P. Submesoscale Currents on the Continental Shelf. (2019). University of California, Santa Barbara.
     author: ''
   - sbc_id: 1399
     year: '2019'
