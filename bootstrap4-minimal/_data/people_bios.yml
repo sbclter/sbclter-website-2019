@@ -10,7 +10,7 @@
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
-      I am broadly interested in marine community ecology and benthic foodwebs. In SBC-LTER I have led studies of benthic primary production, and how understory algae and phytoplankton compete with giant kelp for light.  With Mark Page, I am investigating the role of kelp detritus,nphytoplankton, and other carbon sources to benthic suspension feeders.
+      I am broadly interested in marine community ecology and benthic foodwebs. In 2019 I assumed the role of Lead PI of SBC-LTER from Dan Reed, who led the project from its inception in 2000. With the help of the other project investigators, it’s my responsibility to ensure that project is fulfilling its goals in terms of science, education, and broader impacts, and doing so in an inclusive and collaborative way. I am interested in the relationships, positive and negative, between kelp forest species, and cross-ecosystem connections between kelp forests and pelagic, beach, and deep sea ecosystems. I like to explore these topics in the field using comparative and experimental approaches that usually involve scuba diving. Fortunately, the Santa Barbara coast and SBC LTER have both the perfect setting to do such research and an amazing group of multidisciplinary investigators, graduate students, and undergraduates with a common interest in kelp forests to do it with.
     homepage: ''
     telephoneNumber: 805-893-6174
     projectRole: Project Lead Investigator
@@ -216,6 +216,22 @@
     homepage: http://erikaeliason.com/
     telephoneNumber: '805-893-2966 '
     projectRole: Investigator
+  - databaseID: sholbrook
+    commonName: Sally Holbrook
+    givenName: Sally
+    surName: Holbrook
+    advisor: ''
+    scientificDomainString: Marine Community Ecology
+    scientificDomainText: Community ecology, marine vertebrate predation and competition
+    employeeType: Professor
+    email: sally.holbrook@lifesci.ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      My students and I conduct studies of kelp forest community ecology, with a particular emphasis on the effects of physical disturbances and biotic interactions on community structure.  I am particularly interested in the effects of habitat structure on species interactions.  I am also coordinating efforts to bring real-time marine environmental sensing to the project.  This is a collaborative project between the Moorea Coral Reef LTER (of which I am a Co-PI), the SBC LTER and UC San Diego, along with international partners in Australia and Taiwan.  Initial deployments of key instrumentation have been made at the SBC site (at Stearns Wharf)
+    homepage: https://www.eemb.ucsb.edu/people/faculty/holbrook/
+    telephoneNumber: 805-893-3956
+    projectRole: Investigator
   - databaseID: diglesias-rodriguez
     commonName: Debora Iglesias-Rodriguez
     givenName: Debora
@@ -360,9 +376,26 @@
     email: carter@eri.ucsb.edu
     postalAddress: Earth Research Institute<br />University of California<br />Santa
       Barbara CA 93106-3060
-    profileText: |2+
-
+    profileText: |
+      <p>I am a physical oceanographer interested in topics including: <li> - How ocean radiant heating influences dynamics and thermodynamics.</li> <li> - Ocean circulation.</li> <li> - The exchange of shelf and offshore waters.</li> <li> - Oceanography in the Gulf of Mexico.</li> <li> - Oceanography in the Santa Barbara Channel.</li></p>
+      <p>With other SBC investigators, I am using lagrangian drifters and tags to better understand the delivery of kelp to beach ecosystems, the physical processes that affect it, and scales of variability in kelp export and delivery that affect the supply of kelp to beaches.</p>
     homepage: ''
+    telephoneNumber: ''
+    projectRole: Investigator
+  - databaseID: dokamoto
+    commonName: Daniel Okamoto
+    givenName: Daniel
+    surName: Okamoto
+    advisor: ''
+    scientificDomainString: Community Ecology
+    scientificDomainText: ''
+    employeeType: Assistant professor
+    email: dokamoto@bio.fsu.edu
+    postalAddress: Department of Biological Science<br />Florida State University<br
+      />Tallahassee FL
+    profileText: |
+      We study population dynamics with a focus on exploited species of importance to coastal communities. We are broadly interested in how environment and species interactions regulate fluctuations in population dynamics and vital rates (i.e. recruitment and connectivity, growth, reproduction & mortality), and how natural resource management affects both ecosystems and people in space and time.  Our research integrates field & laboratory experiments and field data with high-end statistical analysis and numerical models.
+    homepage: https://dkokamoto.com/
     telephoneNumber: ''
     projectRole: Investigator
   - databaseID: hpage
@@ -396,6 +429,24 @@
       My main focus is on the mechanisms underlying sharp transitions in community state.  Marine benthic systems are known for these sharp transitions, which manifest themselves both as spatial patchiness and as rapid changes in community composition.  My graduate work used a combination of observational, experimental and theoretical approaches to explore the feedbacks that lead to these sudden shifts on reefs in the Santa Barbara Channel. I am continuing to pursue these questions in my postdoc, working to synthesize our results from the SBC LTER with insights from other LTER sites.  My interest in kelp forest community dynamics caused me to be very involved in developing the methods used by the SBC-LTER to estimate primary productivity by giant kelp, and I continue to be active in collaborative analyses of these data as well.
     homepage: ''
     telephoneNumber: 805-893-7823
+    projectRole: Investigator
+  - databaseID: lromero
+    commonName: Leonel Romero
+    givenName: Leonel
+    surName: Romero
+    advisor: ''
+    scientificDomainString: Coastal Circulation and Mixing
+    scientificDomainText: Ocean remote sensing techniques, upper ocean dynamics, surface
+      wave dynamics, air-sea interaction, wave-current interaction, ocean mixing, wave
+      breaking, numerical modeling, field observations
+    employeeType: Assistant Professor
+    email: leonel.romero@uconn.edu
+    postalAddress: Department of Marine Sciences<br />University of Connecticut<br />Storrs
+      CT 06269
+    profileText: |
+      My role in the SBC LTER is to study the coastal circulation and mixing of runoff waters. The project uses the Regional Ocean Model System (ROMS) coupled to a wave model (e.g. Simulating Waves Nearshore - SWAN) to model surface wave-current interactions and stream water dispersion for several SBC LTER sites. My overall objective is to characterize storm water dilution and land-ocean interactions and to characterize their potential ecological impacts.
+    homepage: ''
+    telephoneNumber: ''
     projectRole: Investigator
   - databaseID: asantoro
     commonName: Alyson Santoro
@@ -628,22 +679,6 @@
     homepage: ''
     telephoneNumber: 541-737-1308
     projectRole: Project Affiliated Investigator
-  - databaseID: sholbrook
-    commonName: Sally Holbrook
-    givenName: Sally
-    surName: Holbrook
-    advisor: ''
-    scientificDomainString: Marine Community Ecology
-    scientificDomainText: Community ecology, marine vertebrate predation and competition
-    employeeType: Professor
-    email: sally.holbrook@lifesci.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      My students and I conduct studies of kelp forest community ecology, with a particular emphasis on the effects of physical disturbances and biotic interactions on community structure.  I am particularly interested in the effects of habitat structure on species interactions.  I am also coordinating efforts to bring real-time marine environmental sensing to the project.  This is a collaborative project between the Moorea Coral Reef LTER (of which I am a Co-PI), the SBC LTER and UC San Diego, along with international partners in Australia and Taiwan.  Initial deployments of key instrumentation have been made at the SBC site (at Stearns Wharf)
-    homepage: https://www.eemb.ucsb.edu/people/faculty/holbrook/
-    telephoneNumber: 805-893-3956
-    projectRole: Project Affiliated Investigator
   - databaseID: jmcwilliams
     commonName: Jim McWilliams
     givenName: James
@@ -658,22 +693,6 @@
     profileText: |
       The "plumes project" in the SBC LTER characterizes storm water dilution and land-ocean interactions by model surface wave-current interactions and stream water dispersion. We apply the Regional Ocean Model System (ROMS) several SBC LTER sites in the Santa Barbara Channel. The research is conducted at UCSB by Dave Siegel's group, and at UCLA with Dr. Uchiyama.
     homepage: ''
-    telephoneNumber: ''
-    projectRole: Project Affiliated Investigator
-  - databaseID: dokamoto
-    commonName: Daniel Okamoto
-    givenName: Daniel
-    surName: Okamoto
-    advisor: ''
-    scientificDomainString: Community Ecology
-    scientificDomainText: ''
-    employeeType: Assistant professor
-    email: dokamoto@bio.fsu.edu
-    postalAddress: Department of Biological Science<br />Florida State University<br
-      />Tallahassee FL
-    profileText: |
-      We study population dynamics with a focus on exploited species of importance to coastal communities. We are broadly interested in how environment and species interactions regulate fluctuations in population dynamics and vital rates (i.e. recruitment and connectivity, growth, reproduction & mortality), and how natural resource management affects both ecosystems and people in space and time.  Our research integrates field & laboratory experiments and field data with high-end statistical analysis and numerical models.
-    homepage: https://dkokamoto.com/
     telephoneNumber: ''
     projectRole: Project Affiliated Investigator
   - databaseID: droberts
@@ -692,24 +711,6 @@
       My research with the SBC LTER focuses mainly on mapping vegetation species and plant functional types, urban composition, pre-fire fuel conditions (fuel types, canopy moisture and fuel loads) and post-fire impacts in the various watersheds that feed in to the coastal zone. I work primarily with passive sensors such as the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) and active sensors such as LIDAR.
     homepage: https://www.eri.ucsb.edu/people/dar-roberts
     telephoneNumber: 805-893-2276
-    projectRole: Project Affiliated Investigator
-  - databaseID: lromero
-    commonName: Leonel Romero
-    givenName: Leonel
-    surName: Romero
-    advisor: ''
-    scientificDomainString: Coastal Circulation and Mixing
-    scientificDomainText: Ocean remote sensing techniques, upper ocean dynamics, surface
-      wave dynamics, air-sea interaction, wave-current interaction, ocean mixing, wave
-      breaking, numerical modeling, field observations
-    employeeType: Assistant Professor
-    email: leonel.romero@uconn.edu
-    postalAddress: Department of Marine Sciences<br />University of Connecticut<br />Storrs
-      CT 06269
-    profileText: |
-      My role in the SBC LTER is to study the coastal circulation and mixing of runoff waters. The project uses the Regional Ocean Model System (ROMS) coupled to a wave model (e.g. Simulating Waves Nearshore - SWAN) to model surface wave-current interactions and stream water dispersion for several SBC LTER sites. My overall objective is to characterize storm water dilution and land-ocean interactions and to characterize their potential ecological impacts.
-    homepage: ''
-    telephoneNumber: ''
     projectRole: Project Affiliated Investigator
   - databaseID: jschimel
     commonName: Josh Schimel
@@ -1093,7 +1094,7 @@
     projectRole: Graduate Student
   - databaseID: bdifiore
     commonName: Bart DiFiore
-    givenName: Bart
+    givenName: Bartholomew
     surName: DiFiore
     advisor: Stier
     scientificDomainString: Population and community ecology
@@ -1507,22 +1508,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: shalewood
-    commonName: Stuart Halewood
-    givenName: Stuart
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: Oceanographic Sampling and Data Analysis
-    scientificDomainText: Oceanographic Sampling and Data Analysis
-    employeeType: ''
-    email: halewood@eri.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
-    homepage: ''
-    telephoneNumber: 805-893-7295
-    projectRole: Staff
   - databaseID: ewallner
     commonName: Elisa Wallner Halewood
     givenName: Elisa
@@ -1538,6 +1523,22 @@
       I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
     homepage: ''
     telephoneNumber: 805-893-8087
+    projectRole: Staff
+  - databaseID: shalewood
+    commonName: Stuart Halewood
+    givenName: Stuart
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: Oceanographic Sampling and Data Analysis
+    scientificDomainText: Oceanographic Sampling and Data Analysis
+    employeeType: ''
+    email: halewood@eri.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
+    homepage: ''
+    telephoneNumber: 805-893-7295
     projectRole: Staff
   - databaseID: jjones2
     commonName: Janice Jones
