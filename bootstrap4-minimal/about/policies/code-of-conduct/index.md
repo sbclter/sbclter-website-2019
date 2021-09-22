@@ -19,8 +19,8 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 		   </p>		   
            <p>Members of the SBC LTER Diversity, Equity and Inclusion Committee </p>
             <ul>
-                <li>Adrian Stier (Comittee Chair, SBC Investigator)</li>
-                <li>Gretchen Hofmann (SBC Investigator)</li>
+                <li>Adrian Stier (Comittee Chair, SBC Co-Investigator)</li>
+                <li>Gretchen Hofmann (SBC Co-Investigator)</li>
                 <li>Scott Simon (SBC Education and Outreach Representative)</li>
                 <li>Jenny Dugan (SBC Associate Investigator, Project Coordinator)</li>
                 <li>Kristen Michaud (Graduate Student Representative)</li>
@@ -31,7 +31,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 			 <div class="row">
 			   <div class="col-md-4">
 			     <div class="thumbnail">
-			       <a href="/w3images/lights.jpg">
+			       <a href="{{site.baseurl}}/about/people/astier/">
 			         <img src="{{site.baseurl}}/assets/img/profile/astier.jpg" alt="Adrian Stier" style="width:100%">
 			         <div class="caption">
 			           <p>Adrian Stier</p>
@@ -41,7 +41,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 		<!-- 	   </div>
 			   <div class="col-md-4"> -->
 			     <div class="thumbnail">
-			       <a href="/w3images/nature.jpg">
+			       <a href="{{site.baseurl}}/about/people/ghofmann/">
 			         <img src="{{site.baseurl}}/assets/img/profile/ghofmann.jpg" alt="Gretchen Hofmann" style="width:100%">
 			         <div class="caption">
 			           <p>Gretchen Hofmann</p>
@@ -52,7 +52,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 			   <!-- col 2 -->
 			   <div class="col-md-4">
 			     <div class="thumbnail">
-			       <a href="/w3images/lights.jpg">
+			       <a href="{{site.baseurl}}/about/people/jdugan/">
 			         <img src="{{site.baseurl}}/assets/img/profile/jdugan.jpg" alt="Jenny Dugan" style="width:100%">
 			         <div class="caption">
 			           <p>Jenny Dugan</p>
@@ -60,7 +60,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 			       </a>
 			     </div>
 			     <div class="thumbnail">
-			       <a href="/w3images/fjords.jpg">
+			       <a href="{{site.baseurl}}/about/people/ssimon/">
 			         <img src="{{site.baseurl}}/assets/img/profile/ssimon.jpg" alt="Scott Simon" style="width:100%">
 			         <div class="caption">
 			           <p>Scott Simon</p>
@@ -71,7 +71,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 			   <!-- col 3 -->
 			   <div class="col-md-4">
 			     <div class="thumbnail">
-			       <a href="/w3images/nature.jpg">
+			       <a href="{{site.baseurl}}/about/people/kmichaud/">
 			         <img src="{{site.baseurl}}/assets/img/profile/kmichaud.jpg" alt="Kristin Michaud" style="width:100%">
 			         <div class="caption">
 			           <p>Kristen Michaud</p>

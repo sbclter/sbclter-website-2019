@@ -15,8 +15,8 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 	<div class="row">
 
 
-	       <div class="col-md-4">
-			   <p>paragraph about the executive committee. suck text from the briefing doc.. PIs, and reps from major reseasrch areas, students and IM.</p>
+	       <div class="col-md-6">
+			   <p>SBC is directed by an Executive Committee chaired by lead PI Miller, and includes Co-PIs for the entire 6 year funding period. Associate Investigators are added as rotating positions, and are generally filled by individuals with lead roles in the current short-term  studies. The project coordinator, information manager and a graduate student. </p>
 			   
            <p>Members of the SBC LTER Executive Committee </p>
             <ul>
@@ -31,17 +31,13 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
                 <li>Li Kui (IM and Ex Officio)</li>
                 <li>Kyle Emery (Graduate student)</li>				
             </ul>
+			
+			<p> Regular scheduled meetings are held to inform and solicit input from all investigators, post docs, graduate students, and staff. The meetings serve to keep participants informed of the project’s broad range of activities, which aids in coordination and integration of the different project components. This management style has been very effective in instilling a culture of shared ownership, enthusiasm and pride for the project among participants. </p>
         </div>
 
-       <div class="col-md-8">
-             <img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/diver_entering.png"  alt="Divers at Santa Cruz Island" style="float:right; PADDING-LEFT: 15px" />    
-        </div>
-  
-     
-  
-   </div>
-    
-	
+       <div class="col-md-6">
+             <img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/group_SBCLTER_Retreat_6.20.02-9.jpg"  alt="Divers at Santa Cruz Island" style="float:right; PADDING-LEFT: 15px" />    
+        </div>  
      
     </div>
 </div>

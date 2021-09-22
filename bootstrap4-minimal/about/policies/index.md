@@ -29,7 +29,7 @@ description: links to policies for diversity, safety, privacy, governance start 
 					<p>The SBC LTER Code of Conduct is intended to help promote an inclusive and supportive culture by prohibiting all forms of harassment, intimidation, intolerance and disrespect for any reason. ... <a href="code-of-conduct">read more</a></p>
 				</div>
 				<div  class="col-md-6">
-	            	<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/SEEDS07Beachactivity.jpg"  alt="Students at a beach transect" />
+	            	<img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/Kristen_Jess_Kyle_REUexperiment2017.jpg"  alt="Students at a beach transect" />
 				</div>			
 			</div> <!-- close the row -->
 			<!-- divider -->
@@ -44,11 +44,11 @@ description: links to policies for diversity, safety, privacy, governance start 
 			</div>
 			<div class="row">
 				<div  class="col-md-6"> <!-- half of any column is width 6 -->
-				    <p>Short paragraph about governance ... <a href="{{site.baseurl}}/about/policies/governance">read more</a>
+				    <p>Since its inception SBC has incorporated a philosophy of shared governance in which research planning, resource allocation, and administration are discussed at scheduled meetings open to all ... <a href="{{site.baseurl}}/about/policies/governance">read more</a>
 				    </p>
 				</div>
 				<div  class="col-md-6">
-		           	<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/SEEDS07Beachactivity.jpg"  alt="Students at a beach transect" />
+		           	<img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/group_SBCLTER_Retreat_6.20.02-9.jpg"  alt="Planning SBC research" />
 				</div>			
 			</div> <!-- close the row -->
 			<!-- divider -->
