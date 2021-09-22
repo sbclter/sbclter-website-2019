@@ -12,34 +12,11 @@ description: policies and guidelines for safety.
 
 
 <div id="main-container">
-	<!--
-	<div class="row">
-	       <div class="col-md-4">
-           <p>Sample col with a list </p>
-            <ul>
-                <li>list 1</li>
-                <li>list 2</li>
-                <li>list 3</li>
-                <li>list 4</li>
-            </ul>
-        </div>
-
-       <div class="col-md-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-anim id est laborum.
-          </p>
-        </div>
-   </div>
-    -->
 	
     <!-- possibly could add a clear here instead of row. see getbootstrap.com/docs/ examples grid -->
     
     <div class="row"> 
-        <div class="col-md-5">
+        <div class="col-md-6">
 			<h2>Boating and Dive Safety</h2>
 			
           <p>SBC LTER has a small boat, RV Kelpfish, a 22’ Radon that is available for use by certified SBC
@@ -66,19 +43,42 @@ graduate student. At present (Feb 2019-Feb 2022), the committee is:
 
         </div>
 
-       <div class="col-md-7">
+       <div class="col-md-6">
        
-    <img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/diver_entering.png"  alt="Divers at Santa Cruz Island" style="float:right; PADDING-LEFT: 15px" />       
+	   	<div class="thumbnail">
+	         <a href="/w3images/fjords.jpg">
+	           <img src="/assets/img/policies/Goleta_Pier_Launch_6.jpg" alt="Kelpfish launch" style="width:100%">
+	           <div class="caption">
+	<p>Launchmaster Clint Nelson training a student to launch RV Kelpfish from the Goleta Pier</p>
+	           </div>
+	         </a>
+	       </div>
      </div>
-     
     </div>
 	
-	<div>
+	<!-- divider -->
+	<div  class="row">
+	    <div class='col-md-12'>
+	         <hr/>
+	    </div>
+	</div>
+	
+	<div class="row">
+	<div class="col-md-6">
 	<h2>Laboratory Safety</h2>
     <p>Lab safety  follows UCSB protocols
 		link to that doc, too. see internal/reef/admin/...
 	</p>
 	
 	</div>
+	
+       <div class="col-md-6">
+       
+	   	<div class="thumbnail">
+	           <img src="/assets/img/policies/student_lab.jpg" alt="Student in the lab" style="width:100%">
+	       </div>
+     </div>
+ </div>
+
 	
 </div>

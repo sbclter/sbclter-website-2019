@@ -19,25 +19,80 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 		   </p>		   
            <p>Members of the SBC LTER Diversity, Equity and Inclusion Committee </p>
             <ul>
-                <li>Adrian Stier (Chair)</li>
-                <li>Gretchen Hofmann (Investigator)</li>
+                <li>Adrian Stier (Comittee Chair, SBC Investigator)</li>
+                <li>Gretchen Hofmann (SBC Investigator)</li>
                 <li>Scott Simon (SBC Education and Outreach Representative)</li>
-                <li>Jenny Dugan (SBC Associate Investigator and Project Coordinator)</li>
+                <li>Jenny Dugan (SBC Associate Investigator, Project Coordinator)</li>
                 <li>Kristen Michaud (Graduate Student Representative)</li>
             </ul>
         </div>
 
        <div class="col-md-6">
-		   <p>photos of committee memebers here</p>
-             <img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/diver_entering.png"  alt="Divers at Santa Cruz Island" style="float:right; PADDING-LEFT: 15px" />    
+			 <div class="row">
+			   <div class="col-md-4">
+			     <div class="thumbnail">
+			       <a href="/w3images/lights.jpg">
+			         <img src="{{site.baseurl}}/assets/img/profile/astier.jpg" alt="Adrian Stier" style="width:100%">
+			         <div class="caption">
+			           <p>Adrian Stier</p>
+			         </div>
+			       </a>
+			     </div>
+		<!-- 	   </div>
+			   <div class="col-md-4"> -->
+			     <div class="thumbnail">
+			       <a href="/w3images/nature.jpg">
+			         <img src="{{site.baseurl}}/assets/img/profile/ghofmann.jpg" alt="Gretchen Hofmann" style="width:100%">
+			         <div class="caption">
+			           <p>Gretchen Hofmann</p>
+			         </div>
+			       </a>
+			     </div>
+			   </div>
+			   <!-- col 2 -->
+			   <div class="col-md-4">
+			     <div class="thumbnail">
+			       <a href="/w3images/lights.jpg">
+			         <img src="{{site.baseurl}}/assets/img/profile/jdugan.jpg" alt="Jenny Dugan" style="width:100%">
+			         <div class="caption">
+			           <p>Jenny Dugan</p>
+			         </div>
+			       </a>
+			     </div>
+			     <div class="thumbnail">
+			       <a href="/w3images/fjords.jpg">
+			         <img src="{{site.baseurl}}/assets/img/profile/ssimon.jpg" alt="Scott Simon" style="width:100%">
+			         <div class="caption">
+			           <p>Scott Simon</p>
+			         </div>
+			       </a>
+			     </div>
+			   </div>
+			   <!-- col 3 -->
+			   <div class="col-md-4">
+			     <div class="thumbnail">
+			       <a href="/w3images/nature.jpg">
+			         <img src="{{site.baseurl}}/assets/img/profile/kmichaud.jpg" alt="Kristin Michaud" style="width:100%">
+			         <div class="caption">
+			           <p>Kristen Michaud</p>
+			         </div>
+			       </a>
+			     </div>
+			           <p>SBC LTER's Diversity Committee</p>		         
+			   </div>
+		   </div> 
         </div>
-   </div>
-    
+
+	<div  class="row">
+	            <div class='col-md-12'>
+	             <hr/>
+	            </div>
+	        </div>
 	
     <!-- possibly could add a clear here instead of row. see getbootstrap.com/docs/ examples grid -->
     
     <div class="row"> 
-        <div class="col-md-4">
+        <div class="col-md-12">
 		   <h2>SBC LTER Website Privacy Policy</h2>
 			
           <p>SBC LTER is committed to protecting the privacy of website users. Our website Privacy Policy details the types of information we collect and how it is used, and links to the policies of our parent organizations. Most importantly, our web servers collect very little information, and we do not redistribute or sell it.
@@ -46,14 +101,14 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
           <p><a href="privacy-policy">Full SBC LTER Privacy Policy</a></p>
 		  
         </div>
-
+<!-- >
        <div class="col-md-8">
        <p>block has an image. </p>
        
-    <img class="image-thumbnail img-responsive center-block" src="/assets/img/avatar.png"  alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />       
+         
      </div>
-     
-        <hr />
+     -->
+        
      
      
     </div>
