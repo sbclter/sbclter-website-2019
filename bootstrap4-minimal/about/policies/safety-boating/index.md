@@ -39,7 +39,8 @@ graduate student. At present, the committee is:
 		<li>Be notified of all new certifications for boat use and any changes made to the boating regulations</li>
 </ol>
 </p>
-<p>The Launchmaster is in control of day-to-day operations originating at the UCSB Marine Lab. The complete Small Boat Policy is available (LINK TBD)</p>
+<p>The Launchmaster is in control of day-to-day operations originating at the UCSB Marine Lab. The complete <a href="https://sbclter.msi.ucsb.edu/external/Documents/Policies/Boating_Policy.pdf">Small Boat Policy is available publicly</a>, and additional
+	material available on the <a href="https://sbclter.msi.ucsb.edu/internal/admin-policies">internal server</a> (after login).</p>
 
         </div>
 
