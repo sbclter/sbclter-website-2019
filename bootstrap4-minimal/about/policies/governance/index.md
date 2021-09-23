@@ -16,7 +16,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 
 
 	       <div class="col-md-6">
-			   <p>SBC is directed by an Executive Committee chaired by lead PI Miller, and includes Co-PIs for the entire 6 year funding period. Associate Investigators are added as rotating positions, and are generally filled by individuals with lead roles in the current short-term  studies. The project coordinator, information manager and a graduate student. </p>
+			   <p>SBC is directed by an Executive Committee chaired by lead PI Miller, and includes Co-PIs for the entire 6 year funding period. Associate Investigators are added as rotating positions, and are generally filled by individuals with lead roles in the current short-term  studies. The project coordinator, information manager and a graduate student round out the committee. </p>
 			   
            <p>Members of the SBC LTER Executive Committee </p>
             <ul>

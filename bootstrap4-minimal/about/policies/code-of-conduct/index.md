@@ -41,7 +41,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
 			       <a href="{{site.baseurl}}/about/people/astier/">
 			         <img src="{{site.baseurl}}/assets/img/profile/astier.jpg" alt="Adrian Stier" style="width:100%">
 			         <div class="caption">
-			           <p>Adrian Stier <i>(Comittee Chair, SBC Co-Investigator)</i></p>
+			           <p>Adrian Stier <i>(Committee Chair, SBC Co-Investigator)</i></p>
 			         </div>
 			       </a>
 			     </div>
