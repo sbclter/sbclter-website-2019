@@ -22,6 +22,14 @@ description: Review team materials, 2021 midterm review, NSF.
 			<li>
 	            <h3>2018 Proposal</h3>
 	            <ul>
+					<li><h4>2018 NSF Renewal Solicitation</h4>
+					<dl>
+						<dd>
+							<a href="/internal/Awards/LTER%20IV_2018/2021%20Midterm%20review/Review_team_materials/LTER_solicitation_2018.pdf">LTER solicitation 2018.pdf</a>
+						</dd>
+					</dl>
+				</li>
+					
 	            <li><h4>Proposal Text</h4>
 	            	<dl>
 	            		<dd>
