@@ -17,11 +17,9 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 	
 	<div class="row">
 		<div class="col-md-8">
-			<p>SBC LTER's K12 program, Schoolyard LTER (sLTER), focuses on science and environmental education for both students and teachers using SBC research themes to improve ocean science literacy. These themes provide for the integrated development of programs and content that are aligned with the Next Generation Science Standards (NGSS) and Common Core. </p>
+			
 		</div>
-		<div class="col-md-4">
-			<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/ngss_logo.png"  alt="NGSS Logo" />
-		</div>
+		
 	</div> <!-- closes row -->
 
 	<div class="row">
@@ -29,7 +27,15 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 			<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/IMG_0938-REEF-web.png" alt="From 2, to 2,000, gallons, The REEF has Temperate and Tropical aquaria and touch tanks to explore an Ocean View of the World." style="float:right;" />
 		</div>
 		<div class="col-md-6">
-			<p>Our K12 program is coordinated through <a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a>, part of the Marine Science Institute’s (MSI) Oceans-to-Classrooms (O2C) education and outreach program. Equipped with state-of-the-art touch tanks and aquaria, The REEF provides an “Ocean View of the World” for students in Southern California.</p>
+			<div class="row">
+				<div class="col-md-8">
+			<p>SBC LTER's K12 program, Schoolyard LTER (sLTER), focuses on science and environmental education for both students and teachers using SBC research themes to improve ocean science literacy. These themes provide for the integrated development of programs and content that are aligned with the Next Generation Science Standards (NGSS) and Common Core. </p>
+		</div>
+			<div class="col-md-4">
+					<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/ngss_logo.png"  alt="NGSS Logo" />
+				</div>
+			</div>
+			<p>Our K12 program is coordinated through <a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a>, part of the Marine Science Institute’s (MSI) <a href="https://msi.ucsb.edu/education/oceans-to-classrooms/about">Oceans-to-Classrooms (O2C)</a> education and outreach program. Equipped with state-of-the-art touch tanks and aquaria, The REEF provides an “Ocean View of the World” for students in Southern California.</p>
 			<p>The SBC LTER Schoolyard program supports K-12 education in several ways: 
 				<ul>
 					<li>Activities on the UCSB campus</li>
@@ -39,6 +45,10 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 				</ul>
 			</p> 
 		</div> 
+		
+			
+		
+		
 	</div> <!-- closes row -->
 
 		<!-- divider, followed by 3 "for" sections -->
@@ -53,6 +63,7 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 		<div class="col-md-4">
 		 	<h2>For K12 Students</h2>
 			<p>We use SBC LTER data to provide rich, place-based hands-on content to support learning in classrooms and after school programs. Grade-specific content is designed by SBC LTER's education coordinator with undergraduate and graduate students, and researchers.</p>
+			<p><a href="{{site.baseurl}}/education/resources">Educational resources</a></p>
 		</div>
 
 		<div class="col-md-4">
@@ -74,6 +85,10 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 	 	</div>
 	</div> <!-- close row -->
 
+
+<!-- You need the embedded graphics, etc to make this work. waiting on Scott 
+
+
 	<div class="row">
 		<div class="col-md-12">
 			<h2>Resources</h2>
@@ -81,6 +96,10 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 		</div>
 	</div>
 	
+	--> 
+	
+	
+	<!-- 
 	<div class="row">
 		<div class="col-md-12">
 			<h2>Partnerships</h2>
@@ -111,6 +130,8 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 				</ul> 
 			</p>
 		</div>
-	</div> <!-- closes partnerships row -->
+		
+	</div>
+		--> <!-- closes partnerships row -->
 		
 </div>

@@ -69,7 +69,7 @@ description: page description here.
 		<!-- create a separate row for titles so they stay at a uniform height. -->
 		<div class="row">
 	        <div class="col-md-4">
-	           <h3>Schoolyard LTER and K12 Education</h3>
+	           <a href="schoolyard"><h3>Schoolyard LTER and K12 Education</h3></a>
 			</div>
 	        <div class="col-md-4">
 	            <a href="undergrad"><h3>Undergraduate Education</h3></a>
@@ -90,7 +90,7 @@ description: page description here.
         We work with teachers in professional development workshops and in their classrooms to 
         improve student understanding of key environmental concepts, including ocean circulation, 
         weather, and potential influences on biodiversity.  </p>
-	<!-- 	<p><a href="{{site.baseurl}}/education/schoolyard">Read more ...</a></p> -->
+	 	<p><a href="{{site.baseurl}}/education/schoolyard">Read more ...</a></p> 
        
         </div>   
         <div class="col-md-4">
