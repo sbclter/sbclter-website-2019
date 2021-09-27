@@ -9,7 +9,7 @@ description: page description here.
 
 <div id="main-container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
          <blockquote>
             <p class="lead">SBC programs include from K-12 education,  
             teacher professional development, undergraduate and graduate student training, plus 
@@ -17,23 +17,43 @@ description: page description here.
             SBC students, postdoctoral scientists, and investigators are actively 
             engaged in all facets of our education and outreach efforts. </p>
             
-            <p>Collaborations include</p>
-            <ul>
-                <li>The REEF at MSI</li>
-                <li>UCSB Departments and Research Units in Natural Sciences</li>
-                <li>Multiple LTER sites</li>
-                <li>Santa Barbara, Ventura County schools</li>
-                <li>American Association of University Women</li>
-                <li>Ocean Education Trust, NautilusLive!</li>
-          	 </ul>
+            <h3>Collaborations include</h3>
+            <dl class="row">
+                <dt  class="col-sm-3">On UCSB Campus</dt>
+						<dd class="col-sm-9">
+							<ul class="list-unstyled">
+								<li>The REEF at MSI</li>
+								<li>Departments and Research Units in Natural Sciences</li>
+								<li>Gevirtz Graduate School of Education</li>
+								<li>Offices of Education, the Registrar</li>
+							</ul>
+						</dd>
+						
+				<dt class="col-sm-3">Off Campus</dt>
+					<dd class="col-sm-9">
+						<ul class="list-unstyled">
+							<li>Multiple LTER sites</li>
+							<li>Santa Barbara, Ventura County schools</li>
+							<li>Harding University Partnership School</li>
+							<li>American Association of University Women</li>
+							<li>Channel Islands National Marine Sanctuary</li>
+							<li>Santa Barbara Channel Keepers</li>
+						</ul>
+					</dd>				
+				</dl>
           </blockquote>  
+		<!--  
+	      <hr/>		  
+	      <p>And be sure to check out the Santa Barbara Coastal marine classes offered by the <a href="https://www.youtube.com/channel/UCzNC-IK5BNlgY3cZrGrWEqQ/videos" target="new">VirtualREEF education team!</a>. 
+		  </p>
+		  -->
            <!--
               <p class="text-center"><a href="{{page.url}}/schoolyard">link to schoolyard page.</a></p>  
           <p class="text-center"><a href="{{page.url}}/undergrad">link to undergrad page.</a></p>
           <p class="text-center"><a href="{{page.url}}/grad">link to grad student page.</a></p> 
          -->
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
            <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/EarthDay2018.jpg"  alt="Earth Day, 2018" />
           <br /><br /> <!-- get some css to do this -->           
         </div>
@@ -49,13 +69,13 @@ description: page description here.
 		<!-- create a separate row for titles so they stay at a uniform height. -->
 		<div class="row">
 	        <div class="col-md-4">
-	            <h3>Schoolyard LTER and K12 Education</h3>
+	           <h3>Schoolyard LTER and K12 Education</h3>
 			</div>
 	        <div class="col-md-4">
-	            <h3>Undergraduate Education</h3>
+	            <a href="undergrad"><h3>Undergraduate Education</h3></a>
 			</div>
 	        <div class="col-md-4">
-	            <h3>Graduate and Postdoctoral Training</h3>
+	            <a href="grad_postdoc"><h3>Graduate and Postdoctoral Training</h3></a>
 			</div>
 		</div>
 	<div class="row">
@@ -70,7 +90,7 @@ description: page description here.
         We work with teachers in professional development workshops and in their classrooms to 
         improve student understanding of key environmental concepts, including ocean circulation, 
         weather, and potential influences on biodiversity.  </p>
-		<p><a href="{{site.baseurl}}/education/schoolyard">Read more ...</a></p>
+	<!-- 	<p><a href="{{site.baseurl}}/education/schoolyard">Read more ...</a></p> -->
        
         </div>   
         <div class="col-md-4">
@@ -85,7 +105,7 @@ description: page description here.
             management and analysis. Students also have access to
             our Research Experience for Undergraduates (REU) program and 
             several other mentorship programs sponsored by the University.</p>
-			<p><a href="{{site.baseurl}}/education/undergrad">Read more ...</a></p>
+		<p><a href="{{site.baseurl}}/education/undergrad">Read more ...</a></p>
 			
             <!-- REU 
             students work closely with SBC researchers on a wide range of topics and most choose 
@@ -110,8 +130,5 @@ description: page description here.
 
           
    </div>
-   <hr/>
-
-   Check out the Santa Barbara Coastal marine classes offered by the <a href="https://www.youtube.com/channel/UCzNC-IK5BNlgY3cZrGrWEqQ/videos" target="new">VirtualREEF education team</a>. 
-    
+  
 </div>
