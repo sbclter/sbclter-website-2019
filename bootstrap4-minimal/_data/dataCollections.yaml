@@ -127,15 +127,18 @@
     mapLayer: reefNPPgiantKelp
 - collectionName: 'SBC LTER: Ongoing and long-term time-series of satellite and aerial
     estimates of giant kelp biomass'
-  abstract: Historical estimates of giant kelp canopy biomass along the coast of California
-    from aerial based surveys (1958-2006) and ongoing estimates of giant kelp biomass
-    derived from satellite imagery (1984-present).
+  abstract: 'Historical estimates of giant kelp canopy biomass along the coast of
+    California from aerial based surveys (1958-2006) and ongoing estimates of giant
+    kelp biomass derived from satellite imagery (1984-present). The effects of envionmental
+    drivers on kelp biomass are also included in this collection.  '
   dataPackages:
     package:
     - docid: knb-lter-sbc.14
       shortTitle: 'Giant kelp canopy biomass from aerial overflights  '
     - docid: knb-lter-sbc.140
       shortTitle: Kelp canopy chlorophyll to carbon ratio
+    - docid: knb-lter-sbc.144
+      shortTitle: Kelp biomass and environmental drivers
     - docid: knb-lter-sbc.74
       shortTitle: Kelp canopy area and biomass from Landsat (ongoing dataset)
   habitats:
@@ -266,23 +269,6 @@
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers:
     mapLayer: inshoreMoorings
-- collectionName: 'SBC LTER: Ongoing time-series of moored Temperature at Northern
-    Channel Island sites'
-  abstract: Temperature data have been collected at 21 nearshore sites along the Northern
-    Channel islands in the Santa Barbara Channel. The sites are ~15 m deep. Data were
-    aggregated into hourly average.
-  dataPackages:
-    package:
-    - docid: knb-lter-sbc.2030
-      shortTitle: Hourly temperature at 21 island sites
-  habitats:
-    habitat: nearshore
-  measurementTypes:
-    measurementType: physical_oceanography
-  lterCoreResearchAreas:
-    lterCoreResearchArea: Movement of Inorganic Matter
-  mapLayers:
-    mapLayer: inshoreMoorings
 - collectionName: 'SBC LTER: Other moored instruments'
   abstract: 'Currents and hydrography data have been collected intermittently at several
     reef sites. Instruments deployed intermittently include: bottom-mounted acoustic
@@ -301,6 +287,40 @@
     measurementType: physical_oceanography
   lterCoreResearchAreas:
     lterCoreResearchArea: Movement of Inorganic Matter
+  mapLayers: ~
+- collectionName: 'SBC LTER: Ongoing time-series of moored Temperature at Northern
+    Channel Island sites'
+  abstract: "Temperature data have been collected at 21 nearshore sites along the
+    Northern Channel islands in the Santa Barbara Channel. This is a joined effor
+    between SBC and \nChannel Islands National Marine Sanctuary (CINMS). The sites
+    are ~15 m deep. Data were aggregated into hourly average."
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.2030
+      shortTitle: Hourly temperature at 21 island sites
+  habitats:
+    habitat: nearshore
+  measurementTypes:
+    measurementType: physical_oceanography
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Disturbance Patterns
+  mapLayers:
+    mapLayer: inshoreMoorings
+- collectionName: 'SBC LTER: Ongoing time-series of high resolution temperature'
+  abstract: 'This collection includes an ongoing time series of high resolution temperature
+    at Mohawk and Arroyo Quemado, with three sites each (inshore, offshore, and east
+    of reef). Temperature was recorded at 1-meter interval along the water column,
+    and the sampling interval is 2 minutes. '
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.2031
+      shortTitle: High resolution temperature
+  habitats:
+    habitat: nearshore
+  measurementTypes:
+    measurementType: physical_oceanography
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Disturbance Patterns
   mapLayers: ~
 - collectionName: 'SBC LTER: Ongoing time-series of pH from SeaFETs and dissolved
     oxygen from miniDots'
@@ -339,14 +359,14 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6002
       shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
-    - docid: knb-lter-sbc.6003
-      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
     - docid: knb-lter-sbc.6004
       shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+    - docid: knb-lter-sbc.6003
+      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -408,9 +428,7 @@
   measurementTypes:
     measurementType: physical_oceanography
   lterCoreResearchAreas:
-    lterCoreResearchArea:
-    - Disturbance Patterns
-    - Movement of Inorganic Matter
+    lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers: ~
 - collectionName: 'SBC LTER: Ongoing time-series of macroalgal wrack'
   abstract: Composition, cover and biomass of macroalgal wrack in the intertidal zone
@@ -629,10 +647,10 @@
     collections.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.3002
-      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
     - docid: knb-lter-sbc.3001
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
+    - docid: knb-lter-sbc.3002
+      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
@@ -641,18 +659,18 @@
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3008
-      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3014
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3011
@@ -661,10 +679,10 @@
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3016
-      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
       shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+    - docid: knb-lter-sbc.3016
+      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
   habitats:
     habitat: watershed
   measurementTypes:
@@ -739,6 +757,22 @@
     lterCoreResearchArea:
     - Population Studies
     - Movement of Organic Matter
+  mapLayers: ~
+- collectionName: 'SBC LTER: Organism biomass across kelp biomass gradient'
+  abstract: This collection include data rerepresenting the biomass of 225 different
+    species recorded at non-core sites. Sites differer across a gradient in kelp variability,
+    from sites with highly persistent kelp to sites where kelp biomass fluctuates
+    regularly.
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.141
+      shortTitle: Species biomass at non-core sites
+  habitats:
+    habitat: reef
+  measurementTypes:
+    measurementType: community_structure
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Population Studies
   mapLayers: ~
 - collectionName: 'SBC LTER: Net primary production of understory algae and phytoplankton'
   abstract: 'This collection includes data on primary production derived from in situ
@@ -846,6 +880,8 @@
     package:
     - docid: knb-lter-sbc.109
       shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
+    - docid: knb-lter-sbc.142
+      shortTitle: Surge nitrogen uptake in kelp
     - docid: knb-lter-sbc.116
       shortTitle: Rapid sediment temperature profiles
     - docid: knb-lter-sbc.117
@@ -1026,7 +1062,6 @@
       shortTitle: Bio-optical glider cross-shelf sections
   habitats:
     habitat:
-    - reef
     - nearshore
     - offshore
   measurementTypes:
@@ -1087,13 +1122,14 @@
     - Movement of Organic Matter
     - Movement of Inorganic Matter
   mapLayers: ~
-- collectionName: 'SBC LTER: Beach wrack consumer zonation 2011-2012'
-  abstract: Zonation and distribution of intertidal wrack consumer beds over time,  at
-    Isla Vista Beach
+- collectionName: 'SBC LTER: Beach wrack consumer study'
+  abstract: Short term study (in situ or lab) of intertidal wrack consumer
   dataPackages:
     package:
     - docid: knb-lter-sbc.113
       shortTitle: Wrack consumer zonation at Isla Vista, 2011-2012
+    - docid: knb-lter-sbc.143
+      shortTitle: Detritivore kelp consumption rates
   habitats:
     habitat: beach
   measurementTypes:
