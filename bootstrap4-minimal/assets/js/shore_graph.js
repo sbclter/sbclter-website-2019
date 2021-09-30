@@ -1,5 +1,15 @@
 // // CSV source file
-const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+
+// 2021-09: mob added vars to pull max 100 in the past
+var today = new Date()
+var priorDate = new Date().setDate(today.getDate()-100)
+// console.log(`prior date is ${priorDate}.`);
+console.log(`100 days ago is ${ new Date(priorDate).toJSON() }`);
+
+// const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+
+ const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+
 
 var chart;
 var timeIndex = 1;
