@@ -1,13 +1,13 @@
 ---
 layout: article
 title: 'Software and Codes'
-description: SBCLTER producted software and codes
+description: SBCLTER producted software and code
 ---
 
 <div id="main-container">
 <div class="container-fluid">
 
-<h1>Software and Codes</h1>
+<h1>Software and Code</h1>
 
 <hr/>
 <br>
