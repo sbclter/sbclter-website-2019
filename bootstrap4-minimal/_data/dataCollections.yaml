@@ -359,14 +359,14 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6004
       shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
     - docid: knb-lter-sbc.6003
       shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -414,7 +414,7 @@
   dataPackages:
     package:
     - docid: knb-lter-sbc.35
-      shortTitle: Mean CDIP Hs and Tp
+      shortTitle: Mean CDIP Hs and Tp (ongoing)
     - docid: knb-lter-sbc.36
       shortTitle: LTE KR - Hourly irradiance, surface and seafloor
     - docid: knb-lter-sbc.128
@@ -655,30 +655,30 @@
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
-    - docid: knb-lter-sbc.3005
-      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3005
+      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
-    - docid: knb-lter-sbc.3009
-      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3012
-      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3009
+      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
+    - docid: knb-lter-sbc.3012
+      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
     - docid: knb-lter-sbc.3014
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3013
-      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3013
+      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3018
       shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
     - docid: knb-lter-sbc.3016
@@ -774,6 +774,21 @@
   lterCoreResearchAreas:
     lterCoreResearchArea: Population Studies
   mapLayers: ~
+- collectionName: 'SBC LTER: Image analysis in photo quad'
+  abstract: 'Could-based image analysis technique has been used in SBCLTER for quad
+    survey that has been done paralleled to the Kelp Forest Community Dynamics (KFCD)
+    collection. '
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.133
+      shortTitle: LTER annual benthic photo quad
+  habitats:
+    habitat: reef
+  measurementTypes:
+    measurementType: community_structure
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Population Studies
+  mapLayers: ~
 - collectionName: 'SBC LTER: Net primary production of understory algae and phytoplankton'
   abstract: 'This collection includes data on primary production derived from in situ
     incubations of natural assemblages of understory algae and phytoplankton in giant
@@ -816,9 +831,7 @@
   habitats:
     habitat: reef
   measurementTypes:
-    measurementType:
-    - genomics
-    - remote_sensing
+    measurementType: remote_sensing
   lterCoreResearchAreas:
     lterCoreResearchArea:
     - Disturbance Patterns
@@ -836,6 +849,20 @@
       shortTitle: Giant kelp microsatellite markers 2014
     - docid: knb-lter-sbc.53
       shortTitle: Giant kelp microsatellite markers 2016
+  habitats:
+    habitat: reef
+  measurementTypes:
+    measurementType: genomics
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Population Studies
+  mapLayers: ~
+- collectionName: 'SBC LTER: Microbial community in kelp forest'
+  abstract: This collection includes genetic studies on microbial community in the
+    kelp forest
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.132
+      shortTitle: Bacterial communities on giant kelp
   habitats:
     habitat: reef
   measurementTypes:
@@ -1075,7 +1102,7 @@
     - Movement of Organic Matter
     - Movement of Inorganic Matter
   mapLayers: ~
-- collectionName: 'SBC LTER: Cross-shelf study, 2008-2009'
+- collectionName: 'SBC LTER: Cross-shelf study'
   abstract: Oceanographic profiles of a cross-shelf transect collected to resolve
     the development of temporal and spatial gradients in organic and inorganic constituents
     and related microbial activity and community structure.
@@ -1083,6 +1110,8 @@
     package:
     - docid: knb-lter-sbc.45
       shortTitle: Cross-shelf Study, CTD/Rosette Profiles
+    - docid: knb-lter-sbc.134
+      shortTitle: Plumes and Blooms oceanographic and phytoplankton
   habitats:
     habitat:
     - reef
