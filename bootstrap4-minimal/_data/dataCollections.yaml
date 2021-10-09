@@ -359,12 +359,12 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6004
       shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
     - docid: knb-lter-sbc.6003
       shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6002
       shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
   habitats:
@@ -724,6 +724,8 @@
       shortTitle: Kelp forest food web
     - docid: knb-lter-sbc.12
       shortTitle: Stable isotopes in reef food webs
+    - docid: knb-lter-sbc.125
+      shortTitle: Kelp and invertebrate isotope labeling experiment
   habitats:
     habitat: reef
   measurementTypes:
@@ -1260,10 +1262,10 @@
     to the Santa Barbara Coastal area
   dataPackages:
     package:
-    - docid: knb-lter-sbc.135
-      shortTitle: Temperature to Nitrate
     - docid: knb-lter-sbc.126
       shortTitle: ROMS model files and codes
+    - docid: knb-lter-sbc.135
+      shortTitle: Temperature to Nitrate
   habitats:
     habitat:
     - offshore
