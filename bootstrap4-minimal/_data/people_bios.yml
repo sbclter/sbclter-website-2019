@@ -161,8 +161,8 @@
       disturbance and stress, seagrass, kelp
     employeeType: ''
     email: castorani@virginia.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
+    postalAddress: Department of Environmental Sciences<br />University of Virginia<br
+      />Charlottesville VA 22904-4123
     profileText: |
       My research seeks to explain and predict how environmental change influences population and community dynamics in coastal marine and estuarine ecosystems, with an emphasis on impacts to habitat-forming kelps and seagrasses. I am particularly interested how metapopulation processes, such as the size, connectivity, and arrangement of rocky reef habitats, influence the response of giant kelp populations to environmental variability, including wave disturbance and nutrient availability. The comprehensive, long-term data generated at the SBC LTER provide an unprecedented opportunity to study how numerous abiotic and biotic factors influence giant kelp population resilience and recovery dynamics over broad spatial and temporal scales. To address my research questions, I incorporate observational and experimental data with statistical and theoretical models.
     homepage: ''
@@ -913,6 +913,23 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
+  - databaseID: mliang
+    commonName: Maowei Liang
+    givenName: Maowei
+    surName: Liang
+    advisor: ''
+    scientificDomainString: Plant Community and Ecosystem Ecology
+    scientificDomainText: Biodiversity, Community and Ecosystem Ecology, Grasslands,
+      Global Change, Plant and Soil Ecology, Rangeland Management, Restoration Ecology
+    employeeType: Postdoctoral Scholar
+    email: maowei.liang@virginia.edu
+    postalAddress: Department of Environmental Sciences<br />University of Virginia<br
+      />Charlottesville VA 22904-4123
+    profileText: |
+      I am currently a Postdoctoral Scholar in the Department of Environmental Sciences at the University of Virginia. My work with the SBC-LTER focuses on how the diversity-stability relationships change in trophic levels across spatial scales. Other projects include using the LTER, NEON, and GGN multiple long-term datasets to assess the drivers of the diversity-stability relationships from local sites to regional scales.
+    homepage: https://maowei-liang.weebly.com
+    telephoneNumber: ''
+    projectRole: Post Doctoral Associate
   - databaseID: hlowman
     commonName: Heili Lowman
     givenName: Heili
@@ -1257,6 +1274,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
+  - databaseID: ekadiyala
+    commonName: Ethan Kadiyala
+    givenName: Ethan
+    surName: Kadiyala
+    advisor: Castorani
+    scientificDomainString: Marine Ecology
+    scientificDomainText: ''
+    employeeType: Graduate Student
+    email: qkz8dd@virginia.edu
+    postalAddress: Department of Environmental Sciences<br />University of Virginia<br
+      />Charlottesville VA 22904-4123
+    profileText: |
+      I am a coastal ecologist interested in the spatial variation of communities over time. After graduating from UC Santa Barbara in 2020, I joined the Castorani Lab at the University of Virginia. I am currently a PhD student studying the spatial synchrony of kelp forest communities. Leveraging long-term data and new measures of synchrony, I will investigate how biotic and abiotic drivers structure communities over space and time.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
   - databaseID: lkozal
     commonName: Logan Kozal
     givenName: Logan
@@ -1508,22 +1541,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: ewallner
-    commonName: Elisa Wallner Halewood
-    givenName: Elisa
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: Oceanography and Microbiology Sampling and Analysis
-    scientificDomainText: ''
-    employeeType: ''
-    email: elisa.wallner@lifesci.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
-    homepage: ''
-    telephoneNumber: 805-893-8087
-    projectRole: Staff
   - databaseID: shalewood
     commonName: Stuart Halewood
     givenName: Stuart
@@ -1539,6 +1556,22 @@
       As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
     homepage: ''
     telephoneNumber: 805-893-7295
+    projectRole: Staff
+  - databaseID: ewallner
+    commonName: Elisa Wallner Halewood
+    givenName: Elisa
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: Oceanography and Microbiology Sampling and Analysis
+    scientificDomainText: ''
+    employeeType: ''
+    email: elisa.wallner@lifesci.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
+    homepage: ''
+    telephoneNumber: 805-893-8087
     projectRole: Staff
   - databaseID: jjones2
     commonName: Janice Jones
