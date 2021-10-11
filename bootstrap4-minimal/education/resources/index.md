@@ -332,7 +332,7 @@ description: curricula and other media for education, produced by the SBC LTER
    <!-- class=my-auto centers text vertically -->
    <div class="col-md-4 my-auto">
 	<p>
-  			<a href="http://sbc.lternet.edu/external/Reef/Data/kelp_biomass_landsat/ucsb_kelp_ts.mov" target="offline"><img class="img-thumbnail img-responsive img-center" src="/assets/img/education/kelp_from_space.png"></a>
+  			<a href="http://sbc.lternet.edu/external/Reef/Data/kelp_biomass_landsat/ucsb_kelp_ts.mp4" target="offline"><img class="img-thumbnail img-responsive img-center" src="/assets/img/education/kelp_from_space.png"></a>
   	</p>	
 
   </div> <!-- closes column -->
@@ -420,9 +420,9 @@ description: curricula and other media for education, produced by the SBC LTER
   		<li>
   			<a href="https://lternet.edu/lter-site-briefs-2019-2/" target="offline">All LTER Network Site Briefs</a>
   		</li>
-  		<li>
+  		<!-- <li>
   			<a href="/external/Outreach/SBCKTER_brochure/SBC_brief_FINAL.pdf" target="offline">SBC LTER Site Brief</a>
-  		</li>
+  		</li> -->
   	</ul>
   </div> <!-- closes column -->
 </div> <!-- close row -->
