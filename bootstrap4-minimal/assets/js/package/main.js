@@ -40,7 +40,14 @@ function main(url) {
 			let packageId = json['_packageId'];
 			let citation = await fetch('https://cite.edirepository.org/cite/' + packageId + '?style=RAW');
 			citation = await citation.text();
-			citation = JSON.parse(citation.replace(/'/g, '"'));
+			// Wei Tung's original:
+			// citation = JSON.parse(citation.replace(/'/g, '"'));
+		
+			
+			// margaret's fix: 2021-10-10, because some data packags titles have quotes in them. e.g., knb-lter-sbc.130
+			// https://stackoverflow.com/questions/36038454/parsing-string-as-json-with-single-quotes
+			citation = (0, eval)('(' + citation + ')');
+
 
 			// Load json data onto each page
 			summary .parse(json, citation);
