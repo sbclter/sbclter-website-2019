@@ -918,7 +918,7 @@
     givenName: Maowei
     surName: Liang
     advisor: ''
-    scientificDomainString: Plant Community and Ecosystem Ecology
+    scientificDomainString: 'Plant Community and Ecosystem Ecology'
     scientificDomainText: Biodiversity, Community and Ecosystem Ecology, Grasslands,
       Global Change, Plant and Soil Ecology, Rangeland Management, Restoration Ecology
     employeeType: Postdoctoral Scholar
@@ -945,6 +945,23 @@
       I am interested in the biogeochemistry of ecological margins - terrestrial/aquatic, wildland/urban - and I am currently a Postdoctoral Scholar in the Department of Natural Resources and Environmental Science at the University of Nevada, Reno.
       My past and ongoing research projects examine the fate of organic matter and nutrients as they traverse the land to ocean margin. Teaching and scientific communication are integral to my research, and I am always seeking new mentorship and collaboration opportunities.
     homepage: ''
+    telephoneNumber: ''
+    projectRole: Post Doctoral Associate
+  - databaseID: apayandeh
+    commonName: Ali Payandeh
+    givenName: Ali
+    surName: Payandeh
+    advisor: ''
+    scientificDomainString: Physical oceanography
+    scientificDomainText: Coastal circulation, Numerical Modeling, Statistical Analysis,
+      Coastal Oceanography, Observational Oceanography, Hydrodynamic, Sediment Transport
+    employeeType: Postdoctoral Scholar
+    email: alip@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am currently a postdoctoral scholar in the Marine Science Institute at University of California Santa Barbara. Currently I am using high frequency radars data to study the structure of currents and mesoscale eddies in the Southern California Bight region. I am interested in innovative field measurements and utilizing high-resolution numerical models to study oceanic and coastal processes
+    homepage: http://alirezapayandeh.zharfapodcast.com/
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
   - databaseID: msiple
