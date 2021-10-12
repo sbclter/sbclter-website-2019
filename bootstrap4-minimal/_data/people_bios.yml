@@ -918,14 +918,15 @@
     givenName: Maowei
     surName: Liang
     advisor: ''
-    scientificDomainString: ''
-    scientificDomainText: ''
-    employeeType: ''
+    scientificDomainString: 'Plant Community and Ecosystem Ecology'
+    scientificDomainText: Biodiversity, Community and Ecosystem Ecology, Grasslands,
+      Global Change, Plant and Soil Ecology, Rangeland Management, Restoration Ecology
+    employeeType: Postdoctoral Scholar
     email: maowei.liang@virginia.edu
     postalAddress: Department of Environmental Sciences<br />University of Virginia<br
       />Charlottesville VA 22904-4123
-    profileText: |2+
-
+    profileText: |
+      I am currently a Postdoctoral Scholar in the Department of Environmental Sciences at the University of Virginia. My work with the SBC-LTER focuses on how the diversity-stability relationships change in trophic levels across spatial scales. Other projects include using the LTER, NEON, and GGN multiple long-term datasets to assess the drivers of the diversity-stability relationships from local sites to regional scales.
     homepage: https://maowei-liang.weebly.com
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
