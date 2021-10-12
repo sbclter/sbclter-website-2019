@@ -20,6 +20,10 @@ description: Review team materials, 2021 midterm review, NSF.
       		</li>
             <li><a href="/internal/Awards/LTER%20IV_2018/2021%20Midterm%20review/Review_team_materials/SBC_site_review_report.pdf"><h3>SBC IV Midterm Review Briefing Document</h3></a> </li>
 			<li>
+			
+			
+	       
+				
 	            <h3>2018 Proposal</h3>
 	            <ul>
 					<li><h4>2018 NSF Renewal Solicitation</h4>
@@ -46,12 +50,7 @@ description: Review team materials, 2021 midterm review, NSF.
 				</li>
 			</ul>
 		</li>
-		</ul>
-	 
-	   
-	
-	</div>
-</div>
+		
 
 
 <div  class="row">
@@ -64,12 +63,20 @@ description: Review team materials, 2021 midterm review, NSF.
 	<div class="col-md-12">
  
 	
-
+	        <h2>Presentations</h2>
+				<ul>
+				
+	        <li><a href="/internal/Awards/LTER%20IV_2018/2021%20Midterm%20review/Review_team_materials/presentations/Lighning_talks_1page_summaries.pdf"><h3>One-page Summaries of Lightning Talks</h3></a> </li>
+				 	
+		        <li><a href="/internal/Awards/LTER%20IV_2018/2021%20Midterm%20review/Review_team_materials/presentations/"><h3>Folder of all Presentations</h3></a> </li>
+					
+				
+				</ul>
 
         
 		</div>
 	</div>
 
-</div>
+	
 
 
