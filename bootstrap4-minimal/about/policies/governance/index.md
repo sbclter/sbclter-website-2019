@@ -29,7 +29,7 @@ description: The SBC LTER code of conduct, community philosophy and privacy poli
                 <li>Alyson Santoro (Investigator)</li>
                 <li>Jenifer Dugan (Investigator and Project Coordinator)</li>
                 <li>Li Kui (IM and Ex Officio)</li>
-                <li>Kyle Emery (Graduate student)</li>				
+                <li>Kristen Michaud(Graduate student)</li>				
             </ul>
 			
 			<p> Regular scheduled meetings are held to inform and solicit input from all investigators, post docs, graduate students, and staff. The meetings serve to keep participants informed of the project’s broad range of activities, which aids in coordination and integration of the different project components. This management style has been very effective in instilling a culture of shared ownership, enthusiasm and pride for the project among participants. </p>
