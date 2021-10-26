@@ -157,15 +157,15 @@
     surName: Castorani
     advisor: ''
     scientificDomainString: Marine Ecology
-    scientificDomainText: Marine ecology, population dynamics, community ecology, metapopulations,
-      disturbance and stress, seagrass, kelp
-    employeeType: ''
+    scientificDomainText: Community ecology, disturbance, kelp forests, metapopulation
+      dynamics, productivity dynamics, synchrony
+    employeeType: Assistant Professor
     email: castorani@virginia.edu
     postalAddress: Department of Environmental Sciences<br />University of Virginia<br
-      />Charlottesville VA 22904-4123
+      />Charlottesville VA 22904
     profileText: |
-      My research seeks to explain and predict how environmental change influences population and community dynamics in coastal marine and estuarine ecosystems, with an emphasis on impacts to habitat-forming kelps and seagrasses. I am particularly interested how metapopulation processes, such as the size, connectivity, and arrangement of rocky reef habitats, influence the response of giant kelp populations to environmental variability, including wave disturbance and nutrient availability. The comprehensive, long-term data generated at the SBC LTER provide an unprecedented opportunity to study how numerous abiotic and biotic factors influence giant kelp population resilience and recovery dynamics over broad spatial and temporal scales. To address my research questions, I incorporate observational and experimental data with statistical and theoretical models.
-    homepage: ''
+      I am a coastal marine ecologist with primary interests in population and community ecology. My work combines long-term observations, experiments, and models to determine the causes and consequences of habitat loss and recovery, the roles of environmental and ecological processes in structuring biodiversity, and the ways in which populations and communities interact across space from local to regional scales. At SBC LTER, my research focuses on (1) the effects of disturbance and other environmental variations in determining kelp forest structure and function, (2) the role of giant kelp (Macrocystis pyrifera) in controlling biodiversity as a foundation species, and (3) giant kelp dispersal and connectivity, metapopulation dynamics, and spatial synchrony.
+    homepage: https://castorani.evsc.virginia.edu/
     telephoneNumber: ''
     projectRole: Investigator
   - databaseID: kcavanaugh
@@ -918,7 +918,7 @@
     givenName: Maowei
     surName: Liang
     advisor: ''
-    scientificDomainString: 'Plant Community and Ecosystem Ecology'
+    scientificDomainString: Plant Community and Ecosystem Ecology
     scientificDomainText: Biodiversity, Community and Ecosystem Ecology, Grasslands,
       Global Change, Plant and Soil Ecology, Rangeland Management, Restoration Ecology
     employeeType: Postdoctoral Scholar
@@ -948,7 +948,7 @@
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
   - databaseID: apayandeh
-    commonName: Ali Payandeh
+    commonName: Ali Reza Payandeh
     givenName: Ali
     surName: Payandeh
     advisor: ''
@@ -960,7 +960,7 @@
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
-      I am currently a postdoctoral scholar in the Marine Science Institute at University of California Santa Barbara. Currently I am using high frequency radars data to study the structure of currents and mesoscale eddies in the Southern California Bight region. I am interested in innovative field measurements and utilizing high-resolution numerical models to study oceanic and coastal processes
+      I am a postdoctoral scholar in the Marine Science Institute at University of California Santa Barbara. Currently I am using high frequency radar data to study the structure of currents and mesoscale eddies in the Southern California Bight region. I am interested in innovative field measurements and utilizing high-resolution numerical models to study oceanic and coastal processes.
     homepage: http://alirezapayandeh.zharfapodcast.com/
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
