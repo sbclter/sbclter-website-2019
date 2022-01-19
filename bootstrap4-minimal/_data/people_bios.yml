@@ -897,6 +897,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
+  - databaseID: kemery1
+    commonName: Kyle Emery
+    givenName: Kyle
+    surName: Emery
+    advisor: ''
+    scientificDomainString: Kelp forest and sandy beach ecology
+    scientificDomainText: Kelp forest and sandy beach ecology
+    employeeType: Post Doctoral Associate
+    email: kyleemery@ucla.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106
+    profileText: |
+      I am interested in subsidies to beach ecosystems and their associated organisms. Sandy beaches along the southern California coast are receive organic matter and nutrient inputs through the deposition of giant kelp (Macrocystis pyrifera) wrack onto the beach. This material supports a variety of consumers through the provision of both habitat and food. I am interested in determining the extent of kelp inputs to beaches across a range of both types and during different seasonal conditions. I am also interested in how the variation in kelp inputs along the SBC LTER coastline controls community compositions and consumer behavior. I will explore these questions and more through kelp tagging and tracking experiments and beach surveys of consumer populations.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Post Doctoral Associate
   - databaseID: ajames
     commonName: Anna James
     givenName: Anna
@@ -1189,22 +1205,6 @@
       Barbara CA 93106-3060
     profileText: |
       I am currently pursuing my Ph.D. under the guidance of Dr. David Siegel. I am broadly interested in ecological modeling, and my current research is focused on developing a demographic model of giant kelp forest dynamics in the Santa Barbara Channel. I am using SBC LTER data products to help parameterize the model and test its validity against observed data. My future plans for this work include improving the model with data collected from drones and satellites, as well as working to apply the model on a regional scale to improve our understanding of spatiotemporal dynamics of giant kelp forests and the effects of perturbations and disturbances on these important ecosystem engineers.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: kemery1
-    commonName: Kyle Emery
-    givenName: Kyle
-    surName: Emery
-    advisor: Dugan
-    scientificDomainString: Kelp forest and sandy beach ecology
-    scientificDomainText: Kelp forest and sandy beach ecology
-    employeeType: Graduate Student
-    email: emery@ucsb.edu
-    postalAddress: Interdepartmental Graduate Program in Marine Science<br />University
-      of California<br />Santa Barbara CA 93106
-    profileText: |
-      I am interested in subsidies to beach ecosystems and their associated organisms. Sandy beaches along the southern California coast are receive organic matter and nutrient inputs through the deposition of giant kelp (Macrocystis pyrifera) wrack onto the beach. This material supports a variety of consumers through the provision of both habitat and food. I am interested in determining the extent of kelp inputs to beaches across a range of both types and during different seasonal conditions. I am also interested in how the variation in kelp inputs along the SBC LTER coastline controls community compositions and consumer behavior. I will explore these questions and more through kelp tagging and tracking experiments and beach surveys of consumer populations.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
