@@ -123,6 +123,7 @@ async function updateCSVData() {
         graphData(series);
 
         setYRange();
+        setXRange();
     });
 }
 
@@ -141,6 +142,9 @@ function graphData(series) {
             plotBorderColor: 'black',
             plotBorderWidth: 2,
             height: '60%',
+        },
+        time: {
+            useUTC: false, 
         },
         xAxis: {
             type: 'datetime',
@@ -262,6 +266,9 @@ function graphData(series) {
         }
 
         timeIndex = element.index() - 1;
+
+        setYRange();
+        setXRange();
     });
 }
 
@@ -272,6 +279,7 @@ async function toggleGraph(topic) {
     $(`#${topic}-btn`).toggleClass('btn-color');
 
     setYRange();
+    setXRange();
 }
 
 function setYRange() {
@@ -288,6 +296,10 @@ function setYRange() {
         }
     });
     chart.yAxis[0].setExtremes(minY, maxY);
+}
+
+function setXRange() {
+    chart.xAxis[0].setExtremes(chart.xAxis[0].userMin, new Date().getTime());
 }
 
 function formatTime(date) {
@@ -335,6 +347,8 @@ async function toggleCelsius(e) {
     }
 
     updateLatest();
+    setYRange();
+    setXRange();
 }
 
 function toCelsius(f) {

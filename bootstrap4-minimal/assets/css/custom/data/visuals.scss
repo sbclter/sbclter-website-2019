@@ -30,8 +30,8 @@ body {
         }
 
         .line-btn, .btn-temperature.toggle {
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
             &:hover {
-                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
                 filter: brightness(1.1);
             }
         }
