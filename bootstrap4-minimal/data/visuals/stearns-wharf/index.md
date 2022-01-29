@@ -43,11 +43,11 @@ page_css:
         <div id="graph-lines">
             <div class="row-container line-section" >
                 <div id="current-time" class="absolute-right">&nbsp;</div>
-                <div class="latest-value">Latest</div>
+                <div class="latest-value">Current Values</div>
             </div>
 
             <div class="row-container line-section" >
-                <div style="width: 100%">
+                <div style="width: 100%; display: flex; column-gap: 0.5rem;">
                     <div id="temperature-btn" class="btn btn-color line-btn" onclick="toggleGraph('temperature')">
                         Temperature
                     </div>
@@ -74,6 +74,10 @@ page_css:
                     Salinity (PSU, ~ppt)
                 </div>
                 <div id="salinity-latest" class="latest-value btn">&nbsp;</div>
+            </div>
+
+            <div>
+                Click label to turn a display on/off. Y-axis scaling is automatic
             </div>
         </div>
     </div>

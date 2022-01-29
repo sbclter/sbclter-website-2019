@@ -29,6 +29,13 @@ body {
             width: 100%;
         }
 
+        .line-btn, .btn-temperature.toggle {
+            &:hover {
+                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+                filter: brightness(1.1);
+            }
+        }
+
         .latest-value {
             width: 100px;
             vertical-align: middle;
@@ -38,8 +45,7 @@ body {
         }
 
         #temperature-btn {
-            width: 68.5%;
-            display: inline-flex !important;
+            flex: 1;
         }
 
         .btn-temperature {

@@ -51,8 +51,6 @@ setTimeout(() => {
 
 
 async function updateCSVData() {
-    $('#current-time').text(formatTime(new Date()));
-
     fetch(CSV_FILE).then(async res => {
         let text = await res.text();
 
@@ -83,9 +81,8 @@ async function updateCSVData() {
         let data = text.split('\n');
         data.shift();
         data.shift();
+        data = data.map(line => line.trim()).filter(line => line.length != 0);
         data.forEach(line => {
-            if (line.trim().length == 0) return;
-
             let vals = line.split(',');
             let time = new Date(vals[0]);
             let val1 = parseFloat(vals[1]) || undefined;
@@ -110,6 +107,10 @@ async function updateCSVData() {
                 d[1] = toFahrenheit(d[1]);
             });
         }
+
+        // Update latest time string
+        const lastDateString = data[data.length - 1].trim().split(',')[0];
+        $('#current-time').text('Lastest data timestamp: ' + formatTime(new Date(lastDateString)));
 
         updateLatest();
 
@@ -144,7 +145,7 @@ function graphData(series) {
             },
             // minorTickInterval: 5,
             // minorGridLineWidth: 1,
-            tickInterval: 2,
+            // tickInterval: 2,
             gridLineWidth: 1,
             ordinal: false, // prevents inconsistent x-axis time spacing
         },
