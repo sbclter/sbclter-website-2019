@@ -146,6 +146,7 @@ function graphData(series) {
             // minorGridLineWidth: 1,
             tickInterval: 2,
             gridLineWidth: 1,
+            ordinal: false, // prevents inconsistent x-axis time spacing
         },
         yAxis: {
             opposite: false,
