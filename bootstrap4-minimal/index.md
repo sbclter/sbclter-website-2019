@@ -24,9 +24,9 @@ description: Home page description here.
     <div class="row mt-4">
         <div class="col-md">
         <h1>Santa Barbara Coastal </h1>
-            <h2>Long-Term Ecological Research</h2>
+            <h2>Long Term Ecological Research</h2>
 
-     <p class="mt-4">The Santa Barbara Coastal Term Ecological Research (SBC LTER) site is an interdisciplinary 
+     <p class="mt-4">The Santa Barbara Coastal Long Term Ecological Research (SBC LTER) site is an interdisciplinary 
      program established in 2000 to understand the ecology of coastal kelp forest ecosystems. Our research is 
      focused on the nearshore waters of southern California, where ocean currents and climate are highly 
      variable with season and longer-term cycles, including the El Niño-Southern Oscillation and the Pacific 
