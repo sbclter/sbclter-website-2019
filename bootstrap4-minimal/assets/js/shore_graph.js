@@ -7,8 +7,7 @@ var priorDate = new Date().setDate(today.getDate()-100)
 console.log(`100 days ago is ${ new Date(priorDate).toJSON() }`);
 
 // const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
-
- const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
 
 
 var chart;
@@ -27,6 +26,13 @@ var units_data = {
     temperature: '°C',
     chlorophyll: 'μg / Liter',
     salinity: 'PSU',
+};
+
+const Y_RANGE_CONFIG = {
+    pressure: {min: 1, max: 5},
+    temperature: {min: 0, max: 30},
+    chlorophyll: {min: 0, max: 50},
+    salinity: {min: 30, max: 35},
 };
 
 
@@ -115,6 +121,8 @@ async function updateCSVData() {
         updateLatest();
 
         graphData(series);
+
+        setYRange();
     });
 }
 
@@ -262,6 +270,24 @@ async function toggleGraph(topic) {
 
     chart.series[seriesIndex[topic]].setVisible(!turnOff);
     $(`#${topic}-btn`).toggleClass('btn-color');
+
+    setYRange();
+}
+
+function setYRange() {
+    // Set graph vertical range based on Y_RANGE_CONFIG
+    let minY = Math.max(...Object.values(Y_RANGE_CONFIG).map(config => config.min)),
+        maxY = Math.min(...Object.values(Y_RANGE_CONFIG).map(config => config.max));
+
+    Object.keys(Y_RANGE_CONFIG).forEach(topic => {
+        const range = Y_RANGE_CONFIG[topic];
+
+        if (chart.series[seriesIndex[topic]].visible) {
+            minY = Math.min(minY, range.min);
+            maxY = Math.max(maxY, range.max);
+        }
+    });
+    chart.yAxis[0].setExtremes(minY, maxY);
 }
 
 function formatTime(date) {
