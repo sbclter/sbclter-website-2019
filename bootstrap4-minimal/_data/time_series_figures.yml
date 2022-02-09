@@ -1,0 +1,16 @@
+  - figureName: Annual Reef fish
+    figureDescription: |
+      The density of the fish at the 11 sites that are surveyed annually over summer. "Annual fish" is only a one snap shot of the fish. 
+    figureLink: https://sbclter.msi.ucsb.edu/external/Documents/data_vis/figures/Annual_reef_fish.pdf
+  - figureName: Annual Reef kelp
+    figureDescription: |
+      
+    figureLink: https://sbclter.msi.ucsb.edu/external/Documents/data_vis/figures/Annual_reef_kelp.pdf
+  - figureName: Irridiation
+    figureDescription: |
+      Irridiation at three sites under the water
+    figureLink: https://sbclter.msi.ucsb.edu/external/Documents/data_vis/figures/Light_at_site.pdf
+  - figureName: DO
+    figureDescription: |
+      Dissolved oxygen in the water column
+    figureLink: https://sbclter.msi.ucsb.edu/external/Documents/data_vis/figures/DO_saturation_at_site.pdf
