@@ -307,7 +307,7 @@
     scientificDomainText: Limnology, hydrology, watershed science, biogeochemistry,
       wetland ecology, remote sensing
     employeeType: Professor
-    email: john.melack@lifesci.ucsb.edu
+    email: melack@bren.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
@@ -906,8 +906,8 @@
     scientificDomainText: Kelp forest and sandy beach ecology
     employeeType: Post Doctoral Associate
     email: kyleemery@ucla.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106
+    postalAddress: Department of Geography<br />University of California<br />Los Angeles
+      CA 90095
     profileText: |
       I am interested in subsidies to beach ecosystems and their associated organisms. Sandy beaches along the southern California coast are receive organic matter and nutrient inputs through the deposition of giant kelp (Macrocystis pyrifera) wrack onto the beach. This material supports a variety of consumers through the provision of both habitat and food. I am interested in determining the extent of kelp inputs to beaches across a range of both types and during different seasonal conditions. I am also interested in how the variation in kelp inputs along the SBC LTER coastline controls community compositions and consumer behavior. I will explore these questions and more through kelp tagging and tracking experiments and beach surveys of consumer populations.
     homepage: ''
@@ -1558,6 +1558,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
+  - databaseID: dambat
+    commonName: Darrin Ambat
+    givenName: Darrin
+    surName: Ambat
+    advisor: ''
+    scientificDomainString: Reef Sampling and Intern Coordinator
+    scientificDomainText: Marine ecology, fish ecology, climate change, trophic dynamics
+    employeeType: Assistant Specialist
+    email: dambat@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I aid in kelp forest monitoring surveys for the SBC-LTER. Most of my work is conducted using SCUBA and aboard the R/V Kelpfish. In the lab, I help bridge the gap between data collection during field surveys and data management through data quality checking and statistical analysis. Additionally, I coordinate and oversee undergraduate interns who are working in our lab.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Staff
   - databaseID: shalewood
     commonName: Stuart Halewood
     givenName: Stuart

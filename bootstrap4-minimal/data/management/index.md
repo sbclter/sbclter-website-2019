@@ -38,7 +38,7 @@ The primary objectives of the SBC IM system are to 1) preserve high-quality and 
 <div>
 
 <h3>1. Who we are</h3>
-<p>SBC personnel involved in information management include <a href="/about/people/lkui/">Li Kui</a> and <a href="/about/people/mobrien/">Margaret O'Brien</a>(SBC's information managers), and scientific staff in research groups: <a href="/about/people/jdugan/">Jenny Dugan</a>  (science coordinator), <a href="/about/people/cnelson1/">Clint Nelson</a>, and <a href="/about/people/dsalazar/">David Salazar</a>.</p>
+<p>SBC personnel involved in information management include <a href="/about/people/lkui/">Li Kui</a> and <a href="/about/people/mobrien/">Margaret O'Brien</a>(SBC's information managers), and scientific staff in research groups: <a href="/about/people/jdugan/">Jenny Dugan</a>  (science coordinator), <a href="/about/people/cnelson1/">Clint Nelson</a>, <a href="/about/people/dambat/">Darrin Ambat</a>, and <a href="/about/people/dsalazar/">David Salazar</a>.</p>
  
 <p>We also leverage or work closely with the following groups for system support, standards development, informatics, software development, and/or data processing:</p>
 <p>- Marine Science Institute (<a href="http://msi.ucsb.edu">MSI.ucsb.edu</a>) and the UC Santa Barbara campus network infrastructure</p>
