@@ -106,6 +106,10 @@ description: Home page description here.
   </a>
 </div>
 
+  <video style='width: 100%' controls>
+    <source src="https://sbclter.msi.ucsb.edu/external/Documents/SBCLTER_videos/SBC%20LTER%20Overview-Final.mp4" type="video/mp4">
+  </video>
+
 </div>
 </div>
 
