@@ -9,7 +9,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.15.5-x64-mingw-ucrt)
+    ffi (1.15.5)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.10.0)
@@ -63,12 +63,12 @@ GEM
       ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    unicode-display_width (1.8.0)
+    unicode-display_width (1.7.0)
     wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x86_64-darwin-20
 
 DEPENDENCIES
   jekyll (~> 4.2.0)
