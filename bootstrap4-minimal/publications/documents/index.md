@@ -82,7 +82,6 @@ add links to documents using an existing document as a template.
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year1_2013.pdf">SBC LTER Annual Report 2013</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year2_2014.pdf">SBC LTER Annual Report 2014</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year3_2015.pdf">SBC LTER Annual Report 2015</a></li>
-<!--      <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Midterm_Review/SBC-LTER_2009_midterm_review_report.pdf">SBC LTER Midterm Review Report 2015</a></li> -->
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year4_2016.pdf">SBC LTER Annual Report 2016</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year5_2017.pdf">SBC LTER Annual Report 2017</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year6_2018.pdf">SBC LTER Annual Report 2018</a></li>
@@ -95,10 +94,8 @@ add links to documents using an existing document as a template.
             <ul>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year1_2019.pdf">SBC LTER Annual Report 2019</a></li>
                  <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year2_2020.pdf">SBC LTER Annual Report 2020</a></li>
-<!--             <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year1_2019.pdf">SBC LTER Annual Report 2019</a></li>
-                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year2_2020.pdf">SBC LTER Annual Report 2020</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year3_2021.pdf">SBC LTER Annual Report 2021</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Midterm_Review/SBCLTER_2021_midterm_review_report.pdf">SBC LTER Midterm Review Report 2021</a></li>
+ <!--               <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Midterm_Review/SBCLTER_2021_midterm_review_report.pdf">SBC LTER Midterm Review Report 2021</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year4_2022.pdf">SBC LTER Annual Report 2022</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year5_2023.pdf">SBC LTER Annual Report 2023</a></li>
                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year6_2024.pdf">SBC LTER Annual Report 2024</a></li>
