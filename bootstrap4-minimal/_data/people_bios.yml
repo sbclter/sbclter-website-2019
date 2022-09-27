@@ -273,7 +273,7 @@
     scientificDomainText: Applied marine ecology, fisheries management, social-ecological
       interactions of marine resource use
     employeeType: Associate Professor
-    email: lenihan@ucsb.edu
+    email: hlenihan@ucsb.edu
     postalAddress: Bren School of Environmental Science and Management<br />University
       of California<br />Santa Barbara CA 96106-5131
     profileText: |
@@ -897,6 +897,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
+  - databaseID: edonham
+    commonName: Emily Donham
+    givenName: Emily
+    surName: Donham
+    advisor: ''
+    scientificDomainString: Climate change and kelp forest ecology
+    scientificDomainText: Climate change and kelp forest ecology
+    employeeType: Post Doctoral Associate
+    email: edonham@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      I am broadly interested in how environmental variability affects marine organisms' physiology and ecology. My past work has assessed the impacts of climate change and ocean acidification on kelp forest grazers, such as sea urchins. As a Postdoc in the Stier Lab at UC Santa Barbara, I will focus on furthering understanding of the factors controlling kelp biomass inside and outside of California’s marine protected areas.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Post Doctoral Associate
   - databaseID: kemery1
     commonName: Kyle Emery
     givenName: Kyle
@@ -1436,6 +1452,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
+  - databaseID: bray
+    commonName: Billy Ray
+    givenName: William
+    surName: Ray
+    advisor: Miller
+    scientificDomainString: Benthic Community Ecology
+    scientificDomainText: Benthic Community Ecology
+    employeeType: Graduate Student
+    email: william_ray@umail.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am a PhD student working with Bob Miller. I am investigating the trophic connectivity between pelagic ocean and rocky reef kelp forest ecosystems. I am interested in how variation in physical factors and phytoplankton community composition affects the growth response of the benthic suspension feeding community. Additionally, I am interested in the selective feeding of bivalves and how this is influenced by ecological and abiotic stressors.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
   - databaseID: aritger
     commonName: Amelia Ritger
     givenName: Amelia
@@ -1514,6 +1546,26 @@
       Barbara CA 93106-4060
     profileText: |
       I study the interaction between people and their environments, and analyze the spatial characteristics of all manner of cultural, economic, political, and physical processes and their relationships.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: evilla
+    commonName: Emelly Villa
+    givenName: Emelly
+    surName: Villa
+    advisor: Cavanaugh
+    scientificDomainString: Kelp forest ecology and remote sensing
+    scientificDomainText: Kelp forest ecology and remote sensing
+    employeeType: Graduate Student
+    email: emivilla@g.ucla.edu
+    postalAddress: Department of Geography<br />University of California<br />Los Angeles
+      CA 90095
+    profileText: |
+      My research is focused on investigating the impact marine protected areas have on kelp
+      forest dynamics post climatic stressors across time and multiple scales. I am interested in analyzing kelp
+      canopy resistance and resilience metrics in hopes to reveal smaller scale environmental drivers that
+      contribute to large scale variability within a protected ecosystem. In Kyle Cavanaugh’s lab at UCLA, I use
+      various remote sensing platforms and drones to study these coastal interactions.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
