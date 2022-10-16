@@ -1,6 +1,0 @@
-notes are here:
-bash-3.2$  /Volumes/sbcbon/internal/bon_website/bon_website/bootstrap/
-
-how-tos etc, which you have put in a google drive:
-SBC_LTER > 2018_IM_transition > website > notes
-https://drive.google.com/drive/folders/13tnVP4ckbhsdUsfjMK8GvYhANnp6nW2A
