@@ -1275,22 +1275,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: ehardison
-    commonName: Emily Hardison
-    givenName: Emily
-    surName: Hardison
-    advisor: Eliason
-    scientificDomainString: Eco-physiology
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: emily.hardison@lifesci.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      Emily is interested in the effects of diet on thermal acclimation responses. A major assumption about thermal acclimation is that an individual will always respond to a given temperature in the same way. Emily uses a local omnivorous fish (opaleye) as a model system for exploring if/how diet may alter the way fish experience and respond to changes in environmental temperature.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: kjohnston
     commonName: Karina Johnston
     givenName: Karina
@@ -1339,38 +1323,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: kkraskura
-    commonName: Krista Kraskura
-    givenName: Krista
-    surName: Kraskura
-    advisor: Eliason
-    scientificDomainString: Fish ecophysiology and plasticity
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: kkraskura@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      Krista is interested in exploring how body size affects an individual’s capacity to deal with changing conditions, both acutely and long term. During her PhD journey, Krista is exploring how metabolic scaling relationships change with temperature and life-histories in fish, and will study the underlying morphological and physiological mechanisms that can alter metabolic scaling. Krista also is interested in better understanding why climate change is “shrinking” our fish, and what the consequences may be.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: tleach
-    commonName: Terence Leach
-    givenName: Terence
-    surName: Leach
-    advisor: Hofmann
-    scientificDomainString: 'Ecophysiology and adaptation '
-    scientificDomainText: Ecophysiology and developmental biology
-    employeeType: Graduate Student
-    email: tleach@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I joined the Hofmann lab in 2016 with an interest in exploring how marine organisms respond to environmental stress induced by climate change. My current research focuses on how environmental stress experienced by marine invertebrates in the Santa Barbara Channel alters their reproduction and the subsequent development of their offspring. Understanding the degree in which different species can reproduce and develop successfully under stress induced by ocean warming and acidification, for example, is crucial for making models and/or predictions about how populations in the Santa Barbara Channel will fare under future climatic change. For this research I have mainly utilized the ecologically relevant purple sea urchin (Strongylocentrotus purpuratus), a key player in our coastal kelp forest ecosystem.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: jmadden
     commonName: Jess Madden
     givenName: Jessica
@@ -1400,6 +1352,22 @@
     postalAddress: ''
     profileText: |
       I am exploring how the population dynamics of sea urchins influences the ecology of kelp forests in the Santa Barbara area.  Through a combination of statistical analysis, dynamical modeling, feeding assays, and physiological experiments, my work aims to quantify the impact of changes in red and purple sea urchin populations and consumption patterns.  I am interested in the differences between red sea urchins, which are harvested by a large local fishery, and purple sea urchins which are generally not fished.  The SBC-LTER dataset contains extensive information on sea urchin populations which is essential to my research goals.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: imangino
+    commonName: 'Inez Mangino '
+    givenName: Inez
+    surName: Mangino
+    advisor: Miller
+    scientificDomainString: Marine ecology
+    scientificDomainText: Marine ecology
+    employeeType: Graduate Student
+    email: inez@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      My research interests include coastal marine ecology, community ecology, and kelp physiology. I am interested in the epifaunal communities within giant kelp forests and how they interact with their macroalgal host. I aim to study how epifaunal diversity, abundance, and distribution affect giant kelp’s physiological performance across various environmental gradients such as temperature, light, and water movement. 
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1482,6 +1450,22 @@
     profileText: |
       I am interested in the ecological consequences of intraspecific variation at multiple spatial scales. I currently use Corynactis californica (the strawberry anemone) and Tegula funebralis (the black turban snail) to explore 1) variation within a population 2) variation within a species and 3) the interaction of environmental mosaics such as variable upwelling regimes and biological communities on species performance and fitness.
     homepage: https://ameliaritger.netlify.app/
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: irodriguez
+    commonName: Leeza-Marie Rodriguez
+    givenName: Leeza-Marie
+    surName: Rodriguez
+    advisor: Hoffman
+    scientificDomainString: Marine ecology and conservation
+    scientificDomainText: Marine ecology and conservation
+    employeeType: Graduate Student
+    email: leeza-marie@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      Leeza-Marie Rodriguez (she/her) is a Ph.D. student at the University of California, Santa Barbara where she is interested in investigating the effects of Marine Heatwaves, occurring along the SBC LTER coastline, on marine invertebrate physiology. The main objective of her study is to understand how important ecosystem engineers, like sea urchins, respond to stress in their environments and what traits allow them to persist in place.
+    homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
   - databaseID: jsainz
