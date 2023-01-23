@@ -21,7 +21,7 @@
     - docid: knb-lter-sbc.19
       shortTitle: KFCD abundance of algae and invertebrates
     - docid: knb-lter-sbc.50
-      shortTitle: KFCD - Biomass of algae, invertebrates and fish
+      shortTitle: KFCD Biomass of algae, invertebrates and fish
     - docid: knb-lter-sbc.43
       shortTitle: KFCD bottom topography
     - docid: knb-lter-sbc.120
@@ -141,6 +141,8 @@
       shortTitle: Kelp biomass and environmental drivers
     - docid: knb-lter-sbc.74
       shortTitle: Kelp canopy area and biomass from Landsat (ongoing dataset)
+    - docid: knb-lter-sbc.150
+      shortTitle: Landsat 8 chlorophyll
   habitats:
     habitat: reef
   measurementTypes:
@@ -167,17 +169,46 @@
     lterCoreResearchArea: Population Studies
   mapLayers:
     mapLayer: reefLobsters
+- collectionName: 'SBC LTER: Ongoing time-series of benthic composition experiment
+    (BCE)'
+  abstract: This experiment seeks to explore how competition between understory algae
+    and benthic invertebrates drive ecosystem form and function on our coastal reefs.
+    Sampling is conducted at 7 sites, and every 3 months. At each of the site, two
+    6-m circular plots with 50 x 70 cm rock plates were deployed. The datasets are
+    collected from 12 adjacent control quads, 12 PVC recruitment plates (10 x 10 cm),
+    6 recruitment brushes, and one photosynthetically active radiation (PAR) light
+    sensor.
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.154
+      shortTitle: BCE benthic survey
+    - docid: knb-lter-sbc.155
+      shortTitle: BCE brush composition
+  habitats:
+    habitat: reef
+  measurementTypes:
+    measurementType:
+    - community_structure
+    - ecosystem_processes
+  lterCoreResearchAreas:
+    lterCoreResearchArea:
+    - Primary Production
+    - Population Studies
+    - Movement of Inorganic Matter
+    - Disturbance Patterns
+    - Movement of Organic Matter
+  mapLayers: ~
 - collectionName: 'SBC LTER: Sea urchins in California'
   abstract: 'Time series and laboratory data on sea urchins (<i>Strongylocentrotus
     purpuratus</i> and <i>Mesocentrotus franciscanus</i>). The collection includes
     data on: (1) biweekly settlement of larval sea urchins and other invertebrates
     at four locations in southern California and one location in northern California
     from 1990 present, (2) the effects of dietary composition on purple sea urchin
-    consumption, growth, and gonad weight, and (3) the effects of purple sea urchin
-    egg concentration on fertilization success. Ongoing time-series data on the size,
-    abundance and biomass of sea urchins are provided in the SBC data collections
-    ‘Giant kelp forest community dynamics (KFCD)’ and ‘Long-term experiment of kelp
-    removal (LTE KR)’.'
+    consumption, growth, and gonad weight, (3) the effects of purple sea urchin egg
+    concentration on fertilization success, and (4) sea urchin forage rate. Ongoing
+    time-series data on the size, abundance and biomass of sea urchins are provided
+    in the SBC data collections ‘Giant kelp forest community dynamics (KFCD)’ and
+    ‘Long-term experiment of kelp removal (LTE KR)’.'
   dataPackages:
     package:
     - docid: knb-lter-sbc.52
@@ -186,6 +217,8 @@
       shortTitle: Diet effects in the Purple Sea Urchin, 2011
     - docid: knb-lter-sbc.86
       shortTitle: Effect of egg concentration on purple sea urchin fertilization
+    - docid: knb-lter-sbc.145
+      shortTitle: Sea urchin foraging rates
   habitats:
     habitat: reef
   measurementTypes:
@@ -359,14 +392,14 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
     - docid: knb-lter-sbc.6004
       shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
     - docid: knb-lter-sbc.6003
       shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
     - docid: knb-lter-sbc.6001
       shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -471,7 +504,7 @@
   dataPackages:
     package:
     - docid: knb-lter-sbc.91
-      shortTitle: 'Time series of macroinvertebrates counts and biomass '
+      shortTitle: 'Macroinvertebrates counts and biomass '
   habitats:
     habitat: beach
   measurementTypes:
@@ -651,38 +684,38 @@
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3003
-      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
-    - docid: knb-lter-sbc.3007
-      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3003
+      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
-    - docid: knb-lter-sbc.3006
-      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
+    - docid: knb-lter-sbc.3007
+      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3006
+      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
-    - docid: knb-lter-sbc.3014
-      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3015
-      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
-    - docid: knb-lter-sbc.3018
-      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+    - docid: knb-lter-sbc.3015
+      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
   habitats:
     habitat: watershed
   measurementTypes:
@@ -726,6 +759,8 @@
       shortTitle: Stable isotopes in reef food webs
     - docid: knb-lter-sbc.125
       shortTitle: Kelp and invertebrate isotope labeling experiment
+    - docid: knb-lter-sbc.151
+      shortTitle: Organic materials in debris flow
   habitats:
     habitat: reef
   measurementTypes:
@@ -749,6 +784,8 @@
       shortTitle: Biomass relationships for kelp forest species
     - docid: knb-lter-sbc.99
       shortTitle: Invertebrate biomass relationships
+    - docid: knb-lter-sbc.153
+      shortTitle: Giant kelp frond morphology
   habitats:
     habitat: reef
   measurementTypes:
@@ -921,6 +958,8 @@
       shortTitle: CTD and chemistry at Goleta pier
     - docid: knb-lter-sbc.137
       shortTitle: Ammonium excretion rates of macroinvertebrates
+    - docid: knb-lter-sbc.152
+      shortTitle: Nitrogen flux from kelp forest sediment
   habitats:
     habitat: reef
   measurementTypes:
@@ -1161,6 +1200,10 @@
       shortTitle: Wrack consumer zonation at Isla Vista, 2011-2012
     - docid: knb-lter-sbc.143
       shortTitle: Detritivore kelp consumption rates
+    - docid: knb-lter-sbc.146
+      shortTitle: Mesocosm activity and pitfaII trapping
+    - docid: knb-lter-sbc.147
+      shortTitle: Mean positions on spring and neap tides
   habitats:
     habitat: beach
   measurementTypes:
@@ -1262,10 +1305,10 @@
     to the Santa Barbara Coastal area
   dataPackages:
     package:
-    - docid: knb-lter-sbc.126
-      shortTitle: ROMS model files and codes
     - docid: knb-lter-sbc.135
       shortTitle: Temperature to Nitrate
+    - docid: knb-lter-sbc.126
+      shortTitle: ROMS model files and codes
   habitats:
     habitat:
     - offshore
