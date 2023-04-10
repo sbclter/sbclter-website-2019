@@ -71,11 +71,7 @@ placeholder: "Overview of data"
           <a href="http://cdip.ucsd.edu">Wave measurement, swell
             modeling and forecasting from the Coastal Data Information Program (CDIP)</a> 
         </li>
-  <!-- 
-        <li class="">
-          <a href="http://marinelife.noaa.gov">Channel Islands Encyclopedia of the Sanctuary</a>
-        </li>  
-        -->
+
         <li class="">
           <a href="https://alexandria.ucsb.edu/lib/ark:/48907/f3f76c59">Ronald H. McPeak, Photographs of Underwater and Coastal California</a>
         </li>
@@ -108,9 +104,9 @@ placeholder: "Overview of data"
 
 
 <!-- policies, internal access, noarrower  col -->
-      <div class="col-md-3">
+<div class="col-md-3">
 <!-- policies -->
-      <h4>Data Usage Policies</h4>
+<h4>Data Usage Policies</h4>
 
       <p class="small">As a member of Long Term Ecological 
 Research Network, the Santa Barbara Coastal Ecosystems (SBC) LTER 
@@ -122,7 +118,7 @@ Users will be asked to review our data access policy and agreement before downlo
 SBC internal and personal information will not be disclosed to other parties nor used for promotional activities.</p>
 
       <hr/> 
-<!-- internal access -->
+
 
       <h4>Internal Data Access</h4>
 
@@ -158,8 +154,8 @@ SBC internal and personal information will not be disclosed to other parties nor
       <hr/> 
 
 
-    </div> <!-- close right col -->
-    </div> <!-- close row -->
-    </div> <!-- cose main container -->
+</div> <!-- close right col -->
+</div> <!-- close row -->
+</div> <!-- cose main container -->
 
 <script src="/assets/js/simple_search.js"/></script>
