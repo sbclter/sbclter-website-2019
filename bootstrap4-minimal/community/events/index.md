@@ -60,7 +60,9 @@ Alameda Park, Santa Barbara</p>
 
 
 <hr/>
-<!-- Begin Mailchimp Signup Form -->
+<p><a href="http://eepurl.com/iof1qI" target="_blank">Sign up to our newsletters</a></p>
+
+<!-- 
 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 <style type="text/css">
    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:280px;}
@@ -91,7 +93,7 @@ Alameda Park, Santa Barbara</p>
    <div id="mce-responses" class="clear foot">
       <div class="response" id="mce-error-response" style="display:none"></div>
       <div class="response" id="mce-success-response" style="display:none"></div>
-   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+   </div>  
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6b425801dd159bfb163ef03c9_2c4993ceb4" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
@@ -103,7 +105,7 @@ Alameda Park, Santa Barbara</p>
 </form>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
+-->
 
 </div> <!-- close right col -->
 </div> <!-- close row -->
