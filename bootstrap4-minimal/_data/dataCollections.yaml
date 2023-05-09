@@ -11,7 +11,7 @@
   dataPackages:
     package:
     - docid: knb-lter-sbc.15
-      shortTitle: KFCD percent cover of algae, invertebrates and bottom substrate
+      shortTitle: KFCD percent cover of algae and invertebrates
     - docid: knb-lter-sbc.138
       shortTitle: KFCD percent cover of bottom substrate and sand depth
     - docid: knb-lter-sbc.17
@@ -51,7 +51,7 @@
   dataPackages:
     package:
     - docid: knb-lter-sbc.28
-      shortTitle: LTE KR - Percent cover of algae, invertebrates and substrate
+      shortTitle: LTE KR - Percent cover of algae and invertebrates
     - docid: knb-lter-sbc.139
       shortTitle: LTE KR - Percent cover of substrate and sand depth
     - docid: knb-lter-sbc.29
@@ -143,6 +143,8 @@
       shortTitle: Kelp canopy area and biomass from Landsat (ongoing dataset)
     - docid: knb-lter-sbc.150
       shortTitle: Landsat 8 chlorophyll
+    - docid: knb-lter-sbc.157
+      shortTitle: Kelp blade reflectance
   habitats:
     habitat: reef
   measurementTypes:
@@ -161,6 +163,8 @@
     package:
     - docid: knb-lter-sbc.77
       shortTitle: Lobster abundance, size and fishing pressure
+    - docid: knb-lter-sbc.156
+      shortTitle: Lobster foraging on purple urchin
   habitats:
     habitat: reef
   measurementTypes:
@@ -180,10 +184,10 @@
     sensor.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.154
-      shortTitle: BCE benthic survey
     - docid: knb-lter-sbc.155
       shortTitle: BCE brush composition
+    - docid: knb-lter-sbc.154
+      shortTitle: BCE benthic survey
   habitats:
     habitat: reef
   measurementTypes:
@@ -392,14 +396,14 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
-    - docid: knb-lter-sbc.6004
-      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
-    - docid: knb-lter-sbc.6003
-      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
     - docid: knb-lter-sbc.6001
       shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
+    - docid: knb-lter-sbc.6003
+      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6004
+      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -684,18 +688,18 @@
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3004
-      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3004
+      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3008
-      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
@@ -704,14 +708,14 @@
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
-    - docid: knb-lter-sbc.3011
-      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
     - docid: knb-lter-sbc.3014
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
-    - docid: knb-lter-sbc.3013
-      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3011
+      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3013
+      shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
@@ -944,10 +948,10 @@
     and the uptake kinetics of these different nitrogen forms  by giant kelp and phytoplankton.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.109
-      shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
     - docid: knb-lter-sbc.142
       shortTitle: Surge nitrogen uptake in kelp
+    - docid: knb-lter-sbc.109
+      shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
     - docid: knb-lter-sbc.116
       shortTitle: Rapid sediment temperature profiles
     - docid: knb-lter-sbc.117
@@ -1305,10 +1309,12 @@
     to the Santa Barbara Coastal area
   dataPackages:
     package:
-    - docid: knb-lter-sbc.135
-      shortTitle: Temperature to Nitrate
     - docid: knb-lter-sbc.126
       shortTitle: ROMS model files and codes
+    - docid: knb-lter-sbc.135
+      shortTitle: Temperature to Nitrate
+    - docid: knb-lter-sbc.158
+      shortTitle: Kelp spore dispersal times
   habitats:
     habitat:
     - offshore
