@@ -8,10 +8,17 @@ console.log(`100 days ago is ${ new Date(priorDate).toJSON() }`);
 
 // const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
 const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
-
+//const CSV_FILE = `http://erddap.sensors.axds.co/erddap/tabledap/stearns-wharf-automated-shore-st.csv?time%2Cmass_concentration_of_chlorophyll_in_sea_water%2Csea_water_practical_salinity%2Csea_water_pressure%2Csea_water_temperature&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
 
 var chart;
 var timeIndex = 1;
+
+//let seriesIndex = {
+//sea_water_pressure: 0,
+//sea_water_temperature: 1,
+//mass_concentration_of_chlorophyll_in_sea_water: 2,
+//sea_water_practical_salinity: 3,
+//};
 
 let seriesIndex = {
     pressure: 0,
@@ -31,7 +38,7 @@ var units_data = {
 const Y_RANGE_CONFIG = {
     pressure: {min: 1, max: 5},
     temperature: {min: 0, max: 30},
-    chlorophyll: {min: 0, max: 50},
+    chlorophyll: {min: 0, max: 60},
     salinity: {min: 30, max: 35},
 };
 
