@@ -184,10 +184,10 @@
     sensor.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.155
-      shortTitle: BCE brush composition
     - docid: knb-lter-sbc.154
       shortTitle: BCE benthic survey
+    - docid: knb-lter-sbc.155
+      shortTitle: BCE brush composition
   habitats:
     habitat: reef
   measurementTypes:
@@ -396,14 +396,14 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
-    - docid: knb-lter-sbc.6003
-      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
     - docid: knb-lter-sbc.6004
       shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
     - docid: knb-lter-sbc.6002
       shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
+    - docid: knb-lter-sbc.6003
+      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -447,7 +447,7 @@
 - collectionName: 'SBC LTER: Ongoing time-series of abiotic variables in kelp forests'
   abstract: 'Ongoing measurements of abiotic variables at SBC’s long-term kelp forest
     study sites. This collection includes data on surface and seafloor irradiance,
-    bottom temperature, and waves. '
+    bottom temperature, wind, and waves. '
   dataPackages:
     package:
     - docid: knb-lter-sbc.35
@@ -458,6 +458,8 @@
       shortTitle: PAR sensor comparison
     - docid: knb-lter-sbc.13
       shortTitle: Reef bottom water temperature
+    - docid: knb-lter-sbc.159
+      shortTitle: Wind data around Santa Barbara
   habitats:
     habitat:
     - reef
@@ -684,22 +686,22 @@
     collections.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.3001
-      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3003
-      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3001
+      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
-    - docid: knb-lter-sbc.3005
-      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
+    - docid: knb-lter-sbc.3003
+      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3006
-      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
+    - docid: knb-lter-sbc.3005
+      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3006
+      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3009
@@ -712,14 +714,14 @@
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3015
-      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
-    - docid: knb-lter-sbc.3016
-      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+    - docid: knb-lter-sbc.3015
+      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
     - docid: knb-lter-sbc.3018
       shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+    - docid: knb-lter-sbc.3016
+      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
   habitats:
     habitat: watershed
   measurementTypes:
@@ -948,10 +950,10 @@
     and the uptake kinetics of these different nitrogen forms  by giant kelp and phytoplankton.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.142
-      shortTitle: Surge nitrogen uptake in kelp
     - docid: knb-lter-sbc.109
       shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
+    - docid: knb-lter-sbc.142
+      shortTitle: Surge nitrogen uptake in kelp
     - docid: knb-lter-sbc.116
       shortTitle: Rapid sediment temperature profiles
     - docid: knb-lter-sbc.117
