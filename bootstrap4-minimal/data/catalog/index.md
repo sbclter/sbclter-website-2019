@@ -21,12 +21,6 @@ placeholder: "Search datasets ..."
 		</div>
 	</div>
 
-	<!--
-	plan:
-	intro page with browse, search forms
-	individidual dataset display pulls XML from pasta, uses local XSL to transform to XML.
-	probably most complex part of the website.
-	-->
 
 	<div id="filter-container">
 		{% include data/data_filter.html data=site.data.dataFilters %}
