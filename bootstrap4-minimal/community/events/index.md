@@ -37,6 +37,7 @@ Alameda Park, Santa Barbara</p>
 
 
 <hr/>
+
 <h3>SBC LTER 2020 winter seminars </h3>
 
 
@@ -51,11 +52,16 @@ Alameda Park, Santa Barbara</p>
 
 <div class="col-md-3">
 
+<img src="/assets/img/newsletter.png" width="100%" alt="SBCLTER newsletters" border="0">
+<br>
+<br>
 <h4>SBC LTER newsletters</h4>
 <br>
 
 <p><a href="https://mailchi.mp/3c13e3fcc5b0/spring-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | spring 2023</a></p>
+<p><a href="https://mailchi.mp/2ad4293d85f9/spring-2023-updates-from-the-sbc-lter-6246447" target="_blank">SBCLTER News | summer 2023</a></p>
 
+<br>
 <br>
 
 

@@ -123,11 +123,17 @@ window.setTimeout(function(){
 </div>
 <br>
 
+
+
+<!--
 <br>
 <div class='container'>
-<a class="twitter-timeline" data-height = 650 data-theme="light" href="https://twitter.com/LterSbc?ref_src=twsrc%5Etfw">Tweets by SBC-LTER</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a class="twitter-timeline" data-height = 650 href="https://twitter.com/LterSbc?ref_src=twsrc%5Etfw">Tweets by SBC-LTER</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+-->
 
-</div>
+
+
 
 </div>
 </div>
