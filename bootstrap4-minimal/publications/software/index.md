@@ -10,7 +10,7 @@ description: SBCLTER produced software and code
 
 <div class="row">
 	<div class="col-md-8">
-		<p>Members of the SBC LTER community readily share their scriping expertise. Below are some of the scripts and packages our group has written, for a variety of scientific tasks: retriving data from national databases, taxon assignment to gene markers, and data pubication tools for small labs. These are generally available via the creator's GitHub site. </p>
+		<p>The SBC LTER community members are enthusiastic about sharing their scripting expertise. We have an array of scripts and packages developed within our group to facilitate various scientific tasks. These tasks include retrieving data from national databases, assigning taxon to gene markers, and creating data publication tools for research groups. Additionally, we compile student-written codes dedicated to specific articles and research interests. For an extensive list of our GitHub repositories, kindly refer to the <a href="https://github.com/orgs/sbclter/repositories?q=&type=all&language=&sort=name" target="_blank"> SBCLTER GitHub page</a>. </p>
 	</div>
 	<div class="col-md-4">
 		<img class="img-responsive w-75" src="/assets/img/software_icons.jpg">
