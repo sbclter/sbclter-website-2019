@@ -81,7 +81,7 @@ description: page description here.
         <div class="image-grid-item">
             <div class="image-container image-clickable" data-highres="https://sbclter.msi.ucsb.edu/external/Documents/data_vis/figures/Annual_reef_kelp.png">
                 <img src="https://sbclter.msi.ucsb.edu/external/Documents/data_vis/thumb_figures/Annual_reef_kelp.png" alt="Image 1">
-                <div class="image-description">Annual kelp front density</div>
+                <div class="image-description">Annual kelp frond density</div>
             </div>
         </div>
         <div class="image-grid-item">
@@ -125,7 +125,7 @@ description: page description here.
             <div class="image-container image-clickable" 
             data-highres="https://sbclter.msi.ucsb.edu/external/Documents/data_vis/figures/Kelp_lostrate_at_site.png">
                 <img src="https://sbclter.msi.ucsb.edu/external/Documents/data_vis/thumb_figures/Kelp_lostrate_at_site.png" alt="Image 2"   height="100">
-                <div class="image-description">Kelp front lost rate</div>
+                <div class="image-description">Kelp frond lost rate</div>
             </div>
         </div>
     </div>

@@ -34,20 +34,21 @@
     lterCoreResearchArea: Population Studies
   mapLayers:
     mapLayer: reefAnnPopSurvey
-- collectionName: 'SBC LTER: Ongoing long-term experiment of kelp removal (LTE KR)'
-  abstract: 'This collection includes data from a long-term experiment designed to
-    test the ecological consequences of increased storm disturbance on the structure,
+- collectionName: 'SBC LTER: 15-year (2008-2023) long-term experiment of kelp removal
+    (LTE KR)'
+  abstract: This collection includes data from a 15-year (2008-2023) experiment designed
+    to test the ecological consequences of increased storm disturbance on the structure,
     dynamics and productivity of the kelp forest community. The experiment consists
-    of paired 40 m x 40 m plots at five kelp forest sites located along the mainland
-    coast of the Santa Barbara Channel. Increased disturbance frequency is simulated
-    in one of the plots in each pair by removing giant kelp annually in winter while
-    the other plot in each pair serves as a control that experiences natural levels
-    of disturbance. Changes in the structure (e.g. species abundance, diversity) and
-    function (e.g. primary production of understory algae, detrital accumulation)
-    of the kelp forest community are measured 1 to 2 times per season in permanent
-    40 m x 2 m transects centered within each plot. Giant kelp is continually removed
-    each seasonal within an additional transect in the annual kelp removal plot to
-    evaluate the overall effects of giant kelp on the reef community. '
+    of paired plots at five kelp forest sites located along the mainland coast of
+    the Santa Barbara Channel. Increased disturbance frequency was simulated in one
+    of the plots in each pair by removing giant kelp annually in winter while the
+    other plot serves as a control that experiences natural levels of disturbance.
+    A continual kelp removal treatment embedded with the kelp removal plot allowed
+    the effects of giant kelp on the community to be evaluated. Changes in the kelp
+    forest community were measured 1 to 2 times per season. The experimental removal
+    of giant kelp ended in winter 2016 or 2017 (depending on the site) and sampling
+    continued in all plots until spring 2023 to document the trajectory of recovery
+    of the reef community from experimental kelp removal.
   dataPackages:
     package:
     - docid: knb-lter-sbc.28
@@ -73,7 +74,7 @@
     - docid: knb-lter-sbc.58
       shortTitle: LTE KR - Net primary production of macroalgae
     - docid: knb-lter-sbc.36
-      shortTitle: LTE KR - Hourly irradiance, surface and seafloor
+      shortTitle: Hourly irradiance, surface and seafloor
   habitats:
     habitat: reef
   measurementTypes:
@@ -89,6 +90,23 @@
     - Movement of Organic Matter
   mapLayers:
     mapLayer: reefLTE
+- collectionName: 'SBC LTER: Ongoing time-series of monthly fish survey at three sites'
+  abstract: The monthly survey on the abundance and size of fish species, began in
+    2000 at three reef sites (Arroyo Burro, Arroyo Quemado, Mohawk) located along
+    the mainland coast of the Santa Barbara Channel. In the surveys, fish were counted
+    in 40x2m benthic quadrat, and in the water parcel 0-2m off the bottom over the
+    same area
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.165
+      shortTitle: Monthly abundance and size of reef fish
+  habitats:
+    habitat: reef
+  measurementTypes:
+    measurementType: community_structure
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Population Studies
+  mapLayers: ~
 - collectionName: 'SBC LTER: Ongoing time-series of net primary production of giant
     kelp'
   abstract: This collection includes an ongoing time series of net primary production
@@ -140,11 +158,13 @@
     - docid: knb-lter-sbc.144
       shortTitle: Kelp biomass and environmental drivers
     - docid: knb-lter-sbc.74
-      shortTitle: Kelp canopy area and biomass from Landsat (ongoing dataset)
+      shortTitle: Kelp canopy area and biomass from Landsat
     - docid: knb-lter-sbc.150
       shortTitle: Landsat 8 chlorophyll
     - docid: knb-lter-sbc.157
       shortTitle: Kelp blade reflectance
+    - docid: knb-lter-sbc.162
+      shortTitle: California kelp and environment
   habitats:
     habitat: reef
   measurementTypes:
@@ -165,6 +185,8 @@
       shortTitle: Lobster abundance, size and fishing pressure
     - docid: knb-lter-sbc.156
       shortTitle: Lobster foraging on purple urchin
+    - docid: knb-lter-sbc.166
+      shortTitle: Lobster fishing and trap count
   habitats:
     habitat: reef
   measurementTypes:
@@ -188,6 +210,8 @@
       shortTitle: BCE benthic survey
     - docid: knb-lter-sbc.155
       shortTitle: BCE brush composition
+    - docid: knb-lter-sbc.160
+      shortTitle: BCE hourly light
   habitats:
     habitat: reef
   measurementTypes:
@@ -289,7 +313,7 @@
     - docid: knb-lter-sbc.2008
       shortTitle: 'Moored CTD and ADCP: ALE'
     - docid: knb-lter-sbc.2005
-      shortTitle: 'Moored CTD and ADCP: ARQ, close by AQM'
+      shortTitle: 'Moored CTD and ADCP: ARQ'
     - docid: knb-lter-sbc.2002
       shortTitle: 'Moored CTD and ADCP: NAP'
     - docid: knb-lter-sbc.2007
@@ -351,7 +375,7 @@
   dataPackages:
     package:
     - docid: knb-lter-sbc.2031
-      shortTitle: High resolution temperature
+      shortTitle: High resolution temperature near MKO and ARQ
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -398,12 +422,12 @@
     package:
     - docid: knb-lter-sbc.6004
       shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6002
       shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
     - docid: knb-lter-sbc.6003
       shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -451,15 +475,17 @@
   dataPackages:
     package:
     - docid: knb-lter-sbc.35
-      shortTitle: Mean CDIP Hs and Tp (ongoing)
+      shortTitle: Daily CDIP Hs and Tp for SBC mainland sites
     - docid: knb-lter-sbc.36
-      shortTitle: LTE KR - Hourly irradiance, surface and seafloor
+      shortTitle: Hourly irradiance, surface and seafloor
     - docid: knb-lter-sbc.128
       shortTitle: PAR sensor comparison
     - docid: knb-lter-sbc.13
       shortTitle: Reef bottom water temperature
     - docid: knb-lter-sbc.159
       shortTitle: Wind data around Santa Barbara
+    - docid: knb-lter-sbc.161
+      shortTitle: Sea Surface Temperature in SB channel
   habitats:
     habitat:
     - reef
@@ -686,42 +712,42 @@
     collections.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.3002
-      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
     - docid: knb-lter-sbc.3001
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
+    - docid: knb-lter-sbc.3002
+      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
-    - docid: knb-lter-sbc.3007
-      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
-    - docid: knb-lter-sbc.3008
-      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3007
+      shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
-    - docid: knb-lter-sbc.3010
-      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
-    - docid: knb-lter-sbc.3012
-      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3010
+      shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
-    - docid: knb-lter-sbc.3014
-      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3012
+      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3018
-      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
   habitats:
     habitat: watershed
   measurementTypes:
@@ -950,10 +976,10 @@
     and the uptake kinetics of these different nitrogen forms  by giant kelp and phytoplankton.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.109
-      shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
     - docid: knb-lter-sbc.142
       shortTitle: Surge nitrogen uptake in kelp
+    - docid: knb-lter-sbc.109
+      shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
     - docid: knb-lter-sbc.116
       shortTitle: Rapid sediment temperature profiles
     - docid: knb-lter-sbc.117
@@ -1210,6 +1236,8 @@
       shortTitle: Mesocosm activity and pitfaII trapping
     - docid: knb-lter-sbc.147
       shortTitle: Mean positions on spring and neap tides
+    - docid: knb-lter-sbc.163
+      shortTitle: Invert community from 24 sandy beach sites
   habitats:
     habitat: beach
   measurementTypes:
