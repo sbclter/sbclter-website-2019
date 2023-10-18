@@ -12,9 +12,22 @@ description: news and event in SBCLTER
 
 <div class="col-md-9 border-right">
 
+<h3>SBC data workshops</h3>
+<br>
+<img src="/assets/img/sbc data workshop 2023.png" alt="Your Image" width="400" height="400">
+<br>
+<br>
+<p>The SBC Information Management Office is offering three workshops during the lunch hour (12:00 pm - 1:00 pm) over three Fridays. If you are interested, please complete this brief form: <a href="https://forms.gle/x4qns6vyGJ3RXBF76" target="_blank">Workshop Registration Form. </a></p>
+
+<p>Workshop Topics:</p>
+
+<p><b>Oct 13, 2023  Data Organization:</b> This includes designing datasheets, organizing data folders, conducting data entry checks, and documenting metadata, along with an introduction to the SBC Data Catalog.</p>
+<p><b>Oct 27, 2023  Data Visualization:</b>  Learn about using R to create time series figures using SBC long-term datasets.</p>
+<p><b>Nov 17, 2023  Data Publication:</b>  Explore topics related to data formats, metadata submission, obtaining data DOIs, and an introduction to the SBC data publication workflow</p>
 
 
 
+<hr/>
 <h3>SBC 2023 Earth Day</h3>
 <br>
 <p>SBC will be co-hosting a booth with MCR at the <a href="https://www.sbearthday.org/" target="_blank">2023 Santa Barbara Earth Day Festival </a>on April 29 and April 30,

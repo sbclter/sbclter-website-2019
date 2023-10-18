@@ -71,7 +71,7 @@ description: page description here.
 <div id="graph-container">
     <h1>{{ page.title }}</h1>
     <br>
-    <p>SBC LTER provides more than 40 long-term time series datasets, which are widely used in student projects and published articles. Below, you can explore the time series figures of commonly used variables. Click on each figure to view more details. </p> 
+    <p>SBC LTER provides more than 40 long-term time series datasets, which are widely used in student projects and published articles. Below, you can explore the time series figures of commonly used variables. Click on each figure to view more details. If you like to modify the figures, please visit the <a href="https://github.com/lkuiucsb/SBC-data-visualization" target="_blank">GitHub repository </a> where the R script could be edited to fit your needs.</p> 
 
  <h3 class="">Annual kelp forest community dynamics</h3>
  <br>
