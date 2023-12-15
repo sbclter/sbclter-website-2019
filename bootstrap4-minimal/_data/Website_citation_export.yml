@@ -1,3 +1,32 @@
+
+  - sbc_id: 1577
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1016/j.biocon.2023.110133
+    citation: |
+      Arafeh-Dalmau, N., Olguin-Jacobson, C., Bell, T. W., Micheli, F., Cavanaugh, K. C. (2023). Shortfalls in the protection of persistent bull kelp forests in the USA. Biological Conservation. 283:110133. DOI: 10.1016/j.biocon.2023.110133
+    author: ''
+  - sbc_id: 1578
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1038/s41598-023-38944-7
+    citation: |
+      Assis, J., Alberto, F., Macaya, E. C., Coelho, C. N., Faugeron, S., Pearson, G. A., Ladah, L., Reed, D. C., Raimondi, P., Mansilla, A., et al. (2023). Past climate-driven range shifts structuring intraspecific biodiversity levels of the giant kelp (Macrocystis pyrifera) at global scales. Scientific Reports. 13:. DOI: 10.1038/s41598-023-38944-7
+    author: ''
+  - sbc_id: 1579
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1371/journal.pone.0271477
+    citation: |
+      Bell, T. W., Cavanaugh, K. C., Saccomanno, V. R., Cavanaugh, K. C., Houskeeper, H. F., Eddy, N., Schuetzenmeister, F., Rindlaub, N., Gleason, M. (2023). Kelpwatch: A new visualization and analysis tool to explore kelp canopy dynamics reveals variable response to and recovery from marine heatwaves. PLOS ONE. 18:e0271477. DOI: 10.1371/journal.pone.0271477
+    author: ''
+  - sbc_id: 1580
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1186/s12915-023-01645-8
+    citation: |
+      Bogan, S. N., Strader, M. E., Hofmann, G. E. (2023). Associations between DNA methylation and gene regulation depend on chromatin accessibility during transgenerational plasticity. BMC Biology. 21:. DOI: 10.1186/s12915-023-01645-8
+    author: ''
   - sbc_id: 1558
     year: '2023'
     category: Article
@@ -5,12 +34,103 @@
     citation: |
       Cavanaugh, K. C., Cavanaugh, K. C., Pawlak, C. C., Bell, T. W., Saccomanno, V. R. (2023). CubeSats show persistence of bull kelp refugia amidst a regional collapse in California. Remote Sensing of Environment. 290:113521. DOI: 10.1016/j.rse.2023.113521
     author: ''
+  - sbc_id: 1581
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.3389/fmars.2023.1212781
+    citation: |
+      Chamorro, J. D., McDonald, A. M., Hofmann, G. E. (2023). Transgenerational plasticity as a mechanism of response to marine heatwaves in the purple sea urchin, Strongylocentrotus purpuratus. Frontiers in Marine Science. 10:. DOI: 10.3389/fmars.2023.1212781
+    author: ''
+  - sbc_id: 1582
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.3389/fmars.2023.1072807
+    citation: |
+      Csik, S. R., DiFiore, B. P., Kraskura, K., Hardison, E. A., Curtis, J. S., Eliason, E. J., Stier, A. C. (2023). The metabolic underpinnings of temperature-dependent predation in a key marine predator. Frontiers in Marine Science. 10:. DOI: 10.3389/fmars.2023.1072807
+    author: ''
   - sbc_id: 1576
     year: '2023'
     category: Article
     hyperlink: https://doi.org/10.1111/1365-2656.13918
     citation: |
-      DiFiore, B. P., Stier, A. C. (2023). Variation in body size drives spatial and temporal variation in lobster–urchin interaction strength. Journal of Animal Ecology. NA:NA. DOI: 10.1111/1365-2656.13918
+      DiFiore, B. P., Stier, A. C. (2023). Variation in body size drives spatial and temporal variation in lobster-urchin interaction strength. Journal of Animal Ecology. NA:NA. DOI: 10.1111/1365-2656.13918
+    author: ''
+  - sbc_id: 1583
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1016/j.marpolbul.2023.114835
+    citation: |
+      Duke, B. M., Emery, K. A., Dugan, J. E., Hubbard, D. M., Joab, B. M. (2023). Uptake of polycyclic aromatic hydrocarbons via high-energy water accommodated fraction (HEWAF) by beach hoppers (Amphipoda, Talitridae) using different sandy beach exposure pathways. Marine Pollution Bulletin. 190:114835. DOI: 10.1016/j.marpolbul.2023.114835
+    author: ''
+  - sbc_id: 1584
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1002/pan3.10524
+    citation: |
+      Free, C. M., Smith, J. G., Lopazanski, C. J., Brun, J., Francis, T. B., Eurich, J. G., Claudet, J., Dugan, J. E., Gill, D. A., Hamilton, S. L., et al. (2023). If you build it, they will come: Coastal amenities facilitate human engagement in marine protected areas. People and Nature. 5:1592-1609. DOI: 10.1002/pan3.10524
+    author: ''
+  - sbc_id: 1585
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1002/lob.10585
+    citation: |
+      Graham, O. J., Al-Haj, A., Arrington, E. C., Arsenault, E. R., Barbosa, C. C., Bice, K., Brahmstedt, E., Bryant, S. R. D., Cai, X., Calhoun‐Grosch, S., et al. (2023). Better Together: Early Career Aquatic Scientists Forge New Connections at Eco-DAS XV. Limnology and Oceanography Bulletin. 32:119-121. DOI: 10.1002/lob.10585
+    author: ''
+  - sbc_id: 1586
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1002/ecs2.4342
+    citation: |
+      Halpern, B. S., Boettiger, C., Dietze, M. C., Gephart, J. A., Gonzalez, P., Grimm, N. B., Groffman, P. M., Gurevitch, J., Hobbie, S. E., Komatsu, K. J., et al. (2023). Priorities for synthesis research in ecology and environmental science. Ecosphere. 14:. DOI: 10.1002/ecs2.4342
+    author: ''
+  - sbc_id: 1588
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1242/jeb.245000
+    citation: |
+      Hardison, E. A. (2023). Climate change leaves urchins on a rock in a hard place to live. Journal of Experimental Biology. 226:. DOI: 10.1242/jeb.245000
+    author: ''
+  - sbc_id: 1587
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1098/rspb.2022.2505
+    citation: |
+      Hardison, E. A., Schwieterman, G. D., Eliason, E. J. (2023). Diet changes thermal acclimation capacity, but not acclimation rate, in a marine ectotherm (Girella nigricans) during warming. Proceedings of the Royal Society B: Biological Sciences. 290:. DOI: 10.1098/rspb.2022.2505
+    author: ''
+  - sbc_id: 1590
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.3389/fmars.2023.1187488
+    citation: |
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M., Emery, K. A., Grubbs, M. W. (2023). Using dune restoration on an urban beach as a coastal resilience approach. Frontiers in Marine Science. 10:. DOI: 10.3389/fmars.2023.1187488
+    author: ''
+  - sbc_id: 1591
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.2112/JCOASTRES-D-22-00035.1
+    citation: |
+      Lowman, H. E., Hirsch, M. E., Brzezinski, M. A., Melack, J. M. (2023). Examining the Potential of Sandy Marine Sediments Surrounding Giant Kelp Forests to Provide Recycled Nutrients for Growth. Journal of Coastal Research. 39:. DOI: 10.2112/jcoastres-d-22-00035.1
+    author: ''
+  - sbc_id: 1593
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1111/ecog.06795
+    citation: |
+      Reuman, D. C., Castorani, M. C. N., Cavanaugh, K. C., Sheppard, L. W., Walter, J. A., Bell, T. W. (2023). How environmental drivers of spatial synchrony interact. Ecography. 2023:. DOI: 10.1111/ecog.06795
+    author: ''
+  - sbc_id: 1595
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1111/jpy.13381
+    citation: |
+      Sheppard, E. J., Hurd, C. L., Britton, D. D., Reed, D. C., Bach, L. T. (2023). Seaweed biogeochemistry: Global assessment of C:N and C:P ratios and implications for ocean afforestation. Journal of Phycology. 59:879-892. DOI: 10.1111/jpy.13381
+    author: ''
+  - sbc_id: 1596
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1111/gcb.16862
+    citation: |
+      Smith, J. G., Free, C. M., Lopazanski, C., Brun, J., Anderson, C. R., Carr, M. H., Claudet, J., Dugan, J. E., Eurich, J. G., Francis, T. B., et al. (2023). A marine protected area network does not confer community structure resilience to a marine heatwave across coastal ecosystems. Global Change Biology. 29:5634-5651. DOI: 10.1111/gcb.16862
     author: ''
   - sbc_id: 1543
     year: '2023'
@@ -18,6 +138,34 @@
     hyperlink: https://doi.org/10.1016%2Fj.rse.2022.113415
     citation: |
       Sun, X., Brewin, R. J. W., Sathyendranath, S., Dall'Olmo, G., Airs, R., Barlow, R., Bracher, A., Brotas, V., Kheireddine, M., Lamont, T., et al. (2023). Coupling ecological concepts with an ocean-colour model: Phytoplankton size structure. Remote Sensing of Environment. 285:113415. DOI: 10.1016/j.rse.2022.113415
+    author: ''
+  - sbc_id: 1597
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.11646/zootaxa.5318.2.1
+    citation: |
+      Turner, T. L., Lonhart, S. I. (2023). The Sponges of the Carmel Pinnacles Marine Protected Area. Zootaxa. 5318:151-194. DOI: 10.11646/zootaxa.5318.2.1
+    author: ''
+  - sbc_id: 1598
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.11646/zootaxa.5230.5.1
+    citation: |
+      Turner, T. L., Pankey, M. S. (2023). The order Axinellida (Porifera: Demospongiae) in California. Zootaxa. 5230:501-539. DOI: 10.11646/zootaxa.5230.5.1
+    author: ''
+  - sbc_id: 1600
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.3354/meps14393
+    citation: |
+      Washburn, L., Brzezinski, M., Gotschalk, C., Mylonakis, K., Garcia-Cervera, C., Kui, L. (2023). Phytoplankton transport out of the euphotic zone by frontal subduction and gravitational sinking in the Santa Barbara Channel, CA, USA. Marine Ecology Progress Series. 719:41-63. DOI: 10.3354/meps14393
+    author: ''
+  - sbc_id: 1601
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1002/ecy.4136
+    citation: |
+      Wisnoski, N. I., Andrade, R., Castorani, M. C. N., Catano, C. P., Compagnoni, A., Lamy, T., Lany, N. K., Marazzi, L., Record, S., Smith, A. C., et al. (2023). Diversity-stability relationships across organism groups and ecosystem types become decoupled across spatial scales. Ecology. 104:. DOI: 10.1002/ecy.4136
     author: ''
   - sbc_id: 1549
     year: '2022'
@@ -82,12 +230,19 @@
     citation: |
       Hernan, G., Dubel, A. K., Caselle, J. E., Kushner, D. J., Miller, R. J., Reed, D. C., Sprague, J. L., Rassweiler, A. (2022). Measuring the Efficiency of Alternative Biodiversity Monitoring Sampling Strategies. Frontiers in Marine Science. 9:. DOI: 10.3389/fmars.2022.820790
     author: ''
+  - sbc_id: 1589
+    year: '2022'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1364/AO.465491
+    citation: |
+      Houskeeper, H. F., Hooker, S. B., Cavanaugh, K. C. (2022). Spectrally simplified approach for leveraging legacy geostationary. Applied Optics. 61:7966. DOI: 10.1364/ao.465491
+    author: ''
   - sbc_id: 1515
     year: '2022'
     category: Article
     hyperlink: https://doi.org/10.1111%2Fbrv.12886
     citation: |
-      Hyndes, G. A., Berdan, E. L., Duarte, C., Dugan, J. E., Emery, K. A., Hamb<U+FFFD>ck, P. A., Henderson, C. J., Hubbard, D. M., Lastra, M., Mateo, M. A., et al. (2022). The role of inputs of marine wrack and carrion in sandy-beach ecosystems: a global review. Biological Reviews. 97:2127--2161. DOI: 10.1111/brv.12886
+      Hyndes, G. A., Berdan, E. L., Duarte, C., Dugan, J. E., Emery, K. A., Hamb�ck, P. A., Henderson, C. J., Hubbard, D. M., Lastra, M., Mateo, M. A., et al. (2022). The role of inputs of marine wrack and carrion in sandy-beach ecosystems: a global review. Biological Reviews. 97:2127--2161. DOI: 10.1111/brv.12886
     author: ''
   - sbc_id: 1519
     year: '2022'
@@ -131,12 +286,26 @@
     citation: |
       Monismith, S., Alnajjar, M., Daly, M., Valle-Levinson, A., Juarez, B., Fagundes, M., Bell, T., Woodson, C. B. (2022). Kelp Forest Drag Coefficients Derived from Tidal Flow Data. Estuaries and Coasts. 45:2492--2503. DOI: 10.1007/s12237-022-01098-2
     author: ''
+  - sbc_id: 1592
+    year: '2022'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1093/biosci/biac006
+    citation: |
+      Reed, D. C., Schmitt, R. J., Burd, A. B., Burkepile, D. E., Kominoski, J. S., McGlathery, K. J., Miller, R. J., Morris, J. T., Zinnert, J. C. (2022). Responses of Coastal Ecosystems to Climate Change: Insights from Long-Term Ecological Research. BioScience. 72:871-888. DOI: 10.1093/biosci/biac006
+    author: ''
   - sbc_id: 1525
     year: '2022'
     category: Article
     hyperlink: https://doi.org/10.1002%2Fecy.3673
     citation: |
       Rennick, M., DiFiore, B. P., Curtis, J., Reed, D. C., Stier, A. C. (2022). Detrital supply suppresses deforestation to maintain healthy kelp forest ecosystems. Ecology. 103:. DOI: 10.1002/ecy.3673
+    author: ''
+  - sbc_id: 1594
+    year: '2022'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1002/rse2.295
+    citation: |
+      Saccomanno, V. R., Bell, T., Pawlak, C., Stanley, C. K., Cavanaugh, K. C., Hohman, R., Klausmeyer, K. R., Cavanaugh, K., Nickels, A., Hewerdine, W., et al. (2022). Using unoccupied aerial vehicles to map and monitor changes in emergent kelp canopy after an ecological regime shift. Remote Sensing in Ecology and Conservation. 9:62-75. DOI: 10.1002/rse2.295
     author: ''
   - sbc_id: 1527
     year: '2022'
@@ -3392,6 +3561,20 @@
     citation: |
       Reed, D. C., Schroeter, S. C., Huang, D. J. An Experimental Investigation of the Use of Artificial Reefs to Mitigate the Loss of Giant Kelp Forest Habitat: Case Study of the San Onofre Nuclear Generating Station's Artificial Reef Project, (2006). California Sea Grant College Program. 9781888691153
     author: Reed, Daniel; Schroeter, Steven
+  - sbc_id: 1607
+    year: '2023'
+    category: Incollection
+    hyperlink: https://doi.org/10.1016/B978-0-12-374711-2.00802-0
+    citation: |
+      Dugan, J., Airoldi, L., Chapman, M., Walker, S., Schlacher, T. (2023). Estuarine and Coastal Structures: Environmental Effects, A Focus on Shore and Nearshore Structures ed.M. Kennish and M. Elliot. In: Treatise on Estuarine and Coastal Science. Academic Press
+    author: ''
+  - sbc_id: 1602
+    year: '2022'
+    category: Incollection
+    hyperlink: https://doi.org/10.1201/9781003288602-7
+    citation: |
+      Veenhof, R. J., Champion, C., Dworjanyn, S. A., Wernberg, T., Minne, A. J. P., Layton, C., Bolton, J. J., Reed, D. C., Coleman, M. A. (2022). Kelp gametophytes in changing oceans ed.S. J. Hawkins; A. J. Lemasson; A. L. Allcock; A. E. Bates; M. Byrne; A. J. Evans; L. B. Firth; C. H. Lucas; E. M. Marzinelli; P. J. Mumby; B. D. Russell; J. Sharples; I. P. Smith; S. E. Swearer; P. A. Todd. In: Oceanography and Marine Biology: An Annual Review. CRC Press
+    author: ''
   - sbc_id: 1537
     year: '2019'
     category: Incollection
@@ -3595,6 +3778,13 @@
     citation: |
       Frew, J., Bose, R. K. (2001). Earth System Science Workbench:Data Management Infrastructure for Earth Science Products. In: Proceedings of the 13th International Conference on Scientific and Statistical Database Management (SSDBM 2001). IEEE Computer Society.
     author: ''
+  - sbc_id: 1606
+    year: '2023'
+    category: Mastersthesis
+    hyperlink: https://escholarship.org/uc/item/2696c5vg
+    citation: |
+      Madden, J. R. Temporal variation and ontogenetic shifts in the diet of a surf zone fish, the barred surfperch, Amphistichus argenteus. (2023). University of California, Santa Barbara.
+    author: ''
   - sbc_id: 1504
     year: '2020'
     category: Mastersthesis
@@ -3770,397 +3960,194 @@
     citation: |
       Rennebarth, T. Impact of Nutrients on Diatom Communities in a California Salt Marsh (Einfluesse Von Naehrstoffeintraegen Auf Die Diatomeengesellschaften Einer Kalifornischen Salzmarsch). (2002). Technical University of Munich, Limnological Field Station at the OsterseenGermany.
     author: ''
-  - sbc_id: 1493
-    year: '2021'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/66g47381
-    citation: |
-      Catlett, D. Phytoplankton community determinations and dynamics in the Santa Barbara Channel, CA. (2021). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1531
-    year: '2021'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/8549q88b
-    citation: |
-      Emery, K. Coastal connectivity: structure and function of recipient beach ecosystems respond to variation in kelp subsidies. (2021). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1532
-    year: '2021'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/1q6155k6
-    citation: |
-      Kraskura, K. Causes and consequences of body size-specific vulnerability to warming in fishes. (2021). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1533
-    year: '2021'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/88t9b3vq
-    citation: |
-      Leach, T. S. The Role of Pre- and Post-Spawning Temperature Stress on Fertilization Dynamics within Santa Barbara Channel Sea Urchin Species. (2021). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1417
-    year: '2020'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/7nj792b9
-    citation: |
-      Lowman, H. E. Nutrient and organic matter cycling in the nearshore ocean and marine sediment of the Santa Barbara Channel. (2020). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1503
-    year: '2019'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/5xz4n7jq
-    citation: |
-      Dauhajre, D. P. Submesoscale Currents on the Continental Shelf. (2019). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1399
-    year: '2019'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/57p3c942
-    citation: |
-      Fitzgerald, S. P. Collaborative Research and Data-Limited Assessment of Small-Scale Trap Fisheries in the Santa Barbara Channel. (2019). Bren School of Environmental Science and Management UC Santa Barbara.
-    author: ''
-  - sbc_id: 1347
-    year: '2019'
-    category: phdthesis
-    hyperlink: https://escholarship.org/content/qt8ns8w1r4/qt8ns8w1r4_noSplash_6485d0f152982b47b7b98bec043ab520.pdf
-    citation: |
-      Wong, J. Investigating the Response of Sea Urchin Early Developmental Stages to Multiple Stressors Related to Climate Change. (2019). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1346
-    year: '2019'
-    category: phdthesis
+  - sbc_id: 1619
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Yorke, C. Kelp as a trophic resource to reef food webs. (2019). Interdepartmental Graduate Program in Marine Science, University of California, Santa Barbara.
+      Eegholm, N. H., Bell, T. W., Siegel, D. A. (2023). Constraining life history processes to inform a spatial demographic model of giant kelp in the Santa Barbara Channel. Presented at the meeting of Ecological Society of America (ESA) Annual Meeting, Portland, OR
     author: ''
-  - sbc_id: 1308
-    year: '2018'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/5f24x4v7
-    citation: |
-      Chen, Y. Climate Variability, Fire Disturbances, and Subsurface Storage Dynamics: an Examination of Spatial-Temporal Variability of Rainfall-Runoff Patterns in Coastal Santa Barbara Watersheds. (2018). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1345
-    year: '2018'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/8md6z1gs
-    citation: |
-      Emery, B. Improved Methods for Oceanographic High Frequency Radars. (2018). Mechanical Engineering, University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1310
-    year: '2018'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/8rh799jz
-    citation: |
-      Marks, L. M. The Distribution, Biology and Ecology of the Invasive Seaweed Sargassum Horneri in Its Introduced Range. (2018). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1313
-    year: '2018'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/017958tg
-    citation: |
-      Schooler, N. K. Biodiversity of Coastal Ecosystems: Exploring Spatial and Temporal Patterns in Sandy Beach Macroinvertebrate Communities. (2018). Interdepartmental Graduate Program in Marine Science, University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1297
-    year: '2017'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/48d930bx
-    citation: |
-      Chen, X. Factors Affecting the Streamflow and In-Stream Nitrate Concentration in Semi-Arid Areas: Sub-Surface Flow-Generation, Vertical Distribution of Soil Nitrate and Drainage Properties, and the Connectivity of Impervious Areas. (2017). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1296
-    year: '2017'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/0d38q2nj
-    citation: |
-      Frazier, H. N. Ecosystem Productivity and Water Temperature in Coastal California Streams. (2017). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1293
-    year: '2017'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/253930m5
-    citation: |
-      James, A. The Effects of pCO2 on Bacterioplankton-Mediated Carbon Cycling. (2017). University of California, Santa Barbara.
-    author: James, Anna
-  - sbc_id: 1295
-    year: '2017'
-    category: phdthesis
+  - sbc_id: 1618
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Johnson, K. Investigating the Molecular Response of the Marine Calcifying Pteropod, Limacina helicina, to Ocean Acidification and Ocean Warming. (2017). University of California, Santa Barbara.
+      Eegholm, N. H., Bell, T. W., Siegel, D. A. (2023). Constraining life history processes to inform a spatial demographic model of giant kelp in the Santa Barbara Channel. Presented at the meeting of Southern California Biogeochemical Ocean Observations and Models (SoCal BOOM) meeting, Irvine, CA
     author: ''
-  - sbc_id: 1247
-    year: '2017'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/4d5550cv
-    citation: |
-      Reynolds, L. C. Late Quaternary Evolution of the Southern California Coast: Sea-Level Change, Storms, and Subsidence. (2017). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1249
-    year: '2017'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/8gb4z43c
-    citation: |
-      Wear, E. K. Bottom-Up Drivers of Bacterial Community Composition and Metabolism of Dissolved Organic Carbon in the Santa Barbara Channel, CA. (2017). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1162
-    year: '2016'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/2j62s509j
-    citation: |
-      Bell, T. W. Environmental Drivers of Giant Kelp Biomass and Physiological Condition Dynamics Across Space and Time. (2016). University of California, Santa Barbara.
-    author: Bell, Tom
-  - sbc_id: 1219
-    year: '2016'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/n009w264b
-    citation: |
-      Emery, N. Summer Fog and Live Fuel Moisture in Coastal Californian Shrubland Ecosystems. (2016). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1220
-    year: '2016'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/0ch8m0bc
-    citation: |
-      Freitas, F. H. Space-Time Variability of Bio-Optical Properties in the Southern California Bight. (2016). Dept of Geography, University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1163
-    year: '2016'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/sx61dm59w
-    citation: |
-      Hanan, E. Biogeochemical Responses to Fire in Coastal Chaparral Ecosystems. (2016). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1221
-    year: '2016'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/rr171x60j
-    citation: |
-      Windecker, L. Extracellular Release in Marine Phytoplankton. (2016). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1135
-    year: '2015'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/g732d922h
-    citation: |
-      Kapsenberg, L. Coastal Ocean Ph Variability in the Context of Global Change Biology. (2015). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1133
-    year: '2014'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/fx719m58v
-    citation: |
-      Barron, R. K. Constraining the Variability of Optical Properties in the Santa Barbara Channel, CA: a Phytoplankton Story. (2014). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1058
-    year: '2014'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/sn009z07c
-    citation: |
-      Goodridge, B. M. Nitrogen Dynamics in Coastal California Watersheds, Beaches, and the Nearshore Ocean. (2014). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1060
-    year: '2014'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/ht24wj74h
-    citation: |
-      Okamoto, D. The Role of Fluctuating Food Supply on Recruitment, Survival and Population Dynamics in the Sea. (2014). University of California, Santa Barbara.
-    author: Okamoto, Daniel
-  - sbc_id: 1065
-    year: '2014'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/rv042t35f
-    citation: |
-      Rodriguez, G. E. Turnover Dynamics of the Giant Kelp, Macrocystis pyrifera. (2014). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1129
-    year: '2014'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/2507962530
-    citation: |
-      Wong, S. H. Oceanography at the Land-Sea Interface: Linking Physics to Human Health and Ecosystems. (2014). Department of Civil and Environmental Engineering, Stanford University.
-    author: ''
-  - sbc_id: 1064
-    year: '2014'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/4q57m2rc
-    citation: |
-      Young, M. A Landscape Ecology Approach to Informing the Ecology and Management of Coastal Marine Species and Ecosystems. (2014). University of California, Santa Cruz.
-    author: ''
-  - sbc_id: 929
-    year: '2013'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/bc386j502
-    citation: |
-      Emery, K. Does Evidence Matter? How Middle School Students Make Decisions About Socioscientific Issues. (2013). University of California Santa Barbara.
-    author: ''
-  - sbc_id: 848
-    year: '2012'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/1112952012
-    citation: |
-      Nickols, K. J. The Coastal Boundary Layer: Patterns, Mechanism and Ecological Effects of Decreased Alongshore Transport. (2012). University of California Davis.
-    author: ''
-  - sbc_id: 1057
-    year: '2012'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/0k225b23w
-    citation: |
-      Shields, C. Ecohydrologic Model Uncertainty and Application in an Urban Environment: the RHESSYS Model in Mission Creek. (2012). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 808
-    year: '2011'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/908437874
-    citation: |
-      Cavanaugh, K. C. Variability of Giant Kelp Forests in Southern California: Remote Assessment of Kelp Biomass and the Drivers of Kelp Forest Dynamics. (2011). University of California Santa Barbara.
-    author: Cavanaugh, Kyle
-  - sbc_id: 811
-    year: '2011'
-    category: phdthesis
-    hyperlink: https://alexandria.ucsb.edu/downloads/hd76s031v
-    citation: |
-      Kay, M. C. Community Based Fisheries Research on California Spiny Lobster (Panulirus interruptus) at the Santa Barbara Channel Islands. (2011). Master of Environmental Science and ManagementBren School of Environmental Science and Management, University of California, Santa Barbara, CA.
-    author: ''
-  - sbc_id: 809
-    year: '2011'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/896463598
-    citation: |
-      Peterson, S. H. Fire Risk in California. (2011). University of California Santa Barbara.
-    author: ''
-  - sbc_id: 731
-    year: '2011'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/896482125
-    citation: |
-      Watson, J. R. Ocean Connectivity and Nearshore Marine Species Population Dynamics. (2011). Institute for Computational Earth System Science.
-    author: ''
-  - sbc_id: 667
-    year: '2010'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/305121325
-    citation: |
-      Carney, L. T. The Biology of Kelp Gametophyte Banks in a Southern California Kelp Forest. (2010). University of California, Davis and San Diego State University.
-    author: ''
-  - sbc_id: 668
-    year: '2010'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/305121325
-    citation: |
-      Guenther, C. M. Socio-Economic Impacts of Marine Reserves on the California Spiny Lobster (Panuliris interruptus) Fishery in the Santa Barbara Channel. (2010). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 541
-    year: '2009'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/304853468
-    citation: |
-      Kostadinov, T. S. Satellite Retrieval of Phytoplankton Functional Types and Carbon Via the Particle Size Distribution. (2009). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 518
-    year: '2008'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/304657741
-    citation: |
-      Arkema, K. K. Consequences of Kelp Forest Structure and Dynamics for Epiphytes and Understory Communities. (2008). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 537
-    year: '2008'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/250770841
-    citation: |
-      Goodman, D. Effective Estuarine Management: a Case Study of a California Estuary and Its Ecological and Political Characteristics. (2008). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 628
-    year: '2008'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/230770279
-    citation: |
-      Rassweiler, A. R. Mechanisms Underlying Community Shifts in the Santa Barbara Channel. (2008). Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara.
-    author: Rassweiler, Andrew
-  - sbc_id: 469
-    year: '2007'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/304881172
-    citation: |
-      Anderson, C. R. Environmental Controls of Phytoplankton Community Structure in the Santa Barbara Channel: Application to the Dynamics and Detection of Harmful Diatom Blooms. (2007). Interdepartmental Graduate Program in Marine ScienceUniversity of California, Santa Barbara, CA.
-    author: ''
-  - sbc_id: 669
-    year: '2007'
-    category: phdthesis
+  - sbc_id: 1622
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Kinlan, B. P. Quantitative Spatial Ecology of Benthic Ecosystems in Temperate Coastal Upwelling Zones. (2007). Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara.
+      Emery, K., Cavanaugh, K., Hubbard, D., Miller, R., Madden, J., Dugan, J. (2023). Spatial Scales of connectivity in subsidy dependent coastal ecosystems. Presented at the meeting of ASLO Aquatic Sciences, Palma de Mallorca, Spain
     author: ''
-  - sbc_id: 539
-    year: '2007'
-    category: phdthesis
+  - sbc_id: 1620
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Klose, K. Complex Effects of an Invasive Consumer (Procambarus clarkii) on Stream Communities in Southern California and Hawaii. (2007). Dept. of Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara, CA.
+      Emery, K., Dugan, J., Johnston, K., Hubbard, D., Cavanaugh, K., Cavanaugh, K. (2023). Remote sensing of California's kelp forest and sandy beach ecosystems. Presented at the meeting of oastal Imaging Research Network, Duck, NC
     author: ''
-  - sbc_id: 467
-    year: '2007'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/304881025
-    citation: |
-      Lester, S. E. Marine Macroecology: the Effects of Dispersal and Reproductive Output on Species' Geographic Distributions. (2007). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 468
-    year: '2007'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/304882181
-    citation: |
-      Levenbach, S. Community-Wide Ramifications of an Associational Defense on Shallow Temperate Reefs. (2007). Department of Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara, CA.
-    author: ''
-  - sbc_id: 475
-    year: '2007'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/304881978?
-    citation: |
-      Revell, D. L. Long Term and Sorm Event Changes to the Santa Barbara Sandshed. (2007). University of California, Santa Cruz.
-    author: ''
-  - sbc_id: 280
-    year: '2006'
-    category: phdthesis
+  - sbc_id: 1624
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Robinson, T. H. Catchment and Sub-Catchment Scale Linkages Between Land Use and Nutrient Concentrations and Fluxes in Coastal California Streams. (2006). Bren School of Environmental Science and ManagementUniversity of California, Santa Barbara.
+      Gonzalez, J., Leach, T., Hofmann, G. E., Chan, K. Y. K. (2023). Marine heatwaves reduce gamete quality of the sea urchin, Strongylocentrotus purpuratus. Presented at the meeting of Society for Integrative and Comparative Biology, Austin, TX
     author: ''
-  - sbc_id: 329
-    year: '2006'
-    category: phdthesis
-    hyperlink: https://www.proquest.com/docview/305348016
-    citation: |
-      Simpson, J. C. The Effects of Natural and Anthropogenic Perturbations on Stream Primary Producer Communities in Southern California. (2006). University of California.
-    author: ''
-  - sbc_id: 810
-    year: '2004'
-    category: phdthesis
+  - sbc_id: 1633
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Beckenbach, E. H. Surface Circulation in the Santa Barbara Channel: an Application of High Frequency Radar for Descriptive Physical Oceanography in the Coastal Zone. (2004). University of California Santa Barbara.
+      Johnston, K. K. (2023). Nature-Based Coastal Adaptation Approaches to Buffer Sea Level Rise. Presented at the meeting of Environmental Science Program at Loyola Marymount University, Los Angeles, CA
     author: ''
-  - sbc_id: 199
-    year: '2004'
-    category: phdthesis
+  - sbc_id: 1631
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Bose, R. K. Composing and Conveying Lineage Metadata for Environmental Science Research Computing. (2004). Bren School of Environmental Science and ManagementUniversity of California, Santa Barbara.
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M., Emery, K. A. (2023). Santa Monica Beach Pilot Project: Urban Coastal Resilience through Dune Restoration. Presented at the meeting of Beach Ecology Coalition Annual Meeting, Santa Monica, CA
     author: ''
-  - sbc_id: 31
-    year: '2002'
-    category: phdthesis
+  - sbc_id: 1635
+    year: '2023'
+    category: Presentation
     hyperlink: ''
     citation: |
-      Warrick, J. A. Short-Term (1997-2000) and Long-Term (1928-2000) Observations of River Water and Sediment Discharge to the Santa Barbara Channel. (2002). University of California, Santa Barbara.
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M., Emery, K. A., Grubbs, M. (2023). Using Dune Restoration on Urban Beaches as a Coastal Resilience Approach. Presented at the meeting of AdaptLA through University of Southern California Sea Grant Program, Virtual
+    author: ''
+  - sbc_id: 1634
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M., Emery, K. A., Grubbs, M. (2023). Using Dune Restoration on an Urban Beach as a Coastal Resilience Approach. Presented at the meeting of Southern California Academy of Sciences Annual Meeting, Santa Barbara, CA
+    author: ''
+  - sbc_id: 1632
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M., Emery, K. A., Grubbs, M. (2023). Using Dune Restoration on an Urban Beach as a Coastal Resilience Approach: Case Study at Santa Monica Beach. Presented at the meeting of California Dune Restoration Conference, Virtual
+    author: ''
+  - sbc_id: 1637
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Kadiyala, E., Walter, J. A., Castorani, M. C. N. (2023). Sand dynamics drive kelp forest community structure and stability. Presented at the meeting of 108th Annual Meeting of the Ecological Society of America, Portland, OR
+    author: ''
+  - sbc_id: 1638
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Karatayev, V. A., Reuman, D. C., Cavanaugh, K. C., Bell, T. W., Castorani, M. C. N., Coombs, N., Walter, J. A. (2023). Warmer climates promote ecosystem collapse by shifting tipping points in giant kelp forests. Presented at the meeting of 108th Annual Meeting of the Ecological Society of America, Portland, OR
+    author: ''
+  - sbc_id: 1641
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Michaud, K. M., Reed, D. C., Miller, R. J. (2023). Persistent shifts in benthic community structure in California kelp forests following a marine heatwave. Presented at the meeting of ASLO Aquatic Sciences, Palma de Mallorca, Spain
+    author: ''
+  - sbc_id: 1643
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Reed, D. C. (2023). The value of long-term, spatially expansive research to kelp forest management. Presented at the meeting of Invited departmental seminar, Pontificia Universidad Católica de Chile, Santiago Chile
+    author: ''
+  - sbc_id: 1642
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Reed, D., Schroeter, S., Beheshti, K., Smith, R. (2023). Spatial-temporal scales of kelp colonization on a large artificial reef: implications for kelp restoration. Presented at the meeting of 13th International Temperate Reef Symposium, Hobart, Tasmania, Australia
+    author: ''
+  - sbc_id: 1644
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Reuman, D. C., Castorani, M. C. N., Cavanaugh, K. C., Sheppard, L. W., Walter, J. A., Bell, T. W. (2023). How environmental drivers of spatial synchrony interact. Presented at the meeting of 108th Annual Meeting of the Ecological Society of America, Portland, OR
+    author: ''
+  - sbc_id: 1647
+    year: '2023'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Walter, J. A., Emery, K. E., Dugan, J. E., Hubbard, D. M., Bell, T. W., Sheppard, L. W., Karatayev, V. A., Cavanaugh, K. C., Reuman, D. C., Castorani, M. C. N., et al. (2023). Spatial synchrony cascades across ecosystem boundaries and up food webs via resource subsidies. Presented at the meeting of 108th Annual Meeting of the Ecological Society of America, Portland, OR
+    author: ''
+  - sbc_id: 1608
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Bell, T., Burkepile, D., Castorani, M., Detmer, R., DiFiore, B., Gallagher, J., Lamy, T., Lenihan, H., Malakhoff, K., Michaud, K., et al. (2022). Ecological and socioeconomic effects of climate extremes and fishing on the foundational role of giant kelp. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1609
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Brokaw, R. J., Siegel, D. A., Washburn, L. (2022). Surface flow and primary productivity in the Santa Barbara Channel. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1610
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Castorani, M. C. N., Harrer, S. L., Miller, R. J., Reed, D. C. (2022). Disturbance structures canopy and understory productivity along an environmental gradient: evidence from a 10-year experiment at Santa Barbara Coastal LTER. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1611
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Castorani, M. C. N., Kadiyala, E. (2022). Patterns of ecological dominance in kelp forest communities at Santa Barbara Coastal LTER. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1612
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Castorani, M., Cavanaugh, K., Bell, T., Brokaw, R., Carberry, L., Dornan, N., Eegholm, N., Emery, K., Goss, H., Michaud, K., et al. (2022). Spatial dynamics and connectivity of SBC kelp forests and adjacent ecosystems: ECS highlights. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1613
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Cavanaugh, K. C., Cavanaugh, K. C., Leung, M., Villa, E. (2022). The status of kelp forests in California, 7 years after the marine heatwaves of 2014-2016. Presented at the meeting of Western Society of Naturalists Annual Meeting, Oxnard, CA
+    author: ''
+  - sbc_id: 1614
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Chamorro, J. D., Clare, X., R, A., Michaud, K. M., McDonald, A. M., Stier, A. C., Bell, T. W., Moeller, H. V., Hofmann, G. E., Reed, D. C., et al. (2022). Benthic community and organismal responses to disturbance in Santa Barbara Channel kelp forests. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1615
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      De-Leon-Sanchez, E. E., Hofmann, G. E. (2022). The future of a vulnerable fishery: can red urchins adapt to marine heatwaves?. Presented at the meeting of Western Society of Naturalists Annual Meeting, Oxnard, CA
     author: ''
   - sbc_id: 1562
     year: '2022'
     category: Presentation
     hyperlink: ''
     citation: |
-      Detmer, A. R., P.<U+FFFD>DiFiore, B., Miller, R. J., Reed, D. C., Bell, T. W., Stier, A. C., Moeller, H. V. (2022). Modeling the effects of variable disturbance regimes on kelp forest community dynamics. Presented at the meeting of Ecological Society of America Meeting, Montreal, Quebec, Canada
+      Detmer, A. R., P.�DiFiore, B., Miller, R. J., Reed, D. C., Bell, T. W., Stier, A. C., Moeller, H. V. (2022). Modeling the effects of variable disturbance regimes on kelp forest community dynamics. Presented at the meeting of Ecological Society of America Meeting, Montreal, Quebec, Canada
+    author: ''
+  - sbc_id: 1616
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Detmer, R. D., Michaud, K. M., Chamorro, J., Clare, X., McDonald, A., Stier, A., Bell, T., Moeller, H., Hofmann, G., Reed, D. C., et al. (2022). Benthic community and organismal responses to disturbance in Santa Barbara Channel kelp forests. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
     author: ''
   - sbc_id: 1563
     year: '2022'
@@ -4168,6 +4155,13 @@
     hyperlink: ''
     citation: |
       Dugan, J. E. (2022). Sandy Beach and Surf Zone Ecosystems. Presented at the meeting of Public Webinar for Ask the Researcher Marine Protected Area Monitoring Series,
+    author: ''
+  - sbc_id: 1617
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Eegholm, N. H., Bell, T. W., Siegel, D. A. (2022). Towards a demographic model of giant kelp: using long-term data to constrain parameters. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
     author: ''
   - sbc_id: 1564
     year: '2022'
@@ -4182,6 +4176,97 @@
     hyperlink: ''
     citation: |
       Emery, K. A. (2022). New approaches to drone-based research in CA intertidal ecosystems. Presented at the meeting of DroneCamp,
+    author: ''
+  - sbc_id: 1628
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Emery, K. A., Reidenbach, M., Johnston, K. K., Dugan, J. E. (2022). Synthesizing the Use of Long Term Data to Inform and Monitor Ecological Restoration Projects. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1623
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Emery, K., Cavanaugh, K., Dugan, J., Hubbard, D. (2022). Validating drone-based measurements of cross-ecosystem subsidies. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1621
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Emery, K., Cavanaugh, K., Hubbard, D., Miller, R., Madden, J., Dugan, J. (2022). Spatial Scales of connectivity in subsidy dependent coastal ecosystems. Presented at the meeting of Western Society of Naturalists Annual Meeting, Oxnard, CA
+    author: ''
+  - sbc_id: 1625
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Hofmann, G. E., Guillen, M., Clare, X. (2022). Mentoring the Mentors: A workshop to building inclusive mentoring skills in environmental science. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1626
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Johnston, K. K. (2022). Living Shorelines in Southern California: Coastal Adaptation in Urban Communities. Presented at the meeting of American Shore and Beach Preservation Association National Conference, Long Beach, CA
+    author: ''
+  - sbc_id: 1627
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M. (2022). Dune Restoration Trajectories to Inform Coastal Resilience Approaches. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1630
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M. (2022). Dune Restoration Trajectories to Inform Coastal Resilience Approaches. Presented at the meeting of Santa Barbara Coastal Long Term Ecological Research All Scientists Meeting, Santa Barbara, CA
+    author: ''
+  - sbc_id: 1629
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Johnston, K. K., Dugan, J. E., Hubbard, D. M., Emery, K. A. (2022). Dunes as a Coastal Resilience Approach. Presented at the meeting of California Dune Science Network Annual Workshop, Santa Barbara, CA
+    author: ''
+  - sbc_id: 1636
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Kadiyala, E., Walter, J. A., Castorani, M. C. N. (2022). Coastal sand dynamics structure the spatial synchrony of kelp forest communities. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1639
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      McDonald, A., Chamorro, J., Hofmann, G. E. (2022). Exposure to marine heatwaves during Stronglycentrotus purpuratus gametogenesis impact life history traits and performance. Presented at the meeting of Western Society of Naturalists Annual Meeting, Oxnard, CA
+    author: ''
+  - sbc_id: 1640
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Michaud, K. M., Reed, D. C., Miller, R. J. (2022). The Blob marine heatwave alters sessile suspension feeder community structure in California kelp forests. Presented at the meeting of Western Society of Naturalists Annual Meeting, Oxnard, CA
+    author: ''
+  - sbc_id: 1645
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Ritger, A. L., Kui, L., Hofmann, G. E. (2022). A Decade of Data: pH and temperature trends in the Santa Barbara Coastal LTER. Presented at the meeting of LTER All Scientists Meeting, Pacific Grove, CA
+    author: ''
+  - sbc_id: 1646
+    year: '2022'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      Rodriguez, L. M., Hofmann, G. E. (2022). t's getting hot in here: urchin righting behavior under marine heatwave conditions. Presented at the meeting of Western Society of Naturalists Annual Meeting, Oxnard, CA
     author: ''
   - sbc_id: 1570
     year: '2022'
@@ -4287,13 +4372,6 @@
     hyperlink: ''
     citation: |
       Bell, T. W., Siegel, D. A. (2020). Nutrient availability and programmed senescence spatially structure the dynamics of an cosystem engineer. Presented at the meeting of Ocean Sciences Meeting, San Diego, CA, US
-    author: ''
-  - sbc_id: 1436
-    year: '2020'
-    category: Presentation
-    hyperlink: ''
-    citation: |
-      best, NA. NA. (2020). Choosing an efficient portfolio of sampling strategies for monitoring marine biodiversity. Presented at the meeting of Ocean Sciences Meeting, San Diego, CA, US
     author: ''
   - sbc_id: 1425
     year: '2020'
@@ -4431,6 +4509,13 @@
     hyperlink: ''
     citation: |
       Welch, Z. S., Schroeter, S., Iglesias-Rodriguez, M. D. (2020). Back to the future of sea urchins: Using long-term datasets to generate proxies of climate change impacts on California's purple urchin populations. Presented at the meeting of Ocean Sciences Meeting , San Diego, CA, US
+    author: ''
+  - sbc_id: 1436
+    year: '2020'
+    category: Presentation
+    hyperlink: ''
+    citation: |
+      best, NA. NA. (2020). Choosing an efficient portfolio of sampling strategies for monitoring marine biodiversity. Presented at the meeting of Ocean Sciences Meeting, San Diego, CA, US
     author: ''
   - sbc_id: 1420
     year: '2019'
@@ -9953,3 +10038,410 @@
     citation: |
       Busse, L. B., Simpson, J. C., Cooper, S. D., Kramer, K., Stein, E. (2003). Survey of Algae and Nutrients in the Malibu Creek Watershed. Southern California Coastal Watershed Research Project.Report number: 412
     author: Cooper, Scott
+  - sbc_id: 1603
+    year: '2023'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/5rf6n4ch
+    citation: "Bogan, S. N. The Evolution of Plastic Responses to Global Change:\r\nStudies
+      in Two Species of Coastal Marine Invertebrates. (2023). University of California,
+      Santa Barbara.\n"
+    author: ''
+  - sbc_id: 1604
+    year: '2023'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/50g7r355
+    citation: |
+      Clare, X. Understanding Relationships Between Human and Marine Communities via Experimentation, Long-Term Data and Education. (2023). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1605
+    year: '2023'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/0555b9tq
+    citation: |
+      Peters, J. R. Consumer-mediated nutrient dynamics of kelp forests in the wake of global change(2023). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1493
+    year: '2021'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/66g47381
+    citation: |
+      Catlett, D. Phytoplankton community determinations and dynamics in the Santa Barbara Channel, CA. (2021). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1531
+    year: '2021'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/8549q88b
+    citation: |
+      Emery, K. Coastal connectivity: structure and function of recipient beach ecosystems respond to variation in kelp subsidies. (2021). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1532
+    year: '2021'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/1q6155k6
+    citation: |
+      Kraskura, K. Causes and consequences of body size-specific vulnerability to warming in fishes. (2021). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1533
+    year: '2021'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/88t9b3vq
+    citation: |
+      Leach, T. S. The Role of Pre- and Post-Spawning Temperature Stress on Fertilization Dynamics within Santa Barbara Channel Sea Urchin Species. (2021). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1417
+    year: '2020'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/7nj792b9
+    citation: |
+      Lowman, H. E. Nutrient and organic matter cycling in the nearshore ocean and marine sediment of the Santa Barbara Channel. (2020). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1503
+    year: '2019'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/5xz4n7jq
+    citation: |
+      Dauhajre, D. P. Submesoscale Currents on the Continental Shelf. (2019). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1399
+    year: '2019'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/57p3c942
+    citation: |
+      Fitzgerald, S. P. Collaborative Research and Data-Limited Assessment of Small-Scale Trap Fisheries in the Santa Barbara Channel. (2019). Bren School of Environmental Science and Management UC Santa Barbara.
+    author: ''
+  - sbc_id: 1347
+    year: '2019'
+    category: phdthesis
+    hyperlink: https://escholarship.org/content/qt8ns8w1r4/qt8ns8w1r4_noSplash_6485d0f152982b47b7b98bec043ab520.pdf
+    citation: |
+      Wong, J. Investigating the Response of Sea Urchin Early Developmental Stages to Multiple Stressors Related to Climate Change. (2019). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1346
+    year: '2019'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Yorke, C. Kelp as a trophic resource to reef food webs. (2019). Interdepartmental Graduate Program in Marine Science, University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1308
+    year: '2018'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/5f24x4v7
+    citation: |
+      Chen, Y. Climate Variability, Fire Disturbances, and Subsurface Storage Dynamics: an Examination of Spatial-Temporal Variability of Rainfall-Runoff Patterns in Coastal Santa Barbara Watersheds. (2018). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1345
+    year: '2018'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/8md6z1gs
+    citation: |
+      Emery, B. Improved Methods for Oceanographic High Frequency Radars. (2018). Mechanical Engineering, University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1310
+    year: '2018'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/8rh799jz
+    citation: |
+      Marks, L. M. The Distribution, Biology and Ecology of the Invasive Seaweed Sargassum Horneri in Its Introduced Range. (2018). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1313
+    year: '2018'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/017958tg
+    citation: |
+      Schooler, N. K. Biodiversity of Coastal Ecosystems: Exploring Spatial and Temporal Patterns in Sandy Beach Macroinvertebrate Communities. (2018). Interdepartmental Graduate Program in Marine Science, University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1297
+    year: '2017'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/48d930bx
+    citation: |
+      Chen, X. Factors Affecting the Streamflow and In-Stream Nitrate Concentration in Semi-Arid Areas: Sub-Surface Flow-Generation, Vertical Distribution of Soil Nitrate and Drainage Properties, and the Connectivity of Impervious Areas. (2017). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1296
+    year: '2017'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/0d38q2nj
+    citation: |
+      Frazier, H. N. Ecosystem Productivity and Water Temperature in Coastal California Streams. (2017). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1293
+    year: '2017'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/253930m5
+    citation: |
+      James, A. The Effects of pCO2 on Bacterioplankton-Mediated Carbon Cycling. (2017). University of California, Santa Barbara.
+    author: James, Anna
+  - sbc_id: 1295
+    year: '2017'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Johnson, K. Investigating the Molecular Response of the Marine Calcifying Pteropod, Limacina helicina, to Ocean Acidification and Ocean Warming. (2017). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1247
+    year: '2017'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/4d5550cv
+    citation: |
+      Reynolds, L. C. Late Quaternary Evolution of the Southern California Coast: Sea-Level Change, Storms, and Subsidence. (2017). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1249
+    year: '2017'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/8gb4z43c
+    citation: |
+      Wear, E. K. Bottom-Up Drivers of Bacterial Community Composition and Metabolism of Dissolved Organic Carbon in the Santa Barbara Channel, CA. (2017). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1162
+    year: '2016'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/2j62s509j
+    citation: |
+      Bell, T. W. Environmental Drivers of Giant Kelp Biomass and Physiological Condition Dynamics Across Space and Time. (2016). University of California, Santa Barbara.
+    author: Bell, Tom
+  - sbc_id: 1219
+    year: '2016'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/n009w264b
+    citation: |
+      Emery, N. Summer Fog and Live Fuel Moisture in Coastal Californian Shrubland Ecosystems. (2016). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1220
+    year: '2016'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/0ch8m0bc
+    citation: |
+      Freitas, F. H. Space-Time Variability of Bio-Optical Properties in the Southern California Bight. (2016). Dept of Geography, University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1163
+    year: '2016'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/sx61dm59w
+    citation: |
+      Hanan, E. Biogeochemical Responses to Fire in Coastal Chaparral Ecosystems. (2016). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1221
+    year: '2016'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/rr171x60j
+    citation: |
+      Windecker, L. Extracellular Release in Marine Phytoplankton. (2016). Department of Ecology, Evolution and Marine Biology, University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1135
+    year: '2015'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/g732d922h
+    citation: |
+      Kapsenberg, L. Coastal Ocean Ph Variability in the Context of Global Change Biology. (2015). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1133
+    year: '2014'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/fx719m58v
+    citation: |
+      Barron, R. K. Constraining the Variability of Optical Properties in the Santa Barbara Channel, CA: a Phytoplankton Story. (2014). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1058
+    year: '2014'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/sn009z07c
+    citation: |
+      Goodridge, B. M. Nitrogen Dynamics in Coastal California Watersheds, Beaches, and the Nearshore Ocean. (2014). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1060
+    year: '2014'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/ht24wj74h
+    citation: |
+      Okamoto, D. The Role of Fluctuating Food Supply on Recruitment, Survival and Population Dynamics in the Sea. (2014). University of California, Santa Barbara.
+    author: Okamoto, Daniel
+  - sbc_id: 1065
+    year: '2014'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/rv042t35f
+    citation: |
+      Rodriguez, G. E. Turnover Dynamics of the Giant Kelp, Macrocystis pyrifera. (2014). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1129
+    year: '2014'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/2507962530
+    citation: |
+      Wong, S. H. Oceanography at the Land-Sea Interface: Linking Physics to Human Health and Ecosystems. (2014). Department of Civil and Environmental Engineering, Stanford University.
+    author: ''
+  - sbc_id: 1064
+    year: '2014'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/4q57m2rc
+    citation: |
+      Young, M. A Landscape Ecology Approach to Informing the Ecology and Management of Coastal Marine Species and Ecosystems. (2014). University of California, Santa Cruz.
+    author: ''
+  - sbc_id: 929
+    year: '2013'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/bc386j502
+    citation: |
+      Emery, K. Does Evidence Matter? How Middle School Students Make Decisions About Socioscientific Issues. (2013). University of California Santa Barbara.
+    author: ''
+  - sbc_id: 848
+    year: '2012'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/1112952012
+    citation: |
+      Nickols, K. J. The Coastal Boundary Layer: Patterns, Mechanism and Ecological Effects of Decreased Alongshore Transport. (2012). University of California Davis.
+    author: ''
+  - sbc_id: 1057
+    year: '2012'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/0k225b23w
+    citation: |
+      Shields, C. Ecohydrologic Model Uncertainty and Application in an Urban Environment: the RHESSYS Model in Mission Creek. (2012). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 808
+    year: '2011'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/908437874
+    citation: |
+      Cavanaugh, K. C. Variability of Giant Kelp Forests in Southern California: Remote Assessment of Kelp Biomass and the Drivers of Kelp Forest Dynamics. (2011). University of California Santa Barbara.
+    author: Cavanaugh, Kyle
+  - sbc_id: 811
+    year: '2011'
+    category: phdthesis
+    hyperlink: https://alexandria.ucsb.edu/downloads/hd76s031v
+    citation: |
+      Kay, M. C. Community Based Fisheries Research on California Spiny Lobster (Panulirus interruptus) at the Santa Barbara Channel Islands. (2011). Master of Environmental Science and ManagementBren School of Environmental Science and Management, University of California, Santa Barbara, CA.
+    author: ''
+  - sbc_id: 809
+    year: '2011'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/896463598
+    citation: |
+      Peterson, S. H. Fire Risk in California. (2011). University of California Santa Barbara.
+    author: ''
+  - sbc_id: 731
+    year: '2011'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/896482125
+    citation: |
+      Watson, J. R. Ocean Connectivity and Nearshore Marine Species Population Dynamics. (2011). Institute for Computational Earth System Science.
+    author: ''
+  - sbc_id: 667
+    year: '2010'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/305121325
+    citation: |
+      Carney, L. T. The Biology of Kelp Gametophyte Banks in a Southern California Kelp Forest. (2010). University of California, Davis and San Diego State University.
+    author: ''
+  - sbc_id: 668
+    year: '2010'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/305121325
+    citation: |
+      Guenther, C. M. Socio-Economic Impacts of Marine Reserves on the California Spiny Lobster (Panuliris interruptus) Fishery in the Santa Barbara Channel. (2010). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 541
+    year: '2009'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/304853468
+    citation: |
+      Kostadinov, T. S. Satellite Retrieval of Phytoplankton Functional Types and Carbon Via the Particle Size Distribution. (2009). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 518
+    year: '2008'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/304657741
+    citation: |
+      Arkema, K. K. Consequences of Kelp Forest Structure and Dynamics for Epiphytes and Understory Communities. (2008). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 537
+    year: '2008'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/250770841
+    citation: |
+      Goodman, D. Effective Estuarine Management: a Case Study of a California Estuary and Its Ecological and Political Characteristics. (2008). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 628
+    year: '2008'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/230770279
+    citation: |
+      Rassweiler, A. R. Mechanisms Underlying Community Shifts in the Santa Barbara Channel. (2008). Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara.
+    author: Rassweiler, Andrew
+  - sbc_id: 469
+    year: '2007'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/304881172
+    citation: |
+      Anderson, C. R. Environmental Controls of Phytoplankton Community Structure in the Santa Barbara Channel: Application to the Dynamics and Detection of Harmful Diatom Blooms. (2007). Interdepartmental Graduate Program in Marine ScienceUniversity of California, Santa Barbara, CA.
+    author: ''
+  - sbc_id: 669
+    year: '2007'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Kinlan, B. P. Quantitative Spatial Ecology of Benthic Ecosystems in Temperate Coastal Upwelling Zones. (2007). Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara.
+    author: ''
+  - sbc_id: 539
+    year: '2007'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Klose, K. Complex Effects of an Invasive Consumer (Procambarus clarkii) on Stream Communities in Southern California and Hawaii. (2007). Dept. of Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara, CA.
+    author: ''
+  - sbc_id: 467
+    year: '2007'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/304881025
+    citation: |
+      Lester, S. E. Marine Macroecology: the Effects of Dispersal and Reproductive Output on Species' Geographic Distributions. (2007). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 468
+    year: '2007'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/304882181
+    citation: |
+      Levenbach, S. Community-Wide Ramifications of an Associational Defense on Shallow Temperate Reefs. (2007). Department of Ecology, Evolution and Marine BiologyUniversity of California, Santa Barbara, CA.
+    author: ''
+  - sbc_id: 475
+    year: '2007'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/304881978?
+    citation: |
+      Revell, D. L. Long Term and Sorm Event Changes to the Santa Barbara Sandshed. (2007). University of California, Santa Cruz.
+    author: ''
+  - sbc_id: 280
+    year: '2006'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Robinson, T. H. Catchment and Sub-Catchment Scale Linkages Between Land Use and Nutrient Concentrations and Fluxes in Coastal California Streams. (2006). Bren School of Environmental Science and ManagementUniversity of California, Santa Barbara.
+    author: ''
+  - sbc_id: 329
+    year: '2006'
+    category: phdthesis
+    hyperlink: https://www.proquest.com/docview/305348016
+    citation: |
+      Simpson, J. C. The Effects of Natural and Anthropogenic Perturbations on Stream Primary Producer Communities in Southern California. (2006). University of California.
+    author: ''
+  - sbc_id: 810
+    year: '2004'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Beckenbach, E. H. Surface Circulation in the Santa Barbara Channel: an Application of High Frequency Radar for Descriptive Physical Oceanography in the Coastal Zone. (2004). University of California Santa Barbara.
+    author: ''
+  - sbc_id: 199
+    year: '2004'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Bose, R. K. Composing and Conveying Lineage Metadata for Environmental Science Research Computing. (2004). Bren School of Environmental Science and ManagementUniversity of California, Santa Barbara.
+    author: ''
+  - sbc_id: 31
+    year: '2002'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Warrick, J. A. Short-Term (1997-2000) and Long-Term (1928-2000) Observations of River Water and Sediment Discharge to the Santa Barbara Channel. (2002). University of California, Santa Barbara.
+    author: ''
