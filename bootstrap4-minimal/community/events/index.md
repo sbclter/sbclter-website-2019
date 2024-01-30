@@ -70,7 +70,7 @@ Alameda Park, Santa Barbara</p>
 <br>
 <h4>SBC LTER newsletters</h4>
 <br>
-
+<p><a href="https://mailchi.mp/2bf2a9084957/fall-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | fall 2023</a></p>
 <p><a href="https://mailchi.mp/3c13e3fcc5b0/spring-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | spring 2023</a></p>
 <p><a href="https://mailchi.mp/2ad4293d85f9/spring-2023-updates-from-the-sbc-lter-6246447" target="_blank">SBCLTER News | summer 2023</a></p>
 
