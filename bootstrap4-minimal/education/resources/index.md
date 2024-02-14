@@ -326,7 +326,7 @@ description: curricula and other media for education, produced by the SBC LTER
 		   <!-- this is empty space to indent the lists -->
 	   </div>
    <div class="col-md-7 my-auto">
-   <h3><a href="http://sbc.lternet.edu/external/Reef/Data/kelp_biomass_landsat/ucsb_kelp_ts.mov" target="offline">Kelp Forest, From Space</a></h3>
+   <h3><a href="http://sbc.lternet.edu/external/Reef/Data/kelp_biomass_landsat/ucsb_kelp_ts.mp4" target="offline">Kelp Forest, From Space</a></h3>
    <p>This animation shows changes in kelp biomass near Campus Pt and Isla Vista from 1984-2009 at approximately six-week intervals using Landsat imagery augmented by kelp biomass and abundance records collected by the SBC LTER project.  </p>
    </div>
    <!-- class=my-auto centers text vertically -->
@@ -384,8 +384,8 @@ description: curricula and other media for education, produced by the SBC LTER
 		   <!-- this is empty space to indent the lists -->
 	   </div>
    <div class="col-md-7">
-   <h3>Ocean Acidification Cirriculum</h3>
-   <p>This dataset and the accompanying paper is a collaboration among SBC LTER, the Moorea Coral Reef LTER, McMurdo Sound scientists, and educators. The cirriculum is intended for middle school students to explore the effects of a changing climate on the ocean's pH and carbonate chemistry. </p>
+   <h3>Ocean Acidification Curriculum</h3>
+   <p>This dataset and the accompanying paper is a collaboration among SBC LTER, the Moorea Coral Reef LTER, McMurdo Sound scientists, and educators. The curriculum is intended for middle school students to explore the effects of a changing climate on the ocean's pH and carbonate chemistry. </p>
    </div>
    <div class="col-md-4 my-auto">
    <ul>
