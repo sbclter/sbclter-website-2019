@@ -1,4 +1,3 @@
-
   - sbc_id: 1577
     year: '2023'
     category: Article
@@ -10053,12 +10052,47 @@
     citation: |
       Clare, X. Understanding Relationships Between Human and Marine Communities via Experimentation, Long-Term Data and Education. (2023). University of California, Santa Barbara.
     author: ''
+  - sbc_id: 1648
+    year: '2023'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/9tc5n7fv
+    citation: |
+      Difiore, B. Unraveling the causes and consequences of dynamic species interactions in California kelp forests. (2023). University of California, Santa Barbara.
+    author: ''
   - sbc_id: 1605
     year: '2023'
     category: phdthesis
     hyperlink: https://escholarship.org/uc/item/0555b9tq
     citation: |
       Peters, J. R. Consumer-mediated nutrient dynamics of kelp forests in the wake of global change(2023). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1649
+    year: '2023'
+    category: phdthesis
+    hyperlink: ''
+    citation: |
+      Whitaker, S. Assessing Decline and Recovery of Rocky Intertidal Foundation Species Using Long-Term Data. (2023). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1650
+    year: '2022'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/1c047497
+    citation: |
+      Kozal, L. Transgenerational effects of environmental heterogeneity on marine invertebrate larvae. (2022). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1532
+    year: '2022'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/1q6155k6
+    citation: |
+      Kraskura, K. Causes and consequences of body size-specific vulnerability to warming in fishes. (2022). University of California, Santa Barbara.
+    author: ''
+  - sbc_id: 1533
+    year: '2022'
+    category: phdthesis
+    hyperlink: https://escholarship.org/uc/item/88t9b3vq
+    citation: |
+      Leach, T. S. The Role of Pre- and Post-Spawning Temperature Stress on Fertilization Dynamics within Santa Barbara Channel Sea Urchin Species. (2022). University of California, Santa Barbara.
     author: ''
   - sbc_id: 1493
     year: '2021'
@@ -10073,20 +10107,6 @@
     hyperlink: https://escholarship.org/uc/item/8549q88b
     citation: |
       Emery, K. Coastal connectivity: structure and function of recipient beach ecosystems respond to variation in kelp subsidies. (2021). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1532
-    year: '2021'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/1q6155k6
-    citation: |
-      Kraskura, K. Causes and consequences of body size-specific vulnerability to warming in fishes. (2021). University of California, Santa Barbara.
-    author: ''
-  - sbc_id: 1533
-    year: '2021'
-    category: phdthesis
-    hyperlink: https://escholarship.org/uc/item/88t9b3vq
-    citation: |
-      Leach, T. S. The Role of Pre- and Post-Spawning Temperature Stress on Fertilization Dynamics within Santa Barbara Channel Sea Urchin Species. (2021). University of California, Santa Barbara.
     author: ''
   - sbc_id: 1417
     year: '2020'
