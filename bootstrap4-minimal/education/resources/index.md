@@ -6,9 +6,7 @@ description: curricula and other media for education, produced by the SBC LTER
 ---
 
 <h1>Educational Resources</h1>
-	
-<!-- how to col: individual articles can vary the col widths; for full-width total should = 12. 
-	col-md scales up (med to large desktops), and automatically stacks on phones and tablets (within the row). -->
+<br>
 
 <div id="main-container">
 <div  class="row">
@@ -232,7 +230,7 @@ description: curricula and other media for education, produced by the SBC LTER
 	   </div>
 	   <div class="col-md-5">
 		      <p>
-		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/beach_sbc-0008.jpg"  alt="Beach ecosystem at SBC LTER" style="float:right; PADDING-LEFT: 15px" /> 
+		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/boatlaunch.jpg"  alt="harbor" style="float:right; PADDING-LEFT: 15px" /> 
 		      <!-- photo here beach_sbc-0008 -->
 		   </p>
 	   </div>
@@ -276,15 +274,7 @@ description: curricula and other media for education, produced by the SBC LTER
 	<div class='col-md-12'>
 		<hr/>
 	</div>
-</div> <!-- close row -->
-
-
-
-
-
-<!-- kelp forest/Reef
--------------------------------------------------------------------------------------------------------------------------------------
--->
+</div> 
 
 <div id="channel"  class="row">
     <div class="col-md-7">
@@ -293,8 +283,8 @@ description: curricula and other media for education, produced by the SBC LTER
 	   </div>
 	   <div class="col-md-5">
 		      <p>
-		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/beach_sbc-0008.jpg"  alt="Beach ecosystem at SBC LTER" style="float:right; PADDING-LEFT: 15px" /> 
-		      <!-- photo here beach_sbc-0008 -->
+		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/fish.jpg"  alt="Channel organism" style="float:right; PADDING-LEFT: 15px" /> 
+	
 		   </p>
 	   </div>
    </div>

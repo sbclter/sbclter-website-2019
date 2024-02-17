@@ -31,11 +31,11 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 
 
 <div class="row">				
-<h5>The SBC LTER Schoolyard program supports K-12 education in several ways: </h5>
 <div class="col-md-4">
 	<img class="img-thumbnail img-responsive img-center" src="/assets/img/education/ngss_logo.png" style="float:right"  alt="NGSS Logo" >
 	</div>
 	<div class="col-md-8">
+		<h5>The SBC LTER Schoolyard program supports K-12 education in several ways: </h5>
 	<ul>
 					<li>Activities on the UCSB campus</li>
 					<li>Visits to the classroom (if campus visits are not feasible)</li>
@@ -49,8 +49,7 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 <hr/>
 	
 <div class="row">
-
-		<div class="col-md-4">
+	<div class="col-md-4">
 		 	<h2>For K12 Students</h2>
 			<p>We use SBC LTER data to provide rich, place-based hands-on content to support learning in classrooms and after school programs. Grade-specific content is designed by SBC LTER's education coordinator with undergraduate and graduate students, and researchers.</p>
 			<p>Together, the SBC Schoolyard Program, educational partnerships and public outreach activities have developed several types of <a href="{{site.baseurl}}/education/resources">educational resources</a> using a variety of media - all designed to bring the Ocean to your Classroom!</p>
@@ -64,7 +63,7 @@ description: SBC LTER Schoolyard program, Research Experiences for Teachers (RET
 		</div>
 	 	<div class="col-md-4">
 			<h2>For the Public</h2> 
-			<p><a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a> (always free) is open to the public on Fridays and Saturdays. </p>
+			<p><a href="https://msi.ucsb.edu/facilities-services/reef">The REEF</a> welcomes the public during designated Open Door hours. For detailed information, please consult the website. </p>
 			<p>At community events like Earth Day, Summer Solstice, and the Harbor Festival, we hold hands-on events and exhibits.</p>
 			<p>Many local school host "Family Science Night" where our scientists and students organize specific events.</p> 
 		</div>
