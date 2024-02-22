@@ -12,7 +12,7 @@ placeholder: "Overview of data"
   <!-- fun stuff -->
     <div class="col-md-9">
 
-      <h3 class="">SBC LTER Data</h3>
+  <h3 class="">SBC LTER Data</h3>
       <ul> 
         <li class="">
           <a href="{{page.url}}catalog/">Browse SBC LTER Data Catalog</a> of all publicly available datasets, organized into research collections
@@ -24,15 +24,11 @@ placeholder: "Overview of data"
         <li class="">
           <a href="{{page.url}}management">Data and Information Management</a>
         </li>
-
- 
-      <!-- create these page-links when the browse collections page is done, and main catalog link above points there -->   
- 
       </ul>
 
-      <hr/>
+<hr/>
        
-      <h3>Data from Collaborative Research Projects</h3>
+  <h3>Data from Collaborative Research Projects</h3>
       <ul>
         <li class="">
           <a href="http://www.icess.ucsb.edu/">Current data measured with High Frequency Radar (CODAR)</a> 
@@ -49,7 +45,7 @@ placeholder: "Overview of data"
       </ul>
 
       <hr/>
-      <h3>Research Data Resources for this Region</h3>
+  <h3>Research Data Resources for this Region</h3>
       <ul>
         <li  class="">
           <a href="http://www.piscoweb.org">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
@@ -78,7 +74,7 @@ placeholder: "Overview of data"
       </ul>
   
       <hr/>
-      <h3>US Geologic Survey</h3>
+  <h3>US Geologic Survey</h3>
         <ul>
          <li class="">
            <a href="http://waterdata.usgs.gov">USGS Water Data (all stations)</a> 
@@ -89,10 +85,10 @@ placeholder: "Overview of data"
        </ul>
 
        <hr/>
-       <h3>LTER Network Data Resources</h3>
+  <h3>LTER Network Data Resources</h3>
        <ul>
          <li class="">
-           <a href="https://portal.lternet.edu" target="offline">All-Site Data Catalog</a>, managed by the
+           <a href="https://lternet.edu/using-lter-data/" target="offline">All-Site Data Catalog</a>, mostly managed by the
            <a href="https://environmentaldatainitiative.org">Environmental Data Initiative</a>.
          </li>
          <li class="">

@@ -41,7 +41,7 @@ The primary objectives of the SBC IM system are to 1) preserve high-quality and 
 <p>SBC personnel involved in information management include <a href="/about/people/lkui/">Li Kui</a> and <a href="/about/people/mobrien/">Margaret O'Brien</a>(SBC's information managers), and scientific staff in research groups: <a href="/about/people/jdugan/">Jenny Dugan</a>  (science coordinator), <a href="/about/people/cnelson1/">Clint Nelson</a>, <a href="/about/people/dambat/">Darrin Ambat</a>, and <a href="/about/people/dsalazar/">David Salazar</a>.</p>
  
 <p>We also leverage or work closely with the following groups for system support, standards development, informatics, software development, and/or data processing:</p>
-<p>- Marine Science Institute (<a href="http://msi.ucsb.edu">MSI.ucsb.edu</a>) and the UC Santa Barbara campus network infrastructure</p>
+<p>- General Research IT office(<a href="https://grit.ucsb.edu/">GRIT.ucsb.edu</a>) and the UC Santa Barbara campus network infrastructure</p>
 <p>- Moorea Coral Reef LTER (<a href="http://mcr.lternet.edu">MCR.lternet.edu</a>)</p>
 <p>- National Center for Ecological Analysis and Synthesis (<a href="http://nceas.ucsb.edu">NCEAS.ucsb.edu</a>)</p>
 
@@ -64,16 +64,19 @@ metadata tab.
 <div>
 
 <h3>3. IM System</h3>
-<p>A copy of SBC's Information Management plan and overview is available by request to: <a href="mailto:sbclter@msi.ucsb.edu" target="_blank"> sbclter@msi.ucsb.edu </a> </p>
+<p>The primary role of SBC's Information Management System is to oversee the storage and security of all SBC data, facilitate sharing among SBC participants, and design, produce, and catalog data products for the broader community. The <a href="https://sbclter.msi.ucsb.edu/external/Documents/data_help/SBC_IMmanual_2024.pdf" target="_blank"> Information Management System Manual</a> documents all components of the system, including policies, infrastructure, resources, data quality control, and publication workflows.</p>
 
 <h5>3.1. File server</h5>
 <p>Data are available to SBC members as quickly as possible. All of SBC's data and metadata are managed in a hierarchical directory system on a central data server. The directory structure is published internally and write-access is controlled. </p>
 
-<p>General file server backup procedures are maintained and implemented through MSI IT office. In general, file servers are backed up nightly. For these systems a full backup is done once each month, and an "incremental" backup is done every day.
+<p>General file server backup procedures are maintained and implemented through General Research IT office. In general, file servers are backed up daily, with incremental backup done every hour.
 </p>
 
 <h5>3.2. Data publication</h5>
 <p>SBC's system for data sharing and publication is compatible with the Network-adopted specification, Ecological Metadata Language (EML), and data are published in the Environmental Data Initiative repository (a repository funded by NSF and recommended for the LTER sites).  </p>
+
+<h5>3.3. Data authorship agreement</h5>
+<p>The <a href="https://sbclter.msi.ucsb.edu/external/Documents/data_help/Authorship_for_data_package_SBC.pdf" target="_blank">Data Authorship Agreement</a> document outlines eight well-defined criteria for being a data package creator. This agreement is crucial, impacting the credibility, accountability, and usability of the data. </p>
 
 </div>
 <hr/>
