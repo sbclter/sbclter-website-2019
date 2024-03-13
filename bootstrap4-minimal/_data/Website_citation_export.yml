@@ -1,3 +1,10 @@
+  - sbc_id: 1651
+    year: '2024'
+    category: Article
+    hyperlink: https://www.pnas.org/doi/abs/10.1073/pnas.2310052120
+    citation: |
+      Walter, J. A., Emery, K. A., Dugan, J. E., Hubbard, D. M., Bell, T. W., Sheppard, L. W., Karatayev, V. A., Cavanaugh, K. C., Reuman, D. C., Castorani, M. C. N., et al. (2024). Spatial synchrony cascades across ecosystem boundaries and up food webs via resource subsidies. Proceedings of the National Academy of Sciences. 121:e2310052120. DOI: 10.1073/pnas.2310052120
+    author: ''
   - sbc_id: 1577
     year: '2023'
     category: Article
@@ -103,6 +110,13 @@
     citation: |
       Johnston, K. K., Dugan, J. E., Hubbard, D. M., Emery, K. A., Grubbs, M. W. (2023). Using dune restoration on an urban beach as a coastal resilience approach. Frontiers in Marine Science. 10:. DOI: 10.3389/fmars.2023.1187488
     author: ''
+  - sbc_id: 1652
+    year: '2023'
+    category: Article
+    hyperlink: ' https://doi.org/10.3389/fphys.2023.1230590'
+    citation: |
+      Leach, T. S., Hofmann, G. E. (2023). Marine heatwave temperatures enhance larval performance but are meditated by paternal thermal history and inter-individual differences in the purple sea urchin, Strongylocentrotus purpuratus. Frontiers in Physiology. 14:NA. DOI: 10.3389/fphys.2023.1230590
+    author: ''
   - sbc_id: 1591
     year: '2023'
     category: Article
@@ -165,6 +179,13 @@
     hyperlink: http://dx.doi.org/10.1002/ecy.4136
     citation: |
       Wisnoski, N. I., Andrade, R., Castorani, M. C. N., Catano, C. P., Compagnoni, A., Lamy, T., Lany, N. K., Marazzi, L., Record, S., Smith, A. C., et al. (2023). Diversity-stability relationships across organism groups and ecosystem types become decoupled across spatial scales. Ecology. 104:. DOI: 10.1002/ecy.4136
+    author: ''
+  - sbc_id: 1506
+    year: '2022'
+    category: Article
+    hyperlink: https://doi.org/10.1073%2Fpnas.2105135118
+    citation: |
+      Bell, T. W., Siegel, D. A. (2022). Nutrient availability and senescence spatially structure the dynamics of a foundation species. Proceedings of the National Academy of Sciences. 119:. DOI: 10.1073/pnas.2105135118
     author: ''
   - sbc_id: 1549
     year: '2022'
@@ -348,13 +369,6 @@
     citation: |
       Barnard, P. L., Dugan, J. E., Page, H. M., Wood, N. J., Hart, J. A. F., Cayan, D. R., Erikson, L. H., Hubbard, D. M., Myers, M. R., Melack, J. M., et al. (2021). Multiple climate change-driven tipping points for coastal systems. Scientific Reports. 11:. DOI: 10.1038/s41598-021-94942-7
     author: ''
-  - sbc_id: 1506
-    year: '2021'
-    category: Article
-    hyperlink: https://doi.org/10.1073%2Fpnas.2105135118
-    citation: |
-      Bell, T. W., Siegel, D. A. (2021). Nutrient availability and senescence spatially structure the dynamics of a foundation species. Proceedings of the National Academy of Sciences. 119:. DOI: 10.1073/pnas.2105135118
-    author: ''
   - sbc_id: 1505
     year: '2021'
     category: Article
@@ -479,7 +493,7 @@
     category: Article
     hyperlink: https://doi.org/10.5670%2Foceanog.2021.215
     citation: |
-      Kavanaugh, M., Bell, T., Catlett, D., Cimino, M., Doney, S., Klajbor, W., Messi{'{e}}, M., Montes, E., Karger, F. M., Otis, D., et al. (2021). Satellite Remote Sensing and the Marine Biodiversity Observation Network: Current Science and Future Steps. Oceanography. 34:. DOI: 10.5670/oceanog.2021.215
+      Kavanaugh, M., Bell, T., Catlett, D., Cimino, M., Doney, S., Klajbor, W., Messie, M., Montes, E., Karger, F. M., Otis, D., et al. (2021). Satellite Remote Sensing and the Marine Biodiversity Observation Network: Current Science and Future Steps. Oceanography. 34:. DOI: 10.5670/oceanog.2021.215
     author: ''
   - sbc_id: 1470
     year: '2021'
@@ -605,7 +619,7 @@
     category: Article
     hyperlink: https://doi.org/10.1016%2Fj.marenvres.2021.105435
     citation: |
-      Ryznar, E. R., Smith, L. L., Fong, P. (2021). Open space, not reduced herbivory, facilitates invasion of a marine macroalga, implying it is a disturbance-mediated {textquotedblleft}passenger{textquotedblright} of change. Marine Environmental Research. 170:105435. DOI: 10.1016/j.marenvres.2021.105435
+      Ryznar, E. R., Smith, L. L., Fong, P. (2021). Open space, not reduced herbivory, facilitates invasion of a marine macroalga, implying it is a disturbance-mediated "passenger' of change. Marine Environmental Research. 170:105435. DOI: 10.1016/j.marenvres.2021.105435
     author: ''
   - sbc_id: 1495
     year: '2021'
@@ -640,7 +654,7 @@
     category: Article
     hyperlink: https://doi.org/10.1186%2Fs12864-020-07327-x
     citation: |
-      Wong, J. M., Hofmann, G. E. (2021). Gene expression patterns of red sea urchins (Mesocentrotus franciscanus) exposed to different combinations of temperature and {pCO}2 during early development. BMC Genomics. 22:. DOI: 10.1186/s12864-020-07327-x
+      Wong, J. M., Hofmann, G. E. (2021). Gene expression patterns of red sea urchins (Mesocentrotus franciscanus) exposed to different combinations of temperature and pCO2 during early development. BMC Genomics. 22:. DOI: 10.1186/s12864-020-07327-x
     author: ''
   - sbc_id: 1462
     year: '2020'
@@ -970,7 +984,7 @@
     hyperlink: https://doi.org/10.1111%2Fgcb.14706
     citation: |
       Peters, J. R., Reed, D. C., Burkepile, D. E. (2019). Climate and fishing drive regime shifts in consumer-mediated nutrient cycling in kelp forests. Global Change Biology. 25:3179--3192. DOI: 10.1111/gcb.14706
-    author: Peters, Joey; Reed, Daniel; Burkepile, Deron
+    author: Reed, Daniel; Burkepile, Deron
   - sbc_id: 1340
     year: '2019'
     category: Article
@@ -984,7 +998,7 @@
     hyperlink: https://doi.org/10.1016%2Fj.jembe.2019.03.002
     citation: |
       Strader, M. E., Wong, J. M., Kozal, L. C., Leach, T. S., Hofmann, G. E. (2019). Parental environments alter DNA methylation in offspring of the purple sea urchin, Strongylocentrotus purpuratus. Journal of Experimental Marine Biology and Ecology. 517:54--64. DOI: 10.1016/j.jembe.2019.03.002
-    author: Kozal, Logan; Hofmann, Gretchen
+    author: Hofmann, Gretchen
   - sbc_id: 1454
     year: '2019'
     category: Article
@@ -998,7 +1012,7 @@
     hyperlink: https://doi.org/10.1016%2Fj.jembe.2019.04.006
     citation: |
       Wong, J. M., Kozal, L. C., Leach, T. S., Hoshijima, U., Hofmann, G. E. (2019). Transgenerational effects in an ecological context: Conditioning of adult sea urchins to upwelling conditions alters maternal provisioning and progeny phenotype. Journal of Experimental Marine Biology and Ecology. 517:65--77. DOI: 10.1016/j.jembe.2019.04.006
-    author: Kozal, Logan; Hofmann, Gretchen
+    author: Hofmann, Gretchen
   - sbc_id: 1344
     year: '2019'
     category: Article

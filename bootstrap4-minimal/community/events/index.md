@@ -12,6 +12,49 @@ description: news and event in SBCLTER
 
 <div class="col-md-9 border-right">
 
+
+<h3>SBC 2024 Earth Day</h3>
+<br>
+<p>SBC will be co-hosting a booth with MCR at the <a href="https://www.sbearthday.org/" target="_blank">2024 Santa Barbara Earth Day Festival </a>on April 27 and April 28, Alameda Park, Santa Barbara</p>
+<p>Saturday, April 27, 11 a.m. - 7 p.m. </p>
+<p>Sunday, April 28, 11 a.m. - 6 p.m.</p>
+
+
+<hr/>
+<h3>IGPMS Grad seminars Winter 2024 SBC Students</h3>
+<br>
+<p><b>January 16</b></p>
+<p class="no-space">Chance English -  Controls on macrolagal DOC release and composition </p>
+<p>Jordan Snyder - sUAS (drone) imagery reveal high-resolution flow dynamics in Bedford Basin, Nova Scotia </p>
+
+<p><b>January 23</b></p>
+<p>Ricky Brokaw -  Physical controls of anomalous phytoplankton blooms</p>
+
+<p><b>January 30</b></p>
+<p class="no-space">Billy Ray-Quantifying the volume of water filtered by coastal boring clam populations: A non-boring approach</p>
+
+<p>Cecily Tye- Characterizing Coastal Mixing Along the Santa Barbara Shelf Using Reynolds Decomposition and Spectral Analysis</p>
+
+<p><b>February 6</b></p>
+<p class="no-space">Luke Carberry - How much does the color of the ocean vary on kilometer scales? Insights from Landsat </p>
+<p>Nathalie Eegholm - Modeling giant kelp plant and frond survivorship </p>
+
+<p><b>February 13</b></p>
+<p>Billie Beckley - Disturbance drives interannual variability in giant kelp net primary production</p>
+ 
+<p><b>February 27</b> </p>
+<p class="no-space">Julia Cox- Marine Protected Areas as a tool to study movement and effects of fishing on kelp forest ecosystems</p>
+
+<p>Hayley Goss - Generating a draft genome for Crassadoma gigantea, the purple-hinged Rock scallop</p>
+
+<p><b>March 5</b></p>
+<p class="no-space">Inez Mangino - Investigating macroalgal epifaunal community structure, dynamics, and species interactions </p>
+ 
+<p>Kristen Michaud - Shifts in understory macroalgal community structure in the SBC </p>
+
+
+
+<hr/>
 <h3>SBC data workshops</h3>
 <br>
 <img src="/assets/img/sbc data workshop 2023.png" alt="Your Image" width="400" height="400">
@@ -70,9 +113,12 @@ Alameda Park, Santa Barbara</p>
 <br>
 <h4>SBC LTER newsletters</h4>
 <br>
-<p><a href="https://mailchi.mp/2bf2a9084957/fall-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | fall 2023</a></p>
-<p><a href="https://mailchi.mp/3c13e3fcc5b0/spring-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | spring 2023</a></p>
-<p><a href="https://mailchi.mp/2ad4293d85f9/spring-2023-updates-from-the-sbc-lter-6246447" target="_blank">SBCLTER News | summer 2023</a></p>
+<p><a href="https://mailchi.mp/e02a4518f7ac/winter-2024-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Winter 2024</a></p>
+
+<p><a href="https://mailchi.mp/2bf2a9084957/fall-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Fall 2023</a></p>
+<p><a href="https://mailchi.mp/2ad4293d85f9/spring-2023-updates-from-the-sbc-lter-6246447" target="_blank">SBCLTER News | Summer 2023</a></p>
+<p><a href="https://mailchi.mp/3c13e3fcc5b0/spring-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Spring 2023</a></p>
+
 
 <br>
 <br>
@@ -81,51 +127,13 @@ Alameda Park, Santa Barbara</p>
 <hr/>
 <p><a href="http://eepurl.com/iof1qI" target="_blank">Sign up to our newsletters</a></p>
 
-<!-- 
-<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-   #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:280px;}
-   /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-    <form action="https://ucsb.us11.list-manage.com/subscribe/post?u=6b425801dd159bfb163ef03c9&amp;id=2c4993ceb4&amp;f_id=0040a5e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-        <h2>Subscribe to newsletters</h2>
-        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-   <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-   <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-   <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-</div>
-<div class="mc-field-group">
-   <label for="mce-FNAME">First Name </label>
-   <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-   <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
-</div>
-<div class="mc-field-group">
-   <label for="mce-LNAME">Last Name </label>
-   <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-   <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
-</div>
-   <div id="mce-responses" class="clear foot">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-   </div>  
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6b425801dd159bfb163ef03c9_2c4993ceb4" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                <p class="brandingLogo"><a href="http://eepurl.com/ioDamo" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
-            </div>
-        </div>
-    </div>
-</form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
--->
-
 </div> <!-- close right col -->
 </div> <!-- close row -->
-</div> <!-- cose main container -->
+</div> <!-- close main container -->
+
+<style>
+    /* Remove margin for paragraphs with the class "no-space" */
+    .no-space {
+        margin: 0; /* Setting margin to zero */
+    }
+</style>

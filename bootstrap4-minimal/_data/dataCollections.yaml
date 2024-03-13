@@ -186,7 +186,9 @@
     - docid: knb-lter-sbc.156
       shortTitle: Lobster foraging on purple urchin
     - docid: knb-lter-sbc.166
-      shortTitle: Lobster fishing and trap count
+      shortTitle: Fishery impacts on lobster
+    - docid: knb-lter-sbc.148
+      shortTitle: Lobster MPA trap data
   habitats:
     habitat: reef
   measurementTypes:
@@ -420,14 +422,14 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.6004
-      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
-    - docid: knb-lter-sbc.6001
-      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
     - docid: knb-lter-sbc.6002
       shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
     - docid: knb-lter-sbc.6003
       shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6004
+      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+    - docid: knb-lter-sbc.6001
+      shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -712,18 +714,18 @@
     collections.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.3001
-      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3004
-      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
+    - docid: knb-lter-sbc.3001
+      shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
-    - docid: knb-lter-sbc.3005
-      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
+    - docid: knb-lter-sbc.3004
+      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
+    - docid: knb-lter-sbc.3005
+      shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
@@ -732,22 +734,22 @@
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
-    - docid: knb-lter-sbc.3011
-      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3014
       shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3011
+      shortTitle: 'Stream Discharge: RG01, Refugio Creek'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3016
-      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
       shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
+    - docid: knb-lter-sbc.3016
+      shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
   habitats:
     habitat: watershed
   measurementTypes:
@@ -1212,9 +1214,7 @@
     - docid: knb-lter-sbc.93
       shortTitle: Moored SeaFET pH, SeaBird CTD and oxygen
   habitats:
-    habitat:
-    - reef
-    - nearshore
+    habitat: nearshore
   measurementTypes:
     measurementType:
     - biogeochemistry
@@ -1345,6 +1345,8 @@
       shortTitle: Temperature to Nitrate
     - docid: knb-lter-sbc.158
       shortTitle: Kelp spore dispersal times
+    - docid: knb-lter-sbc.164
+      shortTitle: HFR-derived surface flow in SB channel
   habitats:
     habitat:
     - offshore
@@ -1355,4 +1357,37 @@
     lterCoreResearchArea:
     - Movement of Inorganic Matter
     - Disturbance Patterns
+  mapLayers: ~
+- collectionName: GIS and spatial data
+  abstract: GIS layers stored in Geodatabase. The layers describe the characteristics
+    of the catchments along the southern coast of Santa Barbara County
+  dataPackages:
+    package:
+    - docid: knb-lter-sbc.149
+      shortTitle: GIS layers in the Santa Barbara County
+  habitats:
+    habitat: watershed
+  measurementTypes:
+    measurementType: ecosystem_processes
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Disturbance Patterns
+  mapLayers: ~
+- collectionName: Integrated datasets collaborated with four regional projects
+  abstract: 'The data compilation comprises integrated datasets from four regional projects: SBC LTER, the kelp forest monitoring project, the San Nicolas Island project, and PISCO. Surveys encompass fish surveys, quad surveys, swath surveys, and point count surveys. '
+  dataPackages:
+    package:
+    - docid: edi.5
+      shortTitle: SCB MBON fish
+    - docid: edi.6
+      shortTitle: SCB MBON Quad and swath survey
+    - docid: edi.3
+      shortTitle: SCB MBON Benthic cover
+    - docid: edi.7
+      shortTitle: SCB MBON species table
+  habitats:
+    habitat: reef
+  measurementTypes:
+    measurementType: community_structure
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Population Studies
   mapLayers: ~

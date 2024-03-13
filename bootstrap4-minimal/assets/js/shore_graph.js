@@ -6,19 +6,11 @@ var priorDate = new Date().setDate(today.getDate()-100)
 // console.log(`prior date is ${priorDate}.`);
 console.log(`100 days ago is ${ new Date(priorDate).toJSON() }`);
 
-// const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=2019-01-21T08:00:00.000Z&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
-const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
-//const CSV_FILE = `http://erddap.sensors.axds.co/erddap/tabledap/stearns-wharf-automated-shore-st.csv?time%2Cmass_concentration_of_chlorophyll_in_sea_water%2Csea_water_practical_salinity%2Csea_water_pressure%2Csea_water_temperature&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+// const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
+  const CSV_FILE = `https://erddap.sensors.axds.co/erddap/tabledap/stearns-wharf-automated-shore-st.csv?time,sea_water_pressure,sea_water_pressure_qc_agg,sea_water_temperature,sea_water_temperature_qc_agg,mass_concentration_of_chlorophyll_in_sea_water,mass_concentration_of_chlorophyll_in_sea_water_qc_agg,sea_water_practical_salinity,sea_water_practical_salinity_qc_agg&time>=${ new Date(priorDate).toJSON() }&time<${ new Date().toJSON() }&orderBy(%22time%22)`;
 
 var chart;
 var timeIndex = 1;
-
-//let seriesIndex = {
-//sea_water_pressure: 0,
-//sea_water_temperature: 1,
-//mass_concentration_of_chlorophyll_in_sea_water: 2,
-//sea_water_practical_salinity: 3,
-//};
 
 let seriesIndex = {
     pressure: 0,
@@ -37,9 +29,9 @@ var units_data = {
 
 const Y_RANGE_CONFIG = {
     pressure: {min: 1, max: 5},
-    temperature: {min: 0, max: 30},
+    temperature: {min: 0, max: 70},
     chlorophyll: {min: 0, max: 60},
-    salinity: {min: 30, max: 35},
+    salinity: {min: 20, max: 35},
 };
 
 
@@ -98,15 +90,15 @@ async function updateCSVData() {
         data.forEach(line => {
             let vals = line.split(',');
             let time = new Date(vals[0]);
-            let val1 = parseFloat(vals[1]) || undefined;
-            let val2 = parseFloat(vals[3]) || undefined;
-            let val3 = parseFloat(vals[5]) || undefined;
-            let val4 = parseFloat(vals[7]) || undefined;
+            let pressure = parseFloat(vals[1]) || undefined;
+            let temperature = parseFloat(vals[3]) || undefined;
+            let chlorophyll = parseFloat(vals[5]) || undefined;
+            let salinity = parseFloat(vals[7]) || undefined;
 
-            series[0].data.push([time, val1]);
-            series[1].data.push([time, val2]);
-            series[2].data.push([time, val3]);
-            series[3].data.push([time, val4]);
+            series[0].data.push([time, pressure]);
+            series[1].data.push([time, temperature]);
+            series[2].data.push([time, chlorophyll]);
+            series[3].data.push([time, salinity]);
         });
 
         pressure_data = series[0].data;

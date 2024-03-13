@@ -84,5 +84,6 @@ page_css:
 </div>
 
 <script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="/assets/js/shore_graph.js"/></script>

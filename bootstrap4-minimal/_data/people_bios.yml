@@ -1029,22 +1029,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: sbogan
-    commonName: Sam Bogan
-    givenName: Sam
-    surName: Bogan
-    advisor: Hofmann
-    scientificDomainString: Evolutionary and physiological ecology
-    scientificDomainText: Eco-evolutionary processes controlling environmental adaptation/acclimatization
-    employeeType: Graduate Student
-    email: snbogan@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I joined the Hofmann Lab as a PhD student in the Fall of 2018. Before coming to UC Santa Barbara, I received an MS from Sonoma State University, CA, where I studied the evolution of gene regulatory elements underpinning physiological losses-of-function in Antarctic fishes. As an undergraduate at Dickinson College, PA, I studied the responses of gastropod larvae and juveniles to ocean acidification and multiple stressors. Building off of these experiences, my research with the Hofmann Lab will integrate my background in molecular biology and gene regulation with my interest global change biology. I hope to better understand the cellular and evolutionary processes that limit or enable the capacity for rapid adaptation to environmental change. Specifically, I am interested in the evolutionary role of epigenetics and how environmental adaptation may act upon its processes. For example, how might DNA methylation respond to future ocean temperatures or pCO2 in closely-related stenotherms and eurytherms? What might this suggest for these organisms' capacities to adapt using an evolutionary framework that considers plasticity?
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: rbrokaw
     commonName: Ricky Brokaw
     givenName: Ricky
@@ -1125,23 +1109,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: xclare
-    commonName: Xochitl Clare
-    givenName: Xochitl
-    surName: Clare
-    advisor: Hofmann
-    scientificDomainString: Ecophysiology and climate change
-    scientificDomainText: Climate change, fisheries, larval biology, education, science
-      communication, media
-    employeeType: Graduate Student
-    email: xclare@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I am a first generation Latina African American with island heritage--where the importance of life at sea is in our folktales, music, and food. While most of the world's resources come from the sea, we are only recently learning about how climate change poses a threat to all that the ocean gives. I have firsthand experience with socioeconomic barriers associated with interacting with the marine world. However, my background in both marine biology and the performing arts empowers me with insight on how to increase public engagement in marine sciences. After earning both a Theater Arts B.A. & Marine Biology B.S. at the University of California, Santa Cruz (2017), today, in the lab and at sea, as a Ph.D. Candidate in the Hofmann Lab, I investigate how climate change affects important fished species. Using my multicultural background and interdisciplinary lens, I connect with the public to improve our relationship with our blue backyards.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: jcox
     commonName: Julia Cox
     givenName: Julia
@@ -1171,23 +1138,6 @@
       of California<br />Santa Barbara CA 93106
     profileText: |
       Raine is interested in both community ecology and mathematical modeling. She is particularly interested in using models to better understand species interactions in marine communities and how these interactions may be affected by environmental stressors. Her work in the Moeller Lab leverages the Santa Barbara Coastal and Moorea Coral Reef LTER datasets. Raine began her research career by modeling the interactions between Macrocystis pyrifera (giant kelp), benthic macroalgae, and sessile invertebrates and how this system is affected by disturbance from storms. More recently, she is exploring the incorporation of coral-associated animals into models of coral growth and bleaching.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: bdifiore
-    commonName: Bart DiFiore
-    givenName: Bartholomew
-    surName: DiFiore
-    advisor: Stier
-    scientificDomainString: Population and community ecology
-    scientificDomainText: 'Kelp forest ecology, predator-prey interactions, fisheries,
-      trophic ecology. '
-    employeeType: Graduate Student
-    email: bdifiore@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I am broadly interested in the intersection of community ecology and fisheries, and use a combination of field and quantitative techniques to better understand how to incorporate species interactions into management. My current work is focused on how variation in the body size of predators relative to their prey affects when and where predators play a strong trophic role in kelp forest ecosystems. As part of this work, I'm testing to what extent a predator's physiological demand determines how much it eats, in hopes of improving our ability to predict the strength of species interactions based on body size.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1323,38 +1273,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: lkozal
-    commonName: Logan Kozal
-    givenName: Logan
-    surName: Kozal
-    advisor: Hofmann
-    scientificDomainString: 'Ecophysiology and  plasticity '
-    scientificDomainText: 'Ecophysiology and  plasticity '
-    employeeType: Graduate Student
-    email: logankozal@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I joined the Hofmann Lab as a Ph.D. student in Fall of 2016. I am interested in studying the capacity of commercially important California fishery species to cope with the environmental stress associated with climate change and ocean acidification. I am pursuing two pathways to investigate this question. First, I am interested in looking at the physiological mechanisms by which organisms can rapidly adapt to environmental stressors in the hopes of forecasting which organisms will be resilient to the stress of a changing ocean. Our current investigations focus on the role of maternal provisioning and transgenerational plasticity as a potential avenue for resilience in early life stages. In addition, I am looking at how marine macrophytes, such as eelgrass, modify ocean chemistry and investigating the potential for these habitats to serve as local refuges from ocean acidification.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: jmadden
-    commonName: Jess Madden
-    givenName: Jessica
-    surName: Madden
-    advisor: Eliason and Dugan
-    scientificDomainString: Kelp forests and sandy beaches
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: jessicamadden@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am interested in coastal marine ecology and cross-ecosystem connectivity between sandy beach and marine food webs. I assist SBC LTER with the ongoing monitoring of kelp deposition on beaches and the ecological responses of beach food webs. My thesis research investigates how seasonal variation in kelp wrack subsidies to beaches drives sandy beach community dynamics and how  surf zone fish predators, such as barred surfperch (Amphistichus argenteus), utilize kelp consuming sandy beach invertebrates as prey.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: kmalakhoff
     commonName: Katrina Malakhoff
     givenName: Katrina
@@ -1418,21 +1336,6 @@
       Barbara CA 93106-6150
     profileText: |
       I am a PhD student working with Bob Miller. I am investigating how the benthic suspension feeding community within kelp forests responds to both abiotic and biotic stressors such as thermal stress, food limitation, and competition. As anthropogenic climate change continues to warm our coastal oceans, benthic animals may experience prolonged periods of thermal stress as well as changes in both the quality and quantity of their main food source: plankton. Additionally, I am interested in how these communities respond to the introduction of nonnative species through competition for space and resources.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: jpeters
-    commonName: Joey Peters
-    givenName: Joey
-    surName: Peters
-    advisor: Burkepile and Reed
-    scientificDomainString: Kelp forest ecology
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: jpeters@umail.ucsb.edu
-    postalAddress: ''
-    profileText: |
-      My research characterizes the role of consumer mediated nutrient cycling in giant kelp forests. Specifically, I quantify sources of nitrogen (as ammonium) that are excreted from fishes and invertebrates and scale them to populations using SBC LTER monitoring data. I use these time series of consumer nitrogen excretions to determine what factors (e.g. fishing, disease, disturbance) are important for regulating nitrogen recycling in giant kelp forests.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1626,22 +1529,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Staff
-  - databaseID: ewallner
-    commonName: Elisa Wallner Halewood
-    givenName: Elisa
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: Oceanography and Microbiology Sampling and Analysis
-    scientificDomainText: ''
-    employeeType: ''
-    email: elisa.wallner@lifesci.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
-    homepage: ''
-    telephoneNumber: 805-893-8087
-    projectRole: Staff
   - databaseID: shalewood
     commonName: Stuart Halewood
     givenName: Stuart
@@ -1657,6 +1544,22 @@
       As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
     homepage: ''
     telephoneNumber: 805-893-7295
+    projectRole: Staff
+  - databaseID: ewallner
+    commonName: Elisa Wallner Halewood
+    givenName: Elisa
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: Oceanography and Microbiology Sampling and Analysis
+    scientificDomainText: ''
+    employeeType: ''
+    email: elisa.wallner@lifesci.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
+    homepage: ''
+    telephoneNumber: 805-893-8087
     projectRole: Staff
   - databaseID: jjones2
     commonName: Janice Jones
