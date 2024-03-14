@@ -52,6 +52,10 @@ description: news and event in SBCLTER
  
 <p>Kristen Michaud - Shifts in understory macroalgal community structure in the SBC </p>
 
+<p><b>March 12</b></p>
+<p class="no-space">Natalie Dornan - Nitrogen supply to the giant kelp, Macrocystis pyrifera, assessed using natural abundance stable isotopes </p>
+ 
+
 
 
 <hr/>
