@@ -230,7 +230,7 @@ description: curricula and other media for education, produced by the SBC LTER
 	   </div>
 	   <div class="col-md-5">
 		      <p>
-		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/boatlaunch.jpg"  alt="harbor" style="float:right; PADDING-LEFT: 15px" /> 
+		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/harbor.jpg"  alt="harbor" style="float:right; PADDING-LEFT: 15px" /> 
 		      <!-- photo here beach_sbc-0008 -->
 		   </p>
 	   </div>
