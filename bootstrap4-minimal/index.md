@@ -110,7 +110,7 @@ window.setTimeout(function(){
 
 <center>
 <video style='width: 80%' controls>
-  <source src="https://sbclter.msi.ucsb.edu/external/Documents/SBCLTER_videos/SBC%20LTER%20Overview-Final.mp4" type="video/mp4">
+  <source src="https://sbclter.msi.ucsb.edu/external/Documents/SBCLTER_videos/SBCLTER_Overview.mp4" type="video/mp4">
 </video>
 </center>
 <hr>

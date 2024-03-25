@@ -216,6 +216,22 @@
     homepage: http://erikaeliason.com/
     telephoneNumber: '805-893-2966 '
     projectRole: Investigator
+  - databaseID: kemery1
+    commonName: Kyle Emery
+    givenName: Kyle
+    surName: Emery
+    advisor: ''
+    scientificDomainString: Kelp forest and sandy beach ecology
+    scientificDomainText: Kelp forest and sandy beach ecology
+    employeeType: Post Doctoral Associate
+    email: emery@ucsb.edu
+    postalAddress: Department of Geography<br />University of California<br />Los Angeles
+      CA 90095
+    profileText: |
+      I am interested in subsidies to beach ecosystems and their associated organisms. Sandy beaches along the southern California coast are receive organic matter and nutrient inputs through the deposition of giant kelp (Macrocystis pyrifera) wrack onto the beach. This material supports a variety of consumers through the provision of both habitat and food. I am interested in determining the extent of kelp inputs to beaches across a range of both types and during different seasonal conditions. I am also interested in how the variation in kelp inputs along the SBC LTER coastline controls community compositions and consumer behavior. I will explore these questions and more through kelp tagging and tracking experiments and beach surveys of consumer populations.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Investigator
   - databaseID: sholbrook
     commonName: Sally Holbrook
     givenName: Sally
@@ -628,22 +644,6 @@
       We study large-scale physical processes of cross-shelf exchange and their effects on dispersion of organisms and pollutants on the continental shelf and in coastal and estuarine systems. At smaller scales, we focus on boundary layer flow, stratification, and wave dynamics and their effects on turbulent mixing near the bed, including mass flux to benthic organisms. This research entails both field experiments and numerical simulations, and we often collaborate with biologists, geologists and other scientists.
     homepage: http://davis.eng.uci.edu/index.html
     telephoneNumber: '949-824-4498 '
-    projectRole: Project Affiliated Investigator
-  - databaseID: kemery1
-    commonName: Kyle Emery
-    givenName: Kyle
-    surName: Emery
-    advisor: ''
-    scientificDomainString: Kelp forest and sandy beach ecology
-    scientificDomainText: Kelp forest and sandy beach ecology
-    employeeType: Post Doctoral Associate
-    email: kyleemery@ucla.edu
-    postalAddress: Department of Geography<br />University of California<br />Los Angeles
-      CA 90095
-    profileText: |
-      I am interested in subsidies to beach ecosystems and their associated organisms. Sandy beaches along the southern California coast are receive organic matter and nutrient inputs through the deposition of giant kelp (Macrocystis pyrifera) wrack onto the beach. This material supports a variety of consumers through the provision of both habitat and food. I am interested in determining the extent of kelp inputs to beaches across a range of both types and during different seasonal conditions. I am also interested in how the variation in kelp inputs along the SBC LTER coastline controls community compositions and consumer behavior. I will explore these questions and more through kelp tagging and tracking experiments and beach surveys of consumer populations.
-    homepage: ''
-    telephoneNumber: ''
     projectRole: Project Affiliated Investigator
   - databaseID: sgaines
     commonName: Steve Gaines
@@ -1529,22 +1529,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Staff
-  - databaseID: shalewood
-    commonName: Stuart Halewood
-    givenName: Stuart
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: Oceanographic Sampling and Data Analysis
-    scientificDomainText: Oceanographic Sampling and Data Analysis
-    employeeType: ''
-    email: halewood@eri.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
-    homepage: ''
-    telephoneNumber: 805-893-7295
-    projectRole: Staff
   - databaseID: ewallner
     commonName: Elisa Wallner Halewood
     givenName: Elisa
@@ -1560,6 +1544,22 @@
       I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
     homepage: ''
     telephoneNumber: 805-893-8087
+    projectRole: Staff
+  - databaseID: shalewood
+    commonName: Stuart Halewood
+    givenName: Stuart
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: Oceanographic Sampling and Data Analysis
+    scientificDomainText: Oceanographic Sampling and Data Analysis
+    employeeType: ''
+    email: halewood@eri.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
+    homepage: ''
+    telephoneNumber: 805-893-7295
     projectRole: Staff
   - databaseID: jjones2
     commonName: Janice Jones
