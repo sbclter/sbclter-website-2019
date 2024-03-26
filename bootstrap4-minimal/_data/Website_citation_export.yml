@@ -1,9 +1,37 @@
+  - sbc_id: 1653
+    year: '2024'
+    category: Article
+    hyperlink: http://dx.doi.org/10.3354/meps14475
+    citation: |
+      Detmer, A. (2024). Modeling grazer-mediated effects of demographic and material connectivity on giant kelp metapopulation dynamics. Marine Ecology Progress Series. 726:49-69. DOI: 10.3354/meps14475
+    author: ''
+  - sbc_id: 1655
+    year: '2024'
+    category: Article
+    hyperlink: http://dx.doi.org/10.3354/meps14523
+    citation: |
+      Kozal, L., Nelson, J., Hofmann, G. (2024). Kelp-associated variability in seawater chemistry during a marine heatwave event connects to transgenerational effects in the purple urchin, Strongylocentrotus purpuratus. Marine Ecology Progress Series. DOI: 10.3354/meps14523
+    author: ''
+  - sbc_id: 1656
+    year: '2024'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1038/s41598-024-51525-6
+    citation: |
+      Lenihan, H. S., Reed, D. C., Vigo, M., Leiphardt, C., Hofmiester, J. K. K., Gallagher, J. P., Voss, C., Moore, P., Miller, R. J. (2024). Regional differences in fishing behavior determine whether a marine reserve network enhances fishery yield. Scientific Reports. 14:. DOI: 10.1038/s41598-024-51525-6
+    author: ''
   - sbc_id: 1651
     year: '2024'
     category: Article
     hyperlink: https://www.pnas.org/doi/abs/10.1073/pnas.2310052120
     citation: |
       Walter, J. A., Emery, K. A., Dugan, J. E., Hubbard, D. M., Bell, T. W., Sheppard, L. W., Karatayev, V. A., Cavanaugh, K. C., Reuman, D. C., Castorani, M. C. N., et al. (2024). Spatial synchrony cascades across ecosystem boundaries and up food webs via resource subsidies. Proceedings of the National Academy of Sciences. 121:e2310052120. DOI: 10.1073/pnas.2310052120
+    author: ''
+  - sbc_id: 1658
+    year: '2024'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1002/ecy.4270
+    citation: |
+      Wanner, M. S., Walter, J. A., Reuman, D. C., Bell, T. W., Castorani, M. C. N. (2024). Dispersal synchronizes giant kelp forests. Ecology. DOI: 10.1002/ecy.4270
     author: ''
   - sbc_id: 1577
     year: '2023'
@@ -60,6 +88,13 @@
     hyperlink: https://doi.org/10.1111/1365-2656.13918
     citation: |
       DiFiore, B. P., Stier, A. C. (2023). Variation in body size drives spatial and temporal variation in lobster-urchin interaction strength. Journal of Animal Ecology. NA:NA. DOI: 10.1111/1365-2656.13918
+    author: ''
+  - sbc_id: 1654
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1186/s12864-023-09658-x
+    citation: |
+      Diesel, J., Molano, G., Montecinos, G. J., DeWeese, K., Calhoun, S., Kuo, A., Lipzen, A., Salamov, A., Grigoriev, I. V., Reed, D. C., et al. (2023). A scaffolded and annotated reference genome of giant kelp (Macrocystis pyrifera). BMC Genomics. 24:. DOI: 10.1186/s12864-023-09658-x
     author: ''
   - sbc_id: 1583
     year: '2023'
@@ -151,6 +186,13 @@
     hyperlink: https://doi.org/10.1016%2Fj.rse.2022.113415
     citation: |
       Sun, X., Brewin, R. J. W., Sathyendranath, S., Dall'Olmo, G., Airs, R., Barlow, R., Bracher, A., Brotas, V., Kheireddine, M., Lamont, T., et al. (2023). Coupling ecological concepts with an ocean-colour model: Phytoplankton size structure. Remote Sensing of Environment. 285:113415. DOI: 10.1016/j.rse.2022.113415
+    author: ''
+  - sbc_id: 1657
+    year: '2023'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1111/jpy.13365
+    citation: |
+      Tennies, N. K., Alberto, F. (2023). A tool for detecting giant kelp canopy biomass decline in the Californias. Journal of Phycology. 59:1100-1106. DOI: 10.1111/jpy.13365
     author: ''
   - sbc_id: 1597
     year: '2023'
