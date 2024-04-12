@@ -133,7 +133,7 @@ description: news and event in SBCLTER
   </div>
 </div>
 
-
+<!--
 <hr/>
 <br>
 
@@ -176,7 +176,7 @@ description: news and event in SBCLTER
      <div class="overlay">Research projects</div>
   </a>
 </div>
-
+-->
 <hr/>
 <br>
 

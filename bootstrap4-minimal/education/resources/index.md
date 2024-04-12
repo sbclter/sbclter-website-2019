@@ -13,18 +13,18 @@ description: curricula and other media for education, produced by the SBC LTER
   <div class='col-md-8'>
 	  <p>The SBC Schoolyard Program, educational partnerships and public outreach activities have generated several types of educational resources using a variety of media including film and video, books, websites, datasets, and written lesson plans. Resources are described below, grouped by the major areas in our region:</p>
 	  <div class="row">
-		  <div class="col-md-3">
-			  <h4><a href="#watershed">Watershed</a></h4>
+	      <div class="col-md-3">
+			  <h4><a href="#channel">Channel</a></h4>
 		  </div>
 		  <div class="col-md-3">
 			  <h4><a href="#beach">Beaches</a></h4>
 		  </div>
-		  <div class="col-md-3">
+          <div class="col-md-3">
 			  <h4><a href="#harbor">Harbor</a></h4>
 		  </div>
 		  <div class="col-md-3">
-			  <h4><a href="#channel">Channel</a></h4>
-		  </div>
+			  <h4><a href="#watershed">Watershed</a></h4>
+		  </div> 
 	  </div>
 	</div>
 <div class='col-md-4'>
@@ -38,205 +38,6 @@ description: curricula and other media for education, produced by the SBC LTER
   </div>
 </div> <!-- close row -->
 
-<!-- watershed 
--------------------------------------------------------------------------------------------------------------------------------------
--->
-
-<div id="watershed" class="row">
-    <div class="col-md-7">
-		   <h2>Our Watersheds</h2>
-		   <p>Our study of coastal watersheds provides a basis for understanding the timing and magnitude of nutrient and sediment fluxes to coastal waters of the Santa Barbara Channel and its fringing kelp forest ecosystems. Short and long-term changes in climate that alter rainfall may cause a change in the processes that supply nutrients, sediments, and organic matter to kelp forest communities. </p>
-	   </div>
-	   <div class="col-md-5">
-		      <p>
-		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/carp_500.jpg"  alt="Carpinteria watershed" style="float:right; PADDING-LEFT: 15px" /> 
-		      <!-- photo here beach_sbc-0008 -->
-		   </p>
-	   </div>
-   </div>
-   <div class="row">
-	   <div class="col-md-1">
-		   <!-- this is empty space to indent the lists -->
-	   </div>
-	      <div class="col-md-7"> 	  
-   		  	<h3>Arroyo Burro Lesson Plans</h3>
-  		 	<p>Module components focus on the links between watersheds and the coastal ocean, and the effects of human actions.  
-			This group of lesson plans are are geared toward middle school students, to understand ecosystem concepts as they apply to coastal watersheds. Particular attention is paid to the transport of materials to the primary producers in a food web. A computer CD containing simulations in the Arroyo Burro Watershed is also available (<a href="mailto:sbclter@msi.ucsb.edu?subject=Request for SBC LTER - Arroyo Burro Virtual Tour CD">by request</a>). 
-			</p>
-   		</div>
-   	 <div class="col-md-4 my-auto">
-		 <ul>
-			 <li class="margin-above-5">
-				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Interpreting_News_Media.pdf">Interpreting News Reports</a>
-			 </li>
-			 <li class="margin-above-5">
-				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_What_is_an_Ecosystem.pdf">What is an Ecosystem?</a>
-			 </li>
-			 <li class="margin-above-5">
-				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_What_is_a_Watershed.pdf">What is a Watershed?</a>
-			 </li>
-			 <li class="margin-above-5">
-				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Zones_of_a_Watershed.pdf">Zones of a Watershed</a>
-			 </li>
-			 <li class="margin-above-5">
-				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Chemistry_Connection.pdf">Chemistry Connection</a>
-			 </li>
-			 <li class="margin-above-5">
-				 <a href="/external/lternet.edu/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Algae_Experiments.pdf">Algae Experiments</a>
-			 </li>
-			 <li class="margin-above-5">
-				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_6LessonPlans.pdf">Complete Set of 6 activities (30mb PDF)</a>
-			 </li>
-		 </ul>
-	  </div> <!-- closes column -->
-	</div> <!-- close row -->
-<div  class="row">
-            <div class='col-md-12'>
-             <hr/>
-			 <hr/>
-            </div>
-</div> <!-- close row -->
-
-<!-- beach 
--------------------------------------------------------------------------------------------------------------------------------------
--->
-<div id="beach" class="row">
-    <div class="col-md-7">
-		   <h2>Our Beaches</h2>
-		   <p>Kelp and other seaweeds that are stranded on beaches as wrack support a diverse community of small animals that in turn are important as prey for shorebirds. The kelp wrack provides an important food source and habitat for the beachhoppers, intertidal beetles, kelp flies, and other small crustaceans on which many species of shorebirds feed. Our resources for learning about beach communities include a website, films, and brochures supported by SeaGrant funds.</p>
-	   </div>
-	   <div class="col-md-5">
-		      <p>
-		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/beach_sbc-0008.jpg"  alt="Beach ecosystem at SBC LTER" style="float:right; PADDING-LEFT: 15px" /> 
-		      <!-- photo here beach_sbc-0008 -->
-		   </p>
-	   </div>
-   </div>
-   
-   
-<div class="row">
-	<div class="col-md-1">
-		   <!-- this is empty space to indent the lists -->
-	   </div>
-
-   <div class="col-md-7">
-   <p>The <a href="https://explorebeaches.msi.ucsb.edu/">Explore Beaches</a> website describes plants that build dunes, fish that are able to run onto land, and crabs that move incredible distances migrating with the tide. Explore it to discover the dynamic process of sand movement and the impacts of management decisions. Understand the challenges and successes  related to climate change.</p>
-    
-	
-	
- 
-   </div>
-   <div class="col-md-4">
-	   <p><a href="https://explorebeaches.msi.ucsb.edu/"><img class="img-thumbnail img-responsive img-center" src="/assets/img/education/explore_beaches.png"></a> </p>
-	</div>
-	</div>
-	
-		<div  class="row">
-			<div class='col-md-12'>
-			    <hr/>
-			</div>
-   
-   <div class="row">
-   	<div class="col-md-1">
-   		   <!-- this is empty space to indent the lists -->
-   	   </div>  
-   
-      <div class="col-md-7">
-      <h3>Beaches Hopping with Life</h3>
-      
-   		   <p>Four minute film clip created by "The Ocean Channel" for the <a href="http://www.sbnature.org/seacenter/">Ty Warner Sea Center</a>.
-"Kelp and other seaweeds that are stranded on beaches as wrack support a diverse community of small animals that in turn are important as prey for shorebirds. The kelp wrack provides an important food source and habitat for the beachhoppers, intertidal beetles, kelp flies, and other small crustaceans on which many species of shorebirds feed."</p>
-   	  
-      </div>
-  
-   <div class="col-md-4 my-auto">
-	   <!--  <img class="img-thumbnail img-responsive img-center float-right" src="/assets/img/education/hopping_w_life.png"  alt="Shorebirds on kelp" /> -->
-   <ul>
-		<li>
-			<a href="/external/Outreach/Beach_Resources/HoppingWithLife_2004.m4v">
-				"Hopping with Life" MP4 format for download</a>
-		</li>
-	</ul>
-	<ul>
-		<li>
-			<a href="/external/Outreach/Beach_Resources/HoppingWithLife_2004.mov">
-				"Hopping with Life" (QuickTime)</a>
-		</li>
-	</ul>
-	
-</div>
-	
-	
-<div  class="row">
-	<div class='col-md-12'>
-	    <hr/>
-	</div>
-</div>
-
-
-<div class="row">
-	<div class="col-md-1">
-		   <!-- this is empty space to indent the lists -->
-	   </div>
-
-   <div class="col-md-7 my-auto">
-   <p>Brochures (by region) on the role of kelp wrack in beach ecosystems and the impacts of beach grooming</p>
-</div>
-<div class="col-md-4">
-	<ul>
-		<li class="">
-			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_SB.pdf">Santa Barbara County</a>
-		</li>
-		<li class="">
-			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_Ventura.pdf">Ventura County</a>
-		</li>
-		<li class="">
-			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_LA.pdf">Los Angeles County</a>
-		</li>
-		<li class="">
-			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_OC.pdf">Orange County</a>
-		</li>
-		<li class="">
-			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_SD.pdf">San Diego County</a>
-		</li>
-		<li class="">
-			<a href="/external/Outreach/Beach_Resources/SeaGrant_Dugan_socal_counties.zip">Complete Set for five counties (zip)</a>
-		</li>
-	</ul>
-   
-
-</div> <!-- closes column -->
-</div> <!-- close row -->
-
-
-<div  class="row">
-            <div class='col-md-12'>
-             <hr/>
-            </div>
-</div> <!-- close row -->
-
-
-<div class="divider py-1 bg-dark"><hr></div>
-
-
-<!-- Harbor
--------------------------------------------------------------------------------------------------------------------------------------
--->
-
-<div id="harbor" class="row">
-    <div class="col-md-7">
-		   <h2>Our Harbor</h2>
-		   <p>This historic working harbor is at the heart of a variety of maritime activities, including recreational and commercial fisheries, diving and kayaking.  It is also one of the launch points for our research boats to access key SBC kelp forest research sites that are so critical to the vitality of fisheries and tourism that support Our Harbor.</p>
-	   </div>
-	   <div class="col-md-5">
-		      <p>
-		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/harbor.jpg"  alt="harbor" style="float:right; PADDING-LEFT: 15px" /> 
-		      <!-- photo here beach_sbc-0008 -->
-		   </p>
-	   </div>
-   </div>
-   
-   
 <div class="row">
 	<div class="col-md-1">
 		   <!-- this is empty space to indent the lists -->
@@ -251,32 +52,15 @@ description: curricula and other media for education, produced by the SBC LTER
   		</p>
   </div> <!-- closes column -->
 </div> <!-- close row -->
-<div  class="row">
-	<div class='col-md-12'>
-  	   <hr/>
-   </div>
-</div> <!-- close row -->
 
-   
-<div class="row">
-	<div class="col-md-1">
-		   <!-- this is empty space to indent the lists -->
-	   </div>
-   <div class="col-md-7">
-   	<h3>Stearns Wharf Data</h3>
-   	<p>SBC LTER teams with agencies and research projects in the region to monitor oceanographic conditions at Stearns Wharf. Real-time data are a teaching aid, and are used frequently by local citizens, particularly swimmers and surfers.</p>
-   </div>
-   <div class="col-md-4">
-  			<p><a href="{{site.baseurl}}/data/visuals/stearns-wharf"><img class="img-thumbnail img-responsive img-center" src="/assets/img/education/stearns_wharf_data.png"></a> </p>
-  </div> <!-- closes column -->
-</div> <!-- close row -->
-<div  class="row">
-	<div class='col-md-12'>
-		<hr/>
-	</div>
-</div> 
+
+<!-- channel
+----------------------->
 
 <div id="channel"  class="row">
+				<div class='col-md-12'>
+			    <hr/>
+			</div>
     <div class="col-md-7">
 		   <h2>Our Channel</h2>
 		   <p>Kelp forests are the primary habitat for many fish and invertebrate animals of the nearshore area, and the focus of SBC LTER research. Several resources are available to learn about this valuable feature of our channel, including animations, a field guide, and a children's book. We also have a datasets specifically designed for teaching about ocean acification in the Channel.</p>
@@ -388,6 +172,159 @@ description: curricula and other media for education, produced by the SBC LTER
  	</ul>
   </div> <!-- closes column -->
 </div> <!-- close row -->
+
+<br>
+<div class="row">
+	<div class="col-md-1">
+		   <!-- this is empty space to indent the lists -->
+	   </div>
+   <div class="col-md-7">
+   <h3>Kelp Viewed from Landsat</h3>
+   <p>Since 1984, satellites have been capturing images of the entire Earth's surface every 16 days. The cameras on these satellites are capable of detecting the unique reflectance signature of kelp—the specific colors of light it reflects—which makes it distinctly visible in the images. By observing the shapes and patterns of kelp forests, it is possible to monitor and track the changes in kelp patches over time and across different locations. </p>
+   </div>
+   <div class="col-md-4 my-auto">
+   <ul>
+  		<li>
+  			<a href="https://www.zooniverse.org/projects/zooniverse/floating-forests/about/research" target="offline">Floating Forests</a> and its <a href="https://drive.google.com/drive/folders/1WrbAgukXtdUWnyfdIeE_2k8tjY_mFrm6" target="offline">instructors guide</a>
+  		</li>
+  		<li>
+  			<a href="https://kelpwatch.org/" target="offline">Kelp Watch</a>
+  		</li>
+ 	</ul>
+  </div> <!-- closes column -->
+</div> <!-- close row -->
+
+
+<div  class="row">
+            <div class='col-md-12'>
+             <hr/>
+            </div>
+</div> <!-- close row -->
+
+<!-- beach 
+-------------------------------------------------------------------------------------------------------------------------------------
+-->
+<div id="beach" class="row">
+				<div class='col-md-12'>
+			    <hr/>
+			</div>
+    <div class="col-md-7">
+		   <h2>Our Beaches</h2>
+		   <p>Kelp and other seaweeds that are stranded on beaches as wrack support a diverse community of small animals that in turn are important as prey for shorebirds. The kelp wrack provides an important food source and habitat for the beachhoppers, intertidal beetles, kelp flies, and other small crustaceans on which many species of shorebirds feed. Our resources for learning about beach communities include a website, films, and brochures supported by SeaGrant funds.</p>
+	   </div>
+	   <div class="col-md-5">
+		      <p>
+		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/beach_sbc-0008.jpg"  alt="Beach ecosystem at SBC LTER" style="float:right; PADDING-LEFT: 15px" /> 
+		      <!-- photo here beach_sbc-0008 -->
+		   </p>
+	   </div>
+   </div>
+   
+   
+<div class="row">
+	<div class="col-md-1">
+		   <!-- this is empty space to indent the lists -->
+	   </div>
+
+   <div class="col-md-7">
+   <p>The <a href="https://explorebeaches.msi.ucsb.edu/">Explore Beaches</a> website describes plants that build dunes, fish that are able to run onto land, and crabs that move incredible distances migrating with the tide. Explore it to discover the dynamic process of sand movement and the impacts of management decisions. Understand the challenges and successes  related to climate change.</p>
+    
+	
+	
+ 
+   </div>
+   <div class="col-md-4">
+	   <p><a href="https://explorebeaches.msi.ucsb.edu/"><img class="img-thumbnail img-responsive img-center" src="/assets/img/education/explore_beaches.png"></a> </p>
+	</div>
+	</div>
+	
+<br>	
+<div  class="row">   
+   <div class="row">
+   	<div class="col-md-1">
+   		   <!-- this is empty space to indent the lists -->
+   	   </div>  
+      <div class="col-md-7">
+      <h3>Beaches Hopping with Life</h3>
+         <p>Short PBS documentary on the beachhoppers that shred the kelp stranded on the beach every night "As the sun sets, hordes of tiny crustaceans called beachhoppers – also known as sandhoppers – emerge from underground burrows to frolic and feast. They eat so much decaying seaweed and other beach wrack that by morning all that’s left are ghostly outlines in the sand"</p>
+</div>
+
+ <div class="col-md-4 my-auto">
+	   <!--  <img class="img-thumbnail img-responsive img-center float-right" src="/assets/img/education/hopping_w_life.png"  alt="Shorebirds on kelp" /> -->
+   <ul>
+		<li>
+			<!-- see the script below -->
+			 <a href="javascript:void(0);" onclick="openPBSVideo()">Long-horned beach hoppers</a>
+		</li>
+	</ul>
+</div>
+
+</div>   		
+<br>
+<!-- next paragraph-->
+<div class="row">
+
+<div class="col-md-1">
+		   <!-- this is empty space to indent the lists -->
+	   </div>
+	   <div class="col-md-7">
+       <p>Four minute film clip created by "The Ocean Channel" for the <a href="http://www.sbnature.org/seacenter/">Ty Warner Sea Center</a>.
+"Kelp and other seaweeds that are stranded on beaches as wrack support a diverse community of small animals that in turn are important as prey for shorebirds. The kelp wrack provides an important food source and habitat for the beachhoppers, intertidal beetles, kelp flies, and other small crustaceans on which many species of shorebirds feed."</p>
+  </div>
+  
+   <div class="col-md-4 my-auto">
+	   <!--  <img class="img-thumbnail img-responsive img-center float-right" src="/assets/img/education/hopping_w_life.png"  alt="Shorebirds on kelp" /> -->
+   <ul>
+		<li>
+			<a href="/external/Outreach/Beach_Resources/HoppingWithLife_2004.mov">
+				"Hopping with Life" MP4 format for download</a>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<a href="/external/Outreach/Beach_Resources/HoppingWithLife_2004.m4v">
+				"Hopping with Life" (QuickTime)</a>
+		</li>
+	</ul>
+	
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-1">
+		   <!-- this is empty space to indent the lists -->
+	   </div>
+
+   <div class="col-md-7 my-auto">
+   <p>Brochures (by region) on the role of kelp wrack in beach ecosystems and the impacts of beach grooming</p>
+</div>
+<div class="col-md-4">
+	<ul>
+		<li class="">
+			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_SB.pdf">Santa Barbara County</a>
+		</li>
+		<li class="">
+			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_Ventura.pdf">Ventura County</a>
+		</li>
+		<li class="">
+			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_LA.pdf">Los Angeles County</a>
+		</li>
+		<li class="">
+			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_OC.pdf">Orange County</a>
+		</li>
+		<li class="">
+			<a href="/external/Outreach/Beach_Resources/SeaGrant-Dugan_SD.pdf">San Diego County</a>
+		</li>
+		<li class="">
+			<a href="/external/Outreach/Beach_Resources/SeaGrant_Dugan_socal_counties.zip">Complete Set for five counties (zip)</a>
+		</li>
+	</ul>
+   
+
+</div> <!-- closes column -->
+</div> <!-- close row -->
+
+
 <div  class="row">
             <div class='col-md-12'>
              <hr/>
@@ -396,10 +333,125 @@ description: curricula and other media for education, produced by the SBC LTER
 
 
 
+<!-- Harbor
+-------------------------------------------------------------------------------------------------------------------------------------
+-->
+
+<div id="harbor" class="row">
+				<div class='col-md-12'>
+			    <hr/>
+			</div>
+    <div class="col-md-7">
+		   <h2>Our Harbor</h2>
+		   <p>This historic working harbor is at the heart of a variety of maritime activities, including recreational and commercial fisheries, diving and kayaking.  It is also one of the launch points for our research boats to access key SBC kelp forest research sites that are so critical to the vitality of fisheries and tourism that support Our Harbor.</p>
+	   </div>
+	   <div class="col-md-5">
+		      <p>
+		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/harbor.jpg"  alt="harbor" style="float:right; PADDING-LEFT: 15px" /> 
+		      <!-- photo here beach_sbc-0008 -->
+		   </p>
+	   </div>
+   </div>
+   
+   
+
+<div  class="row">
+	<div class='col-md-12'>
+  	   <hr/>
+   </div>
+</div> <!-- close row -->
+
+   
+<div class="row">
+	<div class="col-md-1">
+		   <!-- this is empty space to indent the lists -->
+	   </div>
+   <div class="col-md-7">
+   	<h3>Stearns Wharf Data</h3>
+   	<p>SBC LTER teams with agencies and research projects in the region to monitor oceanographic conditions at Stearns Wharf. Real-time data are a teaching aid, and are used frequently by local citizens, particularly swimmers and surfers.</p>
+   </div>
+   <div class="col-md-4">
+  			<p><a href="{{site.baseurl}}/data/visuals/stearns-wharf"><img class="img-thumbnail img-responsive img-center" src="/assets/img/education/stearns_wharf_data.png"></a> </p>
+  </div> <!-- closes column -->
+</div> <!-- close row -->
+<div  class="row">
+	<div class='col-md-12'>
+		<hr/>
+	</div>
+</div> 
+
+
+
+<!-- watershed 
+-------------------------------------------------------------------------------------------------------------------------------------
+-->
+
+<div id="watershed" class="row">
+				<div class='col-md-12'>
+			    <hr/>
+			</div>
+    <div class="col-md-7">
+		   <h2>Our Watersheds</h2>
+		   <p>Our study of coastal watersheds provides a basis for understanding the timing and magnitude of nutrient and sediment fluxes to coastal waters of the Santa Barbara Channel and its fringing kelp forest ecosystems. Short and long-term changes in climate that alter rainfall may cause a change in the processes that supply nutrients, sediments, and organic matter to kelp forest communities. </p>
+	   </div>
+	   <div class="col-md-5">
+		      <p>
+		   	   <img class="img-thumbnail img-responsive img-center" src="/assets/img/education/carp_500.jpg"  alt="Carpinteria watershed" style="float:right; PADDING-LEFT: 15px" /> 
+		      <!-- photo here beach_sbc-0008 -->
+		   </p>
+	   </div>
+   </div>
+   <div class="row">
+	   <div class="col-md-1">
+		   <!-- this is empty space to indent the lists -->
+	   </div>
+	      <div class="col-md-7"> 	  
+   		  	<h3>Arroyo Burro Lesson Plans</h3>
+  		 	<p>Module components focus on the links between watersheds and the coastal ocean, and the effects of human actions.  
+			This group of lesson plans are are geared toward middle school students, to understand ecosystem concepts as they apply to coastal watersheds. Particular attention is paid to the transport of materials to the primary producers in a food web. A computer CD containing simulations in the Arroyo Burro Watershed is also available (<a href="mailto:sbclter@msi.ucsb.edu?subject=Request for SBC LTER - Arroyo Burro Virtual Tour CD">by request</a>). 
+			</p>
+   		</div>
+   	 <div class="col-md-4 my-auto">
+		 <ul>
+			 <li class="margin-above-5">
+				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Interpreting_News_Media.pdf">Interpreting News Reports</a>
+			 </li>
+			 <li class="margin-above-5">
+				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_What_is_an_Ecosystem.pdf">What is an Ecosystem?</a>
+			 </li>
+			 <li class="margin-above-5">
+				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_What_is_a_Watershed.pdf">What is a Watershed?</a>
+			 </li>
+			 <li class="margin-above-5">
+				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Zones_of_a_Watershed.pdf">Zones of a Watershed</a>
+			 </li>
+			 <li class="margin-above-5">
+				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Chemistry_Connection.pdf">Chemistry Connection</a>
+			 </li>
+			 <li class="margin-above-5">
+				 <a href="/external/lternet.edu/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Algae_Experiments.pdf">Algae Experiments</a>
+			 </li>
+			 <li class="margin-above-5">
+				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_6LessonPlans.pdf">Complete Set of 6 activities (30mb PDF)</a>
+			 </li>
+		 </ul>
+	  </div> <!-- closes column -->
+	</div> <!-- close row -->
+<div  class="row">
+            <div class='col-md-12'>
+             <hr/>
+			 <hr/>
+            </div>
+</div> <!-- close row -->
+
+
 <!-- Network 
 -------------------------------------------------------------------------------------------------------------------------------------
 -->
 <div class="row">
+				<div class='col-md-12'>
+			    <hr/>
+			</div>
    <div class="col-md-8">
    <h2>LTER Network Site Briefs</h2>
    <p>The LTER Network maintains a collection of briefing documents, one PDF for each site. The entire collection is available. 
@@ -425,3 +477,9 @@ description: curricula and other media for education, produced by the SBC LTER
 </div>
         
      
+<script>
+function openPBSVideo() {
+    var popup = window.open("https://www.pbs.org/video/these-acrobatic-beach-hoppers-shred-all-night-long-o5bin2/", "PopupWindow", "width=800,height=600,resizable=yes,scrollbars=yes");
+    if (window.focus) { popup.focus(); }
+}
+</script>

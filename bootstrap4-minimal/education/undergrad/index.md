@@ -17,6 +17,40 @@ description: describes undergrad education at SBC LTER. Includes the REEF and RE
 <br>
 <hr/>
 
+<h2><a href="{{site.baseurl}}/community/opportunity">SBC LTER Internships/Volunteering</a></h2>
+<br>
+
+<div class="row">
+		<div class='col-md-4'>
+	       <img class="img-thumbnail img-responsive img-center" src="/assets/img/community/RockyIntertidalActivity.jpg"  alt="Scientific diving" style="float:right; PADDING-LEFT: 15px" width = "100%">       
+   		</div>
+
+  <div class="col-md-8">
+    		<p>These internships are for students interested in kelp forest ecology, marine science and/or scientific SCUBA diving.If helping run laboratory experiments and participating in field research, including beach surveys and scuba diving, is something of interest to you, please fill out our <a href="{{site.baseurl}}/external/Documents/Other/Volunteer_Application_and_Waiver.pdf">SBC volunteer application form</a>. We encourage all motivated students to apply if you hope to gain invaluable hands-on experience in a marine science lab! If you have any questions about the application process, please do not hesitate to email <a href="mailto:dambat@ucsb.edu" target="_blank">Darrin Ambat</a>.
+ </p>
+		</div>
+</div>
+
+<br>
+<hr/>
+
+<h2>DIVErsity - Promoting Diversity in the Marine Sciences</h2>
+<br>
+
+<div class="row">
+
+
+  <div class="col-md-8">
+    		<p>The <a href="https://msi.ucsb.edu/diversity-equity-and-inclusion/diversity-diving">DIVErsity in diving program</a> at MSI was developed to eliminate barriers for students interested in marine field research by providing financial support, mentorship, and guidance for students looking to become scientific divers. </p>
+		</div>
+		<div class='col-md-4'>
+	       <img class="img-thumbnail img-responsive img-center" src="/assets/img/community/KaitlinJ.jpeg"  alt="UCSB Students receive educational training at The REEF" style="float:right; PADDING-LEFT: 15px" width = "100%">       
+   		</div>
+</div>
+
+<br>
+<hr/>
+
 
 <h2>Training at The REEF</h2>
 <br>
@@ -44,4 +78,16 @@ description: describes undergrad education at SBC LTER. Includes the REEF and RE
 		<div class="col-md-4">
 	       <img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/Kristen_Jess_Kyle_REUexperiment2017.jpg"  alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />       
    		</div>
+</div>
+<br>
+<hr/>
+
+
+<h2>MSI Opportunities</h2>
+
+<div class="row">
+					<div>
+    		<p><a href="https://msi.ucsb.edu/diversity-equity-and-inclusion">UCSB MSI</a> has a list of undergrad opportunities and programs along with open positions.</p>
+		</div>
+		
 </div>
