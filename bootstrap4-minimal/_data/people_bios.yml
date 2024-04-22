@@ -977,23 +977,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
-  - databaseID: apayandeh
-    commonName: Ali Reza Payandeh
-    givenName: Ali
-    surName: Payandeh
-    advisor: ''
-    scientificDomainString: Physical oceanography
-    scientificDomainText: Coastal circulation, Numerical Modeling, Statistical Analysis,
-      Coastal Oceanography, Observational Oceanography, Hydrodynamic, Sediment Transport
-    employeeType: Postdoctoral Scholar
-    email: alip@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am a postdoctoral scholar in the Marine Science Institute at University of California Santa Barbara. Currently I am using high frequency radar data to study the structure of currents and mesoscale eddies in the Southern California Bight region. I am interested in innovative field measurements and utilizing high-resolution numerical models to study oceanic and coastal processes.
-    homepage: http://alirezapayandeh.zharfapodcast.com/
-    telephoneNumber: ''
-    projectRole: Post Doctoral Associate
   - databaseID: msiple
     commonName: Margaret Siple
     givenName: Margaret

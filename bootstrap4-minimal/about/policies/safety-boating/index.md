@@ -39,8 +39,7 @@ graduate student. At present, the committee is:
 		<li>Be notified of all new certifications for boat use and any changes made to the boating regulations</li>
 </ol>
 </p>
-<p>The Launchmaster is in control of day-to-day operations originating at the UCSB Marine Lab. The complete <a href="https://sbclter.msi.ucsb.edu/external/Documents/Policies/Boating_Policy.pdf">Small Boat Policy is available publicly</a>, and additional
-	material available on the <a href="https://sbclter.msi.ucsb.edu/internal/admin-policies">internal server</a> (after login).</p>
+<p>The Launchmaster oversees the daily operations at the UCSB Marine Lab. The <a href="https://sbclter.msi.ucsb.edu/external/Documents/Policies/Boating_Policy.pdf">Small Boat Policy</a> is publicly accessible, and further information is available upon request.</p>
 
         </div>
 
@@ -68,7 +67,7 @@ graduate student. At present, the committee is:
 	<blockquote>
     <p>Lab safety  follows UCSB  and UC system protocols. Lab supervisors are responsible for ensuring that their workers have received documented safety training. At SBC, training for undergraduate volunteers is formal, occurring at the start of the academic year.  The lead field tech conducts an annual lab safety review, and coordinates training with <a href="http://www.ehs.ucsb.edu/training">UCSB Environmental Health and Safety</a>.	
 	</p>
-		<p>All materials are available on the <a href="https://sbclter.msi.ucsb.edu/internal/research/Reef/Working/Administrative/Laboratory%20Safety%20Manual/">SBC data server</a> (requires login).</p>
+		<!--<p>All materials are available on the <a href="https://sbclter.msi.ucsb.edu/internal/research/Reef/Working/Administrative/Laboratory%20Safety%20Manual/">SBC data server</a> (requires login).</p>-->
 	</blockquote>	
 		<!-- UCSB Educational Health and Safety: http://www.ehs.ucsb.edu/training
 		UCOP Laboratory Hazard Assessment tools. 
