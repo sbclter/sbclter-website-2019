@@ -28,7 +28,7 @@ graduate student. At present, the committee is:
 <ul>
 	<li>Clint Nelson (Launchmaster, Unit Dive Safety Officer)</li>
 	<li>Robert Miller (PI)</li>
-	<li>Joey Peters (Graduate student)</li>
+	<li>Kristen Michaud (Graduate student)</li>
 </ul>
 </p>
 
