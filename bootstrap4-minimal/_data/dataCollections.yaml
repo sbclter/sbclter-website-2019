@@ -214,6 +214,8 @@
       shortTitle: BCE brush composition
     - docid: knb-lter-sbc.160
       shortTitle: BCE hourly light
+    - docid: knb-lter-sbc.173
+      shortTitle: BCE photo quad
   habitats:
     habitat: reef
   measurementTypes:
@@ -249,6 +251,8 @@
       shortTitle: Effect of egg concentration on purple sea urchin fertilization
     - docid: knb-lter-sbc.145
       shortTitle: Sea urchin foraging rates
+    - docid: knb-lter-sbc.171
+      shortTitle: Sea urchin performance in temperature gradient
   habitats:
     habitat: reef
   measurementTypes:
@@ -422,14 +426,14 @@
     time-series of pH from SeaFETs and dissolved oxygen from miniDots" collection.  '
   dataPackages:
     package:
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
     - docid: knb-lter-sbc.6003
       shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
-    - docid: knb-lter-sbc.6004
-      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
     - docid: knb-lter-sbc.6001
       shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
+    - docid: knb-lter-sbc.6004
+      shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -706,7 +710,8 @@
   dataPackages: ~
   habitats: ~
   measurementTypes: ~
-  lterCoreResearchAreas: ~
+  lterCoreResearchAreas:
+    lterCoreResearchArea: Disturbance Patterns
   mapLayers: ~
 - collectionName: 'SBC LTER: Stream discharge at SBC sites'
   abstract: Between 2002 and 2018, SBC collected high-frequency discharge data at
@@ -714,10 +719,10 @@
     collections.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.3002
-      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
     - docid: knb-lter-sbc.3001
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
+    - docid: knb-lter-sbc.3002
+      shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
@@ -726,36 +731,38 @@
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
-    - docid: knb-lter-sbc.3006
-      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
-    - docid: knb-lter-sbc.3009
-      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
+    - docid: knb-lter-sbc.3006
+      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3012
-      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
+    - docid: knb-lter-sbc.3009
+      shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3017
       shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
-    - docid: knb-lter-sbc.3014
-      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3012
+      shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
     - docid: knb-lter-sbc.3015
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
-    - docid: knb-lter-sbc.3018
-      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
   habitats:
     habitat: watershed
   measurementTypes:
     measurementType: hydrology
   lterCoreResearchAreas:
-    lterCoreResearchArea: Movement of Inorganic Matter
+    lterCoreResearchArea:
+    - Movement of Inorganic Matter
+    - Disturbance Patterns
   mapLayers:
     mapLayer: landStreamDisch
 - collectionName: 'SBC LTER: Time-series of stream chemistry'
@@ -774,6 +781,7 @@
     lterCoreResearchArea:
     - Movement of Inorganic Matter
     - Movement of Organic Matter
+    - Disturbance Patterns
   mapLayers:
     mapLayer: landStreamChem
 - collectionName: 'SBC LTER: Kelp forest food webs'
@@ -1373,7 +1381,10 @@
     lterCoreResearchArea: Disturbance Patterns
   mapLayers: ~
 - collectionName: Integrated datasets collaborated with four regional projects
-  abstract: 'The data compilation comprises integrated datasets from four regional projects: SBC LTER, the kelp forest monitoring project, the San Nicolas Island project, and PISCO. Surveys encompass fish surveys, quad surveys, swath surveys, and point count surveys. '
+  abstract: 'The data compilation comprises integrated datasets from four regional
+    projects: SBC LTER, the kelp forest monitoring project, the San Nicolas Island
+    project, and PISCO. Surveys encompass fish surveys, quad surveys, swath surveys,
+    and point count surveys.'
   dataPackages:
     package:
     - docid: edi.5
