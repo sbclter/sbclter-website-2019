@@ -636,14 +636,14 @@
     scientificDomainString: Ocean processes and nearshore ecosystems
     scientificDomainText: Nonlinear internal wave, circulation on coral reefs, modeling
       physical-biological interactions
-    employeeType: Assistant Professor
-    email: davis@uci.edu
-    postalAddress: The Henry Samueli School of Engineering<br />University of California,
-      Irvine<br />Irvine CA 92697
+    employeeType: Associate Professor
+    email: kristen.davis@stanford.edu
+    postalAddress: Stanford Doerr School of Sustainability<br />Stanford University<br
+      />Stanford CA 94305
     profileText: |
       We study large-scale physical processes of cross-shelf exchange and their effects on dispersion of organisms and pollutants on the continental shelf and in coastal and estuarine systems. At smaller scales, we focus on boundary layer flow, stratification, and wave dynamics and their effects on turbulent mixing near the bed, including mass flux to benthic organisms. This research entails both field experiments and numerical simulations, and we often collaborate with biologists, geologists and other scientists.
-    homepage: http://davis.eng.uci.edu/index.html
-    telephoneNumber: '949-824-4498 '
+    homepage: https://profiles.stanford.edu/kristen-davis
+    telephoneNumber: ''
     projectRole: Project Affiliated Investigator
   - databaseID: sgaines
     commonName: Steve Gaines

@@ -56,6 +56,7 @@ setTimeout(() => {
 
 
 async function updateCSVData() {
+
     fetch(CSV_FILE).then(async res => {
         let text = await res.text();
 
@@ -90,15 +91,22 @@ async function updateCSVData() {
         data.forEach(line => {
             let vals = line.split(',');
             let time = new Date(vals[0]);
+
+             // Check if the parsed time is valid
+    if (isNaN(time.getTime())) {
+        console.error('Invalid date detected, skipping:', vals[0]);
+        return; // Skip this data point
+    }
+
             let pressure = parseFloat(vals[1]) || undefined;
             let temperature = parseFloat(vals[3]) || undefined;
             let chlorophyll = parseFloat(vals[5]) || undefined;
             let salinity = parseFloat(vals[7]) || undefined;
 
-            series[0].data.push([time, pressure]);
-            series[1].data.push([time, temperature]);
-            series[2].data.push([time, chlorophyll]);
-            series[3].data.push([time, salinity]);
+            series[0].data.push([time.getTime(), pressure]);
+            series[1].data.push([time.getTime(), temperature]);
+            series[2].data.push([time.getTime(), chlorophyll]);
+            series[3].data.push([time.getTime(), salinity]);
         });
 
         pressure_data = series[0].data;
@@ -145,6 +153,7 @@ function graphData(series) {
         time: {
             useUTC: false, 
         },
+       
         xAxis: {
             type: 'datetime',
             dateTimeLabelFormats: {
@@ -357,3 +366,80 @@ function toCelsius(f) {
 function toFahrenheit(c) {
     return c * 9 / 5 + 32;
 }
+
+/*
+async function updateCSVData() {
+    try {
+        // Fetch the CSV file
+        const response = await fetch(CSV_FILE);
+        const csvText = await response.text();
+
+        // DEBUG: Trigger file download to verify content
+        triggerCSVDownload(csvText);
+
+        let series = [
+            {
+                name: 'pressure',
+                data: [],
+                visible: $(`#pressure-btn`).hasClass('btn-color'),
+            },
+            {
+                name: 'temperature',
+                data: [],
+                visible: $(`#temperature-btn`).hasClass('btn-color'),
+            },
+            {
+                name: 'chlorophyll',
+                data: [],
+                visible: $(`#chlorophyll-btn`).hasClass('btn-color'),
+            },
+            {
+                name: 'salinity',
+                data: [],
+                visible: $(`#salinity-btn`).hasClass('btn-color'),
+            }
+        ];
+
+        // Parse data
+        let data = csvText.split('\n');
+        data.shift();  // Remove headers
+        data.shift();  // Remove headers (if there are two lines of headers)
+        data = data.map(line => line.trim()).filter(line => line.length != 0);
+        data.forEach(line => {
+            let vals = line.split(',');
+            let time = new Date(vals[0]);
+            let pressure = parseFloat(vals[1]) || undefined;
+            let temperature = parseFloat(vals[3]) || undefined;
+            let chlorophyll = parseFloat(vals[5]) || undefined;
+            let salinity = parseFloat(vals[7]) || undefined;
+
+            series[0].data.push([time, pressure]);
+            series[1].data.push([time, temperature]);
+            series[2].data.push([time, chlorophyll]);
+            series[3].data.push([time, salinity]);
+        });
+
+        // Other existing code...
+    } catch (error) {
+        console.error('Error fetching or processing the CSV file:', error);
+    }
+}
+
+// Helper function to trigger CSV download
+function triggerCSVDownload(csvText) {
+    // Create a Blob from the CSV text
+    const blob = new Blob([csvText], { type: 'text/csv' });
+
+    // Create a temporary anchor element to trigger the download
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'shore_data_debug.csv';  // Filename for the download
+    document.body.appendChild(a);
+    a.click();
+
+    // Clean up the temporary elements
+    a.remove();
+    window.URL.revokeObjectURL(url);
+}
+*/
