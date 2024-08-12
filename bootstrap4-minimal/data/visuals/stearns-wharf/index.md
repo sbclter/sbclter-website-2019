@@ -1,51 +1,40 @@
 ---
 layout: article
-title: 'Current Conditions - Stearns Wharf'
+title: 'Current tide and ocean conditions '
 description: page description here.
 page_css:
   - /assets/css/custom/data/visuals.css
 ---
+<!-- head is for tide chart only-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tide Predictions</title>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include the Date Adapter for Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <!-- Include the Chart.js Annotation Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <!-- Include the external JavaScript file -->
+    <script src="/assets/js/tideChart.js"></script>
+</head>
+
 
 <div id="graph-container">
-    <h1>{{ page.title }}</h1>
-
+    <h2>Current Conditions - Stearns Wharf</h2>
     <div class="row-container">
-
-        <div id="collab-section">
-            <p>These groups collaborate with SBC LTER on collection of data at Stearns Wharf</p>
-            <div>
-                <a href="http://piscoweb.org" onmouseover="PISCO">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a>
-                <br />
-                <a href=""><img src="/assets/img/pisco_sm2.png"/></a>
-            </div>
-            <div>
-                <a href="http://sccoos.org" onmouseover="SCCOOS">Southern California Coastal Ocean Observing System (SCCOOS)</a>
-                <br />
-                <a href=""><img src="/assets/img/sccoos_sm2.jpg"/></a>
-            </div>
-        </div>
-
         <div class="full-width">
-            <!-- <div id="time-change-panel" class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label id="one-day"      class="btn btn-primary"        onclick="updateData(1)">  <input type="radio" name="options" autocomplete="off"> 1 Day </label>
-                <label id="one-week"     class="btn btn-primary active" onclick="updateData(7)">  <input type="radio" name="options" autocomplete="off" checked> 1 Week </label>
-                <label id="one-month"    class="btn btn-primary"        onclick="updateData(31)"> <input type="radio" name="options" autocomplete="off"> 1 Month </label>
-                <label id="three-months" class="btn btn-primary"        onclick="updateData(93)"> <input type="radio" name="options" autocomplete="off"> 3 Months </label>
-            </div> -->
             <div id="shore-graph">
                 <div id="graph-loader" class="loader"></div>
             </div>
-
-            <p><a href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9411340&legacy=1"> Tide predictions for Santa Barbara from NOAA</a></p>
             <div class="tooltip"></div>
         </div>
-
         <div id="graph-lines">
             <div class="row-container line-section" >
                 <div id="current-time" class="absolute-right">&nbsp;</div>
                 <div class="latest-value">Current Values</div>
             </div>
-
             <div class="row-container line-section" >
                 <div style="width: 100%; display: flex; column-gap: 0.5rem;">
                     <div id="temperature-btn" class="btn btn-color line-btn" onclick="toggleGraph('temperature')">
@@ -55,14 +44,12 @@ page_css:
                 </div>
                 <div id="temperature-latest" class="latest-value btn">&nbsp;</div>
             </div>
-
             <div class="row-container line-section">
                 <div id="chlorophyll-btn" class="btn btn-color line-btn" onclick="toggleGraph('chlorophyll')">
                     Chlorophyll (&mu;g / Liter)
                 </div>
                 <div id="chlorophyll-latest" class="latest-value btn">&nbsp;</div>
             </div>
-
             <div class="row-container line-section">
                 <div id="pressure-btn" class="btn btn-color line-btn" onclick="toggleGraph('pressure')">
                     Pressure (Decibars)
@@ -75,15 +62,26 @@ page_css:
                 </div>
                 <div id="salinity-latest" class="latest-value btn">&nbsp;</div>
             </div>
-
             <div>
                 Click label to turn a display on/off. Y-axis scaling is automatic
-            </div>
+            </div>       
         </div>
     </div>
+        <br>
+    <p><a href="http://piscoweb.org" onmouseover="PISCO">Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)</a> and <a href="http://sccoos.org" onmouseover="SCCOOS">Southern California Coastal Ocean Observing System (SCCOOS)</a> collaborate with SBC LTER on collection of data at Stearns Wharf</p>
+    <br>
+    <hr>
+   <h2>Tide Predictions - Santa Barbara</h2>
+    <canvas id="tideChart" width="400" height="200"></canvas>
+    <br>
+ <p><a href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9411340" >NOAA Tides & Currents</a> provides tide predictions for Santa Barbara</p>
+
+
 </div>
+
 
 <script src="https://code.highcharts.com/stock/highstock.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="/assets/js/shore_graph.js"/></script>
+
