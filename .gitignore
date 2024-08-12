@@ -109,3 +109,4 @@ bootstrap4-minimal/config.yml
 bootstrap4-minimal/_config_dummy.yml
 bootstrap4-minimal/Gemfile.lock
 Rcodes_for_website/.Rhistory
+/bootstrap4-minimal/test
