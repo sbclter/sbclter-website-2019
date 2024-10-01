@@ -118,6 +118,10 @@ description: news and event in SBCLTER
 <br>
 <h4>SBC LTER newsletters</h4>
 <br>
+<!--/* check this list for the link */, or open mail chime, click into the campaign, and click "details" tab to find the link-->
+
+<p><a href="https://mailchi.mp/d2c788a1811a/spring-2024-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Summer 2024</a></p>
+
 <p><a href="https://mailchi.mp/e02a4518f7ac/winter-2024-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Winter 2024</a></p>
 
 <p><a href="https://mailchi.mp/2bf2a9084957/fall-2023-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Fall 2023</a></p>
