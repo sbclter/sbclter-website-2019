@@ -163,7 +163,7 @@
     - Movement of Organic Matter
     - Disturbance Patterns
   mapLayers: ~
-- collectionName: 'SBC LTER: Ongoing spiny lobster in California'
+- collectionName: 'SBC LTER: Ongoing spiny lobster in Santa Barbara Channel'
   abstract: Annual data on the abundance and size of California spiny lobster, <i>Panulirus
     interruptus</i>, and monthly estimates of lobster trap density during the lobster
     fishing season at five sites along the mainland coast of the Santa Barbara Channel.
@@ -173,8 +173,6 @@
       shortTitle: Lobster abundance, size and fishing pressure
     - docid: knb-lter-sbc.156
       shortTitle: Lobster foraging on purple urchin
-    - docid: knb-lter-sbc.166
-      shortTitle: Fishery impacts on lobster
     - docid: knb-lter-sbc.148
       shortTitle: Lobster MPA trap data
   habitats:
@@ -766,18 +764,18 @@
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3003
-      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3004
       shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
+    - docid: knb-lter-sbc.3003
+      shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3006
-      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3008
       shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
+    - docid: knb-lter-sbc.3006
+      shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3010
@@ -794,10 +792,10 @@
       shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
-    - docid: knb-lter-sbc.3018
-      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
+    - docid: knb-lter-sbc.3018
+      shortTitle: 'Stream Discharge: SP02, San Pedro Creek (USGS)'
   habitats:
     habitat: watershed
   measurementTypes:
