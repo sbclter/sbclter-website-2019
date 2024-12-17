@@ -123,16 +123,16 @@ window.setTimeout(function(){
 </div>
 <br>
 
-
-
-<!--
 <br>
 <div class='container'>
-  <a class="twitter-timeline" data-height = 650 href="https://twitter.com/LterSbc?ref_src=twsrc%5Etfw">Tweets by SBC-LTER</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <h3>
+        Follow me on 
+        <a href="https://bsky.app/profile/sbc-lter.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a> 🌤️ 
+        and 
+        <a href="https://twitter.com/LterSbc?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer">Twitter X</a>
+    </h3>
+    
   </div>
--->
-
-
 
 
 </div>
