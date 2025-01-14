@@ -7,7 +7,8 @@ var priorDate = new Date().setDate(today.getDate()-100)
 console.log(`100 days ago is ${ new Date(priorDate).toJSON() }`);
 
 // const CSV_FILE = `https://erddap.sccoos.org/erddap/tabledap/autoss.csv?time,pressure,pressure_flagPrimary,temperature,temperature_flagPrimary,chlorophyll,chlorophyll_flagPrimary,salinity,salinity_flagPrimary&station=%22stearns_wharf%22&time%3E=${ new Date(priorDate).toJSON() }&time%3C${ new Date().toJSON() }&orderBy(%22time%22)`;
-  const CSV_FILE = `https://erddap.sensors.axds.co/erddap/tabledap/stearns-wharf-automated-shore-st.csv?time,sea_water_pressure,sea_water_pressure_qc_agg,sea_water_temperature,sea_water_temperature_qc_agg,mass_concentration_of_chlorophyll_in_sea_water,mass_concentration_of_chlorophyll_in_sea_water_qc_agg,sea_water_practical_salinity,sea_water_practical_salinity_qc_agg&time>=${ new Date(priorDate).toJSON() }&time<${ new Date().toJSON() }&orderBy(%22time%22)`;
+//  const CSV_FILE = `https://erddap.sensors.axds.co/erddap/tabledap/stearns-wharf-automated-shore-st.csv?time,sea_water_pressure,sea_water_pressure_qc_agg,sea_water_temperature,sea_water_temperature_qc_agg,mass_concentration_of_chlorophyll_in_sea_water,mass_concentration_of_chlorophyll_in_sea_water_qc_agg,sea_water_practical_salinity,sea_water_practical_salinity_qc_agg&time>=${ new Date(priorDate).toJSON() }&time<${ new Date().toJSON() }&orderBy(%22time%22)`;
+const CSV_FILE = `https://erddap.sensors.axds.co/erddap/tabledap/stearns-wharf-automated-shore-st-1.csv?time,sea_water_pressure_seaphox,sea_water_pressure_seaphox_qc_agg,sea_water_temperature_seaphox,sea_water_temperature_seaphox_qc_agg,mass_concentration_of_chlorophyll_in_sea_water_ctd,mass_concentration_of_chlorophyll_in_sea_water_ctd_qc_agg,sea_water_practical_salinity_seaphox,sea_water_practical_salinity_seaphox_qc_agg&time>=${ new Date(priorDate).toJSON() }&time<${ new Date().toJSON() }&orderBy(%22time%22)`;
 
 var chart;
 var timeIndex = 1;
@@ -100,13 +101,27 @@ async function updateCSVData() {
 
             let pressure = parseFloat(vals[1]) || undefined;
             let temperature = parseFloat(vals[3]) || undefined;
+            let temperatureFlag = parseInt(vals[4], 10); // Assuming temperature_flag is in column 4
             let chlorophyll = parseFloat(vals[5]) || undefined;
+            let chlorophyllFlag = parseInt(vals[6], 10); // Assuming temperature_flag is in column 4
             let salinity = parseFloat(vals[7]) || undefined;
 
-            series[0].data.push([time.getTime(), pressure]);
-            series[1].data.push([time.getTime(), temperature]);
-            series[2].data.push([time.getTime(), chlorophyll]);
-            series[3].data.push([time.getTime(), salinity]);
+  // Only keep rows where temperature_flag equals 1 for temperature and pressure
+            if (temperatureFlag === 1) {
+                series[0].data.push([time.getTime(), pressure]);
+                series[1].data.push([time.getTime(), temperature]);
+                series[3].data.push([time.getTime(), salinity]);
+            }
+
+             // Add chlorophyll data to its own series regardless of temperature_flag
+            if (chlorophyllFlag===1) {
+                series[2].data.push([time.getTime(), chlorophyll]);
+            }
+
+           // series[0].data.push([time.getTime(), pressure]);
+           // series[1].data.push([time.getTime(), temperature]);
+           // series[2].data.push([time.getTime(), chlorophyll]);
+           // series[3].data.push([time.getTime(), salinity]);
         });
 
         pressure_data = series[0].data;
@@ -321,15 +336,15 @@ function formatTime(date) {
 }
 
 function updateLatest() {
-    let pressure_val = parseFloat(pressure_data[pressure_data.length - 1][1]).toFixed(2);
-    let temperature_val = parseFloat(temperature_data[temperature_data.length - 1][1]).toFixed(2);
-    let chlorophyll_val = parseFloat(chlorophyll_data[chlorophyll_data.length - 1][1]).toFixed(2);
-    let salinity_val = parseFloat(salinity_data[salinity_data.length - 1][1]).toFixed(2);
-
+   let pressure_val = parseFloat(pressure_data[pressure_data.length - 1][1]).toFixed(2);
+   let temperature_val = parseFloat(temperature_data[temperature_data.length - 1][1]).toFixed(2);
+   let chlorophyll_val = parseFloat(chlorophyll_data[chlorophyll_data.length - 1][1]).toFixed(2);
+   let salinity_val = parseFloat(salinity_data[salinity_data.length - 1][1]).toFixed(2);
+  
     $('#pressure-latest')   .text(pressure_val);
     $('#temperature-latest').text(temperature_val);
     $('#chlorophyll-latest').text(chlorophyll_val);
-    $('#salinity-latest')   .text(salinity_val);
+   $('#salinity-latest')   .text(salinity_val);
 }
 
 async function toggleCelsius(e) {
