@@ -1288,6 +1288,8 @@
       shortTitle: Mean positions on spring and neap tides
     - docid: knb-lter-sbc.163
       shortTitle: Invert community from 24 sandy beach sites
+    - docid: knb-lter-sbc.185
+      shortTitle: Kelp wrack inputs to sandy beaches
   habitats:
     habitat: beach
   measurementTypes:

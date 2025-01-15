@@ -93,7 +93,7 @@
     scientificDomainString: Applied ocean physics & engineering
     scientificDomainText: ''
     employeeType: Assistant Scientist
-    email: ' tbell@whoi.edu'
+    email: tbell@whoi.edu
     postalAddress: Woods Hole Oceanographic Institution<br />266 Woods Hole Road<br
       />Woods Hole MA 02543
     profileText: |
@@ -406,9 +406,8 @@
     scientificDomainString: Community Ecology
     scientificDomainText: ''
     employeeType: Assistant professor
-    email: dokamoto@bio.fsu.edu
-    postalAddress: Department of Biological Science<br />Florida State University<br
-      />Tallahassee FL
+    email: dkokamoto@berkeley.edu
+    postalAddress: Integrative Biology<br />University of California<br />Berkeley CA
     profileText: |
       We study population dynamics with a focus on exploited species of importance to coastal communities. We are broadly interested in how environment and species interactions regulate fluctuations in population dynamics and vital rates (i.e. recruitment and connectivity, growth, reproduction & mortality), and how natural resource management affects both ecosystems and people in space and time.  Our research integrates field & laboratory experiments and field data with high-end statistical analysis and numerical models.
     homepage: https://dkokamoto.com/
@@ -637,7 +636,7 @@
     scientificDomainText: Nonlinear internal wave, circulation on coral reefs, modeling
       physical-biological interactions
     employeeType: Associate Professor
-    email: kristen.davis@stanford.edu
+    email: freckles@stanford.edu
     postalAddress: Stanford Doerr School of Sustainability<br />Stanford University<br
       />Stanford CA 94305
     profileText: |
@@ -1486,7 +1485,7 @@
     scientificDomainString: Aquaculture
     scientificDomainText: Interaction between marine aquaculture and harmful algal blooms
     employeeType: Graduate Student
-    email: jzenteno@ucsb.edu
+    email: jzenteno@bren.ucsb.edu
     postalAddress: Bren School of Environmental Science and Management<br />University
       of California<br />Santa Barbara CA 96106-5131
     profileText: |
