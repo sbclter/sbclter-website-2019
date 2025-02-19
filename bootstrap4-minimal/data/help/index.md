@@ -30,7 +30,7 @@ description: help to solve data related questions
  <hr/>
 
  <h4>Data Workshops</h4>
- <p>The information management office has offered workshops on data management every fall quarter, where we cover essential skills for <a href="{{page.url}}workshop_data_access/">Data Discovery</a> and <a href="{{page.url}}workshop_data_publication/">Data Publication</a>, with a focus on SBC LTER data. These sessions also explore additional repositories and advanced methods to enhance your research capabilities in ecological data management.
+ <p>The Information Management Office offers workshops on data management throughout the year, covering essential skills in <a href="{{page.url}}workshop_data_access/">Data Discovery</a>, <a href="{{page.url}}workshop_data_inspection/">Data Inspection</a>, and <a href="{{page.url}}workshop_data_publication/">Data Publication</a>, with a focus on SBC LTER data. These sessions also introduce additional repositories and advanced techniques to enhance research capabilities in ecological data management.</p>
  <hr/>
 <h4>Access SBC server via network drive mapping</h4>
 <p>SBC user can <a href="{{site.baseurl}}/external/Documents/data_help/SBC_map_network_drive.pdf">map SBC file sever</a> on your computer, which allows you to view all SBC related documents, pictures, data, collaborated projects as 
