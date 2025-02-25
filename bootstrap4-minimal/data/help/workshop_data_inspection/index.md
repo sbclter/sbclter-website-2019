@@ -275,7 +275,7 @@ description: graduate student workshop on SBC data Inspection
 </section>
 <hr>
 
-<p>If you have any questions, please contact <a href="mailto:an_bui@ucsb.edu">An Bui</a>, <a href="mailto:emery@ucsb.edu">
+<p>A previous recording of this workshop is available on the <a href="https://www.youtube.com/watch?v=QUYgRfsyncI">SBC YouTube channel</a>. If you have any questions, please contact <a href="mailto:an_bui@ucsb.edu">An Bui</a>, <a href="mailto:emery@ucsb.edu">
 Kyle Emery</a>, or <a href="mailto:lkui@ucsb.edu">Li Kui</a> at the Marine Science Institute, UCSB.</p>
 
 </div>
