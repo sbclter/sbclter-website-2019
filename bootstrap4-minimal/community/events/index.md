@@ -25,21 +25,47 @@ description: news and event in SBCLTER
         <div id="current" class="container tab-pane active"><br>
             <h3 class="header-style">News</h3>
             <div class="content-style">
-               <ul>
+               <ul>                   
+                    <li><a href="https://caseagrant.ucsd.edu/news/studying-climate-potential-californias-dunes" target="offline">2024-09-10 Coastal dunes and nature-based adaptation to climate change: SBC investigator Ian Walker is leading  a $1.9 million grant focusing on dunes as nature-based solutions to enhance the resilience of California’s beaches to climate change</a></li>                   
                     <li><a href="https://news.ucsb.edu/2024/021425/uc-santa-barbara-researchers-launch-coastsnap-citizen-science-initiative-monitor" target="offline">2024-04-10 "UC Santa Barbara Researchers Launch CoastSnap, Citizen Science Initiative to Monitor Coastal Changes"</a></li>
-                    <li><a href="https://news.ucsb.edu/2024/021344/scientific-research-soars-nsfs-major-research-instrumentation-program" target="offline">2024-01-31 "Scientific Research Soars with NSF’s Major Research Instrumentation Program"</a></li>
+                     <li><a href="https://news.ucsb.edu/2024/021420/securing-future-californias-coasts" target="offline">2024-04-09 Led by UCSB including SBC investigator Jenny Dugan, a team of researchers from five institutions and organizations will develop the California Beach Resiliency Plan.  The effort will produce new guidance for beach resiliency from the community level up to the state level covering the entire Californian coast.</a></li>                   
+                    <li><a href="https://caseagrant.ucsd.edu/news/california-sea-grant-awards-nearly-841000-towards-10-new-graduate-research-fellowships" target="offline">2024-03-07 SBC student Karina Johnston was awarded a California Sea Grant graduate research fellowship to measure performance of coastal dune restoration projects in Southern California</a></li>                    
+                    <li><a href="https://news.ucsb.edu/2024/021344/scientific-research-soars-nsfs-major-research-instrumentation-program" target="offline">2024-01-31 "Scientific Research Soars with NSF’s Major Research Instrumentation Program"</a></li>                    
                     <li><a href="https://news.ucsb.edu/2024/021317/choreography-cross-ecosystem-subsidies-connects-kelp-forest-beach" target="offline">2024-01-09 "The Choreography of Cross-ecosystem Subsidies that Connects the Kelp Forest to the Beach"</a></li>                         
+                </ul>
+            </div>
+<h3 class="header-style">Events</h3>
+            <div class="content-style">
+<h4>SBC 2025 Earth Day</h4>
+                <br>
+                 <p>SBC will be co-hosting a booth with MCR at the <a href="https://www.sbearthday.org/" target="_blank">2025 Santa Barbara Earth Day Festival </a>on April 26 and April 27, Alameda Park, Santa Barbara</p>
+                        <p>SBC LTER team, Saturday, April 26, 11 a.m. - 8 p.m. </p>
+                        <p>MCR LTER team, Sunday, April 27, 11 a.m. - 7 p.m.</p>
+                        <hr/>
+
+<h4>SBC data workshops</h4>
+                <br>
+                 <p><b><a href="https://sbclter.msi.ucsb.edu/data/help/workshop_data_inspection/" target="offline">Feb 25, 2025  Data Inspection:</a></b> This workshop focuses on broadening and accelerating data quality checks using R and AI tools, featuring three expert speakers.</p>
+                <p><b><a href="https://sbclter.msi.ucsb.edu/data/help/workshop_data_access/" target="offline">Nov 15, 2024 Data Discovery Workshop:</a></b> This workshop explores the pathway to access and download SBC data from the Environmental Data Repository, cite these datasets in your publications, and link your publications to the datasets. Additionally, we will explore how to download data from other repositories such as USGS, NOAA, and NASA.</p>
+                <p><b><a href="https://sbclter.msi.ucsb.edu/data/help/workshop_data_publication/" target="offline">Nov 22, 2024  Data Publication:</a></b>  Explore topics related to data formats, metadata submission, obtaining data DOIs, and an introduction to the SBC data publication workflow</p>
+            </div>
+        </div>
+<div id="archive" class="container tab-pane fade"><br>
+            <h3 class="header-style">News</h3>
+            <div class="content-style">
+                <ul>
+                    <li><a href="https://news.ucsb.edu/2022/020774/changing-sea-floor" target="offline">2022-12-15 "A Changing Sea Floor - Six years after ‘the Blob’ rolled through the Santa Barbara Channel, researchers find lasting effects in the kelp forest communities"</a></li>                      
                 </ul>
             </div>
             <h3 class="header-style">Events</h3>
             <div class="content-style">
-                      <h4>SBC 2024 Earth Day</h4>
+<h4>SBC 2024 Earth Day</h4>
                         <br>
                         <p>SBC will be co-hosting a booth with MCR at the <a href="https://www.sbearthday.org/" target="_blank">2024 Santa Barbara Earth Day Festival </a>on April 27 and April 28, Alameda Park, Santa Barbara</p>
                         <p>Saturday, April 27, 11 a.m. - 7 p.m. </p>
                         <p>Sunday, April 28, 11 a.m. - 6 p.m.</p>
                         <hr/>
-                        <h4>IGPMS Grad seminars Winter 2024 SBC Students</h4>
+<h4>IGPMS Grad seminars Winter 2024 SBC Students</h4>
                         <br>
                         <p><b>January 16</b></p>
                         <p class="no-space">Chance English -  Controls on macrolagal DOC release and composition </p>
@@ -63,7 +89,7 @@ description: news and event in SBCLTER
                         <p><b>March 12</b></p>
                         <p class="no-space">Natalie Dornan - Nitrogen supply to the giant kelp, Macrocystis pyrifera, assessed using natural abundance stable isotopes </p>                    
                         <hr/>
-                        <h4>SBC data workshops</h4>
+<h4>SBC data workshops</h4>
                         <br>
                         <img src="/assets/img/sbc data workshop 2023.png" alt="Your Image" width="400" height="400">
                         <br>
@@ -73,25 +99,14 @@ description: news and event in SBCLTER
                         <p><b>Oct 13, 2023  Data Organization:</b> This includes designing datasheets, organizing data folders, conducting data entry checks, and documenting metadata, along with an introduction to the SBC Data Catalog.</p>
                         <p><b>Oct 27, 2023  Data Visualization:</b>  Learn about using R to create time series figures using SBC long-term datasets.</p>
                         <p><b>Nov 17, 2023  Data Publication:</b>  Explore topics related to data formats, metadata submission, obtaining data DOIs, and an introduction to the SBC data publication workflow</p>
-            </div>
-        </div>
-        <div id="archive" class="container tab-pane fade"><br>
-            <h3 class="header-style">News</h3>
-            <div class="content-style">
-                <ul>
-                    <li><a href="https://news.ucsb.edu/2022/020774/changing-sea-floor" target="offline">2022-12-15 "A Changing Sea Floor - Six years after ‘the Blob’ rolled through the Santa Barbara Channel, researchers find lasting effects in the kelp forest communities"</a></li>                      
-                </ul>
-            </div>
-            <h3 class="header-style">Events</h3>
-            <div class="content-style">
-                <h4>SBC 2023 Earth Day</h4>
+<h4>SBC 2023 Earth Day</h4>
                             <br>
                             <p>SBC will be co-hosting a booth with MCR at the <a href="https://www.sbearthday.org/" target="_blank">2023 Santa Barbara Earth Day Festival </a>on April 29 and April 30,
                             Alameda Park, Santa Barbara</p>
                             <p>Saturday, April 29, 11 a.m. - 7 p.m. </p>
                             <p>Sunday, April 30, 11 a.m. - 6 p.m.</p>
                             <hr/>
-                            <h4>SBC LTER 2021 winter/spring seminars </h4>
+<h4>SBC LTER 2021 winter/spring seminars </h4>
                                     <br>
                                     <p>Feb 10: Theme 1a. Community and ecosystem consequences of climate variability, disturbance and pathways of recovery. Presenters: Bob Miller & Max Castorani</p>
                                     <p>Feb 19: Theme 1b. Ecological consequences of fishing. Presenters: Hunter Lenihan and Bart DiFiore</p>
@@ -103,7 +118,7 @@ description: news and event in SBCLTER
                                     <p><a href="https://www.youtube.com/watch?v=K4Wao3paOGg&t=3s" target="_blank">Apr 14: Theme 3b. Trophic connectivity between kelp forests and beaches. Presenters: Jenny Dugan & Kyle Emery</a></p>
                                     <p><a href="https://www.youtube.com/watch?v=DxJyRfUUgvs&t=1s" target="_blank">Apr 27: Theme 3c. Trophic connectivity between the coastal ocean and kelp forests. Presenter: Rachel Simons</a></p>
                             <hr/>
-                            <h4>SBC LTER 2020 winter seminars </h4>
+<h4>SBC LTER 2020 winter seminars </h4>
                                <p><a href="{{site.baseurl}}/external/Documents/Events/Winter_2020_SBC_IV_Research_Planning_Meetings.pdf">SBC IV Research planning meetings schedule</a></p>
             </div>
         </div>
@@ -119,7 +134,7 @@ description: news and event in SBCLTER
 <h4>SBC LTER newsletters</h4>
 <br>
 <!--/* check this list for the link */, or open mail chime, click into the campaign, and click "details" tab to find the link-->
-
+<p><a href="https://mailchi.mp/824193f1b470/spring-2024-updates-from-the-sbc-lter-6420693" target="_blank">SBCLTER News | Winter 2025</a></p>
 <p><a href="https://mailchi.mp/d2c788a1811a/spring-2024-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Summer 2024</a></p>
 
 <p><a href="https://mailchi.mp/e02a4518f7ac/winter-2024-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Winter 2024</a></p>
