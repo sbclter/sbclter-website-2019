@@ -1,3 +1,10 @@
+  - sbc_id: 1702
+    year: '2025'
+    category: Article
+    hyperlink: http://dx.doi.org/10.1002/lom3.10663
+    citation: |
+      Ritger, A. L., Hofmann, G. E. (2025). Bringing heatwaves into the lab: A low-cost, open-source, and automated system to simulate realistic warming events in an experimental setting. Limnology and Oceanography: Methods. 23:87-96. DOI: 10.1002/lom3.10663
+    author: ''
   - sbc_id: 1659
     year: '2024'
     category: Article
