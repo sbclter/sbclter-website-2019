@@ -46,10 +46,10 @@
     collected on a single occasion are also included.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.174
-      shortTitle: SKFCD - Biomass of macroalgal detritus
     - docid: knb-lter-sbc.178
       shortTitle: SKFCD - Abundance and size of giant kelp
+    - docid: knb-lter-sbc.174
+      shortTitle: SKFCD - Biomass of macroalgal detritus
     - docid: knb-lter-sbc.175
       shortTitle: SKFCD - Sea urchin size structure
     - docid: knb-lter-sbc.176
@@ -385,12 +385,12 @@
     package:
     - docid: knb-lter-sbc.6001
       shortTitle: pH, 20-min SeaFET at ALE, Alegria Reef
-    - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
-    - docid: knb-lter-sbc.6003
-      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
     - docid: knb-lter-sbc.6004
       shortTitle: pH, 20-min SeaFET at SBH, Santa Barbara Harbor/Stearns Wharf
+    - docid: knb-lter-sbc.6003
+      shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
+    - docid: knb-lter-sbc.6002
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -726,14 +726,13 @@
     lterCoreResearchArea: Movement of Inorganic Matter
   mapLayers:
     mapLayer: landPrecip
-- collectionName: NCDC climate catalogs
-  abstract: The National Climate Data Center (NCDC) provides a long record of several
-    parameters Their catalog for sites in the Santa Barbara area is available through
-    the links in this data package
+- collectionName: NCDC data catalogs
+  abstract: The NCDC provides a long record of several parameters Their catalog for
+    sites in the Santa Barbara area is available through the links in this data package
   dataPackages:
     package:
     - docid: knb-lter-sbc.1
-      shortTitle: NCDC Climate Data
+      shortTitle: NCDC station data
   habitats:
     habitat: watershed
   measurementTypes:
@@ -764,34 +763,34 @@
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3004
-      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3004
+      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3008
-      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
-    - docid: knb-lter-sbc.3014
-      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3015
-      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3015
+      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
@@ -1028,10 +1027,10 @@
     and the uptake kinetics of these different nitrogen forms  by giant kelp and phytoplankton.
   dataPackages:
     package:
-    - docid: knb-lter-sbc.109
-      shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
     - docid: knb-lter-sbc.142
       shortTitle: Surge nitrogen uptake in kelp
+    - docid: knb-lter-sbc.109
+      shortTitle: Nitrogen uptake by Giant kelp and phytoplankton
     - docid: knb-lter-sbc.116
       shortTitle: Rapid sediment temperature profiles
     - docid: knb-lter-sbc.117
@@ -1263,6 +1262,8 @@
       shortTitle: Middle school curriculum to study ocean acidification
     - docid: knb-lter-sbc.93
       shortTitle: Moored SeaFET pH, SeaBird CTD and oxygen
+    - docid: knb-lter-sbc.187
+      shortTitle: 'Rocky intertidal pH and temperature '
   habitats:
     habitat: nearshore
   measurementTypes:

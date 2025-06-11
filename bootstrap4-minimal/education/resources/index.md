@@ -159,7 +159,7 @@ description: curricula and other media for education, produced by the SBC LTER
 	   </div>
    <div class="col-md-7">
    <h3>Ocean Acidification Curriculum</h3>
-   <p>This dataset and the accompanying paper is a collaboration among SBC LTER, the Moorea Coral Reef LTER, McMurdo Sound scientists, and educators. The curriculum is intended for middle school students to explore the effects of a changing climate on the ocean's pH and carbonate chemistry. </p>
+   <p>This dataset and the accompanying paper is a collaboration among SBC LTER, the Moorea Coral Reef LTER, McMurdo Sound scientists, and educators. The curriculum is intended for middle school students to explore the effects of environmental change on the ocean's pH and carbonate chemistry. </p>
    </div>
    <div class="col-md-4 my-auto">
    <ul>
@@ -227,7 +227,7 @@ description: curricula and other media for education, produced by the SBC LTER
 	   </div>
 
    <div class="col-md-7">
-   <p>The <a href="https://explorebeaches.msi.ucsb.edu/">Explore Beaches</a> website describes plants that build dunes, fish that are able to run onto land, and crabs that move incredible distances migrating with the tide. Explore it to discover the dynamic process of sand movement and the impacts of management decisions. Understand the challenges and successes  related to climate change.</p>
+   <p>The <a href="https://explorebeaches.msi.ucsb.edu/">Explore Beaches</a> website describes plants that build dunes, fish that are able to run onto land, and crabs that move incredible distances migrating with the tide. Explore it to discover the dynamic process of sand movement and the impacts of management decisions. Understand the challenges and successes related to environmental change.</p>
     
 	
 	
@@ -392,7 +392,7 @@ description: curricula and other media for education, produced by the SBC LTER
 			</div>
     <div class="col-md-7">
 		   <h2>Our Watersheds</h2>
-		   <p>Our study of coastal watersheds provides a basis for understanding the timing and magnitude of nutrient and sediment fluxes to coastal waters of the Santa Barbara Channel and its fringing kelp forest ecosystems. Short and long-term changes in climate that alter rainfall may cause a change in the processes that supply nutrients, sediments, and organic matter to kelp forest communities. </p>
+		   <p>Our study of coastal watersheds provides a basis for understanding the timing and magnitude of nutrient and sediment fluxes to coastal waters of the Santa Barbara Channel and its fringing kelp forest ecosystems. Short and long-term shifts in weather patterns  that alter rainfall may cause a change in the processes that supply nutrients, sediments, and organic matter to kelp forest communities. </p>
 	   </div>
 	   <div class="col-md-5">
 		      <p>

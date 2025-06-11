@@ -370,10 +370,10 @@
   - title: MKI
     description: Mohawk Reef Inshore is located east of Arroyo Burro Beach, Santa
       Barbara, CA
-    southbound: '34.3943291'
-    northbound: '34.3943291'
-    westbound: '-119.730003'
-    eastbound: '-119.730003'
+    southbound: '34.394333'
+    northbound: '34.394333'
+    westbound: '-119.730000'
+    eastbound: '-119.730000'
   - title: MKO
     description: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is
       10.8 meters.
@@ -398,10 +398,10 @@
   - title: AQI
     description: Arroyo Quemado Inshore is located at Arroyo Quemado Reef near the
       mouth of Arroyo Quemada Creek, Santa Barbara County, CA
-    southbound: '34.4688301'
-    northbound: '34.4688301'
-    westbound: '-120.121498'
-    eastbound: '-120.121498'
+    southbound: '34.467333'
+    northbound: '34.467333'
+    westbound: '-120.118067'
+    eastbound: '-120.118067'
   - title: NPR
     description: Naples Reef is located on the Santa Barbara Channel near the community
       of Naples and Dos Pueblos Canyon, Santa Barbara County, CA. Depth ranges from
@@ -668,18 +668,18 @@
     northbound: '34.43226'
     westbound: '-119.78414'
     eastbound: '-119.78414'
-  - title: Carpinteria Creek at 8th St Foot Bridge
-    description: Carpinteria Creek, 8th St Foot Bridge
-    southbound: '34.39301245'
-    northbound: '34.39301245'
-    westbound: '-119.51413'
-    eastbound: '-119.51413'
   - title: BC02
     description: Bell Canyon Creek, Bell Canyon Creek at Winchester Canyon Road culvert
     southbound: '34.43854'
     northbound: '34.43854'
     westbound: '-119.90563'
     eastbound: '-119.90563'
+  - title: Carpinteria Creek at 8th St Foot Bridge
+    description: Carpinteria Creek, 8th St Foot Bridge
+    southbound: '34.39301245'
+    northbound: '34.39301245'
+    westbound: '-119.51413'
+    eastbound: '-119.51413'
   - title: Devereaux Creek at Devereaux Slough inflow
     description: DV01, Devereaux Creek, Devereaux Creek at Devereaux Slough inflow
     southbound: '34.41761'
@@ -692,18 +692,18 @@
     northbound: '34.4855'
     westbound: '-120.22917'
     eastbound: '-120.22917'
-  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
-    southbound: '34.4752858'
-    northbound: '34.4752858'
-    westbound: '-120.14122'
-    eastbound: '-120.14122'
   - title: Franklin Creek at Carpinteria Ave
     description: Franklin Creek, Carpinteria Ave
     southbound: '34.40164787'
     northbound: '34.40164787'
     westbound: '-119.52145'
     eastbound: '-119.52145'
+  - title: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    description: HO00, Arroyo Hondo Creek, Arroyo Hondo at Upstream Side of 101 Bridge
+    southbound: '34.4752858'
+    northbound: '34.4752858'
+    westbound: '-120.14122'
+    eastbound: '-120.14122'
   - title: MC00
     description: Mission Creek, Mission at Montecito St
     southbound: '34.41307303'
@@ -716,42 +716,42 @@
     northbound: '34.472'
     westbound: '-120.28885'
     eastbound: '-120.28885'
-  - title: Mission Creek at Rocky Nook, USGS 11119745
-    description: Mission Creek at Rocky Nook, USGS 11119745
-    southbound: '34.44072'
-    northbound: '34.44072'
-    westbound: '-119.71244'
-    eastbound: '-119.71244'
   - title: Rincon Creek, Hwy 101 Culvert, North
     description: Rincon Creek, Hwy 101 Culvert, North
     southbound: '34.3773'
     northbound: '34.3773'
     westbound: '-119.47794'
     eastbound: '-119.47794'
-  - title: Santa Monica Creek, Via Real
-    description: Santa Monica Creek, Via Real
-    southbound: '34.40479765'
-    northbound: '34.40479765'
-    westbound: '-119.52869'
-    eastbound: '-119.52869'
+  - title: Mission Creek at Rocky Nook, USGS 11119745
+    description: Mission Creek at Rocky Nook, USGS 11119745
+    southbound: '34.44072'
+    northbound: '34.44072'
+    westbound: '-119.71244'
+    eastbound: '-119.71244'
   - title: RG01
     description: Refugio Creek, Refugio at Hwy 101 Bridge
     southbound: '34.46573164'
     northbound: '34.46573164'
     westbound: '-120.06932'
     eastbound: '-120.06932'
-  - title: Santa Monica at Scoop
-    description: Santa Monica at Scoop
-    southbound: '34.41898512'
-    northbound: '34.41898512'
-    westbound: '-119.52701'
-    eastbound: '-119.52701'
+  - title: Santa Monica Creek, Via Real
+    description: Santa Monica Creek, Via Real
+    southbound: '34.40479765'
+    northbound: '34.40479765'
+    westbound: '-119.52869'
+    eastbound: '-119.52869'
   - title: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
     description: RS02, Rattlesnake Creek, Rattlesnake at Las Canoas Bridge
     southbound: '34.45761111'
     northbound: '34.45761111'
     westbound: '-119.69222'
     eastbound: '-119.69222'
+  - title: Santa Monica at Scoop
+    description: Santa Monica at Scoop
+    southbound: '34.41898512'
+    northbound: '34.41898512'
+    westbound: '-119.52701'
+    eastbound: '-119.52701'
   - title: Tecolotito Creek, Hollister Road
     description: Tecolotito Creek, Hollister Road
     southbound: '34.43055'
@@ -770,34 +770,34 @@
       shortTitle: 'Stream Discharge: AB00, Arroyo Burro Creek'
     - docid: knb-lter-sbc.3002
       shortTitle: 'Stream Discharge: AT07, Atascadero Creek (2005-2008)'
-    - docid: knb-lter-sbc.3004
-      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3003
       shortTitle: 'Stream Discharge: BC02, Bell Canyon Creek'
+    - docid: knb-lter-sbc.3004
+      shortTitle: 'Stream Discharge: CP00, Carpinteria Creek (2002-2006)'
     - docid: knb-lter-sbc.3005
       shortTitle: 'Stream Discharge: DV01, Deveraux Creek (2004-2006)'
     - docid: knb-lter-sbc.3007
       shortTitle: 'Stream Discharge: GV01, Gaviota Creek'
-    - docid: knb-lter-sbc.3008
-      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3006
       shortTitle: 'Stream Discharge: FK00, Franklin Creek (2002-2008)'
+    - docid: knb-lter-sbc.3008
+      shortTitle: 'Stream Discharge: HO00, Arroyo Hondo'
     - docid: knb-lter-sbc.3009
       shortTitle: 'Stream Discharge: MC00, Mission Creek at bridge'
     - docid: knb-lter-sbc.3010
       shortTitle: 'Stream Discharge: ON02, San Onofre Creek (2005-2010)'
-    - docid: knb-lter-sbc.3017
-      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3012
       shortTitle: 'Stream Discharge: RN01, Rincon Creek (2005-2008)'
-    - docid: knb-lter-sbc.3014
-      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
+    - docid: knb-lter-sbc.3017
+      shortTitle: 'Stream Discharge: MC06, Mission Creek at Rocky Nook (USGS)'
     - docid: knb-lter-sbc.3011
       shortTitle: 'Stream Discharge: RG01, Refugio Creek'
-    - docid: knb-lter-sbc.3015
-      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
+    - docid: knb-lter-sbc.3014
+      shortTitle: 'Stream Discharge: SM01, Santa Monica Creek, Via Real (2003-2006)'
     - docid: knb-lter-sbc.3013
       shortTitle: 'Stream Discharge: RS02, Rattlesnake Creek'
+    - docid: knb-lter-sbc.3015
+      shortTitle: 'Stream Discharge: SM04, Santa Monica Creek, upstream (2004-2005)'
     - docid: knb-lter-sbc.3016
       shortTitle: 'Stream Discharge: TE03, Tecolotito Creek (2004-2006)'
     - docid: knb-lter-sbc.3018
@@ -2726,10 +2726,10 @@
     eastbound: '-119.71513'
   packages:
     package:
-    - docid: knb-lter-sbc.174
-      shortTitle: SKFCD - Biomass of macroalgal detritus
     - docid: knb-lter-sbc.178
       shortTitle: SKFCD - Abundance and size of giant kelp
+    - docid: knb-lter-sbc.174
+      shortTitle: SKFCD - Biomass of macroalgal detritus
     - docid: knb-lter-sbc.175
       shortTitle: SKFCD - Sea urchin size structure
     - docid: knb-lter-sbc.176
@@ -2748,3 +2748,106 @@
       shortTitle: KFCD bottom topography
     - docid: knb-lter-sbc.120
       shortTitle: Master species list
+- id: reefBCE
+  label: Benthic Composition Experiment
+  collectionName: 'SBC LTER: Ongoing time-series of benthic composition experiment
+    (BCE)'
+  frequency: Seasonally
+  initiated: '2021'
+  habitatName: reef
+  habitatLabel: Reef
+  geodata:
+  - title: AQRK1
+    description: AQUE rock circle plot 1
+    southbound: '34.4669'
+    northbound: '34.4669'
+    westbound: '-120.1175'
+    eastbound: '-120.1175'
+  - title: AQRK2
+    description: AQUE rock circle plot 2
+    southbound: '34.466917'
+    northbound: '34.466917'
+    westbound: '-120.11795'
+    eastbound: '-120.11795'
+  - title: CCRK1
+    description: Cavern Cove on Santa Cruz Island rock circle plot 1
+    southbound: '34.053317'
+    northbound: '34.053317'
+    westbound: '-119.56735'
+    eastbound: '-119.56735'
+  - title: CCRK2
+    description: Cavern Cove on Santa Cruz Island rock circle plot 2
+    southbound: '34.0536'
+    northbound: '34.0536'
+    westbound: '-119.567217'
+    eastbound: '-119.567217'
+  - title: CPRK1
+    description: CARP rock circle plot 1
+    southbound: '34.390167'
+    northbound: '34.390167'
+    westbound: '-119.534933'
+    eastbound: '-119.534933'
+  - title: CPRK2
+    description: CARP rock circle plot 2
+    southbound: '34.389883'
+    northbound: '34.389883'
+    westbound: '-119.535033'
+    eastbound: '-119.535033'
+  - title: IVRK1
+    description: IVEE rock circle plot 1
+    southbound: '34.403967'
+    northbound: '34.403967'
+    westbound: '-119.8622'
+    eastbound: '-119.8622'
+  - title: IVRK2
+    description: IVEE rock circle plot 2
+    southbound: '34.403733'
+    northbound: '34.403733'
+    westbound: '-119.862083'
+    eastbound: '-119.862083'
+  - title: MKRK1
+    description: MOHK rock circle plot 1
+    southbound: '34.3942'
+    northbound: '34.3942'
+    westbound: '-119.729983'
+    eastbound: '-119.729983'
+  - title: MKRK2
+    description: MOHK rock circle plot 2
+    southbound: '34.394217'
+    northbound: '34.394217'
+    westbound: '-119.729483'
+    eastbound: '-119.729483'
+  - title: NPRK1
+    description: NAPL rock circle plot 2
+    southbound: '34.421833'
+    northbound: '34.421833'
+    westbound: '-119.951467'
+    eastbound: '-119.951467'
+  - title: NPRK2
+    description: NAPL rock circle plot 2
+    southbound: '34.4218'
+    northbound: '34.4218'
+    westbound: '-119.951217'
+    eastbound: '-119.951217'
+  - title: PPRK1
+    description: Pedro Point on Santa Cruz Island rock circle plot 1
+    southbound: '34.037717'
+    northbound: '34.037717'
+    westbound: '-119.524617'
+    eastbound: '-119.524617'
+  - title: PPRK2
+    description: Pedro Point on Santa Cruz Island rock circle plot 2
+    southbound: '34.037917'
+    northbound: '34.037917'
+    westbound: '-119.524833'
+    eastbound: '-119.524833'
+  packages:
+    package:
+    - docid: knb-lter-sbc.154
+      shortTitle: BCE benthic survey
+    - docid: knb-lter-sbc.155
+      shortTitle: BCE brush composition
+    - docid: knb-lter-sbc.160
+      shortTitle: BCE hourly light
+    - docid: knb-lter-sbc.173
+      shortTitle: BCE photo quad

@@ -42,7 +42,7 @@ and trophic transfer of this material (below).</p>
 <img class="img-thumbnail img-responsive img-center" src="/assets/img/research/kelp_current.jpg"  alt="Generic placeholder image" />
 <p>SBC researchers are investigating how kelp forest size and architecture modulate seawater 
 flow and chemistry (e.g. pH, DO, pCO2, nutrients)
-during different seasons of the year and climatic states. </p>
+across different seasons and environmental conditions. </p>
         
             <hr/>
                 

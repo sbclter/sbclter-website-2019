@@ -53,7 +53,7 @@ change and human use</p>
            <h3>2012-2018 (SBC III)</h3>
            <p>Understand how the structure and function of kelp forests and their material 
            exchange with adjacent terrestrial and marine ecosystems are altered by disturbance 
-           and climate. </p>
+           and shifting oceanographic conditions. </p>
         </div>
         <div class="col-md">
            <h3>2018-2024 (<a href="{{site.baseurl}}/research/current">SBC IV</a>)</h3>

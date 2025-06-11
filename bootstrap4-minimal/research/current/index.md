@@ -7,16 +7,6 @@ description: page description here.
 
 <h1>{{ page.title }} </h1>
 
-<!-- 
-<blockquote>
-<h2>How do natural and human drivers influence giant kelp dynamics and alter the 
-long-term structure and function of kelp forest ecosystems?</h2>
-<p class="lead">Three research themes are linked in a conceptual framework by the causes and ecological consequences 
-of the dynamics of a relatively short-lived foundation species in a setting of long-term climate 
-change and human use</p>
-</blockquote>
--->
-
 
 <div id="main-container">
 
@@ -31,19 +21,18 @@ change and human use</p>
             
             
             
-            <p>Giant kelp is a relatively short-lived foundation species in a setting of long-term climate 
-            change and human use. Our three research themes are linked in a conceptual framework by the causes and ecological consequences 
+            <p>Giant kelp is a relatively short-lived foundation species in a setting of long-term environmental change and human use. Our three research themes are linked in a conceptual framework by the causes and ecological consequences 
             of the kelp dynamics.</p>
             <p> Kelp forests are connected to each other and to the 
              coastal ocean and intertidal beaches via material exchange. Predicting the causes and 
-             consequences of kelp forest responses to environmental change requires integrated studies of a 
+             consequences of kelp forest responses to oceanographic variability requires integrated studies of a 
              wide range of physical, chemical and biological processes in the 
              water column within and outside of the kelp forest, on the seafloor and on adjacent beaches. 
              Thus, integration 
              across all three themes is a natural and necessary requirement for advancing a predictive 
-             understanding of how kelp forests respond to environmental change now and into the future.</p>
+             understanding of how kelp forests respond to oceanographic variability now and into the future.</p>
             <p>Our research advances a predictive understanding of how disturbance, 
-             climate variation and human actions (e.g., fishing and coastal development) 
+             oceanographic variability and human actions (e.g., fishing and coastal development) 
              alter the structure and function of kelp forest ecosystems to identify the 
              mechanisms that underlie these processes.</p>
           </blockquote>  

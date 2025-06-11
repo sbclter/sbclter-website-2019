@@ -34,7 +34,7 @@ window.setTimeout(function(){
 
 <p class="mt-4">The Santa Barbara Coastal Long Term Ecological Research (SBC LTER) site is an interdisciplinary 
      program established in 2000 to understand the ecology of coastal kelp forest ecosystems. Our research is 
-     focused on the nearshore waters of southern California, where ocean currents and climate are highly 
+     focused on the nearshore waters of southern California, where ocean currents and environmental conditions are highly 
      variable with season and longer-term cycles, including the El Niño-Southern Oscillation and the Pacific 
      Decadal Oscillation. SBC’s principal study domain is a 10,000 square kilometer area of the northern 
      portion of the Southern California Bight that includes the Santa Barbara Channel and the steep coastal 

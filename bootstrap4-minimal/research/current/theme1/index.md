@@ -19,11 +19,9 @@ description: TO DO Theme1 description here.
     <div class="row">
 	<div class="col-md-6">
 <p>Our previous findings highlight the capacity of giant kelp to persist in the face of severe 
-nutrient and thermal stress associated with increased climate variability. Yet, 
+nutrient and thermal stress associated with increased environmental variability. Yet, 
 giant kelp forests do not persist indefinitely and are regularly disturbed by large waves that 
-disproportionately remove kelp, and fishing which targets higher trophic levels. Changes in climate 
-are expected to alter the frequency and severity of wave disturbance and fishing effort, which 
-should influence kelp persistence and kelp forest community structure. 
+disproportionately remove kelp, and fishing which targets higher trophic levels. Ongoing environmental changes are expected to alter the frequency and severity of wave disturbance and fishing effort, which should influence kelp persistence and kelp forest community structure. 
  </p>
    
    <p class="lead">Theme 1 research examines:</p>

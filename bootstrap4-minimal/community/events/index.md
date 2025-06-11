@@ -26,7 +26,7 @@ description: news and event in SBCLTER
             <h3 class="header-style">News</h3>
             <div class="content-style">
                <ul>                   
-                    <li><a href="https://caseagrant.ucsd.edu/news/studying-climate-potential-californias-dunes" target="offline">2024-09-10 Coastal dunes and nature-based adaptation to climate change: SBC investigator Ian Walker is leading  a $1.9 million grant focusing on dunes as nature-based solutions to enhance the resilience of California’s beaches to climate change</a></li>                   
+                    <li><a href="https://caseagrant.ucsd.edu/news/studying-climate-potential-californias-dunes" target="offline">2024-09-10 Coastal dunes and nature-based adaptation to environmental change: SBC investigator Ian Walker is leading  a $1.9 million grant focusing on dunes as nature-based solutions to enhance the resilience of California’s beaches to environmental change</a></li>                   
                     <li><a href="https://news.ucsb.edu/2024/021425/uc-santa-barbara-researchers-launch-coastsnap-citizen-science-initiative-monitor" target="offline">2024-04-10 "UC Santa Barbara Researchers Launch CoastSnap, Citizen Science Initiative to Monitor Coastal Changes"</a></li>
                      <li><a href="https://news.ucsb.edu/2024/021420/securing-future-californias-coasts" target="offline">2024-04-09 Led by UCSB including SBC investigator Jenny Dugan, a team of researchers from five institutions and organizations will develop the California Beach Resiliency Plan.  The effort will produce new guidance for beach resiliency from the community level up to the state level covering the entire Californian coast.</a></li>                   
                     <li><a href="https://caseagrant.ucsd.edu/news/california-sea-grant-awards-nearly-841000-towards-10-new-graduate-research-fellowships" target="offline">2024-03-07 SBC student Karina Johnston was awarded a California Sea Grant graduate research fellowship to measure performance of coastal dune restoration projects in Southern California</a></li>                    
@@ -108,7 +108,7 @@ description: news and event in SBCLTER
                             <hr/>
 <h4>SBC LTER 2021 winter/spring seminars </h4>
                                     <br>
-                                    <p>Feb 10: Theme 1a. Community and ecosystem consequences of climate variability, disturbance and pathways of recovery. Presenters: Bob Miller & Max Castorani</p>
+                                    <p>Feb 10: Theme 1a. Community and ecosystem consequences of environmental variability, disturbance and pathways of recovery. Presenters: Bob Miller & Max Castorani</p>
                                     <p>Feb 19: Theme 1b. Ecological consequences of fishing. Presenters: Hunter Lenihan and Bart DiFiore</p>
                                     <p><a href="https://www.youtube.com/watch?v=jXaIYDHGNCo" target="_blank">Feb 24: Theme 3a. Demographic connectivity and metapopulation dynamics of giant kelp. Presenters: Kyle Cavanaugh & Tom Bell</a></p>
                                     <p><a href="https://www.youtube.com/watch?v=M1WnZQ49aWA" target="_blank">Mar 5: Theme 2a. Effects of kelp on physical and chemical fluxes. Presenter: Nick Nidzieko</a></p>

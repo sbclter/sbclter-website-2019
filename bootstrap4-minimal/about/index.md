@@ -39,7 +39,7 @@ description: origin, people, overall research objectives, news of the Santa Barb
 <p>The Santa Barbara Channel is a transition zone between the cold waters of the California Current 
 and the warmer waters of Southern California, and is considered a transition zone between the Oregonian and 
 Californian marine faunal provinces. Transition zones may be particularly susceptible to shifts in the composition 
-of marine species driven by climate fluctuations. Pt. Conception (34.448 N, 120.471 W), at the western boundary
+of marine species driven by environmental variability. Pt. Conception (34.448 N, 120.471 W), at the western boundary
 of the Channel, is a major biogeographic and coastal oceanic boundary that strongly influences the 
 physical and biological dynamics of the marine ecosystems within the Channel.  </p>
 
