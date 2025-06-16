@@ -128,6 +128,13 @@ description: page description here.
                 <div class="image-description">Kelp frond lost rate</div>
             </div>
         </div>
+        <div class="image-grid-item">
+            <div class="image-container image-clickable" 
+            data-highres="https://sbclter.msi.ucsb.edu/external/Documents/data_vis/figures/kelp_chn_at_site.png">
+                <img src="https://sbclter.msi.ucsb.edu/external/Documents/data_vis/thumb_figures/kelp_chn_at_site.png" alt="Image 3"   height="100">
+                <div class="image-description">Kelp frond CHN concentration</div>
+            </div>
+        </div>
     </div>
        <br>
         <hr>  
