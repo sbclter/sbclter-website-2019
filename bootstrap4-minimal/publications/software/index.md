@@ -18,7 +18,7 @@ description: SBCLTER produced software and code
 </div>
 
 <hr/>
-<h4>Sea Surface Temperature</h4>
+<h4>Sea Surface Temperature at 1 km resolution (2002-present)</h4>
 <div class="row">
 	<div class="col-md-8">
 		<p>This is a R script for downloading the Santa Barbara Channel daily sst netcdf file from the <a href="https://podaac.jpl.nasa.gov/dataset/MUR-JPL-L4-GLOB-v4.1" target="_blank">Physical Oceanography Distributed Active Archive Center</a>, and extracting the sst values for any given locations' coordinates. See the <a href="https://github.com/lkuiucsb/Sea-Surface-temperature" target="_blank">GitHub</a> repository.</p>
@@ -31,10 +31,23 @@ description: SBCLTER produced software and code
 </div>
 
 <hr/>
+<h4>Sea Surface Temperature at 5 km resolution (1985 - present)</h4>
+<div class="row">
+	<div class="col-md-8">
+		<p>This is a R function to retrieve sea surface temperature data from the Coral Reef Watch. See the <a href="https://github.com/lkuiucsb/coral-reef-watch-downloader" target="_blank">GitHub</a> repository.</p>
+	</div>
+	<div class="col-md-2"><!-- empty -->
+	</div>
+	<div class="col-md-2">
+		<img class="img-responsive w-50" src="/assets/img/community/R_logo.svg.png">
+	</div>
+</div>
+
+<hr/>
 <h4>CDIP Wave Data Retriever</h4>
 <div class="row">
 	<div class="col-md-8">
-		<p>This is a tool to retrieve wave data from the Coastal Data Information Program (CDIP). See the <a href="https://github.com/lkuiucsb/CDIP-wave-data-retriever" target="_blank">GitHub</a> repository.</p>
+		<p>This is a tool to retrieve wave data from the <a href="https://cdip.ucsd.edu/" target="_blank">Coastal Data Information Program (CDIP)</a>. See the <a href="https://github.com/lkuiucsb/CDIP-wave-data-retriever" target="_blank">GitHub</a> repository.</p>
 	</div>
 	<div class="col-md-2"><!-- empty -->
 	</div>
