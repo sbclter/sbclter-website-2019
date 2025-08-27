@@ -31,6 +31,19 @@ description: SBCLTER produced software and code
 </div>
 
 <hr/>
+<h4>CDIP Wave Data Retriever</h4>
+<div class="row">
+	<div class="col-md-8">
+		<p>This is a tool to retrieve wave data from the Coastal Data Information Program (CDIP). See the <a href="https://github.com/lkuiucsb/CDIP-wave-data-retriever" target="_blank">GitHub</a> repository.</p>
+	</div>
+	<div class="col-md-2"><!-- empty -->
+	</div>
+	<div class="col-md-2">
+		<img class="img-responsive w-50" src="/assets/img/community/R_logo.svg.png">
+	</div>
+</div>
+
+<hr/>
 <h4>High-Frequency Radar Thredds Data Harvest</h4>
 <div class="row">
 	<div class="col-md-8">
@@ -73,4 +86,3 @@ description: SBCLTER produced software and code
 </div>
 
 </div>
-
