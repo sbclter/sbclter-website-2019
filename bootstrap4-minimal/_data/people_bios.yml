@@ -47,24 +47,21 @@
     homepage: ''
     telephoneNumber: 805-893-8363
     projectRole: Project Co-Investigator
-  - databaseID: dsiegel
-    commonName: Dave Siegel
-    givenName: David
-    surName: Siegel
+  - databaseID: asantoro
+    commonName: Alyson Santoro
+    givenName: Alyson
+    surName: Santoro
     advisor: ''
-    scientificDomainString: Oceanography and Modeling
-    scientificDomainText: Coupling of physical, biological, and biogeochemical marine
-      processes on micro to ocean basin scales.  Specifically, ocean color remote sensing
-      and optical oceanography, mesoscale and coastal bio-physical interactions, fishery
-      oceanography, numerical modeling and Lagrangian approaches
-    employeeType: Professor
-    email: davesiegel@ucsb.edu
-    postalAddress: Earth Research Institute<br />University of California<br />Santa
-      Barbara CA 93106-3060
+    scientificDomainString: Microbial nitrogen cycling
+    scientificDomainText: Microbial ecology, nitrogen cycling
+    employeeType: 'Assistant Professor '
+    email: asantoro@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
     profileText: |
-      My primary role in the SBC LTER is to assess regional kelp cover and biomass using high spatial resolution (10 to 30 m) satellite imagery (SPOT and Landsat) and to provide access, interpretation and analysis of data on ocean color remote sensing and optical oceanography.  These observations are providing SBC LTER with a regional perspective on time scales from months to decades. I am also the Lead PI of the NASA funded Plumes and Blooms (PnB) project whose goal is to understand the land and ocean processes changing ocean color. Relevant for the SBC LTER, PnB makes monthly transect surveys across the Santa Barbara Channel of hydrographic, optical and biological parameters.
-    homepage: https://msi.ucsb.edu/people/faculty/david-siegel
-    telephoneNumber: 805-893-4547
+      Our lab studies bacteria and archaea involved in nitrogen cycling using molecular and stable isotope tools. I am interested in all aspects of how nitrogen is transported to and recycled within the SBC LTER ecosystem, and how those processes may change as a function of changing oxygen concentrations along the coast. We are particularly interested in the dynamics of the greenhouse gas nitrous oxide
+    homepage: https://labs.eemb.ucsb.edu/santoro/alyson/
+    telephoneNumber: 805-893-5318
     projectRole: Project Co-Investigator
   - databaseID: astier
     commonName: Adrian Stier
@@ -179,6 +176,30 @@
       CA 90095
     profileText: |
       I am studying the spatiotemporal variability of giant kelp biomass and production across multiple scales of observation. My research combines satellite and aerial remote sensing with detailed field measurements to scale up local observations to larger areas and longer times. The spatiotemporal variability we measure with our multi-scaled observations will then be linked to press and pulse environmental drivers which also operate across a spectrum of scales (wave action, SST, nutrients, predation, bottom sedimentation, etc.). My project relies heavily on detailed field sampling of giant kelp biomass, frond density, and NPP conducted by the SBC LTER. In addition, the information management resources provided by the SBC LTER will allow me to archive the data products extracted from my extensive time series of satellite and aerial data.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Investigator
+  - databaseID: ddauhajre
+    commonName: Daniel Dauhajre
+    givenName: Daniel
+    surName: Dauhajre
+    advisor: ''
+    scientificDomainString: Ocean circulation
+    scientificDomainText: ''
+    employeeType: Assistant Professor
+    email: ddauhajre@ucsb.edu
+    postalAddress: Geography Department<br />University of California<br />Santa Barbara
+      CA 93106
+    profileText: "We primarily develop ocean models to conduct basic, curiosity-driven
+      and applied oceanographic research, complementing simulations with measurements
+      and theory. Our central research explores turbulent ocean flows and waves across
+      multiple scales, with a particular focus on coastal regions. We aim to fundamentally
+      understand the dynamics of these turbulent currents and waves and their role in
+      transporting materials such as pollution, nutrients, and larvae.\r\n\r\nWe also
+      collaborate on interdisciplinary themes, such as kelp forest ecosystem dynamics
+      and marine carbon dioxide removal. This work involves developing and analyzing
+      regional simulations—constrained by ongoing measurements—that couple ocean circulation,
+      biogeochemical cycling, and seaweed.\n"
     homepage: ''
     telephoneNumber: ''
     projectRole: Investigator
@@ -419,7 +440,7 @@
     scientificDomainString: Marine Community Ecology
     scientificDomainText: Coastal ecology, food web structure and dynamics
     employeeType: Associate Research Biologist
-    email: page@lifesci.ucsb.edu
+    email: page@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
@@ -461,21 +482,24 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Investigator
-  - databaseID: asantoro
-    commonName: Alyson Santoro
-    givenName: Alyson
-    surName: Santoro
+  - databaseID: dsiegel
+    commonName: Dave Siegel
+    givenName: David
+    surName: Siegel
     advisor: ''
-    scientificDomainString: Microbial nitrogen cycling
-    scientificDomainText: Microbial ecology, nitrogen cycling
-    employeeType: 'Assistant Professor '
-    email: asantoro@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
+    scientificDomainString: Oceanography and Modeling
+    scientificDomainText: Coupling of physical, biological, and biogeochemical marine
+      processes on micro to ocean basin scales.  Specifically, ocean color remote sensing
+      and optical oceanography, mesoscale and coastal bio-physical interactions, fishery
+      oceanography, numerical modeling and Lagrangian approaches
+    employeeType: Professor
+    email: davesiegel@ucsb.edu
+    postalAddress: Earth Research Institute<br />University of California<br />Santa
+      Barbara CA 93106-3060
     profileText: |
-      Our lab studies bacteria and archaea involved in nitrogen cycling using molecular and stable isotope tools. I am interested in all aspects of how nitrogen is transported to and recycled within the SBC LTER ecosystem, and how those processes may change as a function of changing oxygen concentrations along the coast. We are particularly interested in the dynamics of the greenhouse gas nitrous oxide
-    homepage: https://labs.eemb.ucsb.edu/santoro/alyson/
-    telephoneNumber: 805-893-5318
+      My primary role in the SBC LTER is to assess regional kelp cover and biomass using high spatial resolution (10 to 30 m) satellite imagery (SPOT and Landsat) and to provide access, interpretation and analysis of data on ocean color remote sensing and optical oceanography.  These observations are providing SBC LTER with a regional perspective on time scales from months to decades. I am also the Lead PI of the NASA funded Plumes and Blooms (PnB) project whose goal is to understand the land and ocean processes changing ocean color. Relevant for the SBC LTER, PnB makes monthly transect surveys across the Santa Barbara Channel of hydrographic, optical and biological parameters.
+    homepage: https://msi.ucsb.edu/people/faculty/david-siegel
+    telephoneNumber: 805-893-4547
     projectRole: Investigator
   - databaseID: rsimons
     commonName: Rachel Simons
@@ -507,6 +531,23 @@
     profileText: |
       Past work in the Turner lab has used various systems to investigate evolution, genetics, and behavior. Current projects are focused on marine sponges. We aim to improve our understanding of the diversity, evolutionary history, and ecological services of sponges in rocky reef habitats in California. These kelp forest habitats contain an astonishing diversity of suspension-feeding marine invertebrates. Together with other colonial filter feeders like tunicates, anthozoans, and bryozoans, sponges occupy a considerable portion of the hard-bottom substrate in shallow waters. Despite the important ecological roles and services of these taxa, we know little about the ecology or evolution of most species in this benthic community.
     homepage: ''
+    telephoneNumber: ''
+    projectRole: Investigator
+  - databaseID: iwalker
+    commonName: Ian Walker
+    givenName: Ian
+    surName: Walker
+    advisor: ''
+    scientificDomainString: Physical geography
+    scientificDomainText: Coastal and aeolian geomorphology and environmental fluid
+      dynamics
+    employeeType: Professor
+    email: ianjwalker@ucsb.edu
+    postalAddress: Department of Geography<br />University of California<br />Santa
+      Barbara CA 93106-4060
+    profileText: |
+      Ian Walker’s research centers on the geomorphology and environmental fluid dynamics of coastal and aeolian systems, with emphasis on how wind, waves, and currents transport sediment and shape beaches, dunes, and other sedimentary landscapes. His work spans aeolian and coastal sediment transport, beach–dune interactions, dune formation and recovery, erosion processes, and the broader evolution of coastal landscapes under climate variability and sea-level rise, often informing nature-based coastal-resilience strategies such as dune restoration.
+    homepage: https://www.geog.ucsb.edu/people/faculty/ian-walker
     telephoneNumber: ''
     projectRole: Investigator
   - databaseID: lwashburn
@@ -692,6 +733,38 @@
     homepage: ''
     telephoneNumber: 541-737-1308
     projectRole: Project Affiliated Investigator
+  - databaseID: mliang
+    commonName: Maowei Liang
+    givenName: Maowei
+    surName: Liang
+    advisor: ''
+    scientificDomainString: Plant Community and Ecosystem Ecology
+    scientificDomainText: Biodiversity, Community and Ecosystem Ecology, Grasslands,
+      Global Change, Plant and Soil Ecology, Rangeland Management, Restoration Ecology
+    employeeType: Research scientist
+    email: liang929@umn.edu
+    postalAddress: College of Biological Sciences<br />University of Minnesota<br />St.
+      Paul MN 55108
+    profileText: |
+      My work with the SBC-LTER focuses on how the diversity-stability relationships change in trophic levels across spatial scales. Other projects include using the LTER, NEON, and GGN multiple long-term datasets to assess the drivers of the diversity-stability relationships from local sites to regional scales.
+    homepage: https://maowei-liang.weebly.com
+    telephoneNumber: ''
+    projectRole: Project Affiliated Investigator
+  - databaseID: hlowman
+    commonName: Heili Lowman
+    givenName: Heili
+    surName: Lowman
+    advisor: ''
+    scientificDomainString: Biogeochemistry
+    scientificDomainText: biogeochemistry and ecosystem function of aquatic systems
+    employeeType: Assistant Professor
+    email: heili.lowman@duke.edu
+    postalAddress: Department of Biology<br />Duke University<br />Durham NC 27708
+    profileText: |
+      I am interested in the biogeochemistry and ecosystem function of aquatic systems in response to environmental change, and I am currently a Postdoctoral Associate in the Department of Biology at Duke University. My research examines the fate of organic matter and nutrients as they traverse the land to ocean margin. Teaching and scientific communication are integral to my research, and I am always seeking new mentorship and collaboration opportunities.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Project Affiliated Investigator
   - databaseID: jmcwilliams
     commonName: Jim McWilliams
     givenName: James
@@ -845,22 +918,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Information Manager
-  - databaseID: mobrien
-    commonName: Margaret O'Brien
-    givenName: Margaret
-    surName: O'Brien
-    advisor: ''
-    scientificDomainString: Information Manager
-    scientificDomainText: Information Management, Ecoinformatics
-    employeeType: Specialist
-    email: margaret.obrien@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      As SBC's Information Manager I am responsible for coordinating and implementing most aspects of data exchange and publication within and outside the group. This includes managing user accounts and services; designing databases, websites and applications; and working with scientists and their staff to plan and publish data products.
-    homepage: ''
-    telephoneNumber: 805-893-2071
-    projectRole: Information Manager
   - databaseID: cblanchette
     commonName: Carol Blanchette
     givenName: Carol
@@ -894,6 +951,38 @@
     homepage: ''
     telephoneNumber: 805-893-8765
     projectRole: Education Manager
+  - databaseID: rbrokaw
+    commonName: Ricky Brokaw
+    givenName: Ricky
+    surName: Brokaw
+    advisor: Siegel
+    scientificDomainString: Physical Oceanography
+    scientificDomainText: Physical Oceanography
+    employeeType: Post Doctoral Scholar
+    email: rbrokaw@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106
+    profileText: |
+      My research focuses on using remote sensing and in-situ measurement techniques to investigate physical processes such as advection, convergence, and divergence as they relate to water mass properties in order to understand the transport of materials to kelp forests.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Post Doctoral Associate
+  - databaseID: kcavanaugh1
+    commonName: Kate Cavanaugh
+    givenName: Kate
+    surName: Cavanaugh
+    advisor: Cavanaugh
+    scientificDomainString: Remote sensing
+    scientificDomainText: Remote Sensing
+    employeeType: Post Doctoral Scholar
+    email: kccavanaugh@g.ucla.edu
+    postalAddress: Department of Geography<br />University of California<br />Los Angeles
+      CA 90095
+    profileText: |
+      I am a graduate student in Kyle Cavanaugh’s lab at UCLA (we’re not related!) and am interested in using different remote sensing platforms to study the spatiotemporal responses of giant kelp and bull kelp to a variety of climatic stressors across multiple scales. I am currently working on distinguishing these two species using a fusion of remote sensing data.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Post Doctoral Associate
   - databaseID: mcornish
     commonName: Michael Cornish
     givenName: Michael
@@ -910,35 +999,21 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
-  - databaseID: ddauhajre
-    commonName: Daniel Dauhajre
-    givenName: Daniel
-    surName: Dauhajre
-    advisor: McWilliams
-    scientificDomainString: Ocean circulation
-    scientificDomainText: ''
-    employeeType: Post Doctoral Scholar
-    email: ddauhajre@atmos.ucla.edu
-    postalAddress: Dept. of Atmospheric and Oceanic Sciences/IGPP<br />University of
-      California<br />Los Angeles CA 90095-1565
-    profileText: |
-      I am a postdoc at UCLA working with James McWilliams.  I aim to diagnose and characterize the physical transport mechanisms on the inner-shelf of the Southern California Bight.  The transport pathways I am seeking to uncover occur in the along- and cross- shore directions.  In the cross-shore direction, I am examining transport between two boundaries: transport to/from the shelf to//from the surf-zone and offshore waters.  To perform these analyses I utilize very high resolution (less than 100m horizontal resolution) ROMS (Regional Ocean Modeling System) simulations.  The high resolution allows the submesoscale processes on the shelf to be examined with great detail.  The characterization of these flow patterns and their relative importance in material exchange is vital to understanding the nutrient and material fluxes into the kelp forests of the Santa Barbara Channel.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Post Doctoral Associate
-  - databaseID: edonham
-    commonName: Emily Donham
-    givenName: Emily
-    surName: Donham
+  - databaseID: cenglish
+    commonName: Chance English
+    givenName: Chance
+    surName: English
     advisor: ''
-    scientificDomainString: Kelp forest ecology
-    scientificDomainText: Kelp forest ecology
-    employeeType: Post Doctoral Associate
-    email: edonham@ucsb.edu
+    scientificDomainString: Microbial community
+    scientificDomainText: Microbial oceanography emphasizing the role of marine microbes
+      in the production, alteration, and fate of dissolved organic matter in the open
+      ocean and coastal kelp forests.
+    employeeType: Post Doctoral Researcher
+    email: cje@umail.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I am broadly interested in how environmental variability affects marine organisms' physiology and ecology. My past work has assessed the impacts of marine environment and ocean acidification on kelp forest grazers, such as sea urchins. As a Postdoc in the Stier Lab at UC Santa Barbara, I will focus on furthering understanding of the factors controlling kelp biomass inside and outside of California’s marine protected areas.
+    profileText: |2+
+
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
@@ -955,54 +1030,6 @@
       Barbara CA 93106
     profileText: |
       My research interest is investigating the effects of ocean acidification on the biogeochemical cycling of carbon in the ocean and the resulting implications for both marine ecosystems and atmospheric CO2 levels. My work in the Carlson laboratory focuses on the short-term and long-term impacts of increasing pCO2 on the use of dissolved organic carbon by natural bacterioplankton communities. With this research focus, my graduate work will help to better constrain surface carbon budgets and enable predictions of the degree to which the global oceans will continue to be a sink for anthropogenic-derived CO2.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Post Doctoral Associate
-  - databaseID: mliang
-    commonName: Maowei Liang
-    givenName: Maowei
-    surName: Liang
-    advisor: ''
-    scientificDomainString: Plant Community and Ecosystem Ecology
-    scientificDomainText: Biodiversity, Community and Ecosystem Ecology, Grasslands,
-      Global Change, Plant and Soil Ecology, Rangeland Management, Restoration Ecology
-    employeeType: Postdoctoral Scholar
-    email: maowei.liang@virginia.edu
-    postalAddress: Department of Environmental Sciences<br />University of Virginia<br
-      />Charlottesville VA 22904-4123
-    profileText: |
-      I am currently a Postdoctoral Scholar in the Department of Environmental Sciences at the University of Virginia. My work with the SBC-LTER focuses on how the diversity-stability relationships change in trophic levels across spatial scales. Other projects include using the LTER, NEON, and GGN multiple long-term datasets to assess the drivers of the diversity-stability relationships from local sites to regional scales.
-    homepage: https://maowei-liang.weebly.com
-    telephoneNumber: ''
-    projectRole: Post Doctoral Associate
-  - databaseID: hlowman
-    commonName: Heili Lowman
-    givenName: Heili
-    surName: Lowman
-    advisor: ''
-    scientificDomainString: Biogeochemistry
-    scientificDomainText: biogeochemistry and ecosystem function of aquatic systems
-    employeeType: Post Doctoral Associate
-    email: heili.lowman@duke.edu
-    postalAddress: Department of Biology<br />Duke University<br />Durham NC 27708
-    profileText: |
-      I am interested in the biogeochemistry and ecosystem function of aquatic systems in response to environmental change, and I am currently a Postdoctoral Associate in the Department of Biology at Duke University. My research examines the fate of organic matter and nutrients as they traverse the land to ocean margin. Teaching and scientific communication are integral to my research, and I am always seeking new mentorship and collaboration opportunities.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Post Doctoral Associate
-  - databaseID: msiple
-    commonName: Margaret Siple
-    givenName: Margaret
-    surName: Siple
-    advisor: ''
-    scientificDomainString: Population ecology and fisheries
-    scientificDomainText: ''
-    employeeType: Post Doctoral Scholar
-    email: siplem@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
@@ -1023,38 +1050,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: rbrokaw
-    commonName: Ricky Brokaw
-    givenName: Ricky
-    surName: Brokaw
-    advisor: Siegel
-    scientificDomainString: Physical Oceanography
-    scientificDomainText: Physical Oceanography
-    employeeType: Graduate Student
-    email: rbrokaw@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106
-    profileText: |
-      My research focuses on using remote sensing and in-situ measurement techniques to investigate physical processes such as advection, convergence, and divergence as they relate to water mass properties in order to understand the transport of materials to kelp forests.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: abui
-    commonName: An Bui
-    givenName: An
-    surName: Bui
-    advisor: Stier and Moeller
-    scientificDomainString: Community ecology, functional ecology
-    scientificDomainText: Community ecology, functional ecology
-    employeeType: Graduate Student
-    email: an_bui@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      An is a community ecologist specializing in community responses to disturbance as modulated by species functional traits. She is working on elucidating the effects of disturbance history on subsequent community response in kelp forest systems.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: lcarberry
     commonName: Luke Carberry
     givenName: Luke
@@ -1071,38 +1066,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: kcavanaugh1
-    commonName: Kate Cavanaugh
-    givenName: Kate
-    surName: Cavanaugh
-    advisor: Cavanaugh
-    scientificDomainString: Remote sensing
-    scientificDomainText: Remote Sensing
-    employeeType: Graduate Student
-    email: kccavanaugh@g.ucla.edu
-    postalAddress: Department of Geography<br />University of California<br />Los Angeles
-      CA 90095
-    profileText: |
-      I am a graduate student in Kyle Cavanaugh’s lab at UCLA (we’re not related!) and am interested in using different remote sensing platforms to study the spatiotemporal responses of giant kelp and bull kelp to a variety of climatic stressors across multiple scales. I am currently working on distinguishing these two species using a fusion of remote sensing data.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: jchamorro
-    commonName: Jannine Chamorro
-    givenName: Jannine
-    surName: Chamorro
-    advisor: Hofmann
-    scientificDomainString: Ecophysiology
-    scientificDomainText: Marine invertebrates cope with stressors such as marine heatwaves.
-    employeeType: Graduate Student
-    email: jdchamorro@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      I am a graduate student in the Hofmann Lab studying how marine invertebrates cope with climate change associated stressors such as marine heatwaves. Growing up, I had always been fascinated by animals and their interactions with the environment, but never in my wildest dreams did I think I would become a scientist studying these interactions. After graduating high school, I began my college career at my local community college, then transferred to UC Davis where I majored in Animal Biology. It was during my time at UC Davis that I got involved in undergraduate research studying the effects of various marine environment on marine invertebrates. By participating in undergraduate research, I received amazing mentorship from graduate students and professors I worked with along the way. This experience gave me confidence to pursue scientific research as career. As a Latin-American and first-generation college student I have recognized some of the many challenges associated with succeeding in environmental sciences. As I continue in with my graduate career, I am passionate about helping under-represented students in STEM overcome these challenges and increase their accessibility to scientific careers.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: jcox
     commonName: Julia Cox
     givenName: Julia
@@ -1116,22 +1079,6 @@
       of California<br />Santa Barbara CA 93106-9620
     profileText: |
       I graduated with a BS in Biology from the University of Massachusetts Amherst in 2019, where I conducted research on the relationship between freshwater mussel larvae and river herring. After briefly working for a biomedical company, I became a research assistant at Woods Hole Oceanographic Inst. in 2020 where I worked on the Ocean Twilight Zone project and the Northeast US Shelf LTER. I am currently developing my research questions for my PhD at UCSB with my co-advisors Dr. Page and Dr. Miller. Broadly, I hope to use stable isotope analysis to study food webs in kelp forest ecosystems and to understand how kelp may influence commercially important species.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: rdetmer
-    commonName: Raine Detmer
-    givenName: Raine
-    surName: Detmer
-    advisor: 'Moeller  '
-    scientificDomainString: Community Ecology and Mathematical Modeling
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: adetmer@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106
-    profileText: |
-      Raine is interested in both community ecology and mathematical modeling. She is particularly interested in using models to better understand species interactions in marine communities and how these interactions may be affected by environmental stressors. Her work in the Moeller Lab leverages the Santa Barbara Coastal and Moorea Coral Reef LTER datasets. Raine began her research career by modeling the interactions between Macrocystis pyrifera (giant kelp), benthic macroalgae, and sessile invertebrates and how this system is affected by disturbance from storms. More recently, she is exploring the incorporation of coral-associated animals into models of coral growth and bleaching.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1184,37 +1131,19 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: cenglish
-    commonName: Chance English
-    givenName: Chance
-    surName: English
-    advisor: Carlson
-    scientificDomainString: Microbial community
-    scientificDomainText: Microbial oceanography emphasizing the role of marine microbes
-      in the production, alteration, and fate of dissolved organic matter in the open
-      ocean and coastal kelp forests.
+  - databaseID: ielizarraras
+    commonName: 'Ivanna Arrizon Elizarraras '
+    givenName: Ivanna
+    surName: Elizarraras
+    advisor: Hofmann
+    scientificDomainString: Eco-physiology, marine heat waves, larval biology
+    scientificDomainText: Eco-physiology, marine heat waves, larval biology
     employeeType: Graduate Student
-    email: cje@umail.ucsb.edu
+    email: iarrizonelizarraras@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: sesaian
-    commonName: Sevan Esaian
-    givenName: Sevan
-    surName: Esaian
-    advisor: Moeller and Wilbanks
-    scientificDomainString: Microbial ecology
-    scientificDomainText: ''
-    employeeType: Graduate Student
-    email: sevanesaian@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA
     profileText: |
-      Sevan’s research is a part of the Santa Barbara Coastal Long Term Ecological Research Project (SBC LTER). He is using molecular biology, mathematical modeling, and geographic information science, to investigate epiphytic microbial population dynamics on Macrocystis pyrifera (giant kelp). His research focuses broadly on the synergistic effects of environmental factors driving giant kelp microbial abundance, diversity, and recovery throughout its life cycle (primarily senescence). During undergraduate studies at CSU – Los Angeles he studied the gene regulatory network of migratory neural crest cells in chicken embryos. He continued his education there as a MSc student by studying bird population dynamics and foraging preferences throughout the Los Angeles urban forest. Sevan joined the lab in Fall 2018.
+      Ivanna received her B.S in Biology from San Diego State University (SDSU). At SDSU, she gained experience in community ecology under the Edwards Lab as a CA Sea Grant fellow. After graduating, Ivanna worked in aquariums before returning to school to pursue her Master's degree at the California State University, Long Beach (CSULB). At CSULB, Ivanna investigated the effect of temperature on the size and metabolism of purple sea urchin larvae. She graduated with her Master's of Biology from CSULB in 2025 and is now pursuing her PhD at UCSB under Dr. Gretchen Hofmann.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1264,22 +1193,6 @@
       />Charlottesville VA 22904-4123
     profileText: |
       I am a coastal ecologist interested in the spatial variation of communities over time. After graduating from UC Santa Barbara in 2020, I joined the Castorani Lab at the University of Virginia. I am currently a PhD student studying the spatial synchrony of kelp forest communities. Leveraging long-term data and new measures of synchrony, I will investigate how biotic and abiotic drivers structure communities over space and time.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: kmalakhoff
-    commonName: Katrina Malakhoff
-    givenName: Katrina
-    surName: Malakhoff
-    advisor: Miller
-    scientificDomainString: Sea urchin ecology
-    scientificDomainText: Sea urchin ecology, focusing on the impact of fishing and
-      marine reserves on dominant urchin species in the Santa Barbara Chanel.
-    employeeType: Graduate Student
-    email: kmalakhoff@ucsb.edu
-    postalAddress: ''
-    profileText: |
-      I am exploring how the population dynamics of sea urchins influences the ecology of kelp forests in the Santa Barbara area.  Through a combination of statistical analysis, dynamical modeling, feeding assays, and physiological experiments, my work aims to quantify the impact of changes in red and purple sea urchin populations and consumption patterns.  I am interested in the differences between red sea urchins, which are harvested by a large local fishery, and purple sea urchins which are generally not fished.  The SBC-LTER dataset contains extensive information on sea urchin populations which is essential to my research goals.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1333,6 +1246,22 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
+  - databaseID: dmyers
+    commonName: Dana Myers
+    givenName: Dana
+    surName: Myers
+    advisor: Nidzeiko
+    scientificDomainString: Physical Oceanography
+    scientificDomainText: Physical Oceanography
+    employeeType: Graduate Student
+    email: drmyers@umail.ucsb.edu
+    postalAddress: Department of Geography<br />University of California<br />Santa
+      Barbara CA 93106-4060
+    profileText: |
+      My research interests include coastal dynamics, estuarine mixing, and remote sensing technologies. I am specifically interested in how water masses mix in estuaries, where rivers meet the ocean, and what we can decipher from aerial images of surface waters. I aim to study how modern, satellite remote sensing technologies can capture rapidly evolving processes, like sediment transport, in coastal systems.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
   - databaseID: bray
     commonName: Billy Ray
     givenName: William
@@ -1349,20 +1278,36 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: aritger
-    commonName: Amelia Ritger
-    givenName: Amelia
-    surName: Ritger
-    advisor: Hofmann
-    scientificDomainString: Population and Community Ecology
-    scientificDomainText: Biogeography, Intraspecific variation, Ocean Acidification
+  - databaseID: sreis
+    commonName: Skylah Reis
+    givenName: Skylah
+    surName: Reis
+    advisor: Page and Miller and Gaines
+    scientificDomainString: Marine ecology
+    scientificDomainText: Marine ecology
     employeeType: Graduate Student
-    email: aritger@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
+    email: skylahreis@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
     profileText: |
-      I am interested in the ecological consequences of intraspecific variation at multiple spatial scales. I currently use Corynactis californica (the strawberry anemone) and Tegula funebralis (the black turban snail) to explore 1) variation within a population 2) variation within a species and 3) the interaction of environmental mosaics such as variable upwelling regimes and biological communities on species performance and fitness.
-    homepage: https://ameliaritger.github.io/
+      I am interested in the community ecology of rocky reef habitats and comparing these natural reef communities to those of artificial structures -- such as offshore energy platforms. I am currently utilizing artificial collection devices (ARMS) developed by the Smithsonian Institute to assess cryptic biodiversity across the Santa Barbara Channel. The ARMS act as a standardized marine sampling device that will allow us to compare SBC rocky reefs to other reefs globally.  I am also interested in non-native/ invasive species, their presence on artificial structures and their effects on epifaunal communities.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
+  - databaseID: srivera
+    commonName: Samuel Rivera
+    givenName: Samuel
+    surName: Rivera
+    advisor: Emery, Nidzieko
+    scientificDomainString: Coastal ecology
+    scientificDomainText: My primary focus is coastal ecology and food webs
+    employeeType: Graduate Student
+    email: samuelrivera@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am a PhD student with a research interest in coastal trophic interactions and investigating the connectivity between kelp forests and adjacent sandy beach habitats. I am interested in understanding the effects of marine wrack on beach food webs and how the variability of wrack inputs influences interspecific interactions and community structures.
+    homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
   - databaseID: irodriguez
@@ -1381,23 +1326,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: jsainz
-    commonName: Jade Sainz
-    givenName: Jade
-    surName: Sainz
-    advisor: Gaines
-    scientificDomainString: Applied marine ecology and aquaculture
-    scientificDomainText: Marine aquaculture, marine spatial planning, climate variability,
-      climate change, sustainable seafood
-    employeeType: Graduate Student
-    email: jadesainz@umail.ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |
-      Jade’s dissertation focuses on marine aquaculture, an expanding industry with great potential to provide sustainable seafood in the upcoming decades. She is studying the effects of climate variability and change to assist marine spatial planning of aquaculture in Southern California.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
   - databaseID: jsnyder
     commonName: Jordan Snyder
     givenName: Jordan
@@ -1412,21 +1340,6 @@
       Barbara CA 93106-6150
     profileText: |2+
 
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: csugano
-    commonName: Cailan Sugano
-    givenName: Cailan
-    surName: Sugano
-    advisor: Hofmann
-    scientificDomainString: Ocean Acidification
-    scientificDomainText: Ocean Acidification
-    employeeType: Graduate Student
-    email: cailan.sugano@lifesci.ucsb.edu
-    postalAddress: ''
-    profileText: |
-      I prepare and maintain the SBC LTER autonomous pH sensors that have been deployed throughout the Santa Barbara Channel. I also process calibration samples for these instruments in order to ensure quality data sets. In light of the threat of a continual ocean acidification, documenting the current, natural variability in pH is vital in guiding research and conservation techniques.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1491,35 +1404,19 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
-  - databaseID: jzenteno
-    commonName: Jose Zenteno
-    givenName: Jose
-    surName: Zenteno
-    advisor: Lenihan and Gaines
-    scientificDomainString: Aquaculture
-    scientificDomainText: Interaction between marine aquaculture and harmful algal blooms
-    employeeType: Graduate Student
-    email: jzenteno@bren.ucsb.edu
-    postalAddress: Bren School of Environmental Science and Management<br />University
-      of California<br />Santa Barbara CA 96106-5131
-    profileText: |
-      José Zenteno is a marine biologist with a background in fisheries science, management, and policy. He holds a BS in Marine Biology from Universidad de Valparaiso, Chile and a Master’s degree specializing in Coastal Marine Resource Management from the Bren School of Environmental Science & Management at the University of California, Santa Barbara.During his PhD, José is investigating the interactions among aquaculture, coastal ecosystems, and communities, and how to develop aquaculture systems that are both productive and sustainable. He plans to study the social and ecological performance of aquaculture in developing countries, and develop a framework for evaluating the effects of coastal aquaculture on local ecosystems and communities in Latin America. He hopes that his research will contribute a tool for to better evaluate coastal aquaculture farms in data- and resource-poor environments; facilitate the inclusion of science into industry and policy decisions; and improve management of coastal aquaculture systems in developing countries.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Graduate Student
-  - databaseID: dambat
-    commonName: Darrin Ambat
-    givenName: Darrin
-    surName: Ambat
+  - databaseID: scabral
+    commonName: Sophia Cabral
+    givenName: Sophia
+    surName: Cabral
     advisor: ''
-    scientificDomainString: Reef Sampling and Intern Coordinator
-    scientificDomainText: Marine ecology, fish ecology, trophic dynamics
-    employeeType: Assistant Specialist
-    email: dambat@ucsb.edu
+    scientificDomainString: Ecophysiology, marine heatwaves, kelp forest ecology
+    scientificDomainText: Ecophysiology, marine heatwaves, kelp forest ecology
+    employeeType: Research Staff
+    email: sophiacabral@umail.ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
-      I aid in kelp forest monitoring surveys for the SBC-LTER. Most of my work is conducted using SCUBA and aboard the R/V Kelpfish. In the lab, I help bridge the gap between data collection during field surveys and data management through data quality checking and statistical analysis. Additionally, I coordinate and oversee undergraduate interns who are working in our lab.
+      My research interests include ecophysiology, kelp forest ecology, and investigating the effects of marine heatwaves. I am interested in the epifaunal communities within giant kelp forests and how they interact with their macroalgal host. As the Hofmann Laboratory research technician, I conduct research on early-developmental giant kelp stages, adult sea urchins, and larval urchins local to the Santa Barbara Channel.
     homepage: ''
     telephoneNumber: ''
     projectRole: Staff
@@ -1554,6 +1451,22 @@
       I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
     homepage: ''
     telephoneNumber: 805-893-8087
+    projectRole: Staff
+  - databaseID: narymowycz
+    commonName: Nick Jarymowycz
+    givenName: Nicholas
+    surName: Jarymowycz
+    advisor: ''
+    scientificDomainString: Reef Sampling and Intern Coordinator
+    scientificDomainText: Marine ecology
+    employeeType: Research Assistant
+    email: njarymowycz@umail.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      In the field, I assist researchers with experiments and surveys to monitor kelp forests, primarily using SCUBA and working aboard UCSB’s research vessels. In the lab, I oversee and mentor interns in sample and data processing, conduct data quality assurance, and perform statistical analyses to support ongoing research goals.
+    homepage: ''
+    telephoneNumber: ''
     projectRole: Staff
   - databaseID: jjones2
     commonName: Janice Jones
@@ -1602,22 +1515,6 @@
       I oversee marine field operations for the SBC-LTER.  This includes training and mentoring students to safely and efficiently conduct our monitoring surveys while they are using  SCUBA and our boat, the R/V Kelpfish.  This also includes coordinating and conducting kelp forest monitoring surveys and experiments.  I also assist Dr. Reed and other senior investigators with experimental design and implementation.   My current research focuses on developing a non-destructive method to monitor invertebrate biomass in our local kelp forests.
     homepage: ''
     telephoneNumber: 805-893-7295
-    projectRole: Staff
-  - databaseID: jogawa
-    commonName: Jacob Ogawa
-    givenName: Jacob
-    surName: Ogawa
-    advisor: ''
-    scientificDomainString: Field sampling and lab assistant
-    scientificDomainText: ''
-    employeeType: Research Staff
-    email: jacob06@ucsb.edu
-    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
-      of California<br />Santa Barbara CA 93106-9620
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
     projectRole: Staff
   - databaseID: kopalk
     commonName: Keri Opalk

@@ -135,6 +135,8 @@ description: news and event in SBCLTER
 <h4>SBC LTER newsletters</h4>
 <br>
 <!--/* check this list for the link */, or open mail chime, click into the campaign, and click "details" tab to find the link-->
+
+<p><a href="https://mailchi.mp/fe4c3b30996d/spring-summer-2025-updates-from-the-sbc-lter-6425924" target="_blank">SBCLTER News | Spring & Summer 2025</a></p>
 <p><a href="https://mailchi.mp/824193f1b470/spring-2024-updates-from-the-sbc-lter-6420693" target="_blank">SBCLTER News | Winter 2025</a></p>
 <p><a href="https://mailchi.mp/d2c788a1811a/spring-2024-updates-from-the-sbc-lter" target="_blank">SBCLTER News | Summer 2024</a></p>
 
