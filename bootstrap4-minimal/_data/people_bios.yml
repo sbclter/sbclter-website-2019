@@ -1017,22 +1017,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Post Doctoral Associate
-  - databaseID: ajames
-    commonName: Anna James
-    givenName: Anna
-    surName: James
-    advisor: ''
-    scientificDomainString: Bacterioplankton, carbon cycling
-    scientificDomainText: ''
-    employeeType: ''
-    email: ajames@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106
-    profileText: |
-      My research interest is investigating the effects of ocean acidification on the biogeochemical cycling of carbon in the ocean and the resulting implications for both marine ecosystems and atmospheric CO2 levels. My work in the Carlson laboratory focuses on the short-term and long-term impacts of increasing pCO2 on the use of dissolved organic carbon by natural bacterioplankton communities. With this research focus, my graduate work will help to better constrain surface carbon budgets and enable predictions of the degree to which the global oceans will continue to be a sink for anthropogenic-derived CO2.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Post Doctoral Associate
   - databaseID: bbeckley
     commonName: Billie Beckley
     givenName: Billie
@@ -1441,16 +1425,16 @@
     givenName: Elisa
     surName: Halewood
     advisor: ''
-    scientificDomainString: Oceanography and Microbiology Sampling and Analysis
-    scientificDomainText: ''
-    employeeType: ''
-    email: elisa.wallner@lifesci.ucsb.edu
+    scientificDomainString: Oceanographic sampling and analysis
+    scientificDomainText: Oceanographic sampling and analysis
+    employeeType: Staff
+    email: wallner@ucsb.edu
     postalAddress: Marine Science Institute<br />University of California<br />Santa
       Barbara CA 93106-6150
     profileText: |
       I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
     homepage: ''
-    telephoneNumber: 805-893-8087
+    telephoneNumber: ''
     projectRole: Staff
   - databaseID: narymowycz
     commonName: Nick Jarymowycz
@@ -1515,22 +1499,6 @@
       I oversee marine field operations for the SBC-LTER.  This includes training and mentoring students to safely and efficiently conduct our monitoring surveys while they are using  SCUBA and our boat, the R/V Kelpfish.  This also includes coordinating and conducting kelp forest monitoring surveys and experiments.  I also assist Dr. Reed and other senior investigators with experimental design and implementation.   My current research focuses on developing a non-destructive method to monitor invertebrate biomass in our local kelp forests.
     homepage: ''
     telephoneNumber: 805-893-7295
-    projectRole: Staff
-  - databaseID: kopalk
-    commonName: Keri Opalk
-    givenName: Keri
-    surName: Opalk
-    advisor: ''
-    scientificDomainString: Phytoplankton and Carbon Cycling Sampling and Analysis
-    scientificDomainText: ''
-    employeeType: ''
-    email: keri.opalk@lifesci.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |2+
-
-    homepage: ''
-    telephoneNumber: ''
     projectRole: Staff
   - databaseID: fpuerzer
     commonName: Frankie Puerzer
