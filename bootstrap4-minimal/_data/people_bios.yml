@@ -1404,22 +1404,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Staff
-  - databaseID: shalewood
-    commonName: Stuart Halewood
-    givenName: Stuart
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: Oceanographic Sampling and Data Analysis
-    scientificDomainText: Oceanographic Sampling and Data Analysis
-    employeeType: ''
-    email: halewood@eri.ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
-    homepage: ''
-    telephoneNumber: 805-893-7295
-    projectRole: Staff
   - databaseID: ewallner
     commonName: Elisa Wallner Halewood
     givenName: Elisa
@@ -1435,6 +1419,22 @@
       I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
     homepage: ''
     telephoneNumber: ''
+    projectRole: Staff
+  - databaseID: shalewood
+    commonName: Stuart Halewood
+    givenName: Stuart
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: Oceanographic Sampling and Data Analysis
+    scientificDomainText: Oceanographic Sampling and Data Analysis
+    employeeType: ''
+    email: halewood@eri.ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
+    homepage: ''
+    telephoneNumber: 805-893-7295
     projectRole: Staff
   - databaseID: narymowycz
     commonName: Nick Jarymowycz
@@ -1513,6 +1513,22 @@
       Barbara CA 93106-6150
     profileText: |
       Frankie manages field work and lab operations for SBC. Using SCUBA, I collect specimens, maintains ongoing experiments, and conducts subtidal photo surveys in combination with in-lab image analysis. I also oversee undergraduate student internships.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Staff
+  - databaseID: eromero
+    commonName: Eduardo Romero
+    givenName: Eduardo
+    surName: Romero
+    advisor: ''
+    scientificDomainString: HFR and Drone Operation
+    scientificDomainText: HFR and Drone Operation
+    employeeType: Staff
+    email: eromero@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      As a Research Specialist II at UC Santa Barbara, I provide technical and operational leadership for several research groups, including the Santa Barbara Coastal LTER. My role bridges the gap between engineering and field science: I manage and maintain the HF Radar network that Is used for measuring ocean currents spanning the Santa Barbara Channel and lead R&D efforts to prototype custom hardware solutions using 3D printing and advanced fabrication. I have also integrated drone technology into our research workflows to expand our aerial data collection capabilities.
     homepage: ''
     telephoneNumber: ''
     projectRole: Staff
