@@ -389,9 +389,9 @@
     surName: Nidzieko
     advisor: ''
     scientificDomainString: Coastal physical oceanography
-    scientificDomainText: 'Coastal oceanography, physical processes in kelp ecosystems,
-      fate and transport of terrestrial material in the coastal ocean '
-    employeeType: 'Assistant Professor '
+    scientificDomainText: Coastal oceanography, physical processes in kelp ecosystems,
+      fate and transport of terrestrial material in the coastal ocean
+    employeeType: Assistant Professor
     email: nidzieko@ucsb.edu
     postalAddress: Department of Geography<br />University of California<br />Santa
       Barbara CA 93106-4060
@@ -1081,21 +1081,8 @@
     email: nataliedornan@ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
       of California<br />Santa Barbara CA 93106
-    profileText: "Natalie received her B.S in Natural Resources and Environmental Management
-      from the University of Hawai῾i at Mānoa (UH), in addition to a Minor's Certificate
-      from the University's Marine Option Program. At UH she gained experience across
-      marine fields including outreach education with Hawai῾i Sea Grant, field experience
-      with the NOAA Pacific Island Fisheries Science Center Marine Turtle Biology and
-      Assessment Program, and as a seagoing oceanographic research assistant aboard
-      cruises with the Hawai῾i Ocean Time-series and Simons Collaboration on Ocean Processes
-      and Ecology. \n\nAfter graduating, Natalie worked for an environmental consulting
-      firm in the San Francisco Bay Area before returning to school to pursue her Master's
-      Degree at UCSB's Bren School of Environmental Science & Management. At Bren, Natalie's
-      Group Project worked with a community-based nonprofit organization on O῾ahu, Hawai῾i
-      to investigate the potential of reducing harmful loads of stormwater runoff into
-      an important bay region on the island. She graduated with her Master's of Environmental
-      Science and Management (MESM) from Bren in the spring of 2020, and is now pursuing
-      her PhD under Dr. Alyson Santoro.\n"
+    profileText: |
+      Natalie received her B.S in Natural Resources and Environmental Management from the University of Hawai῾i at Mānoa (UH), in addition to a Minor's Certificate from the University's Marine Option Program. At UH she gained experience across marine fields including outreach education with Hawaii Sea Grant, field experience with the NOAA Pacific Island Fisheries Science Center Marine Turtle Biology and Assessment Program, and as a seagoing oceanographic research assistant aboard cruises with the Hawaii Ocean Time-series and Simons Collaboration on Ocean Processes and Ecology. After graduating, Natalie worked for an environmental consulting firm in the San Francisco Bay Area before returning to school to pursue her Master's Degree at UCSB's Bren School of Environmental Science & Management. At Bren, Natalie's Group Project worked with a community-based nonprofit organization on O῾ahu, Hawai῾i to investigate the potential of reducing harmful loads of stormwater runoff into an important bay region on the island. She graduated with her Master's of Environmental Science and Management (MESM) from Bren in the spring of 2020, and is now pursuing her PhD under Dr. Alyson Santoro.
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
@@ -1363,13 +1350,30 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Graduate Student
+  - databaseID: avillanueva
+    commonName: Alitzel Villanueva
+    givenName: Alitzel
+    surName: Villanueva
+    advisor: Hofmann
+    scientificDomainString: Kelp forest ecology
+    scientificDomainText: Marine heatwaves, kelp forest ecology, thermal biology, and
+      eco-physiology
+    employeeType: Graduate Student
+    email: alitzelvillanueva@ucsb.edu
+    postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
+      of California<br />Santa Barbara CA 93106-9620
+    profileText: |
+      My research focuses on how ocean condition change, and in particular bottom marine heatwaves, impact the reproduction and physiology of giant kelp along the California coast. More broadly, I am passionate about marine heatwave science and understanding how environmental stressors interact with marine organisms and influence their ecosystems.
+    homepage: ''
+    telephoneNumber: ''
+    projectRole: Graduate Student
   - databaseID: zwelch
     commonName: Zoe Welch
     givenName: Zoe
     surName: Welch
     advisor: Iglesias-Rodriguez
     scientificDomainString: Ocean acidification
-    scientificDomainText: 'My dissertation explores the impacts of ocean acidification
+    scientificDomainText: My dissertation explores the impacts of ocean acidification
       and hypoxia on the health and biology of carbonate-producing marine organisms
       (calcifiers) in California marine systems. Through the lens of calcifiers/calcification,
       I examine how human actions (directly and indirectly) influence broader potential
@@ -1378,7 +1382,7 @@
       implements an interdisciplinary, mixed-method approach combining laboratory experimentation
       with historical and contemporary field observations and datasets. In addition
       to Dr. Debora Iglesias-Rodriguez (Biological Oceanography), I am also advised
-      on environmental history and historical ecology by Dr. Jennifer Martin. '
+      on environmental history and historical ecology by Dr. Jennifer Martin.
     employeeType: Graduate Student
     email: zwelch@.ucsb.edu
     postalAddress: Department of Ecology, Evolution and Marine Biology<br />University
@@ -1404,22 +1408,6 @@
     homepage: ''
     telephoneNumber: ''
     projectRole: Staff
-  - databaseID: ewallner
-    commonName: Elisa Wallner Halewood
-    givenName: Elisa
-    surName: Halewood
-    advisor: ''
-    scientificDomainString: Oceanographic sampling and analysis
-    scientificDomainText: Oceanographic sampling and analysis
-    employeeType: Staff
-    email: wallner@ucsb.edu
-    postalAddress: Marine Science Institute<br />University of California<br />Santa
-      Barbara CA 93106-6150
-    profileText: |
-      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
-    homepage: ''
-    telephoneNumber: ''
-    projectRole: Staff
   - databaseID: shalewood
     commonName: Stuart Halewood
     givenName: Stuart
@@ -1435,6 +1423,22 @@
       As an Associate Development Engineer for the Earth Research Institute (ERI), I collaborate with several research groups at UCSB including SBC LTER. With SBC, I am mainly responsible for mission planning and writing for the Autonomous Underwater Vehicle (AUV) Glider, plus the maintenance, calibration and operation of this system. I also collaborate with Dan Reed's lab on other physical and optical oceanographic instrumentation, mainly handling maintenance, deployment and recovery. I am a small boat captain and backup research diver for the group
     homepage: ''
     telephoneNumber: 805-893-7295
+    projectRole: Staff
+  - databaseID: ewallner
+    commonName: Elisa Wallner Halewood
+    givenName: Elisa
+    surName: Halewood
+    advisor: ''
+    scientificDomainString: Oceanographic sampling and analysis
+    scientificDomainText: Oceanographic sampling and analysis
+    employeeType: Staff
+    email: wallner@ucsb.edu
+    postalAddress: Marine Science Institute<br />University of California<br />Santa
+      Barbara CA 93106-6150
+    profileText: |
+      I am interested in the biogeochemical cycling of dissolved organic carbon (DOC) in the marine environment through heterotrophic bacterioplankton processes.  DOC serves as an organic substrate for heterotrophic microbial production, and as a result of this production organic matter is then re-mineralized.  DOC availability and microbial processes therefore have important implications for the distribution of nutrients in marine ecosystems.  A preliminary study conducted by SBC LTER in 2005 showed that while DOC concentrations were observed to be low in offshore waters of the SB channel (equal to or less than oligotrophic values), in the near shore there was at times a large accumulation of DOC resulting in a striking gradient extending from Mohawk Kelp Forest several km into the Channel.  In the Santa Barbara Coastal ecosystem, a unique case exists in that the continental shelf is extremely narrow (being only a few km wide in areas), allowing greater potential for exchange between near shore rocky reef ecosystems and offshore waters.  In response to these observations, my Masters' research project was designed to assess the temporal and spatial variability of organic nutrients and heterotrophic bacteriplankton dynamics across this near shore shelf system.  16 monthly oceanographic cruises were conducted from January 2008-April 2009 along a transect from Mohawk Kelp Forest 3km into the channel. Measurements of dissolved and particulate organic matter, inorganic nutrients, and bacterioplankton abundance, activity and community structure were carried out.  Results will give a better understanding of biogeochemical cycling of organic matter in this near shore ecosystem.
+    homepage: ''
+    telephoneNumber: ''
     projectRole: Staff
   - databaseID: narymowycz
     commonName: Nick Jarymowycz
