@@ -36,6 +36,7 @@ to do:
 
 
 <script src="https://maps.googleapis.com/maps/api/js?key={{site.google_maps_api_key}}"></script>
+<script>var EDI_API_KEY = "{{site.edi_api_key}}";</script>
 <script src="/assets/js/ext/xml2json.js"></script>
 
 <script src="/assets/js/package/summary.js"></script>

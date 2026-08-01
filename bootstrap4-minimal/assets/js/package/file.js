@@ -51,7 +51,7 @@ class PackageFile {
 			this.data['datatables'].push({
 				name:        extractString(tables[i], 'entityName'),
 				description: extractString(tables[i], 'entityDescription'),
-				url:         extractString(tables[i], 'physical > distribution > online > url'),
+				url:         extractString(tables[i], 'physical > distribution > online > url') + '?key=' + EDI_API_KEY,
 				orientation: extractString(tables[i], 'physical > dataFormat > textFormat > attributeOrientation'),
 				attributes:  attribute_data,
 				constraints: constraint_data,
@@ -71,7 +71,7 @@ class PackageFile {
 			this.data['entities'].push({
 				name:        extractString(entities[i], 'entityName'),
 				description: extractString(entities[i], 'entityDescription'),
-				url:         extractString(entities[i], 'physical > distribution > online > url')
+				url:         extractString(entities[i], 'physical > distribution > online > url') + '?key=' + EDI_API_KEY
 			});
 		}
 	}

@@ -4,7 +4,7 @@ var package = url.searchParams.get('package');
 if (package == null)
 	document.location = "/data/catalog";
 
-var packageUrl = `https://pasta.lternet.edu/package/metadata/eml/${ package.replace(/\./g, "/") }/newest`;
+var packageUrl = `https://pasta.lternet.edu/package/metadata/eml/${ package.replace(/\./g, "/") }/newest?key=${ EDI_API_KEY }`;
 var repoUrl = `https://portal.edirepository.org/nis/mapbrowse?scope=${ package.split('.')[0] }&identifier=${ package.split('.')[1] }`;
 
 var summary  = new PackageSummary();
