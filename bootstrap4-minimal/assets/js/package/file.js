@@ -51,7 +51,7 @@ class PackageFile {
 			this.data['datatables'].push({
 				name:        extractString(tables[i], 'entityName'),
 				description: extractString(tables[i], 'entityDescription'),
-				url:         extractString(tables[i], 'physical > distribution > online > url') + '?key=' + EDI_API_KEY,
+				url:         extractString(tables[i], 'physical > distribution > online > url'),
 				orientation: extractString(tables[i], 'physical > dataFormat > textFormat > attributeOrientation'),
 				attributes:  attribute_data,
 				constraints: constraint_data,
@@ -71,7 +71,7 @@ class PackageFile {
 			this.data['entities'].push({
 				name:        extractString(entities[i], 'entityName'),
 				description: extractString(entities[i], 'entityDescription'),
-				url:         extractString(entities[i], 'physical > distribution > online > url') + '?key=' + EDI_API_KEY
+				url:         extractString(entities[i], 'physical > distribution > online > url')
 			});
 		}
 	}
@@ -113,7 +113,7 @@ class PackageFile {
 						<div style="width: 65%">
 							<div> <strong>Description: </strong>${ tables[i]['description'] }</div>
 							<div> ${ constraints_html } </div>
-							<div> <strong>${ activateLink(tables[i]['url'], 'Download Data File') }</strong> </div>
+							<div> <strong>${ makeDownloadLink(tables[i]['url'], 'Download Data File') }</strong> </div>
 						</div>
 						<table class="table" style="width: 30%; margin-left: 5%;">
 							${
@@ -154,7 +154,7 @@ class PackageFile {
 
 				<div class="collapse ${ onlyone ? 'show' : '' }" id="entities${ i }">
 					<div class="ml-3">${ entities[i]['description'] }</div>
-					<div class="ml-3">${ activateLink(entities[i]['url'], 'Download Data File') }</div>
+					<div class="ml-3">${ makeDownloadLink(entities[i]['url'], 'Download Data File') }</div>
 				</div>
 				<br>
 			`);
@@ -578,6 +578,22 @@ function onMeasureClick(e, id) {
 
 	$('#attribute-modal .modal-body').html(measure.clone());
 	$('#attribute-modal').modal();
+}
+
+// Build a download link that hides the API key from hover/status bar
+function makeDownloadLink(url, title) {
+	if (!url) return '';
+	return `<a href="#" onclick="triggerDownload('${ url }'); return false;">${ title }</a>`;
+}
+
+// Append the API key at click-time and trigger download via a temporary anchor
+function triggerDownload(url) {
+	let a = document.createElement('a');
+	a.href = url + '?key=' + EDI_API_KEY;
+	a.style.display = 'none';
+	document.body.appendChild(a);
+	a.click();
+	document.body.removeChild(a);
 }
 
 // Source: https://stackoverflow.com/a/14919494/8443192
