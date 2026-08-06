@@ -20,7 +20,12 @@ function createCORSRequest(method, url) {
 }
 
 // Make the actual CORS request.
-function makeCorsRequest(url, successCallback, errorCallback) {
+function makeCorsRequest(url, headerDict, successCallback, errorCallback) {
+   if (typeof (headerDict) === 'function') {
+      errorCallback = successCallback;
+      successCallback = headerDict;
+      headerDict = null;
+   }
    var xhr = createCORSRequest("GET", url);
    if (!xhr) {
       alert("CORS not supported");
@@ -39,5 +44,13 @@ function makeCorsRequest(url, successCallback, errorCallback) {
    xhr.onerror = function () {
       errorCallback();
    };
+
+   if (headerDict) {
+      var keys = Object.keys(headerDict);
+      for (var index = 0; index < keys.length; index++) {
+         var key = keys[index];
+         xhr.setRequestHeader(key, headerDict[key]);
+      }
+   }
    xhr.send();
 }

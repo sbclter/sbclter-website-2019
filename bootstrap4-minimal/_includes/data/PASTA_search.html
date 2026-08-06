@@ -31,20 +31,18 @@
   
    
    
-   <div class="">
-<!--    <div style="margin-top: 10px"> -->
+   <div style="margin-top: 10px">
       <input aria-expanded="false" aria-controls="advancedInputs" class="collapse-toggle" name="expanded" type="checkbox"
          value="true" id="advancedToggle" role="button"/>
-      <!-- <label class="lbl-toggle" tabindex="0" for="advancedToggle">
+      <label class="lbl-toggle" tabindex="0" for="advancedToggle">
          Advanced
-      </label> -->
+      </label>
       <p class="small">Refine or filter
          the search above by <strong>Creator</strong> and/or <strong>Year</strong>. </p>
    </div>
 
 
-<!--    <div class="collapsible" id="advancedInputs"> -->
-   <div class="" id="advancedInputs">
+   <div class="collapsible" id="advancedInputs">
       
       <div class="row">
          <!-- Creator -->
@@ -79,31 +77,25 @@
       </div>
          </div>
       
-      <!-- Location 
-         <div class="col-md-3">
+      <!-- Location -->
+         <div class="col-md-4">
       <div class="input-block">
          <i class="fas fa-globe"></i><label class="group-label" for="geo">Location</label>
          <input class="search-input" name="geo" id="geo" placeholder="Sampling Site" type="text" title="The geographic area or site described"/>
       </div>
          </div>
--->      
 
-
-      <!-- Taxon 
-         <div class="col-md-2">
+      <!-- Taxon -->
+         <div class="col-md-4">
       <div class="input-block">
          <i class="fas fa-sitemap"></i><label class="group-label" for="taxon">Taxon</label>
          <input class="search-input" name="taxon" id="taxon" placeholder="Class name, family name, etc." type="text"
             title="Taxonomic name provided by the data submitter">
       </div>
          </div>
-      -->
-  
-      
-      
+
          <div class="col-md-4">
           <!-- CRA -->
-           <!--  
       <div class="input-block">
          <i class="fas fa-leaf"></i>
          <label class="group-label" for="coreArea">LTER Core Area</label>
@@ -117,7 +109,6 @@
             <option value="populations">Populations</option>
          </select>
       </div>
-            -->
             
             <!-- link to browse page  -->
             <table class="table-borderless" style="">		
@@ -193,8 +184,10 @@
 <div id="csvDownload"></div>
 <p>Save this search's resultset as a table (columns = dataset title, creators, publication year, DOI, original packageID) </p>
 
+<!--
 <p>Search URL (format = SOLR) </p>
 <p id="searchUrl"></p>
+-->
 
 
 <!-- TO DO: someday, create a save-query link that goes to this page with the resultset, and can be shared -->
