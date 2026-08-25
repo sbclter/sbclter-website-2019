@@ -126,6 +126,77 @@ input[type='checkbox'].collapse-toggle {
    max-width: 256px;
 }
 
+.search-field-row {
+   align-items: flex-start;
+   border-bottom: 1px solid #dee2e6;
+   margin: 0;
+   padding: 1rem 0;
+}
+
+.search-field-control .input-block {
+   margin: 0;
+   max-width: 320px;
+}
+
+.search-field-control .search-input {
+   display: block;
+   margin: 0;
+   width: 100%;
+}
+
+.search-field-description {
+   color: #555;
+   padding-top: 1.6rem;
+}
+
+.search-field-description p {
+   margin: 0;
+   max-width: 700px;
+}
+
+.year-input-block {
+   max-width: none !important;
+}
+
+.year-fields {
+   display: flex;
+   gap: 1rem;
+   margin-top: 0.5rem;
+}
+
+.year-fields .yeardiv {
+   margin: 0;
+   width: auto;
+}
+
+.year-fields label,
+.year-fields input {
+   display: block;
+}
+
+.year-input-block .daterangetype {
+   margin: 0.75rem 0 0;
+}
+
+.search-actions {
+   display: flex;
+   gap: 0.5rem;
+   padding: 1rem 0;
+}
+
+.browse-alternative {
+   display: flex;
+   gap: 1rem;
+   align-items: baseline;
+   padding-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+   .search-field-description {
+      padding-top: 0.5rem;
+   }
+}
+
 .group-label {
    font-weight: bold;
    margin-left: 7px;

@@ -15,6 +15,7 @@ add links to documents using an existing document as a template.
 
 
 --> 
+{% assign documents_root = "https://" | append: site.url | append: "/external" %}
 <h1>{{ page.title }} </h1>
 
 
@@ -32,10 +33,10 @@ add links to documents using an existing document as a template.
     
 	   <div class="col-md-8">
             <ul>
-                <li><a href="{{site.baseurl}}/external/Documents/Proposals/1999-SBCLTER-proposal.pdf">SBC LTER I (1999)</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Proposals/2006-SBCLTER-proposal.pdf">SBC LTER II (2006)</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Proposals/2012-SBCLTER-proposal.pdf">SBC LTER III (2012)</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Proposals/2018-SBCLTER-proposal.pdf">SBC LTER IV (2018)</a></li>
+                <li><a href="{{ documents_root }}/Documents/Proposals/1999-SBCLTER-proposal.pdf">SBC LTER I (1999)</a></li>
+                <li><a href="{{ documents_root }}/Documents/Proposals/2006-SBCLTER-proposal.pdf">SBC LTER II (2006)</a></li>
+                <li><a href="{{ documents_root }}/Documents/Proposals/2012-SBCLTER-proposal.pdf">SBC LTER III (2012)</a></li>
+                <li><a href="{{ documents_root }}/Documents/Proposals/2018-SBCLTER-proposal.pdf">SBC LTER IV (2018)</a></li>
             </ul>
        </div>
 
@@ -55,50 +56,50 @@ add links to documents using an existing document as a template.
 	   <div class="col-md-8">
            <h3>SBC LTER I (NSF OCE-9982105)</h3>
             <ul>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2001-2002.pdf">SBC LTER Annual Report 2002</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2002-2003.pdf">SBC LTER Annual Report 2003</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Midterm_Review/SBC_LTER_3-yr_report_Vol_1.pdf">SBC LTER Midterm Review Report 2003</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2004.pdf">SBC LTER Annual Report 2004</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2005.pdf">SBC LTER Annual Report 2005</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2006.pdf">SBC LTER Annual Report 2006</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2007.pdf">SBC LTER Annual Report 2007</a></li>
-               <!-- <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Final_Report_2000-2006.pdf">SBC LTER Final Report 2000-2006</a></li> -->
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2001-2002.pdf">SBC LTER Annual Report 2002</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2002-2003.pdf">SBC LTER Annual Report 2003</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Midterm_Review/SBC_LTER_3-yr_report_Vol_1.pdf">SBC LTER Midterm Review Report 2003</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2004.pdf">SBC LTER Annual Report 2004</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2005.pdf">SBC LTER Annual Report 2005</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2006.pdf">SBC LTER Annual Report 2006</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Annual_Report_2007.pdf">SBC LTER Annual Report 2007</a></li>
+               <!-- <li><a href="{{ documents_root }}/Documents/Progress_Reports/1999award/Annual_Reports/SBCLTER_Final_Report_2000-2006.pdf">SBC LTER Final Report 2000-2006</a></li> -->
             </ul>
        <hr/>           
        <h3>SBC LTER II (NSF OCE-0620276)</h3>
             <ul>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year1_2007.pdf">SBC LTER Annual Report 2007</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year2_2008.pdf">SBC LTER Annual Report 2008</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year3_2009.pdf">SBC LTER Annual Report 2009</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Midterm_Review/SBC-LTER_2009_midterm_review_report.pdf">SBC LTER Midterm Review Report 2009</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year4_2010.pdf">SBC LTER Annual Report 2010</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year5_2011.pdf">SBC LTER Annual Report 2011</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year6_2012.pdf">SBC LTER Annual Report 2012</a></li>
-              <!--   <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Final_Report_2006-2012.pdf">SBC LTER Final Report 2006-2012</a></li> -->
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year1_2007.pdf">SBC LTER Annual Report 2007</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year2_2008.pdf">SBC LTER Annual Report 2008</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year3_2009.pdf">SBC LTER Annual Report 2009</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Midterm_Review/SBC-LTER_2009_midterm_review_report.pdf">SBC LTER Midterm Review Report 2009</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year4_2010.pdf">SBC LTER Annual Report 2010</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year5_2011.pdf">SBC LTER Annual Report 2011</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Annual_Report_Year6_2012.pdf">SBC LTER Annual Report 2012</a></li>
+              <!--   <li><a href="{{ documents_root }}/Documents/Progress_Reports/2006award/Annual_Reports/SBCLTER_Final_Report_2006-2012.pdf">SBC LTER Final Report 2006-2012</a></li> -->
             </ul>
        <hr/>       
        <h3>SBC LTER III (NSF OCE-1232779)</h3>
             <ul>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year1_2013.pdf">SBC LTER Annual Report 2013</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year2_2014.pdf">SBC LTER Annual Report 2014</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year3_2015.pdf">SBC LTER Annual Report 2015</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/SBCLTER_2015_midterm_review_report.pdf">SBC LTER Midterm Review Report 2015</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year4_2016.pdf">SBC LTER Annual Report 2016</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year5_2017.pdf">SBC LTER Annual Report 2017</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year6_2018.pdf">SBC LTER Annual Report 2018</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year1_2013.pdf">SBC LTER Annual Report 2013</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year2_2014.pdf">SBC LTER Annual Report 2014</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year3_2015.pdf">SBC LTER Annual Report 2015</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/SBCLTER_2015_midterm_review_report.pdf">SBC LTER Midterm Review Report 2015</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year4_2016.pdf">SBC LTER Annual Report 2016</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year5_2017.pdf">SBC LTER Annual Report 2017</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Annual_Report_Year6_2018.pdf">SBC LTER Annual Report 2018</a></li>
 
-<!--   <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Final_Report_2012-2018.pdf">SBC LTER Final Report 2013-2018</a></li> -->
+<!--   <li><a href="{{ documents_root }}/Documents/Progress_Reports/2012award/Annual_Reports/SBCLTER_Final_Report_2012-2018.pdf">SBC LTER Final Report 2013-2018</a></li> -->
             </ul>
        <hr/>       
                
         <h3>SBC LTER IV (NSF OCE-1831937)</h3>
             <ul>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year1_2019.pdf">SBC LTER Annual Report 2019</a></li>
-                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year2_2020.pdf">SBC LTER Annual Report 2020</a></li>
-                <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year3_2021.pdf">SBC LTER Annual Report 2021</a></li>
-                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/SBCLTER_2021_midterm_review_report.pdf">SBC LTER Midterm Review Report 2021</a></li>
-                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year4_2022.pdf">SBC LTER Annual Report 2022</a></li>
-                 <li><a href="{{site.baseurl}}/external/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year5_2023.pdf">SBC LTER Annual Report 2023</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year1_2019.pdf">SBC LTER Annual Report 2019</a></li>
+                 <li><a href="{{ documents_root }}/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year2_2020.pdf">SBC LTER Annual Report 2020</a></li>
+                <li><a href="{{ documents_root }}/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year3_2021.pdf">SBC LTER Annual Report 2021</a></li>
+                 <li><a href="{{ documents_root }}/Documents/Progress_Reports/2018award/SBCLTER_2021_midterm_review_report.pdf">SBC LTER Midterm Review Report 2021</a></li>
+                 <li><a href="{{ documents_root }}/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year4_2022.pdf">SBC LTER Annual Report 2022</a></li>
+                 <li><a href="{{ documents_root }}/Documents/Progress_Reports/2018award/Annual_Reports/SBCLTER_Annual_Report_Year5_2023.pdf">SBC LTER Annual Report 2023</a></li>
 
             </ul>
        <hr/>   

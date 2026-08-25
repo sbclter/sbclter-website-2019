@@ -20,7 +20,6 @@ plugins_dir: _plugins
 # 2. add your API key.  
 # the config.yml file is ignored by git
 google_maps_api_key: INSERT_YOUR_API_KEY
-edi_api_key: INSERT_YOUR_EDI_API_KEY
 
 page_gen:
   - data: 'people_bios'

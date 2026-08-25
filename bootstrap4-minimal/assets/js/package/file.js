@@ -71,7 +71,10 @@ class PackageFile {
 			this.data['entities'].push({
 				name:        extractString(entities[i], 'entityName'),
 				description: extractString(entities[i], 'entityDescription'),
-				url:         extractString(entities[i], 'physical > distribution > online > url')
+				url:         extractString(entities[i], 'physical > distribution > online > url'),
+				physical: {
+					objectName: extractString(entities[i], 'physical > objectName')
+				}
 			});
 		}
 	}
@@ -113,7 +116,7 @@ class PackageFile {
 						<div style="width: 65%">
 							<div> <strong>Description: </strong>${ tables[i]['description'] }</div>
 							<div> ${ constraints_html } </div>
-							<div> <strong>${ makeDownloadLink(tables[i]['url'], 'Download Data File') }</strong> </div>
+							<div> <strong>${ this.buildDownloadControl(tables[i]['url'], 'datatable', i) }</strong> </div>
 						</div>
 						<table class="table" style="width: 30%; margin-left: 5%;">
 							${
@@ -154,7 +157,7 @@ class PackageFile {
 
 				<div class="collapse ${ onlyone ? 'show' : '' }" id="entities${ i }">
 					<div class="ml-3">${ entities[i]['description'] }</div>
-					<div class="ml-3">${ makeDownloadLink(entities[i]['url'], 'Download Data File') }</div>
+					<div class="ml-3">${ this.buildDownloadControl(entities[i]['url'], 'entity', i) }</div>
 				</div>
 				<br>
 			`);
@@ -165,6 +168,57 @@ class PackageFile {
 			$(this).find('.icon.collapse-icon').toggleClass('hidden');
 			$(this).find('.icon.expand-icon').toggleClass('hidden');
 		});
+
+		element.find('.download-data-file').on('click', async (e) => {
+			let button = $(e.currentTarget);
+			let items = button.data('file-type') == 'datatable' ? tables : entities;
+			let item = items[button.data('file-index')];
+			let originalText = button.text();
+
+			button.prop('disabled', true).text('Downloading...');
+			try {
+				await this.downloadDataFile(item.url, item.physical.objectName);
+			}
+			catch (err) {
+				console.error(err);
+				window.alert('Unable to download the data file. Please try again later.');
+			}
+			finally {
+				button.prop('disabled', false).text(originalText);
+			}
+		});
+	}
+
+	buildDownloadControl(url, fileType, fileIndex) {
+		try {
+			if (new URL(url, window.location.href).hostname == 'pasta.lternet.edu') {
+				return `<button type="button" class="btn btn-link p-0 align-baseline download-data-file" data-file-type="${ fileType }" data-file-index="${ fileIndex }">Download Data File</button>`;
+			}
+		}
+		catch (err) {
+			console.error(err);
+		}
+
+		return activateLink(url, 'Download Data File');
+	}
+
+	async downloadDataFile(url, filename) {
+		let response = await fetch(url, { credentials: 'include' });
+		if (!response.ok)
+			throw new Error(`Download failed with status ${ response.status }.`);
+
+		let blobUrl = URL.createObjectURL(await response.blob());
+		let link = document.createElement('a');
+		link.href = blobUrl;
+		link.download = filename || 'data-file';
+		link.style.display = 'none';
+		document.body.appendChild(link);
+		link.click();
+		link.remove();
+
+		setTimeout(function () {
+			URL.revokeObjectURL(blobUrl);
+		}, 0);
 	}
 
 
@@ -578,22 +632,6 @@ function onMeasureClick(e, id) {
 
 	$('#attribute-modal .modal-body').html(measure.clone());
 	$('#attribute-modal').modal();
-}
-
-// Build a download link that hides the API key from hover/status bar
-function makeDownloadLink(url, title) {
-	if (!url) return '';
-	return `<a href="#" onclick="triggerDownload('${ url }'); return false;">${ title }</a>`;
-}
-
-// Append the API key at click-time and trigger download via a temporary anchor
-function triggerDownload(url) {
-	let a = document.createElement('a');
-	a.href = url + '?key=' + EDI_API_KEY;
-	a.style.display = 'none';
-	document.body.appendChild(a);
-	a.click();
-	document.body.removeChild(a);
 }
 
 // Source: https://stackoverflow.com/a/14919494/8443192

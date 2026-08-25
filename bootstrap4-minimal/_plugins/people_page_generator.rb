@@ -1,5 +1,5 @@
 # coding: utf-8
-# Generate pages from individual records in yml files
+# Generate people pages from individual records in yml files
 # (c) 2014-2016 Adolfo Villafiorita
 # Distributed under the conditions of the MIT License
 
@@ -98,6 +98,9 @@ module Jekyll
             # - filter_condition evals a ruby expression
             records = records.select { |r| r[data_spec['filter']] } if data_spec['filter']
             records = records.select { |record| eval(data_spec['filter_condition']) } if data_spec['filter_condition']
+
+            # A page name maps to one output path, even when a person has multiple roles.
+            records = records.uniq { |record| record[name] }
 
             records.each do |record|
               site.pages << DataPage.new(site, site.source, index_files_for_this_data, dir, record, name, template, extension)

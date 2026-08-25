@@ -4,7 +4,7 @@ var package = url.searchParams.get('package');
 if (package == null)
 	document.location = "/data/catalog";
 
-var packageUrl = `https://pasta.lternet.edu/package/metadata/eml/${ package.replace(/\./g, "/") }/newest?key=${ EDI_API_KEY }`;
+var packageUrl = `https://pasta.lternet.edu/package/metadata/eml/${ package.replace(/\./g, "/") }/newest`;
 var repoUrl = `https://portal.edirepository.org/nis/mapbrowse?scope=${ package.split('.')[0] }&identifier=${ package.split('.')[1] }`;
 
 var summary  = new PackageSummary();
@@ -330,6 +330,8 @@ function loadXMLDoc(fileUrl, onReady, onError) {
 		xhttp = new XMLHttpRequest();
 	xhttp.timeout = 5000;
 	xhttp.open("GET", fileUrl, true);
+
+	xhttp.withCredentials = true; 
 
 	if (false || !!document.documentMode)
 		try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11

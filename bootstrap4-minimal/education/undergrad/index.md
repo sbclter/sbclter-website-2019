@@ -26,7 +26,7 @@ description: describes undergrad education at SBC LTER. Includes the REEF and RE
    		</div>
 
   <div class="col-md-8">
-    		<p>These internships are for students interested in kelp forest ecology, marine science and/or scientific SCUBA diving.If helping run laboratory experiments and participating in field research, including beach surveys and scuba diving, is something of interest to you, please fill out our <a href="{{site.baseurl}}/external/Documents/Other/Volunteer_Application_and_Waiver.pdf">SBC volunteer application form</a>. We encourage all motivated students to apply if you hope to gain invaluable hands-on experience in a marine science lab! If you have any questions about the application process, please do not hesitate to email <a href="mailto:dambat@ucsb.edu" target="_blank">Darrin Ambat</a>.
+    		<p>These internships are for students interested in kelp forest ecology, marine science and/or scientific SCUBA diving.If helping run laboratory experiments and participating in field research, including beach surveys and scuba diving, is something of interest to you, please visit our <a href="{{site.baseurl}}/community/opportunity">opportunity page</a>. We encourage all motivated students to apply if you hope to gain invaluable hands-on experience in a marine science lab! If you have any questions about the application process, please do not hesitate to email <a href="mailto:njarymowycz@umail.ucsb.edu" target="_blank">Nicholas Jarymowycz</a>.
  </p>
 		</div>
 </div>
@@ -34,17 +34,17 @@ description: describes undergrad education at SBC LTER. Includes the REEF and RE
 <br>
 <hr/>
 
-<h2>DIVErsity - Promoting Diversity in the Marine Sciences</h2>
+<h2>onBOARD - Broadening Opportunities Across Research Diving</h2>
 <br>
 
 <div class="row">
 
 
   <div class="col-md-8">
-    		<p>The <a href="https://msi.ucsb.edu/diversity-equity-and-inclusion/diversity-diving">DIVErsity in diving program</a> at MSI was developed to eliminate barriers for students interested in marine field research by providing financial support, mentorship, and guidance for students looking to become scientific divers. </p>
+	    		<p>The <a href="https://msi.ucsb.edu/opportunities/onboard">onBOARD Program</a> at MSI helps eliminate barriers for students interested in marine field work by providing financial support, mentorship, and guidance for those looking to become scientific divers and enter the world of underwater marine research. No previous underwater experience is required.</p>
 		</div>
 		<div class='col-md-4'>
-	       <img class="img-thumbnail img-responsive img-center" src="/assets/img/community/KaitlinJ.jpeg"  alt="UCSB Students receive educational training at The REEF" style="float:right; PADDING-LEFT: 15px" width = "100%">       
+	       <img class="img-thumbnail img-responsive img-center" src="/assets/img/community/KaitlinJ.jpeg"  alt="UCSB student participating in scientific diver training" style="float:right; PADDING-LEFT: 15px" width = "100%">       
    		</div>
 </div>
 
@@ -73,7 +73,7 @@ description: describes undergrad education at SBC LTER. Includes the REEF and RE
 
 <div class="row">
 					<div class='col-md-8'>
-    		<p>Udergraduates from the SBC program pool and elsewhere are selected to participate in our <a href="https://www.nsf.gov/crssprgm/reu/">NSF sponsored Research Experience for Undergraduates (REU)</a> program  and in several other mentorship programs sponsored by the University of California, including <a href="https://fuerte.eemb.ucsb.edu/">FUERTE</a>, a new NSF sponsored undergraduate research program at UCSB. REU and FUERTE students work closely with SBC researchers on a wide range of topics and most choose to pursue an advanced degree following their undergraduate education.</p>
+    		<p>Udergraduates from the SBC program pool and elsewhere are selected to participate in our <a href="https://www.nsf.gov/crssprgm/reu/">NSF sponsored Research Experience for Undergraduates (REU)</a> program. REU students work closely with SBC researchers on a wide range of topics and most choose to pursue an advanced degree following their undergraduate education.</p>
 		</div>
 		<div class="col-md-4">
 	       <img class="img-thumbnail img-responsive img-center" src="/assets/img/policies/Kristen_Jess_Kyle_REUexperiment2017.jpg"  alt="Generic placeholder image" style="float:right; PADDING-LEFT: 15px" />       
@@ -87,7 +87,7 @@ description: describes undergrad education at SBC LTER. Includes the REEF and RE
 
 <div class="row">
 					<div>
-    		<p><a href="https://msi.ucsb.edu/diversity-equity-and-inclusion">UCSB MSI</a> has a list of undergrad opportunities and programs along with open positions.</p>
+    		<p><a href="https://msi.ucsb.edu/opportunities/overview">UCSB MSI</a> has a list of undergrad opportunities and programs along with open positions.</p>
 		</div>
 		
 </div>

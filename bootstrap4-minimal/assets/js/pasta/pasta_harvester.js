@@ -45,7 +45,7 @@ function parsePeople(doc) {
 function fetchChunk(uri) {
    console.log(uri);
    return new Promise(function (resolve, reject) {
-      fetch(uri).then(function (response) {
+      fetch(uri, { credentials: "include" }).then(function (response) {
          response.text().then(function (text) {
             parseString(text, function (err, result) {
                let chunk = {};
@@ -115,7 +115,7 @@ function main() {
    const baseUri = makeBaseUri();
    let start = 0;
    let uri = baseUri + "&start=" + start;
-   fetch(uri).then(function (response) {
+   fetch(uri, { credentials: "include" }).then(function (response) {
       response.text().then(function (text) {
          parseString(text, function (err, result) {
             const count = result["resultset"]["$"]["numFound"];

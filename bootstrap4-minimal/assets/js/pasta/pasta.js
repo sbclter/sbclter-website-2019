@@ -3,7 +3,7 @@
 "use strict";
 
 var PASTA_CONFIG = {
-   "query_base_url": "https://pasta.lternet.edu/package/search/eml?", // PASTA server
+   "server": "https://pasta.lternet.edu/package/search/eml?", // PASTA server
    "filter": "&fq=scope:knb-lter-sbc", // Filter results for an LTER site
    "limit": 20, // Max number of results to retrieve per page
    "resultsElementId": "searchResults", // Element to contain results
@@ -13,11 +13,7 @@ var PASTA_CONFIG = {
    "pagesTopElementId": "paginationTop", // Element to display result page links above results
    "pagesBotElementId": "paginationBot", // Element to display result page links below results
    "showPages": 7, // MUST BE ODD NUMBER! Max number of page links to show
-   "sortDiv": "sortDiv", // Element with interactive sort options
-   "useCiteService": true, // true if we should use EDI Cite service to build citations instead of building from PASTA results
-   "UseDoiLinks": true, // true if we should use DOI links for datasets that have a DOI, false to use PASTA landing page links
-   "useLocalCatalogLinks": true, // SBC specific: true if we should link to the local catalog page
-   "EdiApiAccessKey": "" // API key for EDI search
+   "sortDiv": "sortDiv" // Element with interactive sort options
 };
 
 var QUERY_URL = ""; // Query URL without row limit or start parameter
@@ -33,116 +29,19 @@ function getParameterByName(name, url) {
    return decodeURIComponent(results[2].replace(/\+/g, " ")).trim();
 }
 
-// Parse citation dictionary into HTML
-function buildHtml(citations) {
+// Parse Pasta search results into HTML
+function parsePastaResults(xmlDoc) {
+   var docs = xmlDoc.getElementsByTagName("document");
    var html = [];
-   var citationCount = Object.keys(citations).length;
-   var portal_base = "https://portal.edirepository.org/nis/mapbrowse?packageid=";
-
-   for (var i = 0; i < citationCount; i++) {
-      var citation = citations[i];
-      var authors = citation["authors"];
-      var date = (citation["pub_year"]) ? " Published " + citation["pub_year"] + "" : "";
-      var link = "";
-      
-      if (PASTA_CONFIG["useLocalCatalogLinks"] && citation["pid"]) {
-         try {
-            var temp1 = citation["pid"];
-            var temp2 = temp1.split(".", 2);
-            var scope_docid = temp2.join(".");
-            link = "../package/?package=" + scope_docid;
-         } catch (err) {
-            link = portal_base + citation["pid"];
-         }
-      } else if (PASTA_CONFIG["UseDoiLinks"] && citation["doi"]) {
-         // default ESIP formatting has trailing period after DOI
-         link = citation["doi"].slice(0, -1);
-         if (link.slice(0, 4) !== "http") link = "https://doi.org/" + link;
-      } else {
-         link = portal_base + citation["pid"];
-      }
-
-      var titleTag = (PASTA_CONFIG["useLocalCatalogLinks"]) ? 
-         '<a href="' + link + '">' + citation["title"] + '</a>' :
-         '<a rel="external noopener" href="' + link + '" target="_blank" aria-label="open data in new tab">' + citation["title"] + '</a>';
-
-      var row = '<p><span class="dataset-title">' + titleTag +
-         '</span><br><span class="dataset-author">' + authors + date +
-         '</span></p>';
-      html.push(row);
+   var sortDiv = document.getElementById(PASTA_CONFIG["sortDiv"]);
+   if (sortDiv) {
+      if (docs.length)
+         sortDiv.style.display = "block";
+      else
+         sortDiv.style.display = "none";
    }
-   if (citationCount) {
-      return html.join("\n");
-   } else {
-      return "<p>Your search returned no results.</p>";
-   }
-}
-
-// Download citations to a dictionary keyed by package ID
-function getCitations(packageIds) {
-   var header = {
-      "Accept": "application/json"
-   };
-   var callsRemaining = packageIds.length;
-   var citations = {};
-
-   packageIds.forEach(function (pid, index) {
-      var uri = "https://cite.edirepository.org/cite/" + pid;
-      if (PASTA_CONFIG["EdiApiAccessKey"]) {
-         uri += "?key=" + PASTA_CONFIG["EdiApiAccessKey"];
-      }
-      
-      makeCorsRequest(
-         uri,
-         header,
-         (function (index) { // enable the callback to know which package this is
-            return function (headers, response) {
-               try {
-                  var citation = JSON.parse(response);
-                  citation["pid"] = packageIds[index];
-                  citations[index] = citation;
-               } catch (e) {
-                  console.error("Error parsing citation for " + packageIds[index]);
-               }
-
-               --callsRemaining;
-               if (callsRemaining <= 0) {
-                  var html = buildHtml(citations);
-                  document.getElementById(PASTA_CONFIG["resultsElementId"]).innerHTML = html;
-                  showLoading(false);
-               }
-            };
-         })(index), // immediately call the closure with the current index value
-         errorCallback
-      );
-   });
-}
-
-// Build dataset citations using Cite service, with package IDs from PASTA
-function buildCitationsFromCite(pastaDocs) {
-   var packageIds = [];
-   for (var i = 0; i < pastaDocs.length; i++) {
-      var doc = pastaDocs[i];
-      packageIds.push(doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue);
-   }
-   if (packageIds.length) {
-      getCitations(packageIds);
-   } else {
-      var resultsEl = document.getElementById(PASTA_CONFIG["resultsElementId"]);
-      if (resultsEl) {
-         resultsEl.innerHTML = "<p>Your search returned no results.</p>";
-      }
-      showLoading(false);
-   }
-}
-
-// Build dataset citations from PASTA XML
-function buildCitationsFromPasta(pastaDocs) {
-   var html = [];
-   var portal_base = "https://portal.edirepository.org/nis/mapbrowse?packageid=";
-
-   for (var i = 0; i < pastaDocs.length; i++) {
-      var doc = pastaDocs[i];
+   for (var i = 0; i < docs.length; i++) {
+      var doc = docs[i];
       var authorNodes = doc.getElementsByTagName("author");
       var authors = [];
       for (var authorIndex = 0; authorIndex < authorNodes.length; authorIndex++) {
@@ -157,63 +56,64 @@ function buildCitationsFromPasta(pastaDocs) {
          date = "";
       }
       var link = "";
-      var pid = doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue;
-
-      if (PASTA_CONFIG["useLocalCatalogLinks"]) {
-         try {
-            var temp2 = pid.split(".", 2);
-            var scope_docid = temp2.join(".");
-            link = "../package/?package=" + scope_docid;
-         } catch (err) {
-            link = portal_base + pid;
+/*     // if there is a doi, use that for the link. else, use the pasta pkg link.	
+        try {
+         var doi = doc.getElementsByTagName("doi")[0].childNodes[0].nodeValue;
+         if (doi.slice(0, 4) === "doi:") {
+            doi = doi.slice(4);
          }
-      } else if (PASTA_CONFIG["UseDoiLinks"]) {
-         try {
-            var doi = doc.getElementsByTagName("doi")[0].childNodes[0].nodeValue;
-            if (doi.slice(0, 4) === "doi:") {
-               doi = doi.slice(4);
-            }
-            link = "https://doi.org/" + doi;
-         } catch (err) {
-            link = portal_base + pid;
-         }
-      } else {
-         link = portal_base + pid;
-      }
+         link = "http://dx.doi.org/" + doi;
+      } catch (err) {
+         link = ("https://portal.edirepository.org/nis/mapbrowse?packageid=" +
+            doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue);
+      } 
+       var title = '<a rel="external" href="' + link + '" target="_blank">' +
+         doc.getElementsByTagName("title")[0].childNodes[0].nodeValue.trim() + '</a>';
+      // end or original code (DOI and external link.
+*/
 
-      var titleText = doc.getElementsByTagName("title")[0].childNodes[0].nodeValue.trim();
-      var titleTag = (PASTA_CONFIG["useLocalCatalogLinks"]) ?
-         '<a href="' + link + '">' + titleText + '</a>' :
-         '<a rel="external noopener" href="' + link + '" target="_blank" aria-label="open data in new tab">' + titleText + '</a>';
 
-      var row = '<p><span class="dataset-title">' + titleTag +
+      // SBC code for a link to our local catalog
+      // first try {} is to build a local link. on err use portal link
+      try {
+         var temp1 = doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue;
+	 var temp2 = temp1.split(".",2);
+         var scope_docid = temp2.join(".");         
+
+	// not sure how to spec the host name. this path is relative. 
+         link = "../package/?package=" + scope_docid;
+      } catch (err) {
+         link = ("https://portal.edirepository.org/nis/mapbrowse?packageid=" +
+            doc.getElementsByTagName("packageid")[0].childNodes[0].nodeValue);
+      } 
+
+      // link stays on this tab
+      var title = '<a href="' + link + '">' +
+         doc.getElementsByTagName("title")[0].childNodes[0].nodeValue.trim() + '</a>';
+
+      // end of SBC edit
+
+
+      var row = '<p><span class="dataset-title">' + title +
          '</span><br><span class="dataset-author">' + names + date +
          '</span></p>';
       html.push(row);
    }
-   var resultHtml;
-   if (html.length) {
-      resultHtml = html.join("\n");
+   if (docs.length) {
+      return html.join("\n");
    } else {
-      resultHtml = "<p>Your search returned no results.</p>";
+      return "<p>Your search returned no results.</p>";
    }
-   var resultsEl = document.getElementById(PASTA_CONFIG["resultsElementId"]);
-   if (resultsEl) {
-      resultsEl.innerHTML = resultHtml;
-   }
-   showLoading(false);
 }
 
 function showLoading(isLoading) {
    var x = document.getElementById("loading-div");
-   if (x) {
-      if (isLoading) {
-         document.body.style.cursor = "wait";
-         x.style.display = "block";
-      } else {
-         document.body.style.cursor = "default";
-         x.style.display = "none";
-      }
+   if (isLoading) {
+      document.body.style.cursor = "wait";
+      x.style.display = "block";
+   } else {
+      document.body.style.cursor = "default";
+      x.style.display = "none";
    }
 }
 
@@ -294,7 +194,7 @@ function downloadCsv(count) {
 
    for (var i = 0; i < calls; i++) {
       var url = baseUri + start;
-      makeCorsRequest(url, null, addChunk, errorCallback);
+      makeCorsRequest(url, addChunk, errorCallback);
       start += limit;
    }
 
@@ -310,36 +210,13 @@ function successCallback(headers, response) {
       return html;
    }
 
+   showLoading(false);
+
    // Write results to page
    var parser = new DOMParser();
    var xmlDoc = parser.parseFromString(response, "text/xml");
-   
-   // Safety check for valid PASTA XML
-   var resultSetNodes = xmlDoc.getElementsByTagName("resultset");
-   if (resultSetNodes.length === 0) {
-      console.error("Invalid PASTA XML response. Full response:", response);
-      var resultsEl = document.getElementById(PASTA_CONFIG["resultsElementId"]);
-      if (resultsEl) {
-         resultsEl.innerHTML = "<p>Error: The server returned an unexpected response format. Ensure your API key and filter settings are correct.</p>";
-      }
-      showLoading(false);
-      return;
-   }
-   
-   var docs = xmlDoc.getElementsByTagName("document");
-   var sortDiv = document.getElementById(PASTA_CONFIG["sortDiv"]);
-   if (sortDiv) {
-      if (docs.length)
-         sortDiv.style.display = "block";
-      else
-         sortDiv.style.display = "none";
-   }
-   if (PASTA_CONFIG["useCiteService"]) {
-      buildCitationsFromCite(docs);
-   } else {
-      buildCitationsFromPasta(docs);
-   }
-   var count = parseInt(resultSetNodes[0].getAttribute("numFound"));
+   setHtml(PASTA_CONFIG["resultsElementId"], parsePastaResults(xmlDoc));
+   var count = parseInt(xmlDoc.getElementsByTagName("resultset")[0].getAttribute("numFound"));
    setHtml(PASTA_CONFIG["csvElementId"], makeCsvLink(count));
 
    // Add links to additional search result pages if necessary
@@ -375,12 +252,9 @@ function showUrl(url) {
 function searchPasta(limit, pageStart) {
    var params = "&rows=" + limit + "&start=" + pageStart;
    var url = QUERY_URL + params;
-   if (PASTA_CONFIG["EdiApiAccessKey"]) {
-      url += "&key=" + PASTA_CONFIG["EdiApiAccessKey"];
-   }
-   // showUrl(url);
+   showUrl(url);
    showLoading(true);
-   makeCorsRequest(url, null, successCallback, errorCallback);
+   makeCorsRequest(url, successCallback, errorCallback);
 }
 
 function initCollapsible(expanded) {
@@ -440,17 +314,19 @@ function clearParams() {
    if (areas && areas.length > 0) {
       areas[0].selected = true;
    }
-   
-   var dataSearchForm = document.forms.dataSearchForm;
-   if (dataSearchForm.q) dataSearchForm.q.value = "";
-   if (dataSearchForm.creator) dataSearchForm.creator.value = "";
-   if (dataSearchForm.identifier) dataSearchForm.identifier.value = "";
-   if (dataSearchForm.taxon) dataSearchForm.taxon.value = "";
-   if (dataSearchForm.geo) dataSearchForm.geo.value = "";
-   if (dataSearchForm.data_year) dataSearchForm.data_year.checked = false;
+
+   const dataSearchForm = document.forms.dataSearchForm;
+
+   // Checks each form item exists before setting its value
+   if (dataSearchForm.search_term)      dataSearchForm.search_term.value = "";
+   if (dataSearchForm.creator)      dataSearchForm.creator.value = "";
+   if (dataSearchForm.identifier)   dataSearchForm.identifier.value = "";
+   if (dataSearchForm.taxon)        dataSearchForm.taxon.value = "";
+   if (dataSearchForm.geo)          dataSearchForm.geo.value = "";
+   if (dataSearchForm.data_year)    dataSearchForm.data_year.checked = false;
    if (dataSearchForm.publish_year) dataSearchForm.publish_year.checked = false;
-   if (dataSearchForm.min_year) dataSearchForm.min_year.value = "1900";
-   if (dataSearchForm.max_year) dataSearchForm.max_year.value = "2020";
+   if (dataSearchForm.min_year)     dataSearchForm.min_year.value = "1900";
+   if (dataSearchForm.max_year)     dataSearchForm.max_year.value = "2018";
 }
 
 // Selects the desired value in the Select control. If value is not in the
@@ -512,11 +388,11 @@ window.onload = function () {
       function makeDateQuery(sYear, eYear, datayear, pubyear) {
          var query = "";
          if (datayear && !pubyear) {
-            query = "&fq=(singledate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+" + eYear + "-12-31T00:00:00Z/DAY]+OR+(begindate:[*+TO+" + eYear + "-12-31T00:00:00Z/DAY+AND+enddate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+NOW]))";
+            query = "&fq=(singledate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+" + eYear + "-12-31T00:00:00Z/DAY]+OR+(begindate:[*+TO+" + eYear + "-12-31T00:00:00Z/DAY]+AND+enddate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+NOW]))";
          } else if (pubyear && !datayear) {
             query = "&fq=pubdate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+" + eYear + "-12-31T00:00:00Z/DAY]";
          } else if (datayear && pubyear) {
-            query = "&fq=(pubdate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+" + eYear + "-12-31T00:00:00Z/DAY]+AND+(singledate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+NOW]+OR+(begindate:[*+TO+" + eYear + "-12-31T00:00:00Z/DAY]+AND+enddate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+NOW])))";
+            query = "&fq=(pubdate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+" + eYear + "-12-31T00:00:00Z/DAY]+AND+(singledate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+" + eYear + "-12-31T00:00:00Z/DAY]+OR+(begindate:[*+TO+" + eYear + "-12-31T00:00:00Z/DAY]+AND+enddate:[" + sYear + "-01-01T00:00:00Z/DAY+TO+NOW])))";
          }
          return query;
       }
@@ -539,7 +415,7 @@ window.onload = function () {
             return '"' + text + '"';
       }
 
-      var base = PASTA_CONFIG["query_base_url"];
+      var base = PASTA_CONFIG["server"];
       var fields = ["title",
          "pubdate",
          "doi",
@@ -553,16 +429,15 @@ window.onload = function () {
       var query = "&q=" + userQuery;
       if (creator) query += "+AND+(author:" + addQuotes(creator) + "+OR+organization:" + addQuotes(creator) + ")";
       if (pkgId) {
-         var escapedPkgId = pkgId.replace(/:/g, "\\:");
-         query += "+AND+(doi:*" + escapedPkgId + "*+OR+packageid:*" + escapedPkgId + "*)";
+         pkgId = pkgId.replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "");
+         if (/^10\.\d{4,9}\//.test(pkgId)) pkgId = "doi:" + pkgId;
+         if (/^\d+$/.test(pkgId)) pkgId = "knb-lter-sbc." + pkgId;
+
+         var identifier = '"' + pkgId.replace(/\\/g, "\\\\").replace(/"/g, '\\"') + '"';
+         query += "+AND+(doi:" + identifier + "+OR+packageid:" + identifier + "+OR+id:" + identifier + ")";
       }
       if (taxon) query += "+AND+taxonomic:" + addQuotes(taxon);
       if (geo) query += "+AND+geographicdescription:" + addQuotes(geo);
-
-      // If we have additional filters and the main query is '*', remove the '*'
-      if (query.startsWith("&q=*+AND+")) {
-         query = "&q=" + query.substring(9);
-      }
       var dateQuery = makeDateQuery(sYear, eYear, datayear, pubyear);
       var sort = makeSortParam(sortBy);
       var url = base + encodeURI(params + query + dateQuery + sort);
@@ -584,8 +459,7 @@ window.onload = function () {
    var sortParam = getParameterByName("sort");
    if (!pageStart) pageStart = 0;
 
-   if (document.forms.dataSearchForm.q)
-      document.forms.dataSearchForm.q.value = query;
+   document.forms.dataSearchForm.q.value = query;
    if (document.forms.dataSearchForm.creator)
       document.forms.dataSearchForm.creator.value = creator;
    if (document.forms.dataSearchForm.identifier)
@@ -602,14 +476,13 @@ window.onload = function () {
    var sortBy = setSelectValue("visibleSort", sortParam);
    if (sortBy && document.forms.dataSearchForm.sort)
       document.forms.dataSearchForm.sort.value = sortBy;
-   else if (document.forms.dataSearchForm.sort)
+   else
       sortBy = document.forms.dataSearchForm.sort.value;
 
    if (isInteger(sYear) && document.forms.dataSearchForm.min_year)
       document.forms.dataSearchForm.min_year.value = sYear;
    else if (document.forms.dataSearchForm.min_year)
       sYear = document.forms.dataSearchForm.min_year.value;
-   
    if (!isInteger(eYear)) eYear = (new Date()).getFullYear()
    if (document.forms.dataSearchForm.max_year)
       document.forms.dataSearchForm.max_year.value = eYear;
@@ -622,9 +495,7 @@ window.onload = function () {
    searchPasta(PASTA_CONFIG["limit"], pageStart);
 
    if ("PASTA_LOOKUP" in window) {
-      if (document.getElementById("creator"))
-         makeAutocomplete("creator", PASTA_LOOKUP["author"]);
-      if (document.getElementById("taxon"))
-         makeAutocomplete("taxon", PASTA_LOOKUP["taxonomic"]);
+      makeAutocomplete("creator", PASTA_LOOKUP["author"]);
+      makeAutocomplete("taxon", PASTA_LOOKUP["taxonomic"]);
    }
 };

@@ -5,27 +5,19 @@
 function createCORSRequest(method, url) {
    var xhr = new XMLHttpRequest();
    if ("withCredentials" in xhr) {
-      // XHR for Chrome/Firefox/Opera/Safari.
-      //url = encodeURI(url);
       xhr.open(method, url, true);
+      xhr.withCredentials = true;
    } else if (typeof XDomainRequest != "undefined") {
-      // XDomainRequest for IE.
       xhr = new XDomainRequest();
       xhr.open(method, url);
    } else {
-      // CORS not supported.
       xhr = null;
    }
    return xhr;
 }
 
 // Make the actual CORS request.
-function makeCorsRequest(url, headerDict, successCallback, errorCallback) {
-   if (typeof (headerDict) === 'function') {
-      errorCallback = successCallback;
-      successCallback = headerDict;
-      headerDict = null;
-   }
+function makeCorsRequest(url, successCallback, errorCallback) {
    var xhr = createCORSRequest("GET", url);
    if (!xhr) {
       alert("CORS not supported");
@@ -44,13 +36,5 @@ function makeCorsRequest(url, headerDict, successCallback, errorCallback) {
    xhr.onerror = function () {
       errorCallback();
    };
-
-   if (headerDict) {
-      var keys = Object.keys(headerDict);
-      for (var index = 0; index < keys.length; index++) {
-         var key = keys[index];
-         xhr.setRequestHeader(key, headerDict[key]);
-      }
-   }
    xhr.send();
 }
