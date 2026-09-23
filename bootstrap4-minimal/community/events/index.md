@@ -25,17 +25,40 @@ description: news and event in SBCLTER
         <div id="current" class="container tab-pane active"><br>
             <h3 class="header-style">News</h3>
             <div class="content-style">
-               <ul>                   
-                    <li><a href="https://news.ucsb.edu/2025/022023/kelp-forests-are-connected-local-beach-ecosystems" target="offline">2025-09-16 Kelp forests strongly influence nearby sandy beach ecosystems: beaches within ~10 km of kelp beds receive kelp wrack that supports food webs, especially in winter, highlighting the importance of conserving kelp for beach biodiversity and ecosystem function.</a></li>  
-                    <li><a href="https://caseagrant.ucsd.edu/news/studying-climate-potential-californias-dunes" target="offline">2024-09-10 Coastal dunes and nature-based adaptation to environmental change: SBC investigator Ian Walker is leading  a $1.9 million grant focusing on dunes as nature-based solutions to enhance the resilience of California’s beaches to environmental change</a></li>                   
-                    <li><a href="https://news.ucsb.edu/2024/021425/uc-santa-barbara-researchers-launch-coastsnap-citizen-science-initiative-monitor" target="offline">2024-04-10 "UC Santa Barbara Researchers Launch CoastSnap, Citizen Science Initiative to Monitor Coastal Changes"</a></li>
-                     <li><a href="https://news.ucsb.edu/2024/021420/securing-future-californias-coasts" target="offline">2024-04-09 Led by UCSB including SBC investigator Jenny Dugan, a team of researchers from five institutions and organizations will develop the California Beach Resiliency Plan.  The effort will produce new guidance for beach resiliency from the community level up to the state level covering the entire Californian coast.</a></li>                   
-                    <li><a href="https://caseagrant.ucsd.edu/news/california-sea-grant-awards-nearly-841000-towards-10-new-graduate-research-fellowships" target="offline">2024-03-07 SBC student Karina Johnston was awarded a California Sea Grant graduate research fellowship to measure performance of coastal dune restoration projects in Southern California</a></li>                    
-                    <li><a href="https://news.ucsb.edu/2024/021344/scientific-research-soars-nsfs-major-research-instrumentation-program" target="offline">2024-01-31 "Scientific Research Soars with NSF’s Major Research Instrumentation Program"</a></li>                    
-                    <li><a href="https://news.ucsb.edu/2024/021317/choreography-cross-ecosystem-subsidies-connects-kelp-forest-beach" target="offline">2024-01-09 "The Choreography of Cross-ecosystem Subsidies that Connects the Kelp Forest to the Beach"</a></li>                         
+               <ul>
+                    <li><a href="https://news.agu.org/press-release/beach-burrowing-beasties-shovel-more-sand-than-any-other-animal-on-earth/" target="offline">2026-09-16 Beach-burrowing beasties shovel more sand than any other animal on Earth: Millions of crustaceans shape California's beaches, moving around 310 tons of dry sand per day along beaches near Isla Vista.</a></li>
+                    <li><a href="https://news.ucsb.edu/2026/022741/ucsb-team-saves-historic-aerial-photos-critical-coastal-research" target="offline">2026-08-12 UCSB team saves historic aerial photos critical to coastal research: The team preserved a century of irreplaceable aerial photographs used to study the disappearance of California's coastal sand dunes.</a></li>
+                    <li><a href="https://news.ucsb.edu/2026/022697/disturbance-has-greater-effect-giant-kelp-productivity-does-resource-availability" target="offline">2026-07-13 Disturbance has a greater effect on giant kelp productivity than does resource availability: The amount of kelp that survives winter storms greatly influences the productivity of the giant kelp forest in the next growing season.</a></li>
+                    <li><a href="https://news.ucsb.edu/2026/022658/california-has-lost-more-half-its-coastal-sand-dunes-first-ever-comprehensive" target="offline">2026-06-22 California has lost more than half of its coastal sand dunes, first-ever comprehensive assessment reveals.</a></li>
+                    <li><a href="https://news.ucsb.edu/2026/022550/kelp-forests-connected-sandy-beach-food-webs" target="offline">2026-05-04 Kelp forests connected to sandy beach food webs: Researchers uncover the connections between the nearshore kelp forest and the sandy beach food web.</a></li>
+                    <li><a href="https://news.ucsb.edu/2026/022326/scientists-create-system-tracking-underwater-blackouts" target="offline">2026-01-13 Scientists create a system for tracking underwater blackouts: Scientists have created the first framework to identify and compare marine blackouts, which can severely impact kelp forests, seagrass beds and other light-dependent marine life.</a></li>
                 </ul>
             </div>
 <h3 class="header-style">Events</h3>
+            <div class="content-style">
+<h4>SBC 2026 Earth Day</h4>
+                <br>
+                 <p>SBC will be co-hosting a booth with MCR at the <a href="https://www.sbearthday.org/" target="_blank">2026 Santa Barbara Earth Day Festival </a>on April 25 and April 26, Alameda Park, Santa Barbara</p>
+                        <p>MCR LTER team, Saturday, April 25, 11 a.m. - 8 p.m. </p>
+                        <p>SBC LTER team, Sunday, April 26, 11 a.m. - 7 p.m.</p>
+                        <hr/>
+            </div>
+        </div>
+<div id="archive" class="container tab-pane fade"><br>
+            <h3 class="header-style">News</h3>
+            <div class="content-style">
+                <ul>
+                    <li><a href="https://news.ucsb.edu/2025/022023/kelp-forests-are-connected-local-beach-ecosystems" target="offline">2025-09-16 Kelp forests are connected to local beach ecosystems: UCSB study highlights the connectivity between kelp forests and nearby beach ecosystems with implications for habitat conservation and recovery.</a></li>
+                    <li><a href="https://caseagrant.ucsd.edu/news/studying-climate-potential-californias-dunes" target="offline">2024-09-10 Coastal dunes and nature-based adaptation to environmental change: SBC investigator Ian Walker is leading  a $1.9 million grant focusing on dunes as nature-based solutions to enhance the resilience of California’s beaches to environmental change</a></li>
+                    <li><a href="https://news.ucsb.edu/2024/021425/uc-santa-barbara-researchers-launch-coastsnap-citizen-science-initiative-monitor" target="offline">2024-04-10 "UC Santa Barbara Researchers Launch CoastSnap, Citizen Science Initiative to Monitor Coastal Changes"</a></li>
+                     <li><a href="https://news.ucsb.edu/2024/021420/securing-future-californias-coasts" target="offline">2024-04-09 Led by UCSB including SBC investigator Jenny Dugan, a team of researchers from five institutions and organizations will develop the California Beach Resiliency Plan.  The effort will produce new guidance for beach resiliency from the community level up to the state level covering the entire Californian coast.</a></li>
+                    <li><a href="https://caseagrant.ucsd.edu/news/california-sea-grant-awards-nearly-841000-towards-10-new-graduate-research-fellowships" target="offline">2024-03-07 SBC student Karina Johnston was awarded a California Sea Grant graduate research fellowship to measure performance of coastal dune restoration projects in Southern California</a></li>
+                    <li><a href="https://news.ucsb.edu/2024/021344/scientific-research-soars-nsfs-major-research-instrumentation-program" target="offline">2024-01-31 "Scientific Research Soars with NSF’s Major Research Instrumentation Program"</a></li>
+                    <li><a href="https://news.ucsb.edu/2024/021317/choreography-cross-ecosystem-subsidies-connects-kelp-forest-beach" target="offline">2024-01-09 "The Choreography of Cross-ecosystem Subsidies that Connects the Kelp Forest to the Beach"</a></li>
+                    <li><a href="https://news.ucsb.edu/2022/020774/changing-sea-floor" target="offline">2022-12-15 "A Changing Sea Floor - Six years after ‘the Blob’ rolled through the Santa Barbara Channel, researchers find lasting effects in the kelp forest communities"</a></li>
+                </ul>
+            </div>
+            <h3 class="header-style">Events</h3>
             <div class="content-style">
 <h4>SBC 2025 Earth Day</h4>
                 <br>
@@ -49,17 +72,7 @@ description: news and event in SBCLTER
                  <p><b><a href="https://sbclter.msi.ucsb.edu/data/help/workshop_data_inspection/" target="offline">Feb 25, 2025  Data Inspection:</a></b> This workshop focuses on broadening and accelerating data quality checks using R and AI tools, featuring three expert speakers.</p>
                 <p><b><a href="https://sbclter.msi.ucsb.edu/data/help/workshop_data_access/" target="offline">Nov 15, 2024 Data Discovery Workshop:</a></b> This workshop explores the pathway to access and download SBC data from the Environmental Data Repository, cite these datasets in your publications, and link your publications to the datasets. Additionally, we will explore how to download data from other repositories such as USGS, NOAA, and NASA.</p>
                 <p><b><a href="https://sbclter.msi.ucsb.edu/data/help/workshop_data_publication/" target="offline">Nov 22, 2024  Data Publication:</a></b>  Explore topics related to data formats, metadata submission, obtaining data DOIs, and an introduction to the SBC data publication workflow</p>
-            </div>
-        </div>
-<div id="archive" class="container tab-pane fade"><br>
-            <h3 class="header-style">News</h3>
-            <div class="content-style">
-                <ul>
-                    <li><a href="https://news.ucsb.edu/2022/020774/changing-sea-floor" target="offline">2022-12-15 "A Changing Sea Floor - Six years after ‘the Blob’ rolled through the Santa Barbara Channel, researchers find lasting effects in the kelp forest communities"</a></li>                      
-                </ul>
-            </div>
-            <h3 class="header-style">Events</h3>
-            <div class="content-style">
+                        <hr/>
 <h4>SBC 2024 Earth Day</h4>
                         <br>
                         <p>SBC will be co-hosting a booth with MCR at the <a href="https://www.sbearthday.org/" target="_blank">2024 Santa Barbara Earth Day Festival </a>on April 27 and April 28, Alameda Park, Santa Barbara</p>
@@ -185,5 +198,3 @@ description: news and event in SBCLTER
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-

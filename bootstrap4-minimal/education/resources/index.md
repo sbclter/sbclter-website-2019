@@ -368,7 +368,7 @@ description: curricula and other media for education, produced by the SBC LTER
 	   </div>
    <div class="col-md-7">
    	<h3>Stearns Wharf Data</h3>
-   	<p>SBC LTER teams with agencies and research projects in the region to monitor oceanographic conditions at Stearns Wharf. Real-time data are a teaching aid, and are used frequently by local citizens, particularly swimmers and surfers.</p>
+   	<p>SBC LTER teams with agencies and research projects in the region to monitor oceanographic conditions at Stearns Wharf. <a href="{{site.baseurl}}/data/visuals/stearns-wharf">Real-time data</a> are a teaching aid, and are used frequently by local citizens, particularly swimmers and surfers.</p>
    </div>
    <div class="col-md-4">
   			<p><a href="{{site.baseurl}}/data/visuals/stearns-wharf"><img class="img-thumbnail img-responsive img-center" src="/assets/img/education/stearns_wharf_data.png"></a> </p>
@@ -429,7 +429,7 @@ description: curricula and other media for education, produced by the SBC LTER
 				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Chemistry_Connection.pdf">Chemistry Connection</a>
 			 </li>
 			 <li class="margin-above-5">
-				 <a href="/external/lternet.edu/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Algae_Experiments.pdf">Algae Experiments</a>
+				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_Algae_Experiments.pdf">Algea Experiments</a>
 			 </li>
 			 <li class="margin-above-5">
 				 <a href="/external/Outreach/AB_virtualtour/SBCLTER_AB_virtualTour_6LessonPlans.pdf">Complete Set of 6 activities (30mb PDF)</a>

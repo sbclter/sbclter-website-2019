@@ -80,7 +80,7 @@
     mapLayer: reefSeaPopSurvey
 - collectionName: 'SBC LTER: Ongoing time-series of monthly fish survey at three sites'
   abstract: The monthly survey on the abundance and size of fish species, began in
-    2000 at three reef sites (Arroyo Burro, Arroyo Quemado, Mohawk) located along
+    2000 at three reef sites (Arroyo Burro, Arroyo Quemada, Mohawk) located along
     the mainland coast of the Santa Barbara Channel. In the surveys, fish were counted
     in 40x2m benthic quadrat, and in the water parcel 0-2m off the bottom over the
     same area
@@ -215,7 +215,8 @@
     - Movement of Inorganic Matter
     - Disturbance Patterns
     - Movement of Organic Matter
-  mapLayers: ~
+  mapLayers:
+    mapLayer: reefBCE
 - collectionName: 'SBC LTER: Ongoing sea urchins in California'
   abstract: 'Time series and laboratory data on sea urchins (<i>Strongylocentrotus
     purpuratus</i> and <i>Mesocentrotus franciscanus</i>). The collection includes
@@ -332,13 +333,13 @@
     mapLayer: inshoreMoorings
 - collectionName: 'SBC LTER: Ongoing time-series of high resolution temperature'
   abstract: 'This collection includes an ongoing time series of high resolution temperature
-    at Mohawk and Arroyo Quemado, with three sites each (inshore, offshore, and east
-    of reef). Temperature was recorded at 1-meter interval along the water column,
-    and the sampling interval is 2 minutes. '
+    at Mohawk, Arroyo Quemada, Carpinteria, and Naples, with 1-3 mooring lines at
+    each site each (inshore, offshore, and east of reef). Temperature was recorded
+    at 1-meter interval along the water column, and the sampling interval is 2 minutes. '
   dataPackages:
     package:
     - docid: knb-lter-sbc.2031
-      shortTitle: High resolution temperature near MKO and ARQ
+      shortTitle: High resolution temperature at MKO, ARQ, CAP, NAP
   habitats:
     habitat: nearshore
   measurementTypes:
@@ -390,7 +391,7 @@
     - docid: knb-lter-sbc.6003
       shortTitle: pH, 20-min SeaFET at MKO, Mohawk Reef
     - docid: knb-lter-sbc.6002
-      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemado
+      shortTitle: pH, 20-min SeaFET at AQR, arroyo Quemada
   habitats:
     habitat: nearshore
   measurementTypes:
